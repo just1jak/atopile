@@ -1,127 +1,110 @@
-<h1 align="center">
-    <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/atopile/atopile/assets/9785003/00f19584-18a2-4b5f-9ce4-1248798974dd">
-    <source media="(prefers-color-scheme: light)" src="https://github.com/atopile/atopile/assets/9785003/d38941c1-d7c1-42e6-9b94-a62a0996bc19">
-    <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="https://github.com/atopile/atopile/assets/9785003/d38941c1-d7c1-42e6-9b94-a62a0996bc19" width="260">
-    </picture>
-</h1>
+# Atopile Local 0.2.0
 
-<p align="center">
-  <a href="https://pypi.org/project/atopile/"><img alt="PyPI" src="https://img.shields.io/pypi/v/atopile.svg"></a>
-  <a href="https://docs.atopile.io/"><img alt="Docs" src="https://img.shields.io/badge/docs-atopile.io-blue"></a>
-  <a href="https://packages.atopile.io/"><img alt="Packages" src="https://img.shields.io/badge/packages-registry-brightgreen"></a>
-  <a href="https://discord.gg/CRe5xaDBr3"><img alt="Discord" src="https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white"></a>
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-green"></a>
-</p>
+A local VS Code continuation of atopile 0.15.9 with ChatGPT through Codex or your own AI provider,
+local component imports, and net/placement/DRC tools. This is an independent
+fork, not an official atopile release.
 
-## Design circuit boards with code
+## Start on this Mac
 
-Write hardware like software. atopile is a language, compiler, and toolchain for electronics—declarative `.ato` files, deep validation, and layout that works natively with KiCad.
+Install the supplied `atopile-local-0.2.0.vsix` and open the supplied
+`Atopile Local.code-workspace`. The provided installer registers the runtime
+for other VS Code workspaces too. ChatGPT (Codex) is the default AI provider.
+Run **Atopile Local: Connect ChatGPT** to reuse your local Codex sign-in or start
+Codex's browser sign-in. No separate API key is needed. Your ChatGPT plan's
+Codex usage limits apply; this does not grant unlimited usage or add credits.
 
-<p align="center">
-  <img src="assets/tool.jpeg" alt="atopile editor with a project open" width="1152">
-</p>
+The connection uses the official local `codex app-server` interface. Codex owns
+sign-in, credential storage, and renewal. Atopile Local does not copy account
+tokens into its settings or webviews. It requires ChatGPT authentication and
+will not silently switch to API billing. The compiler and circuit tools still
+run locally; prompts and tool results go to OpenAI for AI assistance.
 
-## Why atopile
+Use **Atopile Local: Configure AI Provider** to select a separate OpenAI-compatible
+or Anthropic provider instead, then **Atopile Local: Set AI API Key** to store that
+provider's key in VS Code. Optional `atopileLocal.agent.codexPath` selects a Codex
+executable; leave it blank for automatic discovery. A blank model uses Codex's
+default model when ChatGPT is selected.
 
-- Reusable modules instead of starting from scratch every time
-- Capture intent with equations directly in your design
-- Automatic parametric picking of discrete components
+The compiler, parts, and viewers work without AI. API providers require their
+own key; a loopback model server may omit a key. OpenAI-compatible
+endpoints must implement the Responses API, streaming, and tool calls. Datasheet
+file search also requires Files/Vector Stores support. A Chat Completions-only
+server is not supported by this release. Leave the endpoint blank for the
+selected provider's default; custom Anthropic endpoints use the API origin
+rather than an OpenAI-style `/v1` suffix. Your provider's prices/limits apply.
 
-## Install
+## Portable setup
 
-The easiest way is via the editor extension—it installs and manages `ato` for you:
-
-- VS Code/Cursor extension: https://marketplace.visualstudio.com/items?itemName=atopile.atopile
-
-Advanced setups and CLI installs: https://docs.atopile.io/atopile/guides/install
-
-## Quickstart (2 minutes)
-
-1. Install the extension (link above)
-
-2. In the editor, run “atopile: Open Example” and pick one
-
-3. Press the ▶ in the ato menu bar to build, or run `ato build` from the terminal
-
-4. Open layout when ready
-
-Notes:
-
-- The ato menu bar is in the bottom-left of your VS Code/Cursor window
-- KiCad is optional to get started. Without it, you won’t open the PCB, but builds still run and update the `.kicad_pcb`. Install later when you’re ready for layout: https://docs.atopile.io/atopile/quickstart
-
-## How it works
-
-- `ato` is a declarative language for electronics: modules, interfaces, units, tolerances, and assertions
-- The compiler solves constraints, picks parts, runs checks, and updates your KiCad layout
-- The extension adds language services and one‑click controls
-  
-Learn more: https://docs.atopile.io/atopile/essentials/1-the-ato-language
-
-### Where atopile fits in
-
-High-level steps:
-
-- Requirements — capture specs with units, tolerances, and assertions
-- Component selection — parametric picking, reuse proven modules
-- Design capture — `.ato` modules and interfaces compose your system
-- Layout — place and route in KiCad
-- Checks — run design checks locally or in CI
-- Build outputs — BOM, fabrication and assembly data, reports
-- PCB fab/assembly — send outputs to your manufacturer
-
-## Example Projects
-
-- Open examples via the editor (“atopile: Open Example”) https://github.com/atopile/atopile/tree/main/examples
-- NONOS — Open-source smart speaker https://github.com/atopile/nonos
-- DSP - Open-source multi-channel DSP https://github.com/atopile/dsp
-- AI-Pin — Vibe-coded Humane Pin https://github.com/atopile/ai-pin
-- Hyperion — 300K nit display for raves https://github.com/atopile/hyperion
-- Cellsim - 18 channel battery cell simulator https://github.com/atopile/cellsim
-- ESPaper - ESP32 epaper display driver https://github.com/atopile/hivehaus/tree/master/src/products/espaper
-
-## Packages and parts
-
-- Browse and install modules from the registry: https://packages.atopile.io
-- Guide: https://docs.atopile.io/atopile/essentials/4-packages
-- Publish your own: https://docs.atopile.io/atopile/guides/publish
-
-## Compatibility
-
-- OS: macOS, Linux, Windows (WSL recommended)
-- Recommended editors: VS Code / Cursor
-- EDA: KiCad recommended for layout; not required to start
-
-## Contributing and development
-
-- Development setup: https://docs.atopile.io/atopile/guides/development
-- Editable install (for working on atopile itself): https://docs.atopile.io/atopile/guides/install#editable-installation-best-for-development
-- Run tests:
+Requires VS Code 1.105+, uv, and KiCad for native layout/DRC. ChatGPT assistance
+also requires a Codex CLI with app-server dynamic tools and a ChatGPT plan that
+includes Codex access. Tested on Apple
+Silicon macOS with Python 3.14.6 and KiCad 10.0.7. The launcher is POSIX (macOS
+and Linux); Windows launcher packaging is not included.
 
 ```sh
-pytest -q
+python3 local/setup_runtime.py
+python3 local/install_extension.py
 ```
 
-- Fast worktree setup (CoW-clone `.venv` + Zig cache/output, then path rewrite):
+The native compiler is the pinned atopile 0.15.9 wheel. Modified Python source
+runs over that wheel, avoiding a local Zig rebuild. The wrapper uses safe
+Python import precedence and stores fork state in `.state/`; it disables atopile
+telemetry and migration-notice requests. The runtime handoff goes in this fork's
+own VS Code global storage and does not alter official atopile settings.
+
+## Local design workflow
 
 ```sh
-ato dev worktree <suffix>
-cd ../atopile_<suffix>
-source .venv/bin/activate
-ato --help
+bin/ato-local build examples/offline-indicator --target default
+bin/ato-local create part-from-kicad --help
+bin/ato-local create part-from-pinout --help
 ```
 
-By default this command starts an interactive shell in the new worktree.
-Pass `--no-cd` to skip shell handoff.
+Open the **Atopile Local** activity-bar view to build, browse components and
+nets, inspect pinouts, and open the PCB/3D viewers. The independent agent can
+edit project files, build and debug circuits, read logical nets, inspect or
+change placements (with backups), and run KiCad DRC.
 
-- Issues and feature requests: https://github.com/atopile/atopile/issues
+The routed offline indicator has three local components, three nets, and a
+32 x 18 mm outline. Its layout is a specific hand-authored recipe. Generic
+local parts are included in the JSON BOM; unsourced parts are excluded from the
+JLCPCB assembly CSV. See `examples/offline-indicator/README.md`.
 
-## Support
+## Service boundaries
 
-- Discord “help” channel: https://discord.gg/CRe5xaDBr3
-- Commercial support: hi@atopile.io
+Local builds with locally imported parts do not need atopile sign-in. Automatic
+online component selection still uses atopile's service and requires sign-in.
+DeepPCB automatic placement/routing remains hosted and is labeled in the UI;
+no general local autorouter is included. Web search uses your own `EXA_API_KEY`.
+Manual local layout and local agent placement/DRC do not use those services.
+Native footprint locks cannot be safely round-tripped by the bundled parser,
+so the placement tool refuses boards containing them.
 
-## License
+## Rebuild and verify
 
-MIT. See `LICENSE`.
+```sh
+python3 local/build_extension.py
+PYTHONPATH=src ATOPILE_LOCAL_DATA_DIR=$PWD/.state FBRK_TELEMETRY=0 \
+  .venv/bin/python -m pytest test/agent test/libs/test_kicad_part_import.py \
+  test/exporters/pcb/kicad/test_pcb_transformer.py -q
+.venv/bin/python local/verify_backend.py
+python3 local/verify_offline.py
+```
+
+The verification record is `local/VERIFICATION.json`; demo connectivity and DRC
+reports are under `examples/offline-indicator/`. No physical hardware test was
+performed. Only the included small example was exercised end
+to end; passing DRC does not verify electrical behavior or supplier suitability.
+
+## Source and licenses
+
+Based on the public PyPI atopile 0.15.9 source distribution, SHA-256
+`681cc1e123646dd133de31b631aedaf4eaac88682613b4f82d1da4b3ef8b4e8e`.
+Upstream MIT notices are retained; local import work retains the Axiovel MIT
+attribution in `local/IMPORTER_ATTRIBUTION.md`. Bundled 3D decoders include their
+Apache-2.0 notices and Three.js MIT license. The original README is preserved
+at `local/UPSTREAM_README.md`.
+
+Codex-managed ChatGPT authentication is documented for local/open-source apps.
+This integration is for local use; a hosted or commercial service needs its own
+supported sign-in integration. See [OpenAI's app-server documentation](https://learn.chatgpt.com/docs/app-server).

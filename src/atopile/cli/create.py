@@ -10,10 +10,7 @@ from pathlib import Path
 from typing import TYPE_CHECKING, Annotated, Any, Callable, Iterator, cast, override
 
 import caseconverter
-import questionary
 import typer
-from cookiecutter.exceptions import FailedHookException, OutputDirExistsException
-from cookiecutter.main import cookiecutter
 from more_itertools import first
 from rich.table import Table
 
@@ -21,7 +18,8 @@ from atopile import errors, version
 from atopile.address import AddrStr
 from atopile.logging import get_logger
 from atopile.logging_utils import console, rich_print_robust
-from atopile.telemetry import capture
+from atopile.telemetry.telemetry import capture
+from faebryk.libs.git import in_git_repo, test_for_git_executable
 from faebryk.libs.github import (
     GITHUB_USERNAME_REGEX,
     GithubCLI,
@@ -32,8 +30,6 @@ from faebryk.libs.github import (
 )
 from faebryk.libs.util import (
     get_code_bin_of_terminal,
-    in_git_repo,
-    test_for_git_executable,
     try_or,
 )
 
@@ -53,6 +49,8 @@ create_app = typer.Typer(
 
 def _stuck_user_helper() -> Iterator[bool]:
     """Figure out if a user is stuck and help them exit."""
+    import questionary
+
     threshold = 5
     for i in itertools.count():
         if i >= threshold:
@@ -88,6 +86,8 @@ def query_helper[T: str | Path | bool](
     validate_default: bool = True,
 ) -> T:
     """Query a user for input."""
+    import questionary
+
     from atopile.config import config
 
     rich_print_robust(prompt)
@@ -207,6 +207,7 @@ def setup_github(
     repo: "git.Repo",
 ):
     import git
+    import questionary
 
     github_username = gh_cli.get_usernames()
 
@@ -445,6 +446,12 @@ class _Template:
         self.extra_context = extra_context
 
     def run(self, output_dir: Path) -> Path:
+        from cookiecutter.exceptions import (
+            FailedHookException,
+            OutputDirExistsException,
+        )
+        from cookiecutter.main import cookiecutter
+
         from atopile.config import config
 
         try:
@@ -748,6 +755,8 @@ def part(
     project_dir: Annotated[Path | None, typer.Option("--project-dir", "-p")] = None,
 ):
     """Create a new component."""
+    import questionary
+
     from atopile.config import config
     from faebryk.libs.picker.api.api import ApiHTTPError
     from faebryk.libs.picker.api.picker_lib import _extract_numeric_id, client
@@ -864,6 +873,179 @@ def part(
     return apart, component
 
 
+@create_app.command("part-from-kicad")
+def part_from_kicad(
+    symbol: Annotated[
+        Path,
+        typer.Option(
+            "--symbol",
+            "-y",
+            help="Path to a .kicad_sym symbol library file",
+        ),
+    ],
+    footprint: Annotated[
+        Path,
+        typer.Option(
+            "--footprint",
+            "-f",
+            help="Path to a .kicad_mod footprint file",
+        ),
+    ],
+    symbol_name: Annotated[
+        str | None,
+        typer.Option(
+            "--name",
+            "-n",
+            help="Symbol name within the library (required for multi-symbol libs)",
+        ),
+    ] = None,
+    manufacturer: Annotated[
+        str | None,
+        typer.Option("--manufacturer", "-m", help="Manufacturer name"),
+    ] = None,
+    partnumber: Annotated[
+        str | None,
+        typer.Option("--partnumber", help="Manufacturer part number"),
+    ] = None,
+    datasheet: Annotated[
+        str | None, typer.Option("--datasheet", help="Datasheet URL")
+    ] = None,
+    supplier_partno: Annotated[
+        str | None,
+        typer.Option(
+            "--supplier-partno",
+            help="Optional LCSC ID or local inventory number",
+        ),
+    ] = None,
+    overwrite: Annotated[
+        bool,
+        typer.Option("--overwrite", help="Replace an existing part directory"),
+    ] = False,
+    project_dir: Annotated[Path | None, typer.Option("--project-dir", "-p")] = None,
+):
+    """
+    Create a component from local KiCad library files
+    (symbol + footprint), e.g. from a company-internal KiCad library.
+    """
+    from atopile.config import config
+    from faebryk.libs.kicad_part_import import (
+        KicadPartImportError,
+        import_part_from_kicad,
+    )
+
+    config.apply_options(None, working_dir=project_dir)
+
+    try:
+        part = import_part_from_kicad(
+            symbol_lib_path=symbol,
+            footprint_path=footprint,
+            symbol_name=symbol_name,
+            manufacturer=manufacturer,
+            partnumber=partnumber,
+            datasheet=datasheet,
+            supplier_partno=supplier_partno,
+            overwrite=overwrite,
+        )
+    except KicadPartImportError as e:
+        raise errors.UserException(str(e)) from e
+
+    rich_print_robust(
+        f":sparkles: Created {part.identifier} at {part.path} ! Import with:\n"
+    )
+    rich_print_robust(
+        f"```ato\n{part.generate_import_statement(config.project.paths.src)}\n```",
+        markdown=True,
+    )
+
+    return part
+
+
+@create_app.command("part-from-pinout")
+def part_from_pinout(
+    footprint: Annotated[
+        Path,
+        typer.Option(
+            "--footprint",
+            "-f",
+            help="Path to a .kicad_mod footprint file",
+        ),
+    ],
+    pin: Annotated[
+        list[str],
+        typer.Option(
+            "--pin",
+            help="Pin mapping `NUMBER:NAME` (repeat; pad numbers must match"
+            " the footprint)",
+        ),
+    ],
+    manufacturer: Annotated[
+        str, typer.Option("--manufacturer", "-m", help="Manufacturer name")
+    ],
+    partnumber: Annotated[
+        str, typer.Option("--partnumber", help="Manufacturer part number")
+    ],
+    datasheet: Annotated[
+        str | None, typer.Option("--datasheet", help="Datasheet URL")
+    ] = None,
+    supplier_partno: Annotated[
+        str | None,
+        typer.Option("--supplier-partno", help="Optional LCSC ID or local inventory number"),
+    ] = None,
+    designator_prefix: Annotated[
+        str, typer.Option("--designator", help="Designator prefix")
+    ] = "U",
+    overwrite: Annotated[
+        bool, typer.Option("--overwrite", help="Replace an existing part directory")
+    ] = False,
+    project_dir: Annotated[Path | None, typer.Option("--project-dir", "-p")] = None,
+):
+    """
+    Create a component from a footprint plus an explicit pin map, synthesizing
+    the schematic symbol. For parts not present in any local KiCad library.
+    """
+    from atopile.config import config
+    from faebryk.libs.kicad_part_import import (
+        KicadPartImportError,
+        import_part_from_pinout,
+    )
+
+    config.apply_options(None, working_dir=project_dir)
+
+    pins: list[tuple[str, str]] = []
+    for entry in pin:
+        number, _, name = entry.partition(":")
+        if not number or not name:
+            raise errors.UserBadParameterError(
+                f"Invalid --pin `{entry}`; expected NUMBER:NAME"
+            )
+        pins.append((number.strip(), name.strip()))
+
+    try:
+        part = import_part_from_pinout(
+            footprint_path=footprint,
+            pins=pins,
+            manufacturer=manufacturer,
+            partnumber=partnumber,
+            datasheet=datasheet,
+            supplier_partno=supplier_partno,
+            designator_prefix=designator_prefix,
+            overwrite=overwrite,
+        )
+    except KicadPartImportError as e:
+        raise errors.UserException(str(e)) from e
+
+    rich_print_robust(
+        f":sparkles: Created {part.identifier} at {part.path} ! Import with:\n"
+    )
+    rich_print_robust(
+        f"```ato\n{part.generate_import_statement(config.project.paths.src)}\n```",
+        markdown=True,
+    )
+
+    return part
+
+
+
 @create_app.command(deprecated=True)
 @capture(
     "cli:create_component_start",
@@ -882,6 +1064,8 @@ def main(ctx: typer.Context):
         return
 
     if not ctx.invoked_subcommand:
+        import questionary
+
         commands = cast(dict, ctx.command.commands)  # type: ignore  # commands is an attribute of the context
         command_name = questionary.select(
             "What would you like to create?",

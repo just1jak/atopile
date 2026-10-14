@@ -1,0 +1,24 @@
+(fp_lib_table
+	(version 7)
+	(lib
+		(name "Local_Resistor330R")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/../../parts/Local_Resistor330R")
+		(options "")
+		(descr "atopile: part lib: Local_Resistor330R")
+	)
+	(lib
+		(name "Local_LED5mm")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/../../parts/Local_LED5mm")
+		(options "")
+		(descr "atopile: part lib: Local_LED5mm")
+	)
+	(lib
+		(name "Local_Input2")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/../../parts/Local_Input2")
+		(options "")
+		(descr "atopile: part lib: Local_Input2")
+	)
+)

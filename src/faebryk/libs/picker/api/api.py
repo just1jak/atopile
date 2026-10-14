@@ -8,8 +8,9 @@ from dataclasses import dataclass
 from importlib.metadata import version as get_package_version
 
 import faebryk.library._F as F
+from atopile.auth.runtime import get_auth_token
 from atopile.config import config
-from atopile.errors import UserInfraError
+from atopile.errors import UserException, UserInfraError
 from faebryk.libs.http import HTTPStatusError, Response, http_client
 from faebryk.libs.picker.api.models import (
     BaseParams,
@@ -55,7 +56,14 @@ class ApiClient:
     @property
     @once
     def _cfg(self) -> ApiConfig:
-        return self.ApiConfig()
+        token = get_auth_token()
+        if not token:
+            raise UserException(
+                "Part picking on atopile 0.15.8 requires sign-in. "
+                "Run `ato auth login`, or migrate to app.atopile.io (0.16+).",
+                title="Sign-in required",
+            )
+        return self.ApiConfig(api_key=token)
 
     @property
     @once

@@ -1,0 +1,19 @@
+from "parts/Local_Resistor330R/Local_Resistor330R.ato" import Local_Resistor330R_package
+from "parts/Local_LED5mm/Local_LED5mm.ato" import Local_LED5mm_package
+from "parts/Local_Input2/Local_Input2.ato" import Local_Input2_package
+import ElectricPower
+
+module OfflineIndicator:
+    """3.3 V input, generic 330 ohm resistor, and generic 5 mm LED.
+    Uses project-owned CAD assets and explicitly chosen local parts.
+    """
+    power = new ElectricPower
+    power.voltage = 3.3V +/- 5%
+    supply = new Local_Input2_package
+    resistor = new Local_Resistor330R_package
+    led = new Local_LED5mm_package
+    power.hv ~ supply.POS
+    power.lv ~ supply.NEG
+    power.hv ~ resistor.P1
+    resistor.P2 ~ led.A
+    led.K ~ power.lv

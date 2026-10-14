@@ -1,0 +1,13 @@
+import has_designator_prefix
+import has_part_picked
+import is_atomic_part
+
+component Local_Resistor330R_package:
+    # Imported from KiCad library `Resistor330R.kicad_sym` (symbol `Resistor330R`)
+    trait is_atomic_part<manufacturer="Local", partnumber="Resistor330R", footprint="Resistor330R.kicad_mod", symbol="Resistor330R.kicad_sym">
+    trait has_part_picked::by_supplier<supplier_id="local", supplier_partno="MANUAL-Resistor330R", manufacturer="Local", partno="Resistor330R">
+    trait has_designator_prefix<prefix="R">
+
+    # pins
+    signal P1 ~ pin 1
+    signal P2 ~ pin 2

@@ -1,0 +1,13 @@
+import has_designator_prefix
+import has_part_picked
+import is_atomic_part
+
+component Local_Input2_package:
+    # Imported from KiCad library `tmp7d06vpbf.kicad_sym` (symbol `Input2`)
+    trait is_atomic_part<manufacturer="Local", partnumber="Input2", footprint="Input2.kicad_mod", symbol="Input2.kicad_sym">
+    trait has_part_picked::by_supplier<supplier_id="local", supplier_partno="MANUAL-Input2", manufacturer="Local", partno="Input2">
+    trait has_designator_prefix<prefix="J">
+
+    # pins
+    signal NEG ~ pin 2
+    signal POS ~ pin 1

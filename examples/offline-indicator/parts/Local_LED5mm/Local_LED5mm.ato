@@ -1,0 +1,13 @@
+import has_designator_prefix
+import has_part_picked
+import is_atomic_part
+
+component Local_LED5mm_package:
+    # Imported from KiCad library `LED5mm.kicad_sym` (symbol `LED5mm`)
+    trait is_atomic_part<manufacturer="Local", partnumber="LED5mm", footprint="LED5mm.kicad_mod", symbol="LED5mm.kicad_sym">
+    trait has_part_picked::by_supplier<supplier_id="local", supplier_partno="MANUAL-LED5mm", manufacturer="Local", partno="LED5mm">
+    trait has_designator_prefix<prefix="D">
+
+    # pins
+    signal A ~ pin 2
+    signal K ~ pin 1

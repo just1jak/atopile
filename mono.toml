@@ -1,0 +1,6 @@
+id = "open-atopile"
+visibility = "public"
+
+[upstream]
+repo = "atopile/atopile-test"
+branch = "main"

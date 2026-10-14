@@ -1,0 +1,16 @@
+#!/bin/sh
+set -eu
+ATOPILE_LOCAL_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+if [ ! -x "$ATOPILE_LOCAL_ROOT/.venv/bin/python" ]; then
+    printf '%s\n' 'Run python3 local/setup_runtime.py first.' >&2
+    exit 1
+fi
+export PYTHONPATH="$ATOPILE_LOCAL_ROOT/src${PYTHONPATH:+:$PYTHONPATH}"
+export ATOPILE_LOCAL_MODE="${ATOPILE_LOCAL_MODE:-1}"
+export ATOPILE_LOCAL_DATA_DIR="${ATOPILE_LOCAL_DATA_DIR:-$ATOPILE_LOCAL_ROOT/.state}"
+export FBRK_TELEMETRY=0
+export MPLCONFIGDIR="$ATOPILE_LOCAL_DATA_DIR/matplotlib"
+if [ -d /Applications/KiCad/KiCad.app/Contents/MacOS ]; then
+    export PATH="/Applications/KiCad/KiCad.app/Contents/MacOS:$PATH"
+fi
+exec "$ATOPILE_LOCAL_ROOT/.venv/bin/python" -P -m atopile "$@"

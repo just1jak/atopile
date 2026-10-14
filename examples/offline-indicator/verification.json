@@ -1,0 +1,31 @@
+{
+  "verified_date": "2026-10-13",
+  "compiler": "atopile 0.15.9 local source fork over pinned native wheel",
+  "kicad_cli_version": "10.0.7",
+  "demo": {
+    "footprints": 3,
+    "electrical_nets": 3,
+    "track_segments": 9,
+    "board_width_mm": 32,
+    "board_height_mm": 18,
+    "assembly": "generic through-hole manual assembly",
+    "layout_method": "explicit hand-authored example recipe"
+  },
+  "checks": {
+    "focused_python_tests": {"passed": 9},
+    "build_with_every_ip_socket_connection_blocked": "passed",
+    "guard_loaded_in_parent_and_children": true,
+    "attempted_ip_connections": 0,
+    "picker_modules": 0,
+    "rebuild_preserved_placements_routes_outline_and_pad_nets": true,
+    "kicad_drc_violations": 0,
+    "kicad_unconnected_items": 0
+  },
+  "limits": [
+    "Only this small example was exercised end to end",
+    "Generic parts have no verified supplier stock or price",
+    "No general autorouter was implemented",
+    "No physical assembly or electrical measurement was performed",
+    "No fabrication-readiness claim is made"
+  ]
+}

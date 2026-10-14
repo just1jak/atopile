@@ -1,0 +1,435 @@
+"""Deterministic protocol tests; no login, model requests, or credentials used."""
+
+import asyncio
+from pathlib import Path
+
+import pytest
+
+from atopile.agent.providers.base import ModelId, StreamDone
+from atopile.agent.providers.codex import CodexProvider, codex_environment
+
+TOOL = {
+    "type": "function",
+    "name": "layout_get_netlist",
+    "description": "Read nets",
+    "parameters": {"type": "object"},
+}
+
+
+class FakeServer:
+    def __init__(self, account="chatgpt", mcp_status="disabled"):
+        self.queue = asyncio.Queue()
+        self.sent = []
+        self.closed = False
+        self.account = account
+        self.mcp_status = mcp_status
+        self.turns = 0
+
+    async def start(self):
+        pass
+
+    async def close(self):
+        self.closed = True
+
+    async def read(self):
+        return await self.queue.get()
+
+    async def emit(self, method, params, request_id=None):
+        message = {"method": method, "params": params}
+        if request_id is not None:
+            message["id"] = request_id
+        await self.queue.put(message)
+
+    async def usage(self, total):
+        await self.emit(
+            "thread/tokenUsage/updated",
+            {
+                "threadId": "thread-1",
+                "tokenUsage": {
+                    "total": {
+                        "inputTokens": total - 10,
+                        "outputTokens": 10,
+                        "totalTokens": total,
+                    },
+                    "last": {"inputTokens": 5, "outputTokens": 1, "totalTokens": 6},
+                },
+            },
+        )
+
+    async def send(self, message):
+        self.sent.append(message)
+        method = message.get("method")
+        if method == "initialized":
+            return
+        if method is None:
+            if message.get("id") == 77 and message.get("result", {}).get("success"):
+                await self.usage(162)
+                await self.emit(
+                    "item/agentMessage/delta",
+                    {
+                        "threadId": "thread-1",
+                        "turnId": "turn-1",
+                        "delta": "Three nets.",
+                    },
+                )
+                await self.emit(
+                    "turn/completed",
+                    {
+                        "threadId": "thread-1",
+                        "turn": {"id": "turn-1", "status": "completed"},
+                    },
+                )
+            return
+        result = {}
+        if method == "account/read":
+            result = {"account": {"type": self.account}}
+        elif method == "mcpServerStatus/list":
+            scoped = message["params"].get("threadId")
+            result = {
+                "data": [
+                    {
+                        "name": "user-server",
+                        "runtimeStatus": self.mcp_status if scoped else "ready",
+                        "tools": {},
+                        "resources": [],
+                        "resourceTemplates": [],
+                    }
+                ]
+            }
+        elif method in {"thread/start", "thread/resume"}:
+            result = {"thread": {"id": "thread-1"}}
+            if method == "thread/resume":
+                self.turns = 1
+        elif method == "turn/start":
+            self.turns += 1
+            result = {"turn": {"id": f"turn-{self.turns}"}}
+        await self.queue.put({"id": message["id"], "result": result})
+        if method == "turn/start":
+            if self.turns == 1:
+                await self.usage(110)
+                await self.emit(
+                    "item/tool/call",
+                    {
+                        "threadId": "thread-1",
+                        "turnId": "turn-1",
+                        "callId": "call-1",
+                        "tool": "layout_get_netlist",
+                        "arguments": {"target": "default"},
+                    },
+                    77,
+                )
+            else:
+                # Delayed old completion must not terminate a later turn.
+                await self.emit(
+                    "turn/completed",
+                    {
+                        "threadId": "thread-1",
+                        "turn": {"id": "turn-1", "status": "interrupted"},
+                    },
+                )
+                await self.usage(200)
+                await self.emit(
+                    "item/agentMessage/delta",
+                    {
+                        "threadId": "thread-1",
+                        "turnId": f"turn-{self.turns}",
+                        "delta": "I remember the nets.",
+                    },
+                )
+                await self.emit(
+                    "turn/completed",
+                    {
+                        "threadId": "thread-1",
+                        "turn": {"id": f"turn-{self.turns}", "status": "completed"},
+                    },
+                )
+        elif method == "turn/interrupt":
+            await self.emit(
+                "turn/completed",
+                {
+                    "threadId": "thread-1",
+                    "turn": {
+                        "id": message["params"]["turnId"],
+                        "status": "interrupted",
+                    },
+                },
+            )
+
+
+@pytest.fixture(autouse=True)
+def local_mode(monkeypatch):
+    monkeypatch.setenv("ATOPILE_LOCAL_MODE", "1")
+    monkeypatch.setenv("ATOPILE_AGENT_PROVIDER", "codex")
+    monkeypatch.delenv("ATOPILE_AGENT_MODEL", raising=False)
+
+
+def make(server):
+    provider = CodexProvider(
+        ModelId("codex-default"), timeout=1, transport_factory=lambda: server
+    )
+    provider.bind_project(Path.cwd())
+    return provider
+
+
+async def run(provider, messages, instructions="Read circuit nets"):
+    events = [
+        event
+        async for event in provider.stream(
+            messages=messages, instructions=instructions, tools=[TOOL]
+        )
+    ]
+    return next(event.response for event in events if isinstance(event, StreamDone))
+
+
+def test_scoped_tools_resume_same_turn_updated_skills_and_incremental_usage():
+    async def scenario():
+        server = FakeServer()
+        provider = make(server)
+        try:
+            first = await run(provider, [{"role": "user", "content": "Read the nets"}])
+            assert first.tool_calls[0].name == "layout_get_netlist"
+            assert first.usage.total_tokens == 110
+            final = await run(
+                provider,
+                [
+                    {
+                        "type": "function_call_output",
+                        "call_id": "call-1",
+                        "output": '{"nets":3}',
+                    }
+                ],
+                "Newly loaded trusted circuit skill",
+            )
+            assert final.text == "Three nets."
+            assert final.usage.total_tokens == 52
+            reply = next(message for message in server.sent if message.get("id") == 77)
+            assert (
+                "Newly loaded trusted circuit skill"
+                in reply["result"]["contentItems"][0]["text"]
+            )
+            followup = await run(
+                provider, [{"role": "user", "content": "Remember them?"}]
+            )
+            assert followup.text == "I remember the nets."
+            assert followup.usage.total_tokens == 38
+            starts = [
+                message
+                for message in server.sent
+                if message.get("method") == "thread/start"
+            ]
+            assert len(starts) == 1
+            assert "model" not in starts[0]["params"]
+            assert starts[0]["params"]["environments"] == []
+            assert (
+                starts[0]["params"]["config"]["mcp_servers"]["user-server"]["enabled"]
+                is False
+            )
+            assert not any(
+                message.get("method") == "config/read" for message in server.sent
+            )
+        finally:
+            await provider.aclose()
+        assert server.closed
+
+    asyncio.run(scenario())
+
+
+def test_api_key_login_rejected_before_thread_or_model_start():
+    async def scenario():
+        server = FakeServer(account="apiKey")
+        provider = make(server)
+        with pytest.raises(RuntimeError, match="ChatGPT sign-in"):
+            await run(provider, [{"role": "user", "content": "Read nets"}])
+        assert not any(
+            message.get("method") in {"thread/start", "turn/start"}
+            for message in server.sent
+        )
+        assert server.closed
+
+    asyncio.run(scenario())
+
+
+def test_starting_mcp_catalog_refused_even_before_tools_arrive():
+    async def scenario():
+        server = FakeServer(mcp_status="starting")
+        provider = make(server)
+        try:
+            for _ in range(2):
+                with pytest.raises(RuntimeError, match="MCP tools"):
+                    await run(provider, [{"role": "user", "content": "Read nets"}])
+            assert not any(
+                message.get("method") == "turn/start" for message in server.sent
+            )
+        finally:
+            await provider.aclose()
+
+    asyncio.run(scenario())
+
+
+def test_reset_captures_old_turn_and_cancels_pending_dynamic_request():
+    async def scenario():
+        server = FakeServer()
+        provider = make(server)
+        try:
+            await run(provider, [{"role": "user", "content": "Read nets"}])
+            provider.reset_chain()
+            await provider._cancel_task
+            interrupt = next(
+                message
+                for message in server.sent
+                if message.get("method") == "turn/interrupt"
+            )
+            assert interrupt["params"] == {"threadId": "thread-1", "turnId": "turn-1"}
+            reply = next(message for message in server.sent if message.get("id") == 77)
+            assert reply["result"]["success"] is False
+            assert not provider._pending
+            assert provider._thread_id is None
+        finally:
+            await provider.aclose()
+
+    asyncio.run(scenario())
+
+
+def test_native_environment_keeps_login_location_but_excludes_api_credentials(
+    monkeypatch,
+):
+    monkeypatch.setenv("OPENAI_API_KEY", "must-not-forward")
+    monkeypatch.setenv("CODEX_API_KEY", "must-not-forward")
+    monkeypatch.setenv("CODEX_ACCESS_TOKEN", "must-not-forward")
+    monkeypatch.setenv("ATOPILE_AGENT_API_KEY", "must-not-forward")
+    env = codex_environment()
+    assert (
+        not {
+            "OPENAI_API_KEY",
+            "CODEX_API_KEY",
+            "CODEX_ACCESS_TOKEN",
+            "ATOPILE_AGENT_API_KEY",
+        }
+        & env.keys()
+    )
+    assert "HOME" in env
+
+
+def test_resume_restores_cumulative_usage_baseline():
+    async def scenario():
+        server = FakeServer()
+        provider = make(server)
+        provider.restore(
+            {
+                "provider": "codex",
+                "thread_id": "thread-1",
+                "native_usage": {
+                    "input_tokens": 152,
+                    "output_tokens": 10,
+                    "total_tokens": 162,
+                },
+            }
+        )
+        try:
+            response = await run(provider, [{"role": "user", "content": "Continue"}])
+            assert response.usage.total_tokens == 38
+            assert any(
+                message.get("method") == "thread/resume" for message in server.sent
+            )
+            assert not any(
+                message.get("method") == "thread/start" for message in server.sent
+            )
+        finally:
+            await provider.aclose()
+
+    asyncio.run(scenario())
+
+
+def test_model_change_waits_for_old_turn_interrupt_before_new_thread():
+    async def scenario():
+        server = FakeServer()
+        provider = make(server)
+        try:
+            await run(provider, [{"role": "user", "content": "Read nets"}])
+            events = [
+                event
+                async for event in provider.stream(
+                    messages=[{"role": "user", "content": "Continue"}],
+                    instructions="Read nets",
+                    tools=[TOOL],
+                    model=ModelId("gpt-6.1-sol"),
+                )
+            ]
+            assert any(isinstance(event, StreamDone) for event in events)
+            methods = [message.get("method") for message in server.sent]
+            assert methods.count("thread/start") == 2
+            assert methods.index("turn/interrupt") < len(methods) - 1 - methods[
+                ::-1
+            ].index("thread/start")
+        finally:
+            await provider.aclose()
+
+    asyncio.run(scenario())
+
+
+def test_cancellation_wakes_active_stream_without_concurrent_pipe_reads():
+    class WaitingServer(FakeServer):
+        async def send(self, message):
+            if message.get("method") == "turn/start":
+                self.sent.append(message)
+                await self.queue.put(
+                    {"id": message["id"], "result": {"turn": {"id": "waiting-turn"}}}
+                )
+                return
+            await super().send(message)
+
+    async def scenario():
+        server = WaitingServer()
+        provider = make(server)
+        task = asyncio.create_task(run(provider, [{"role": "user", "content": "Wait"}]))
+        try:
+            async with asyncio.timeout(1):
+                while provider._turn_id is None:
+                    await asyncio.sleep(0)
+                provider.abort_pending()
+                with pytest.raises(asyncio.CancelledError):
+                    await task
+            assert not provider._pending
+        finally:
+            await provider.aclose()
+
+    asyncio.run(scenario())
+
+
+def test_session_loop_limit_cancels_unexecuted_native_tool_request():
+    from atopile.agent.session import AgentSession, Done
+    from atopile.agent.tools.registry import ToolDef, ToolRegistry
+
+    async def scenario():
+        server = FakeServer()
+        provider = make(server)
+        executions = []
+
+        async def read_nets(args, scope):
+            executions.append(args)
+            return {"nets": 3}
+
+        registry = ToolRegistry()
+        registry.register(ToolDef("layout_get_netlist", "Read nets", TOOL, read_nets))
+        session = AgentSession(
+            session_id="limit-test",
+            project_root=Path.cwd(),
+            provider=provider,
+            model=ModelId("codex-default"),
+            registry=registry,
+            skill_ids=[],
+            max_tool_loops=0,
+        )
+        try:
+            events = [event async for event in session.send_message("Read nets")]
+            await provider._cancel_task
+            assert any(isinstance(event, Done) for event in events)
+            assert executions == []
+            assert not session.is_running
+            assert not provider._pending
+            reply = next(message for message in server.sent if message.get("id") == 77)
+            assert reply["result"]["success"] is False
+        finally:
+            await provider.aclose()
+
+    asyncio.run(scenario())

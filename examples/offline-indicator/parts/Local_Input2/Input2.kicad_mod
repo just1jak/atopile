@@ -1,0 +1,49 @@
+(footprint "Local_Input2:Input2"
+	(version 20240108)
+	(generator "atopile-local")
+	(generator_version "latest")
+	(layer "F.Cu")
+	(attr through_hole)
+	(fp_rect
+		(start -1.5 -1.5)
+		(end 4.04 1.5)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+	)
+	(fp_text reference "REF**"
+		(at 0 -3)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text value "Input2"
+		(at 0 3)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.8 1.8)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+	)
+)
