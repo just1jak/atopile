@@ -64,7 +64,10 @@ def test_generator_discovers_schematic_models_without_changing_legacy_module_api
 ):
     assert len(generate_types._schema_modules()) == 4
     models = {model.__name__ for model in generate_types.discover_camel_models()}
-    assert {"SchematicData", "SchematicSymbol", "SchematicSelection"} <= models
+    assert {
+        "SchematicData", "SchematicSymbol", "SchematicSelection",
+        "SchematicExportResult",
+    } <= models
     output = tmp_path / "generated-types.ts"
     monkeypatch.setattr(generate_types, "OUT", output)
     generate_types.main()
@@ -72,6 +75,9 @@ def test_generator_discovers_schematic_models_without_changing_legacy_module_api
     generate_types.main()
     assert output.read_text() == first
     assert "export interface SchematicData" in first
+    assert "export interface SchematicExportResult" in first
+    assert "reused: boolean;" in first
+    assert "openError: string | null;" in first
     assert 'connectivityKind: "logical_pad_net_assignments"' in first
     assert "strokeWidth?: number;" in first
     assert "endX: number;" in first

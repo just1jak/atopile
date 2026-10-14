@@ -387,6 +387,21 @@ export interface SchematicData {
   warnings: string[];
 }
 
+export interface SchematicExportResult {
+  path: string;
+  relativePath: string;
+  projectRoot: string;
+  target: string;
+  revision: string;
+  layoutPath: string;
+  componentCount: number;
+  netCount: number;
+  warnings: string[];
+  reused: boolean;
+  opened: boolean;
+  openError: string | null;
+}
+
 export interface SchematicGraphicStyle {
   strokeWidth?: number;
   fill?: "none" | "background" | "outline";

@@ -1,9 +1,26 @@
 {
-  "date": "2026-10-13",
-  "extension": "local-atopile.atopile-local 0.3.1",
+  "date": "2026-10-14",
+  "extension": "local-atopile.atopile-local 0.4.0",
   "compiler": "atopile 0.15.9 native wheel with local source overlay",
   "platform": "Apple Silicon macOS",
   "checks": {
+    "python_tests_passed": 174,
+    "typescript_tests_passed": 45,
+    "typescript_assertions_passed": 422,
+    "extension_and_webview_typechecks": "passed",
+    "extension_package": "built and installed local-atopile.atopile-local@0.4.0",
+    "native_schematic_connectivity": "fresh exports checked by installed KiCad 10.0.7 CLI; exact PCB pad-net membership",
+    "live_websocket_native_export": "passed: 3 components, 3 nets, saved-file reuse and byte-identical PCB",
+    "installed_native_schematic_action": "passed in a new dedicated VS Code window: Open in KiCad returned successful launch and actual saved file path",
+    "native_editor_visual_inspection": "pending: Mac locked before Eeschema window could be inspected",
+    "browser_native_panel": "passed: explicit Open/New actions, bounded pending and errors, saved file retained on launch failure, optional real connection preview; no browser warnings/errors",
+    "edit_preservation": "passed: saved KiCad edit reuse, new snapshots never overwrite, deleted export regenerated",
+    "path_and_connectivity_guards": "passed: manifest traversal/symlinks/malformed JSON, unsupported symbol units, duplicate references, conflicting pad nets, native tampered-label rejection, timeout",
+    "pcb_preservation": "live user PCB SHA256 remained c2148f6e81f41fef073f9c80336d1774848cd75aaec768bab39b1604848c3f50",
+    "credential_scan": "no findings in changed source files or complete 0.4.0 VSIX; existing source base previously audited",
+    "native_render": "passed: KiCad PDF export visually checked; symbol reference/value/net labels readable"
+  },
+  "prior_0_3_1_checks": {
     "python_tests_passed": 144,
     "typescript_tests_passed": 38,
     "typescript_assertions_passed": 402,
@@ -25,17 +42,12 @@
     "board_access_regressions": "passed: actual preflight before inference, selected-target binding, blank target placement isolation, backup discovery, cancellation, bounded snapshot, startup history restoration",
     "chat_identity_and_board_status": "verified in installed VS Code: Atopile Local, ChatGPT (Codex), target and actual 3 part / 3 net read with timestamp"
   },
-  "prior_0_2_chatgpt_checks": {
-    "codex_protocol_regressions_passed": 9,
-    "chatgpt_native_login_and_final_tool_isolation": "passed with installed Codex CLI 0.162.0-alpha.17.2; no inference requested in final preflight",
-    "chatgpt_live_circuit_tool_round_trip": "passed: real AgentSession -> Codex -> layout_get_netlist -> ChatGPT answer; native ChatGPT account, no API key",
-    "chatgpt_extension_installation": "verified local-atopile.atopile-local@0.2.0"
-  },
   "limitations": [
-    "Read-only schematic projection; no schematic editing or .kicad_sch export",
-    "Only the supplied small demo tested end to end",
-    "No general local autorouter",
-    "Hosted catalog selection and DeepPCB remain optional services",
-    "No physical electrical or manufacturing validation"
+    "KiCad edits do not update .ato source",
+    "Export does not establish native UUID cross-probing or relink the existing PCB",
+    "Initial exporter requires real local single-unit KiCad symbols and at most 256 components",
+    "Exports are build artifacts; use Save As outside build before cleaning artifacts",
+    "Only the supplied small demo exercised end to end",
+    "No general local autorouter or physical electrical validation"
   ]
 }

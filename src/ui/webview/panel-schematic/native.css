@@ -1,0 +1,37 @@
+.native-schematic-page { height: 100vh; display: flex; flex-direction: column; color: var(--text-primary); background: var(--bg-primary); }
+.native-schematic-header { display: flex; align-items: center; gap: var(--spacing-md); padding: 13px 20px; border-bottom: 1px solid var(--border-color); }
+.native-schematic-header > span { color: var(--text-muted); font-size: var(--font-size-xs); margin-left: auto; }
+.native-schematic-content { flex: 1; overflow-y: auto; padding: 28px 24px; }
+.native-schematic-card, .native-schematic-editing, .native-schematic-preview-link { width: 100%; max-width: 680px; margin: 0 auto; }
+.native-schematic-card { border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 26px; background: var(--vscode-editor-background, var(--bg-primary)); }
+.native-schematic-icon { display: inline-flex; padding: 10px; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); margin-bottom: 16px; color: var(--text-secondary); }
+.native-schematic-card h1 { font-size: 19px; font-weight: 600; line-height: 1.4; margin: 0 0 12px; }
+.native-schematic-intro { color: var(--text-secondary); font-size: var(--font-size-sm); line-height: 1.7; margin: 0 0 20px; }
+.native-schematic-page code { font: inherit; font-family: var(--font-mono); }
+.native-schematic-context { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 0 0 22px; padding: 13px 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
+.native-schematic-context dt { font-size: var(--font-size-xxs); color: var(--text-muted); margin-bottom: 5px; }
+.native-schematic-context dd { margin: 0; font-size: var(--font-size-sm); overflow-wrap: anywhere; }
+.native-schematic-notice { color: var(--text-secondary); font-size: var(--font-size-sm); line-height: 1.6; margin: 0 0 16px; }
+.native-schematic-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.native-schematic-preservation { margin: 14px 0 0; color: var(--text-muted); font-size: var(--font-size-xs); line-height: 1.65; }
+.native-schematic-result { display: flex; flex-direction: column; gap: 9px; padding: 14px 0; }
+.native-schematic-result > strong { color: var(--success); font-size: var(--font-size-sm); }
+.native-schematic-result > code { font-size: var(--font-size-xs); overflow-wrap: anywhere; }
+.native-schematic-result > span { color: var(--text-muted); font-size: var(--font-size-xxs); }
+.native-schematic-card .alert { margin: 14px 0; }
+.native-schematic-warnings { color: var(--warning); margin-top: 18px; font-size: var(--font-size-xs); line-height: 1.6; }
+.native-schematic-warnings summary { cursor: pointer; }
+.native-schematic-warnings ul { padding-left: 18px; margin-bottom: 0; }
+.native-schematic-editing { padding: 22px 4px 18px; }
+.native-schematic-editing h2 { font-size: var(--font-size-sm); font-weight: 600; margin: 0 0 9px; }
+.native-schematic-editing p { color: var(--text-secondary); font-size: var(--font-size-xs); line-height: 1.75; margin: 0; }
+.native-schematic-editing .native-schematic-keep-copy { margin-top: 10px; }
+.native-schematic-preview-link { padding: 15px 0; border-top: 1px solid var(--border-subtle); }
+.native-schematic-preview-link > p { font-size: var(--font-size-xxs); color: var(--text-muted); margin: 5px 10px; }
+.native-schematic-spinner { animation: native-schematic-spin 1s linear infinite; }
+@keyframes native-schematic-spin { to { transform: rotate(360deg); } }
+.schematic-preview-page { display: flex; flex-direction: column; height: 100vh; min-height: 0; }
+.schematic-preview-back { padding: 7px 12px; border-bottom: 1px solid var(--border-color); background: var(--bg-primary); }
+.schematic-preview-host { flex: 1; min-height: 0; }
+.schematic-preview-host .schematic-app, .schematic-preview-host .schematic-empty { height: 100%; }
+@media (max-width: 520px) { .native-schematic-content { padding: 16px 12px; } .native-schematic-card { padding: 20px 16px; } .native-schematic-card h1 { font-size: 17px; } .native-schematic-context { gap: 12px; } .native-schematic-actions { align-items: stretch; flex-direction: column; } }

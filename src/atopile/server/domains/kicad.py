@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import asyncio
 import os
+import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 from typing import Any
 
@@ -13,15 +15,22 @@ from atopile.logging import get_logger
 
 log = get_logger(__name__)
 
+_MACOS_KICAD_ROOTS = (
+    Path("/Applications/KiCad"),
+    Path.home() / "Applications/KiCad",
+)
+
 
 def _clean_env_for_kicad() -> dict[str, str]:
-    """Return a copy of os.environ with VIRTUAL_ENV stripped.
+    """Keep the fork's Python runtime out of KiCad's internal scripting.
 
     KiCad's internal Python scripting breaks when our venv is active,
     so we remove VIRTUAL_ENV and its bin dir from PATH.
     """
     env = dict(os.environ)
     venv = env.pop("VIRTUAL_ENV", None)
+    env.pop("PYTHONHOME", None)
+    env.pop("PYTHONPATH", None)
     if venv:
         path_dirs = env.get("PATH", "").split(os.pathsep)
         venv_bins = [
@@ -30,6 +39,82 @@ def _clean_env_for_kicad() -> dict[str, str]:
         ]
         env["PATH"] = os.pathsep.join(d for d in path_dirs if d not in venv_bins)
     return env
+
+
+def _find_schematic_editor() -> tuple[Path, bool]:
+    """Return (editor path, is_macos_app), preferring KiCad's installed bundle."""
+    if sys.platform == "darwin":
+        for base in _MACOS_KICAD_ROOTS:
+            preferred = base / "KiCad.app/Contents/Applications/eeschema.app"
+            candidates = [preferred, base / "eeschema.app"]
+            if base.is_dir():
+                candidates.extend(sorted(base.glob("**/[Ee]eschema.app")))
+            for app in candidates:
+                if app.is_dir() and (app / "Contents/MacOS/eeschema").is_file():
+                    return app, True
+    name = "eeschema.exe" if sys.platform == "win32" else "eeschema"
+    executable = shutil.which(name)
+    if executable:
+        return Path(executable), False
+    raise FileNotFoundError(
+        "KiCad Schematic Editor (Eeschema) was not found. "
+        "Install the KiCad desktop app, or put eeschema on PATH."
+    )
+
+
+def launch_schematic(schematic_path: Path) -> dict[str, Any]:
+    """Open a saved native schematic without writing it or the matching PCB.
+
+    Callers must first confine the export path to the selected project. Matching
+    sibling filenames describe KiCad's project association, not verified UUID
+    linkage or successful cross-probing. Missing desktop apps raise an actionable
+    error so an exported file can still be offered for manual opening.
+    """
+    path = schematic_path.expanduser().resolve()
+    if path.suffix.lower() != ".kicad_sch":
+        raise ValueError("Select an existing .kicad_sch schematic file")
+    if not path.is_file():
+        raise FileNotFoundError(f"KiCad schematic does not exist: {path}")
+    editor, is_app = _find_schematic_editor()
+    env = _clean_env_for_kicad()
+    if is_app:
+        # LaunchServices supplies the application bundle environment and focuses
+        # an existing Eeschema instance. Paths are separate literal arguments.
+        completed = subprocess.run(
+            ["/usr/bin/open", "-a", str(editor), str(path)],
+            capture_output=True,
+            env=env,
+            timeout=15,
+        )
+        if completed.returncode:
+            raise RuntimeError(
+                "KiCad Schematic Editor could not open the schematic "
+                f"(exit code {completed.returncode})"
+            )
+    else:
+        process = subprocess.Popen(
+            [str(editor), str(path)],
+            start_new_session=True,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            env=env,
+        )
+        time.sleep(0.5)
+        return_code = process.poll()
+        if return_code is not None and return_code != 0:
+            raise RuntimeError(
+                f"KiCad Schematic Editor exited immediately with code {return_code}"
+            )
+    pcb = path.with_suffix(".kicad_pcb")
+    project = path.with_suffix(".kicad_pro")
+    return {
+        "status": "launched",
+        "schematicPath": str(path),
+        "pcbPath": str(pcb) if pcb.is_file() else None,
+        "projectPath": str(project) if project.is_file() else None,
+        "pcbAssociation": "matching_basename" if pcb.is_file() else "unavailable",
+    }
 
 
 def _launch_pcbnew(pcb_path: Path | None) -> None:
@@ -88,6 +173,10 @@ def _focus_pcbnew() -> None:
 
 class KicadService:
     """Business logic for KiCad launch/focus orchestration."""
+
+    async def open_schematic(self, schematic_path: Path) -> dict[str, Any]:
+        """Open an already exported, project-scoped native KiCad schematic."""
+        return await asyncio.to_thread(launch_schematic, schematic_path)
 
     async def open_kicad(self, msg: dict[str, Any]) -> dict[str, Any]:
         """Check if KiCad is running; focus it or launch + poll for readiness.

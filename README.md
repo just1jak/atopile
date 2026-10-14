@@ -1,7 +1,7 @@
-# Atopile Local 0.3.1
+# Atopile Local 0.4.0
 
-A local VS Code continuation of atopile 0.15.9 with a KiCad-symbol schematic
-viewer, ChatGPT through Codex or your own AI provider, local component imports,
+A local VS Code continuation of atopile 0.15.9 with native KiCad schematic
+export, ChatGPT through Codex or your own AI provider, local component imports,
 and net/placement/DRC tools. This is an independent
 fork, not an official atopile release.
 
@@ -11,7 +11,7 @@ On this Mac, double-click **Open Atopile Local.command** beside the source
 folder. It opens the included circuit in VS Code. Select the build target and
 choose **Inspect → Schematic**. Other inspection views remain available beside it.
 
-For a new installation, install the supplied `atopile-local-0.3.1.vsix` and open the supplied
+For a new installation, install the supplied `atopile-local-0.4.0.vsix` and open the supplied
 `Atopile Local.code-workspace`. The provided installer registers the runtime
 for other VS Code workspaces too. ChatGPT (Codex) is the default AI provider.
 Run **Atopile Local: Connect ChatGPT** to reuse your local Codex sign-in or start
@@ -40,7 +40,7 @@ rather than an OpenAI-style `/v1` suffix. Your provider's prices/limits apply.
 
 ## Portable setup
 
-Requires VS Code 1.105+, uv, and KiCad for native layout/DRC. ChatGPT assistance
+Requires VS Code 1.105+, uv, and KiCad for native schematic export, layout and DRC. ChatGPT assistance
 also requires a Codex CLI with app-server dynamic tools and a ChatGPT plan that
 includes Codex access. Tested on Apple
 Silicon macOS with Python 3.14.6 and KiCad 10.0.7. The launcher is POSIX (macOS
@@ -53,7 +53,7 @@ python3 local/launch.py
 ```
 
 Download the source and extension from the
-[GitHub release](https://github.com/just1jak/atopile/releases/tag/local-v0.3.1),
+[GitHub release](https://github.com/just1jak/atopile/releases/tag/local-v0.4.0),
 or clone the fork's `feature/atopile-local` branch. `--download` fetches the
 matching extension release and verifies its SHA-256 before installation. If
 the VSIX is already beside the source folder, omit `--download`.
@@ -99,24 +99,31 @@ Version 0.3.1 fixes Codex tool discovery for the full production tool catalog.
 After updating, reload the VS Code window so the backend and tool bridge restart.
 Existing chat history is retained.
 
-## Schematic viewer
+## Schematics in KiCad
 
-After building, open **Inspect → Schematic**, or run **Atopile Local: Open Panel**
-and select **Schematic**. The canvas reads the PCB's actual pad-net assignments
-and uses local KiCad symbol artwork. Select a net to highlight its wires and
-connected pins. Select a component to inspect its pins and values, jump to its
-source declaration, or open the PCB with the matching footprint highlighted.
-The selected net can also be highlighted in the PCB view.
+After building, open **Inspect → Schematic** and choose **Open in KiCad**.
+Atopile Local saves a real `.kicad_sch` file, with embedded KiCad symbols and
+nets taken from the PCB's actual pad assignments, then opens KiCad's Schematic
+Editor. KiCad must be installed: each new snapshot is checked using its native
+netlist exporter. The saved file remains available if the editor cannot launch.
 
-The schematic refreshes after builds and project/target changes. Pan, zoom,
-fit-to-view, and net search are available. Missing artwork is marked explicitly
-and displayed as a pin box. Symbol availability does not invent connections.
-Power/data Trees remain separate views and may be empty for generic parts.
+The panel shows the saved file's location. Reopening the same circuit revision
+uses the saved file, preserving edits made in KiCad. **Generate new from circuit**
+creates a separate snapshot and opens it; it never overwrites an earlier file.
+Exports live under the selected target's build output in a `schematic` folder.
+Keep a copy outside `build/` before cleaning build artifacts.
 
-This version is a read-only schematic projection, not a schematic editor or
-`.kicad_sch` exporter. Its wiring describes logical connections; it does not
-represent physical PCB trace routes or replace electrical validation. Only
-the included small demo has been tested end to end.
+This is a code-to-schematic export: edits in KiCad do not update `.ato` source.
+The existing PCB is left in place. Source and PCB footprint identifiers are
+included as symbol properties, but native KiCad PCB cross-probing/relinking is
+not established by this export. Missing symbols, unsupported multi-unit parts,
+and ambiguous pin mappings stop export with a specific error. This initial
+exporter supports up to 256 components per snapshot.
+
+**Preview connections** opens the optional inline preview with net highlighting
+and links to source declarations and the PCB view. Its wiring describes logical
+connections rather than physical PCB trace routes. Power/data Trees remain
+separate views and may be empty for generic parts.
 
 The routed offline indicator has three local components, three nets, and a
 32 x 18 mm outline. Its layout is a specific hand-authored recipe. Generic

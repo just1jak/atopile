@@ -1008,6 +1008,7 @@ class CoreSocket:
         match action:
             case (
                 "getSchematicData"
+                | "exportSchematic"
                 | "schematicOpenSource"
                 | "schematicSelectComponent"
                 | "schematicSelectNet"
@@ -1047,7 +1048,36 @@ class CoreSocket:
                         raise ValueError(
                             "Schematic project is not in the current workspace"
                         )
-                    if action == "getSchematicSelection":
+                    if action == "exportSchematic":
+                        from atopile.server.domains.schematic_export import (
+                            export_schematic,
+                        )
+                        from atopile.server.domains.schematic_models import (
+                            SchematicExportResult,
+                        )
+
+                        for flag in ("forceNew", "openInKicad"):
+                            if flag in msg and not isinstance(msg[flag], bool):
+                                raise ValueError(f"{flag} must be a boolean")
+                        exported = await asyncio.to_thread(
+                            export_schematic,
+                            project_root,
+                            target_name,
+                            force_new=msg.get("forceNew", False),
+                        )
+                        result_model = SchematicExportResult.model_validate(exported)
+                        if msg.get("openInKicad", False):
+                            try:
+                                await self._kicad_service.open_schematic(
+                                    Path(result_model.path)
+                                )
+                                result_model.opened = True
+                            except Exception as exc:
+                                # A saved file remains useful when the native editor
+                                # cannot launch; retain its path in the same result.
+                                result_model.open_error = str(exc)
+                        result = result_model.model_dump(by_alias=True)
+                    elif action == "getSchematicSelection":
                         selection = self._schematic_selection
                         result = (
                             selection

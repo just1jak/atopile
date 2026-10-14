@@ -175,3 +175,20 @@ class SchematicSelection(CamelModel):
     pad_ids: list[str]
     net_name: str | None
     sequence: int = Field(default=0, ge=0, json_schema_extra=_TS_OPTIONAL)
+
+
+class SchematicExportResult(CamelModel):
+    """A saved native KiCad snapshot; reopening never overwrites user edits."""
+
+    path: str
+    relative_path: str
+    project_root: str
+    target: str
+    revision: str
+    layout_path: str
+    component_count: int = Field(ge=0)
+    net_count: int = Field(ge=0)
+    warnings: list[str]
+    reused: bool
+    opened: bool = False
+    open_error: str | None = None

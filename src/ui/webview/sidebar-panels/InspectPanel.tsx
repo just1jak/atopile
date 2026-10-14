@@ -43,7 +43,7 @@ export function InspectPanel({ disabled }: InspectPanelProps) {
       {
         id: "schematic",
         label: "Schematic",
-        description: "View KiCad symbols, compiled connections, and net highlights.",
+        description: "Generate an editable schematic and open it in KiCad.",
         icon: <CircuitBoard size={16} />,
         onClick: () => void requestPanel("panel-schematic"),
       },
