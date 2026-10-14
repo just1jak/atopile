@@ -1,15 +1,15 @@
 {
   "date": "2026-10-13",
-  "extension": "local-atopile.atopile-local 0.3.0",
+  "extension": "local-atopile.atopile-local 0.3.1",
   "compiler": "atopile 0.15.9 native wheel with local source overlay",
   "platform": "Apple Silicon macOS",
   "checks": {
-    "python_tests_passed": 126,
-    "typescript_tests_passed": 33,
-    "typescript_assertions_passed": 381,
+    "python_tests_passed": 144,
+    "typescript_tests_passed": 38,
+    "typescript_assertions_passed": 402,
     "extension_and_webview_typechecks": "passed",
     "extension_package": "built; verified schematic JS/CSS and separate geometry worker are present",
-    "extension_installation": "verified local-atopile.atopile-local@0.3.0; own runtime registered; launcher opened supplied workspace",
+    "extension_installation": "verified local-atopile.atopile-local@0.3.1; both existing Atopile windows reloaded",
     "installed_schematic_render": "passed in VS Code; local KiCad primitives, three components and three nets",
     "browser_interactions": "passed: component/pin/net selection, net search, source and PCB action callbacks, zoom and fit; no warnings or errors",
     "websocket_schematic_rpc": "passed against a real isolated core server: 3 KiCad symbols, 3 PCB-derived nets, source line 14, 2 component and 2 pad IDs for lv, event and saved selection",
@@ -21,7 +21,9 @@
       "kicad_unconnected_items": 0
     },
     "source_and_package_audit": "no runtime state, dependency trees, private credentials or QA fixtures selected for publication",
-    "chatgpt_integration": "unchanged except client version; prior 0.2 verification below, no new live inference for this release"
+    "chatgpt_integration": "passed with full production tool catalog and saved chat in installed VS Code; see CHATGPT_VERIFICATION.json",
+    "board_access_regressions": "passed: actual preflight before inference, selected-target binding, blank target placement isolation, backup discovery, cancellation, bounded snapshot, startup history restoration",
+    "chat_identity_and_board_status": "verified in installed VS Code: Atopile Local, ChatGPT (Codex), target and actual 3 part / 3 net read with timestamp"
   },
   "prior_0_2_chatgpt_checks": {
     "codex_protocol_regressions_passed": 9,

@@ -47,6 +47,28 @@ class SetPositionArgs(PositionArgs):
     y_mm: float
 
 
+def resolve_layout_target(project_root: Path, requested: str | None) -> str:
+    config = ProjectConfig.from_path(project_root)
+    if config is None:
+        raise ValueError("No ato.yaml found; specify the PCB path")
+    if requested:
+        if requested not in config.builds:
+            raise ValueError(f"Unknown build target: {requested}")
+        return requested
+    if "default" in config.builds:
+        return "default"
+    if len(config.builds) == 1:
+        return next(iter(config.builds))
+    raise ValueError(
+        "Select a build target for this project: " + ", ".join(sorted(config.builds))
+    )
+
+
+def _requested_layout_target(args: LayoutArgs, scope: Scope) -> str | None:
+    explicit = str(args.get("target") or "").strip()
+    return explicit or (scope.selected_target or "").strip() or None
+
+
 def _layout_path(args: LayoutArgs, scope: Scope) -> Path:
     if args.get("path"):
         path = scope.resolve(args["path"])
@@ -54,9 +76,10 @@ def _layout_path(args: LayoutArgs, scope: Scope) -> Path:
         config = ProjectConfig.from_path(scope.project_root)
         if config is None:
             raise ValueError("No ato.yaml found; specify the PCB path")
-        target = args.get("target", "default")
-        if target not in config.builds:
-            raise ValueError(f"Unknown build target: {target}")
+        target = resolve_layout_target(
+            scope.project_root,
+            _requested_layout_target(args, scope),
+        )
         path = scope.resolve(str(config.builds[target].paths.layout))
     if not path.is_file() or path.suffix.lower() != ".kicad_pcb":
         raise ValueError(f"KiCad PCB does not exist: {path}")
@@ -160,6 +183,11 @@ async def layout_get_summary(args: LayoutArgs, scope: Scope) -> dict[str, Any]:
     component_limit = max(1, min(500, int(args.get("max_components", 100))))
     net_limit = max(1, min(500, int(args.get("max_nets", 100))))
     return {
+        "target": resolve_layout_target(
+            scope.project_root, _requested_layout_target(args, scope)
+        )
+        if not args.get("path")
+        else _requested_layout_target(args, scope),
         "layout_path": str(path),
         "component_count": len(components),
         "components": components[:component_limit],
@@ -253,9 +281,9 @@ def _set_position(args: SetPositionArgs, scope: Scope) -> dict[str, Any]:
         updated = kicad.dumps(pcb_file)
         if path.read_bytes() != original:
             raise RuntimeError("PCB changed in the editor; inspect again before moving")
-        backup = path.with_name(
-            f"{path.stem}.local-agent-{time.time_ns()}.bak.kicad_pcb"
-        )
+        # A second *.kicad_pcb in this directory makes target discovery
+        # ambiguous. Keep a byte-for-byte backup with a non-layout suffix.
+        backup = path.with_name(f"{path.name}.local-agent-{time.time_ns()}.bak")
         backup.write_bytes(original)
         with tempfile.NamedTemporaryFile(
             mode="w",
@@ -292,7 +320,22 @@ def _set_position(args: SetPositionArgs, scope: Scope) -> dict[str, Any]:
 async def layout_set_component_position(
     args: SetPositionArgs, scope: Scope
 ) -> dict[str, Any]:
-    return await asyncio.to_thread(_set_position, args, scope)
+    worker = asyncio.create_task(asyncio.to_thread(_set_position, args, scope))
+    try:
+        return await asyncio.shield(worker)
+    except asyncio.CancelledError:
+        # Threaded edits cannot be cancelled. Do not acknowledge Stop while an
+        # atomic board edit can still commit, even if Stop is requested again.
+        while not worker.done():
+            try:
+                await asyncio.shield(worker)
+            except asyncio.CancelledError:
+                continue
+            except Exception:
+                break
+        if not worker.cancelled():
+            worker.exception()  # Consume failures; cancellation remains the outcome.
+        raise
 
 
 def _kicad_cli() -> str:

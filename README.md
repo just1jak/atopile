@@ -1,4 +1,4 @@
-# Atopile Local 0.3.0
+# Atopile Local 0.3.1
 
 A local VS Code continuation of atopile 0.15.9 with a KiCad-symbol schematic
 viewer, ChatGPT through Codex or your own AI provider, local component imports,
@@ -11,7 +11,7 @@ On this Mac, double-click **Open Atopile Local.command** beside the source
 folder. It opens the included circuit in VS Code. Select the build target and
 choose **Inspect → Schematic**. Other inspection views remain available beside it.
 
-For a new installation, install the supplied `atopile-local-0.3.0.vsix` and open the supplied
+For a new installation, install the supplied `atopile-local-0.3.1.vsix` and open the supplied
 `Atopile Local.code-workspace`. The provided installer registers the runtime
 for other VS Code workspaces too. ChatGPT (Codex) is the default AI provider.
 Run **Atopile Local: Connect ChatGPT** to reuse your local Codex sign-in or start
@@ -53,7 +53,7 @@ python3 local/launch.py
 ```
 
 Download the source and extension from the
-[GitHub release](https://github.com/just1jak/atopile/releases/tag/local-v0.3.0),
+[GitHub release](https://github.com/just1jak/atopile/releases/tag/local-v0.3.1),
 or clone the fork's `feature/atopile-local` branch. `--download` fetches the
 matching extension release and verifies its SHA-256 before installation. If
 the VSIX is already beside the source folder, omit `--download`.
@@ -82,6 +82,22 @@ Open the **Atopile Local** activity-bar view to build, browse components and
 nets, inspect pinouts, and open the PCB/3D viewers. The independent agent can
 edit project files, build and debug circuits, read logical nets, inspect or
 change placements (with backups), and run KiCad DRC.
+
+## Board access in chat
+
+The chat identifies itself as **Atopile Local** and shows its configured AI
+provider. Before each message, the host checks the session's selected PCB with
+the local inspection tool. **Board last read** reports the checked target,
+part count, and net count. A failed check shows the actual error.
+
+The agent can read placement and logical nets, move components with backups,
+and run KiCad DRC. Placement changes preserve existing tracks but do not reroute
+them. Ask it to inspect the board first, state any fixed connector positions
+and board dimensions, and review DRC after moving parts.
+
+Version 0.3.1 fixes Codex tool discovery for the full production tool catalog.
+After updating, reload the VS Code window so the backend and tool bridge restart.
+Existing chat history is retained.
 
 ## Schematic viewer
 

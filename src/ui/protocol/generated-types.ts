@@ -557,6 +557,17 @@ export interface UiActionResultMessage {
   [key: string]: unknown;
 }
 
+export interface UiAgentBoardContextData {
+  status: "checking" | "ready" | "unavailable";
+  projectRoot: string;
+  target: string;
+  layoutPath: string | null;
+  componentCount: number | null;
+  netCount: number | null;
+  error: string | null;
+  checkedAt: number | null;
+}
+
 export interface UiAgentChecklistData {
   items: UiAgentChecklistItemData[];
 }
@@ -615,6 +626,7 @@ export interface UiAgentSessionData {
   activeRunStatus: string | null;
   activeRunStopRequested: boolean;
   error: string | null;
+  boardContext: UiAgentBoardContextData | null;
   createdAt: number;
   updatedAt: number;
 }
@@ -1215,6 +1227,7 @@ export const DEFAULT_UiAgentSessionData: UiAgentSessionData = {
   "activeRunId": null,
   "activeRunStatus": null,
   "activeRunStopRequested": false,
+  "boardContext": null,
   "checklist": null,
   "createdAt": 0.0,
   "error": null,

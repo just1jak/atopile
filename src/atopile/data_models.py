@@ -1409,6 +1409,19 @@ class UiAgentMessageData(CamelModel):
     error_context: dict[str, Any] | None = None
 
 
+class UiAgentBoardContextData(CamelModel):
+    """Result of the host's real, scoped board read before a local chat turn."""
+
+    status: Literal["checking", "ready", "unavailable"]
+    project_root: str
+    target: str
+    layout_path: str | None = None
+    component_count: int | None = None
+    net_count: int | None = None
+    error: str | None = None
+    checked_at: float | None = None
+
+
 class UiAgentSessionData(CamelModel):
     """Canonical agent session summary mirrored into the UI store."""
 
@@ -1421,6 +1434,7 @@ class UiAgentSessionData(CamelModel):
     active_run_status: str | None = None
     active_run_stop_requested: bool = False
     error: str | None = None
+    board_context: UiAgentBoardContextData | None = None
     created_at: float = 0.0
     updated_at: float = 0.0
 

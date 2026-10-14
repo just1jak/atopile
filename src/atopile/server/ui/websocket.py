@@ -725,6 +725,7 @@ class CoreSocket:
         message: str,
         *,
         error_context: dict[str, Any] | None = None,
+        selected_targets: list[str] | None = None,
     ) -> None:
         """Run a turn in a background task, forwarding events to the frontend."""
         try:
@@ -734,6 +735,7 @@ class CoreSocket:
             async for event in session.send_message(
                 message,
                 error_context=error_context,
+                selected_target=self._agent_turn_target(session, selected_targets),
             ):
                 match event:
                     case Thinking():
@@ -849,6 +851,29 @@ class CoreSocket:
             self._agent.save_sessions()
             self._push_agent_state()
 
+    def _agent_turn_target(
+        self, session: AgentSession, requested: list[str] | None = None
+    ) -> str | None:
+        """Never borrow a board target from a different project's visible UI.
+
+        Explicit names are resolved/validated by the real layout tool against
+        the session's own ato.yaml. Without a visible selection, the tool may
+        use a default or sole target, and reports ambiguity as an actual error.
+        """
+        if requested:
+            target = str(requested[0]).strip()
+            if target:
+                return target
+        project_root, target = self._selected_project_context()
+        if (
+            project_root
+            and target
+            and same_path(project_root, str(session.project_root))
+            and same_path(target.root, str(session.project_root))
+        ):
+            return target.name
+        return None
+
     async def _apply_project_selection(
         self,
         *,
@@ -905,6 +930,11 @@ class CoreSocket:
                 project_list,
                 cast(UiProjectState, self._store.get("project_state")),
             )
+            if next_project_state.selected_project_root:
+                self._agent.load_sessions(
+                    Path(next_project_state.selected_project_root)
+                )
+                self._push_agent_state()
             await sidebar.apply_project_selection(
                 store=self._store,
                 project_files=self._project_files,
@@ -3350,8 +3380,15 @@ class CoreSocket:
                     session = self._agent.get_session(agent_session_id)
                     if session is None:
                         raise ValueError(f"Session not found: {agent_session_id}")
+                    if not same_path(req.project_root, str(session.project_root)):
+                        raise ValueError("This chat belongs to a different project")
                     task = asyncio.create_task(
-                        self._run_agent_turn(session, req.message),
+                        self._run_agent_turn(
+                            session,
+                            req.message,
+                            error_context=req.error_context,
+                            selected_targets=req.selected_targets,
+                        ),
                     )
                     self._run_tasks[session.session_id] = task
 

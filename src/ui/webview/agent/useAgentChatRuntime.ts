@@ -130,8 +130,8 @@ export function useAgentChatRuntime(
     setTurnElapsed(0);
   }, [sending]);
 
-const statusClass = sending || isStopping ? 'working' : sessionState.isReady ? 'ready' : 'idle';
-  const statusText = (sending || isStopping) ? 'Working' : sessionState.isReady ? 'Ready' : 'Idle';
+  const statusClass = sending || isStopping ? 'working' : sessionState.isReady ? 'ready' : 'idle';
+  const statusText = (sending || isStopping) ? 'Working' : sessionState.isReady ? 'Chat ready' : 'Idle';
 
   // Keep modelName in sync with the session's persisted model. modelName is
   // the source of truth for the dropdown; this effect only fires when the
@@ -191,6 +191,7 @@ const statusClass = sending || isStopping ? 'working' : sessionState.isReady ? '
     isReady: sessionState.isReady,
     headerTitle: sessionState.headerTitle,
     activeChatTitle: sessionState.activeChatTitle,
+    boardContext: activeSession?.boardContext ?? null,
     changedFilesSummary,
     contextUsage,
     modelName,

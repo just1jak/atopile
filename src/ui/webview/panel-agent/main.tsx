@@ -1,4 +1,4 @@
-import { isLocalMode, localAgent, localAgentCommand } from "../common/localAgent";
+import { isLocalMode, localAgent, localAgentCommand, localProviderLabel } from "../common/localAgent";
 import { useEffect, useRef, useState } from "react";
 import { AlertCircle, Loader2, Plus, MessageSquareText } from "lucide-react";
 import { render } from "../common/render";
@@ -8,6 +8,7 @@ import { AgentHistoryDrawer } from "../agent/components/AgentHistoryDrawer";
 import { AgentMessagesView } from "../agent/components/AgentMessagesView";
 import { AgentChecklistBar, AgentMetadataStrip } from "../agent/components/AgentMetadataStrip";
 import { useAgentChatRuntime } from "../agent/useAgentChatRuntime";
+import { boardContextStatus } from "../agent/runtime/boardContext";
 import { Alert, AlertTitle, AlertDescription } from "../common/components/Alert";
 import type { FileNode, ModuleDefinition } from "../../protocol/generated-types";
 import "../sidebar-panels/AgentPanel.css";
@@ -61,13 +62,18 @@ function AgentPanelApp() {
   const messagesWithErrorContext = runtime.messages;
 
   const latestChecklist = runtime.checklist;
+  const boardStatus = boardContextStatus(runtime.boardContext, projectRoot, selectedTargets[0]);
 
   return (
     <div className="agent-panel-standalone agent-chat-dock">
       <div className="agent-panel-header">
         <div className="agent-panel-header-left">
-          <span className="agent-panel-title">{runtime.headerTitle}</span>
+          <span className="agent-panel-identity">
+            <span className="agent-panel-title">Atopile Local</span>
+            {isLocalMode && <span className="agent-panel-provider">{localProviderLabel()}</span>}
+          </span>
           <span className="agent-chat-thread-row">
+            <span className="agent-chat-project-name">{runtime.headerTitle}</span>
             <span className="agent-chat-thread-title" title={runtime.activeChatTitle}>
               {runtime.activeChatTitle}
             </span>
@@ -106,6 +112,11 @@ function AgentPanelApp() {
             <Plus size={12} />
           </button>
         </div>
+      </div>
+
+      <div className={`agent-board-context ${boardStatus.state}`} role="status" aria-live="polite">
+        <span>{boardStatus.label}</span>
+        {boardStatus.detail && <span className="agent-board-context-detail">{boardStatus.detail}</span>}
       </div>
 
       {latestChecklist && (

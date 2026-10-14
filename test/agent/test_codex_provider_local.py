@@ -16,6 +16,45 @@ TOOL = {
 }
 
 
+def test_app_server_keeps_dynamic_tool_bridge_running_without_native_access(monkeypatch):
+    """A real model discovers this registry via exec, before any tool/call RPC."""
+    import json
+    from types import SimpleNamespace
+    from atopile.agent.providers import codex
+
+    async def scenario():
+        captured = []
+        stderr = asyncio.StreamReader()
+        stderr.feed_eof()
+
+        async def spawn(*args, **kwargs):
+            captured.extend(args)
+            return SimpleNamespace(returncode=0, stderr=stderr)
+
+        monkeypatch.setattr(codex, "codex_executable", lambda: "codex")
+        monkeypatch.setattr(codex.asyncio, "create_subprocess_exec", spawn)
+        server = codex.StdioAppServer()
+        try:
+            await server.start()
+            config = dict(
+                value.split("=", 1)
+                for index, value in enumerate(captured)
+                if index and captured[index - 1] == "-c"
+            )
+            assert json.loads(config["features.code_mode_host"]) is True
+            assert json.loads(config["features.code_mode"]) is False
+            assert json.loads(config["features.shell_tool"]) is False
+            assert json.loads(config["features.unified_exec"]) is False
+            assert json.loads(config["features.apps"]) is False
+            assert json.loads(config["features.plugins"]) is False
+            assert json.loads(config["features.browser_use"]) is False
+            assert json.loads(config["forced_login_method"]) == "chatgpt"
+        finally:
+            await server.close()
+
+    asyncio.run(scenario())
+
+
 class FakeServer:
     def __init__(self, account="chatgpt", mcp_status="disabled"):
         self.queue = asyncio.Queue()
@@ -169,6 +208,38 @@ def make(server):
     )
     provider.bind_project(Path.cwd())
     return provider
+
+
+def test_saved_restored_chat_keeps_its_native_conversation_before_first_turn():
+    provider = make(FakeServer())
+    provider.restore({"provider": "codex", "thread_id": "saved-conversation"})
+    assert provider.snapshot()["thread_id"] == "saved-conversation"
+
+
+def test_busy_window_resume_keeps_conversation_for_retry():
+    class BusyServer(FakeServer):
+        async def send(self, message):
+            if message.get("method") == "thread/resume":
+                self.sent.append(message)
+                await self.queue.put({"id": message["id"], "error": {
+                    "message": "thread saved-conversation already has an active writer"
+                }})
+                return
+            await super().send(message)
+
+    async def scenario():
+        server = BusyServer()
+        provider = make(server)
+        provider.restore({"provider": "codex", "thread_id": "saved-conversation"})
+        try:
+            with pytest.raises(RuntimeError, match="another Atopile Local window"):
+                await run(provider, [{"role": "user", "content": "Read the board"}])
+            assert provider.snapshot()["thread_id"] == "saved-conversation"
+            assert not any(m.get("method") == "thread/start" for m in server.sent)
+        finally:
+            await provider.aclose()
+
+    asyncio.run(scenario())
 
 
 async def run(provider, messages, instructions="Read circuit nets"):

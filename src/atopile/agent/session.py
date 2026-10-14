@@ -243,6 +243,7 @@ class AgentSession:
         self._error: str | None = None
         self._stop_requested: bool = False
         self._steering_messages: list[str] = []
+        self._board_context: dict[str, Any] | None = None
 
     # ── Model selection ───────────────────────────────────────────────
 
@@ -286,11 +287,13 @@ class AgentSession:
         message: str,
         *,
         error_context: dict[str, Any] | None = None,
+        selected_target: str | None = None,
     ) -> AsyncIterator[TurnEvent]:
         """Run one user turn, yielding events as they happen."""
         msg_id = self._start_run(message, error_context=error_context)
         scope = Scope(
             allowed_roots=[self.project_root],
+            selected_target=selected_target,
             checklist=self._checklist,
             active_skills=list(self._active_skills),
             wait_for_build=(
@@ -298,6 +301,24 @@ class AgentSession:
             ),
         )
         bg = _BackgroundEvents()
+        traces: list[ToolTrace] = []
+        scope.layout_tools = [
+            definition["name"]
+            for definition in self._registry.definitions()
+            if definition["name"].startswith("layout_")
+        ]
+        check_board = (
+            local_mode_enabled() and "layout_get_summary" in scope.layout_tools
+        )
+        self._board_context = (
+            {
+                "status": "checking",
+                "project_root": str(self.project_root),
+                "target": selected_target or "default",
+            }
+            if check_board
+            else None
+        )
 
         # Generate title for new sessions (first message)
         is_first_message = (
@@ -307,6 +328,40 @@ class AgentSession:
             bg.spawn(self._generate_title_event(message))
 
         yield Thinking()
+        if check_board:
+            args: dict[str, Any] = {"max_components": 24, "max_nets": 48}
+            if selected_target:
+                args["target"] = selected_target
+            name = "layout_get_summary"
+            yield ToolStart(name=name, label=self._registry.label(name), args=args)
+            trace = await self._execute(name, args, scope)
+            traces.append(trace)
+            result = trace.result
+            context = {
+                "status": "ready" if trace.ok else "unavailable",
+                "project_root": str(self.project_root),
+                "target": result.get("target") or selected_target or "default",
+                "checked_at": time.time(),
+            }
+            if trace.ok:
+                context.update(
+                    {
+                        "layout_path": result.get("layout_path"),
+                        "component_count": result.get("component_count"),
+                        "net_count": result.get("net_count"),
+                    }
+                )
+                scope.selected_target = str(context["target"])
+                scope.board_summary = _bounded_board_summary(result)
+            else:
+                context["error"] = str(
+                    result.get("error") or "Board inspection failed"
+                )[:1000]
+            self._board_context = context
+            scope.board_context = context
+            self._update_pending_message(msg_id, traces=traces)
+            yield ToolEnd(name=name, ok=trace.ok, trace=trace)
+            yield Thinking()
         response: LLMResponse | None = None
         accumulated_text = ""
         accumulated_reasoning = ""
@@ -329,7 +384,6 @@ class AgentSession:
         usage = TokenUsage()
         _accumulate(usage, response.usage)
 
-        traces: list[ToolTrace] = []
         started_at = time.monotonic()
         loops = 0
 
@@ -416,6 +470,13 @@ class AgentSession:
         provider-internal history so the next turn is valid. Safe to call
         even if the run had already finished normally.
         """
+        if self._board_context and self._board_context.get("status") == "checking":
+            self._board_context = {
+                **self._board_context,
+                "status": "unavailable",
+                "error": f"Board check {reason.lower()} before completion.",
+                "checked_at": time.time(),
+            }
         had_work = self._active_run_id is not None or any(
             m.get("pending") for m in self._messages
         )
@@ -489,6 +550,7 @@ class AgentSession:
             "active_run_status": "running" if self._active_run_id else None,
             "active_run_stop_requested": self._stop_requested,
             "error": self._error,
+            "board_context": self._board_context,
             "created_at": self._created_at,
             "updated_at": self._updated_at,
         }
@@ -954,6 +1016,44 @@ class Agent:
 
 
 # ── Helpers ───────────────────────────────────────────────────────────
+
+
+def _bounded_board_summary(result: dict[str, Any]) -> dict[str, Any]:
+    """A small actual-result snapshot for instructions, independent of board size."""
+    scalar_keys = (
+        "target",
+        "layout_path",
+        "component_count",
+        "net_count",
+        "track_count",
+        "via_count",
+        "zone_count",
+        "components_truncated",
+        "nets_truncated",
+    )
+    summary = {key: result[key] for key in scalar_keys if key in result}
+    summary["components"] = [
+        {
+            key: value[:240] if isinstance(value, str) else value
+            for key, value in component.items()
+            if key
+            in {
+                "reference",
+                "address",
+                "value",
+                "x_mm",
+                "y_mm",
+                "rotation_deg",
+                "layer",
+                "locked",
+            }
+        }
+        for component in result.get("components", [])[:24]
+    ]
+    summary["net_names"] = [
+        str(name)[:160] for name in result.get("net_names", [])[:48]
+    ]
+    return summary
 
 
 # Separator inserted between reasoning segments from successive model

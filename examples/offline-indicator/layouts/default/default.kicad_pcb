@@ -107,7 +107,7 @@
 	(footprint "Local_Input2:Input2"
 		(layer "F.Cu")
 		(uuid "340cc292-f79c-4721-b4bc-56474642524b")
-		(at 5 9 0)
+		(at 3.75 13 0)
 		(property "LCSC" "MANUAL-Input2"
 			(at 0 0 0)
 			(layer "User.9")

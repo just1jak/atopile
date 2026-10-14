@@ -14,14 +14,25 @@ async def main() -> None:
     from atopile.agent.providers import make_provider, resolve_model
     from atopile.agent.providers.base import ModelId
     from atopile.agent.session import AgentSession, Done
-    from atopile.agent.tools.layout import layout_get_netlist
-    from atopile.agent.tools.registry import ToolRegistry
+    from atopile.agent.tools import create_registry
 
     if os.environ.get("ATOPILE_AGENT_PROVIDER", "codex") != "codex":
         raise RuntimeError("This check requires the ChatGPT (Codex) provider")
-    registry = ToolRegistry()
-    registry.register(layout_get_netlist._tool_def)
-    model = resolve_model(ModelId.GPT_5_4)
+    # Exercise production discovery: a one-tool catalog bypasses the bridge
+    # that current Codex models use for the complete agent registry.
+    registry = create_registry()
+    execute = registry.execute
+    blocked = []
+    allowed = {"layout_get_summary", "layout_get_netlist"}
+
+    async def read_only_execute(name, args, scope):
+        if name not in allowed:
+            blocked.append(name)
+            raise RuntimeError("This diagnostic only allows summary and netlist reads")
+        return await execute(name, args, scope)
+
+    registry.execute = read_only_execute
+    model = resolve_model(ModelId("codex-default"))
     provider = make_provider(model)
     session = AgentSession(
         session_id="chatgpt-connection-verification",
@@ -29,7 +40,7 @@ async def main() -> None:
         provider=provider,
         model=model,
         registry=registry,
-        skill_ids=[],
+        skill_ids=["agent", "ato-language"],
         max_tool_loops=4,
         max_turn_seconds=120,
     )
@@ -45,13 +56,14 @@ async def main() -> None:
                     result = event
         if result is None or not result.text or not result.traces:
             raise AssertionError("ChatGPT did not complete a circuit tool round trip")
-        trace = result.traces[0]
-        if trace.name != "layout_get_netlist" or not trace.ok:
+        trace = next((t for t in result.traces if t.name == "layout_get_netlist"), None)
+        if trace is None or not trace.ok or blocked:
             raise AssertionError("The local net tool failed")
         print(json.dumps({
             "provider": "codex",
             "auth": "native ChatGPT login; no API key",
             "circuit_tool_round_trip": "passed",
+            "full_production_tool_catalog": True,
             "tool": trace.name,
             "tool_result": trace.result,
             "answer": result.text,

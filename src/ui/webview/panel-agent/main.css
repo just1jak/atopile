@@ -18,10 +18,52 @@
 
 .agent-panel-header-left {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
   min-width: 0;
   flex: 1;
+}
+
+.agent-panel-identity {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+}
+
+.agent-panel-provider,
+.agent-chat-project-name {
+  font-size: var(--font-size-xxs);
+  color: var(--text-secondary);
+}
+
+.agent-chat-project-name {
+  flex-shrink: 0;
+}
+
+.agent-board-context {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--vscode-panel-border, var(--border-subtle));
+  color: var(--text-secondary);
+  font-size: var(--font-size-xxs);
+  flex-shrink: 0;
+}
+
+.agent-board-context.ready {
+  color: var(--vscode-testing-iconPassed, var(--text-primary));
+}
+
+.agent-board-context.unavailable {
+  color: var(--vscode-editorWarning-foreground, var(--text-primary));
+}
+
+.agent-board-context-detail {
+  color: var(--text-secondary);
+  overflow-wrap: anywhere;
 }
 
 .agent-panel-title {

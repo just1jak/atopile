@@ -43,7 +43,6 @@ DISABLED_FEATURES = (
     "multi_agent",
     "multi_agent_v2",
     "code_mode",
-    "code_mode_host",
     "view_image",
     "image_generation",
     "workspace_dependencies",
@@ -127,6 +126,11 @@ class StdioAppServer:
             "analytics.enabled": False,
             "agents.enabled": False,
             "features.skip_host_skill_discovery": True,
+            # Current Codex models discover/call client dynamic tools through
+            # this JavaScript bridge. Disabling it hides a working PCB registry
+            # behind an internal "code-mode host is disabled" tool error.
+            # Native shell, file, MCP and browser access remain disabled/scoped.
+            "features.code_mode_host": True,
             "project_doc_max_bytes": 0,
         }
         overrides.update(
@@ -286,6 +290,11 @@ class CodexProvider:
                     if isinstance(error, dict)
                     else "request failed"
                 )
+                if method == "thread/resume" and "already has an active writer" in detail:
+                    raise RuntimeError(
+                        "This chat is open in another Atopile Local window. "
+                        "Reload or close that window, then retry here."
+                    )
                 raise RuntimeError(f"Codex {method}: {detail}")
             result = message.get("result", {})
             if not isinstance(result, dict):
@@ -341,7 +350,7 @@ class CodexProvider:
                         "clientInfo": {
                             "name": "atopile_local",
                             "title": "Atopile Local",
-                            "version": "0.3.0",
+                            "version": "0.3.1",
                         },
                         "capabilities": {"experimentalApi": True},
                     },
@@ -721,7 +730,9 @@ class CodexProvider:
             "local": True,
             "provider": "codex",
             "model": self._model.value,
-            "thread_id": self._thread_id,
+            # Saving all restored sessions before their first turn must retain
+            # their conversation IDs, including after a temporary resume error.
+            "thread_id": self._thread_id or self._resume_thread_id,
             "native_usage": vars(self._usage_total).copy(),
         }
 

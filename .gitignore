@@ -240,6 +240,8 @@ apps/open-atopile/src/vscode-atopile/resources/layout-editor/editor.js.map
 
 # Atopile Local generated state/runtime
 .state/
+**/.local-agent/
+**/*.kicad_pcb.local-agent-*.bak
 .venv/
 .python/
 .runtime-cache/
