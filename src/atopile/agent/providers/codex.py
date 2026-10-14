@@ -341,7 +341,7 @@ class CodexProvider:
                         "clientInfo": {
                             "name": "atopile_local",
                             "title": "Atopile Local",
-                            "version": "0.2.0",
+                            "version": "0.3.0",
                         },
                         "capabilities": {"experimentalApi": True},
                     },

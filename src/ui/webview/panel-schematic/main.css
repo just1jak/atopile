@@ -1,0 +1,74 @@
+.schematic-app { --schematic-paper: var(--vscode-editor-background, var(--bg-primary)); --schematic-wire: var(--vscode-charts-green, #4eab83); --schematic-symbol: var(--text-primary); display: flex; height: 100vh; min-height: 0; flex-direction: column; color: var(--text-primary); background: var(--bg-primary); }
+.schematic-toolbar { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; gap: 12px; border-bottom: 1px solid var(--border-color); }
+.schematic-title, .schematic-tools { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.schematic-title > span { color: var(--text-secondary); font-size: 12px; overflow: hidden; text-overflow: ellipsis; }
+.schematic-app button, .schematic-empty button { font: inherit; color: var(--text-primary); background: transparent; border: 1px solid transparent; border-radius: 4px; cursor: pointer; }
+.schematic-tools button, .schematic-selection-actions button, .schematic-empty button { display: inline-flex; align-items: center; gap: 6px; padding: 5px 7px; border-color: var(--border-color); white-space: nowrap; }
+.schematic-app button:hover, .schematic-empty button:hover { background: var(--bg-hover); }
+.schematic-app button:focus-visible, .schematic-app input:focus-visible, .schematic-empty button:focus-visible { outline: 1px solid var(--vscode-focusBorder, var(--accent)); outline-offset: -1px; }
+.schematic-app button:disabled { opacity: 0.45; cursor: default; }
+.schematic-updating { color: var(--text-muted); font-size: 11px; }
+.schematic-workspace { flex: 1; display: flex; min-height: 0; }
+.schematic-sheet { position: relative; flex: 1; min-width: 0; overflow: hidden; background: var(--schematic-paper); }
+.schematic-sheet svg { display: block; width: 100%; height: 100%; touch-action: none; user-select: none; cursor: grab; }
+.schematic-sheet svg:active { cursor: grabbing; }
+.schematic-sheet-note { pointer-events: none; position: absolute; bottom: 12px; left: 14px; color: var(--text-muted); font-size: 10px; background: var(--schematic-paper); padding: 4px 7px; border-radius: 3px; }
+.schematic-wire { fill: none; stroke: var(--schematic-wire); stroke-width: 0.23; stroke-linejoin: round; stroke-linecap: square; }
+.schematic-wire-hit { fill: none; stroke: transparent; stroke-width: 1.8; pointer-events: stroke; }
+.schematic-net { cursor: pointer; }
+.schematic-junction { fill: var(--schematic-wire); }
+.schematic-net-label { fill: var(--schematic-wire); font-size: 1.65px; paint-order: stroke; stroke: var(--schematic-paper); stroke-width: 0.65px; stroke-linejoin: round; }
+.schematic-wires.has-selection .schematic-net:not(.active) { opacity: 0.24; }
+.schematic-net.active .schematic-wire { stroke: var(--accent); stroke-width: 0.42; }
+.schematic-net.active .schematic-net-label, .schematic-net.active .schematic-junction { fill: var(--accent); }
+.schematic-net:focus-visible { outline: none; }
+.schematic-net:focus-visible .schematic-wire { stroke: var(--vscode-focusBorder, var(--accent)); stroke-width: 0.45; }
+.schematic-component { cursor: pointer; }
+.schematic-component-hit { fill: transparent; stroke: transparent; stroke-width: 0.25; }
+.schematic-component.selected .schematic-component-hit, .schematic-component.connected .schematic-component-hit { stroke: var(--accent); stroke-dasharray: 1.2 0.7; fill: var(--accent-subtle); }
+.schematic-component:focus-visible { outline: none; }
+.schematic-component:focus-visible .schematic-component-hit { stroke: var(--vscode-focusBorder, var(--accent)); }
+.schematic-symbol { color: var(--schematic-symbol); stroke: currentColor; stroke-linejoin: round; stroke-linecap: round; }
+.schematic-reference { fill: var(--text-primary); font-size: 2.1px; font-weight: 600; }
+.schematic-value { fill: var(--text-secondary); font-size: 1.7px; }
+.schematic-missing { color: var(--warning); stroke: none; }
+.schematic-pins circle { fill: var(--schematic-wire); stroke: var(--schematic-paper); stroke-width: 0.1; cursor: pointer; }
+.schematic-pins circle.unconnected { fill: var(--schematic-paper); stroke: var(--text-muted); stroke-width: 0.2; }
+.schematic-pins circle.active, .schematic-pins circle:hover { fill: var(--accent); stroke: var(--accent); stroke-width: 0.25; }
+.schematic-pins circle:focus-visible { outline: none; stroke: var(--vscode-focusBorder, var(--accent)); stroke-width: 0.5; }
+.schematic-sidebar { width: 260px; min-width: 210px; max-width: 34%; overflow-y: auto; border-left: 1px solid var(--border-color); padding: 12px; }
+.schematic-section-title, .schematic-net-heading { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.schematic-section-title button { display: flex; padding: 4px; }
+.schematic-inspector { margin-bottom: 16px; padding-bottom: 14px; border-bottom: 1px solid var(--border-color); }
+.schematic-selected-value { margin: 8px 0 5px; overflow-wrap: anywhere; font-size: 13px; }
+.schematic-symbol-name { margin: 0 0 12px; color: var(--text-muted); font-size: 11px; overflow-wrap: anywhere; }
+.schematic-selection-actions { display: flex; gap: 7px; flex-wrap: wrap; margin: 10px 0; font-size: 11px; }
+.schematic-pin-list { margin: 12px 0 0; font-size: 11px; }
+.schematic-pin-list > div { display: grid; grid-template-columns: 1fr 1.2fr; padding: 5px 0; gap: 8px; }
+.schematic-pin-list dt { color: var(--text-secondary); overflow-wrap: anywhere; }
+.schematic-pin-list dd { margin: 0; overflow-wrap: anywhere; }
+.schematic-pin-list dd button { padding: 0; color: var(--schematic-wire); text-align: left; overflow-wrap: anywhere; }
+.schematic-pin-list dd > span { color: var(--text-muted); }
+.schematic-member-list button, .schematic-components > button { width: 100%; display: flex; justify-content: space-between; text-align: left; gap: 8px; padding: 5px 6px; font-size: 11px; }
+.schematic-member-list button > span:last-child, .schematic-components > button > span:last-child { color: var(--text-muted); overflow-wrap: anywhere; }
+.schematic-net-heading { font-size: 12px; margin-bottom: 10px; }
+.schematic-net-heading > span { color: var(--text-muted); }
+.schematic-search { display: flex; gap: 7px; align-items: center; padding: 6px 8px; margin-bottom: 8px; background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 4px; color: var(--text-muted); }
+.schematic-search input { min-width: 0; width: 100%; border: 0; outline: 0; background: transparent; color: var(--text-primary); font: inherit; font-size: 11px; }
+.schematic-net-list > button { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; width: 100%; padding: 8px 6px; text-align: left; font-size: 11px; }
+.schematic-net-list > button > span { overflow-wrap: anywhere; }
+.schematic-net-list small { color: var(--text-muted); white-space: nowrap; font-size: 10px; }
+.schematic-net-list > button.selected { background: var(--accent-subtle); border-color: var(--accent); }
+.schematic-net-list > p { color: var(--text-muted); font-size: 11px; }
+.schematic-components { border-top: 1px solid var(--border-color); margin-top: 12px; padding-top: 12px; font-size: 11px; }
+.schematic-components summary { cursor: pointer; color: var(--text-secondary); margin-bottom: 8px; }
+.schematic-action-error { color: var(--error); font-size: 11px; overflow-wrap: anywhere; }
+.schematic-warnings { max-height: 22vh; overflow-y: auto; border-top: 1px solid var(--border-color); padding: 8px 14px; color: var(--warning); font-size: 11px; }
+.schematic-warnings summary { cursor: pointer; }
+.schematic-warnings ul { padding-left: 18px; margin: 8px 0; }
+.schematic-warnings li { padding: 3px 0; }
+.schematic-footer { display: flex; justify-content: space-between; gap: 10px; padding: 7px 14px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 10px; }
+.schematic-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; padding: 32px; text-align: center; gap: 10px; color: var(--text-secondary); }
+.schematic-empty h2 { font-size: 16px; color: var(--text-primary); margin: 0; }
+.schematic-empty p { margin: 0; max-width: 480px; line-height: 1.6; }
+@media (max-width: 650px) { .schematic-sidebar { min-width: 165px; width: 195px; padding: 9px; } .schematic-title > span, .schematic-updating, .schematic-sheet-note, .schematic-footer > span:last-child { display: none; } .schematic-toolbar { padding: 8px; } }

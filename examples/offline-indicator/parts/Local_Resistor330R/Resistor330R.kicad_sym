@@ -1,11 +1,9 @@
 (kicad_symbol_lib
-	(version 20241229)
-	(generator "atopile_kicad_import")
+	(version 20251024)
+	(generator "atopile_local")
 	(symbol "Resistor330R"
-		(in_bom yes)
-		(on_board yes)
 		(property "Reference" "R"
-			(at 0 3.81 0)
+			(at 2.54 0 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13,29 +11,131 @@
 			)
 		)
 		(property "Value" "Resistor330R"
-			(at 0 -3.81 0)
+			(at -2.54 0 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "Resistor330R_1_1"
-			(rectangle
-				(start -10.16 2.54)
-				(end 10.16 -2.54)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
+		(property "Footprint" ""
+			(at 1.016 -0.254 90)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin_numbers hide)
+		(pin_names
+			(offset 0)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(symbol "Resistor330R_0_1"
+			(polyline
+				(stroke
+					(width 0)
+					(type default)
+					(color 0 0 0 0)
+				)
+				(fill
+					(type none)
+				)
+				(pts
+					(xy 0 2.286) (xy 0 2.54)
+				)
+			)
+			(polyline
+				(stroke
+					(width 0)
+					(type default)
+					(color 0 0 0 0)
+				)
+				(fill
+					(type none)
+				)
+				(pts
+					(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+				)
+			)
+			(polyline
+				(stroke
+					(width 0)
+					(type default)
+					(color 0 0 0 0)
+				)
+				(fill
+					(type none)
+				)
+				(pts
+					(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+				)
+			)
+			(polyline
+				(stroke
+					(width 0)
+					(type default)
+					(color 0 0 0 0)
+				)
+				(fill
+					(type none)
+				)
+				(pts
+					(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+				)
+			)
+			(polyline
+				(stroke
+					(width 0)
+					(type default)
+					(color 0 0 0 0)
+				)
+				(fill
+					(type none)
+				)
+				(pts
+					(xy 0 -2.286) (xy 0 -2.54)
+				)
+			)
+		)
+		(symbol "Resistor330R_1_1"
 			(pin passive line
-				(at -12.7 0 0)
-				(length 2.54)
-				(name "P1"
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -51,9 +151,9 @@
 				)
 			)
 			(pin passive line
-				(at 12.7 0 180)
-				(length 2.54)
-				(name "P2"
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)

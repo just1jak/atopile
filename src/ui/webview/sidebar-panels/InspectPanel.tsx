@@ -41,6 +41,13 @@ export function InspectPanel({ disabled }: InspectPanelProps) {
         onClick: () => void requestPanel("panel-3d"),
       },
       {
+        id: "schematic",
+        label: "Schematic",
+        description: "View KiCad symbols, compiled connections, and net highlights.",
+        icon: <CircuitBoard size={16} />,
+        onClick: () => void requestPanel("panel-schematic"),
+      },
+      {
         id: "layout",
         label: "Layout",
         description: "Inspect PCB geometry and board placement.",

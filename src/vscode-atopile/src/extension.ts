@@ -29,6 +29,7 @@ const panels = [
   { id: "panel-settings", label: "Settings" },
   { id: "panel-developer", label: "Developer" },
   { id: "panel-tree", label: "Trees" },
+  { id: "panel-schematic", label: "Schematic" },
   // Careful we are matching onto this specific string quite a bit
   { id: "panel-layout", label: "Layout" },
   { id: "panel-pinout", label: "Pinout" },

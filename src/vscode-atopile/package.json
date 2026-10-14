@@ -1,12 +1,12 @@
 {
   "name": "atopile-local",
   "displayName": "Atopile Local",
-  "description": "Local Atopile circuit design with your own AI provider.",
-  "version": "0.2.0",
+  "description": "Local circuit design with ChatGPT, KiCad schematics, and PCB inspection.",
+  "version": "0.3.0",
   "publisher": "local-atopile",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atopile/atopile.git"
+    "url": "https://github.com/just1jak/atopile.git"
   },
   "engines": {
     "vscode": "^1.105.0"

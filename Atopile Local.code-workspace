@@ -1,0 +1,4 @@
+{
+  "folders": [{ "name": "Offline Indicator", "path": "examples/offline-indicator" }],
+  "settings": { "atopileLocal.enableChat": true }
+}

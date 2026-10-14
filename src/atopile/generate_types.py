@@ -23,7 +23,7 @@ def main() -> None:
     enums = discover_enums(models)
 
     lines: list[str] = [
-        "// Generated from src/atopile/data_models.py by atopile.generate_types",
+        "// Generated from shared CamelModel schemas by atopile.generate_types",
         "// Do not edit by hand.",
         "",
         "type JsonPrimitive = string | number | boolean | null;",
@@ -83,8 +83,10 @@ def _schema_modules() -> tuple[
 
 def discover_camel_models() -> list[type[BaseModel]]:
     data_models_module, store_module, camel_model, _store_schema = _schema_modules()
+    from atopile.server.domains import schematic_models
+
     models: list[type[BaseModel]] = []
-    for module in (data_models_module, store_module):
+    for module in (data_models_module, store_module, schematic_models):
         for value in vars(module).values():
             if not isinstance(value, type):
                 continue
@@ -158,7 +160,14 @@ def render_model(model: type[BaseModel]) -> list[str]:
         ts_type = override_model_field_ts_type(model.__name__, field_name)
         if ts_type is None:
             ts_type = annotation_to_ts(field.annotation)
-        lines.append(f"  {format_property_name(ts_name)}: {ts_type};")
+        # Optional wire fields are opt-in, preserving existing store contracts
+        # whose defaults are always materialized by Python serialization.
+        optional = (
+            isinstance(field.json_schema_extra, dict)
+            and field.json_schema_extra.get("ts_optional") is True
+        )
+        marker = "?" if optional else ""
+        lines.append(f"  {format_property_name(ts_name)}{marker}: {ts_type};")
 
     if model.model_config.get("extra") == "allow":
         lines.append("  [key: string]: unknown;")

@@ -320,6 +320,7 @@ function getHtml(
   const stepViewerWasmUri = webview.asWebviewUri(vscode.Uri.joinPath(distUri, "occt-import-js.wasm"));
   const glbViewerScriptUri = webview.asWebviewUri(vscode.Uri.joinPath(distUri, "model-viewer.min.js"));
   const dracoDecoderUri = webview.asWebviewUri(vscode.Uri.joinPath(distUri, "draco"));
+  const schematicWorkerUri = webview.asWebviewUri(vscode.Uri.joinPath(distUri, "panel-schematic", "geometry.worker.js"));
   const csp = webview.cspSource;
   const nonce = randomBytes(18).toString("base64");
   const policy = buildContentSecurityPolicy(csp, nonce);
@@ -344,6 +345,7 @@ function getHtml(
     window.__ATOPILE_STEP_VIEWER_WASM_URL__ = "${stepViewerWasmUri}";
     window.__ATOPILE_GLB_VIEWER_SCRIPT_URL__ = "${glbViewerScriptUri}";
     window.__ATOPILE_DRACO_DECODER_URL__ = "${dracoDecoderUri}/";
+    window.__ATOPILE_SCHEMATIC_WORKER_URL__ = ${JSON.stringify(String(schematicWorkerUri))};
     window.__ATOPILE_IS_WEB_IDE__ = ${isWebIdeUi() ? "true" : "false"};
   </script>
   <script nonce="${nonce}" type="module" src="${scriptUri}"></script>

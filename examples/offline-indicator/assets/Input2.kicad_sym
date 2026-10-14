@@ -1,27 +1,140 @@
 (kicad_symbol_lib
-	(version 20241229)
-	(generator "atopile_pinout_import")
+	(version 20251024)
+	(generator "atopile_local")
 	(symbol "Input2"
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Input2"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin_names
+			(offset 1.016)
+		)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "J" (at 0 3.81 0)
-			(effects (font (size 1.27 1.27)))
-		)
-		(property "Value" "Input2" (at 0 -3.81 0)
-			(effects (font (size 1.27 1.27)))
-		)
 		(symbol "Input2_1_1"
-			(rectangle (start -10.16 2.54) (end 10.16 -2.54)
-				(stroke (width 0.254) (type default))
-				(fill (type background))
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+					(color 0 0 0 0)
+				)
+				(fill
+					(type background)
+				)
 			)
-			(pin passive line (at -12.7 0 0) (length 2.54)
-				(name "POS" (effects (font (size 1.27 1.27))))
-				(number "1" (effects (font (size 1.27 1.27))))
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+					(color 0 0 0 0)
+				)
+				(fill
+					(type none)
+				)
 			)
-			(pin passive line (at 12.7 0 180) (length 2.54)
-				(name "NEG" (effects (font (size 1.27 1.27))))
-				(number "2" (effects (font (size 1.27 1.27))))
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+					(color 0 0 0 0)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 			)
 		)
 	)

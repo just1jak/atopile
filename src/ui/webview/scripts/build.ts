@@ -65,6 +65,14 @@ if (watch) {
   buildArgs.push("--minify");
 }
 
+// A Blob worker cannot resolve shared relative chunks. Keep its geometry bundle standalone.
+const workerArgs = [process.execPath, "build", join(webviewRoot, "panel-schematic/geometry.worker.ts"),
+  "--outfile", join(outDir, "panel-schematic/geometry.worker.js"), "--format", "iife", "--target", "browser", "--minify"];
+if (watch) {
+  Bun.spawn([...workerArgs, "--watch"], { cwd: webviewRoot, stdin: "inherit", stdout: "inherit", stderr: "inherit" });
+} else {
+  await run(workerArgs, webviewRoot);
+}
 await run(buildArgs, webviewRoot);
 
 async function copyAssets(): Promise<void> {

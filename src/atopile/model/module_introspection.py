@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import re
 import subprocess
 import sys
@@ -374,6 +375,26 @@ def introspect_module(
 _INTROSPECT_TIMEOUT = 60  # seconds
 
 
+def _introspection_child_settings() -> tuple[str, dict[str, str]]:
+    """Keep child imports and state on this fork when its cwd is a project.
+
+    An inherited relative PYTHONPATH changes meaning after Popen changes cwd.
+    In that case Python can silently import the unmodified wheel, or a module
+    from the user project. Use the current source package and bundled runtime.
+    """
+    source_root = Path(__file__).resolve().parents[2]
+    fork_root = source_root.parent
+    bundled_python = fork_root / ".venv" / "bin" / "python"
+    executable = str(bundled_python) if bundled_python.is_file() else sys.executable
+    env = os.environ.copy()
+    env["PYTHONPATH"] = str(source_root)
+    env["ATOPILE_LOCAL_DATA_DIR"] = str(
+        Path(env.get("ATOPILE_LOCAL_DATA_DIR") or fork_root / ".state").resolve()
+    )
+    env["FBRK_TELEMETRY"] = "0"
+    return executable, env
+
+
 def introspect_module_definition(
     project_root: Path,
     module_def: ModuleDefinition,
@@ -385,9 +406,11 @@ def introspect_module_definition(
         prev.kill()
         prev.wait()
 
+    executable, env = _introspection_child_settings()
     proc = subprocess.Popen(
         [
-            sys.executable,
+            executable,
+            "-P",
             "-m",
             "atopile.model.module_introspection",
             "--project-root",
@@ -399,6 +422,7 @@ def introspect_module_definition(
         ],
         stdout=subprocess.PIPE,
         cwd=str(project_root),
+        env=env,
     )
     introspect_module_definition._proc = proc
     stdout, _ = proc.communicate(timeout=_INTROSPECT_TIMEOUT)

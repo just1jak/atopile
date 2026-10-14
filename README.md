@@ -1,12 +1,17 @@
-# Atopile Local 0.2.0
+# Atopile Local 0.3.0
 
-A local VS Code continuation of atopile 0.15.9 with ChatGPT through Codex or your own AI provider,
-local component imports, and net/placement/DRC tools. This is an independent
+A local VS Code continuation of atopile 0.15.9 with a KiCad-symbol schematic
+viewer, ChatGPT through Codex or your own AI provider, local component imports,
+and net/placement/DRC tools. This is an independent
 fork, not an official atopile release.
 
 ## Start on this Mac
 
-Install the supplied `atopile-local-0.2.0.vsix` and open the supplied
+On this Mac, double-click **Open Atopile Local.command** beside the source
+folder. It opens the included circuit in VS Code. Select the build target and
+choose **Inspect → Schematic**. Other inspection views remain available beside it.
+
+For a new installation, install the supplied `atopile-local-0.3.0.vsix` and open the supplied
 `Atopile Local.code-workspace`. The provided installer registers the runtime
 for other VS Code workspaces too. ChatGPT (Codex) is the default AI provider.
 Run **Atopile Local: Connect ChatGPT** to reuse your local Codex sign-in or start
@@ -43,7 +48,20 @@ and Linux); Windows launcher packaging is not included.
 
 ```sh
 python3 local/setup_runtime.py
-python3 local/install_extension.py
+python3 local/install_extension.py --download
+python3 local/launch.py
+```
+
+Download the source and extension from the
+[GitHub release](https://github.com/just1jak/atopile/releases/tag/local-v0.3.0),
+or clone the fork's `feature/atopile-local` branch. `--download` fetches the
+matching extension release and verifies its SHA-256 before installation. If
+the VSIX is already beside the source folder, omit `--download`.
+To open another existing project, use `python3 local/launch.py /path/to/project`.
+
+```sh
+git clone --branch feature/atopile-local https://github.com/just1jak/atopile.git
+cd atopile
 ```
 
 The native compiler is the pinned atopile 0.15.9 wheel. Modified Python source
@@ -65,6 +83,25 @@ nets, inspect pinouts, and open the PCB/3D viewers. The independent agent can
 edit project files, build and debug circuits, read logical nets, inspect or
 change placements (with backups), and run KiCad DRC.
 
+## Schematic viewer
+
+After building, open **Inspect → Schematic**, or run **Atopile Local: Open Panel**
+and select **Schematic**. The canvas reads the PCB's actual pad-net assignments
+and uses local KiCad symbol artwork. Select a net to highlight its wires and
+connected pins. Select a component to inspect its pins and values, jump to its
+source declaration, or open the PCB with the matching footprint highlighted.
+The selected net can also be highlighted in the PCB view.
+
+The schematic refreshes after builds and project/target changes. Pan, zoom,
+fit-to-view, and net search are available. Missing artwork is marked explicitly
+and displayed as a pin box. Symbol availability does not invent connections.
+Power/data Trees remain separate views and may be empty for generic parts.
+
+This version is a read-only schematic projection, not a schematic editor or
+`.kicad_sch` exporter. Its wiring describes logical connections; it does not
+represent physical PCB trace routes or replace electrical validation. Only
+the included small demo has been tested end to end.
+
 The routed offline indicator has three local components, three nets, and a
 32 x 18 mm outline. Its layout is a specific hand-authored recipe. Generic
 local parts are included in the JSON BOM; unsourced parts are excluded from the
@@ -84,7 +121,7 @@ so the placement tool refuses boards containing them.
 
 ```sh
 python3 local/build_extension.py
-PYTHONPATH=src ATOPILE_LOCAL_DATA_DIR=$PWD/.state FBRK_TELEMETRY=0 \
+PYTHONPATH=$PWD/src ATOPILE_LOCAL_DATA_DIR=$PWD/.state FBRK_TELEMETRY=0 \
   .venv/bin/python -m pytest test/agent test/libs/test_kicad_part_import.py \
   test/exporters/pcb/kicad/test_pcb_transformer.py -q
 .venv/bin/python local/verify_backend.py
@@ -103,7 +140,9 @@ Based on the public PyPI atopile 0.15.9 source distribution, SHA-256
 Upstream MIT notices are retained; local import work retains the Axiovel MIT
 attribution in `local/IMPORTER_ATTRIBUTION.md`. Bundled 3D decoders include their
 Apache-2.0 notices and Three.js MIT license. The original README is preserved
-at `local/UPSTREAM_README.md`.
+at `local/UPSTREAM_README.md`. The three standard KiCad demo symbols retain
+their CC-BY-SA 4.0 library license and exception in
+`examples/offline-indicator/assets/KICAD-SYMBOLS-LICENSE.md`.
 
 Codex-managed ChatGPT authentication is documented for local/open-source apps.
 This integration is for local use; a hosted or commercial service needs its own

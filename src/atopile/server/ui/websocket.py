@@ -77,6 +77,7 @@ from atopile.model.build_queue import BuildQueue, _build_queue
 from atopile.model.file_watcher import FileWatcher
 from atopile.model.sqlite import Logs, delete_log_storage, initialize_log_storage
 from atopile.pathutils import same_path
+from atopile.server.domains import schematic
 from atopile.server.domains.diff import diff_service
 from atopile.server.domains.diff_rpc import DiffRpcSession
 from atopile.server.domains.kicad import KicadService
@@ -248,6 +249,7 @@ class CoreSocket:
         self._parts_search_tokens: dict[ServerConnection, int] = {}
         self._discovery_paths: list[Path] = []
         self._vscode_bridge = VscodeBridge()
+        self._schematic_selection: dict[str, Any] | None = None
         self._kicad_service = KicadService()
         self._store = Store()
         self._store.on_change = self._on_store_change
@@ -974,6 +976,116 @@ class CoreSocket:
             return
 
         match action:
+            case (
+                "getSchematicData"
+                | "schematicOpenSource"
+                | "schematicSelectComponent"
+                | "schematicSelectNet"
+                | "getSchematicSelection"
+            ):
+                request_id = str(msg.get("requestId") or "")
+                try:
+                    if not request_id:
+                        raise ValueError(f"{action} requires requestId")
+                    selected_root, selected_target = self._selected_project_context()
+                    raw_target = msg.get("target")
+                    target = (
+                        projects.parse_target(raw_target)
+                        if isinstance(raw_target, dict)
+                        else None
+                    )
+                    project_root = str(
+                        target.root
+                        if target
+                        else msg.get("projectRoot") or selected_root or ""
+                    )
+                    target_name = str(
+                        target.name
+                        if target
+                        else raw_target
+                        if isinstance(raw_target, str)
+                        else selected_target.name
+                        if selected_target
+                        else "default"
+                    )
+                    if not project_root:
+                        raise ValueError("Select a project first")
+                    # Requests may only navigate artifacts belonging to a workspace
+                    # project; source metadata cannot turn into an arbitrary file link.
+                    known_roots = [p.root for p in self._store.get("projects")]
+                    if not any(same_path(project_root, root) for root in known_roots):
+                        raise ValueError(
+                            "Schematic project is not in the current workspace"
+                        )
+                    if action == "getSchematicSelection":
+                        selection = self._schematic_selection
+                        result = (
+                            selection
+                            if selection
+                            and same_path(selection["projectRoot"], project_root)
+                            and selection["target"] == target_name
+                            else None
+                        )
+                    else:
+                        data = await asyncio.to_thread(
+                            schematic.get_schematic_data, project_root, target_name
+                        )
+                        if action == "getSchematicData":
+                            result = data
+                        elif action == "schematicOpenSource":
+                            source = schematic.component_source(
+                                data, str(msg.get("componentId") or "")
+                            )
+                            await self._send_message(
+                                ws,
+                                self._vscode_bridge.forward_request(
+                                    ws,
+                                    session_id,
+                                    {"action": "vscode.openFile", **source},
+                                ),
+                            )
+                            result = {"requested": True, **source}
+                        else:
+                            result = schematic.schematic_selection(
+                                data,
+                                component_id=str(msg.get("componentId") or "")
+                                if action == "schematicSelectComponent"
+                                else "",
+                                net_name=str(msg.get("netName") or "")
+                                if action == "schematicSelectNet"
+                                else "",
+                            )
+                            result["sequence"] = (
+                                int(
+                                    (self._schematic_selection or {}).get("sequence", 0)
+                                )
+                                + 1
+                            )
+                            self._schematic_selection = result
+                            for client, sessions in list(self._subscriptions.items()):
+                                for destination in list(sessions):
+                                    if destination != EXTENSION_SESSION_ID:
+                                        try:
+                                            await self._send_message(
+                                                client,
+                                                {
+                                                    "type": "schematic_selection",
+                                                    "sessionId": destination,
+                                                    **result,
+                                                },
+                                            )
+                                        except websockets.ConnectionClosed:
+                                            break
+                    await self._send_action_result(
+                        ws, session_id, action, request_id, ok=True, result=result
+                    )
+                except Exception as exc:
+                    log.exception("Schematic RPC %s failed", action)
+                    await self._send_action_result(
+                        ws, session_id, action, request_id, ok=False, error=str(exc)
+                    )
+                return
+
             case (
                 "generateThreeDModel"
                 | "getPackageLayoutRenderModel"

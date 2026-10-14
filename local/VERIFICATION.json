@@ -1,39 +1,36 @@
 {
   "date": "2026-10-13",
-  "extension": "local-atopile.atopile-local 0.2.0",
+  "extension": "local-atopile.atopile-local 0.3.0",
   "compiler": "atopile 0.15.9 native wheel with local source overlay",
   "platform": "Apple Silicon macOS",
   "checks": {
-    "python_tests_passed": 99,
-    "extension_tests_passed": 22,
+    "python_tests_passed": 126,
+    "typescript_tests_passed": 33,
+    "typescript_assertions_passed": 381,
     "extension_and_webview_typechecks": "passed",
-    "extension_package": "built",
-    "real_vscode_activation_and_lsp": "passed in isolated development host",
-    "real_vscode_layout_load": "passed in isolated development host",
-    "websocket_core_and_project_discovery_without_account": "passed",
-    "sdk_provider_http_routing": "passed using actual SDKs with intercepted HTTP; no live AI billing",
+    "extension_package": "built; verified schematic JS/CSS and separate geometry worker are present",
+    "extension_installation": "verified local-atopile.atopile-local@0.3.0; own runtime registered; launcher opened supplied workspace",
+    "installed_schematic_render": "passed in VS Code; local KiCad primitives, three components and three nets",
+    "browser_interactions": "passed: component/pin/net selection, net search, source and PCB action callbacks, zoom and fit; no warnings or errors",
+    "websocket_schematic_rpc": "passed against a real isolated core server: 3 KiCad symbols, 3 PCB-derived nets, source line 14, 2 component and 2 pad IDs for lv, event and saved selection",
     "offline_demo": {
-      "focused_python_tests": {
-        "passed": 9
-      },
-      "build_with_every_ip_socket_connection_blocked": "passed",
-      "guard_loaded_in_parent_and_children": true,
+      "build_with_every_python_ip_socket_connection_blocked": "passed",
       "attempted_ip_connections": 0,
-      "picker_modules": 0,
-      "rebuild_preserved_placements_routes_outline_and_pad_nets": true,
+      "guard_loaded_in_parent_and_children": true,
       "kicad_drc_violations": 0,
       "kicad_unconnected_items": 0
     },
-    "multiprocess_sqlite_startup_regression": "passed; transient lock, disk and connection errors cannot delete logs",
-    "final_exported_runtime_and_backend": "passed",
-    "final_exported_network_blocked_build": "passed; zero attempted Python IP connections",
+    "source_and_package_audit": "no runtime state, dependency trees, private credentials or QA fixtures selected for publication",
+    "chatgpt_integration": "unchanged except client version; prior 0.2 verification below, no new live inference for this release"
+  },
+  "prior_0_2_chatgpt_checks": {
     "codex_protocol_regressions_passed": 9,
     "chatgpt_native_login_and_final_tool_isolation": "passed with installed Codex CLI 0.162.0-alpha.17.2; no inference requested in final preflight",
     "chatgpt_live_circuit_tool_round_trip": "passed: real AgentSession -> Codex -> layout_get_netlist -> ChatGPT answer; native ChatGPT account, no API key",
     "chatgpt_extension_installation": "verified local-atopile.atopile-local@0.2.0"
   },
   "limitations": [
-    "One live ChatGPT read-only circuit question verified; separate API-provider live billing not tested",
+    "Read-only schematic projection; no schematic editing or .kicad_sch export",
     "Only the supplied small demo tested end to end",
     "No general local autorouter",
     "Hosted catalog selection and DeepPCB remain optional services",

@@ -15,6 +15,8 @@ import {
 } from "../common/layout";
 import { LayerTreePanel } from "../common/layout/LayerTreePanel";
 import type { LayerModel } from "../common/layout/types";
+import { matchesSchematicSelection, parseSchematicSelectionEvent, schematicSelectionDecorations } from "../common/layout/schematicSelection";
+import type { SchematicSelection } from "../panel-schematic/types";
 import "../common/layout/layout-shell.css";
 
 const logger = createWebviewLogger("PanelLayout");
@@ -33,6 +35,7 @@ function App() {
   const [layers, setLayers] = useState<LayerModel[]>([]);
   const [hiddenLayers, setHiddenLayers] = useState<Set<string>>(new Set());
   const [mountError, setMountError] = useState<string | null>(null);
+  const [schematicSelection, setSchematicSelection] = useState<SchematicSelection | null>(null);
 
   function resetViewerShell(): LayoutViewerShellElements | null {
     viewerRef.current?.dispose();
@@ -148,6 +151,32 @@ function App() {
     viewerRef.current?.editor.setReadOnly(layoutData.readOnly);
   }, [layoutData.readOnly]);
 
+  // A saved selection bridges panels even when the schematic opened this PCB view.
+  useEffect(() => {
+    const client = rpcClient;
+    const projectRoot = projectState.selectedProjectRoot;
+    const target = projectState.selectedTarget?.name;
+    let alive = true;
+    setSchematicSelection(null);
+    if (!client || !projectRoot || !target || !layoutData.path) return;
+    const receive = (raw: string) => {
+      const selection = parseSchematicSelectionEvent(raw);
+      if (matchesSchematicSelection(selection, projectRoot, target, layoutData.path)) setSchematicSelection((current) =>
+        (current?.sequence ?? 0) > (selection.sequence ?? 0) ? current : selection);
+    };
+    client.addRawListener(receive);
+    void client.requestAction<SchematicSelection | null>("getSchematicSelection", { projectRoot, target })
+      .then((selection) => {
+        if (alive && matchesSchematicSelection(selection, projectRoot, target, layoutData.path)) setSchematicSelection((current) =>
+          (current?.sequence ?? 0) > (selection.sequence ?? 0) ? current : selection);
+      }).catch((error: unknown) => logger.warn(`Could not read schematic selection: ${String(error)}`));
+    return () => { alive = false; client.removeRawListener(receive); };
+  }, [projectState.selectedProjectRoot, projectState.selectedTarget?.name, layoutData.path, layoutData.revision]);
+
+  useEffect(() => {
+    viewerRef.current?.editor.setDecorations(schematicSelection ? schematicSelectionDecorations(schematicSelection) : null);
+  }, [schematicSelection, shell, hasSelection, hasLayout]);
+
   useEffect(() => {
     return () => {
       viewerRef.current?.dispose();
@@ -174,6 +203,11 @@ function App() {
         </NoDataMessage>
       )}
       <div id="layout-viewer-root" ref={hostRef} style={showNoData ? { display: "none" } : undefined} />
+      {schematicSelection && !showNoData && <div style={{ position: "absolute", top: 12, left: 12, zIndex: 20, display: "flex", alignItems: "center", gap: 10,
+        padding: "8px 10px", borderRadius: 5, background: "var(--bg-primary)", color: "var(--text-primary)", border: "1px solid var(--accent)", fontSize: 11 }}>
+        <span>{schematicSelection.netName ? `Schematic net: ${schematicSelection.netName}` : "Component selected from schematic"}</span>
+        <button onClick={() => setSchematicSelection(null)} style={{ background: "transparent", color: "inherit", cursor: "pointer", border: "1px solid var(--border-color)", borderRadius: 3, padding: "3px 6px" }}>Clear highlight</button>
+      </div>}
       {shell?.layerPanelEl && layers.length > 0 && createPortal(
         <LayerTreePanel
           layers={layers}

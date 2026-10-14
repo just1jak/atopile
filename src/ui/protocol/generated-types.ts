@@ -1,4 +1,4 @@
-// Generated from src/atopile/data_models.py by atopile.generate_types
+// Generated from shared CamelModel schemas by atopile.generate_types
 // Do not edit by hand.
 
 type JsonPrimitive = string | number | boolean | null;
@@ -346,6 +346,164 @@ export interface ResolvedBuildTarget {
   pcbPath: string;
   modelPath: string;
   root: string;
+}
+
+export interface SchematicBounds {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
+
+export interface SchematicCircle {
+  strokeWidth?: number;
+  fill?: "none" | "background" | "outline";
+  type: "circle";
+  cx: number;
+  cy: number;
+  r: number;
+  [key: string]: unknown;
+}
+
+export interface SchematicComponent {
+  id: string;
+  reference: string;
+  value: string;
+  atoAddress: string;
+  source: SchematicSource | null;
+  symbol: SchematicSymbol;
+  pins: SchematicTerminal[];
+}
+
+export interface SchematicData {
+  version: 1;
+  projectRoot: string;
+  target: string;
+  layoutPath: string;
+  revision: string;
+  connectivityKind: "logical_pad_net_assignments";
+  components: SchematicComponent[];
+  nets: SchematicNet[];
+  warnings: string[];
+}
+
+export interface SchematicGraphicStyle {
+  strokeWidth?: number;
+  fill?: "none" | "background" | "outline";
+  [key: string]: unknown;
+}
+
+export interface SchematicLine {
+  strokeWidth?: number;
+  fill?: "none" | "background" | "outline";
+  type: "line";
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+  [key: string]: unknown;
+}
+
+export interface SchematicNet {
+  id: string;
+  name: string;
+  members: SchematicNetMember[];
+}
+
+export interface SchematicNetMember {
+  componentId: string;
+  reference: string;
+  pin: string;
+}
+
+export interface SchematicPin {
+  x: number;
+  y: number;
+  number: string;
+  name: string;
+  endX: number;
+  endY: number;
+  hidden?: boolean;
+  electricalType?: string;
+  shape?: string;
+  rotation?: number;
+  length?: number;
+  [key: string]: unknown;
+}
+
+export interface SchematicPoint {
+  x: number;
+  y: number;
+}
+
+export interface SchematicPolyline {
+  strokeWidth?: number;
+  fill?: "none" | "background" | "outline";
+  type: "polyline";
+  points: SchematicPoint[];
+  closed?: boolean;
+  [key: string]: unknown;
+}
+
+export interface SchematicRectangle {
+  strokeWidth?: number;
+  fill?: "none" | "background" | "outline";
+  type: "rect";
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  [key: string]: unknown;
+}
+
+export interface SchematicSelection {
+  projectRoot: string;
+  target: string;
+  layoutPath: string;
+  componentIds: string[];
+  padIds: string[];
+  netName: string | null;
+  sequence?: number;
+}
+
+export interface SchematicSource {
+  path: string;
+  line: number;
+}
+
+export interface SchematicSymbol {
+  name: string;
+  primitives: (SchematicLine | SchematicPolyline | SchematicRectangle | SchematicCircle | SchematicText)[];
+  pins: SchematicPin[];
+  bounds: SchematicBounds;
+  missing: boolean;
+  libId?: string;
+  unit?: number;
+  availableUnits?: number[];
+  status?: "loaded" | "partial" | "missing";
+  warnings?: string[];
+  warning?: string | null;
+  sourceFile?: string | null;
+  [key: string]: unknown;
+}
+
+export interface SchematicTerminal {
+  number: string;
+  name: string;
+  net: string | null;
+}
+
+export interface SchematicText {
+  strokeWidth?: number;
+  fill?: "none" | "background" | "outline";
+  type: "text";
+  x: number;
+  y: number;
+  text: string;
+  size?: number;
+  angle?: number;
+  anchor?: "start" | "middle" | "end";
+  [key: string]: unknown;
 }
 
 export interface StdLibChild {
@@ -966,6 +1124,15 @@ export const DEFAULT_PinoutComponent: PinoutComponent = {
 
 export function createPinoutComponent(): PinoutComponent {
   return cloneGenerated(DEFAULT_PinoutComponent);
+}
+
+export const DEFAULT_SchematicGraphicStyle: SchematicGraphicStyle = {
+  "fill": "none",
+  "strokeWidth": 0.254
+};
+
+export function createSchematicGraphicStyle(): SchematicGraphicStyle {
+  return cloneGenerated(DEFAULT_SchematicGraphicStyle);
 }
 
 export const DEFAULT_UiAgentChecklistData: UiAgentChecklistData = {
