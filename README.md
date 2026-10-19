@@ -43,26 +43,39 @@ rather than an OpenAI-style `/v1` suffix. Your provider's prices/limits apply.
 Requires VS Code 1.105+, uv, and KiCad for native schematic export, layout and DRC. ChatGPT assistance
 also requires a Codex CLI with app-server dynamic tools and a ChatGPT plan that
 includes Codex access. Tested on Apple
-Silicon macOS with Python 3.14.6 and KiCad 10.0.7. The launcher is POSIX (macOS
-and Linux); Windows launcher packaging is not included.
+Silicon macOS with Python 3.14.6 and KiCad 10.0.7. The `.command` launcher is
+for macOS; Linux can use `python3 local/launch.py`. Windows launcher packaging
+is not included.
+
+Keep the engine outside iCloud, OneDrive, and other folders that automatically
+offload files. The current fork includes a verified installer that puts it in
+local application storage (on macOS, `~/Library/Application Support/Atopile Local`).
+Download the release source ZIP, `SHA256SUMS.txt`, and VSIX, then run this from
+the fork checkout:
 
 ```sh
-python3 local/setup_runtime.py
-python3 local/install_extension.py --download
+python3 local/install_local_runtime.py \
+  --archive /path/to/atopile-local-source.zip \
+  --checksum-file /path/to/SHA256SUMS.txt
 python3 local/launch.py
 ```
 
 Download the source and extension from the
 [GitHub release](https://github.com/just1jak/atopile/releases/tag/local-v0.4.0),
-or clone the fork's `feature/atopile-local` branch. `--download` fetches the
-matching extension release and verifies its SHA-256 before installation. If
-the VSIX is already beside the source folder, omit `--download`.
+or clone the fork's `feature/atopile-local` branch for the installer. Before
+launching, install the VSIX using VS Code's **Extensions: Install from VSIX**
+command. The installer verifies the archive, installs pinned dependencies,
+and checks startup before changing VS Code's runtime location. Failed setup
+keeps the previous location; retrying the same archive resumes setup.
 To open another existing project, use `python3 local/launch.py /path/to/project`.
 
 ```sh
 git clone --branch feature/atopile-local https://github.com/just1jak/atopile.git
 cd atopile
 ```
+
+For development in a fully local checkout, the original `local/setup_runtime.py`
+and `local/install_extension.py --download` workflow remains available.
 
 The native compiler is the pinned atopile 0.15.9 wheel. Modified Python source
 runs over that wheel, avoiding a local Zig rebuild. The wrapper uses safe
