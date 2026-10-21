@@ -1,0 +1,144 @@
+{
+  "sourceSha256": "f5b42ba76001f790c445533dfcd8567136b5b018127ac8982a2b04650661a2d1",
+  "candidateSha256": "a69a52339e29b2d5eb59c52b91d43d85669b1ebafc4eb08fc75f4aafd5fc5c94",
+  "movedCopper": [
+    "f026fb82-748a-4627-a209-bd269c1c7293",
+    "7d8b3da1-b25e-47ff-89ff-1e806891b7c7",
+    "83e00313-70b7-4517-88e9-343e15079bc7",
+    "a8142467-b7d0-41de-9aac-407055cbe44a"
+  ],
+  "removedRedundantStubs": [
+    "2965fd40-97f3-4c67-89f1-c42f6397c80e",
+    "426e8aec-d09e-4ec7-8b91-a2c1f88e6be4",
+    "8dc0516c-651d-4af7-a656-2adaa1b58b8f"
+  ],
+  "allOtherCopperUnchanged": true,
+  "footprintsAndZonesUnchanged": true,
+  "before": {
+    "fullNativeAirwires": 3,
+    "disconnectedNetGroups": {
+      "RX15_EN": [
+        {
+          "count": 2,
+          "pads": [
+            "R47.2",
+            "U15.3"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U19.15"
+          ]
+        }
+      ],
+      "TX_LED": [
+        {
+          "count": 2,
+          "pads": [
+            "Q18.1",
+            "R92.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.15"
+          ]
+        }
+      ],
+      "PCI_RX": [
+        {
+          "count": 3,
+          "pads": [
+            "C12.1",
+            "R7.2",
+            "U9.4"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.17"
+          ]
+        }
+      ]
+    },
+    "ground": {
+      "padCount": 175,
+      "connectedGroupCount": 1,
+      "largestConnectedGroupCount": 175,
+      "isolatedFromMainGroup": []
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3387.900504,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4914.163139,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5461.504204,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 37.506408
+    }
+  },
+  "after": {
+    "fullNativeAirwires": 3,
+    "disconnectedNetGroups": {
+      "RX15_EN": [
+        {
+          "count": 2,
+          "pads": [
+            "R47.2",
+            "U15.3"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U19.15"
+          ]
+        }
+      ],
+      "TX_LED": [
+        {
+          "count": 2,
+          "pads": [
+            "Q18.1",
+            "R92.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.15"
+          ]
+        }
+      ],
+      "PCI_RX": [
+        {
+          "count": 3,
+          "pads": [
+            "C12.1",
+            "R7.2",
+            "U9.4"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.17"
+          ]
+        }
+      ]
+    },
+    "ground": {
+      "padCount": 175,
+      "connectedGroupCount": 1,
+      "largestConnectedGroupCount": 175,
+      "isolatedFromMainGroup": []
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3387.907194,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4914.049757,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5461.373029,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 37.506408
+    }
+  },
+  "requiresNativeDrc": true
+}

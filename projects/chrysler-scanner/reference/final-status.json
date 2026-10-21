@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-21",
+  "state": "routed_prototype_fabrication_package_ready",
+  "routing_complete": true,
+  "pcb_sha256": "85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a",
+  "native_drc": {
+    "errors": 0,
+    "warnings": 0,
+    "unconnected": 0,
+    "schematic_parity": 0
+  },
+  "native_erc_findings": 0,
+  "uncapped_native_airwires": 0,
+  "ground_pads_connected": 175,
+  "original_scanner_placements_preserved": true,
+  "protected_copper_objects_preserved": 174,
+  "zone_definitions_preserved": 9,
+  "r112_translation_mm": [
+    0.05,
+    0.075
+  ],
+  "fabrication_package": "outputs/chrysler-integrated-sd-rev-b-fabrication.zip",
+  "full_project_archive": "outputs/chrysler-integrated-sd-routed-rev-b.zip",
+  "fabrication_package_sha256": "2a487f4c41e85daa03355537475a2c60bd071db48747b2b1f1ca0d42a76fd6eb",
+  "requires_filled_capped_planarized_vias": true,
+  "firmware": "deferred_by_user",
+  "hardware_bench_or_vehicle_validation_performed": false,
+  "manufacturing_order_or_external_upload_performed": false,
+  "systemDiagramFirstPage": true,
+  "root_schematic_sha256": "cb59d13dc42abd1984c2cc4e3fd433e8f35eb677aaf5901e984ca2dd4e6d4307",
+  "full_project_archive_sha256": "f7385ef9cf15dc07539b222267ba7ebd744339a0cb49f0579956f2f3e40de136",
+  "updated_schematic_pdf": "current/ChryslerScanner_V240_SD-Hierarchy.pdf",
+  "hierarchical_signal_ports": 177,
+  "schematic_pages": 22,
+  "input_connector_and_protection_same_sheet": true
+}

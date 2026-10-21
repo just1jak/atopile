@@ -1,0 +1,22 @@
+{
+  "reference": "R112",
+  "description": "New SD pull-up only; no original scanner part moved",
+  "oldMm": [
+    172,
+    121
+  ],
+  "newMm": [
+    172.05,
+    121.075
+  ],
+  "translationMm": [
+    0.05,
+    0.075
+  ],
+  "sourceSha256": "f5b42ba76001f790c445533dfcd8567136b5b018127ac8982a2b04650661a2d1",
+  "geometryReferenceSha256": "14c17d2dc3dbf77ea54e510706559adefb658adb6957211fa425581501c67115",
+  "drawingOnlyStatusTextUuids": [
+    "6b5c8121-b680-5425-abbc-3b10e7a80217",
+    "16cd5184-57fa-4fee-bf98-49e162d31428"
+  ]
+}

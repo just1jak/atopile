@@ -1,0 +1,29 @@
+{
+  "source": "projects\\chrysler-scanner\\work\\fabrication-candidate\\release-candidate\\ChryslerScanner_V240_SD.kicad_pcb",
+  "output": "projects\\chrysler-scanner\\work\\fabrication-candidate\\pruned-2.kicad_pcb",
+  "sourceSha256": "6b0bee0b77bdc8f939994a7e8b55d39a45ed58bf38a649ae2a1bd8d6913a4721",
+  "outputSha256": "f4a5945538dd61389ef7a3937fe1406f76e9dfba2382e11e35fac4b787a8e12a",
+  "removedCopper": {
+    "061f887a-5e35-4ebe-ac63-28f3b3de71a3": {
+      "kind": "PCB_TRACK",
+      "net": "SCL",
+      "start": [
+        175350000,
+        140830000
+      ],
+      "end": [
+        175350000,
+        139728300
+      ],
+      "width": 200000,
+      "layer": 6,
+      "locked": false
+    }
+  },
+  "everyNativePadPartitionUnchanged": true,
+  "fullNativeAirwires": 0,
+  "allUnrelatedCopperUnchanged": true,
+  "footprintBlocksUnchanged": true,
+  "sourceBytesAndMtimeUnchanged": true,
+  "requiresFreshNativeDrc": true
+}

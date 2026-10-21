@@ -1,0 +1,55 @@
+{
+  "auditPassed": true,
+  "completeConnectivityPassed": true,
+  "candidateSha256": "85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a",
+  "sourceSha256": "f5b42ba76001f790c445533dfcd8567136b5b018127ac8982a2b04650661a2d1",
+  "nativeKiCadVersion": "10.0.5",
+  "protectedCopperCount": 174,
+  "originalScannerPlacementsPreserved": true,
+  "placementException": {
+    "reference": "R112",
+    "oldMm": [
+      172,
+      121
+    ],
+    "newMm": [
+      172.05,
+      121.075
+    ]
+  },
+  "groundReferenceLayerUnbrokenBySignalTracks": true,
+  "checks": {
+    "approvedNarrowFootprintAndPadGeometry": true,
+    "onlyAddedR112Moved": true,
+    "allAcceptedProtectedCopperPreserved": true,
+    "protectedViaProcessingFlagsPreserved": true,
+    "allNineZonesAndKeepoutsPreserved": true,
+    "outlineAndMountingGeometryPreserved": true,
+    "projectRulesSeveritiesExclusionsByteIdentical": true,
+    "nativeBoardSetupUnchanged": true,
+    "minimumTrackWidth150um": true,
+    "groundReferenceLayerUnbrokenBySignalTracks": true,
+    "onlyValidCopperLayers": true,
+    "allPadPartitionsAndUncappedAirwiresConnected": true,
+    "all175GroundPadsConnected": true,
+    "fullNativeDrcClean": true,
+    "freshDrcMatchesCandidate": true,
+    "readOnlyAudit": true
+  },
+  "connectivity": {
+    "fullNativeAirwires": 0,
+    "disconnectedNetGroups": {},
+    "ground": {
+      "padCount": 175,
+      "connectedGroupCount": 1,
+      "largestConnectedGroupCount": 175,
+      "isolatedFromMainGroup": []
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3376.403388,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4863.282438,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5448.044857,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 37.506408
+    }
+  }
+}

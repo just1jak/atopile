@@ -1,0 +1,468 @@
+{
+  "status": "PASS",
+  "nativeKiCadVersion": "10.0.5",
+  "project": "C:\\Users\\just3\\Documents\\Scanner\\projects\\chrysler-scanner\\current",
+  "pcb": "C:\\Users\\just3\\Documents\\Scanner\\projects\\chrysler-scanner\\current\\ChryslerScanner_V240_SD.kicad_pcb",
+  "pcbSha256": "85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a",
+  "nativeXmlSha256": "544fe00385edabdd2c33b445b3fa6dc4771df1aa62715168ab0591ff77fdcede",
+  "electricalComponents": 259,
+  "pcbFootprintsIncluding4MechanicalHoles": 263,
+  "connectedNetCount": 154,
+  "nativeTotalNetCountIncludingNC": 194,
+  "nativeSchematicPCBAndSourceExactNetNamesAndEndpointSetsMatch": true,
+  "ncIsolation": [
+    {
+      "ref": "AE1",
+      "pin": "2",
+      "name": "unconnected-(AE1-Pad2)",
+      "isolated": true
+    },
+    {
+      "ref": "J1",
+      "pin": "1",
+      "name": "unconnected-(J1-Pad1)",
+      "isolated": true
+    },
+    {
+      "ref": "J1",
+      "pin": "10",
+      "name": "unconnected-(J1-Pad10)",
+      "isolated": true
+    },
+    {
+      "ref": "J1",
+      "pin": "13",
+      "name": "unconnected-(J1-Pad13)",
+      "isolated": true
+    },
+    {
+      "ref": "J1",
+      "pin": "8",
+      "name": "unconnected-(J1-Pad8)",
+      "isolated": true
+    },
+    {
+      "ref": "J2",
+      "pin": "A8",
+      "name": "unconnected-(J2-PadA8)",
+      "isolated": true
+    },
+    {
+      "ref": "J2",
+      "pin": "B8",
+      "name": "unconnected-(J2-PadB8)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "18",
+      "name": "unconnected-(U10-Pad18)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "22",
+      "name": "unconnected-(U10-Pad22)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "28",
+      "name": "unconnected-(U10-Pad28)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "29",
+      "name": "unconnected-(U10-Pad29)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "30",
+      "name": "unconnected-(U10-Pad30)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "31",
+      "name": "unconnected-(U10-Pad31)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "8",
+      "name": "unconnected-(U10-Pad8)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "25",
+      "name": "unconnected-(U10-Pad25)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "35",
+      "name": "unconnected-(U10-Pad35)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "36",
+      "name": "unconnected-(U10-Pad36)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "44",
+      "name": "unconnected-(U10-Pad44)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "45",
+      "name": "unconnected-(U10-Pad45)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "47",
+      "name": "unconnected-(U10-Pad47)",
+      "isolated": true
+    },
+    {
+      "ref": "U10",
+      "pin": "48",
+      "name": "unconnected-(U10-Pad48)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "1",
+      "name": "unconnected-(U12-Pad1)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "11",
+      "name": "unconnected-(U12-Pad11)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "12",
+      "name": "unconnected-(U12-Pad12)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "13",
+      "name": "unconnected-(U12-Pad13)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "14",
+      "name": "unconnected-(U12-Pad14)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "15",
+      "name": "unconnected-(U12-Pad15)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "16",
+      "name": "unconnected-(U12-Pad16)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "17",
+      "name": "unconnected-(U12-Pad17)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "18",
+      "name": "unconnected-(U12-Pad18)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "19",
+      "name": "unconnected-(U12-Pad19)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "2",
+      "name": "unconnected-(U12-Pad2)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "20",
+      "name": "unconnected-(U12-Pad20)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "21",
+      "name": "unconnected-(U12-Pad21)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "22",
+      "name": "unconnected-(U12-Pad22)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "23",
+      "name": "unconnected-(U12-Pad23)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "27",
+      "name": "unconnected-(U12-Pad27)",
+      "isolated": true
+    },
+    {
+      "ref": "U12",
+      "pin": "10",
+      "name": "unconnected-(U12-Pad10)",
+      "isolated": true
+    },
+    {
+      "ref": "U17",
+      "pin": "1",
+      "name": "unconnected-(U17-Pad1)",
+      "isolated": true
+    },
+    {
+      "ref": "U18",
+      "pin": "1",
+      "name": "unconnected-(U18-Pad1)",
+      "isolated": true
+    }
+  ],
+  "newComponents": 18,
+  "criticalMCUPins": [
+    {
+      "ref": "U10",
+      "pin": "38",
+      "gpio": 19,
+      "net": "MCU_SD_SCK",
+      "pcb": "MCU_SD_SCK",
+      "schematic": "MCU_SD_SCK"
+    },
+    {
+      "ref": "U10",
+      "pin": "27",
+      "gpio": 20,
+      "net": "MCU_SD_MOSI",
+      "pcb": "MCU_SD_MOSI",
+      "schematic": "MCU_SD_MOSI"
+    },
+    {
+      "ref": "U10",
+      "pin": "5",
+      "gpio": 36,
+      "net": "SD_MISO",
+      "pcb": "SD_MISO",
+      "schematic": "SD_MISO"
+    },
+    {
+      "ref": "U10",
+      "pin": "21",
+      "gpio": 15,
+      "net": "MCU_SD_CS",
+      "pcb": "MCU_SD_CS",
+      "schematic": "MCU_SD_CS"
+    },
+    {
+      "ref": "U10",
+      "pin": "6",
+      "gpio": 37,
+      "net": "LOG_BUTTON",
+      "pcb": "LOG_BUTTON",
+      "schematic": "LOG_BUTTON"
+    },
+    {
+      "ref": "U10",
+      "pin": "7",
+      "gpio": 38,
+      "net": "SD_DETECT",
+      "pcb": "SD_DETECT",
+      "schematic": "SD_DETECT"
+    }
+  ],
+  "TLV767Grounds": [
+    {
+      "ref": "U3",
+      "groundPins": [
+        "3",
+        "5",
+        "7"
+      ],
+      "verifiedPCBAndSchematic": true
+    },
+    {
+      "ref": "U4",
+      "groundPins": [
+        "3",
+        "5",
+        "7"
+      ],
+      "verifiedPCBAndSchematic": true
+    },
+    {
+      "ref": "U8",
+      "groundPins": [
+        "3",
+        "5",
+        "7"
+      ],
+      "verifiedPCBAndSchematic": true
+    }
+  ],
+  "originalSourceIntegrity": [
+    {
+      "path": "elec/layout/v240/v240.kicad_pcb",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/layout/v240/v240.kicad_pro",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "reference/v240-netlist.json",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/01_ccd.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/02_pci.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/03_sci-14-9.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/04_sci-6-12.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/05_sci-rx.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/06_obd-protection.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/07_vehicle-input.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/08_power-5v.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/09_power-vpp.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/10_power-vbb.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/11_power-7v5.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/12_program-6.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/13_program-9.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/14_program-12.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/15_program-14.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/16_mcu.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/17_adc.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/18_control.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/19_usb.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/20_leds.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/21_obd.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    },
+    {
+      "path": "elec/schematic/ChryslerScanner_V240.kicad_sch",
+      "unchangedBytesSizeAndMtime": true
+    }
+  ],
+  "approvedComponentAndPadGeometryPreserved": true,
+  "approvedGeometryReferenceSha256": "214346ee8b617018696e8f960591cdcc02c712a74a57fc48305f709c5d9ab8cf",
+  "nativeERC": {
+    "errors": 0,
+    "warnings": 0,
+    "ignoredChecks": [
+      {
+        "description": "Global label only appears once in the schematic",
+        "key": "single_global_label"
+      },
+      {
+        "description": "Four connection points are joined together",
+        "key": "four_way_junction"
+      },
+      {
+        "description": "Assigned footprint doesn't match footprint filters",
+        "key": "footprint_filter"
+      }
+    ],
+    "note": "Original recovered symbols use passive electrical pin types; ERC is not an independent active-device electrical design review"
+  },
+  "routing": {
+    "assessed": true,
+    "nativeAirwiresAsLoaded": 0,
+    "drcSha256": "34536e073cf2ef47325f7fbdd92787b94a14c6784a9849f388239dd0ce1589d1",
+    "drcViolations": 0,
+    "drcMissingConnections": 0
+  },
+  "routing_complete": true,
+  "firmware": "deferred_by_user",
+  "errors": []
+}

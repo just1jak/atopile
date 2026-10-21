@@ -1,0 +1,55 @@
+{
+  "sourceSha256": "61f39f1309af1671b6ec0d6a7bde2db790994e2c665181bc7c91dd6ea928ae7f",
+  "newR112PositionMm": [
+    172.05,
+    121.075
+  ],
+  "oldR112PositionMm": [
+    172,
+    121
+  ],
+  "originalScannerPlacementsPreserved": true,
+  "removedUnprotectedCopper": [
+    {
+      "id": "6e13293f-579f-4f1e-aed3-1a02acea1d71",
+      "net": "+3.3V",
+      "layer": "B.Cu"
+    },
+    {
+      "id": "91ada16c-e457-4318-b066-2ce271b74b96",
+      "net": "+3.3V",
+      "layer": "B.Cu"
+    },
+    {
+      "id": "9fbee88b-9d64-4c3a-9a74-8430beb45734",
+      "net": "+3.3V",
+      "layer": "B.Cu"
+    },
+    {
+      "id": "b3194192-b0ff-4c5c-b789-abf3b726591c",
+      "net": "+3.3V",
+      "layer": "B.Cu"
+    },
+    {
+      "id": "c13d0498-9d3b-4e7f-bc93-1b70fc881884",
+      "net": "RX_LED",
+      "layer": "F.Cu"
+    },
+    {
+      "id": "ee74db82-f674-46d1-98e0-bfb37da820ac",
+      "net": "RX_LED",
+      "layer": "F.Cu"
+    },
+    {
+      "id": "06015c8b-1af9-4777-9c55-1dc70490e5bb",
+      "net": "PCI_RX",
+      "layer": "B.Cu"
+    },
+    {
+      "id": "84d19532-5085-4fe3-8b56-b56bfac7a642",
+      "net": "PCI_RX",
+      "layer": "In2.Cu"
+    }
+  ],
+  "requiresFullNativeDrcAndVictimRestoration": true
+}

@@ -12,3 +12,17 @@ credentials.json
 secrets.json
 secrets.h
 secrets.hpp
+
+# Local trial boards, runtime outputs and open superseded PDF previews.
+/work/fabrication-candidate/
+/work/schematic-block-diagram/
+/work/hierarchy-before/
+/work/hierarchy*
+/work/checked-*.png
+/work/update_hierarchy.py
+/work/finalize_hierarchy.py
+/current/drc-1.json
+/current/*-System.pdf
+# Portable delivery is committed as an archive, without a second unpacked copy.
+/outputs/chrysler-routed-sd/
+!/outputs/*.zip
