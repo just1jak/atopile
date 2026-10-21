@@ -29,12 +29,15 @@
     "pcbOnlyJ1PathMetadataChanged": true,
     "nativeErcClean": true,
     "nativeDrcAndParityClean": true,
-    "twentyOneCircuitSheets": true
+    "twentyOneCircuitSheets": true,
+    "groundLabelsReplacedByPowerSymbols": true,
+    "groundHierarchyUsesGlobalPowerNet": true,
+    "groundsBelowCircuitBodies": true
   },
-  "hierarchicalPorts": 177,
+  "hierarchicalPorts": 156,
   "totalPages": 22,
   "pcbSha256": "85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a",
-  "rootSchematicSha256": "894354d0c3b09aed4d908d6519ce9d5e36a7ad5004809c6e589d61435cd0a116",
+  "rootSchematicSha256": "361be221836ec8b3fa3c332ff0cdd4b08fa1664643b4cf84502c839d3ce75342",
   "pcbChange": "J1 sheet path metadata only; geometry and copper unchanged",
   "hierarchyChange": "J1 moved to protection sheet; its symbol UUID preserved"
 }

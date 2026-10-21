@@ -16,9 +16,11 @@ against the actual connector and capacitor dimensions before manufacturing.
 
 Page 1 restores the original functional block-diagram layout, with vehicle
 interfaces on the left, the controller in the middle, USB/SD on the right, and
-power/programming below. It has 177 native hierarchical signal ports
+power/programming below. It has 156 native hierarchical signal ports
 across 21 circuit sheets. Named signal stubs connect matching nets across blocks.
-J1 and its line-protection components now share the input sheet. Every original
+J1 and its line-protection components now share the input sheet. GND uses
+native ground power symbols below each circuit, with the common net shared
+globally instead of repeated ground hierarchy ports. Every original
 net endpoint is preserved; only J1's PCB sheet-path metadata changed.
 
 Use `ChryslerScanner_V240_SD-Hierarchy.pdf` for the updated 22-page PDF.

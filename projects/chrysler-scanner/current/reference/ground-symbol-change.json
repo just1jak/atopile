@@ -1,0 +1,2289 @@
+{
+  "symbolCount": 163,
+  "removedGroundHierarchyPorts": 21,
+  "hierarchicalSignalPorts": 156,
+  "changes": [
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        38.1,
+        165.1
+      ],
+      "new": [
+        38.1,
+        165.1
+      ],
+      "near": "C54",
+      "moved": false,
+      "bodyBottom": 141.224
+    },
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        38.1,
+        233.68
+      ],
+      "new": [
+        38.1,
+        233.68
+      ],
+      "near": "C55",
+      "moved": false,
+      "bodyBottom": 204.724
+    },
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        63.5,
+        137.16
+      ],
+      "new": [
+        63.5,
+        147.32
+      ],
+      "near": "C54",
+      "moved": true,
+      "bodyBottom": 141.224
+    },
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        63.5,
+        200.66
+      ],
+      "new": [
+        63.5,
+        210.82
+      ],
+      "near": "C55",
+      "moved": true,
+      "bodyBottom": 204.724
+    },
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        68.58,
+        68.58
+      ],
+      "new": [
+        68.58,
+        68.58
+      ],
+      "near": "C50",
+      "moved": false,
+      "bodyBottom": 62.484
+    },
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        83.82,
+        233.68
+      ],
+      "new": [
+        83.82,
+        233.68
+      ],
+      "near": "C55",
+      "moved": false,
+      "bodyBottom": 204.724
+    },
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        106.68,
+        78.74
+      ],
+      "new": [
+        106.68,
+        86.36
+      ],
+      "near": "R77",
+      "moved": true,
+      "bodyBottom": 80.772
+    },
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        157.48,
+        114.3
+      ],
+      "new": [
+        157.48,
+        118.11
+      ],
+      "near": "R80",
+      "moved": true,
+      "bodyBottom": 112.1833
+    },
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        231.14,
+        68.58
+      ],
+      "new": [
+        231.14,
+        68.58
+      ],
+      "near": "C51",
+      "moved": false,
+      "bodyBottom": 62.484
+    },
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        269.24,
+        48.26
+      ],
+      "new": [
+        269.24,
+        58.42
+      ],
+      "near": "C52",
+      "moved": true,
+      "bodyBottom": 52.324
+    },
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        297.18,
+        101.6
+      ],
+      "new": [
+        297.18,
+        101.6
+      ],
+      "near": "U16",
+      "moved": false,
+      "bodyBottom": 84.2433
+    },
+    {
+      "sheet": "01_ccd.kicad_sch",
+      "old": [
+        322.58,
+        101.6
+      ],
+      "new": [
+        322.58,
+        101.6
+      ],
+      "near": "C53",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "02_pci.kicad_sch",
+      "old": [
+        20.32,
+        101.6
+      ],
+      "new": [
+        20.32,
+        101.6
+      ],
+      "near": "R5",
+      "moved": false,
+      "bodyBottom": 96.9433
+    },
+    {
+      "sheet": "02_pci.kicad_sch",
+      "old": [
+        20.32,
+        142.24
+      ],
+      "new": [
+        20.32,
+        142.24
+      ],
+      "near": "R21",
+      "moved": false,
+      "bodyBottom": 137.5833
+    },
+    {
+      "sheet": "02_pci.kicad_sch",
+      "old": [
+        55.88,
+        48.26
+      ],
+      "new": [
+        55.88,
+        58.42
+      ],
+      "near": "C11",
+      "moved": true,
+      "bodyBottom": 52.324
+    },
+    {
+      "sheet": "02_pci.kicad_sch",
+      "old": [
+        83.82,
+        101.6
+      ],
+      "new": [
+        83.82,
+        101.6
+      ],
+      "near": "U9",
+      "moved": false,
+      "bodyBottom": 84.2433
+    },
+    {
+      "sheet": "02_pci.kicad_sch",
+      "old": [
+        109.22,
+        101.6
+      ],
+      "new": [
+        109.22,
+        101.6
+      ],
+      "near": "C12",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "02_pci.kicad_sch",
+      "old": [
+        139.7,
+        101.6
+      ],
+      "new": [
+        139.7,
+        101.6
+      ],
+      "near": "R18",
+      "moved": false,
+      "bodyBottom": 96.9433
+    },
+    {
+      "sheet": "02_pci.kicad_sch",
+      "old": [
+        172.72,
+        101.6
+      ],
+      "new": [
+        172.72,
+        101.6
+      ],
+      "near": "R18",
+      "moved": false,
+      "bodyBottom": 96.9433
+    },
+    {
+      "sheet": "03_sci-14-9.kicad_sch",
+      "old": [
+        38.1,
+        48.26
+      ],
+      "new": [
+        38.1,
+        58.42
+      ],
+      "near": "C41",
+      "moved": true,
+      "bodyBottom": 52.324
+    },
+    {
+      "sheet": "03_sci-14-9.kicad_sch",
+      "old": [
+        124.46,
+        116.84
+      ],
+      "new": [
+        124.46,
+        120.65
+      ],
+      "near": "R41",
+      "moved": true,
+      "bodyBottom": 114.7233
+    },
+    {
+      "sheet": "03_sci-14-9.kicad_sch",
+      "old": [
+        162.56,
+        109.22
+      ],
+      "new": [
+        157.48,
+        127.0
+      ],
+      "near": "U14",
+      "moved": true,
+      "bodyBottom": 121.92
+    },
+    {
+      "sheet": "03_sci-14-9.kicad_sch",
+      "old": [
+        167.64,
+        60.96
+      ],
+      "new": [
+        162.56,
+        80.01
+      ],
+      "near": "R38",
+      "moved": true,
+      "bodyBottom": 74.0833
+    },
+    {
+      "sheet": "04_sci-6-12.kicad_sch",
+      "old": [
+        38.1,
+        48.26
+      ],
+      "new": [
+        38.1,
+        58.42
+      ],
+      "near": "C38",
+      "moved": true,
+      "bodyBottom": 52.324
+    },
+    {
+      "sheet": "04_sci-6-12.kicad_sch",
+      "old": [
+        38.1,
+        167.64
+      ],
+      "new": [
+        38.1,
+        167.64
+      ],
+      "near": "R75",
+      "moved": false,
+      "bodyBottom": 160.4433
+    },
+    {
+      "sheet": "04_sci-6-12.kicad_sch",
+      "old": [
+        55.88,
+        167.64
+      ],
+      "new": [
+        55.88,
+        167.64
+      ],
+      "near": "R75",
+      "moved": false,
+      "bodyBottom": 160.4433
+    },
+    {
+      "sheet": "04_sci-6-12.kicad_sch",
+      "old": [
+        124.46,
+        109.22
+      ],
+      "new": [
+        119.38,
+        127.0
+      ],
+      "near": "U13",
+      "moved": true,
+      "bodyBottom": 121.92
+    },
+    {
+      "sheet": "04_sci-6-12.kicad_sch",
+      "old": [
+        165.1,
+        60.96
+      ],
+      "new": [
+        160.02,
+        80.01
+      ],
+      "near": "R31",
+      "moved": true,
+      "bodyBottom": 74.0833
+    },
+    {
+      "sheet": "04_sci-6-12.kicad_sch",
+      "old": [
+        302.26,
+        63.5
+      ],
+      "new": [
+        302.26,
+        67.31
+      ],
+      "near": "R34",
+      "moved": true,
+      "bodyBottom": 61.3833
+    },
+    {
+      "sheet": "05_sci-rx.kicad_sch",
+      "old": [
+        38.1,
+        48.26
+      ],
+      "new": [
+        38.1,
+        58.42
+      ],
+      "near": "C43",
+      "moved": true,
+      "bodyBottom": 52.324
+    },
+    {
+      "sheet": "05_sci-rx.kicad_sch",
+      "old": [
+        127.0,
+        114.3
+      ],
+      "new": [
+        121.92,
+        133.35
+      ],
+      "near": "R47",
+      "moved": true,
+      "bodyBottom": 127.4233
+    },
+    {
+      "sheet": "05_sci-rx.kicad_sch",
+      "old": [
+        167.64,
+        60.96
+      ],
+      "new": [
+        162.56,
+        80.01
+      ],
+      "near": "R44",
+      "moved": true,
+      "bodyBottom": 74.0833
+    },
+    {
+      "sheet": "05_sci-rx.kicad_sch",
+      "old": [
+        167.64,
+        109.22
+      ],
+      "new": [
+        162.56,
+        127.0
+      ],
+      "near": "U15",
+      "moved": true,
+      "bodyBottom": 121.92
+    },
+    {
+      "sheet": "06_obd-protection.kicad_sch",
+      "old": [
+        30.48,
+        186.69
+      ],
+      "new": [
+        25.4,
+        237.49
+      ],
+      "near": "J1",
+      "moved": true,
+      "bodyBottom": 232.41
+    },
+    {
+      "sheet": "06_obd-protection.kicad_sch",
+      "old": [
+        35.56,
+        119.38
+      ],
+      "new": [
+        35.56,
+        119.38
+      ],
+      "near": "C42",
+      "moved": false,
+      "bodyBottom": 110.744
+    },
+    {
+      "sheet": "06_obd-protection.kicad_sch",
+      "old": [
+        40.64,
+        81.28
+      ],
+      "new": [
+        40.64,
+        81.28
+      ],
+      "near": "C25",
+      "moved": false,
+      "bodyBottom": 72.644
+    },
+    {
+      "sheet": "06_obd-protection.kicad_sch",
+      "old": [
+        60.96,
+        81.28
+      ],
+      "new": [
+        60.96,
+        81.28
+      ],
+      "near": "D12",
+      "moved": false,
+      "bodyBottom": 74.0833
+    },
+    {
+      "sheet": "06_obd-protection.kicad_sch",
+      "old": [
+        78.74,
+        119.38
+      ],
+      "new": [
+        78.74,
+        119.38
+      ],
+      "near": "C44",
+      "moved": false,
+      "bodyBottom": 110.744
+    },
+    {
+      "sheet": "06_obd-protection.kicad_sch",
+      "old": [
+        96.52,
+        53.34
+      ],
+      "new": [
+        96.52,
+        63.5
+      ],
+      "near": "C36",
+      "moved": true,
+      "bodyBottom": 57.404
+    },
+    {
+      "sheet": "06_obd-protection.kicad_sch",
+      "old": [
+        124.46,
+        116.84
+      ],
+      "new": [
+        124.46,
+        116.84
+      ],
+      "near": "D13",
+      "moved": false,
+      "bodyBottom": 112.1833
+    },
+    {
+      "sheet": "06_obd-protection.kicad_sch",
+      "old": [
+        137.16,
+        53.34
+      ],
+      "new": [
+        137.16,
+        63.5
+      ],
+      "near": "C39",
+      "moved": true,
+      "bodyBottom": 57.404
+    },
+    {
+      "sheet": "06_obd-protection.kicad_sch",
+      "old": [
+        172.72,
+        116.84
+      ],
+      "new": [
+        172.72,
+        116.84
+      ],
+      "near": "D14",
+      "moved": false,
+      "bodyBottom": 112.1833
+    },
+    {
+      "sheet": "06_obd-protection.kicad_sch",
+      "old": [
+        177.8,
+        48.26
+      ],
+      "new": [
+        177.8,
+        58.42
+      ],
+      "near": "C37",
+      "moved": true,
+      "bodyBottom": 52.324
+    },
+    {
+      "sheet": "06_obd-protection.kicad_sch",
+      "old": [
+        218.44,
+        48.26
+      ],
+      "new": [
+        218.44,
+        58.42
+      ],
+      "near": "C40",
+      "moved": true,
+      "bodyBottom": 52.324
+    },
+    {
+      "sheet": "07_vehicle-input.kicad_sch",
+      "old": [
+        20.32,
+        101.6
+      ],
+      "new": [
+        20.32,
+        101.6
+      ],
+      "near": "D1",
+      "moved": false,
+      "bodyBottom": 89.3233
+    },
+    {
+      "sheet": "07_vehicle-input.kicad_sch",
+      "old": [
+        55.88,
+        101.6
+      ],
+      "new": [
+        55.88,
+        101.6
+      ],
+      "near": "C1",
+      "moved": false,
+      "bodyBottom": 84.836
+    },
+    {
+      "sheet": "07_vehicle-input.kicad_sch",
+      "old": [
+        81.28,
+        43.18
+      ],
+      "new": [
+        76.2,
+        55.88
+      ],
+      "near": "JP1",
+      "moved": true,
+      "bodyBottom": 50.292
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        10.16,
+        137.16
+      ],
+      "new": [
+        20.32,
+        158.75
+      ],
+      "near": "U4",
+      "moved": true,
+      "bodyBottom": 152.4
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        20.32,
+        109.22
+      ],
+      "new": [
+        20.32,
+        109.22
+      ],
+      "near": "C4",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        40.64,
+        109.22
+      ],
+      "new": [
+        40.64,
+        109.22
+      ],
+      "near": "U2",
+      "moved": false,
+      "bodyBottom": 83.82
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        96.52,
+        109.22
+      ],
+      "new": [
+        96.52,
+        109.22
+      ],
+      "near": "D4",
+      "moved": false,
+      "bodyBottom": 94.4033
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        121.92,
+        109.22
+      ],
+      "new": [
+        121.92,
+        109.22
+      ],
+      "near": "C6",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        142.24,
+        109.22
+      ],
+      "new": [
+        142.24,
+        113.03
+      ],
+      "near": "R3",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        162.56,
+        109.22
+      ],
+      "new": [
+        162.56,
+        109.22
+      ],
+      "near": "C7",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        177.8,
+        109.22
+      ],
+      "new": [
+        177.8,
+        109.22
+      ],
+      "near": "C7",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        218.44,
+        109.22
+      ],
+      "new": [
+        218.44,
+        109.22
+      ],
+      "near": "C8",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        233.68,
+        109.22
+      ],
+      "new": [
+        233.68,
+        109.22
+      ],
+      "near": "C8",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        261.62,
+        109.22
+      ],
+      "new": [
+        261.62,
+        109.22
+      ],
+      "near": "C9",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        276.86,
+        109.22
+      ],
+      "new": [
+        276.86,
+        109.22
+      ],
+      "near": "C9",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        317.5,
+        109.22
+      ],
+      "new": [
+        317.5,
+        109.22
+      ],
+      "near": "C10",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        332.74,
+        109.22
+      ],
+      "new": [
+        332.74,
+        109.22
+      ],
+      "near": "C10",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "08_power-5v.kicad_sch",
+      "old": [
+        350.52,
+        55.88
+      ],
+      "new": [
+        350.52,
+        76.2
+      ],
+      "near": "U3",
+      "moved": true,
+      "bodyBottom": 71.12
+    },
+    {
+      "sheet": "09_power-vpp.kicad_sch",
+      "old": [
+        27.94,
+        101.6
+      ],
+      "new": [
+        27.94,
+        101.6
+      ],
+      "near": "C13",
+      "moved": false,
+      "bodyBottom": 82.804
+    },
+    {
+      "sheet": "09_power-vpp.kicad_sch",
+      "old": [
+        40.64,
+        101.6
+      ],
+      "new": [
+        40.64,
+        101.6
+      ],
+      "near": "U5",
+      "moved": false,
+      "bodyBottom": 96.52
+    },
+    {
+      "sheet": "09_power-vpp.kicad_sch",
+      "old": [
+        106.68,
+        101.6
+      ],
+      "new": [
+        106.68,
+        101.6
+      ],
+      "near": "C14",
+      "moved": false,
+      "bodyBottom": 82.804
+    },
+    {
+      "sheet": "09_power-vpp.kicad_sch",
+      "old": [
+        132.08,
+        101.6
+      ],
+      "new": [
+        132.08,
+        101.6
+      ],
+      "near": "R9",
+      "moved": false,
+      "bodyBottom": 96.9433
+    },
+    {
+      "sheet": "09_power-vpp.kicad_sch",
+      "old": [
+        157.48,
+        101.6
+      ],
+      "new": [
+        157.48,
+        101.6
+      ],
+      "near": "C15",
+      "moved": false,
+      "bodyBottom": 82.804
+    },
+    {
+      "sheet": "09_power-vpp.kicad_sch",
+      "old": [
+        185.42,
+        101.6
+      ],
+      "new": [
+        185.42,
+        101.6
+      ],
+      "near": "C16",
+      "moved": false,
+      "bodyBottom": 85.344
+    },
+    {
+      "sheet": "10_power-vbb.kicad_sch",
+      "old": [
+        38.1,
+        101.6
+      ],
+      "new": [
+        38.1,
+        101.6
+      ],
+      "near": "U6",
+      "moved": false,
+      "bodyBottom": 76.2
+    },
+    {
+      "sheet": "10_power-vbb.kicad_sch",
+      "old": [
+        93.98,
+        101.6
+      ],
+      "new": [
+        93.98,
+        101.6
+      ],
+      "near": "D8",
+      "moved": false,
+      "bodyBottom": 86.7833
+    },
+    {
+      "sheet": "10_power-vbb.kicad_sch",
+      "old": [
+        119.38,
+        101.6
+      ],
+      "new": [
+        119.38,
+        101.6
+      ],
+      "near": "C18",
+      "moved": false,
+      "bodyBottom": 85.344
+    },
+    {
+      "sheet": "10_power-vbb.kicad_sch",
+      "old": [
+        144.78,
+        101.6
+      ],
+      "new": [
+        144.78,
+        105.41
+      ],
+      "near": "R12",
+      "moved": true,
+      "bodyBottom": 99.4833
+    },
+    {
+      "sheet": "10_power-vbb.kicad_sch",
+      "old": [
+        170.18,
+        101.6
+      ],
+      "new": [
+        170.18,
+        101.6
+      ],
+      "near": "C19",
+      "moved": false,
+      "bodyBottom": 85.344
+    },
+    {
+      "sheet": "11_power-7v5.kicad_sch",
+      "old": [
+        10.16,
+        137.16
+      ],
+      "new": [
+        20.32,
+        158.75
+      ],
+      "near": "U8",
+      "moved": true,
+      "bodyBottom": 152.4
+    },
+    {
+      "sheet": "11_power-7v5.kicad_sch",
+      "old": [
+        20.32,
+        109.22
+      ],
+      "new": [
+        20.32,
+        109.22
+      ],
+      "near": "C20",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "11_power-7v5.kicad_sch",
+      "old": [
+        40.64,
+        109.22
+      ],
+      "new": [
+        40.64,
+        109.22
+      ],
+      "near": "U7",
+      "moved": false,
+      "bodyBottom": 83.82
+    },
+    {
+      "sheet": "11_power-7v5.kicad_sch",
+      "old": [
+        96.52,
+        109.22
+      ],
+      "new": [
+        96.52,
+        109.22
+      ],
+      "near": "D9",
+      "moved": false,
+      "bodyBottom": 94.4033
+    },
+    {
+      "sheet": "11_power-7v5.kicad_sch",
+      "old": [
+        121.92,
+        109.22
+      ],
+      "new": [
+        121.92,
+        109.22
+      ],
+      "near": "C22",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "11_power-7v5.kicad_sch",
+      "old": [
+        142.24,
+        109.22
+      ],
+      "new": [
+        142.24,
+        113.03
+      ],
+      "near": "R15",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "11_power-7v5.kicad_sch",
+      "old": [
+        162.56,
+        109.22
+      ],
+      "new": [
+        162.56,
+        109.22
+      ],
+      "near": "C23",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "11_power-7v5.kicad_sch",
+      "old": [
+        177.8,
+        109.22
+      ],
+      "new": [
+        177.8,
+        109.22
+      ],
+      "near": "C23",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "11_power-7v5.kicad_sch",
+      "old": [
+        218.44,
+        109.22
+      ],
+      "new": [
+        218.44,
+        113.03
+      ],
+      "near": "R17",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "11_power-7v5.kicad_sch",
+      "old": [
+        233.68,
+        109.22
+      ],
+      "new": [
+        233.68,
+        113.03
+      ],
+      "near": "R17",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "11_power-7v5.kicad_sch",
+      "old": [
+        254.0,
+        109.22
+      ],
+      "new": [
+        254.0,
+        109.22
+      ],
+      "near": "C24",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "12_program-6.kicad_sch",
+      "old": [
+        33.02,
+        109.22
+      ],
+      "new": [
+        33.02,
+        113.03
+      ],
+      "near": "R55",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "12_program-6.kicad_sch",
+      "old": [
+        50.8,
+        109.22
+      ],
+      "new": [
+        50.8,
+        113.03
+      ],
+      "near": "R55",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "12_program-6.kicad_sch",
+      "old": [
+        121.92,
+        124.46
+      ],
+      "new": [
+        121.92,
+        128.27
+      ],
+      "near": "R63",
+      "moved": true,
+      "bodyBottom": 122.3433
+    },
+    {
+      "sheet": "12_program-6.kicad_sch",
+      "old": [
+        139.7,
+        124.46
+      ],
+      "new": [
+        139.7,
+        128.27
+      ],
+      "near": "R63",
+      "moved": true,
+      "bodyBottom": 122.3433
+    },
+    {
+      "sheet": "13_program-9.kicad_sch",
+      "old": [
+        33.02,
+        109.22
+      ],
+      "new": [
+        33.02,
+        113.03
+      ],
+      "near": "R57",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "13_program-9.kicad_sch",
+      "old": [
+        50.8,
+        109.22
+      ],
+      "new": [
+        50.8,
+        113.03
+      ],
+      "near": "R57",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "13_program-9.kicad_sch",
+      "old": [
+        121.92,
+        124.46
+      ],
+      "new": [
+        121.92,
+        128.27
+      ],
+      "near": "R66",
+      "moved": true,
+      "bodyBottom": 122.3433
+    },
+    {
+      "sheet": "13_program-9.kicad_sch",
+      "old": [
+        139.7,
+        124.46
+      ],
+      "new": [
+        139.7,
+        128.27
+      ],
+      "near": "R66",
+      "moved": true,
+      "bodyBottom": 122.3433
+    },
+    {
+      "sheet": "14_program-12.kicad_sch",
+      "old": [
+        33.02,
+        109.22
+      ],
+      "new": [
+        33.02,
+        113.03
+      ],
+      "near": "R59",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "14_program-12.kicad_sch",
+      "old": [
+        50.8,
+        109.22
+      ],
+      "new": [
+        50.8,
+        113.03
+      ],
+      "near": "R59",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "14_program-12.kicad_sch",
+      "old": [
+        124.46,
+        124.46
+      ],
+      "new": [
+        124.46,
+        128.27
+      ],
+      "near": "R69",
+      "moved": true,
+      "bodyBottom": 122.3433
+    },
+    {
+      "sheet": "14_program-12.kicad_sch",
+      "old": [
+        142.24,
+        124.46
+      ],
+      "new": [
+        142.24,
+        128.27
+      ],
+      "near": "R69",
+      "moved": true,
+      "bodyBottom": 122.3433
+    },
+    {
+      "sheet": "15_program-14.kicad_sch",
+      "old": [
+        35.56,
+        109.22
+      ],
+      "new": [
+        35.56,
+        113.03
+      ],
+      "near": "R61",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "15_program-14.kicad_sch",
+      "old": [
+        53.34,
+        109.22
+      ],
+      "new": [
+        53.34,
+        113.03
+      ],
+      "near": "R61",
+      "moved": true,
+      "bodyBottom": 107.1033
+    },
+    {
+      "sheet": "15_program-14.kicad_sch",
+      "old": [
+        127.0,
+        124.46
+      ],
+      "new": [
+        127.0,
+        128.27
+      ],
+      "near": "R72",
+      "moved": true,
+      "bodyBottom": 122.3433
+    },
+    {
+      "sheet": "15_program-14.kicad_sch",
+      "old": [
+        144.78,
+        124.46
+      ],
+      "new": [
+        144.78,
+        128.27
+      ],
+      "near": "R72",
+      "moved": true,
+      "bodyBottom": 122.3433
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        27.94,
+        83.82
+      ],
+      "new": [
+        27.94,
+        83.82
+      ],
+      "near": "C26",
+      "moved": false,
+      "bodyBottom": 72.644
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        43.18,
+        83.82
+      ],
+      "new": [
+        43.18,
+        83.82
+      ],
+      "near": "C27",
+      "moved": false,
+      "bodyBottom": 72.644
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        58.42,
+        83.82
+      ],
+      "new": [
+        58.42,
+        83.82
+      ],
+      "near": "C28",
+      "moved": false,
+      "bodyBottom": 72.644
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        73.66,
+        83.82
+      ],
+      "new": [
+        73.66,
+        83.82
+      ],
+      "near": "C29",
+      "moved": false,
+      "bodyBottom": 72.644
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        88.9,
+        147.32
+      ],
+      "new": [
+        88.9,
+        147.32
+      ],
+      "near": "C33",
+      "moved": false,
+      "bodyBottom": 138.684
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        93.98,
+        193.04
+      ],
+      "new": [
+        93.98,
+        193.04
+      ],
+      "near": "C33",
+      "moved": false,
+      "bodyBottom": 138.684
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        215.9,
+        106.68
+      ],
+      "new": [
+        215.9,
+        106.68
+      ],
+      "near": "C45",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        231.14,
+        106.68
+      ],
+      "new": [
+        231.14,
+        106.68
+      ],
+      "near": "C46",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        335.28,
+        124.46
+      ],
+      "new": [
+        335.28,
+        124.46
+      ],
+      "near": "C30",
+      "moved": false,
+      "bodyBottom": 113.284
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        340.36,
+        83.82
+      ],
+      "new": [
+        340.36,
+        83.82
+      ],
+      "near": "R23",
+      "moved": false,
+      "bodyBottom": 79.1633
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        363.22,
+        124.46
+      ],
+      "new": [
+        363.22,
+        124.46
+      ],
+      "near": "C31",
+      "moved": false,
+      "bodyBottom": 113.284
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        365.76,
+        83.82
+      ],
+      "new": [
+        365.76,
+        83.82
+      ],
+      "near": "R24",
+      "moved": false,
+      "bodyBottom": 79.1633
+    },
+    {
+      "sheet": "16_mcu.kicad_sch",
+      "old": [
+        391.16,
+        68.58
+      ],
+      "new": [
+        391.16,
+        68.58
+      ],
+      "near": "C32",
+      "moved": false,
+      "bodyBottom": 57.404
+    },
+    {
+      "sheet": "17_adc.kicad_sch",
+      "old": [
+        20.32,
+        106.68
+      ],
+      "new": [
+        20.32,
+        106.68
+      ],
+      "near": "R52",
+      "moved": false,
+      "bodyBottom": 96.9433
+    },
+    {
+      "sheet": "17_adc.kicad_sch",
+      "old": [
+        33.02,
+        106.68
+      ],
+      "new": [
+        33.02,
+        106.68
+      ],
+      "near": "D28",
+      "moved": false,
+      "bodyBottom": 94.4033
+    },
+    {
+      "sheet": "17_adc.kicad_sch",
+      "old": [
+        48.26,
+        106.68
+      ],
+      "new": [
+        48.26,
+        106.68
+      ],
+      "near": "C48",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "17_adc.kicad_sch",
+      "old": [
+        76.2,
+        106.68
+      ],
+      "new": [
+        76.2,
+        106.68
+      ],
+      "near": "R54",
+      "moved": false,
+      "bodyBottom": 96.9433
+    },
+    {
+      "sheet": "17_adc.kicad_sch",
+      "old": [
+        88.9,
+        106.68
+      ],
+      "new": [
+        88.9,
+        106.68
+      ],
+      "near": "D29",
+      "moved": false,
+      "bodyBottom": 94.4033
+    },
+    {
+      "sheet": "17_adc.kicad_sch",
+      "old": [
+        104.14,
+        106.68
+      ],
+      "new": [
+        104.14,
+        106.68
+      ],
+      "near": "C49",
+      "moved": false,
+      "bodyBottom": 92.964
+    },
+    {
+      "sheet": "17_adc.kicad_sch",
+      "old": [
+        132.08,
+        91.44
+      ],
+      "new": [
+        132.08,
+        91.44
+      ],
+      "near": "R50",
+      "moved": false,
+      "bodyBottom": 81.7033
+    },
+    {
+      "sheet": "17_adc.kicad_sch",
+      "old": [
+        144.78,
+        91.44
+      ],
+      "new": [
+        144.78,
+        91.44
+      ],
+      "near": "D27",
+      "moved": false,
+      "bodyBottom": 79.1633
+    },
+    {
+      "sheet": "17_adc.kicad_sch",
+      "old": [
+        160.02,
+        91.44
+      ],
+      "new": [
+        160.02,
+        91.44
+      ],
+      "near": "C47",
+      "moved": false,
+      "bodyBottom": 77.724
+    },
+    {
+      "sheet": "18_control.kicad_sch",
+      "old": [
+        20.32,
+        101.6
+      ],
+      "new": [
+        20.32,
+        101.6
+      ],
+      "near": "C56",
+      "moved": false,
+      "bodyBottom": 90.424
+    },
+    {
+      "sheet": "18_control.kicad_sch",
+      "old": [
+        38.1,
+        101.6
+      ],
+      "new": [
+        38.1,
+        101.6
+      ],
+      "near": "C57",
+      "moved": false,
+      "bodyBottom": 90.424
+    },
+    {
+      "sheet": "18_control.kicad_sch",
+      "old": [
+        91.44,
+        160.02
+      ],
+      "new": [
+        91.44,
+        160.02
+      ],
+      "near": "C57",
+      "moved": false,
+      "bodyBottom": 90.424
+    },
+    {
+      "sheet": "18_control.kicad_sch",
+      "old": [
+        180.34,
+        55.88
+      ],
+      "new": [
+        180.34,
+        109.22
+      ],
+      "near": "U19",
+      "moved": true,
+      "bodyBottom": 104.14
+    },
+    {
+      "sheet": "18_control.kicad_sch",
+      "old": [
+        299.72,
+        50.8
+      ],
+      "new": [
+        304.8,
+        81.28
+      ],
+      "near": "J3",
+      "moved": true,
+      "bodyBottom": 76.2
+    },
+    {
+      "sheet": "18_control.kicad_sch",
+      "old": [
+        299.72,
+        60.96
+      ],
+      "new": [
+        304.8,
+        81.28
+      ],
+      "near": "J3",
+      "moved": true,
+      "bodyBottom": 76.2
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        20.32,
+        104.14
+      ],
+      "new": [
+        20.32,
+        104.14
+      ],
+      "near": "R27",
+      "moved": false,
+      "bodyBottom": 91.8633
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        55.88,
+        193.04
+      ],
+      "new": [
+        55.88,
+        193.04
+      ],
+      "near": "R27",
+      "moved": false,
+      "bodyBottom": 91.8633
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        142.24,
+        106.68
+      ],
+      "new": [
+        142.24,
+        106.68
+      ],
+      "near": "C2",
+      "moved": false,
+      "bodyBottom": 90.424
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        165.1,
+        167.64
+      ],
+      "new": [
+        165.1,
+        167.64
+      ],
+      "near": "U11",
+      "moved": false,
+      "bodyBottom": 157.9033
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        185.42,
+        187.96
+      ],
+      "new": [
+        185.42,
+        195.58
+      ],
+      "near": "R103",
+      "moved": true,
+      "bodyBottom": 189.992
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        193.04,
+        106.68
+      ],
+      "new": [
+        193.04,
+        106.68
+      ],
+      "near": "U1",
+      "moved": false,
+      "bodyBottom": 81.28
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        205.74,
+        106.68
+      ],
+      "new": [
+        205.74,
+        106.68
+      ],
+      "near": "C3",
+      "moved": false,
+      "bodyBottom": 90.424
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        210.82,
+        152.4
+      ],
+      "new": [
+        210.82,
+        152.4
+      ],
+      "near": "SW1",
+      "moved": false,
+      "bodyBottom": 119.8033
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        248.92,
+        53.34
+      ],
+      "new": [
+        243.84,
+        106.68
+      ],
+      "near": "J2",
+      "moved": true,
+      "bodyBottom": 101.6
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        248.92,
+        88.9
+      ],
+      "new": [
+        248.92,
+        106.68
+      ],
+      "near": "J2",
+      "moved": true,
+      "bodyBottom": 101.6
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        287.02,
+        152.4
+      ],
+      "new": [
+        287.02,
+        152.4
+      ],
+      "near": "SW2",
+      "moved": false,
+      "bodyBottom": 119.8033
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        307.34,
+        172.72
+      ],
+      "new": [
+        307.34,
+        180.34
+      ],
+      "near": "R102",
+      "moved": true,
+      "bodyBottom": 174.752
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        320.04,
+        53.34
+      ],
+      "new": [
+        325.12,
+        106.68
+      ],
+      "near": "J2",
+      "moved": true,
+      "bodyBottom": 101.6
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        320.04,
+        88.9
+      ],
+      "new": [
+        320.04,
+        106.68
+      ],
+      "near": "J2",
+      "moved": true,
+      "bodyBottom": 101.6
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        320.04,
+        93.98
+      ],
+      "new": [
+        320.04,
+        106.68
+      ],
+      "near": "J2",
+      "moved": true,
+      "bodyBottom": 101.6
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        340.36,
+        142.24
+      ],
+      "new": [
+        340.36,
+        142.24
+      ],
+      "near": "C34",
+      "moved": false,
+      "bodyBottom": 131.064
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        345.44,
+        172.72
+      ],
+      "new": [
+        345.44,
+        238.76
+      ],
+      "near": "U12",
+      "moved": true,
+      "bodyBottom": 233.68
+    },
+    {
+      "sheet": "19_usb.kicad_sch",
+      "old": [
+        368.3,
+        142.24
+      ],
+      "new": [
+        368.3,
+        142.24
+      ],
+      "near": "C35",
+      "moved": false,
+      "bodyBottom": 131.064
+    },
+    {
+      "sheet": "20_leds.kicad_sch",
+      "old": [
+        40.64,
+        88.9
+      ],
+      "new": [
+        40.64,
+        92.71
+      ],
+      "near": "R90",
+      "moved": true,
+      "bodyBottom": 86.7833
+    },
+    {
+      "sheet": "20_leds.kicad_sch",
+      "old": [
+        58.42,
+        88.9
+      ],
+      "new": [
+        58.42,
+        88.9
+      ],
+      "near": "Q17",
+      "moved": false,
+      "bodyBottom": 74.5913
+    },
+    {
+      "sheet": "20_leds.kicad_sch",
+      "old": [
+        109.22,
+        88.9
+      ],
+      "new": [
+        109.22,
+        92.71
+      ],
+      "near": "R92",
+      "moved": true,
+      "bodyBottom": 86.7833
+    },
+    {
+      "sheet": "20_leds.kicad_sch",
+      "old": [
+        127.0,
+        88.9
+      ],
+      "new": [
+        127.0,
+        88.9
+      ],
+      "near": "Q18",
+      "moved": false,
+      "bodyBottom": 74.5913
+    },
+    {
+      "sheet": "20_leds.kicad_sch",
+      "old": [
+        195.58,
+        88.9
+      ],
+      "new": [
+        195.58,
+        88.9
+      ],
+      "near": "Q19",
+      "moved": false,
+      "bodyBottom": 74.5913
+    },
+    {
+      "sheet": "20_leds.kicad_sch",
+      "old": [
+        246.38,
+        88.9
+      ],
+      "new": [
+        246.38,
+        92.71
+      ],
+      "near": "R96",
+      "moved": true,
+      "bodyBottom": 86.7833
+    },
+    {
+      "sheet": "20_leds.kicad_sch",
+      "old": [
+        264.16,
+        88.9
+      ],
+      "new": [
+        264.16,
+        88.9
+      ],
+      "near": "Q20",
+      "moved": false,
+      "bodyBottom": 74.5913
+    },
+    {
+      "sheet": "22_sd-logger.kicad_sch",
+      "old": [
+        33.02,
+        100.33
+      ],
+      "new": [
+        33.02,
+        100.33
+      ],
+      "near": "C58",
+      "moved": false,
+      "bodyBottom": 89.662
+    },
+    {
+      "sheet": "22_sd-logger.kicad_sch",
+      "old": [
+        71.12,
+        81.28
+      ],
+      "new": [
+        71.12,
+        81.28
+      ],
+      "near": "U20",
+      "moved": false,
+      "bodyBottom": 71.12
+    },
+    {
+      "sheet": "22_sd-logger.kicad_sch",
+      "old": [
+        104.14,
+        241.3
+      ],
+      "new": [
+        104.14,
+        247.65
+      ],
+      "near": "SW3",
+      "moved": true,
+      "bodyBottom": 241.3
+    },
+    {
+      "sheet": "22_sd-logger.kicad_sch",
+      "old": [
+        109.22,
+        100.33
+      ],
+      "new": [
+        109.22,
+        100.33
+      ],
+      "near": "C59",
+      "moved": false,
+      "bodyBottom": 89.662
+    },
+    {
+      "sheet": "22_sd-logger.kicad_sch",
+      "old": [
+        147.32,
+        100.33
+      ],
+      "new": [
+        147.32,
+        100.33
+      ],
+      "near": "C60",
+      "moved": false,
+      "bodyBottom": 89.662
+    },
+    {
+      "sheet": "22_sd-logger.kicad_sch",
+      "old": [
+        185.42,
+        100.33
+      ],
+      "new": [
+        185.42,
+        100.33
+      ],
+      "near": "C61",
+      "moved": false,
+      "bodyBottom": 89.916
+    },
+    {
+      "sheet": "22_sd-logger.kicad_sch",
+      "old": [
+        256.54,
+        99.06
+      ],
+      "new": [
+        256.54,
+        99.06
+      ],
+      "near": "J4",
+      "moved": false,
+      "bodyBottom": 82.55
+    },
+    {
+      "sheet": "22_sd-logger.kicad_sch",
+      "old": [
+        292.1,
+        68.58
+      ],
+      "new": [
+        287.02,
+        87.63
+      ],
+      "near": "J4",
+      "moved": true,
+      "bodyBottom": 82.55
+    },
+    {
+      "sheet": "22_sd-logger.kicad_sch",
+      "old": [
+        292.1,
+        76.2
+      ],
+      "new": [
+        287.02,
+        87.63
+      ],
+      "near": "J4",
+      "moved": true,
+      "bodyBottom": 82.55
+    },
+    {
+      "sheet": "22_sd-logger.kicad_sch",
+      "old": [
+        350.52,
+        78.74
+      ],
+      "new": [
+        350.52,
+        87.63
+      ],
+      "near": "J4",
+      "moved": true,
+      "bodyBottom": 82.55
+    }
+  ]
+}

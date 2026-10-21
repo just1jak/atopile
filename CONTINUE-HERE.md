@@ -25,6 +25,6 @@ README and source recovery information in extension-handoff.md. Runtime caches
 and AI login sessions are machine-specific. Bench/vehicle validation, firmware
 and manufacturing orders have not been performed.
 
-The first schematic page exposes 177 hierarchical signal ports. J1 and input
+The first schematic page exposes 156 hierarchical signal ports. J1 and input
 protection share a sheet. The latest 22-page PDF is
 `projects/chrysler-scanner/current/ChryslerScanner_V240_SD-Hierarchy.pdf`.

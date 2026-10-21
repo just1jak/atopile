@@ -29,4 +29,4 @@ own user request. No order or external upload has been performed.
 J1 and protection now share `06_obd-protection.kicad_sch`. The PCB hash above
 includes the J1 sheet-path metadata correction only; physical routing is unchanged.
 Run `current/source/verify_system_hierarchy.py` after new native ERC/netlist/DRC
-exports to check the 177 ports and all 194 original named net endpoint sets.
+exports to check the 156 ports and all 194 original named net endpoint sets.

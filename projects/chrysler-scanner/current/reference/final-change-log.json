@@ -23,12 +23,20 @@
   "externalUploadOrManufacturingOrder": false,
   "systemDiagramFirstPage": {
     "date": "2026-10-21",
-    "hierarchicalPorts": 177,
+    "hierarchicalPorts": 156,
     "circuitSheets": 21,
     "connectorAndProtectionSameSheet": true,
     "electricalEndpointChanges": false,
     "pcbChange": "J1 hierarchy path metadata only",
     "validation": "system-diagram-validation.json",
     "layout": "Original functional flow restored with hierarchical signals"
+  },
+  "groundSymbols": {
+    "replacedLabels": 163,
+    "nativeSymbol": "power:GND",
+    "downwardPlacement": true,
+    "removedRepeatedGroundHierarchyPorts": 21,
+    "netEndpointChanges": false,
+    "pcbChanges": false
   }
 }

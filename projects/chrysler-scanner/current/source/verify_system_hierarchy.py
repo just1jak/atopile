@@ -45,6 +45,18 @@ drc = json.loads((D/'reference/final-drc.json').read_text())
 check['nativeErcClean'] = not any(sh['violations'] for sh in erc['sheets'])
 check['nativeDrcAndParityClean'] = not drc['violations'] and not drc['unconnected_items'] and not drc.get('schematic_parity', [])
 check['twentyOneCircuitSheets'] = len(root.children('sheet')) == 21
+ground_change_path = D/'reference/ground-symbol-change.json'
+if ground_change_path.exists():
+    ground_change = json.loads(ground_change_path.read_text())
+    ground_labels = []
+    for filename in [N+'.kicad_sch', *change['ports']]:
+        circuit = s.parse((D/filename).read_text())
+        ground_labels.extend(n for kind in ('global_label', 'hierarchical_label')
+                             for n in circuit.children(kind) if n.items[1].value == 'GND')
+    check['groundLabelsReplacedByPowerSymbols'] = not ground_labels
+    check['groundHierarchyUsesGlobalPowerNet'] = all('GND' not in names for names in change['ports'].values())
+    check['groundsBelowCircuitBodies'] = all(c['bodyBottom'] is None or c['new'][1] >= c['bodyBottom']
+                                           for c in ground_change['changes'])
 result = dict(status='PASS' if all(check.values()) else 'FAIL', checks=check,
               hierarchicalPorts=total, totalPages=22,
               pcbSha256=sha(D/(N+'.kicad_pcb')), rootSchematicSha256=sha(D/(N+'.kicad_sch')),

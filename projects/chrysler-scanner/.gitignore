@@ -26,3 +26,6 @@ secrets.hpp
 # Portable delivery is committed as an archive, without a second unpacked copy.
 /outputs/chrysler-routed-sd/
 !/outputs/*.zip
+
+# Ground-symbol edit scratch and rendered review pages.
+/work/ground*

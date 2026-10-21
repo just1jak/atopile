@@ -1,1 +1,249 @@
-(kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0") (uuid "0fa4b058-4feb-583b-8296-ab82d4297b8b") (paper "A4") (title_block (title "Vehicle power input") (date "2026-10-13") (rev "V240-C/OBD") (company "ChryslerScanner / atopile")) (lib_symbols (symbol "ChryslerScanner:C1" (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "C1" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Value" "100μF" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Footprint" "footprints:CP_Radial_D8.0mm_P3.50mm" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (pin_numbers (hide yes)) (symbol "C1_1_1" (polyline (pts (xy 4.487334 1.01599) (xy -4.487334 1.01599)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -4.487332 -1.016014) (xy 4.487332 -1.016014)) (stroke (width 0.3048) (type default)) (fill (type none))) (pin passive line (at 0.0 7.62 270) (length 6.604) (name "~" (effects (font (size 1.1 1.1)))) (number "1" (effects (font (size 1.1 1.1))))) (pin passive line (at 0.0 -7.62 90) (length 6.604) (name "~" (effects (font (size 1.1 1.1)))) (number "2" (effects (font (size 1.1 1.1))))))) (symbol "ChryslerScanner:D1" (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "D1" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Value" "SMBJ30CA" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Footprint" "footprints:D_SMB" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (pin_numbers (hide yes)) (symbol "D1_1_1" (polyline (pts (xy 2e-06 2.540014) (xy 2e-06 5.503334)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -2.540002 5.079996) (xy 2e-06 -5.6e-05)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -5.6e-05) (xy 2.539996 5.079996)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539996 5.079996) (xy -2.540002 5.079996)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -2.540038) (xy 2e-06 2.540014)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 2.539996 -1.016014) (xy 2.539996 -5.6e-05)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539996 -5.6e-05) (xy -2.540002 -5.6e-05)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy -2.540002 -5.6e-05) (xy -2.540002 1.01599)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539996 -5.08002) (xy -2.540002 -5.08002)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy -2.540002 -5.08002) (xy 2e-06 -5.6e-05)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -5.6e-05) (xy 2.539996 -5.08002)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -2.540038) (xy 2e-06 -5.503334)) (stroke (width 0.3048) (type default)) (fill (type none))) (pin passive line (at 0.0 7.62 270) (length 2.54) (name "~" (effects (font (size 1.1 1.1)))) (number "1" (effects (font (size 1.1 1.1))))) (pin passive line (at 0.0 -7.62 90) (length 2.54) (name "~" (effects (font (size 1.1 1.1)))) (number "2" (effects (font (size 1.1 1.1))))))) (symbol "ChryslerScanner:D2" (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "D2" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Value" "SS56" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Footprint" "footprints:D_SMB" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (pin_numbers (hide yes)) (symbol "D2_1_1" (polyline (pts (xy 2.963332 -2.54002) (xy 2.539994 -2.54002)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539994 -2.54002) (xy 2.539994 2.539944)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539994 2.539944) (xy 1.270002 2.539944)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 1.270002 2.539944) (xy 1.270002 1.269996)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539994 -3.8e-05) (xy 2.963334 -3.8e-05)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -2.540004 -2.54002) (xy -2.540004 2.539944)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy -2.540004 2.539944) (xy 2.539994 -3.8e-05)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539994 -3.8e-05) (xy -2.540004 -2.54002)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy -2.540004 -3.8e-05) (xy 2.539994 -3.8e-05)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -2.540004 -3.8e-05) (xy -2.963334 -3.8e-05)) (stroke (width 0.3048) (type default)) (fill (type none))) (pin passive line (at 7.62 0.0 180) (length 5.08) (name "~" (effects (font (size 1.1 1.1)))) (number "1" (effects (font (size 1.1 1.1))))) (pin passive line (at -7.62 0.0 0) (length 5.08) (name "~" (effects (font (size 1.1 1.1)))) (number "2" (effects (font (size 1.1 1.1))))))) (symbol "ChryslerScanner:JP1" (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "JP1" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Value" "SGND" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Footprint" "footprints:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (pin_numbers (hide yes)) (symbol "JP1_1_1" (polyline (pts (xy 2e-06 -5.6e-05) (xy 2e-06 2.963334)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -5.6e-05) (xy 2e-06 2.963334)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.423334 2.106228) (xy 0.38709 2.179312)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.38709 2.179312) (xy 0.38709 2.710498)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.423334 2.106228) (xy 0.38709 2.179312)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.38709 2.179312) (xy 0.38709 2.710498)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.423334 -0.045662) (xy 0.349508 -0.030458)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.349508 -0.030458) (xy 0.173732 -0.00505)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.173732 -0.00505) (xy -0.00355 -5.6e-05)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.00355 -5.6e-05) (xy -0.180844 -0.010132)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.180844 -0.010132) (xy -0.35662 -0.030458)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.35662 -0.030458) (xy -0.423334 -0.04616)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.423334 -0.045662) (xy 0.349508 -0.030458)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.349508 -0.030458) (xy 0.173732 -0.00505)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.173732 -0.00505) (xy -0.00355 -5.6e-05)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.00355 -5.6e-05) (xy -0.180844 -0.010132)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.180844 -0.010132) (xy -0.35662 -0.030458)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.35662 -0.030458) (xy -0.423334 -0.04616)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.423334 -2.030914) (xy 2e-06 -2.031972)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -2.031972) (xy 0.423334 -2.030914)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.423334 -2.031972) (xy -0.423334 -2.031972)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.423334 -1.523994) (xy 0.423334 -1.523994)) (stroke (width 0.3048) (type default)) (fill (type none))) (pin passive line (at 0.0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.1 1.1)))) (number "2" (effects (font (size 1.1 1.1))))) (pin passive line (at 0.0 -10.16 90) (length 7.62) (name "~" (effects (font (size 1.1 1.1)))) (number "1" (effects (font (size 1.1 1.1)))))))) (symbol (lib_id "ChryslerScanner:C1") (at 55.88 83.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e7634fd1-4f1c-5304-b76f-41f055ae43e6") (property "Reference" "C1" (at 65.04451 82.670012 0) (effects (font (size 1.27 1.27)))) (property "Value" "100μF" (at 65.04451 84.770012 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "footprints:CP_Radial_D8.0mm_P3.50mm" (at 55.88 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 55.88 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "atopile_address" "c1" (at 55.88 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "28accd2b-89ef-5ac0-82a3-c0214bce5362")) (pin "2" (uuid "b559b309-fa53-593e-8a44-7e1e6116432c")) (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b" (reference "C1") (unit 1))))) (symbol (lib_id "ChryslerScanner:D1") (at 20.32 83.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d0ad5683-e075-525c-aacb-70175a0e0300") (property "Reference" "D1" (at 29.566148 82.67 0) (effects (font (size 1.27 1.27)))) (property "Value" "SMBJ30CA" (at 29.566148 84.77 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "footprints:D_SMB" (at 20.32 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 20.32 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "atopile_address" "d1" (at 20.32 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c8278dea-7f46-5b8a-9075-fa358cc0cc2c")) (pin "2" (uuid "e69bd330-3bf6-5f15-a4e9-ab536a055352")) (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b" (reference "D1") (unit 1))))) (symbol (lib_id "ChryslerScanner:D2") (at 38.1 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "fc7d1e72-348b-5d52-8876-9d04e1756ce3") (property "Reference" "D2" (at 38.1 54.470056 0) (effects (font (size 1.27 1.27)))) (property "Value" "SS56" (at 38.1 56.570056 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "footprints:D_SMB" (at 38.1 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 38.1 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "atopile_address" "d2" (at 38.1 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "60184a19-ff23-5813-9e8f-baf957034884")) (pin "2" (uuid "43a5213f-2e3f-5a9e-a329-dac61866e861")) (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b" (reference "D2") (unit 1))))) (symbol (lib_id "ChryslerScanner:JP1") (at 81.28 48.26 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "9ccb32c1-dce7-5be3-9b82-fabf14a2dcfc") (property "Reference" "JP1" (at 85.815058 46.644319 0) (effects (font (size 1.27 1.27)))) (property "Value" "SGND" (at 85.815058 48.744319 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "footprints:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" (at 81.28 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 81.28 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "atopile_address" "jp1" (at 81.28 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "2" (uuid "b3bd73ae-9f06-5dfe-98ad-7414db463fc7")) (pin "1" (uuid "674b74b9-873c-543c-be51-c5891198afbc")) (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b" (reference "JP1") (unit 1))))) (wire (pts (xy 55.88 60.96) (xy 55.88 76.2)) (stroke (width 0.0) (type default)) (uuid "747e34a0-2661-5a81-be58-1b7478a9d18e")) (wire (pts (xy 45.72 60.96) (xy 55.88 60.96)) (stroke (width 0.0) (type default)) (uuid "f8e51629-de8a-5809-8435-51b34bdbdc33")) (wire (pts (xy 55.88 43.18) (xy 55.88 60.96)) (stroke (width 0.0) (type default)) (uuid "d3b4dce8-fc0c-53cb-961b-aee7be25a159")) (junction (at 55.88 60.96) (diameter 0.0) (color 0 0 0 0) (uuid "1cf403af-6f76-5e60-9b3b-3e10590285cb")) (hierarchical_label "+12V" (shape bidirectional) (at 55.88 43.18 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e8fa9e22-f336-5dcb-9eb4-0852581724f5") ) (wire (pts (xy 55.88 91.44) (xy 55.88 101.6)) (stroke (width 0.0) (type default)) (uuid "06ca81cb-68da-5ad7-b297-63ca82f02aee")) (hierarchical_label "GND" (shape bidirectional) (at 55.88 101.6 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "296c9650-9e27-5242-ba80-c74233a52073") ) (wire (pts (xy 20.32 60.96) (xy 30.48 60.96)) (stroke (width 0.0) (type default)) (uuid "c9391f5e-6329-5926-9ef8-abdc9244ce1e")) (wire (pts (xy 20.32 58.42) (xy 20.32 60.96)) (stroke (width 0.0) (type default)) (uuid "15ee08c5-46b6-5439-911a-f6100809a2fe")) (wire (pts (xy 20.32 60.96) (xy 20.32 76.2)) (stroke (width 0.0) (type default)) (uuid "39b16a2b-cb0e-58a4-a2a8-b852bfe0e039")) (junction (at 20.32 60.96) (diameter 0.0) (color 0 0 0 0) (uuid "645794c3-f079-5202-9b87-155b1f0934cd")) (hierarchical_label "J1962-16" (shape bidirectional) (at 20.32 58.42 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "1ee9ecec-c93b-5ca6-85ae-3ab62695a2de") ) (wire (pts (xy 20.32 101.6) (xy 20.32 91.44)) (stroke (width 0.0) (type default)) (uuid "8fec9eab-03d7-5e97-95ec-3b2ec815cd95")) (global_label "GND" (shape input) (at 20.32 101.6 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "c875bd22-2bbe-5f50-9748-488b4be56943") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 20.32 101.6 0) (effects (font (size 1.9 1.9)) (hide yes)))) (global_label "GND" (shape input) (at 81.28 43.18 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "68070f58-d6e2-53c0-b3b6-0fe72321fb39") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 81.28 43.18 0) (effects (font (size 1.9 1.9)) (hide yes)))) (wire (pts (xy 81.28 66.04) (xy 81.28 58.42)) (stroke (width 0.0) (type default)) (uuid "610b171e-624a-56d8-8e3f-3a4e1b45c88e")) (hierarchical_label "N_J1_5" (shape bidirectional) (at 81.28 66.04 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "cf791f8d-fdbc-5ff2-8b72-13db2df5737f") ) (text "Vehicle power input" (at 16.0 18.0 0) (effects (font (size 2.6 2.6)) (justify left)) (uuid "dd8ee0d9-a710-5dac-a7f2-a5d6ffa7b270")) (text "Matching signal names connect between sheets. Values and package pins follow the atopile netlist." (at 16.0 27.0 0) (effects (font (size 1.15 1.15)) (justify left)) (uuid "f7952821-0c6f-5250-8847-ca8fd7a7e269")) (text "Atopile source / editable KiCad view / passive pins require electrical review." (at 16.0 195.0 0) (effects (font (size 1.05 1.05)) (justify left)) (uuid "78aa9fd3-4c1d-5200-a645-f40f1508f71a")))
+(kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0") (uuid "0fa4b058-4feb-583b-8296-ab82d4297b8b") (paper "A4") (title_block (title "Vehicle power input") (date "2026-10-13") (rev "V240-C/OBD") (company "ChryslerScanner / atopile")) (lib_symbols (symbol "ChryslerScanner:C1" (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "C1" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Value" "100μF" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Footprint" "footprints:CP_Radial_D8.0mm_P3.50mm" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (pin_numbers (hide yes)) (symbol "C1_1_1" (polyline (pts (xy 4.487334 1.01599) (xy -4.487334 1.01599)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -4.487332 -1.016014) (xy 4.487332 -1.016014)) (stroke (width 0.3048) (type default)) (fill (type none))) (pin passive line (at 0.0 7.62 270) (length 6.604) (name "~" (effects (font (size 1.1 1.1)))) (number "1" (effects (font (size 1.1 1.1))))) (pin passive line (at 0.0 -7.62 90) (length 6.604) (name "~" (effects (font (size 1.1 1.1)))) (number "2" (effects (font (size 1.1 1.1))))))) (symbol "ChryslerScanner:D1" (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "D1" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Value" "SMBJ30CA" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Footprint" "footprints:D_SMB" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (pin_numbers (hide yes)) (symbol "D1_1_1" (polyline (pts (xy 2e-06 2.540014) (xy 2e-06 5.503334)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -2.540002 5.079996) (xy 2e-06 -5.6e-05)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -5.6e-05) (xy 2.539996 5.079996)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539996 5.079996) (xy -2.540002 5.079996)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -2.540038) (xy 2e-06 2.540014)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 2.539996 -1.016014) (xy 2.539996 -5.6e-05)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539996 -5.6e-05) (xy -2.540002 -5.6e-05)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy -2.540002 -5.6e-05) (xy -2.540002 1.01599)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539996 -5.08002) (xy -2.540002 -5.08002)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy -2.540002 -5.08002) (xy 2e-06 -5.6e-05)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -5.6e-05) (xy 2.539996 -5.08002)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -2.540038) (xy 2e-06 -5.503334)) (stroke (width 0.3048) (type default)) (fill (type none))) (pin passive line (at 0.0 7.62 270) (length 2.54) (name "~" (effects (font (size 1.1 1.1)))) (number "1" (effects (font (size 1.1 1.1))))) (pin passive line (at 0.0 -7.62 90) (length 2.54) (name "~" (effects (font (size 1.1 1.1)))) (number "2" (effects (font (size 1.1 1.1))))))) (symbol "ChryslerScanner:D2" (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "D2" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Value" "SS56" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Footprint" "footprints:D_SMB" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (pin_numbers (hide yes)) (symbol "D2_1_1" (polyline (pts (xy 2.963332 -2.54002) (xy 2.539994 -2.54002)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539994 -2.54002) (xy 2.539994 2.539944)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539994 2.539944) (xy 1.270002 2.539944)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 1.270002 2.539944) (xy 1.270002 1.269996)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539994 -3.8e-05) (xy 2.963334 -3.8e-05)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -2.540004 -2.54002) (xy -2.540004 2.539944)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy -2.540004 2.539944) (xy 2.539994 -3.8e-05)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy 2.539994 -3.8e-05) (xy -2.540004 -2.54002)) (stroke (width 0.5) (type default)) (fill (type none))) (polyline (pts (xy -2.540004 -3.8e-05) (xy 2.539994 -3.8e-05)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -2.540004 -3.8e-05) (xy -2.963334 -3.8e-05)) (stroke (width 0.3048) (type default)) (fill (type none))) (pin passive line (at 7.62 0.0 180) (length 5.08) (name "~" (effects (font (size 1.1 1.1)))) (number "1" (effects (font (size 1.1 1.1))))) (pin passive line (at -7.62 0.0 0) (length 5.08) (name "~" (effects (font (size 1.1 1.1)))) (number "2" (effects (font (size 1.1 1.1))))))) (symbol "ChryslerScanner:JP1" (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "JP1" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Value" "SGND" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)))) (property "Footprint" "footprints:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Datasheet" "" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types" (at 0.0 0.0 0) (effects (font (size 2.54 2.54)) (hide yes))) (pin_numbers (hide yes)) (symbol "JP1_1_1" (polyline (pts (xy 2e-06 -5.6e-05) (xy 2e-06 2.963334)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -5.6e-05) (xy 2e-06 2.963334)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.423334 2.106228) (xy 0.38709 2.179312)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.38709 2.179312) (xy 0.38709 2.710498)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.423334 2.106228) (xy 0.38709 2.179312)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.38709 2.179312) (xy 0.38709 2.710498)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.423334 -0.045662) (xy 0.349508 -0.030458)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.349508 -0.030458) (xy 0.173732 -0.00505)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.173732 -0.00505) (xy -0.00355 -5.6e-05)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.00355 -5.6e-05) (xy -0.180844 -0.010132)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.180844 -0.010132) (xy -0.35662 -0.030458)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.35662 -0.030458) (xy -0.423334 -0.04616)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.423334 -0.045662) (xy 0.349508 -0.030458)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.349508 -0.030458) (xy 0.173732 -0.00505)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.173732 -0.00505) (xy -0.00355 -5.6e-05)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.00355 -5.6e-05) (xy -0.180844 -0.010132)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.180844 -0.010132) (xy -0.35662 -0.030458)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.35662 -0.030458) (xy -0.423334 -0.04616)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.423334 -2.030914) (xy 2e-06 -2.031972)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 2e-06 -2.031972) (xy 0.423334 -2.030914)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0.423334 -2.031972) (xy -0.423334 -2.031972)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.423334 -1.523994) (xy 0.423334 -1.523994)) (stroke (width 0.3048) (type default)) (fill (type none))) (pin passive line (at 0.0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.1 1.1)))) (number "2" (effects (font (size 1.1 1.1))))) (pin passive line (at 0.0 -10.16 90) (length 7.62) (name "~" (effects (font (size 1.1 1.1)))) (number "1" (effects (font (size 1.1 1.1)))))))(symbol "power:GND"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "power:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)) (symbol (lib_id "ChryslerScanner:C1") (at 55.88 83.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e7634fd1-4f1c-5304-b76f-41f055ae43e6") (property "Reference" "C1" (at 65.04451 82.670012 0) (effects (font (size 1.27 1.27)))) (property "Value" "100μF" (at 65.04451 84.770012 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "footprints:CP_Radial_D8.0mm_P3.50mm" (at 55.88 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 55.88 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "atopile_address" "c1" (at 55.88 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "28accd2b-89ef-5ac0-82a3-c0214bce5362")) (pin "2" (uuid "b559b309-fa53-593e-8a44-7e1e6116432c")) (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b" (reference "C1") (unit 1))))) (symbol (lib_id "ChryslerScanner:D1") (at 20.32 83.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d0ad5683-e075-525c-aacb-70175a0e0300") (property "Reference" "D1" (at 29.566148 82.67 0) (effects (font (size 1.27 1.27)))) (property "Value" "SMBJ30CA" (at 29.566148 84.77 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "footprints:D_SMB" (at 20.32 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 20.32 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "atopile_address" "d1" (at 20.32 83.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c8278dea-7f46-5b8a-9075-fa358cc0cc2c")) (pin "2" (uuid "e69bd330-3bf6-5f15-a4e9-ab536a055352")) (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b" (reference "D1") (unit 1))))) (symbol (lib_id "ChryslerScanner:D2") (at 38.1 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "fc7d1e72-348b-5d52-8876-9d04e1756ce3") (property "Reference" "D2" (at 38.1 54.470056 0) (effects (font (size 1.27 1.27)))) (property "Value" "SS56" (at 38.1 56.570056 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "footprints:D_SMB" (at 38.1 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 38.1 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "atopile_address" "d2" (at 38.1 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "60184a19-ff23-5813-9e8f-baf957034884")) (pin "2" (uuid "43a5213f-2e3f-5a9e-a329-dac61866e861")) (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b" (reference "D2") (unit 1))))) (symbol (lib_id "ChryslerScanner:JP1") (at 81.28 48.26 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "9ccb32c1-dce7-5be3-9b82-fabf14a2dcfc") (property "Reference" "JP1" (at 85.815058 46.644319 0) (effects (font (size 1.27 1.27)))) (property "Value" "SGND" (at 85.815058 48.744319 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "footprints:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" (at 81.28 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 81.28 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "atopile_address" "jp1" (at 81.28 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "2" (uuid "b3bd73ae-9f06-5dfe-98ad-7414db463fc7")) (pin "1" (uuid "674b74b9-873c-543c-be51-c5891198afbc")) (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b" (reference "JP1") (unit 1))))) (wire (pts (xy 55.88 60.96) (xy 55.88 76.2)) (stroke (width 0.0) (type default)) (uuid "747e34a0-2661-5a81-be58-1b7478a9d18e")) (wire (pts (xy 45.72 60.96) (xy 55.88 60.96)) (stroke (width 0.0) (type default)) (uuid "f8e51629-de8a-5809-8435-51b34bdbdc33")) (wire (pts (xy 55.88 43.18) (xy 55.88 60.96)) (stroke (width 0.0) (type default)) (uuid "d3b4dce8-fc0c-53cb-961b-aee7be25a159")) (junction (at 55.88 60.96) (diameter 0.0) (color 0 0 0 0) (uuid "1cf403af-6f76-5e60-9b3b-3e10590285cb")) (hierarchical_label "+12V" (shape bidirectional) (at 55.88 43.18 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e8fa9e22-f336-5dcb-9eb4-0852581724f5") ) (wire (pts (xy 55.88 91.44) (xy 55.88 101.6)) (stroke (width 0.0) (type default)) (uuid "06ca81cb-68da-5ad7-b297-63ca82f02aee"))  (wire (pts (xy 20.32 60.96) (xy 30.48 60.96)) (stroke (width 0.0) (type default)) (uuid "c9391f5e-6329-5926-9ef8-abdc9244ce1e")) (wire (pts (xy 20.32 58.42) (xy 20.32 60.96)) (stroke (width 0.0) (type default)) (uuid "15ee08c5-46b6-5439-911a-f6100809a2fe")) (wire (pts (xy 20.32 60.96) (xy 20.32 76.2)) (stroke (width 0.0) (type default)) (uuid "39b16a2b-cb0e-58a4-a2a8-b852bfe0e039")) (junction (at 20.32 60.96) (diameter 0.0) (color 0 0 0 0) (uuid "645794c3-f079-5202-9b87-155b1f0934cd")) (hierarchical_label "J1962-16" (shape bidirectional) (at 20.32 58.42 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "1ee9ecec-c93b-5ca6-85ae-3ab62695a2de") ) (wire (pts (xy 20.32 101.6) (xy 20.32 91.44)) (stroke (width 0.0) (type default)) (uuid "8fec9eab-03d7-5e97-95ec-3b2ec815cd95"))   (wire (pts (xy 81.28 66.04) (xy 81.28 58.42)) (stroke (width 0.0) (type default)) (uuid "610b171e-624a-56d8-8e3f-3a4e1b45c88e")) (hierarchical_label "N_J1_5" (shape bidirectional) (at 81.28 66.04 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "cf791f8d-fdbc-5ff2-8b72-13db2df5737f") ) (text "Vehicle power input" (at 16.0 18.0 0) (effects (font (size 2.6 2.6)) (justify left)) (uuid "dd8ee0d9-a710-5dac-a7f2-a5d6ffa7b270")) (text "Matching signal names connect between sheets. Values and package pins follow the atopile netlist." (at 16.0 27.0 0) (effects (font (size 1.15 1.15)) (justify left)) (uuid "f7952821-0c6f-5250-8847-ca8fd7a7e269")) (text "Atopile source / editable KiCad view / passive pins require electrical review." (at 16.0 195.0 0) (effects (font (size 1.05 1.05)) (justify left)) (uuid "78aa9fd3-4c1d-5200-a645-f40f1508f71a"))(symbol (lib_id "power:GND") (at 20.32 101.6 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "6632552d-e012-585f-aef8-415431843ac5")
+ (property "Reference" "#PWR0045" (at 20.32 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+ (property "Value" "GND" (at 20.32 105.41 0) (effects (font (size 1 1)) ))
+ (property "Footprint" "" (at 20.32 101.6 0) (effects (font (size 1 1)) (hide yes)))
+ (pin "1" (uuid "2d021b0c-85b0-529e-a026-964665cd1750"))
+ (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b" (reference "#PWR0045") (unit 1)))))
+(symbol (lib_id "power:GND") (at 55.88 101.6 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "89bea1ca-2a02-5c2f-8d91-e724239e4c91")
+ (property "Reference" "#PWR0046" (at 55.88 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
+ (property "Value" "GND" (at 55.88 105.41 0) (effects (font (size 1 1)) ))
+ (property "Footprint" "" (at 55.88 101.6 0) (effects (font (size 1 1)) (hide yes)))
+ (pin "1" (uuid "8d07e10e-ea71-5f8b-af01-477213193eb5"))
+ (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b" (reference "#PWR0046") (unit 1)))))
+(wire (pts (xy 81.28 43.18) (xy 76.2 43.18)) (stroke (width 0) (type default)) (uuid "9b478928-dc42-5f5e-9ea3-cebb1cb06bff"))
+(wire (pts (xy 76.2 43.18) (xy 76.2 55.88)) (stroke (width 0) (type default)) (uuid "af390b70-5125-5e2d-840a-0cbfab8e1dd5"))
+(symbol (lib_id "power:GND") (at 76.2 55.88 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "aa832fb6-9a89-50bf-9cd6-d4d6b14d94e8")
+ (property "Reference" "#PWR0047" (at 76.2 50.800000000000004 0) (effects (font (size 1.27 1.27)) (hide yes)))
+ (property "Value" "GND" (at 76.2 59.69 0) (effects (font (size 1 1)) ))
+ (property "Footprint" "" (at 76.2 55.88 0) (effects (font (size 1 1)) (hide yes)))
+ (pin "1" (uuid "fe8d338b-3731-5244-a9d3-1d6ff560f35d"))
+ (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b" (reference "#PWR0047") (unit 1)))))
+)

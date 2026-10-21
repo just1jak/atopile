@@ -9,7 +9,6 @@
     "01_ccd.kicad_sch": [
       "+3.3V",
       "+5V",
-      "GND",
       "J1962-11",
       "J1962-3",
       "RX1",
@@ -21,7 +20,6 @@
       "+3.3V",
       "+5V",
       "+7.5V",
-      "GND",
       "J1962-2",
       "N_Q1B_3",
       "PCI_RX",
@@ -30,7 +28,6 @@
     "03_sci-14-9.kicad_sch": [
       "+3.3V",
       "+5V",
-      "GND",
       "J1962-14",
       "J1962-9",
       "TX14_EN",
@@ -40,7 +37,6 @@
     "04_sci-6-12.kicad_sch": [
       "+3.3V",
       "+5V",
-      "GND",
       "J1962-12",
       "J1962-6",
       "RX7_BIAS",
@@ -52,7 +48,6 @@
     "05_sci-rx.kicad_sch": [
       "+3.3V",
       "+5V",
-      "GND",
       "J1962-15",
       "J1962-7",
       "RX15_EN",
@@ -61,7 +56,6 @@
       "RX7_EN"
     ],
     "06_obd-protection.kicad_sch": [
-      "GND",
       "J1962-11",
       "J1962-12",
       "J1962-14",
@@ -77,34 +71,28 @@
     ],
     "07_vehicle-input.kicad_sch": [
       "+12V",
-      "GND",
       "J1962-16",
       "N_J1_5"
     ],
     "08_power-5v.kicad_sch": [
       "+12V",
       "+3.3V",
-      "+5V",
-      "GND"
+      "+5V"
     ],
     "09_power-vpp.kicad_sch": [
       "+12V",
       "+5V",
-      "GND",
       "VPP"
     ],
     "10_power-vbb.kicad_sch": [
-      "GND",
       "VBB",
       "VPP"
     ],
     "11_power-7v5.kicad_sch": [
       "+12V",
-      "+7.5V",
-      "GND"
+      "+7.5V"
     ],
     "12_program-6.kicad_sch": [
-      "GND",
       "J1962-6",
       "VBB",
       "VBB_TO_TX6",
@@ -112,7 +100,6 @@
       "VPP_TO_TX6"
     ],
     "13_program-9.kicad_sch": [
-      "GND",
       "J1962-9",
       "VBB",
       "VBB_TO_TX9",
@@ -120,7 +107,6 @@
       "VPP_TO_TX9"
     ],
     "14_program-12.kicad_sch": [
-      "GND",
       "J1962-12",
       "VBB",
       "VBB_TO_TX12",
@@ -128,7 +114,6 @@
       "VPP_TO_TX12"
     ],
     "15_program-14.kicad_sch": [
-      "GND",
       "J1962-14",
       "VBB",
       "VBB_TO_TX14",
@@ -139,7 +124,6 @@
       "+3.3V",
       "ACT_LED",
       "EN",
-      "GND",
       "IO0",
       "LOG_BUTTON",
       "MCU_SD_CS",
@@ -165,7 +149,6 @@
       "V_PR"
     ],
     "17_adc.kicad_sch": [
-      "GND",
       "J1962-16",
       "VBB",
       "VPP",
@@ -176,7 +159,6 @@
     "18_control.kicad_sch": [
       "+3.3V",
       "+5V",
-      "GND",
       "RX15_EN",
       "RX7_BIAS_EN",
       "RX7_EN",
@@ -200,7 +182,6 @@
       "+3.3V",
       "+5V",
       "EN",
-      "GND",
       "IO0",
       "N_R25_1",
       "RX0"
@@ -209,7 +190,6 @@
       "+3.3V",
       "+5V",
       "ACT_LED",
-      "GND",
       "PWR_LED",
       "RX_LED",
       "TX_LED"
@@ -217,7 +197,6 @@
     "22_sd-logger.kicad_sch": [
       "+3.3V",
       "+5V",
-      "GND",
       "LOG_BUTTON",
       "MCU_SD_CS",
       "MCU_SD_MOSI",
@@ -487,5 +466,6 @@
     "SW3": "/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/",
     "U20": "/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/"
   },
-  "normalizedBoardBeforeSha256": "24c6a2ea61b69e2b4d4f8946686f4d69e3a21f3420ce486a2d188940cb59a3d6"
+  "normalizedBoardBeforeSha256": "24c6a2ea61b69e2b4d4f8946686f4d69e3a21f3420ce486a2d188940cb59a3d6",
+  "groundNet": "Global native power:GND symbols replace the repeated ground hierarchy labels"
 }
