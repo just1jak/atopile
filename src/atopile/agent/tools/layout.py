@@ -5,23 +5,25 @@ from __future__ import annotations
 import asyncio
 import json
 import math
-import os
 import shutil
 import subprocess
-import tempfile
 import time
+import uuid
+from fnmatch import fnmatchcase
 from pathlib import Path
-from threading import RLock
 from typing import Any, TypedDict
 
 import sexpdata
+from atopile.model.pcb_transaction import (
+    commit_pcb_bytes,
+    finish_board_edit,
+    pcb_write_lock,
+)
 
 from atopile.agent.scope import Scope
 from atopile.agent.tools.registry import tool
 from atopile.config import ProjectConfig
 from faebryk.libs.kicad.fileformats import Property, kicad
-
-_placement_lock = RLock()
 
 
 class LayoutArgs(TypedDict, total=False):
@@ -31,6 +33,7 @@ class LayoutArgs(TypedDict, total=False):
     max_nets: int
     net: str
     max_pads: int
+    max_items: int
 
 
 class PositionOptions(LayoutArgs, total=False):
@@ -45,6 +48,28 @@ class PositionArgs(PositionOptions):
 class SetPositionArgs(PositionArgs):
     x_mm: float
     y_mm: float
+
+
+class AddSegmentArgs(LayoutArgs):
+    net: str
+    start_x_mm: float
+    start_y_mm: float
+    end_x_mm: float
+    end_y_mm: float
+    width_mm: float
+    layer: str
+
+
+class AddViaArgs(LayoutArgs):
+    net: str
+    x_mm: float
+    y_mm: float
+    diameter_mm: float
+    drill_mm: float
+
+
+class DeleteCopperArgs(LayoutArgs):
+    uuid: str
 
 
 def resolve_layout_target(project_root: Path, requested: str | None) -> str:
@@ -254,24 +279,27 @@ def _set_position(args: SetPositionArgs, scope: Scope) -> dict[str, Any]:
     from faebryk.exporters.pcb.kicad.transformer import PCB_Transformer
 
     path = _layout_path(args, scope)
-    with _placement_lock:
+    with pcb_write_lock(path):
         original = path.read_bytes()
-        if _raw_locked_footprints(original.decode("utf-8")):
+        raw_locks = _raw_locked_footprints(original.decode("utf-8"))
+        pcb_file = kicad.loads(kicad.pcb.PcbFile, original.decode("utf-8"))
+        if raw_locks and not getattr(pcb_file, "preserves_unknown_fields", False):
             raise ValueError(
                 "Board contains locked KiCad footprints. Edit this board in KiCad; "
                 "the bundled parser does not preserve native footprint locks."
             )
-        pcb_file = kicad.loads(kicad.pcb.PcbFile, original.decode("utf-8"))
         footprint = _find_component(pcb_file.kicad_pcb, args["address"])
         before = _component(footprint)
-        if before["locked"] or any(
-            t.text == "FBRK:notouch" for t in footprint.fp_texts
+        if (
+            footprint.uuid in raw_locks
+            or before["locked"]
+            or any(t.text == "FBRK:notouch" for t in footprint.fp_texts)
         ):
             raise ValueError("Component is locked or marked FBRK:notouch")
-        x, y = float(args["x_mm"]), float(args["y_mm"])
-        rotation = float(args.get("rotation_deg", before["rotation_deg"]))
-        if not all(math.isfinite(value) for value in (x, y, rotation)):
-            raise ValueError("Placement coordinates and rotation must be finite")
+        x, y = _finite(args["x_mm"], "x_mm"), _finite(args["y_mm"], "y_mm")
+        rotation = _finite(
+            args.get("rotation_deg", before["rotation_deg"]), "rotation_deg"
+        )
         layer = args.get("layer", footprint.layer)
         if layer not in {"F.Cu", "B.Cu"}:
             raise ValueError("Footprint layer must be F.Cu or B.Cu")
@@ -279,34 +307,16 @@ def _set_position(args: SetPositionArgs, scope: Scope) -> dict[str, Any]:
             footprint, kicad.pcb.Xyr(x=x, y=y, r=rotation % 360), layer
         )
         updated = kicad.dumps(pcb_file)
-        if path.read_bytes() != original:
-            raise RuntimeError("PCB changed in the editor; inspect again before moving")
-        # A second *.kicad_pcb in this directory makes target discovery
-        # ambiguous. Keep a byte-for-byte backup with a non-layout suffix.
-        backup = path.with_name(f"{path.name}.local-agent-{time.time_ns()}.bak")
-        backup.write_bytes(original)
-        with tempfile.NamedTemporaryFile(
-            mode="w",
-            encoding="utf-8",
-            dir=path.parent,
-            prefix=".local-layout-",
-            delete=False,
-        ) as temp:
-            temp.write(updated)
-            temporary = Path(temp.name)
-        try:
-            os.chmod(temporary, path.stat().st_mode)
-            os.replace(temporary, path)
-        finally:
-            temporary.unlink(missing_ok=True)
+        backup = commit_pcb_bytes(path, original, updated)
         return {
             "updated": True,
             "layout_path": str(path),
-            "backup_path": str(backup),
+            "backup_path": str(backup) if backup else None,
             "before": before,
             "after": _component(footprint),
             "routing_recomputed": False,
             "drc_checked": False,
+            "zone_fill_needs_refresh": True,
         }
 
 
@@ -320,22 +330,411 @@ def _set_position(args: SetPositionArgs, scope: Scope) -> dict[str, Any]:
 async def layout_set_component_position(
     args: SetPositionArgs, scope: Scope
 ) -> dict[str, Any]:
-    worker = asyncio.create_task(asyncio.to_thread(_set_position, args, scope))
-    try:
-        return await asyncio.shield(worker)
-    except asyncio.CancelledError:
-        # Threaded edits cannot be cancelled. Do not acknowledge Stop while an
-        # atomic board edit can still commit, even if Stop is requested again.
-        while not worker.done():
-            try:
-                await asyncio.shield(worker)
-            except asyncio.CancelledError:
+    return await finish_board_edit(asyncio.to_thread(_set_position, args, scope))
+
+
+def _copper_layers(pcb: Any) -> list[str]:
+    # Canonical layer.name is electrical identity; alias is presentation only.
+    return list(
+        dict.fromkeys(layer.name for layer in pcb.layers if layer.name.endswith(".Cu"))
+    )
+
+
+def _finite(value: Any, name: str) -> float:
+    if isinstance(value, bool):
+        raise ValueError(f"{name} must be a finite number")
+    result = float(value)
+    if not math.isfinite(result):
+        raise ValueError(f"{name} must be a finite number")
+    return result
+
+
+def _outline_bounds(pcb: Any) -> dict[str, float]:
+    """Conservative axis-aligned outline bounds; native DRC checks real clearance."""
+    points: list[tuple[float, float]] = []
+    for name in ("gr_lines", "gr_arcs", "gr_rects", "gr_circles", "gr_polys"):
+        for geo in getattr(pcb, name, []):
+            if getattr(geo, "layer", None) != "Edge.Cuts":
                 continue
-            except Exception:
-                break
-        if not worker.cancelled():
-            worker.exception()  # Consume failures; cancellation remains the outcome.
-        raise
+            if name == "gr_circles":
+                radius = math.hypot(geo.end.x - geo.center.x, geo.end.y - geo.center.y)
+                points.extend(
+                    [
+                        (geo.center.x - radius, geo.center.y - radius),
+                        (geo.center.x + radius, geo.center.y + radius),
+                    ]
+                )
+            elif name == "gr_polys":
+                points.extend((p.x, p.y) for p in geo.pts.xys)
+            else:
+                points.extend(
+                    (getattr(geo, key).x, getattr(geo, key).y)
+                    for key in ("start", "mid", "end")
+                    if hasattr(geo, key)
+                )
+    if not points or not all(math.isfinite(v) for p in points for v in p):
+        raise ValueError("An Edge.Cuts outline is required for bounded manual routing")
+    xs, ys = zip(*points)
+    result = {
+        "min_x_mm": min(xs),
+        "max_x_mm": max(xs),
+        "min_y_mm": min(ys),
+        "max_y_mm": max(ys),
+    }
+    if min(xs) >= max(xs) or min(ys) >= max(ys):
+        raise ValueError("The PCB outline does not have usable two-dimensional bounds")
+    return result
+
+
+def _check_points(pcb: Any, points: list[tuple[float, float]], margin: float) -> None:
+    bounds = _outline_bounds(pcb)
+    for x, y in points:
+        if not (
+            bounds["min_x_mm"] + margin <= x <= bounds["max_x_mm"] - margin
+            and bounds["min_y_mm"] + margin <= y <= bounds["max_y_mm"] - margin
+        ):
+            raise ValueError("Copper lies outside the PCB outline bounding box")
+
+
+def _native_net(pcb: Any, name: str) -> int:
+    matches = [net.number for net in pcb.nets if net.name == name and net.number > 0]
+    if len(matches) != 1:
+        raise ValueError(f"Expected one existing assigned net named {name!r}")
+    return matches[0]
+
+
+def _raw_copper(text: str) -> list[list]:
+    return [
+        item
+        for item in sexpdata.loads(text)[1:]
+        if isinstance(item, list) and item and str(item[0]) in {"segment", "arc", "via"}
+    ]
+
+
+def _raw_uuid(item: list) -> str:
+    return next(
+        (
+            str(field[1])
+            for field in item
+            if isinstance(field, list) and len(field) > 1 and str(field[0]) == "uuid"
+        ),
+        "",
+    )
+
+
+def _raw_is_locked(item: list) -> bool:
+    return any(
+        (isinstance(field, sexpdata.Symbol) and str(field) == "locked")
+        or (
+            isinstance(field, list)
+            and field
+            and str(field[0]) == "locked"
+            and (len(field) == 1 or str(field[1]) in {"yes", "true"})
+        )
+        for field in item
+    )
+
+
+def _new_copper_uuid(original: str) -> str:
+    value = str(uuid.uuid4())
+
+    def identifiers(node: Any):
+        if isinstance(node, list):
+            if len(node) > 1 and str(node[0]) == "uuid":
+                yield str(node[1])
+            for child in node:
+                yield from identifiers(child)
+
+    if value in set(identifiers(sexpdata.loads(original))):
+        raise RuntimeError("Generated copper UUID already exists; retry the operation")
+    return value
+
+
+def _route_item(
+    item: Any, kind: str, nets: dict[int, str], locked: set[str]
+) -> dict[str, Any]:
+    result = {
+        "uuid": str(item.uuid or ""),
+        "kind": kind,
+        "net": nets.get(item.net, ""),
+        "net_id": item.net,
+        "locked": bool(getattr(item, "locked", False)) or str(item.uuid) in locked,
+    }
+    if kind == "via":
+        result.update(
+            x_mm=item.at.x,
+            y_mm=item.at.y,
+            diameter_mm=item.size,
+            drill_mm=item.drill,
+            layers=list(item.layers),
+        )
+    else:
+        result.update(
+            start_x_mm=item.start.x,
+            start_y_mm=item.start.y,
+            end_x_mm=item.end.x,
+            end_y_mm=item.end.y,
+            width_mm=item.width,
+            layer=item.layer,
+        )
+        if kind == "arc":
+            result.update(mid_x_mm=item.mid.x, mid_y_mm=item.mid.y)
+    return result
+
+
+def _route_pads(pcb: Any, query: str | None) -> list[dict[str, Any]]:
+    """World-coordinate electrical endpoints, including rotated footprints."""
+    result = []
+    copper = _copper_layers(pcb)
+    for footprint in pcb.footprints:
+        angle = math.radians(float(footprint.at.r or 0))
+        cosine, sine = math.cos(angle), math.sin(angle)
+        for pad in footprint.pads:
+            if not pad.net or not pad.net.name or (query and pad.net.name != query):
+                continue
+            x = footprint.at.x + pad.at.x * cosine + pad.at.y * sine
+            y = footprint.at.y - pad.at.x * sine + pad.at.y * cosine
+            layers = [
+                layer
+                for layer in copper
+                if any(
+                    fnmatchcase(layer, rule)
+                    or (rule == "F&B.Cu" and layer in {"F.Cu", "B.Cu"})
+                    for rule in pad.layers
+                )
+            ]
+            result.append(
+                {
+                    "reference": _property(footprint, "Reference"),
+                    "address": _property(footprint, "atopile_address"),
+                    "pad": str(pad.name),
+                    "uuid": str(pad.uuid or ""),
+                    "footprint_uuid": str(footprint.uuid or ""),
+                    "net": pad.net.name,
+                    "net_id": pad.net.number,
+                    "x_mm": x,
+                    "y_mm": y,
+                    "copper_layers": layers,
+                    "width_mm": pad.size.w,
+                    "height_mm": pad.size.h or pad.size.w,
+                }
+            )
+    return result
+
+
+@tool(
+    "Read existing local copper segments, arcs and vias, exact UUIDs, nets and "
+    "canonical copper layer names and pad endpoints in global mm coordinates. "
+    "Optionally filter one exact net. "
+    "Geometry is not a DRC certificate.",
+    label="Inspected routing",
+)
+async def layout_get_routes(args: LayoutArgs, scope: Scope) -> dict[str, Any]:
+    path = _layout_path(args, scope)
+    text = await asyncio.to_thread(path.read_text, encoding="utf-8")
+    pcb_file = await asyncio.to_thread(kicad.loads, kicad.pcb.PcbFile, text)
+    pcb = pcb_file.kicad_pcb
+    nets = {net.number: net.name or "" for net in pcb.nets}
+    locked = {_raw_uuid(item) for item in _raw_copper(text) if _raw_is_locked(item)}
+    query = args.get("net")
+    if query:
+        _native_net(pcb, query)
+    items = [
+        _route_item(item, kind, nets, locked)
+        for kind, collection in (
+            ("segment", pcb.segments),
+            ("arc", pcb.arcs),
+            ("via", pcb.vias),
+        )
+        for item in collection
+        if not query or nets.get(item.net) == query
+    ]
+    limit = max(1, min(1000, int(args.get("max_items", 200))))
+    pads = _route_pads(pcb, query)
+    pad_limit = max(1, min(1000, int(args.get("max_pads", 200))))
+    try:
+        bounds = _outline_bounds(pcb)
+    except ValueError:
+        bounds = None
+    return {
+        "layout_path": str(path),
+        "copper_layers": _copper_layers(pcb),
+        "outline_bounds": bounds,
+        "item_count": len(items),
+        "items": items[:limit],
+        "items_truncated": len(items) > limit,
+        "pad_count": len(pads),
+        "pads": pads[:pad_limit],
+        "pads_truncated": len(pads) > pad_limit,
+        "drc_checked": False,
+    }
+
+
+def _edit_copper(args: LayoutArgs, scope: Scope, operation: str) -> dict[str, Any]:
+    path = _layout_path(args, scope)
+    with pcb_write_lock(path):
+        original = path.read_bytes()
+        text = original.decode("utf-8")
+        pcb_file = kicad.loads(kicad.pcb.PcbFile, text)
+        pcb = pcb_file.kicad_pcb
+        if not getattr(pcb_file, "preserves_unknown_fields", False) and (
+            _raw_locked_footprints(text)
+            or any(_raw_is_locked(item) for item in _raw_copper(text))
+        ):
+            raise ValueError(
+                "This parser cannot preserve unrelated native locked items"
+            )
+        if operation == "segment":
+            start = (
+                _finite(args["start_x_mm"], "start_x_mm"),
+                _finite(args["start_y_mm"], "start_y_mm"),
+            )
+            end = (
+                _finite(args["end_x_mm"], "end_x_mm"),
+                _finite(args["end_y_mm"], "end_y_mm"),
+            )
+            width = _finite(args["width_mm"], "width_mm")
+            if not 0.05 <= width <= 10 or math.dist(start, end) < 1e-6:
+                raise ValueError(
+                    "Track width must be 0.05–10 mm and endpoints must differ"
+                )
+            layer = args["layer"]
+            if layer not in _copper_layers(pcb):
+                raise ValueError("Use an existing canonical copper layer, such as F.Cu")
+            net = _native_net(pcb, args["net"])
+            _check_points(pcb, [start, end], width / 2)
+            item_id = _new_copper_uuid(text)
+            item = kicad.pcb.Segment(
+                start=kicad.pcb.Xy(x=start[0], y=start[1]),
+                end=kicad.pcb.Xy(x=end[0], y=end[1]),
+                width=width,
+                layer=layer,
+                net=net,
+                uuid=item_id,
+            )
+            pcb.segments = [*pcb.segments, item]
+        elif operation == "via":
+            point = (_finite(args["x_mm"], "x_mm"), _finite(args["y_mm"], "y_mm"))
+            diameter, drill = (
+                _finite(args["diameter_mm"], "diameter_mm"),
+                _finite(args["drill_mm"], "drill_mm"),
+            )
+            if not 0.1 <= drill < diameter <= 10:
+                raise ValueError(
+                    "Through-via drill must be at least 0.1 mm and smaller "
+                    "than diameter (max 10 mm)"
+                )
+            if not {"F.Cu", "B.Cu"} <= set(_copper_layers(pcb)):
+                raise ValueError("Through vias require existing F.Cu and B.Cu layers")
+            net = _native_net(pcb, args["net"])
+            _check_points(pcb, [point], diameter / 2)
+            item_id = _new_copper_uuid(text)
+            item = kicad.pcb.Via(
+                at=kicad.pcb.Xy(x=point[0], y=point[1]),
+                size=diameter,
+                drill=drill,
+                layers=["F.Cu", "B.Cu"],
+                net=net,
+                remove_unused_layers=None,
+                keep_end_layers=None,
+                zone_layer_connections=[],
+                padstack=None,
+                teardrops=None,
+                tenting=None,
+                free=None,
+                locked=None,
+                uuid=item_id,
+            )
+            pcb.vias = [*pcb.vias, item]
+        elif operation == "delete":
+            item_id = args["uuid"]
+            try:
+                uuid.UUID(item_id)
+            except ValueError, TypeError, AttributeError:
+                raise ValueError(
+                    "Copper UUID must exactly match layout_get_routes output"
+                ) from None
+            matches = [
+                (name, item)
+                for name in ("segments", "arcs", "vias")
+                for item in getattr(pcb, name)
+                if str(item.uuid) == item_id
+            ]
+            if len(matches) != 1:
+                raise ValueError("Expected one exact existing segment, arc or via UUID")
+            if any(
+                _raw_uuid(item) == item_id and _raw_is_locked(item)
+                for item in _raw_copper(text)
+            ):
+                raise ValueError("Requested copper item is locked")
+            name, item = matches[0]
+            if getattr(item, "locked", False):
+                raise ValueError("Requested copper item is locked")
+            if any(
+                item_id in [str(member) for member in group.members]
+                for group in getattr(pcb, "groups", [])
+            ):
+                raise ValueError(
+                    "Requested copper belongs to a group; "
+                    "edit its membership in KiCad first"
+                )
+            setattr(
+                pcb,
+                name,
+                [other for other in getattr(pcb, name) if str(other.uuid) != item_id],
+            )
+        else:
+            raise ValueError("Unsupported copper operation")
+        backup = commit_pcb_bytes(path, original, kicad.dumps(pcb_file))
+        return {
+            "updated": True,
+            "layout_path": str(path),
+            "uuid": item_id,
+            "operation": operation,
+            "backup_path": str(backup) if backup else None,
+            "drc_checked": False,
+            "clearance_checked": False,
+            "routing_complete": False,
+            "zone_fill_needs_refresh": True,
+        }
+
+
+@tool(
+    "Add one straight copper segment on an exact existing net and "
+    "canonical copper layer. "
+    "Coordinates/width in mm; must fit outline bounds. Saves a backup atomically. "
+    "Manual primitive only: run layout_run_drc afterwards; "
+    "no autorouting or clearance guarantee.",
+    label="Added copper segment",
+)
+async def layout_add_track_segment(
+    args: AddSegmentArgs, scope: Scope
+) -> dict[str, Any]:
+    return await finish_board_edit(
+        asyncio.to_thread(_edit_copper, args, scope, "segment")
+    )
+
+
+@tool(
+    "Add one through via from F.Cu to B.Cu on an exact existing net, in mm. "
+    "Drill must be smaller than diameter; must fit outline bounds. Saves a backup. "
+    "Run layout_run_drc afterwards; no autorouting or clearance guarantee.",
+    label="Added through via",
+)
+async def layout_add_via(args: AddViaArgs, scope: Scope) -> dict[str, Any]:
+    return await finish_board_edit(asyncio.to_thread(_edit_copper, args, scope, "via"))
+
+
+@tool(
+    "Delete one existing unlocked segment, arc or via using the exact UUID from "
+    "layout_get_routes. Footprints, pads, zones and grouped items are refused. "
+    "Saves a backup; run layout_run_drc afterwards.",
+    label="Removed copper item",
+)
+async def layout_delete_copper(args: DeleteCopperArgs, scope: Scope) -> dict[str, Any]:
+    return await finish_board_edit(
+        asyncio.to_thread(_edit_copper, args, scope, "delete")
+    )
 
 
 def _kicad_cli() -> str:
@@ -364,6 +763,7 @@ def _run_drc(args: LayoutArgs, scope: Scope) -> dict[str, Any]:
             "--format",
             "json",
             "--severity-all",
+            "--refill-zones",
             "--output",
             str(report),
             str(path),
@@ -395,6 +795,8 @@ def _run_drc(args: LayoutArgs, scope: Scope) -> dict[str, Any]:
         "unconnected_count": len(groups["unconnected_items"]),
         "findings": findings[:100],
         "findings_truncated": len(findings) > 100,
+        "zones_refilled_for_check": True,
+        "board_saved": False,
     }
 
 

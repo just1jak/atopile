@@ -1,0 +1,138 @@
+[
+  {
+    "target": "U13.4",
+    "padUuid": "9e34a738-3d57-477a-9687-90ac70d101c2",
+    "availableFilledCappedSites": []
+  },
+  {
+    "target": "C57.2",
+    "padUuid": "2fcc60b1-304c-4ecb-9d1d-b02adb7c047c",
+    "availableFilledCappedSites": []
+  },
+  {
+    "target": "U11.2",
+    "padUuid": "11f21fd5-ff48-4d8c-8ae2-3b61068e38df",
+    "availableFilledCappedSites": []
+  },
+  {
+    "target": "C38.2",
+    "padUuid": "47909c98-ed77-4328-a695-51a6878f8380",
+    "availableFilledCappedSites": []
+  },
+  {
+    "target": "U12.3",
+    "padUuid": "3296ba1d-9923-477f-8f8d-c47c027700aa",
+    "availableFilledCappedSites": []
+  },
+  {
+    "target": "U12.29",
+    "padUuid": "f37b1c84-42bd-419f-8ca7-7e5aee0d1bd6",
+    "availableFilledCappedSites": [
+      [
+        203.979982,
+        114.440018
+      ],
+      [
+        203.879982,
+        114.440018
+      ],
+      [
+        203.979982,
+        114.340018
+      ],
+      [
+        203.979982,
+        114.540018
+      ]
+    ]
+  },
+  {
+    "target": "U19.9",
+    "padUuid": "6996c48f-5f57-4a08-8eda-754337e44cae",
+    "availableFilledCappedSites": []
+  },
+  {
+    "target": "U19.18",
+    "padUuid": "ebf0b5ea-0e2d-4f55-b498-dd539820523f",
+    "availableFilledCappedSites": []
+  },
+  {
+    "target": "U19.22",
+    "padUuid": "5b21a9ca-8ab5-4ea1-b441-18834d53f60e",
+    "availableFilledCappedSites": []
+  },
+  {
+    "target": "U19.24",
+    "padUuid": "94b09ba7-4edb-4c2d-90c2-4f93bd992f51",
+    "availableFilledCappedSites": []
+  },
+  {
+    "target": "U19.25",
+    "padUuid": "0b83690d-ed48-4343-b6f5-6752286ce376",
+    "availableFilledCappedSites": [
+      [
+        168.0,
+        137.85
+      ],
+      [
+        167.9,
+        137.85
+      ],
+      [
+        168.1,
+        137.85
+      ],
+      [
+        167.8,
+        137.85
+      ]
+    ]
+  },
+  {
+    "target": "J4.SH",
+    "padUuid": "fdb3da87-7e48-4307-a26f-65adbc285771",
+    "availableFilledCappedSites": []
+  },
+  {
+    "target": "J4.SH",
+    "padUuid": "76706a23-5733-4e6a-b88b-699962257222",
+    "availableFilledCappedSites": [
+      [
+        196.525,
+        142.275
+      ]
+    ]
+  },
+  {
+    "target": "J4.SH",
+    "padUuid": "408d8e6c-5702-4067-9d8f-5c4cf212c990",
+    "availableFilledCappedSites": []
+  },
+  {
+    "target": "J4.SH",
+    "padUuid": "de79e5d4-a351-4a49-a614-55b9aa56684c",
+    "availableFilledCappedSites": [
+      [
+        183.325,
+        153.375
+      ],
+      [
+        183.225,
+        153.375
+      ],
+      [
+        183.325,
+        153.275
+      ],
+      [
+        183.325,
+        153.475
+      ]
+    ]
+  },
+  {
+    "target": "C60.2",
+    "padUuid": "d11fdab2-67db-4f0d-8b41-126e45e624d8",
+    "availableFilledCappedSites": []
+  }
+]

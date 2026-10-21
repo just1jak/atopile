@@ -1,0 +1,38 @@
+{"engineViolations":34,"initial":{"VPP":0,"+3.3V":1,"PCI_TX":0,"V_PR":0,"RX2":0,"RX15_EN":0,"TX_LED":1,"ACT_LED":0,"LOG_BUTTON":0,"RX1":0,"VBB_TO_TX14":0}}
+{"pass":3,"net":"+3.3V","reference":"U10","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"IOException: Power breakout exceeds reviewed local limit3.0mm: 3.5193999999999996"}
+{"pass":3,"net":"+3.3V","reference":"R97","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"TX_LED","reference":"U10","pin":"15","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":3,"net":"RX7_BIAS_EN","reference":"U19","pin":"16","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":3,"net":"V_BT","reference":"U10","pin":"10","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":3,"net":"SD_MISO","reference":"U10","pin":"5","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"before":1,"net":"PCI_TX","repairRound":1,"after":1,"route":"ROUTED","accepted":false}
+{"before":1,"net":"PCI_TX","repairRound":1,"after":0,"route":"ROUTED","accepted":true}
+{"before":1,"net":"V_PR","repairRound":1,"after":0,"route":"ROUTED","accepted":true}
+{"before":1,"net":"RX15_EN","repairRound":1,"after":0,"route":"ROUTED","accepted":true}
+{"before":1,"net":"LOG_BUTTON","repairRound":1,"after":0,"route":"ROUTED","accepted":true}
+{"nonGroundMissing":5,"passComplete":3,"approvedNonGroundMissing":5,"queuedMissingNets":{"+3.3V":1,"RX7_BIAS_EN":1,"V_BT":1,"TX_LED":1,"SD_MISO":1},"nonTargetRestored":true}
+{"pass":4,"net":"SD_MISO","reference":"U10","pin":"5","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":4,"net":"V_BT","reference":"U10","pin":"10","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":4,"net":"RX7_BIAS_EN","reference":"U19","pin":"16","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":4,"net":"LOG_BUTTON","reference":"U10","pin":"6","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":4,"net":"TX_LED","reference":"U10","pin":"15","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":4,"net":"RX15_EN","reference":"U19","pin":"15","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":4,"net":"V_PR","reference":"U10","pin":"11","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":4,"net":"PCI_TX","reference":"U10","pin":"16","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":4,"net":"PCI_TX","reference":"R18","pin":"1","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":4,"net":"+3.3V","reference":"U10","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"IOException: Power breakout exceeds reviewed local limit3.0mm: 3.5193999999999996"}
+{"pass":4,"net":"+3.3V","reference":"R97","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"nonGroundMissing":5,"passComplete":4,"approvedNonGroundMissing":5,"queuedMissingNets":{"+3.3V":1,"RX7_BIAS_EN":1,"V_BT":1,"TX_LED":1,"SD_MISO":1},"nonTargetRestored":true}
+{"pass":5,"net":"+3.3V","reference":"U10","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"IOException: Power breakout exceeds reviewed local limit3.0mm: 3.5193999999999996"}
+{"pass":5,"net":"+3.3V","reference":"R97","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":5,"net":"TX_LED","reference":"U10","pin":"15","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":5,"net":"RX7_BIAS_EN","reference":"U19","pin":"16","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":5,"net":"V_BT","reference":"U10","pin":"10","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":5,"net":"SD_MISO","reference":"U10","pin":"5","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"before":1,"net":"PCI_TX","repairRound":1,"after":1,"route":"ROUTED","accepted":false}
+{"before":1,"net":"PCI_TX","repairRound":1,"after":0,"route":"ROUTED","accepted":true}
+{"before":1,"net":"V_PR","repairRound":1,"after":0,"route":"ROUTED","accepted":true}
+{"before":1,"net":"RX15_EN","repairRound":1,"after":0,"route":"ROUTED","accepted":true}
+{"before":1,"net":"LOG_BUTTON","repairRound":1,"after":0,"route":"ROUTED","accepted":true}
+{"nonGroundMissing":5,"passComplete":5,"approvedNonGroundMissing":5,"queuedMissingNets":{"+3.3V":1,"RX7_BIAS_EN":1,"V_BT":1,"TX_LED":1,"SD_MISO":1},"nonTargetRestored":true}
+{"summary":true,"inputSha256":"bbcd9a44ef5657497986579540f867b2039f942158de0eae211b0036bd8019e4","initial":{"VPP":0,"+3.3V":1,"PCI_TX":0,"V_PR":0,"RX2":0,"RX15_EN":0,"TX_LED":1,"ACT_LED":0,"LOG_BUTTON":0,"RX1":0,"VBB_TO_TX14":0},"final":{"VPP":0,"+3.3V":1,"PCI_TX":0,"V_PR":0,"RX2":0,"RX15_EN":0,"TX_LED":1,"ACT_LED":0,"LOG_BUTTON":0,"RX1":0,"VBB_TO_TX14":0},"improved":false,"allRemainingNonGroundNets":{"+3.3V":1,"RX7_BIAS_EN":1,"V_BT":1,"TX_LED":1,"SD_MISO":1},"beforeNonGroundMissing":5,"afterNonGroundMissing":5,"attempts":23,"accepted":24,"engineAirwires":66,"engineViolations":34,"nonTargetConnectivityPreserved":true,"groundBefore":61,"groundAfter":61,"protectedItemsPreserved":836,"placementsPreserved":263,"exactFixedCenterlineCoverage":true,"timeBudgetReached":false}

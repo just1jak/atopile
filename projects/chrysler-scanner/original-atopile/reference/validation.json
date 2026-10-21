@@ -1,0 +1,756 @@
+{
+  "status": "FAIL",
+  "circuit_footprints": 241,
+  "connected_nets": 142,
+  "numbered_physical_pads": 746,
+  "connected_pad_instances": 704,
+  "nc_pad_instances": 49,
+  "mounting_holes": 4,
+  "outline_mm": [
+    110,
+    55
+  ],
+  "gerber_matching_footprints": [
+    "U12",
+    "D23",
+    "D24",
+    "D25",
+    "D26"
+  ],
+  "courtyard_overlaps": [],
+  "tracks": 0,
+  "vias": 0,
+  "kicad_drc_run": false,
+  "routing_complete": false,
+  "pdf_extraction_independently_verified": false,
+  "errors": [
+    "D20: layout differs from saved placement",
+    "D20: saved courtyard differs from actual footprint"
+  ],
+  "obd_connector": {
+    "part": "ATTEND 226A-1202",
+    "manufacturer_pin_positions_checked": 16,
+    "row_pitch_mm": 3,
+    "pitch_along_row_mm": 4,
+    "drill_mm": 1.35,
+    "pad_diameter_mm": 2.35,
+    "minimum_pad_copper_to_edge_mm": 0.325,
+    "original_terminal_connections_preserved": true,
+    "model": "ATTEND_226A-1202.step"
+  },
+  "original_outline_mm": [
+    100,
+    50
+  ],
+  "gerber_component_offsets_mm": {
+    "U12": [
+      10.0,
+      0.0
+    ],
+    "D23": [
+      7.619998,
+      2.942602
+    ],
+    "D24": [
+      7.619998,
+      3.222002
+    ],
+    "D25": [
+      7.619998,
+      3.501402
+    ],
+    "D26": [
+      7.619998,
+      3.780802
+    ]
+  },
+  "functional_groups": 21,
+  "copper_layers": [
+    "F.Cu",
+    "In1.Cu",
+    "In2.Cu",
+    "B.Cu"
+  ],
+  "nominal_stackup_mm": 1.6,
+  "stackup_status": "Provisional 1.6 mm; dielectric dimensions and impedance need fabrication stackup confirmation",
+  "ground_zone_status": "Definitions only; not filled or electrically verified",
+  "pin_distance_checks": [
+    {
+      "part": "C29",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "1",
+      "max_distance_mm": 3,
+      "kind": "MCU bypass",
+      "distance_mm": 1.801
+    },
+    {
+      "part": "C30",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "3",
+      "max_distance_mm": 3,
+      "kind": "MCU bypass",
+      "distance_mm": 1.9072
+    },
+    {
+      "part": "C31",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "19",
+      "max_distance_mm": 3,
+      "kind": "MCU bypass",
+      "distance_mm": 1.7729
+    },
+    {
+      "part": "C32",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "37",
+      "max_distance_mm": 3,
+      "kind": "MCU bypass",
+      "distance_mm": 1.7236
+    },
+    {
+      "part": "C33",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "26",
+      "max_distance_mm": 3,
+      "kind": "MCU internal regulator bypass",
+      "distance_mm": 1.8852
+    },
+    {
+      "part": "C34",
+      "pad": "1",
+      "anchor": "U12",
+      "anchor_pad": "6",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass",
+      "distance_mm": 2.0351
+    },
+    {
+      "part": "C57",
+      "pad": "1",
+      "anchor": "U19",
+      "anchor_pad": "21",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass",
+      "distance_mm": 1.7106
+    },
+    {
+      "part": "C38",
+      "pad": "1",
+      "anchor": "U13",
+      "anchor_pad": "8",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass",
+      "distance_mm": 1.5019
+    },
+    {
+      "part": "C41",
+      "pad": "1",
+      "anchor": "U14",
+      "anchor_pad": "8",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass",
+      "distance_mm": 1.5002
+    },
+    {
+      "part": "C43",
+      "pad": "1",
+      "anchor": "U15",
+      "anchor_pad": "8",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass",
+      "distance_mm": 1.4419
+    },
+    {
+      "part": "C52",
+      "pad": "2",
+      "anchor": "U16",
+      "anchor_pad": "5",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass",
+      "distance_mm": 1.7786
+    },
+    {
+      "part": "C54",
+      "pad": "1",
+      "anchor": "U17",
+      "anchor_pad": "5",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass",
+      "distance_mm": 1.7397
+    },
+    {
+      "part": "C55",
+      "pad": "1",
+      "anchor": "U18",
+      "anchor_pad": "5",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass",
+      "distance_mm": 1.7397
+    },
+    {
+      "part": "C11",
+      "pad": "2",
+      "anchor": "U9",
+      "anchor_pad": "5",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass",
+      "distance_mm": 2.1755
+    },
+    {
+      "part": "C4",
+      "pad": "1",
+      "anchor": "U2",
+      "anchor_pad": "5",
+      "max_distance_mm": 4.5,
+      "kind": "Buck input capacitor",
+      "distance_mm": 3.1162
+    },
+    {
+      "part": "C20",
+      "pad": "1",
+      "anchor": "U7",
+      "anchor_pad": "5",
+      "max_distance_mm": 4.5,
+      "kind": "Buck input capacitor",
+      "distance_mm": 2.4722
+    },
+    {
+      "part": "C5",
+      "pad": "1",
+      "anchor": "U2",
+      "anchor_pad": "1",
+      "max_distance_mm": 4,
+      "kind": "Bootstrap capacitor",
+      "distance_mm": 2.2289
+    },
+    {
+      "part": "C17",
+      "pad": "1",
+      "anchor": "U6",
+      "anchor_pad": "1",
+      "max_distance_mm": 4,
+      "kind": "Bootstrap capacitor",
+      "distance_mm": 3.9935
+    },
+    {
+      "part": "C21",
+      "pad": "1",
+      "anchor": "U7",
+      "anchor_pad": "1",
+      "max_distance_mm": 4,
+      "kind": "Bootstrap capacitor",
+      "distance_mm": 3.6526
+    },
+    {
+      "part": "D4",
+      "pad": "1",
+      "anchor": "U2",
+      "anchor_pad": "6",
+      "max_distance_mm": 5,
+      "kind": "Buck catch diode",
+      "distance_mm": 4.7257
+    },
+    {
+      "part": "D8",
+      "pad": "1",
+      "anchor": "U6",
+      "anchor_pad": "6",
+      "max_distance_mm": 5,
+      "kind": "Buck catch diode",
+      "distance_mm": 2.0667
+    },
+    {
+      "part": "D9",
+      "pad": "1",
+      "anchor": "U7",
+      "anchor_pad": "6",
+      "max_distance_mm": 5,
+      "kind": "Buck catch diode",
+      "distance_mm": 1.8982
+    },
+    {
+      "part": "L1",
+      "pad": "1",
+      "anchor": "U2",
+      "anchor_pad": "6",
+      "max_distance_mm": 6,
+      "kind": "Switch node to inductor",
+      "distance_mm": 2.643
+    },
+    {
+      "part": "L4",
+      "pad": "1",
+      "anchor": "U6",
+      "anchor_pad": "6",
+      "max_distance_mm": 6,
+      "kind": "Switch node to inductor",
+      "distance_mm": 2.2353
+    },
+    {
+      "part": "L6",
+      "pad": "1",
+      "anchor": "U7",
+      "anchor_pad": "6",
+      "max_distance_mm": 6,
+      "kind": "Switch node to inductor",
+      "distance_mm": 5.5904
+    },
+    {
+      "part": "L2",
+      "pad": "2",
+      "anchor": "U5",
+      "anchor_pad": "1",
+      "max_distance_mm": 6,
+      "kind": "Switch node to inductor",
+      "distance_mm": 3.265
+    },
+    {
+      "part": "D11",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "2",
+      "max_distance_mm": 11,
+      "kind": "OBD protection",
+      "distance_mm": 6.9487
+    },
+    {
+      "part": "D12",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "2",
+      "max_distance_mm": 11,
+      "kind": "OBD protection",
+      "distance_mm": 9.2505
+    },
+    {
+      "part": "D13",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "3",
+      "max_distance_mm": 11,
+      "kind": "OBD protection",
+      "distance_mm": 6.7812
+    },
+    {
+      "part": "D14",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "11",
+      "max_distance_mm": 11,
+      "kind": "OBD protection",
+      "distance_mm": 6.2508
+    },
+    {
+      "part": "C25",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "2",
+      "max_distance_mm": 11,
+      "kind": "OBD protection",
+      "distance_mm": 7.1511
+    },
+    {
+      "part": "C36",
+      "pad": "2",
+      "anchor": "J1",
+      "anchor_pad": "6",
+      "max_distance_mm": 11,
+      "kind": "OBD protection",
+      "distance_mm": 6.25
+    },
+    {
+      "part": "C37",
+      "pad": "2",
+      "anchor": "J1",
+      "anchor_pad": "12",
+      "max_distance_mm": 11,
+      "kind": "OBD protection",
+      "distance_mm": 3.2845
+    },
+    {
+      "part": "C39",
+      "pad": "2",
+      "anchor": "J1",
+      "anchor_pad": "14",
+      "max_distance_mm": 11,
+      "kind": "OBD protection",
+      "distance_mm": 4.5786
+    },
+    {
+      "part": "C40",
+      "pad": "2",
+      "anchor": "J1",
+      "anchor_pad": "9",
+      "max_distance_mm": 11,
+      "kind": "OBD protection",
+      "distance_mm": 4.6301
+    },
+    {
+      "part": "C42",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "7",
+      "max_distance_mm": 11,
+      "kind": "OBD protection",
+      "distance_mm": 6.25
+    },
+    {
+      "part": "C44",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "15",
+      "max_distance_mm": 11,
+      "kind": "OBD protection",
+      "distance_mm": 4.5786
+    },
+    {
+      "part": "R102",
+      "pad": "1",
+      "anchor": "J2",
+      "anchor_pad": "A5",
+      "max_distance_mm": 2.5,
+      "kind": "USB-C CC Rd termination",
+      "distance_mm": 2.4181
+    },
+    {
+      "part": "R103",
+      "pad": "1",
+      "anchor": "J2",
+      "anchor_pad": "B5",
+      "max_distance_mm": 2.5,
+      "kind": "USB-C CC Rd termination",
+      "distance_mm": 2.4181
+    },
+    {
+      "part": "U11",
+      "pad": "1",
+      "anchor": "J2",
+      "anchor_pad": "A6",
+      "max_distance_mm": 2.5,
+      "kind": "USB-C data-line ESD proximity",
+      "distance_mm": 2.2896
+    },
+    {
+      "part": "U11",
+      "pad": "3",
+      "anchor": "J2",
+      "anchor_pad": "A7",
+      "max_distance_mm": 2.5,
+      "kind": "USB-C data-line ESD proximity",
+      "distance_mm": 2.4376
+    },
+    {
+      "part": "R8",
+      "pad": "2",
+      "anchor": "U5",
+      "anchor_pad": "3",
+      "kind": "Regulator feedback",
+      "max_distance_mm": 3.6,
+      "distance_mm": 1.7305
+    },
+    {
+      "part": "R9",
+      "pad": "1",
+      "anchor": "U5",
+      "anchor_pad": "3",
+      "kind": "Regulator feedback",
+      "max_distance_mm": 3.6,
+      "distance_mm": 2.5544
+    },
+    {
+      "part": "R14",
+      "pad": "2",
+      "anchor": "U7",
+      "anchor_pad": "3",
+      "kind": "Regulator feedback",
+      "max_distance_mm": 3.6,
+      "distance_mm": 1.7882
+    },
+    {
+      "part": "R15",
+      "pad": "1",
+      "anchor": "U7",
+      "anchor_pad": "3",
+      "kind": "Regulator feedback",
+      "max_distance_mm": 3.6,
+      "distance_mm": 2.4668
+    },
+    {
+      "part": "C5",
+      "pad": "2",
+      "anchor": "U2",
+      "anchor_pad": "6",
+      "kind": "Bootstrap switch return",
+      "max_distance_mm": 3.6,
+      "distance_mm": 2.2228
+    },
+    {
+      "part": "C21",
+      "pad": "2",
+      "anchor": "U7",
+      "anchor_pad": "6",
+      "kind": "Bootstrap switch return",
+      "max_distance_mm": 3.6,
+      "distance_mm": 3.157
+    },
+    {
+      "part": "C6",
+      "pad": "1",
+      "anchor": "L1",
+      "anchor_pad": "2",
+      "kind": "Buck output capacitor",
+      "max_distance_mm": 5.1,
+      "distance_mm": 2.5501
+    },
+    {
+      "part": "C7",
+      "pad": "1",
+      "anchor": "U3",
+      "anchor_pad": "6",
+      "kind": "LDO input capacitor",
+      "max_distance_mm": 3.6,
+      "distance_mm": 1.8707
+    },
+    {
+      "part": "C8",
+      "pad": "1",
+      "anchor": "U3",
+      "anchor_pad": "1",
+      "kind": "LDO output capacitor",
+      "max_distance_mm": 4.1,
+      "distance_mm": 1.6406
+    },
+    {
+      "part": "C9",
+      "pad": "1",
+      "anchor": "U4",
+      "anchor_pad": "6",
+      "kind": "LDO input capacitor",
+      "max_distance_mm": 3.6,
+      "distance_mm": 1.6856
+    },
+    {
+      "part": "C10",
+      "pad": "1",
+      "anchor": "U4",
+      "anchor_pad": "1",
+      "kind": "LDO output capacitor",
+      "max_distance_mm": 4.1,
+      "distance_mm": 2.1505
+    },
+    {
+      "part": "D7",
+      "pad": "2",
+      "anchor": "U5",
+      "anchor_pad": "1",
+      "kind": "Boost rectifier to switch",
+      "max_distance_mm": 4.1,
+      "distance_mm": 1.905
+    },
+    {
+      "part": "C14",
+      "pad": "1",
+      "anchor": "D7",
+      "anchor_pad": "1",
+      "kind": "Boost output capacitor",
+      "max_distance_mm": 4.1,
+      "distance_mm": 2.1001
+    },
+    {
+      "part": "C19",
+      "pad": "1",
+      "anchor": "L5",
+      "anchor_pad": "2",
+      "kind": "Filtered output capacitor",
+      "max_distance_mm": 3.6,
+      "distance_mm": 2.1759
+    },
+    {
+      "part": "C22",
+      "pad": "1",
+      "anchor": "L6",
+      "anchor_pad": "2",
+      "kind": "Buck output capacitor",
+      "max_distance_mm": 5.1,
+      "distance_mm": 2.3959
+    },
+    {
+      "part": "R16",
+      "pad": "2",
+      "anchor": "U8",
+      "anchor_pad": "2",
+      "kind": "LDO feedback",
+      "max_distance_mm": 3.6,
+      "distance_mm": 1.6302
+    },
+    {
+      "part": "R17",
+      "pad": "1",
+      "anchor": "U8",
+      "anchor_pad": "2",
+      "kind": "LDO feedback",
+      "max_distance_mm": 3.6,
+      "distance_mm": 1.49
+    },
+    {
+      "part": "C2",
+      "pad": "1",
+      "anchor": "U1",
+      "anchor_pad": "2",
+      "kind": "USB switch input capacitor",
+      "max_distance_mm": 3.6,
+      "distance_mm": 1.8792
+    },
+    {
+      "part": "C3",
+      "pad": "1",
+      "anchor": "U1",
+      "anchor_pad": "4",
+      "kind": "USB switch output capacitor",
+      "max_distance_mm": 3.6,
+      "distance_mm": 1.8765
+    },
+    {
+      "part": "C35",
+      "pad": "1",
+      "anchor": "U12",
+      "anchor_pad": "6",
+      "kind": "USB bridge bulk bypass",
+      "max_distance_mm": 5.1,
+      "distance_mm": 2.671
+    },
+    {
+      "part": "C56",
+      "pad": "1",
+      "anchor": "U19",
+      "anchor_pad": "21",
+      "kind": "I/O expander bulk bypass",
+      "max_distance_mm": 5.1,
+      "distance_mm": 1.8656
+    },
+    {
+      "part": "R22",
+      "pad": "2",
+      "anchor": "U10",
+      "anchor_pad": "2",
+      "kind": "RF matching proximity",
+      "max_distance_mm": 3.6,
+      "distance_mm": 2.8663
+    },
+    {
+      "part": "R24",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "2",
+      "kind": "RF matching proximity",
+      "max_distance_mm": 3.6,
+      "distance_mm": 2.9386
+    },
+    {
+      "part": "R23",
+      "pad": "1",
+      "anchor": "R22",
+      "anchor_pad": "1",
+      "kind": "RF matching proximity",
+      "max_distance_mm": 3.1,
+      "distance_mm": 1.6767
+    },
+    {
+      "part": "R24",
+      "pad": "1",
+      "anchor": "R22",
+      "anchor_pad": "2",
+      "kind": "RF matching proximity",
+      "max_distance_mm": 3.1,
+      "distance_mm": 1.6763
+    },
+    {
+      "part": "C4",
+      "pad": "2",
+      "anchor": "U2",
+      "anchor_pad": "2",
+      "kind": "Local power ground return",
+      "max_distance_mm": 5.1,
+      "distance_mm": 3.1205
+    },
+    {
+      "part": "D8",
+      "pad": "2",
+      "anchor": "U6",
+      "anchor_pad": "2",
+      "kind": "Local power ground return",
+      "max_distance_mm": 5.1,
+      "distance_mm": 3.0954
+    },
+    {
+      "part": "C2",
+      "pad": "2",
+      "anchor": "U1",
+      "anchor_pad": "1",
+      "kind": "Local power ground return",
+      "max_distance_mm": 5.1,
+      "distance_mm": 4.8653
+    },
+    {
+      "part": "C3",
+      "pad": "2",
+      "anchor": "U1",
+      "anchor_pad": "1",
+      "kind": "Local power ground return",
+      "max_distance_mm": 5.1,
+      "distance_mm": 2.4487
+    }
+  ],
+  "visible_reference_fields": 245,
+  "reference_label_overlaps": [],
+  "c1_physical_body": {
+    "diameter_mm": 8.0,
+    "center_mm": [
+      14.125,
+      49.224999999999994
+    ],
+    "courtyard_bounds_mm": [
+      9.875,
+      44.974999999999994,
+      18.375,
+      53.474999999999994
+    ],
+    "board_containment_checked": true,
+    "component_and_hardware_clearance_checked": true
+  },
+  "reference_text_height_mm": 1.0,
+  "reference_text_font_width_mm": 0.65,
+  "reference_text_stroke_mm": 0.15,
+  "reference_text_bounds": "Measured with native KiCad stroke font",
+  "reference_pad_mask_clearance_mm": 0.15,
+  "reference_label_clearance_mm": 0.15,
+  "reference_text_capability_source": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+  "local_3d_model_references": 241,
+  "model_files_verified": 45,
+  "dnp_references": [
+    "R23",
+    "R24"
+  ],
+  "models_are_generic_or_representative": true,
+  "hardware_revision": "V240-USB-C-OBD",
+  "usb_c": {
+    "connector": "USB4105-GF-A",
+    "protocol": "USB 2.0 full-speed device",
+    "power": "5 V sink; no USB-PD",
+    "cc_resistors": [
+      "R102",
+      "R103"
+    ],
+    "cc_resistance_ohm": 5100,
+    "cc_tolerance_percent": 1,
+    "port_centerline_mm": 29.0,
+    "smd_mask_expansion_mm": 0.025,
+    "minimum_contact_row_mask_bridge_mm": 0.15,
+    "retained_pin_maps_checked": 238
+  }
+}

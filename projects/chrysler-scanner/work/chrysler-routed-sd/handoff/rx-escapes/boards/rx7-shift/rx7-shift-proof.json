@@ -1,0 +1,416 @@
+{
+  "sourceSha256": "f5b42ba76001f790c445533dfcd8567136b5b018127ac8982a2b04650661a2d1",
+  "outputSha256": "0902c778c8f56598a5c9c79f36f420d5f87bf48f2c6ba173834abb14c671b795",
+  "movedGenericVia": "92559ee8-fd35-41a6-9b11-cc155f43f096",
+  "oldMm": [
+    170.6562,
+    138.4406
+  ],
+  "newMm": [
+    171.025,
+    138.25
+  ],
+  "removedGenericFTracks": {
+    "29af10c1-f9ab-45e3-a039-e45499efe4ed": {
+      "kind": "PCB_TRACK",
+      "net": "RX7_BIAS_EN",
+      "start": [
+        170426700,
+        138211100
+      ],
+      "end": [
+        170426700,
+        138000000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "d9fdeb72-192e-4d50-86c9-3d4c3cc2fcaf": {
+      "kind": "PCB_TRACK",
+      "net": "RX7_BIAS_EN",
+      "start": [
+        169900000,
+        138000000
+      ],
+      "end": [
+        170426700,
+        138000000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "f8657eb5-bc57-4b8e-9014-e79fc2aff7ef": {
+      "kind": "PCB_TRACK",
+      "net": "RX7_BIAS_EN",
+      "start": [
+        170656200,
+        138440600
+      ],
+      "end": [
+        170426700,
+        138211100
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    }
+  },
+  "added150umTracks": {
+    "37e34be4-c95c-58d0-a00c-74068da4dc1d": {
+      "kind": "PCB_TRACK",
+      "net": "RX7_BIAS_EN",
+      "start": [
+        169900000,
+        138000000
+      ],
+      "end": [
+        171025000,
+        138250000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": true
+    },
+    "7e210c0c-f7ef-5686-a219-cc9c13a0b964": {
+      "kind": "PCB_TRACK",
+      "net": "RX7_BIAS_EN",
+      "start": [
+        170656200,
+        138440600
+      ],
+      "end": [
+        171025000,
+        138250000
+      ],
+      "width": 150000,
+      "layer": 6,
+      "locked": true
+    }
+  },
+  "removedGeneric500umPowerTracks": {
+    "c719d16e-1e81-44de-9cc3-2cac617efd43": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        167516500,
+        134184400
+      ],
+      "end": [
+        171723000,
+        138390900
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": false
+    },
+    "e42a15df-6938-426d-b053-c3658b3e390f": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        171723000,
+        138390900
+      ],
+      "end": [
+        174835000,
+        138390900
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": false
+    }
+  },
+  "added500umPowerTracks": {
+    "50ac1584-f168-5454-9cf0-2b72dde4b0ef": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        167516500,
+        134184400
+      ],
+      "end": [
+        170516500,
+        137184400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "8cb1048e-6aa5-54f9-b0f1-c83249242fad": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        170516500,
+        137184400
+      ],
+      "end": [
+        170566500,
+        137184400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "e1336a94-329f-57a2-9b68-30c4133adc97": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        170566500,
+        137184400
+      ],
+      "end": [
+        170616500,
+        137234400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "e4a26632-96bb-5d9e-b37f-2a40870ad1b8": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        170616500,
+        137234400
+      ],
+      "end": [
+        170766500,
+        137234400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "bcc57d90-d6fe-53a2-8efe-45832e004ef5": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        170766500,
+        137234400
+      ],
+      "end": [
+        170816500,
+        137284400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "038f817c-ad39-5b4f-88ff-cdb4e9e5cae7": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        170816500,
+        137284400
+      ],
+      "end": [
+        172016500,
+        137284400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "dab00e8a-4bef-5f1e-b62c-de83989eb505": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        172016500,
+        137284400
+      ],
+      "end": [
+        172866500,
+        138134400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "9fdc6b3b-0188-5dab-a3ce-04375ab53bc5": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        172866500,
+        138134400
+      ],
+      "end": [
+        172916500,
+        138134400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "e75cea28-31d6-52a0-b376-aea9178848cd": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        172916500,
+        138134400
+      ],
+      "end": [
+        172966500,
+        138184400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "19ae6a84-55bb-5a5f-b837-a501d0103e82": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        172966500,
+        138184400
+      ],
+      "end": [
+        173066500,
+        138184400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "ee6f9f1f-5ffc-523e-b5d2-3532bbd8be41": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        173066500,
+        138184400
+      ],
+      "end": [
+        173116500,
+        138234400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "dc0cbe24-acc9-585b-9a98-33c067ebb5e9": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        173116500,
+        138234400
+      ],
+      "end": [
+        174066500,
+        138234400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "82b65573-0208-5fa3-8913-106103d8d966": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        174066500,
+        138234400
+      ],
+      "end": [
+        174216500,
+        138384400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "5bb78ea2-281e-59d7-ae05-3a1aea36f801": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        174216500,
+        138384400
+      ],
+      "end": [
+        174766500,
+        138384400
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    },
+    "e90e2bf2-c13d-5d5b-ab78-2c69ad93b96e": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        174766500,
+        138384400
+      ],
+      "end": [
+        174835000,
+        138390900
+      ],
+      "width": 500000,
+      "layer": 2,
+      "locked": true
+    }
+  },
+  "allPadPartitionsUnchanged": true,
+  "allUnrelatedCopperPreserved": true,
+  "connectivity": {
+    "fullNativeAirwires": 3,
+    "disconnectedNetGroups": {
+      "RX15_EN": [
+        {
+          "count": 2,
+          "pads": [
+            "R47.2",
+            "U15.3"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U19.15"
+          ]
+        }
+      ],
+      "TX_LED": [
+        {
+          "count": 2,
+          "pads": [
+            "Q18.1",
+            "R92.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.15"
+          ]
+        }
+      ],
+      "PCI_RX": [
+        {
+          "count": 3,
+          "pads": [
+            "C12.1",
+            "R7.2",
+            "U9.4"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.17"
+          ]
+        }
+      ]
+    },
+    "ground": {
+      "padCount": 175,
+      "connectedGroupCount": 1,
+      "largestConnectedGroupCount": 175,
+      "isolatedFromMainGroup": []
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3387.900504,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4913.168813,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5461.504204,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 37.506408
+    }
+  }
+}

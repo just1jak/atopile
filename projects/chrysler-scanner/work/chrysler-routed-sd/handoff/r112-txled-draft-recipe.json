@@ -1,0 +1,206 @@
+{
+  "status": "unvalidated draft; NO prototype board saved; do not apply without geometry guards and native DRC",
+  "frozenInput": {
+    "path": "work/chrysler-routed-sd/mcu-final-escape-stage/input/ChryslerScanner_V240_SD.kicad_pcb",
+    "sha256": "0902c778c8f56598a5c9c79f36f420d5f87bf48f2c6ba173834abb14c671b795",
+    "bytes": 2855866,
+    "projectPath": "work/chrysler-routed-sd/mcu-final-escape-stage/input/ChryslerScanner_V240_SD.kicad_pro"
+  },
+  "units": "millimetres; absolute native board coordinates; canonical KiCad layer names",
+  "r112": {
+    "uuid": "02c8eb1a-24b2-5552-8d67-a69e0ca939ec",
+    "approvedException": "only this newly added SD resistor may move; original scanner parts and other17 added parts unchanged",
+    "oldPositionMm": [
+      172.0,
+      121.0
+    ],
+    "proposedPositionMm": [
+      172.0,
+      121.075
+    ],
+    "angleDegrees": -90.0,
+    "layer": "B.Cu",
+    "pad1OldMm": [
+      172.0,
+      120.175
+    ],
+    "pad1ProposedMm": [
+      172.0,
+      120.25
+    ],
+    "pad2OldMm": [
+      172.0,
+      121.825
+    ],
+    "pad2ProposedMm": [
+      172.0,
+      121.9
+    ],
+    "nativeVerifiedAfterMove": false
+  },
+  "constraints": {
+    "minimumTrackWidthMm": 0.15,
+    "minimumCopperClearanceMm": 0.15,
+    "minimumCopperToHoleMm": 0.2,
+    "minimumHoleToHoleMm": 0.25,
+    "newThroughViasMm": {
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    "mainPowerTrunksWidthMm": 0.5,
+    "groundPadsMustRemainOneGroup": 175,
+    "protectedSeedCopperItems": 122,
+    "zoneDefinitionsMustRemainUnchanged": 9,
+    "noPCBOrRuleChangeToOriginalDownloadsProject": true
+  },
+  "operations": [
+    {
+      "kind": "new locked TX_LED escape",
+      "layer": "F.Cu",
+      "widthMm": 0.15,
+      "pointsMm": [
+        [
+          171.9375,
+          118.7275
+        ],
+        [
+          171.9,
+          119.375
+        ]
+      ],
+      "viaMm": [
+        171.9,
+        119.375
+      ],
+      "viaRequiresFilledAndCappedAndBothSidesTented": true,
+      "verified": false
+    },
+    {
+      "kind": "replace unlocked RX_LED breakout",
+      "oldUuids": [
+        "5bb6c0de-9712-4580-bc99-d912eda3678c",
+        "c2ab3c1c-7f88-4c1d-9b06-21efb75e64ab"
+      ],
+      "layer": "F.Cu",
+      "widthMm": 0.2,
+      "newLockedPointsMm": [
+        [
+          171.4375,
+          118.7275
+        ],
+        [
+          171.3375,
+          119.0675
+        ],
+        [
+          171.3375,
+          119.6138
+        ],
+        [
+          171.0591,
+          119.9922
+        ]
+      ],
+      "retainExistingVia": true,
+      "verified": false
+    },
+    {
+      "kind": "replace unlocked +3.3V B arch and R112 feed",
+      "oldUuids": [
+        "2441b0e2-60dc-472b-acd4-b558b8574f7f",
+        "35e4541a-a0cb-4806-b498-4b06bccbae80",
+        "5d665197-29d8-4aaf-b18a-a5a422586114",
+        "5b8eee42-cb11-4164-bf52-564d28eb289d",
+        "ef2bb34a-eae7-4b4d-aa1a-4e524be01772"
+      ],
+      "layer": "B.Cu",
+      "widthMm": 0.5,
+      "newPointsMm": [
+        [
+          170.7787,
+          118.3271
+        ],
+        [
+          173.9139,
+          118.3271
+        ],
+        [
+          173.9139,
+          119.5484
+        ]
+      ],
+      "retainUpperViaMm": [
+        173.9139,
+        119.5484
+      ],
+      "verified": false
+    },
+    {
+      "kind": "new short R112 pullup feed",
+      "net": "+3.3V",
+      "viaMm": [
+        171.9,
+        120.2
+      ],
+      "viaRequiresFilledAndCappedAndBothSidesTented": true,
+      "layer": "F.Cu",
+      "widthMm": 0.15,
+      "targetPad": "C26.1",
+      "targetMm": [
+        170.45,
+        121.175
+      ],
+      "routePointsNotYetSolved": true,
+      "suggestedChannelMm": [
+        171.2545,
+        120.5086
+      ],
+      "reasonForApprovedNarrowFeed": "47k pull-up, approximately70 microamp; main rail remains0.50mm",
+      "verified": false
+    },
+    {
+      "kind": "replace same-width unlocked PWR_LED In2 middle chain",
+      "layer": "In2.Cu",
+      "widthMm": 0.2,
+      "chainSelectionBothEndpointsWithinBoxMm": {
+        "minX": 170.29,
+        "maxX": 172.29,
+        "minY": 119.3,
+        "maxY": 122.18
+      },
+      "requiredDegreeOneEndpointsNativeNm": [
+        [
+          170299901,
+          120195201
+        ],
+        [
+          172279799,
+          122175099
+        ]
+      ],
+      "newRouteNotYetSolved": true,
+      "retainOuterChain": true,
+      "verified": false
+    }
+  ],
+  "doNotModifyInPreferredDraft": [
+    "PCI_TX",
+    "PCI_RX",
+    "all original footprint positions",
+    "board rules",
+    "zone definitions",
+    "protected seed copper"
+  ],
+  "requiredAcceptance": [
+    "source SHA guard; exact old copper geometry guards before deletion",
+    "all175 GND pads remain one native connected group",
+    "no worsening in any non-target pad partitions",
+    "native physical DRC introduces zero findings",
+    "schematic parity zero",
+    "only R112 is rigidly translated; all262 other footprints and pad assignments exact",
+    "original122 protected copper and9 zones unchanged",
+    "explicit filled/capped/tenting flags for aperture-overlapping vias",
+    "lock reviewed new pin escapes before core routing",
+    "merge newer sibling RX15/RX7 changes with geometry checks, never overwrite by old full board"
+  ]
+}

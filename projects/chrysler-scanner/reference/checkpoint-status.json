@@ -1,0 +1,28 @@
+{
+  "checkpoint_date": "2026-10-20",
+  "state": "unfinished_engineering_checkpoint",
+  "routing_complete": false,
+  "firmware": "deferred_by_user",
+  "pcb_sha256": "f5b42ba76001f790c445533dfcd8567136b5b018127ac8982a2b04650661a2d1",
+  "native_drc": {
+    "errors": 4,
+    "warnings": 7,
+    "unconnected": 3,
+    "schematic_parity": 0
+  },
+  "uncapped_native_airwires": 3,
+  "unfinished_signal_nets": [
+    "PCI_RX",
+    "RX15_EN",
+    "TX_LED"
+  ],
+  "ground_pads_connected": 175,
+  "original_geometry_and_rules_preserved": true,
+  "native_electrical_parity": "PASS",
+  "native_erc_findings": 0,
+  "focused_extension_tests_passed": 114,
+  "router_handoff_checks_passed": 32,
+  "reference_files_verified": 25,
+  "manufacturing_ready": false,
+  "next_task": "Finish signal routing and clear all native DRC findings without weakening rules. Firmware stays deferred."
+}

@@ -1,0 +1,1421 @@
+Compiled from "MainApplication.java"
+public class app.freerouting.gui.MainApplication extends app.freerouting.gui.WindowBase {
+  static final java.lang.String WEB_FILE_BASE_NAME;
+
+  static final java.lang.String VERSION_NUMBER_STRING;
+
+  private static final app.freerouting.board.TestLevel DEBUG_LEVEL;
+
+  private final java.util.ResourceBundle resources;
+
+  private final javax.swing.JButton demonstration_button;
+
+  private final javax.swing.JButton sample_board_button;
+
+  private final javax.swing.JButton open_board_button;
+
+  private final javax.swing.JButton restore_defaults_button;
+
+  private final javax.swing.JTextField message_field;
+
+  private final javax.swing.JPanel main_panel;
+
+  private final app.freerouting.gui.WindowNetSamples window_net_demonstrations;
+
+  private final app.freerouting.gui.WindowNetSamples window_net_sample_designs;
+
+  private final java.util.Collection<app.freerouting.gui.BoardFrame> board_frames;
+
+  private final boolean is_test_version;
+
+  private final java.util.Locale locale;
+
+  private final boolean save_intermediate_stages;
+
+  private final float optimization_improvement_threshold;
+
+  private final java.lang.String[] ignore_net_classes_by_autorouter;
+
+  private java.lang.String design_dir_name;
+
+  private final int max_passes;
+
+  private final app.freerouting.autoroute.BoardUpdateStrategy board_update_strategy;
+
+  private final java.lang.String hybrid_ratio;
+
+  private final app.freerouting.autoroute.ItemSelectionStrategy item_selection_strategy;
+
+  private final int num_threads;
+
+  private static app.freerouting.gui.StartupOptions startupOptions;
+
+  public app.freerouting.gui.MainApplication(app.freerouting.gui.StartupOptions);
+    Code:
+       0: aload_0
+       1: sipush        600
+       4: sipush        300
+       7: invokespecial #3                  // Method app/freerouting/gui/WindowBase."<init>":(II)V
+      10: aload_0
+      11: new           #9                  // class java/util/LinkedList
+      14: dup
+      15: invokespecial #11                 // Method java/util/LinkedList."<init>":()V
+      18: putfield      #14                 // Field board_frames:Ljava/util/Collection;
+      21: aload_0
+      22: aload_1
+      23: invokevirtual #20                 // Method app/freerouting/gui/StartupOptions.getDesignDir:()Ljava/lang/String;
+      26: putfield      #26                 // Field design_dir_name:Ljava/lang/String;
+      29: aload_0
+      30: aload_1
+      31: invokevirtual #30                 // Method app/freerouting/gui/StartupOptions.getMaxPasses:()I
+      34: putfield      #34                 // Field max_passes:I
+      37: aload_0
+      38: aload_1
+      39: invokevirtual #38                 // Method app/freerouting/gui/StartupOptions.getNumThreads:()I
+      42: putfield      #41                 // Field num_threads:I
+      45: aload_0
+      46: aload_1
+      47: invokevirtual #44                 // Method app/freerouting/gui/StartupOptions.getBoardUpdateStrategy:()Lapp/freerouting/autoroute/BoardUpdateStrategy;
+      50: putfield      #48                 // Field board_update_strategy:Lapp/freerouting/autoroute/BoardUpdateStrategy;
+      53: aload_0
+      54: aload_1
+      55: invokevirtual #52                 // Method app/freerouting/gui/StartupOptions.getHybridRatio:()Ljava/lang/String;
+      58: putfield      #55                 // Field hybrid_ratio:Ljava/lang/String;
+      61: aload_0
+      62: aload_1
+      63: invokevirtual #58                 // Method app/freerouting/gui/StartupOptions.getItemSelectionStrategy:()Lapp/freerouting/autoroute/ItemSelectionStrategy;
+      66: putfield      #62                 // Field item_selection_strategy:Lapp/freerouting/autoroute/ItemSelectionStrategy;
+      69: aload_0
+      70: aload_1
+      71: invokevirtual #66                 // Method app/freerouting/gui/StartupOptions.isTestVersion:()Z
+      74: putfield      #70                 // Field is_test_version:Z
+      77: aload_0
+      78: aload_1
+      79: invokevirtual #74                 // Method app/freerouting/gui/StartupOptions.getCurrentLocale:()Ljava/util/Locale;
+      82: putfield      #78                 // Field locale:Ljava/util/Locale;
+      85: aload_0
+      86: aload_1
+      87: getfield      #82                 // Field app/freerouting/gui/StartupOptions.save_intermediate_stages:Z
+      90: putfield      #85                 // Field save_intermediate_stages:Z
+      93: aload_0
+      94: aload_1
+      95: getfield      #86                 // Field app/freerouting/gui/StartupOptions.optimization_improvement_threshold:F
+      98: putfield      #90                 // Field optimization_improvement_threshold:F
+     101: aload_0
+     102: aload_1
+     103: getfield      #91                 // Field app/freerouting/gui/StartupOptions.ignore_net_classes_by_autorouter:[Ljava/lang/String;
+     106: putfield      #95                 // Field ignore_net_classes_by_autorouter:[Ljava/lang/String;
+     109: aload_0
+     110: ldc           #96                 // String app.freerouting.gui.MainApplication
+     112: aload_0
+     113: getfield      #78                 // Field locale:Ljava/util/Locale;
+     116: invokestatic  #98                 // Method java/util/ResourceBundle.getBundle:(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;
+     119: putfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     122: aload_0
+     123: new           #108                // class javax/swing/JPanel
+     126: dup
+     127: invokespecial #110                // Method javax/swing/JPanel."<init>":()V
+     130: putfield      #111                // Field main_panel:Ljavax/swing/JPanel;
+     133: aload_0
+     134: invokevirtual #115                // Method getContentPane:()Ljava/awt/Container;
+     137: aload_0
+     138: getfield      #111                // Field main_panel:Ljavax/swing/JPanel;
+     141: invokevirtual #119                // Method java/awt/Container.add:(Ljava/awt/Component;)Ljava/awt/Component;
+     144: pop
+     145: new           #125                // class java/awt/GridBagLayout
+     148: dup
+     149: invokespecial #127                // Method java/awt/GridBagLayout."<init>":()V
+     152: astore_2
+     153: aload_0
+     154: getfield      #111                // Field main_panel:Ljavax/swing/JPanel;
+     157: aload_2
+     158: invokevirtual #128                // Method javax/swing/JPanel.setLayout:(Ljava/awt/LayoutManager;)V
+     161: new           #132                // class java/awt/GridBagConstraints
+     164: dup
+     165: invokespecial #134                // Method java/awt/GridBagConstraints."<init>":()V
+     168: astore_3
+     169: aload_3
+     170: new           #135                // class java/awt/Insets
+     173: dup
+     174: bipush        10
+     176: bipush        10
+     178: bipush        10
+     180: bipush        10
+     182: invokespecial #137                // Method java/awt/Insets."<init>":(IIII)V
+     185: putfield      #140                // Field java/awt/GridBagConstraints.insets:Ljava/awt/Insets;
+     188: aload_3
+     189: iconst_0
+     190: putfield      #144                // Field java/awt/GridBagConstraints.gridwidth:I
+     193: aload_0
+     194: new           #147                // class javax/swing/JButton
+     197: dup
+     198: invokespecial #149                // Method javax/swing/JButton."<init>":()V
+     201: putfield      #150                // Field demonstration_button:Ljavax/swing/JButton;
+     204: aload_0
+     205: new           #147                // class javax/swing/JButton
+     208: dup
+     209: invokespecial #149                // Method javax/swing/JButton."<init>":()V
+     212: putfield      #154                // Field sample_board_button:Ljavax/swing/JButton;
+     215: aload_0
+     216: new           #147                // class javax/swing/JButton
+     219: dup
+     220: invokespecial #149                // Method javax/swing/JButton."<init>":()V
+     223: putfield      #157                // Field open_board_button:Ljavax/swing/JButton;
+     226: aload_0
+     227: new           #147                // class javax/swing/JButton
+     230: dup
+     231: invokespecial #149                // Method javax/swing/JButton."<init>":()V
+     234: putfield      #160                // Field restore_defaults_button:Ljavax/swing/JButton;
+     237: aload_0
+     238: new           #163                // class javax/swing/JTextField
+     241: dup
+     242: invokespecial #165                // Method javax/swing/JTextField."<init>":()V
+     245: putfield      #166                // Field message_field:Ljavax/swing/JTextField;
+     248: aload_0
+     249: getfield      #166                // Field message_field:Ljavax/swing/JTextField;
+     252: aload_0
+     253: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     256: ldc           #170                // String command_line_missing_input
+     258: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     261: invokevirtual #176                // Method javax/swing/JTextField.setText:(Ljava/lang/String;)V
+     264: aload_0
+     265: new           #180                // class app/freerouting/gui/WindowNetDemonstrations
+     268: dup
+     269: aload_0
+     270: getfield      #78                 // Field locale:Ljava/util/Locale;
+     273: invokespecial #182                // Method app/freerouting/gui/WindowNetDemonstrations."<init>":(Ljava/util/Locale;)V
+     276: putfield      #185                // Field window_net_demonstrations:Lapp/freerouting/gui/WindowNetSamples;
+     279: aload_0
+     280: invokevirtual #189                // Method getLocation:()Ljava/awt/Point;
+     283: astore        4
+     285: aload_0
+     286: getfield      #185                // Field window_net_demonstrations:Lapp/freerouting/gui/WindowNetSamples;
+     289: aload         4
+     291: invokevirtual #193                // Method java/awt/Point.getX:()D
+     294: d2i
+     295: bipush        50
+     297: iadd
+     298: aload         4
+     300: invokevirtual #199                // Method java/awt/Point.getY:()D
+     303: d2i
+     304: bipush        50
+     306: iadd
+     307: invokevirtual #202                // Method app/freerouting/gui/WindowNetSamples.setLocation:(II)V
+     310: aload_0
+     311: new           #207                // class app/freerouting/gui/WindowNetSampleDesigns
+     314: dup
+     315: aload_0
+     316: getfield      #78                 // Field locale:Ljava/util/Locale;
+     319: invokespecial #209                // Method app/freerouting/gui/WindowNetSampleDesigns."<init>":(Ljava/util/Locale;)V
+     322: putfield      #210                // Field window_net_sample_designs:Lapp/freerouting/gui/WindowNetSamples;
+     325: aload_0
+     326: getfield      #210                // Field window_net_sample_designs:Lapp/freerouting/gui/WindowNetSamples;
+     329: aload         4
+     331: invokevirtual #193                // Method java/awt/Point.getX:()D
+     334: d2i
+     335: bipush        90
+     337: iadd
+     338: aload         4
+     340: invokevirtual #199                // Method java/awt/Point.getY:()D
+     343: d2i
+     344: bipush        90
+     346: iadd
+     347: invokevirtual #202                // Method app/freerouting/gui/WindowNetSamples.setLocation:(II)V
+     350: aload_0
+     351: aload_0
+     352: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     355: ldc           #213                // String title
+     357: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     360: invokedynamic #215,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     365: invokevirtual #218                // Method setTitle:(Ljava/lang/String;)V
+     368: iconst_1
+     369: istore        5
+     371: aload_1
+     372: invokevirtual #221                // Method app/freerouting/gui/StartupOptions.getWebstartOption:()Z
+     375: ifeq          541
+     378: iload         5
+     380: ifeq          541
+     383: aload_0
+     384: getfield      #150                // Field demonstration_button:Ljavax/swing/JButton;
+     387: aload_0
+     388: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     391: ldc           #224                // String router_demonstrations
+     393: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     396: invokevirtual #226                // Method javax/swing/JButton.setText:(Ljava/lang/String;)V
+     399: aload_0
+     400: getfield      #150                // Field demonstration_button:Ljavax/swing/JButton;
+     403: aload_0
+     404: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     407: ldc           #227                // String router_demonstrations_tooltip
+     409: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     412: invokevirtual #229                // Method javax/swing/JButton.setToolTipText:(Ljava/lang/String;)V
+     415: aload_0
+     416: getfield      #150                // Field demonstration_button:Ljavax/swing/JButton;
+     419: aload_0
+     420: invokedynamic #232,  0            // InvokeDynamic #1:actionPerformed:(Lapp/freerouting/gui/MainApplication;)Ljava/awt/event/ActionListener;
+     425: invokevirtual #236                // Method javax/swing/JButton.addActionListener:(Ljava/awt/event/ActionListener;)V
+     428: aload_0
+     429: getfield      #150                // Field demonstration_button:Ljavax/swing/JButton;
+     432: aload_0
+     433: invokedynamic #240,  0            // InvokeDynamic #2:actionPerformed:(Lapp/freerouting/gui/MainApplication;)Ljava/awt/event/ActionListener;
+     438: invokevirtual #236                // Method javax/swing/JButton.addActionListener:(Ljava/awt/event/ActionListener;)V
+     441: aload_2
+     442: aload_0
+     443: getfield      #150                // Field demonstration_button:Ljavax/swing/JButton;
+     446: aload_3
+     447: invokevirtual #241                // Method java/awt/GridBagLayout.setConstraints:(Ljava/awt/Component;Ljava/awt/GridBagConstraints;)V
+     450: aload_0
+     451: getfield      #111                // Field main_panel:Ljavax/swing/JPanel;
+     454: aload_0
+     455: getfield      #150                // Field demonstration_button:Ljavax/swing/JButton;
+     458: aload_3
+     459: invokevirtual #245                // Method javax/swing/JPanel.add:(Ljava/awt/Component;Ljava/lang/Object;)V
+     462: aload_0
+     463: getfield      #154                // Field sample_board_button:Ljavax/swing/JButton;
+     466: aload_0
+     467: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     470: ldc           #248                // String sample_designs
+     472: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     475: invokevirtual #226                // Method javax/swing/JButton.setText:(Ljava/lang/String;)V
+     478: aload_0
+     479: getfield      #154                // Field sample_board_button:Ljavax/swing/JButton;
+     482: aload_0
+     483: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     486: ldc           #250                // String sample_designs_tooltip
+     488: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     491: invokevirtual #229                // Method javax/swing/JButton.setToolTipText:(Ljava/lang/String;)V
+     494: aload_0
+     495: getfield      #154                // Field sample_board_button:Ljavax/swing/JButton;
+     498: aload_0
+     499: invokedynamic #252,  0            // InvokeDynamic #3:actionPerformed:(Lapp/freerouting/gui/MainApplication;)Ljava/awt/event/ActionListener;
+     504: invokevirtual #236                // Method javax/swing/JButton.addActionListener:(Ljava/awt/event/ActionListener;)V
+     507: aload_0
+     508: getfield      #154                // Field sample_board_button:Ljavax/swing/JButton;
+     511: aload_0
+     512: invokedynamic #253,  0            // InvokeDynamic #4:actionPerformed:(Lapp/freerouting/gui/MainApplication;)Ljava/awt/event/ActionListener;
+     517: invokevirtual #236                // Method javax/swing/JButton.addActionListener:(Ljava/awt/event/ActionListener;)V
+     520: aload_2
+     521: aload_0
+     522: getfield      #154                // Field sample_board_button:Ljavax/swing/JButton;
+     525: aload_3
+     526: invokevirtual #241                // Method java/awt/GridBagLayout.setConstraints:(Ljava/awt/Component;Ljava/awt/GridBagConstraints;)V
+     529: aload_0
+     530: getfield      #111                // Field main_panel:Ljavax/swing/JPanel;
+     533: aload_0
+     534: getfield      #154                // Field sample_board_button:Ljavax/swing/JButton;
+     537: aload_3
+     538: invokevirtual #245                // Method javax/swing/JPanel.add:(Ljava/awt/Component;Ljava/lang/Object;)V
+     541: aload_0
+     542: getfield      #157                // Field open_board_button:Ljavax/swing/JButton;
+     545: aload_0
+     546: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     549: ldc           #254                // String open_own_design
+     551: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     554: invokevirtual #226                // Method javax/swing/JButton.setText:(Ljava/lang/String;)V
+     557: aload_0
+     558: getfield      #157                // Field open_board_button:Ljavax/swing/JButton;
+     561: aload_0
+     562: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     565: ldc_w         #256                // String open_own_design_tooltip
+     568: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     571: invokevirtual #229                // Method javax/swing/JButton.setToolTipText:(Ljava/lang/String;)V
+     574: aload_0
+     575: getfield      #157                // Field open_board_button:Ljavax/swing/JButton;
+     578: aload_0
+     579: invokedynamic #258,  0            // InvokeDynamic #5:actionPerformed:(Lapp/freerouting/gui/MainApplication;)Ljava/awt/event/ActionListener;
+     584: invokevirtual #236                // Method javax/swing/JButton.addActionListener:(Ljava/awt/event/ActionListener;)V
+     587: aload_0
+     588: getfield      #157                // Field open_board_button:Ljavax/swing/JButton;
+     591: aload_0
+     592: invokedynamic #259,  0            // InvokeDynamic #6:actionPerformed:(Lapp/freerouting/gui/MainApplication;)Ljava/awt/event/ActionListener;
+     597: invokevirtual #236                // Method javax/swing/JButton.addActionListener:(Ljava/awt/event/ActionListener;)V
+     600: aload_2
+     601: aload_0
+     602: getfield      #157                // Field open_board_button:Ljavax/swing/JButton;
+     605: aload_3
+     606: invokevirtual #241                // Method java/awt/GridBagLayout.setConstraints:(Ljava/awt/Component;Ljava/awt/GridBagConstraints;)V
+     609: iload         5
+     611: ifeq          626
+     614: aload_0
+     615: getfield      #111                // Field main_panel:Ljavax/swing/JPanel;
+     618: aload_0
+     619: getfield      #157                // Field open_board_button:Ljavax/swing/JButton;
+     622: aload_3
+     623: invokevirtual #245                // Method javax/swing/JPanel.add:(Ljava/awt/Component;Ljava/lang/Object;)V
+     626: aload_1
+     627: invokevirtual #221                // Method app/freerouting/gui/StartupOptions.getWebstartOption:()Z
+     630: ifeq          718
+     633: iload         5
+     635: ifeq          718
+     638: aload_0
+     639: getfield      #160                // Field restore_defaults_button:Ljavax/swing/JButton;
+     642: aload_0
+     643: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     646: ldc_w         #260                // String restore_defaults
+     649: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     652: invokevirtual #226                // Method javax/swing/JButton.setText:(Ljava/lang/String;)V
+     655: aload_0
+     656: getfield      #160                // Field restore_defaults_button:Ljavax/swing/JButton;
+     659: aload_0
+     660: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     663: ldc_w         #262                // String restore_defaults_tooltip
+     666: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     669: invokevirtual #229                // Method javax/swing/JButton.setToolTipText:(Ljava/lang/String;)V
+     672: aload_0
+     673: getfield      #160                // Field restore_defaults_button:Ljavax/swing/JButton;
+     676: invokedynamic #264,  0            // InvokeDynamic #7:actionPerformed:()Ljava/awt/event/ActionListener;
+     681: invokevirtual #236                // Method javax/swing/JButton.addActionListener:(Ljava/awt/event/ActionListener;)V
+     684: aload_0
+     685: getfield      #160                // Field restore_defaults_button:Ljavax/swing/JButton;
+     688: aload_0
+     689: invokedynamic #267,  0            // InvokeDynamic #8:actionPerformed:(Lapp/freerouting/gui/MainApplication;)Ljava/awt/event/ActionListener;
+     694: invokevirtual #236                // Method javax/swing/JButton.addActionListener:(Ljava/awt/event/ActionListener;)V
+     697: aload_2
+     698: aload_0
+     699: getfield      #160                // Field restore_defaults_button:Ljavax/swing/JButton;
+     702: aload_3
+     703: invokevirtual #241                // Method java/awt/GridBagLayout.setConstraints:(Ljava/awt/Component;Ljava/awt/GridBagConstraints;)V
+     706: aload_0
+     707: getfield      #111                // Field main_panel:Ljavax/swing/JPanel;
+     710: aload_0
+     711: getfield      #160                // Field restore_defaults_button:Ljavax/swing/JButton;
+     714: aload_3
+     715: invokevirtual #245                // Method javax/swing/JPanel.add:(Ljava/awt/Component;Ljava/lang/Object;)V
+     718: sipush        620
+     721: istore        6
+     723: sipush        300
+     726: istore        7
+     728: aload_0
+     729: getfield      #166                // Field message_field:Ljavax/swing/JTextField;
+     732: new           #268                // class java/awt/Dimension
+     735: dup
+     736: iload         6
+     738: bipush        40
+     740: isub
+     741: bipush        100
+     743: invokespecial #270                // Method java/awt/Dimension."<init>":(II)V
+     746: invokevirtual #271                // Method javax/swing/JTextField.setPreferredSize:(Ljava/awt/Dimension;)V
+     749: aload_0
+     750: getfield      #166                // Field message_field:Ljavax/swing/JTextField;
+     753: iconst_0
+     754: invokevirtual #275                // Method javax/swing/JTextField.setRequestFocusEnabled:(Z)V
+     757: aload_2
+     758: aload_0
+     759: getfield      #166                // Field message_field:Ljavax/swing/JTextField;
+     762: aload_3
+     763: invokevirtual #241                // Method java/awt/GridBagLayout.setConstraints:(Ljava/awt/Component;Ljava/awt/GridBagConstraints;)V
+     766: aload_0
+     767: getfield      #111                // Field main_panel:Ljavax/swing/JPanel;
+     770: aload_0
+     771: getfield      #166                // Field message_field:Ljavax/swing/JTextField;
+     774: aload_3
+     775: invokevirtual #245                // Method javax/swing/JPanel.add:(Ljava/awt/Component;Ljava/lang/Object;)V
+     778: aload_0
+     779: new           #279                // class app/freerouting/gui/MainApplication$WindowStateListener
+     782: dup
+     783: aload_0
+     784: invokespecial #281                // Method app/freerouting/gui/MainApplication$WindowStateListener."<init>":(Lapp/freerouting/gui/MainApplication;)V
+     787: invokevirtual #284                // Method addWindowListener:(Ljava/awt/event/WindowListener;)V
+     790: aload_0
+     791: invokevirtual #288                // Method pack:()V
+     794: aload_0
+     795: iload         6
+     797: iload         7
+     799: invokevirtual #291                // Method setSize:(II)V
+     802: aload_0
+     803: iconst_0
+     804: invokevirtual #294                // Method setResizable:(Z)V
+     807: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: aload_0
+       1: arraylength
+       2: ifle          23
+       5: aload_0
+       6: invokestatic  #297                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+       9: ldc_w         #303                // String -dl
+      12: invokeinterface #305,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      17: ifeq          23
+      20: invokestatic  #311                // Method app/freerouting/logger/FRLogger.disableLogging:()V
+      23: ldc_w         #316                // String MainApplication.main()
+      26: invokestatic  #318                // Method app/freerouting/logger/FRLogger.traceEntry:(Ljava/lang/String;)V
+      29: invokestatic  #321                // Method javax/swing/UIManager.getSystemLookAndFeelClassName:()Ljava/lang/String;
+      32: invokestatic  #326                // Method javax/swing/UIManager.setLookAndFeel:(Ljava/lang/String;)V
+      35: goto          47
+      38: astore_1
+      39: aload_1
+      40: invokevirtual #337                // Method java/lang/Exception.getLocalizedMessage:()Ljava/lang/String;
+      43: aload_1
+      44: invokestatic  #342                // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+      47: ldc_w         #346                // String Freerouting v1.9.0 (build-date: 2023-10-30)
+      50: invokestatic  #348                // Method app/freerouting/logger/FRLogger.info:(Ljava/lang/String;)V
+      53: ldc_w         #351                // String  Version: 1.9.0,2023-10-30
+      56: invokestatic  #353                // Method app/freerouting/logger/FRLogger.debug:(Ljava/lang/String;)V
+      59: ldc_w         #356                // String
+      62: aload_0
+      63: invokestatic  #358                // Method java/lang/String.join:(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;
+      66: invokedynamic #364,  0            // InvokeDynamic #9:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      71: invokestatic  #353                // Method app/freerouting/logger/FRLogger.debug:(Ljava/lang/String;)V
+      74: ldc_w         #365                // String os.name
+      77: invokestatic  #367                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      80: ldc_w         #372                // String os.arch
+      83: invokestatic  #367                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      86: ldc_w         #374                // String os.version
+      89: invokestatic  #367                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      92: invokedynamic #376,  0            // InvokeDynamic #10:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      97: invokestatic  #353                // Method app/freerouting/logger/FRLogger.debug:(Ljava/lang/String;)V
+     100: ldc_w         #379                // String java.version
+     103: invokestatic  #367                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+     106: ldc_w         #381                // String java.vendor
+     109: invokestatic  #367                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+     112: invokedynamic #383,  0            // InvokeDynamic #11:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     117: invokestatic  #353                // Method app/freerouting/logger/FRLogger.debug:(Ljava/lang/String;)V
+     120: invokestatic  #386                // Method java/util/Locale.getDefault:()Ljava/util/Locale;
+     123: invokevirtual #391                // Method java/util/Locale.getLanguage:()Ljava/lang/String;
+     126: invokestatic  #386                // Method java/util/Locale.getDefault:()Ljava/util/Locale;
+     129: invokedynamic #394,  0            // InvokeDynamic #12:makeConcatWithConstants:(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;
+     134: invokestatic  #353                // Method app/freerouting/logger/FRLogger.debug:(Ljava/lang/String;)V
+     137: invokestatic  #397                // Method java/lang/Runtime.getRuntime:()Ljava/lang/Runtime;
+     140: invokevirtual #403                // Method java/lang/Runtime.availableProcessors:()I
+     143: invokestatic  #397                // Method java/lang/Runtime.getRuntime:()Ljava/lang/Runtime;
+     146: invokevirtual #406                // Method java/lang/Runtime.maxMemory:()J
+     149: ldc2_w        #410                // long 1024l
+     152: ldiv
+     153: ldc2_w        #410                // long 1024l
+     156: ldiv
+     157: invokedynamic #412,  0            // InvokeDynamic #13:makeConcatWithConstants:(IJ)Ljava/lang/String;
+     162: invokestatic  #353                // Method app/freerouting/logger/FRLogger.debug:(Ljava/lang/String;)V
+     165: invokestatic  #415                // Method java/time/Instant.now:()Ljava/time/Instant;
+     168: invokedynamic #421,  0            // InvokeDynamic #14:makeConcatWithConstants:(Ljava/time/Instant;)Ljava/lang/String;
+     173: invokestatic  #353                // Method app/freerouting/logger/FRLogger.debug:(Ljava/lang/String;)V
+     176: new           #424                // class app/freerouting/gui/DefaultExceptionHandler
+     179: dup
+     180: invokespecial #426                // Method app/freerouting/gui/DefaultExceptionHandler."<init>":()V
+     183: invokestatic  #427                // Method java/lang/Thread.setDefaultUncaughtExceptionHandler:(Ljava/lang/Thread$UncaughtExceptionHandler;)V
+     186: invokestatic  #433                // Method app/freerouting/gui/StartupOptions.load:()Lapp/freerouting/gui/StartupOptions;
+     189: putstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     192: ldc_w         #441                // String Settings were loaded from freerouting.json
+     195: invokestatic  #348                // Method app/freerouting/logger/FRLogger.info:(Ljava/lang/String;)V
+     198: goto          202
+     201: astore_1
+     202: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     205: ifnonnull     228
+     208: new           #21                 // class app/freerouting/gui/StartupOptions
+     211: dup
+     212: invokespecial #443                // Method app/freerouting/gui/StartupOptions."<init>":()V
+     215: putstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     218: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     221: invokestatic  #444                // Method app/freerouting/gui/StartupOptions.save:(Lapp/freerouting/gui/StartupOptions;)V
+     224: goto          228
+     227: astore_1
+     228: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     231: aload_0
+     232: invokevirtual #448                // Method app/freerouting/gui/StartupOptions.parseCommandLineArguments:([Ljava/lang/String;)V
+     235: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     238: getfield      #452                // Field app/freerouting/gui/StartupOptions.current_locale:Ljava/util/Locale;
+     241: invokedynamic #455,  0            // InvokeDynamic #15:makeConcatWithConstants:(Ljava/util/Locale;)Ljava/lang/String;
+     246: invokestatic  #353                // Method app/freerouting/logger/FRLogger.debug:(Ljava/lang/String;)V
+     249: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     252: getfield      #458                // Field app/freerouting/gui/StartupOptions.host:Ljava/lang/String;
+     255: invokedynamic #461,  0            // InvokeDynamic #16:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     260: invokestatic  #353                // Method app/freerouting/logger/FRLogger.debug:(Ljava/lang/String;)V
+     263: invokestatic  #462                // Method java/awt/Toolkit.getDefaultToolkit:()Ljava/awt/Toolkit;
+     266: astore_1
+     267: aload_1
+     268: invokevirtual #468                // Method java/awt/Toolkit.getScreenSize:()Ljava/awt/Dimension;
+     271: astore_2
+     272: aload_2
+     273: getfield      #472                // Field java/awt/Dimension.width:I
+     276: istore_3
+     277: aload_2
+     278: getfield      #475                // Field java/awt/Dimension.height:I
+     281: istore        4
+     283: aload_1
+     284: invokevirtual #478                // Method java/awt/Toolkit.getScreenResolution:()I
+     287: istore        5
+     289: iload_3
+     290: iload         4
+     292: iload         5
+     294: invokedynamic #481,  0            // InvokeDynamic #17:makeConcatWithConstants:(III)Ljava/lang/String;
+     299: invokestatic  #353                // Method app/freerouting/logger/FRLogger.debug:(Ljava/lang/String;)V
+     302: ldc_w         #484                // String 1.9.0
+     305: ldc_w         #486                // String G24pcCv4BmnqwBa8LsdODYRE6k9IAlqR
+     308: invokestatic  #488                // Method app/freerouting/management/FRAnalytics.setWriteKey:(Ljava/lang/String;Ljava/lang/String;)V
+     311: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     314: getfield      #494                // Field app/freerouting/gui/StartupOptions.disable_analytics:Z
+     317: ifne          324
+     320: iconst_1
+     321: goto          325
+     324: iconst_0
+     325: invokestatic  #497                // Method app/freerouting/management/FRAnalytics.setEnabled:(Z)V
+     328: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     331: getfield      #500                // Field app/freerouting/gui/StartupOptions.user_id:Ljava/lang/String;
+     334: invokestatic  #503                // Method app/freerouting/management/FRAnalytics.setUserId:(Ljava/lang/String;)V
+     337: invokestatic  #506                // Method app/freerouting/management/FRAnalytics.identify:()V
+     340: ldc2_w        #509                // long 1000l
+     343: invokestatic  #511                // Method java/lang/Thread.sleep:(J)V
+     346: goto          351
+     349: astore        6
+     351: ldc_w         #515                // String app.freerouting.gui
+     354: ldc_w         #517                // String Freerouting
+     357: invokestatic  #519                // Method app/freerouting/management/FRAnalytics.setAppLocation:(Ljava/lang/String;Ljava/lang/String;)V
+     360: ldc_w         #484                // String 1.9.0
+     363: ldc_w         #522                // String 2023-10-30
+     366: ldc_w         #356                // String
+     369: aload_0
+     370: invokestatic  #358                // Method java/lang/String.join:(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;
+     373: ldc_w         #365                // String os.name
+     376: invokestatic  #367                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+     379: ldc_w         #372                // String os.arch
+     382: invokestatic  #367                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+     385: ldc_w         #374                // String os.version
+     388: invokestatic  #367                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+     391: ldc_w         #379                // String java.version
+     394: invokestatic  #367                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+     397: ldc_w         #381                // String java.vendor
+     400: invokestatic  #367                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+     403: invokestatic  #386                // Method java/util/Locale.getDefault:()Ljava/util/Locale;
+     406: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     409: getfield      #452                // Field app/freerouting/gui/StartupOptions.current_locale:Ljava/util/Locale;
+     412: invokestatic  #397                // Method java/lang/Runtime.getRuntime:()Ljava/lang/Runtime;
+     415: invokevirtual #403                // Method java/lang/Runtime.availableProcessors:()I
+     418: invokestatic  #397                // Method java/lang/Runtime.getRuntime:()Ljava/lang/Runtime;
+     421: invokevirtual #406                // Method java/lang/Runtime.maxMemory:()J
+     424: ldc2_w        #410                // long 1024l
+     427: ldiv
+     428: ldc2_w        #410                // long 1024l
+     431: ldiv
+     432: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     435: getfield      #458                // Field app/freerouting/gui/StartupOptions.host:Ljava/lang/String;
+     438: iload_3
+     439: iload         4
+     441: iload         5
+     443: invokestatic  #524                // Method app/freerouting/management/FRAnalytics.appStarted:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Locale;Ljava/util/Locale;IJLjava/lang/String;III)V
+     446: ldc_w         #528                // String Menu.font
+     449: invokestatic  #530                // Method javax/swing/UIManager.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     452: checkcast     #534                // class javax/swing/plaf/FontUIResource
+     455: astore        6
+     457: ldc_w         #536                // String Button.font
+     460: invokestatic  #530                // Method javax/swing/UIManager.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     463: checkcast     #534                // class javax/swing/plaf/FontUIResource
+     466: astore        7
+     468: new           #538                // class java/awt/Font
+     471: dup
+     472: aload         7
+     474: invokevirtual #540                // Method javax/swing/plaf/FontUIResource.getName:()Ljava/lang/String;
+     477: iconst_0
+     478: aload         6
+     480: invokevirtual #543                // Method javax/swing/plaf/FontUIResource.getSize:()I
+     483: invokespecial #546                // Method java/awt/Font."<init>":(Ljava/lang/String;II)V
+     486: astore        8
+     488: ldc_w         #549                // String Component.font
+     491: aload         8
+     493: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     496: pop
+     497: ldc_w         #536                // String Button.font
+     500: aload         8
+     502: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     505: pop
+     506: ldc_w         #555                // String Label.font
+     509: aload         8
+     511: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     514: pop
+     515: ldc_w         #557                // String ToggleButton.font
+     518: aload         8
+     520: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     523: pop
+     524: ldc_w         #559                // String FormattedTextField.font
+     527: aload         8
+     529: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     532: pop
+     533: ldc_w         #561                // String TextField.font
+     536: aload         8
+     538: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     541: pop
+     542: ldc_w         #563                // String ComboBox.font
+     545: aload         8
+     547: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     550: pop
+     551: ldc_w         #565                // String CheckBox.font
+     554: aload         8
+     556: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     559: pop
+     560: ldc_w         #567                // String RadioButton.font
+     563: aload         8
+     565: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     568: pop
+     569: ldc_w         #569                // String Table.font
+     572: aload         8
+     574: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     577: pop
+     578: ldc_w         #571                // String TableHeader.font
+     581: aload         8
+     583: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     586: pop
+     587: ldc_w         #573                // String List.font
+     590: aload         8
+     592: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     595: pop
+     596: ldc_w         #528                // String Menu.font
+     599: aload         8
+     601: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     604: pop
+     605: ldc_w         #575                // String MenuItem.font
+     608: aload         8
+     610: invokestatic  #551                // Method javax/swing/UIManager.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     613: pop
+     614: new           #577                // class app/freerouting/management/VersionChecker
+     617: dup
+     618: ldc_w         #484                // String 1.9.0
+     621: invokespecial #579                // Method app/freerouting/management/VersionChecker."<init>":(Ljava/lang/String;)V
+     624: astore        9
+     626: new           #428                // class java/lang/Thread
+     629: dup
+     630: aload         9
+     632: invokespecial #581                // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+     635: invokevirtual #584                // Method java/lang/Thread.start:()V
+     638: ldc           #96                 // String app.freerouting.gui.MainApplication
+     640: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     643: getfield      #452                // Field app/freerouting/gui/StartupOptions.current_locale:Ljava/util/Locale;
+     646: invokestatic  #98                 // Method java/util/ResourceBundle.getBundle:(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;
+     649: astore        10
+     651: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     654: getfield      #587                // Field app/freerouting/gui/StartupOptions.show_help_option:Z
+     657: ifeq          679
+     660: getstatic     #590                // Field java/lang/System.out:Ljava/io/PrintStream;
+     663: aload         10
+     665: ldc_w         #594                // String command_line_help
+     668: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     671: invokevirtual #596                // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+     674: iconst_0
+     675: invokestatic  #601                // Method java/lang/System.exit:(I)V
+     678: return
+     679: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     682: getfield      #605                // Field app/freerouting/gui/StartupOptions.single_design_option:Z
+     685: ifeq          1379
+     688: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     691: getfield      #608                // Field app/freerouting/gui/StartupOptions.session_file_option:Z
+     694: ifeq          705
+     697: getstatic     #611                // Field app/freerouting/gui/BoardFrame$Option.SESSION_FILE:Lapp/freerouting/gui/BoardFrame$Option;
+     700: astore        11
+     702: goto          710
+     705: getstatic     #617                // Field app/freerouting/gui/BoardFrame$Option.SINGLE_FRAME:Lapp/freerouting/gui/BoardFrame$Option;
+     708: astore        11
+     710: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     713: getfield      #620                // Field app/freerouting/gui/StartupOptions.design_input_filename:Ljava/lang/String;
+     716: invokedynamic #623,  0            // InvokeDynamic #18:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     721: invokestatic  #348                // Method app/freerouting/logger/FRLogger.info:(Ljava/lang/String;)V
+     724: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     727: getfield      #620                // Field app/freerouting/gui/StartupOptions.design_input_filename:Ljava/lang/String;
+     730: invokestatic  #624                // Method app/freerouting/gui/DesignFile.get_instance:(Ljava/lang/String;)Lapp/freerouting/gui/DesignFile;
+     733: astore        12
+     735: aload         12
+     737: ifnonnull     771
+     740: aload         10
+     742: ldc_w         #630                // String message_6
+     745: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     748: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     751: getfield      #620                // Field app/freerouting/gui/StartupOptions.design_input_filename:Ljava/lang/String;
+     754: aload         10
+     756: ldc_w         #632                // String message_7
+     759: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     762: invokedynamic #634,  0            // InvokeDynamic #19:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     767: invokestatic  #635                // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+     770: return
+     771: aload         10
+     773: ldc_w         #638                // String loading_design
+     776: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     779: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     782: getfield      #620                // Field app/freerouting/gui/StartupOptions.design_input_filename:Ljava/lang/String;
+     785: invokedynamic #640,  0            // InvokeDynamic #20:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     790: astore        13
+     792: aload         13
+     794: invokestatic  #641                // Method app/freerouting/gui/WindowMessage.show:(Ljava/lang/String;)Lapp/freerouting/gui/WindowMessage;
+     797: astore        14
+     799: aload         12
+     801: aconst_null
+     802: aload         11
+     804: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     807: getfield      #647                // Field app/freerouting/gui/StartupOptions.test_version_option:Z
+     810: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     813: getfield      #452                // Field app/freerouting/gui/StartupOptions.current_locale:Ljava/util/Locale;
+     816: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     819: getfield      #650                // Field app/freerouting/gui/StartupOptions.design_rules_filename:Ljava/lang/String;
+     822: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     825: getfield      #82                 // Field app/freerouting/gui/StartupOptions.save_intermediate_stages:Z
+     828: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     831: getfield      #86                 // Field app/freerouting/gui/StartupOptions.optimization_improvement_threshold:F
+     834: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     837: getfield      #91                 // Field app/freerouting/gui/StartupOptions.ignore_net_classes_by_autorouter:[Ljava/lang/String;
+     840: invokestatic  #653                // Method create_board_frame:(Lapp/freerouting/gui/DesignFile;Ljavax/swing/JTextField;Lapp/freerouting/gui/BoardFrame$Option;ZLjava/util/Locale;Ljava/lang/String;ZF[Ljava/lang/String;)Lapp/freerouting/gui/BoardFrame;
+     843: astore        15
+     845: aload         14
+     847: invokevirtual #657                // Method app/freerouting/gui/WindowMessage.dispose:()V
+     850: aload         15
+     852: ifnonnull     866
+     855: ldc_w         #660                // String Couldn\'t create window frame
+     858: invokestatic  #635                // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+     861: iconst_1
+     862: invokestatic  #601                // Method java/lang/System.exit:(I)V
+     865: return
+     866: aload         15
+     868: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     871: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     874: getfield      #674                // Field app/freerouting/interactive/BoardHandling.settings:Lapp/freerouting/interactive/Settings;
+     877: getfield      #680                // Field app/freerouting/interactive/Settings.autoroute_settings:Lapp/freerouting/interactive/AutorouteSettings;
+     880: aload         15
+     882: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     885: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     888: getfield      #674                // Field app/freerouting/interactive/BoardHandling.settings:Lapp/freerouting/interactive/Settings;
+     891: getfield      #680                // Field app/freerouting/interactive/Settings.autoroute_settings:Lapp/freerouting/interactive/AutorouteSettings;
+     894: invokevirtual #686                // Method app/freerouting/interactive/AutorouteSettings.get_start_pass_no:()I
+     897: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     900: getfield      #691                // Field app/freerouting/gui/StartupOptions.max_passes:I
+     903: iadd
+     904: iconst_1
+     905: isub
+     906: invokevirtual #692                // Method app/freerouting/interactive/AutorouteSettings.set_stop_pass_no:(I)V
+     909: aload         15
+     911: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     914: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     917: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     920: getfield      #695                // Field app/freerouting/gui/StartupOptions.num_threads:I
+     923: invokevirtual #696                // Method app/freerouting/interactive/BoardHandling.set_num_threads:(I)V
+     926: aload         15
+     928: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     931: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     934: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     937: getfield      #699                // Field app/freerouting/gui/StartupOptions.board_update_strategy:Lapp/freerouting/autoroute/BoardUpdateStrategy;
+     940: invokevirtual #700                // Method app/freerouting/interactive/BoardHandling.set_board_update_strategy:(Lapp/freerouting/autoroute/BoardUpdateStrategy;)V
+     943: aload         15
+     945: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     948: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     951: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     954: getfield      #704                // Field app/freerouting/gui/StartupOptions.hybrid_ratio:Ljava/lang/String;
+     957: invokevirtual #705                // Method app/freerouting/interactive/BoardHandling.set_hybrid_ratio:(Ljava/lang/String;)V
+     960: aload         15
+     962: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     965: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     968: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     971: getfield      #708                // Field app/freerouting/gui/StartupOptions.item_selection_strategy:Lapp/freerouting/autoroute/ItemSelectionStrategy;
+     974: invokevirtual #709                // Method app/freerouting/interactive/BoardHandling.set_item_selection_strategy:(Lapp/freerouting/autoroute/ItemSelectionStrategy;)V
+     977: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+     980: getfield      #713                // Field app/freerouting/gui/StartupOptions.design_output_filename:Ljava/lang/String;
+     983: ifnull        1006
+     986: aload         15
+     988: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     991: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     994: new           #716                // class app/freerouting/gui/MainApplication$1
+     997: dup
+     998: aload         15
+    1000: invokespecial #718                // Method app/freerouting/gui/MainApplication$1."<init>":(Lapp/freerouting/gui/BoardFrame;)V
+    1003: putfield      #721                // Field app/freerouting/interactive/BoardHandling.autorouter_listener:Lapp/freerouting/interactive/ThreadActionListener;
+    1006: aload         15
+    1008: invokevirtual #725                // Method app/freerouting/gui/BoardFrame.is_intermediate_stage_file_available:()Z
+    1011: ifeq          1070
+    1014: aload         15
+    1016: invokevirtual #728                // Method app/freerouting/gui/BoardFrame.get_intermediate_stage_file_modification_time:()Ljava/time/LocalDateTime;
+    1019: astore        16
+    1021: ldc_w         #732                // String yyyy-MM-dd HH:mm:ss
+    1024: invokestatic  #734                // Method java/time/format/DateTimeFormatter.ofPattern:(Ljava/lang/String;)Ljava/time/format/DateTimeFormatter;
+    1027: astore        17
+    1029: aload         10
+    1031: ldc_w         #740                // String load_snapshot_confirmation
+    1034: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+    1037: iconst_1
+    1038: anewarray     #742                // class java/lang/Object
+    1041: dup
+    1042: iconst_0
+    1043: aload         16
+    1045: aload         17
+    1047: invokevirtual #744                // Method java/time/LocalDateTime.format:(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
+    1050: aastore
+    1051: invokestatic  #750                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    1054: astore        18
+    1056: aload         18
+    1058: invokestatic  #753                // Method app/freerouting/gui/WindowMessage.confirm:(Ljava/lang/String;)Z
+    1061: ifeq          1070
+    1064: aload         15
+    1066: invokevirtual #757                // Method app/freerouting/gui/BoardFrame.load_intermediate_stage_file:()Z
+    1069: pop
+    1070: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+    1073: getfield      #620                // Field app/freerouting/gui/StartupOptions.design_input_filename:Ljava/lang/String;
+    1076: ifnull        1364
+    1079: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+    1082: getfield      #713                // Field app/freerouting/gui/StartupOptions.design_output_filename:Ljava/lang/String;
+    1085: ifnull        1364
+    1088: aload         10
+    1090: ldc_w         #760                // String auto_start_routing_startnow_button
+    1093: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+    1096: astore        16
+    1098: new           #147                // class javax/swing/JButton
+    1101: dup
+    1102: aload         16
+    1104: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+    1107: getfield      #762                // Field app/freerouting/gui/StartupOptions.dialog_confirmation_timeout:I
+    1110: invokedynamic #765,  0            // InvokeDynamic #21:makeConcatWithConstants:(Ljava/lang/String;I)Ljava/lang/String;
+    1115: invokespecial #768                // Method javax/swing/JButton."<init>":(Ljava/lang/String;)V
+    1118: astore        17
+    1120: aload         10
+    1122: ldc_w         #769                // String auto_start_routing_cancel_button
+    1125: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+    1128: astore        18
+    1130: iconst_2
+    1131: anewarray     #742                // class java/lang/Object
+    1134: dup
+    1135: iconst_0
+    1136: aload         17
+    1138: aastore
+    1139: dup
+    1140: iconst_1
+    1141: aload         18
+    1143: aastore
+    1144: astore        19
+    1146: aload         10
+    1148: ldc_w         #771                // String auto_start_routing_message
+    1151: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+    1154: astore        20
+    1156: new           #773                // class javax/swing/JOptionPane
+    1159: dup
+    1160: aload         20
+    1162: iconst_2
+    1163: iconst_2
+    1164: aconst_null
+    1165: aload         19
+    1167: aload         19
+    1169: iconst_0
+    1170: aaload
+    1171: invokespecial #775                // Method javax/swing/JOptionPane."<init>":(Ljava/lang/Object;IILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)V
+    1174: astore        21
+    1176: aload         17
+    1178: aload         21
+    1180: aload         19
+    1182: invokedynamic #778,  0            // InvokeDynamic #22:actionPerformed:(Ljavax/swing/JOptionPane;[Ljava/lang/Object;)Ljava/awt/event/ActionListener;
+    1187: invokevirtual #236                // Method javax/swing/JButton.addActionListener:(Ljava/awt/event/ActionListener;)V
+    1190: aload         17
+    1192: aload         17
+    1194: invokedynamic #781,  0            // InvokeDynamic #23:actionPerformed:(Ljavax/swing/JButton;)Ljava/awt/event/ActionListener;
+    1199: invokevirtual #236                // Method javax/swing/JButton.addActionListener:(Ljava/awt/event/ActionListener;)V
+    1202: aload         10
+    1204: ldc_w         #784                // String auto_start_routing_title
+    1207: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+    1210: astore        22
+    1212: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+    1215: getfield      #762                // Field app/freerouting/gui/StartupOptions.dialog_confirmation_timeout:I
+    1218: ifle          1278
+    1221: aload         21
+    1223: aload         22
+    1225: invokevirtual #786                // Method javax/swing/JOptionPane.createDialog:(Ljava/lang/String;)Ljavax/swing/JDialog;
+    1228: astore        23
+    1230: new           #790                // class javax/swing/Timer
+    1233: dup
+    1234: sipush        1000
+    1237: new           #792                // class app/freerouting/gui/MainApplication$2
+    1240: dup
+    1241: aload         17
+    1243: aload         16
+    1245: aload         21
+    1247: aload         19
+    1249: invokespecial #794                // Method app/freerouting/gui/MainApplication$2."<init>":(Ljavax/swing/JButton;Ljava/lang/String;Ljavax/swing/JOptionPane;[Ljava/lang/Object;)V
+    1252: invokespecial #797                // Method javax/swing/Timer."<init>":(ILjava/awt/event/ActionListener;)V
+    1255: astore        24
+    1257: aload         24
+    1259: invokevirtual #800                // Method javax/swing/Timer.start:()V
+    1262: aload         23
+    1264: iconst_1
+    1265: invokevirtual #801                // Method javax/swing/JDialog.setVisible:(Z)V
+    1268: aload         23
+    1270: invokevirtual #806                // Method javax/swing/JDialog.dispose:()V
+    1273: aload         24
+    1275: invokevirtual #807                // Method javax/swing/Timer.stop:()V
+    1278: aload         21
+    1280: invokevirtual #810                // Method javax/swing/JOptionPane.getValue:()Ljava/lang/Object;
+    1283: astore        23
+    1285: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+    1288: getfield      #762                // Field app/freerouting/gui/StartupOptions.dialog_confirmation_timeout:I
+    1291: ifeq          1303
+    1294: aload         23
+    1296: aload         19
+    1298: iconst_0
+    1299: aaload
+    1300: if_acmpne     1346
+    1303: aload         15
+    1305: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+    1308: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+    1311: invokevirtual #814                // Method app/freerouting/interactive/BoardHandling.start_batch_autorouter:()Lapp/freerouting/interactive/InteractiveActionThread;
+    1314: astore        24
+    1316: aload         15
+    1318: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+    1321: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+    1324: getfield      #721                // Field app/freerouting/interactive/BoardHandling.autorouter_listener:Lapp/freerouting/interactive/ThreadActionListener;
+    1327: ifnull        1346
+    1330: aload         24
+    1332: aload         15
+    1334: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+    1337: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+    1340: getfield      #721                // Field app/freerouting/interactive/BoardHandling.autorouter_listener:Lapp/freerouting/interactive/ThreadActionListener;
+    1343: invokevirtual #818                // Method app/freerouting/interactive/InteractiveActionThread.addListener:(Lapp/freerouting/interactive/ThreadActionListener;)V
+    1346: aload         23
+    1348: aload         19
+    1350: iconst_1
+    1351: aaload
+    1352: if_acmpne     1364
+    1355: ldc_w         #824                // String auto_start_routing_dialog_cancel
+    1358: ldc_w         #826                // String Cancel
+    1361: invokestatic  #828                // Method app/freerouting/management/FRAnalytics.buttonClicked:(Ljava/lang/String;Ljava/lang/String;)V
+    1364: aload         15
+    1366: new           #831                // class app/freerouting/gui/MainApplication$3
+    1369: dup
+    1370: invokespecial #833                // Method app/freerouting/gui/MainApplication$3."<init>":()V
+    1373: invokevirtual #834                // Method app/freerouting/gui/BoardFrame.addWindowListener:(Ljava/awt/event/WindowListener;)V
+    1376: goto          1393
+    1379: new           #15                 // class app/freerouting/gui/MainApplication
+    1382: dup
+    1383: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+    1386: invokespecial #835                // Method "<init>":(Lapp/freerouting/gui/StartupOptions;)V
+    1389: iconst_1
+    1390: invokevirtual #837                // Method setVisible:(Z)V
+    1393: ldc_w         #316                // String MainApplication.main()
+    1396: invokestatic  #838                // Method app/freerouting/logger/FRLogger.traceExit:(Ljava/lang/String;)D
+    1399: pop2
+    1400: return
+    Exception table:
+       from    to  target type
+          29    35    38   Class java/lang/ClassNotFoundException
+          29    35    38   Class java/lang/InstantiationException
+          29    35    38   Class javax/swing/UnsupportedLookAndFeelException
+          29    35    38   Class java/lang/IllegalAccessException
+         186   198   201   Class java/lang/Exception
+         218   224   227   Class java/lang/Exception
+         340   346   349   Class java/lang/Exception
+
+  private static app.freerouting.gui.BoardFrame create_board_frame(app.freerouting.gui.DesignFile, javax.swing.JTextField, app.freerouting.gui.BoardFrame$Option, boolean, java.util.Locale, java.lang.String, boolean, float, java.lang.String[]);
+    Code:
+       0: ldc           #96                 // String app.freerouting.gui.MainApplication
+       2: aload         4
+       4: invokestatic  #98                 // Method java/util/ResourceBundle.getBundle:(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;
+       7: astore        9
+       9: aload_0
+      10: invokevirtual #842                // Method app/freerouting/gui/DesignFile.get_input_stream:()Ljava/io/InputStream;
+      13: astore        10
+      15: aload         10
+      17: ifnonnull     47
+      20: aload_1
+      21: ifnull        45
+      24: aload_1
+      25: aload         9
+      27: ldc_w         #846                // String message_8
+      30: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+      33: aload_0
+      34: invokevirtual #848                // Method app/freerouting/gui/DesignFile.get_name:()Ljava/lang/String;
+      37: invokedynamic #640,  0            // InvokeDynamic #20:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      42: invokevirtual #176                // Method javax/swing/JTextField.setText:(Ljava/lang/String;)V
+      45: aconst_null
+      46: areturn
+      47: iload_3
+      48: ifeq          57
+      51: getstatic     #851                // Field DEBUG_LEVEL:Lapp/freerouting/board/TestLevel;
+      54: goto          60
+      57: getstatic     #855                // Field app/freerouting/board/TestLevel.RELEASE_VERSION:Lapp/freerouting/board/TestLevel;
+      60: astore        11
+      62: new           #663                // class app/freerouting/gui/BoardFrame
+      65: dup
+      66: aload_0
+      67: aload_2
+      68: aload         11
+      70: aload         4
+      72: iload_3
+      73: ifne          80
+      76: iconst_1
+      77: goto          81
+      80: iconst_0
+      81: iload         6
+      83: fload         7
+      85: invokespecial #860                // Method app/freerouting/gui/BoardFrame."<init>":(Lapp/freerouting/gui/DesignFile;Lapp/freerouting/gui/BoardFrame$Option;Lapp/freerouting/board/TestLevel;Ljava/util/Locale;ZZF)V
+      88: astore        12
+      90: aload         12
+      92: aload         10
+      94: aload_0
+      95: invokevirtual #863                // Method app/freerouting/gui/DesignFile.is_created_from_text_file:()Z
+      98: aload_1
+      99: invokevirtual #866                // Method app/freerouting/gui/BoardFrame.read:(Ljava/io/InputStream;ZLjavax/swing/JTextField;)Z
+     102: istore        13
+     104: iload         13
+     106: ifne          111
+     109: aconst_null
+     110: areturn
+     111: aload         12
+     113: getfield      #870                // Field app/freerouting/gui/BoardFrame.menubar:Lapp/freerouting/gui/BoardMenuBar;
+     116: invokevirtual #874                // Method app/freerouting/gui/BoardMenuBar.add_design_dependent_items:()V
+     119: aload_0
+     120: invokevirtual #863                // Method app/freerouting/gui/DesignFile.is_created_from_text_file:()Z
+     123: ifeq          336
+     126: aload_0
+     127: invokevirtual #848                // Method app/freerouting/gui/DesignFile.get_name:()Ljava/lang/String;
+     130: astore        14
+     132: aload         14
+     134: ldc_w         #879                // String \\.
+     137: invokevirtual #881                // Method java/lang/String.split:(Ljava/lang/String;)[Ljava/lang/String;
+     140: astore        15
+     142: aload         15
+     144: iconst_0
+     145: aaload
+     146: astore        16
+     148: aload         5
+     150: ifnonnull     181
+     153: aload         16
+     155: invokedynamic #885,  0            // InvokeDynamic #24:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     160: astore        17
+     162: aload_0
+     163: invokevirtual #886                // Method app/freerouting/gui/DesignFile.get_parent:()Ljava/lang/String;
+     166: astore        18
+     168: aload         9
+     170: ldc_w         #889                // String confirm_import_rules
+     173: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     176: astore        19
+     178: goto          191
+     181: aload         5
+     183: astore        17
+     185: aconst_null
+     186: astore        18
+     188: aconst_null
+     189: astore        19
+     191: new           #891                // class java/io/File
+     194: dup
+     195: aload         18
+     197: aload         17
+     199: invokespecial #893                // Method java/io/File."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+     202: astore        20
+     204: aload         20
+     206: invokevirtual #895                // Method java/io/File.exists:()Z
+     209: ifeq          232
+     212: aload         16
+     214: aload         18
+     216: aload         17
+     218: aload         12
+     220: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     223: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     226: aload         19
+     228: invokestatic  #898                // Method app/freerouting/gui/DesignFile.read_rules_file:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lapp/freerouting/interactive/BoardHandling;Ljava/lang/String;)Z
+     231: pop
+     232: aload         8
+     234: astore        21
+     236: aload         21
+     238: arraylength
+     239: istore        22
+     241: iconst_0
+     242: istore        23
+     244: iload         23
+     246: iload         22
+     248: if_icmpge     331
+     251: aload         21
+     253: iload         23
+     255: aaload
+     256: astore        24
+     258: aload         12
+     260: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     263: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     266: invokevirtual #902                // Method app/freerouting/interactive/BoardHandling.get_routing_board:()Lapp/freerouting/board/RoutingBoard;
+     269: getfield      #906                // Field app/freerouting/board/RoutingBoard.rules:Lapp/freerouting/rules/BoardRules;
+     272: getfield      #912                // Field app/freerouting/rules/BoardRules.net_classes:Lapp/freerouting/rules/NetClasses;
+     275: astore        25
+     277: iconst_0
+     278: istore        26
+     280: iload         26
+     282: aload         25
+     284: invokevirtual #918                // Method app/freerouting/rules/NetClasses.count:()I
+     287: if_icmpge     325
+     290: aload         25
+     292: iload         26
+     294: invokevirtual #923                // Method app/freerouting/rules/NetClasses.get:(I)Lapp/freerouting/rules/NetClass;
+     297: invokevirtual #926                // Method app/freerouting/rules/NetClass.get_name:()Ljava/lang/String;
+     300: aload         24
+     302: invokevirtual #929                // Method java/lang/String.equalsIgnoreCase:(Ljava/lang/String;)Z
+     305: ifeq          319
+     308: aload         25
+     310: iload         26
+     312: invokevirtual #923                // Method app/freerouting/rules/NetClasses.get:(I)Lapp/freerouting/rules/NetClass;
+     315: iconst_1
+     316: putfield      #932                // Field app/freerouting/rules/NetClass.is_ignored_by_autorouter:Z
+     319: iinc          26, 1
+     322: goto          280
+     325: iinc          23, 1
+     328: goto          244
+     331: aload         12
+     333: invokevirtual #935                // Method app/freerouting/gui/BoardFrame.refresh_windows:()V
+     336: aload         12
+     338: areturn
+
+  private void open_board_design_action(java.awt.event.ActionEvent);
+    Code:
+       0: aload_0
+       1: getfield      #26                 // Field design_dir_name:Ljava/lang/String;
+       4: invokestatic  #938                // Method app/freerouting/gui/DesignFile.open_dialog:(Ljava/lang/String;)Lapp/freerouting/gui/DesignFile;
+       7: astore_2
+       8: aload_2
+       9: ifnull        61
+      12: aload_0
+      13: getfield      #26                 // Field design_dir_name:Ljava/lang/String;
+      16: aload_2
+      17: invokevirtual #941                // Method app/freerouting/gui/DesignFile.get_directory:()Ljava/lang/String;
+      20: invokestatic  #944                // Method java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+      23: ifne          61
+      26: aload_0
+      27: aload_2
+      28: invokevirtual #941                // Method app/freerouting/gui/DesignFile.get_directory:()Ljava/lang/String;
+      31: putfield      #26                 // Field design_dir_name:Ljava/lang/String;
+      34: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+      37: aload_0
+      38: getfield      #26                 // Field design_dir_name:Ljava/lang/String;
+      41: putfield      #950                // Field app/freerouting/gui/StartupOptions.input_directory:Ljava/lang/String;
+      44: getstatic     #437                // Field startupOptions:Lapp/freerouting/gui/StartupOptions;
+      47: invokestatic  #444                // Method app/freerouting/gui/StartupOptions.save:(Lapp/freerouting/gui/StartupOptions;)V
+      50: goto          61
+      53: astore_3
+      54: ldc_w         #953                // String Couldn\'t save configuration file
+      57: aload_3
+      58: invokestatic  #342                // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+      61: aload_2
+      62: ifnonnull     83
+      65: aload_0
+      66: getfield      #166                // Field message_field:Ljavax/swing/JTextField;
+      69: aload_0
+      70: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+      73: ldc_w         #955                // String message_3
+      76: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+      79: invokevirtual #176                // Method javax/swing/JTextField.setText:(Ljava/lang/String;)V
+      82: return
+      83: aload_2
+      84: invokevirtual #848                // Method app/freerouting/gui/DesignFile.get_name:()Ljava/lang/String;
+      87: invokedynamic #623,  0            // InvokeDynamic #18:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      92: invokestatic  #348                // Method app/freerouting/logger/FRLogger.info:(Ljava/lang/String;)V
+      95: getstatic     #957                // Field app/freerouting/gui/BoardFrame$Option.FROM_START_MENU:Lapp/freerouting/gui/BoardFrame$Option;
+      98: astore_3
+      99: aload_0
+     100: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     103: ldc_w         #638                // String loading_design
+     106: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     109: aload_2
+     110: invokevirtual #848                // Method app/freerouting/gui/DesignFile.get_name:()Ljava/lang/String;
+     113: invokedynamic #640,  0            // InvokeDynamic #20:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     118: astore        4
+     120: aload_0
+     121: getfield      #166                // Field message_field:Ljavax/swing/JTextField;
+     124: aload         4
+     126: invokevirtual #176                // Method javax/swing/JTextField.setText:(Ljava/lang/String;)V
+     129: aload         4
+     131: invokestatic  #641                // Method app/freerouting/gui/WindowMessage.show:(Ljava/lang/String;)Lapp/freerouting/gui/WindowMessage;
+     134: astore        5
+     136: aload         5
+     138: aload         4
+     140: invokevirtual #960                // Method app/freerouting/gui/WindowMessage.setTitle:(Ljava/lang/String;)V
+     143: aload_2
+     144: aload_0
+     145: getfield      #166                // Field message_field:Ljavax/swing/JTextField;
+     148: aload_3
+     149: aload_0
+     150: getfield      #70                 // Field is_test_version:Z
+     153: aload_0
+     154: getfield      #78                 // Field locale:Ljava/util/Locale;
+     157: aconst_null
+     158: aload_0
+     159: getfield      #85                 // Field save_intermediate_stages:Z
+     162: aload_0
+     163: getfield      #90                 // Field optimization_improvement_threshold:F
+     166: aload_0
+     167: getfield      #95                 // Field ignore_net_classes_by_autorouter:[Ljava/lang/String;
+     170: invokestatic  #653                // Method create_board_frame:(Lapp/freerouting/gui/DesignFile;Ljavax/swing/JTextField;Lapp/freerouting/gui/BoardFrame$Option;ZLjava/util/Locale;Ljava/lang/String;ZF[Ljava/lang/String;)Lapp/freerouting/gui/BoardFrame;
+     173: astore        6
+     175: aload         5
+     177: invokevirtual #657                // Method app/freerouting/gui/WindowMessage.dispose:()V
+     180: aload         6
+     182: ifnonnull     186
+     185: return
+     186: aload         6
+     188: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     191: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     194: getfield      #674                // Field app/freerouting/interactive/BoardHandling.settings:Lapp/freerouting/interactive/Settings;
+     197: getfield      #680                // Field app/freerouting/interactive/Settings.autoroute_settings:Lapp/freerouting/interactive/AutorouteSettings;
+     200: aload         6
+     202: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     205: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     208: getfield      #674                // Field app/freerouting/interactive/BoardHandling.settings:Lapp/freerouting/interactive/Settings;
+     211: getfield      #680                // Field app/freerouting/interactive/Settings.autoroute_settings:Lapp/freerouting/interactive/AutorouteSettings;
+     214: invokevirtual #686                // Method app/freerouting/interactive/AutorouteSettings.get_start_pass_no:()I
+     217: aload_0
+     218: getfield      #34                 // Field max_passes:I
+     221: iadd
+     222: iconst_1
+     223: isub
+     224: invokevirtual #692                // Method app/freerouting/interactive/AutorouteSettings.set_stop_pass_no:(I)V
+     227: aload         6
+     229: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     232: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     235: aload_0
+     236: getfield      #41                 // Field num_threads:I
+     239: invokevirtual #696                // Method app/freerouting/interactive/BoardHandling.set_num_threads:(I)V
+     242: aload         6
+     244: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     247: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     250: aload_0
+     251: getfield      #48                 // Field board_update_strategy:Lapp/freerouting/autoroute/BoardUpdateStrategy;
+     254: invokevirtual #700                // Method app/freerouting/interactive/BoardHandling.set_board_update_strategy:(Lapp/freerouting/autoroute/BoardUpdateStrategy;)V
+     257: aload         6
+     259: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     262: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     265: aload_0
+     266: getfield      #55                 // Field hybrid_ratio:Ljava/lang/String;
+     269: invokevirtual #705                // Method app/freerouting/interactive/BoardHandling.set_hybrid_ratio:(Ljava/lang/String;)V
+     272: aload         6
+     274: getfield      #662                // Field app/freerouting/gui/BoardFrame.board_panel:Lapp/freerouting/gui/BoardPanel;
+     277: getfield      #668                // Field app/freerouting/gui/BoardPanel.board_handling:Lapp/freerouting/interactive/BoardHandling;
+     280: aload_0
+     281: getfield      #62                 // Field item_selection_strategy:Lapp/freerouting/autoroute/ItemSelectionStrategy;
+     284: invokevirtual #709                // Method app/freerouting/interactive/BoardHandling.set_item_selection_strategy:(Lapp/freerouting/autoroute/ItemSelectionStrategy;)V
+     287: aload         6
+     289: invokevirtual #725                // Method app/freerouting/gui/BoardFrame.is_intermediate_stage_file_available:()Z
+     292: ifeq          353
+     295: aload         6
+     297: invokevirtual #728                // Method app/freerouting/gui/BoardFrame.get_intermediate_stage_file_modification_time:()Ljava/time/LocalDateTime;
+     300: astore        7
+     302: ldc_w         #732                // String yyyy-MM-dd HH:mm:ss
+     305: invokestatic  #734                // Method java/time/format/DateTimeFormatter.ofPattern:(Ljava/lang/String;)Ljava/time/format/DateTimeFormatter;
+     308: astore        8
+     310: aload_0
+     311: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     314: ldc_w         #740                // String load_snapshot_confirmation
+     317: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     320: iconst_1
+     321: anewarray     #742                // class java/lang/Object
+     324: dup
+     325: iconst_0
+     326: aload         7
+     328: aload         8
+     330: invokevirtual #744                // Method java/time/LocalDateTime.format:(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
+     333: aastore
+     334: invokestatic  #750                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     337: astore        9
+     339: aload         9
+     341: invokestatic  #753                // Method app/freerouting/gui/WindowMessage.confirm:(Ljava/lang/String;)Z
+     344: ifeq          353
+     347: aload         6
+     349: invokevirtual #757                // Method app/freerouting/gui/BoardFrame.load_intermediate_stage_file:()Z
+     352: pop
+     353: aload_0
+     354: getfield      #166                // Field message_field:Ljavax/swing/JTextField;
+     357: aload_0
+     358: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     361: ldc_w         #961                // String message_4
+     364: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     367: aload_2
+     368: invokevirtual #848                // Method app/freerouting/gui/DesignFile.get_name:()Ljava/lang/String;
+     371: aload_0
+     372: getfield      #104                // Field resources:Ljava/util/ResourceBundle;
+     375: ldc_w         #963                // String message_5
+     378: invokevirtual #172                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+     381: invokedynamic #634,  0            // InvokeDynamic #19:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     386: invokevirtual #176                // Method javax/swing/JTextField.setText:(Ljava/lang/String;)V
+     389: aload_0
+     390: getfield      #14                 // Field board_frames:Ljava/util/Collection;
+     393: aload         6
+     395: invokeinterface #965,  2          // InterfaceMethod java/util/Collection.add:(Ljava/lang/Object;)Z
+     400: pop
+     401: aload         6
+     403: new           #969                // class app/freerouting/gui/MainApplication$BoardFrameWindowListener
+     406: dup
+     407: aload_0
+     408: aload         6
+     410: invokespecial #971                // Method app/freerouting/gui/MainApplication$BoardFrameWindowListener."<init>":(Lapp/freerouting/gui/MainApplication;Lapp/freerouting/gui/BoardFrame;)V
+     413: invokevirtual #834                // Method app/freerouting/gui/BoardFrame.addWindowListener:(Ljava/awt/event/WindowListener;)V
+     416: return
+    Exception table:
+       from    to  target type
+          44    50    53   Class java/lang/Exception
+
+  private void exitForm(java.awt.event.WindowEvent);
+    Code:
+       0: invokestatic  #974                // Method app/freerouting/management/FRAnalytics.appClosed:()V
+       3: iconst_0
+       4: invokestatic  #601                // Method java/lang/System.exit:(I)V
+       7: return
+
+  private static void lambda$main$8(javax.swing.JButton, java.awt.event.ActionEvent);
+    Code:
+       0: ldc_w         #977                // String auto_start_routing_dialog_start
+       3: aload_0
+       4: invokevirtual #979                // Method javax/swing/JButton.getText:()Ljava/lang/String;
+       7: invokestatic  #828                // Method app/freerouting/management/FRAnalytics.buttonClicked:(Ljava/lang/String;Ljava/lang/String;)V
+      10: return
+
+  private static void lambda$main$7(javax.swing.JOptionPane, java.lang.Object[], java.awt.event.ActionEvent);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iconst_0
+       3: aaload
+       4: invokevirtual #982                // Method javax/swing/JOptionPane.setValue:(Ljava/lang/Object;)V
+       7: return
+
+  private void lambda$new$6(java.awt.event.ActionEvent);
+    Code:
+       0: ldc_w         #986                // String restore_defaults_button
+       3: aload_0
+       4: getfield      #160                // Field restore_defaults_button:Ljavax/swing/JButton;
+       7: invokevirtual #979                // Method javax/swing/JButton.getText:()Ljava/lang/String;
+      10: invokestatic  #828                // Method app/freerouting/management/FRAnalytics.buttonClicked:(Ljava/lang/String;Ljava/lang/String;)V
+      13: return
+
+  private static void lambda$new$5(java.awt.event.ActionEvent);
+    Code:
+       0: return
+
+  private void lambda$new$4(java.awt.event.ActionEvent);
+    Code:
+       0: ldc_w         #987                // String open_board_button
+       3: aload_0
+       4: getfield      #157                // Field open_board_button:Ljavax/swing/JButton;
+       7: invokevirtual #979                // Method javax/swing/JButton.getText:()Ljava/lang/String;
+      10: invokestatic  #828                // Method app/freerouting/management/FRAnalytics.buttonClicked:(Ljava/lang/String;Ljava/lang/String;)V
+      13: return
+
+  private void lambda$new$3(java.awt.event.ActionEvent);
+    Code:
+       0: ldc_w         #988                // String sample_board_button
+       3: aload_0
+       4: getfield      #154                // Field sample_board_button:Ljavax/swing/JButton;
+       7: invokevirtual #979                // Method javax/swing/JButton.getText:()Ljava/lang/String;
+      10: invokestatic  #828                // Method app/freerouting/management/FRAnalytics.buttonClicked:(Ljava/lang/String;Ljava/lang/String;)V
+      13: return
+
+  private void lambda$new$2(java.awt.event.ActionEvent);
+    Code:
+       0: aload_0
+       1: getfield      #210                // Field window_net_sample_designs:Lapp/freerouting/gui/WindowNetSamples;
+       4: iconst_1
+       5: invokevirtual #989                // Method app/freerouting/gui/WindowNetSamples.setVisible:(Z)V
+       8: return
+
+  private void lambda$new$1(java.awt.event.ActionEvent);
+    Code:
+       0: ldc_w         #990                // String demonstration_button
+       3: aload_0
+       4: getfield      #150                // Field demonstration_button:Ljavax/swing/JButton;
+       7: invokevirtual #979                // Method javax/swing/JButton.getText:()Ljava/lang/String;
+      10: invokestatic  #828                // Method app/freerouting/management/FRAnalytics.buttonClicked:(Ljava/lang/String;Ljava/lang/String;)V
+      13: return
+
+  private void lambda$new$0(java.awt.event.ActionEvent);
+    Code:
+       0: aload_0
+       1: getfield      #185                // Field window_net_demonstrations:Lapp/freerouting/gui/WindowNetSamples;
+       4: iconst_1
+       5: invokevirtual #989                // Method app/freerouting/gui/WindowNetSamples.setVisible:(Z)V
+       8: return
+
+  static {};
+    Code:
+       0: getstatic     #991                // Field app/freerouting/board/TestLevel.CRITICAL_DEBUGGING_OUTPUT:Lapp/freerouting/board/TestLevel;
+       3: putstatic     #851                // Field DEBUG_LEVEL:Lapp/freerouting/board/TestLevel;
+       6: return
+}

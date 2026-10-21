@@ -1,0 +1,113 @@
+{
+  "purpose": "Paused native RX pin-escape prototypes; not routing-complete",
+  "files": [
+    {
+      "path": "boards/rx7-shift/ChryslerScanner_V240_SD.kicad_pcb",
+      "bytes": 2855866,
+      "sha256": "0902c778c8f56598a5c9c79f36f420d5f87bf48f2c6ba173834abb14c671b795",
+      "originalPath": "/private/tmp/atopile-sd-rx7-escape-shift/ChryslerScanner_V240_SD.kicad_pcb"
+    },
+    {
+      "path": "boards/rx7-shift/ChryslerScanner_V240_SD.kicad_pro",
+      "bytes": 20559,
+      "sha256": "71e6d2aab50e0b06567c37f5ff406621a6e2a866393cea7fe732bc78c2a084aa",
+      "originalPath": "/private/tmp/atopile-sd-rx7-escape-shift/ChryslerScanner_V240_SD.kicad_pro"
+    },
+    {
+      "path": "boards/rx7-shift/rx7-shift-proof.json",
+      "bytes": 8152,
+      "sha256": "62f26ded1e8ae76eabb913c72ff533d05cbb7209d6757fc9c07bbea2a2980661",
+      "originalPath": "/private/tmp/atopile-sd-rx7-escape-shift/rx7-shift-proof.json"
+    },
+    {
+      "path": "boards/rx7-shift/native-drc.json",
+      "bytes": 10922,
+      "sha256": "eff6e2897c109d4832f91a742aa0e3e2f3f0ff056152d71fb12063c79ab86190",
+      "originalPath": "/private/tmp/atopile-sd-rx7-escape-shift/native-drc.json"
+    },
+    {
+      "path": "boards/rx7-shift/native-drc.log",
+      "bytes": 5711,
+      "sha256": "a2b9c7f4df07f58e4d560ee3845079c35657861e9b64f684f457fba085dd66d5",
+      "originalPath": "/private/tmp/atopile-sd-rx7-escape-shift/native-drc.log"
+    },
+    {
+      "path": "boards/paired-rx-escapes/ChryslerScanner_V240_SD.kicad_pcb",
+      "bytes": 2865736,
+      "sha256": "669d376f876aecfebca65134a273d218f5468c93bdf51568c43ae74b268f143a",
+      "originalPath": "/private/tmp/atopile-sd-paired-rx-escapes/ChryslerScanner_V240_SD.kicad_pcb"
+    },
+    {
+      "path": "boards/paired-rx-escapes/ChryslerScanner_V240_SD.kicad_pro",
+      "bytes": 20559,
+      "sha256": "71e6d2aab50e0b06567c37f5ff406621a6e2a866393cea7fe732bc78c2a084aa",
+      "originalPath": "/private/tmp/atopile-sd-paired-rx-escapes/ChryslerScanner_V240_SD.kicad_pro"
+    },
+    {
+      "path": "boards/paired-rx-escapes/paired-rx-proof.json",
+      "bytes": 34377,
+      "sha256": "679c86359a1c81dc5238aec0ef0b4bb89256c80459b974afe8e0993fad82cefe",
+      "originalPath": "/private/tmp/atopile-sd-paired-rx-escapes/paired-rx-proof.json"
+    },
+    {
+      "path": "boards/paired-rx-escapes/native-drc.json",
+      "bytes": 18719,
+      "sha256": "13164e258560c9caed8f626a5a4f5eede263c75d3db8ccc19a5cc4db4f6c186b",
+      "originalPath": "/private/tmp/atopile-sd-paired-rx-escapes/native-drc.json"
+    },
+    {
+      "path": "boards/paired-rx-escapes/native-drc.log",
+      "bytes": 5447,
+      "sha256": "281d69dbf7903fa6894522c51f0bec1f676754df92240b834f6cd68164db92b2",
+      "originalPath": "/private/tmp/atopile-sd-paired-rx-escapes/native-drc.log"
+    },
+    {
+      "path": "boards/paired-rx-power-restored/ChryslerScanner_V240_SD.kicad_pcb",
+      "bytes": 2871092,
+      "sha256": "3fbbac8ea92b9348ccee1201215cdb36925c573f1e5db7db8af75f1ea9d9d842",
+      "originalPath": "/private/tmp/atopile-sd-paired-rx-power-restored/ChryslerScanner_V240_SD.kicad_pcb"
+    },
+    {
+      "path": "boards/paired-rx-power-restored/ChryslerScanner_V240_SD.kicad_pro",
+      "bytes": 20559,
+      "sha256": "71e6d2aab50e0b06567c37f5ff406621a6e2a866393cea7fe732bc78c2a084aa",
+      "originalPath": "/private/tmp/atopile-sd-paired-rx-power-restored/ChryslerScanner_V240_SD.kicad_pro"
+    },
+    {
+      "path": "boards/paired-rx-power-restored/power-restore-proof.json",
+      "bytes": 17759,
+      "sha256": "1ce94b6de5102e7d76abed7fddf5055542fe10f786d3e1c288b7941c45565a4b",
+      "originalPath": "/private/tmp/atopile-sd-paired-rx-power-restored/power-restore-proof.json"
+    },
+    {
+      "path": "scripts/paired_rx_escapes.py",
+      "bytes": 10990,
+      "sha256": "330277ff5cd71c511c6eb12375e12bdbe9cf40fb03e137725b70cf6270768cc9",
+      "originalPath": "work/chrysler-routed-sd/signal-logic-stage/paired_rx_escapes.py"
+    },
+    {
+      "path": "scripts/relocate_rx7_escape.py",
+      "bytes": 9522,
+      "sha256": "e2ede171150448a42b7420bdf6c8072df54303633d8f5161920477895a9eb0fd",
+      "originalPath": "work/chrysler-routed-sd/signal-logic-stage/relocate_rx7_escape.py"
+    },
+    {
+      "path": "scripts/restore_paired_power.py",
+      "bytes": 4448,
+      "sha256": "3736115424163cf8f64e6cfc24f9a92c6789c9356ed995667a267569d6aec398",
+      "originalPath": "work/chrysler-routed-sd/signal-logic-stage/restore_paired_power.py"
+    },
+    {
+      "path": "scripts/find_pin_escapes.py",
+      "bytes": 13284,
+      "sha256": "736e99e102b3ac559417e867cfc4e4dac7a4ca80c53256bb05ff9bd6692fb656",
+      "originalPath": "work/chrysler-routed-sd/signal-logic-stage/find_pin_escapes.py"
+    },
+    {
+      "path": "scripts/analyze_hint_blockers.py",
+      "bytes": 2283,
+      "sha256": "55856455a08302cdbad638271d4a75a3c193cb7c03cc55d0602df025ca7239cc",
+      "originalPath": "work/chrysler-routed-sd/signal-logic-stage/analyze_hint_blockers.py"
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+Compiled from "ConductionArea.java"
+public class app.freerouting.board.ConductionArea extends app.freerouting.board.ObstacleArea implements app.freerouting.board.Connectable {
+  private boolean is_obstacle;
+
+  app.freerouting.board.ConductionArea(app.freerouting.geometry.planar.Area, int, app.freerouting.geometry.planar.Vector, double, boolean, int[], int, int, int, java.lang.String, boolean, app.freerouting.board.FixedState, app.freerouting.board.BasicBoard);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: aload_3
+       4: dload         4
+       6: iload         6
+       8: aload         7
+      10: iload         8
+      12: iload         9
+      14: iload         10
+      16: aload         11
+      18: aload         13
+      20: aload         14
+      22: invokespecial #1                  // Method app/freerouting/board/ObstacleArea."<init>":(Lapp/freerouting/geometry/planar/Area;ILapp/freerouting/geometry/planar/Vector;DZ[IIIILjava/lang/String;Lapp/freerouting/board/FixedState;Lapp/freerouting/board/BasicBoard;)V
+      25: aload_0
+      26: iload         12
+      28: putfield      #7                  // Field is_obstacle:Z
+      31: return
+
+  public app.freerouting.board.Item copy(int);
+    Code:
+       0: aload_0
+       1: invokevirtual #13                 // Method net_count:()I
+       4: iconst_1
+       5: if_icmpeq     15
+       8: ldc           #17                 // String ConductionArea.copy not yet implemented for areas with more than 1 net
+      10: invokestatic  #19                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      13: aconst_null
+      14: areturn
+      15: new           #8                  // class app/freerouting/board/ConductionArea
+      18: dup
+      19: aload_0
+      20: invokevirtual #25                 // Method get_relative_area:()Lapp/freerouting/geometry/planar/Area;
+      23: aload_0
+      24: invokevirtual #29                 // Method get_layer:()I
+      27: aload_0
+      28: invokevirtual #32                 // Method get_translation:()Lapp/freerouting/geometry/planar/Vector;
+      31: aload_0
+      32: invokevirtual #36                 // Method get_rotation_in_degree:()D
+      35: aload_0
+      36: invokevirtual #40                 // Method get_side_changed:()Z
+      39: aload_0
+      40: getfield      #44                 // Field net_no_arr:[I
+      43: aload_0
+      44: invokevirtual #48                 // Method clearance_class_no:()I
+      47: iload_1
+      48: aload_0
+      49: invokevirtual #51                 // Method get_component_no:()I
+      52: aload_0
+      53: getfield      #54                 // Field name:Ljava/lang/String;
+      56: aload_0
+      57: getfield      #7                  // Field is_obstacle:Z
+      60: aload_0
+      61: invokevirtual #58                 // Method get_fixed_state:()Lapp/freerouting/board/FixedState;
+      64: aload_0
+      65: getfield      #62                 // Field board:Lapp/freerouting/board/BasicBoard;
+      68: invokespecial #66                 // Method "<init>":(Lapp/freerouting/geometry/planar/Area;ILapp/freerouting/geometry/planar/Vector;DZ[IIIILjava/lang/String;ZLapp/freerouting/board/FixedState;Lapp/freerouting/board/BasicBoard;)V
+      71: areturn
+
+  public java.util.Set<app.freerouting.board.Item> get_normal_contacts();
+    Code:
+       0: new           #69                 // class java/util/TreeSet
+       3: dup
+       4: invokespecial #71                 // Method java/util/TreeSet."<init>":()V
+       7: astore_1
+       8: iconst_0
+       9: istore_2
+      10: iload_2
+      11: aload_0
+      12: invokevirtual #74                 // Method tile_shape_count:()I
+      15: if_icmpge     207
+      18: aload_0
+      19: iload_2
+      20: invokevirtual #77                 // Method get_tile_shape:(I)Lapp/freerouting/geometry/planar/TileShape;
+      23: astore_3
+      24: aload_0
+      25: getfield      #62                 // Field board:Lapp/freerouting/board/BasicBoard;
+      28: aload_3
+      29: aload_0
+      30: invokevirtual #29                 // Method get_layer:()I
+      33: invokevirtual #81                 // Method app/freerouting/board/BasicBoard.overlapping_objects:(Lapp/freerouting/geometry/planar/ConvexShape;I)Ljava/util/Set;
+      36: astore        4
+      38: aload         4
+      40: invokeinterface #87,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+      45: astore        5
+      47: aload         5
+      49: invokeinterface #93,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      54: ifeq          201
+      57: aload         5
+      59: invokeinterface #98,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      64: checkcast     #102                // class app/freerouting/board/SearchTreeObject
+      67: astore        6
+      69: aload         6
+      71: instanceof    #104                // class app/freerouting/board/Item
+      74: ifne          80
+      77: goto          47
+      80: aload         6
+      82: checkcast     #104                // class app/freerouting/board/Item
+      85: astore        7
+      87: aload         7
+      89: aload_0
+      90: if_acmpeq     198
+      93: aload         7
+      95: aload_0
+      96: invokevirtual #106                // Method app/freerouting/board/Item.shares_net:(Lapp/freerouting/board/Item;)Z
+      99: ifeq          198
+     102: aload         7
+     104: aload_0
+     105: invokevirtual #110                // Method app/freerouting/board/Item.shares_layer:(Lapp/freerouting/board/Item;)Z
+     108: ifeq          198
+     111: aload         7
+     113: instanceof    #113                // class app/freerouting/board/Trace
+     116: ifeq          162
+     119: aload         7
+     121: checkcast     #113                // class app/freerouting/board/Trace
+     124: astore        8
+     126: aload_3
+     127: aload         8
+     129: invokevirtual #115                // Method app/freerouting/board/Trace.first_corner:()Lapp/freerouting/geometry/planar/Point;
+     132: invokevirtual #119                // Method app/freerouting/geometry/planar/TileShape.contains:(Lapp/freerouting/geometry/planar/Point;)Z
+     135: ifne          150
+     138: aload_3
+     139: aload         8
+     141: invokevirtual #125                // Method app/freerouting/board/Trace.last_corner:()Lapp/freerouting/geometry/planar/Point;
+     144: invokevirtual #119                // Method app/freerouting/geometry/planar/TileShape.contains:(Lapp/freerouting/geometry/planar/Point;)Z
+     147: ifeq          159
+     150: aload_1
+     151: aload         7
+     153: invokeinterface #128,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+     158: pop
+     159: goto          198
+     162: aload         7
+     164: instanceof    #132                // class app/freerouting/board/DrillItem
+     167: ifeq          198
+     170: aload         7
+     172: checkcast     #132                // class app/freerouting/board/DrillItem
+     175: astore        8
+     177: aload_3
+     178: aload         8
+     180: invokevirtual #134                // Method app/freerouting/board/DrillItem.get_center:()Lapp/freerouting/geometry/planar/Point;
+     183: invokevirtual #119                // Method app/freerouting/geometry/planar/TileShape.contains:(Lapp/freerouting/geometry/planar/Point;)Z
+     186: ifeq          198
+     189: aload_1
+     190: aload         7
+     192: invokeinterface #128,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+     197: pop
+     198: goto          47
+     201: iinc          2, 1
+     204: goto          10
+     207: aload_1
+     208: areturn
+
+  public app.freerouting.geometry.planar.TileShape get_trace_connection_shape(app.freerouting.board.ShapeSearchTree, int);
+    Code:
+       0: iload_2
+       1: iflt          13
+       4: iload_2
+       5: aload_0
+       6: aload_1
+       7: invokevirtual #137                // Method tree_shape_count:(Lapp/freerouting/datastructures/ShapeTree;)I
+      10: if_icmplt     20
+      13: ldc           #141                // String ConductionArea.get_trace_connection_shape p_index out of range
+      15: invokestatic  #19                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      18: aconst_null
+      19: areturn
+      20: aload_0
+      21: aload_1
+      22: iload_2
+      23: invokevirtual #143                // Method get_tree_shape:(Lapp/freerouting/datastructures/ShapeTree;I)Lapp/freerouting/geometry/planar/TileShape;
+      26: areturn
+
+  public app.freerouting.geometry.planar.Point[] get_ratsnest_corners();
+    Code:
+       0: aload_0
+       1: invokevirtual #147                // Method get_area:()Lapp/freerouting/geometry/planar/Area;
+       4: invokeinterface #150,  1          // InterfaceMethod app/freerouting/geometry/planar/Area.corner_approx_arr:()[Lapp/freerouting/geometry/planar/FloatPoint;
+       9: astore_2
+      10: aload_2
+      11: arraylength
+      12: anewarray     #156                // class app/freerouting/geometry/planar/Point
+      15: astore_1
+      16: iconst_0
+      17: istore_3
+      18: iload_3
+      19: aload_2
+      20: arraylength
+      21: if_icmpge     39
+      24: aload_1
+      25: iload_3
+      26: aload_2
+      27: iload_3
+      28: aaload
+      29: invokevirtual #158                // Method app/freerouting/geometry/planar/FloatPoint.round:()Lapp/freerouting/geometry/planar/IntPoint;
+      32: aastore
+      33: iinc          3, 1
+      36: goto          18
+      39: aload_1
+      40: areturn
+
+  public boolean is_obstacle(app.freerouting.board.Item);
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field is_obstacle:Z
+       4: ifeq          13
+       7: aload_0
+       8: aload_1
+       9: invokespecial #164                // Method app/freerouting/board/ObstacleArea.is_obstacle:(Lapp/freerouting/board/Item;)Z
+      12: ireturn
+      13: iconst_0
+      14: ireturn
+
+  public boolean get_is_obstacle();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field is_obstacle:Z
+       4: ireturn
+
+  public void set_is_obstacle(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #7                  // Field is_obstacle:Z
+       5: return
+
+  public boolean is_trace_obstacle(int);
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field is_obstacle:Z
+       4: ifeq          19
+       7: aload_0
+       8: iload_1
+       9: invokevirtual #166                // Method contains_net:(I)Z
+      12: ifne          19
+      15: iconst_1
+      16: goto          20
+      19: iconst_0
+      20: ireturn
+
+  public boolean is_drillable(int);
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field is_obstacle:Z
+       4: ifeq          15
+       7: aload_0
+       8: iload_1
+       9: invokevirtual #166                // Method contains_net:(I)Z
+      12: ifeq          19
+      15: iconst_1
+      16: goto          20
+      19: iconst_0
+      20: ireturn
+
+  public boolean is_selected_by_filter(app.freerouting.board.ItemSelectionFilter);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #170                // Method is_selected_by_fixed_filter:(Lapp/freerouting/board/ItemSelectionFilter;)Z
+       5: ifne          10
+       8: iconst_0
+       9: ireturn
+      10: aload_1
+      11: getstatic     #174                // Field app/freerouting/board/ItemSelectionFilter$SelectableChoices.CONDUCTION:Lapp/freerouting/board/ItemSelectionFilter$SelectableChoices;
+      14: invokevirtual #180                // Method app/freerouting/board/ItemSelectionFilter.is_selected:(Lapp/freerouting/board/ItemSelectionFilter$SelectableChoices;)Z
+      17: ireturn
+
+  public java.awt.Color[] get_draw_colors(app.freerouting.boardgraphics.GraphicsContext);
+    Code:
+       0: aload_1
+       1: invokevirtual #186                // Method app/freerouting/boardgraphics/GraphicsContext.get_conduction_colors:()[Ljava/awt/Color;
+       4: areturn
+
+  public double get_draw_intensity(app.freerouting.boardgraphics.GraphicsContext);
+    Code:
+       0: aload_1
+       1: invokevirtual #192                // Method app/freerouting/boardgraphics/GraphicsContext.get_conduction_color_intensity:()D
+       4: dreturn
+
+  public void print_info(app.freerouting.board.ObjectInfoPanel, java.util.Locale);
+    Code:
+       0: ldc           #195                // String app.freerouting.board.ObjectInfoPanel
+       2: aload_2
+       3: invokestatic  #197                // Method java/util/ResourceBundle.getBundle:(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;
+       6: astore_3
+       7: aload_1
+       8: aload_3
+       9: ldc           #203                // String conduction_area
+      11: invokevirtual #205                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+      14: invokeinterface #209,  2          // InterfaceMethod app/freerouting/board/ObjectInfoPanel.append_bold:(Ljava/lang/String;)Z
+      19: pop
+      20: aload_0
+      21: aload_1
+      22: aload_2
+      23: invokevirtual #215                // Method print_shape_info:(Lapp/freerouting/board/ObjectInfoPanel;Ljava/util/Locale;)V
+      26: aload_0
+      27: aload_1
+      28: aload_2
+      29: invokevirtual #219                // Method print_connectable_item_info:(Lapp/freerouting/board/ObjectInfoPanel;Ljava/util/Locale;)V
+      32: aload_1
+      33: invokeinterface #222,  1          // InterfaceMethod app/freerouting/board/ObjectInfoPanel.newline:()Z
+      38: pop
+      39: return
+}

@@ -1,0 +1,560 @@
+{
+  "parts": [
+    {
+      "ref": "U1",
+      "value": "XIAO ESP32-S3 (base)",
+      "lib": "Seeed",
+      "name": "XIAO-ESP32-S3-SMD",
+      "footprint": "Local:XIAO_ESP32S3_Socket",
+      "nets": {
+        "1": "BUTTON",
+        "2": "MCU_CS",
+        "4": "LED_GPIO",
+        "9": "MCU_SCK",
+        "10": "SD_MISO",
+        "11": "MCU_MOSI",
+        "12": "MCU_3V3",
+        "13": "GND",
+        "14": "USB_5V"
+      },
+      "sch": [
+        63.5,
+        60.96
+      ],
+      "pcb": [
+        14,
+        12
+      ],
+      "angle": 90,
+      "mpn": "113991114",
+      "url": "https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/",
+      "uuid": "faaa32d3-3900-587c-9db3-24aaee609b98",
+      "libid": "Carrier:U1_XIAO-ESP32-S3-SMD"
+    },
+    {
+      "ref": "U2",
+      "value": "MCP1825S-3302E/DB",
+      "lib": "Regulator_Linear",
+      "name": "MCP1825S",
+      "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+      "nets": {
+        "1": "USB_5V",
+        "2": "GND",
+        "3": "SD_3V3"
+      },
+      "sch": [
+        139.7,
+        38.1
+      ],
+      "pcb": [
+        44,
+        15
+      ],
+      "angle": 0,
+      "mpn": "MCP1825S-3302E/DB",
+      "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP1825-Family-Data-Sheet-DS20002056.pdf",
+      "uuid": "3750a67b-665c-510a-b106-9d610fb18da7",
+      "libid": "Carrier:U2_MCP1825S"
+    },
+    {
+      "ref": "J1",
+      "value": "microSD Hirose DM3AT",
+      "lib": "Connector",
+      "name": "Micro_SD_Card_Det2",
+      "footprint": "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5",
+      "nets": {
+        "1": "SD_DAT2",
+        "2": "SD_CS",
+        "3": "SD_MOSI",
+        "4": "SD_3V3",
+        "5": "SD_SCK",
+        "6": "GND",
+        "7": "SD_MISO",
+        "8": "SD_DAT1",
+        "SH": "GND"
+      },
+      "sch": [
+        222.25,
+        60.96
+      ],
+      "pcb": [
+        43,
+        39
+      ],
+      "angle": 0,
+      "mpn": "DM3AT-SF-PEJM5",
+      "url": "https://www.hirose.com/en/product/p/CL0609-0031-0-00",
+      "uuid": "27ed5176-2cd3-56b3-99b4-1e051147985e",
+      "libid": "Carrier:J1_Micro_SD_Card_Det2"
+    },
+    {
+      "ref": "R1",
+      "value": "33R",
+      "lib": "Device",
+      "name": "R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "MCU_SCK",
+        "2": "SD_SCK"
+      },
+      "sch": [
+        111.76,
+        86.36
+      ],
+      "pcb": [
+        27.5,
+        17
+      ],
+      "angle": 90,
+      "mpn": "RC0805FR-0733RL",
+      "url": "",
+      "uuid": "88515942-ab71-5b2d-8a9a-312bc4402983",
+      "libid": "Carrier:R1_R"
+    },
+    {
+      "ref": "R2",
+      "value": "33R",
+      "lib": "Device",
+      "name": "R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "MCU_MOSI",
+        "2": "SD_MOSI"
+      },
+      "sch": [
+        157.48,
+        86.36
+      ],
+      "pcb": [
+        27.5,
+        22
+      ],
+      "angle": 90,
+      "mpn": "RC0805FR-0733RL",
+      "url": "",
+      "uuid": "c55bc11f-7950-5fc0-8ad9-5f2528c4c49c",
+      "libid": "Carrier:R2_R"
+    },
+    {
+      "ref": "R3",
+      "value": "33R",
+      "lib": "Device",
+      "name": "R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "MCU_CS",
+        "2": "SD_CS"
+      },
+      "sch": [
+        203.2,
+        86.36
+      ],
+      "pcb": [
+        4,
+        27
+      ],
+      "angle": 90,
+      "mpn": "RC0805FR-0733RL",
+      "url": "",
+      "uuid": "bba1c6c4-edad-5f76-b1ce-a8c82a84cab8",
+      "libid": "Carrier:R3_R"
+    },
+    {
+      "ref": "R4",
+      "value": "10k",
+      "lib": "Device",
+      "name": "R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "SD_3V3",
+        "2": "SD_CS"
+      },
+      "sch": [
+        106.68,
+        111.76
+      ],
+      "pcb": [
+        44.5,
+        26
+      ],
+      "angle": 90,
+      "mpn": "RC0805FR-0710KL",
+      "url": "",
+      "uuid": "0fb3c9ef-d983-5e4f-9bf2-bf3c7044b2e5",
+      "libid": "Carrier:R4_R"
+    },
+    {
+      "ref": "R5",
+      "value": "10k",
+      "lib": "Device",
+      "name": "R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "SD_3V3",
+        "2": "SD_MOSI"
+      },
+      "sch": [
+        137.16,
+        111.76
+      ],
+      "pcb": [
+        42.5,
+        26
+      ],
+      "angle": 90,
+      "mpn": "RC0805FR-0710KL",
+      "url": "",
+      "uuid": "42f17aa8-8164-543f-b90c-78ad56274c26",
+      "libid": "Carrier:R5_R"
+    },
+    {
+      "ref": "R6",
+      "value": "10k",
+      "lib": "Device",
+      "name": "R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "SD_3V3",
+        "2": "SD_MISO"
+      },
+      "sch": [
+        167.64000000000001,
+        111.76
+      ],
+      "pcb": [
+        39,
+        26
+      ],
+      "angle": 90,
+      "mpn": "RC0805FR-0710KL",
+      "url": "",
+      "uuid": "7a78521f-1e4c-5b9d-927f-a5ac03631305",
+      "libid": "Carrier:R6_R"
+    },
+    {
+      "ref": "R7",
+      "value": "10k",
+      "lib": "Device",
+      "name": "R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "SD_3V3",
+        "2": "SD_DAT1"
+      },
+      "sch": [
+        198.12,
+        111.76
+      ],
+      "pcb": [
+        37,
+        26
+      ],
+      "angle": 90,
+      "mpn": "RC0805FR-0710KL",
+      "url": "",
+      "uuid": "c0386930-6050-5aa1-b630-1f9e4472ff37",
+      "libid": "Carrier:R7_R"
+    },
+    {
+      "ref": "R8",
+      "value": "10k",
+      "lib": "Device",
+      "name": "R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "SD_3V3",
+        "2": "SD_DAT2"
+      },
+      "sch": [
+        228.60000000000002,
+        111.76
+      ],
+      "pcb": [
+        47,
+        26
+      ],
+      "angle": 90,
+      "mpn": "RC0805FR-0710KL",
+      "url": "",
+      "uuid": "61084a71-eb0b-503a-acbc-2176405fa6d8",
+      "libid": "Carrier:R8_R"
+    },
+    {
+      "ref": "R9",
+      "value": "1k",
+      "lib": "Device",
+      "name": "R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "LED_GPIO",
+        "2": "LED_A"
+      },
+      "sch": [
+        38.1,
+        109.22
+      ],
+      "pcb": [
+        14,
+        32
+      ],
+      "angle": 90,
+      "mpn": "RC0805FR-071KL",
+      "url": "",
+      "uuid": "50c6df6c-d418-5294-9d9b-370d887ba03b",
+      "libid": "Carrier:R9_R"
+    },
+    {
+      "ref": "D1",
+      "value": "GREEN / STATUS",
+      "lib": "Device",
+      "name": "LED",
+      "footprint": "LED_SMD:LED_0805_2012Metric",
+      "nets": {
+        "1": "GND",
+        "2": "LED_A"
+      },
+      "sch": [
+        63.5,
+        119.38
+      ],
+      "pcb": [
+        20,
+        32
+      ],
+      "angle": 180,
+      "mpn": "LTST-C170GKT",
+      "url": "",
+      "uuid": "6304dd14-54d3-55c0-ab1a-ad4408984c7a",
+      "libid": "Carrier:D1_LED"
+    },
+    {
+      "ref": "SW1",
+      "value": "STOP / EJECT",
+      "lib": "Switch",
+      "name": "SW_Push",
+      "footprint": "Button_Switch_THT:SW_PUSH_6mm",
+      "nets": {
+        "1": "BUTTON",
+        "2": "GND"
+      },
+      "sch": [
+        60.96,
+        139.7
+      ],
+      "pcb": [
+        10,
+        40
+      ],
+      "angle": 0,
+      "mpn": "B3F-1000",
+      "url": "",
+      "uuid": "21520888-c861-5a33-88cc-d2341fbd76de",
+      "libid": "Carrier:SW1_SW_Push"
+    },
+    {
+      "ref": "R10",
+      "value": "10k",
+      "lib": "Device",
+      "name": "R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "nets": {
+        "1": "MCU_3V3",
+        "2": "BUTTON"
+      },
+      "sch": [
+        25.4,
+        139.7
+      ],
+      "pcb": [
+        4,
+        32
+      ],
+      "angle": 90,
+      "mpn": "RC0805FR-0710KL",
+      "url": "",
+      "uuid": "f1191962-afe6-510c-b628-cf85b93c9b09",
+      "libid": "Carrier:R10_R"
+    },
+    {
+      "ref": "C1",
+      "value": "10uF",
+      "lib": "Device",
+      "name": "C",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "USB_5V",
+        "2": "GND"
+      },
+      "sch": [
+        109.22,
+        38.1
+      ],
+      "pcb": [
+        35,
+        17
+      ],
+      "angle": 90,
+      "mpn": "GRM21BR71A106KE51L",
+      "url": "",
+      "uuid": "e22e291e-3d3c-527a-948c-3edd2ecd7df7",
+      "libid": "Carrier:C1_C"
+    },
+    {
+      "ref": "C2",
+      "value": "10uF",
+      "lib": "Device",
+      "name": "C",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "SD_3V3",
+        "2": "GND"
+      },
+      "sch": [
+        167.64,
+        38.1
+      ],
+      "pcb": [
+        53,
+        17
+      ],
+      "angle": 90,
+      "mpn": "GRM21BR71A106KE51L",
+      "url": "",
+      "uuid": "201d78dd-fddf-5dd6-a4c8-f9e3312c5164",
+      "libid": "Carrier:C2_C"
+    },
+    {
+      "ref": "C3",
+      "value": "100nF",
+      "lib": "Device",
+      "name": "C",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "SD_3V3",
+        "2": "GND"
+      },
+      "sch": [
+        246.38,
+        114.3
+      ],
+      "pcb": [
+        54,
+        30
+      ],
+      "angle": 90,
+      "mpn": "GRM21BR71A104KA01L",
+      "url": "",
+      "uuid": "c05aaf99-8ea4-5d11-935f-ddbbc201e23c",
+      "libid": "Carrier:C3_C"
+    },
+    {
+      "ref": "C4",
+      "value": "100uF",
+      "lib": "Device",
+      "name": "C_Polarized",
+      "footprint": "Capacitor_SMD:CP_Elec_5x5.9",
+      "nets": {
+        "1": "SD_3V3",
+        "2": "GND"
+      },
+      "sch": [
+        246.38,
+        139.7
+      ],
+      "pcb": [
+        29,
+        41
+      ],
+      "angle": 0,
+      "mpn": "6SVPC100M",
+      "url": "",
+      "uuid": "b1378012-a728-5a31-b8eb-0b533c6f6a09",
+      "libid": "Carrier:C4_C_Polarized"
+    },
+    {
+      "ref": "H1",
+      "value": "M3 NPTH",
+      "lib": "Mechanical",
+      "name": "MountingHole",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "nets": {},
+      "sch": [
+        111.76,
+        139.7
+      ],
+      "pcb": [
+        30,
+        3
+      ],
+      "angle": 0,
+      "mpn": "3.2mm NPTH",
+      "url": "",
+      "uuid": "0673558a-383b-577e-8fc7-8a5ddec47612",
+      "libid": "Carrier:H1_MountingHole"
+    },
+    {
+      "ref": "H2",
+      "value": "M3 NPTH",
+      "lib": "Mechanical",
+      "name": "MountingHole",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "nets": {},
+      "sch": [
+        127.0,
+        139.7
+      ],
+      "pcb": [
+        57,
+        3
+      ],
+      "angle": 0,
+      "mpn": "3.2mm NPTH",
+      "url": "",
+      "uuid": "6b338ab2-9bf5-56f3-85a6-e707bb614f03",
+      "libid": "Carrier:H2_MountingHole"
+    },
+    {
+      "ref": "H3",
+      "value": "M3 NPTH",
+      "lib": "Mechanical",
+      "name": "MountingHole",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "nets": {},
+      "sch": [
+        142.24,
+        139.7
+      ],
+      "pcb": [
+        3,
+        47
+      ],
+      "angle": 0,
+      "mpn": "3.2mm NPTH",
+      "url": "",
+      "uuid": "ae321dad-a650-51f5-81bd-6326df8a030e",
+      "libid": "Carrier:H3_MountingHole"
+    },
+    {
+      "ref": "H4",
+      "value": "M3 NPTH",
+      "lib": "Mechanical",
+      "name": "MountingHole",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "nets": {},
+      "sch": [
+        157.48000000000002,
+        139.7
+      ],
+      "pcb": [
+        57,
+        47
+      ],
+      "angle": 0,
+      "mpn": "3.2mm NPTH",
+      "url": "",
+      "uuid": "9b86b31e-d39e-5645-9f54-c7a895f4c991",
+      "libid": "Carrier:H4_MountingHole"
+    }
+  ],
+  "sheet_uuid": "d85dd495-fc44-586d-ad8f-37062e9635c8"
+}

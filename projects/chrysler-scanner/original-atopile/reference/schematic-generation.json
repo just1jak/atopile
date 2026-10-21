@@ -1,0 +1,507 @@
+{
+  "source": "reference/v240-netlist.json",
+  "upstream_layout": "reference/upstream/ChryslerScanner_V240_schematic.pdf",
+  "root_schematic": "elec/schematic/ChryslerScanner_V240.kicad_sch",
+  "component_count": 241,
+  "net_count": 142,
+  "numbered_package_terminals": 746,
+  "pages": 22,
+  "sheets": [
+    {
+      "id": "ccd",
+      "title": "CCD interface",
+      "file": "01_ccd.kicad_sch",
+      "page": 2,
+      "members": [
+        "Q7",
+        "Q16",
+        "U16",
+        "U17",
+        "U18",
+        "R77",
+        "R78",
+        "R79",
+        "R80",
+        "R81",
+        "R82",
+        "R83",
+        "R84",
+        "R85",
+        "R97",
+        "R98",
+        "R99",
+        "R100",
+        "R101",
+        "C50",
+        "C51",
+        "C52",
+        "C53",
+        "C54",
+        "C55"
+      ],
+      "size_mm": [
+        420,
+        297
+      ]
+    },
+    {
+      "id": "pci",
+      "title": "PCI / J1850",
+      "file": "02_pci.kicad_sch",
+      "page": 3,
+      "members": [
+        "Q1",
+        "U9",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R18",
+        "R19",
+        "R20",
+        "R21",
+        "C11",
+        "C12"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "sci-14-9",
+      "title": "SCI TX14 / TX9",
+      "file": "03_sci-14-9.kicad_sch",
+      "page": 4,
+      "members": [
+        "Q3",
+        "U14",
+        "R36",
+        "R37",
+        "R38",
+        "R39",
+        "R40",
+        "R41",
+        "C41"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "sci-6-12",
+      "title": "SCI TX6 / TX12 + RX bias",
+      "file": "04_sci-6-12.kicad_sch",
+      "page": 5,
+      "members": [
+        "Q2",
+        "U13",
+        "Q6",
+        "R29",
+        "R30",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R75",
+        "R76",
+        "C38"
+      ],
+      "size_mm": [
+        420,
+        297
+      ]
+    },
+    {
+      "id": "sci-rx",
+      "title": "SCI RX7 / RX15",
+      "file": "05_sci-rx.kicad_sch",
+      "page": 6,
+      "members": [
+        "Q4",
+        "U15",
+        "R42",
+        "R43",
+        "R44",
+        "R45",
+        "R46",
+        "R47",
+        "C43"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "obd-protection",
+      "title": "OBD line protection",
+      "file": "06_obd-protection.kicad_sch",
+      "page": 7,
+      "members": [
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "C25",
+        "C36",
+        "C37",
+        "C39",
+        "C40",
+        "C42",
+        "C44"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "vehicle-input",
+      "title": "Vehicle power input",
+      "file": "07_vehicle-input.kicad_sch",
+      "page": 8,
+      "members": [
+        "C1",
+        "D1",
+        "D2",
+        "JP1"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "power-5v",
+      "title": "5 V / 3.3 V supplies",
+      "file": "08_power-5v.kicad_sch",
+      "page": 9,
+      "members": [
+        "U2",
+        "U3",
+        "U4",
+        "L1",
+        "D4",
+        "D5",
+        "D6",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "C10",
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "size_mm": [
+        420,
+        297
+      ]
+    },
+    {
+      "id": "power-vpp",
+      "title": "VPP boost supply",
+      "file": "09_power-vpp.kicad_sch",
+      "page": 10,
+      "members": [
+        "U5",
+        "L2",
+        "L3",
+        "D7",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "R8",
+        "R9"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "power-vbb",
+      "title": "VBB supply",
+      "file": "10_power-vbb.kicad_sch",
+      "page": 11,
+      "members": [
+        "U6",
+        "L4",
+        "L5",
+        "D8",
+        "C17",
+        "C18",
+        "C19",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "power-7v5",
+      "title": "7.5 V supply",
+      "file": "11_power-7v5.kicad_sch",
+      "page": 12,
+      "members": [
+        "U7",
+        "U8",
+        "L6",
+        "D9",
+        "D10",
+        "C20",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "program-6",
+      "title": "SCI TX6 VBB / VPP drivers",
+      "file": "12_program-6.kicad_sch",
+      "page": 13,
+      "members": [
+        "Q8",
+        "Q12",
+        "D15",
+        "D19",
+        "R55",
+        "R56",
+        "R63",
+        "R64",
+        "R65"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "program-9",
+      "title": "SCI TX9 VBB / VPP drivers",
+      "file": "13_program-9.kicad_sch",
+      "page": 14,
+      "members": [
+        "Q9",
+        "Q13",
+        "D16",
+        "D20",
+        "R57",
+        "R58",
+        "R66",
+        "R67",
+        "R68"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "program-12",
+      "title": "SCI TX12 VBB / VPP drivers",
+      "file": "14_program-12.kicad_sch",
+      "page": 15,
+      "members": [
+        "Q10",
+        "Q14",
+        "D17",
+        "D21",
+        "R59",
+        "R60",
+        "R69",
+        "R70",
+        "R71"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "program-14",
+      "title": "SCI TX14 VBB / VPP drivers",
+      "file": "15_program-14.kicad_sch",
+      "page": 16,
+      "members": [
+        "Q11",
+        "Q15",
+        "D18",
+        "D22",
+        "R61",
+        "R62",
+        "R72",
+        "R73",
+        "R74"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "mcu",
+      "title": "ESP32 + RF",
+      "file": "16_mcu.kicad_sch",
+      "page": 17,
+      "members": [
+        "U10",
+        "AE1",
+        "R22",
+        "R23",
+        "R24",
+        "R48",
+        "C26",
+        "C27",
+        "C28",
+        "C29",
+        "C30",
+        "C31",
+        "C32",
+        "C33",
+        "C45",
+        "C46"
+      ],
+      "size_mm": [
+        420,
+        297
+      ]
+    },
+    {
+      "id": "adc",
+      "title": "Voltage monitoring",
+      "file": "17_adc.kicad_sch",
+      "page": 18,
+      "members": [
+        "R49",
+        "R50",
+        "R51",
+        "R52",
+        "R53",
+        "R54",
+        "C47",
+        "C48",
+        "C49",
+        "D27",
+        "D28",
+        "D29"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "control",
+      "title": "I/O expander + I2C",
+      "file": "18_control.kicad_sch",
+      "page": 19,
+      "members": [
+        "U19",
+        "J3",
+        "R86",
+        "R87",
+        "R88",
+        "C56",
+        "C57"
+      ],
+      "size_mm": [
+        420,
+        297
+      ]
+    },
+    {
+      "id": "usb",
+      "title": "USB + reset / boot",
+      "file": "19_usb.kicad_sch",
+      "page": 20,
+      "members": [
+        "J2",
+        "U12",
+        "U11",
+        "Q5",
+        "U1",
+        "JP2",
+        "R25",
+        "R26",
+        "R27",
+        "R28",
+        "C2",
+        "C3",
+        "C34",
+        "C35",
+        "D3",
+        "SW1",
+        "SW2",
+        "R102",
+        "R103"
+      ],
+      "size_mm": [
+        420,
+        297
+      ]
+    },
+    {
+      "id": "leds",
+      "title": "Status LED drivers",
+      "file": "20_leds.kicad_sch",
+      "page": 21,
+      "members": [
+        "D23",
+        "D24",
+        "D25",
+        "D26",
+        "Q17",
+        "Q18",
+        "Q19",
+        "Q20",
+        "R89",
+        "R90",
+        "R91",
+        "R92",
+        "R93",
+        "R94",
+        "R95",
+        "R96"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    },
+    {
+      "id": "obd",
+      "title": "OBD connector",
+      "file": "21_obd.kicad_sch",
+      "page": 22,
+      "members": [
+        "J1"
+      ],
+      "size_mm": [
+        297,
+        210
+      ]
+    }
+  ],
+  "pin_electrical_types": "passive visualization types; ERC does not independently certify the circuit",
+  "atopile_remains_source_of_truth": true,
+  "native_export_comparison_required": true
+}

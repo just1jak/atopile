@@ -1,0 +1,410 @@
+[
+  {
+    "net": "PCI_RX",
+    "positionMm": [
+      172.9375,
+      118.1
+    ],
+    "blockers": [
+      {
+        "uuid": "73111b08-b6c7-427b-90d3-80664076f1d7",
+        "net": "RX_LED",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          169.1003,
+          117.9336
+        ],
+        "locked": false,
+        "conflicts": [
+          "In2.Cu"
+        ]
+      },
+      {
+        "uuid": "2dfc5fbf-3566-4bee-a219-76a57079263a",
+        "net": "TX2",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          169.5545,
+          118.2618
+        ],
+        "locked": false,
+        "conflicts": [
+          "In2.Cu"
+        ]
+      }
+    ]
+  },
+  {
+    "net": "+3.3V",
+    "positionMm": [
+      173.975,
+      122.25
+    ],
+    "blockers": [
+      {
+        "uuid": "8decbf28-4e08-450d-a5ff-d01302a4c2cf",
+        "net": "RX2",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          174.0073,
+          121.9271
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      },
+      {
+        "uuid": "9257ed7a-2461-43e2-98c4-a0df10e992fb",
+        "net": "RX2",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.5899,
+          125.8633
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      },
+      {
+        "uuid": "ae009294-0dc9-4746-bfbe-fe23064a6c38",
+        "net": "RX2",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.5899,
+          122.3445
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      }
+    ]
+  },
+  {
+    "net": "PCI_TX",
+    "positionMm": [
+      173.014,
+      119.5353
+    ],
+    "blockers": [
+      {
+        "uuid": "35e4541a-a0cb-4806-b498-4b06bccbae80",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.6549,
+          119.2894
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      },
+      {
+        "uuid": "5d665197-29d8-4aaf-b18a-a5a422586114",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.9139,
+          119.5484
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      },
+      {
+        "uuid": "3f9f10d0-5056-48f6-b655-c4ad6b75f777",
+        "net": "PCI_RX",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          172.9878,
+          119.3445
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu"
+        ]
+      },
+      {
+        "uuid": "4cad8f28-505c-4d72-acf0-9fb61d077b21",
+        "net": "PCI_RX",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          172.9878,
+          119.9911
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu"
+        ]
+      },
+      {
+        "uuid": "8859ef09-ec36-4271-886b-d4837ba8173e",
+        "net": "PCI_RX",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          172.9375,
+          118.7275
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu"
+        ]
+      },
+      {
+        "uuid": "4a094a14-fd43-4043-a993-d90e11e8995c",
+        "net": "PCI_RX",
+        "item": "PCB_VIA",
+        "positionMm": [
+          172.9878,
+          119.9911
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu",
+          "drill clearance"
+        ]
+      },
+      {
+        "uuid": "ddbf47db-016f-4030-bd0a-ac04c14341c5",
+        "net": "PCI_RX",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          172.9878,
+          119.9911
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      }
+    ]
+  },
+  {
+    "net": "TX_LED",
+    "positionMm": [
+      172.9284,
+      121.772
+    ],
+    "blockers": [
+      {
+        "uuid": "2bf4aeaa-29b8-4bd0-ab99-4b3ca1317a38",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.975,
+          122.25
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu"
+        ]
+      },
+      {
+        "uuid": "70027c59-b5cf-43a2-a04a-b8a23fed617e",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.8436,
+          122.1186
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu"
+        ]
+      },
+      {
+        "uuid": "fe759f20-9577-44c2-bf47-3babb8a98533",
+        "net": "+3.3V",
+        "item": "PCB_VIA",
+        "positionMm": [
+          173.0708,
+          122.1186
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu",
+          "drill clearance"
+        ]
+      },
+      {
+        "uuid": "20079389-f31c-4714-a51c-a6ac3272a83d",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.0741,
+          122.1219
+        ],
+        "locked": false,
+        "conflicts": [
+          "In2.Cu"
+        ]
+      },
+      {
+        "uuid": "bca8ccf9-5f31-4998-a353-7ffc782e7fc8",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.4354,
+          122.1219
+        ],
+        "locked": false,
+        "conflicts": [
+          "In2.Cu"
+        ]
+      },
+      {
+        "uuid": "bd3a3b95-5e09-478f-a006-a3c0509086f9",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.4354,
+          122.1219
+        ],
+        "locked": false,
+        "conflicts": [
+          "In2.Cu"
+        ]
+      },
+      {
+        "uuid": "f7782944-d57e-4d0c-a633-4e28bf7074cd",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.4354,
+          122.1219
+        ],
+        "locked": false,
+        "conflicts": [
+          "In2.Cu"
+        ]
+      }
+    ]
+  },
+  {
+    "net": "TX_LED",
+    "positionMm": [
+      172.85,
+      121.65
+    ],
+    "blockers": [
+      {
+        "uuid": "2bf4aeaa-29b8-4bd0-ab99-4b3ca1317a38",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.975,
+          122.25
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu"
+        ]
+      },
+      {
+        "uuid": "70027c59-b5cf-43a2-a04a-b8a23fed617e",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.8436,
+          122.1186
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu"
+        ]
+      },
+      {
+        "uuid": "fe759f20-9577-44c2-bf47-3babb8a98533",
+        "net": "+3.3V",
+        "item": "PCB_VIA",
+        "positionMm": [
+          173.0708,
+          122.1186
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "B.Cu",
+          "drill clearance"
+        ]
+      },
+      {
+        "uuid": "20079389-f31c-4714-a51c-a6ac3272a83d",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.0741,
+          122.1219
+        ],
+        "locked": false,
+        "conflicts": [
+          "In2.Cu"
+        ]
+      },
+      {
+        "uuid": "bca8ccf9-5f31-4998-a353-7ffc782e7fc8",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.4354,
+          122.1219
+        ],
+        "locked": false,
+        "conflicts": [
+          "In2.Cu"
+        ]
+      },
+      {
+        "uuid": "ee8ba8df-d81a-4bb1-b728-2d0086cc7273",
+        "net": "MCU_SD_CS",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          172.0,
+          121.825
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      },
+      {
+        "uuid": "a2e7d141-2b94-478a-9493-da80bbea449a",
+        "net": "GND",
+        "item": "C26.2",
+        "positionMm": [
+          172.0,
+          121.175
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu"
+        ]
+      },
+      {
+        "uuid": "5366aa2a-6d70-4117-a8e0-129b0cfc0150",
+        "net": "MCU_SD_CS",
+        "item": "R112.2",
+        "positionMm": [
+          172.0,
+          121.825
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      }
+    ]
+  }
+]

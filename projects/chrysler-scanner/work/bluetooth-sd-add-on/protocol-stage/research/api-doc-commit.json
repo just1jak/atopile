@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "bfc3451ba7962f681186dc9efee03068e9c92687",
+    "node_id": "C_kwDOCHCEYtoAKGJmYzM0NTFiYTc5NjJmNjgxMTg2ZGM5ZWZlZTAzMDY4ZTljOTI2ODc",
+    "commit": {
+      "author": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2026-06-17T06:14:12Z"
+      },
+      "committer": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2026-06-17T06:14:12Z"
+      },
+      "message": "Add API reference docs",
+      "tree": {
+        "sha": "f690a763b483edb9f3a61e978f7fc6af27202717",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/f690a763b483edb9f3a61e978f7fc6af27202717"
+      },
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/commits/bfc3451ba7962f681186dc9efee03068e9c92687",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/bfc3451ba7962f681186dc9efee03068e9c92687",
+    "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/bfc3451ba7962f681186dc9efee03068e9c92687",
+    "comments_url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/bfc3451ba7962f681186dc9efee03068e9c92687/comments",
+    "author": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f1210a0ba58e202c8b3247b602fe704ac4dfdf83",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/f1210a0ba58e202c8b3247b602fe704ac4dfdf83",
+        "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/f1210a0ba58e202c8b3247b602fe704ac4dfdf83"
+      }
+    ]
+  }
+]

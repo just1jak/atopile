@@ -1,0 +1,11 @@
+{
+  "nativeBoardSha256": "f5b42ba76001f790c445533dfcd8567136b5b018127ac8982a2b04650661a2d1",
+  "inputDsnSha256": "c5f08f4669f906e415a635b3bc6c8d6660449229c0003a07abb0b035da8e2fe0",
+  "outputDsnSha256": "9877d490b21aaf1b64820abaf4e7b78892dba2b3a068099904d2bb8c4debe4d2",
+  "nativeSegments": 2422,
+  "nativeVias": 287,
+  "coordinatePrecision": "nm expressed as fractional um",
+  "structurePlacementLibraryNetworkUnchanged": true,
+  "sourceBytesAndMtimeUnchanged": true,
+  "requiresRouterAndNativeVerification": true
+}

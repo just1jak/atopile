@@ -1,0 +1,186 @@
+{
+  "input_sha256": "e6c0f6511a2c850991598809a36a497da0191568e44eb896e286c16bd249a65b",
+  "tracks": [
+    {
+      "net": "VPP",
+      "width": 0.5,
+      "layer": "F.Cu",
+      "points": [
+        [
+          154.0875,
+          131.88125
+        ],
+        [
+          155.25,
+          131.88125
+        ]
+      ],
+      "kind": "U6 VPP to dogbone via"
+    },
+    {
+      "net": "VPP",
+      "width": 0.5,
+      "layer": "B.Cu",
+      "points": [
+        [
+          155.25,
+          131.88125
+        ],
+        [
+          155.25,
+          138.0763
+        ],
+        [
+          155.0374,
+          138.2889
+        ]
+      ],
+      "kind": "U6 VPP rear trunk"
+    },
+    {
+      "net": "+3.3V",
+      "width": 0.15,
+      "layer": "F.Cu",
+      "points": [
+        [
+          168.25,
+          136.35
+        ],
+        [
+          168.25,
+          135.5
+        ],
+        [
+          168.1,
+          135.35
+        ]
+      ],
+      "kind": "U19 power short pin neck"
+    },
+    {
+      "net": "+3.3V",
+      "width": 0.5,
+      "layer": "B.Cu",
+      "points": [
+        [
+          168.1,
+          135.35
+        ],
+        [
+          166.9344,
+          134.1844
+        ],
+        [
+          166.395,
+          134.1844
+        ]
+      ],
+      "kind": "U19 power rear trunk"
+    },
+    {
+      "net": "+3.3V",
+      "width": 0.15,
+      "layer": "F.Cu",
+      "points": [
+        [
+          171.9375,
+          111.9975
+        ],
+        [
+          171.9375,
+          111.2
+        ]
+      ],
+      "kind": "U10.46 short pin neck"
+    },
+    {
+      "net": "+3.3V",
+      "width": 0.15,
+      "layer": "F.Cu",
+      "points": [
+        [
+          173.4375,
+          111.9975
+        ],
+        [
+          173.4375,
+          111.2
+        ]
+      ],
+      "kind": "U10.43 short pin neck"
+    },
+    {
+      "net": "+3.3V",
+      "width": 0.5,
+      "layer": "B.Cu",
+      "points": [
+        [
+          171.9375,
+          111.2
+        ],
+        [
+          173.4375,
+          111.2
+        ]
+      ],
+      "kind": "U10 VDD pair rear join"
+    },
+    {
+      "net": "+3.3V",
+      "width": 0.5,
+      "layer": "B.Cu",
+      "points": [
+        [
+          171.9375,
+          111.2
+        ],
+        [
+          171.2475,
+          111.2
+        ],
+        [
+          170.4435,
+          112.004
+        ],
+        [
+          170.1397,
+          112.004
+        ]
+      ],
+      "kind": "U10 VDD pair to rail rear trunk"
+    }
+  ],
+  "vias": [
+    {
+      "net": "VPP",
+      "xy": [
+        155.25,
+        131.88125
+      ]
+    },
+    {
+      "net": "+3.3V",
+      "xy": [
+        168.1,
+        135.35
+      ]
+    },
+    {
+      "net": "+3.3V",
+      "xy": [
+        171.9375,
+        111.2
+      ]
+    },
+    {
+      "net": "+3.3V",
+      "xy": [
+        173.4375,
+        111.2
+      ]
+    }
+  ],
+  "track_keepouts": [],
+  "status": "FAILED initial native trial; do not merge; superseded by validated signal-power-stage core import",
+  "units": "absolute mm"
+}

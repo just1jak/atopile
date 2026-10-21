@@ -1,0 +1,92 @@
+{
+  "selected_candidate": "ATTEND 226A-1202",
+  "description": "SAE J1962 Type A male, 16 pins, right-angle through-hole PCB connector",
+  "manufacturer_url": "https://www.attend.com.tw/en/product.php?act=view&id=11",
+  "drawing_url": "https://www.attend.com.tw/data/download/file/226A-1202.pdf",
+  "cad_url": "https://www.attend.com.tw/data/download/file/226A-1202.rar",
+  "purchase_listing": "https://www.ozdisan.com/p/pcb-konnektorler-310/attend-226a-1202-607756",
+  "current_us_distributor_listing": "https://store.nacsemi.com/products/detail?part=226A-1202&stock=AT0000000000712",
+  "row_pitch_mm": 3.0,
+  "pitch_along_row_mm": 4.0,
+  "drill_mm": 1.35,
+  "pad_diameter_mm": 2.35,
+  "near_tail_to_board_edge_mm": 1.35,
+  "far_tail_to_board_edge_mm": 4.35,
+  "current_gerber_row_pitch_mm": 3.29946,
+  "current_gerber_drill_mm": 1.2,
+  "not_a_drop_in_replacement": true,
+  "current_board_modified": true,
+  "pin_numbering_basis": "Manufacturer recommended layout TOP VIEW: 1-8 near PCB edge, 9-16 further inboard; rotate so mating face points left and pin 1 is upper left.",
+  "model_source": "Manufacturer archive 226A-1202.rar / 226A-1202_c_2.stp",
+  "model_rights": "Manufacturer-provided engineering CAD; rights retained by ATTEND. Not covered by project-generated-model GPL declaration.",
+  "checked_on": "2026-10-13",
+  "notes": [
+    "Drawing revision 2 corrected 2024-05-15; CAD archive uses c_2 filename.",
+    "Original-hole preservation is incompatible with the 3.0 mm row pitch and 1.35 mm drill recommendation.",
+    "No purchase made; verify availability and physical sample fit before manufacture.",
+    "Selected position offsets the tails 0.15 mm inward from the recommended edge relation, providing 0.325 mm copper-to-edge clearance. Manufacturer CAD has zero intersection with the 1.6 mm PCB after removing drill holes and with nominal 7 mm mounting hardware envelopes."
+  ],
+  "download_sha256": {
+    "reference/upstream/ATTEND_226A-1202.pdf": "63004e3c6fcaf083bf7e1216316b0a9d46a1d55fedf1bfbf1a3e25744fe1c7d9",
+    "reference/upstream/ATTEND_226A-1202.rar": "63f959dde1b79988e37c59cce33cd2f71de8cd854b46032d1d17ef372615a396",
+    "reference/upstream/Macchina_CCBDM20.pdf": "1ce8a375b1b8b325faabfba3428106cbe31a79b099b2bbdf306c0b1df5516491",
+    "reference/upstream/Macchina_CCBDM20.STEP": "f94778d13bc85a5feaf7a6fb7fee5792f814386d35ac8302ea945a76494979df"
+  },
+  "aligned_model": {
+    "file": "reference/connector-candidates/ATTEND_226A-1202.step",
+    "valid_geometry": true,
+    "matrix_rows": [
+      [
+        0,
+        0,
+        -1,
+        -21.8
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        6.3
+      ]
+    ],
+    "bounds_mm": [
+      -21.80000000801962,
+      -22.215320521016377,
+      -3.0100000000002334,
+      2.050000000000015,
+      22.2153205210179,
+      16.10000000000139
+    ],
+    "sha256": "b7de878426ff567bcd8548e076be72a7cafc2c1dc643b73f069533428274f87a",
+    "frame": "Footprint origin between tail rows; model Y up, board Z=0, housing mating direction negative X",
+    "tessellated_bounds_mm": [
+      -21.8,
+      -20.775,
+      -3.01,
+      2.05,
+      20.775,
+      16.1
+    ],
+    "bounds_mm_note": "Conservative OCC B-spline bounds; actual surface bounds are recorded separately."
+  },
+  "candidate_footprint": "reference/connector-candidates/OBDII_ATTEND_226A-1202.kicad_mod",
+  "candidate_fit_preview_board": "reference/connector-candidates/ATTEND_226A-1202-fit-preview.kicad_pcb",
+  "placement_origin_board_local_mm": [
+    3.0,
+    25.0
+  ],
+  "courtyard_scope": "PCB solder-tail assembly clearance; housing overhang shown on F.Fab and in manufacturer CAD. Full housing/enclosure fit needs review.",
+  "nominal_copper_pad_to_recommended_board_edge_mm": 0.175,
+  "selected_near_tail_to_board_edge_mm": 1.5,
+  "selected_far_tail_to_board_edge_mm": 4.5,
+  "selected_copper_pad_to_board_edge_mm": 0.325,
+  "selected_edge_offset_from_recommended_mm": 0.15,
+  "installed_footprint": "elec/src/footprints/OBDII_ATTEND_226A-1202.kicad_mod",
+  "installed_model": "elec/src/3dmodels/ATTEND_226A-1202.step"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "native_kicad_version": "10.0.7",
+  "bundle": "ChryslerScanner_V240_schematic.zip",
+  "bundle_sha256": "9bb31924c2e0acb950c3ca5cf273d48fa8b02abaffbb457dc33c7741c63dc4ba",
+  "relocated_native_footprint_libraries_loaded": 36,
+  "component_package_pin_sets_checked": 241,
+  "model_files_resolved_with_relative_paths": 29,
+  "all_bundled_footprint_model_geometry_matches_source": true
+}

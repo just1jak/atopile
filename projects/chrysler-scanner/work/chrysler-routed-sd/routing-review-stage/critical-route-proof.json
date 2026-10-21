@@ -1,0 +1,206 @@
+{
+  "sourceSha256": "f2b5c36611bb8ea9b47a6f21de91bd04ad656ecaa4f75047ede9a9424269604e",
+  "outputSha256": "82c75bbcafb8474820fe86ec497f9660b5a900f2315c6744f6cd3a8a79019ea4",
+  "sourceUnchanged": true,
+  "all263FootprintBlocksByteIdentical": true,
+  "allExistingCopperZonesAndDrawingsPreserved": true,
+  "nativeDrcErrors": 0,
+  "nativeDrcWarnings": 0,
+  "nativeZoneRefillUsed": true,
+  "drcExclusionsAdded": false,
+  "footprintsMoved": false,
+  "addedLockedTracks": 96,
+  "addedLockedVias": 16,
+  "addedTrackKeepouts": 3,
+  "connectedGroups": {
+    "LNA_IN": {
+      "requiredConnectedPads": [
+        "U10.2",
+        "R22.2",
+        "R24.1"
+      ],
+      "passed": true
+    },
+    "N_R23_1": {
+      "requiredConnectedPads": [
+        "R22.1",
+        "R23.1",
+        "AE1.1"
+      ],
+      "passed": true
+    },
+    "D+": {
+      "requiredConnectedPads": [
+        "J2.A6",
+        "J2.B6",
+        "U11.1"
+      ],
+      "passed": true
+    },
+    "D-": {
+      "requiredConnectedPads": [
+        "J2.A7",
+        "J2.B7",
+        "U11.3"
+      ],
+      "passed": true
+    },
+    "D+P": {
+      "requiredConnectedPads": [
+        "U11.6",
+        "U12.4"
+      ],
+      "passed": true
+    },
+    "D-P": {
+      "requiredConnectedPads": [
+        "U11.4",
+        "U12.5"
+      ],
+      "passed": true
+    },
+    "N_C5_2": {
+      "requiredConnectedPads": [
+        "U2.6",
+        "D4.1",
+        "L1.1",
+        "C5.2"
+      ],
+      "passed": true
+    },
+    "N_C5_1": {
+      "requiredConnectedPads": [
+        "U2.1",
+        "C5.1"
+      ],
+      "passed": true
+    },
+    "N_D7_2": {
+      "requiredConnectedPads": [
+        "U5.1",
+        "D7.2",
+        "L2.2"
+      ],
+      "passed": true
+    },
+    "N_C17_2": {
+      "requiredConnectedPads": [
+        "U6.6",
+        "D8.1",
+        "L4.1",
+        "C17.2"
+      ],
+      "passed": true
+    },
+    "N_C17_1": {
+      "requiredConnectedPads": [
+        "U6.1",
+        "C17.1"
+      ],
+      "passed": true
+    },
+    "N_C21_2": {
+      "requiredConnectedPads": [
+        "U7.6",
+        "D9.1",
+        "L6.1",
+        "C21.2"
+      ],
+      "passed": true
+    },
+    "N_C21_1": {
+      "requiredConnectedPads": [
+        "U7.1",
+        "C21.1"
+      ],
+      "passed": true
+    },
+    "N_R2_1": {
+      "requiredConnectedPads": [
+        "L1.2",
+        "C6.1"
+      ],
+      "passed": true
+    },
+    "N_R8_1": {
+      "requiredConnectedPads": [
+        "D7.1",
+        "C14.1",
+        "L3.1"
+      ],
+      "passed": true
+    },
+    "VPP": {
+      "requiredConnectedPads": [
+        "L3.2",
+        "C15.1"
+      ],
+      "passed": true
+    },
+    "N_R11_1": {
+      "requiredConnectedPads": [
+        "L4.2",
+        "C18.1",
+        "L5.1"
+      ],
+      "passed": true
+    },
+    "VBB": {
+      "requiredConnectedPads": [
+        "L5.2",
+        "C19.1"
+      ],
+      "passed": true
+    },
+    "N_R14_1": {
+      "requiredConnectedPads": [
+        "L6.2",
+        "C22.1"
+      ],
+      "passed": true
+    },
+    "VBUS": {
+      "requiredConnectedPads": [
+        "U1.2",
+        "U1.3",
+        "C2.1"
+      ],
+      "passed": true
+    },
+    "N_C3_1": {
+      "requiredConnectedPads": [
+        "U1.4",
+        "C3.1"
+      ],
+      "passed": true
+    }
+  },
+  "antennaGroundShuntsAndPowerGroundReturnsJoinedToGround": true,
+  "remainingFullBoardAirwiresAfterNativeZoneFill": 553,
+  "routingComplete": false,
+  "addedTrackLengthByNetMm": {
+    "LNA_IN": 5.16685,
+    "N_R23_1": 10.60637,
+    "GND": 13.49,
+    "D+": 7.87966,
+    "D-": 12.39751,
+    "D+P": 20.67243,
+    "D-P": 18.51493,
+    "N_C5_2": 7.54697,
+    "N_C5_1": 2.34808,
+    "N_R2_1": 2.55012,
+    "N_D7_2": 5.93168,
+    "N_R8_1": 4.38779,
+    "VPP": 3.00003,
+    "N_C17_2": 9.34121,
+    "N_C17_1": 5.5628,
+    "N_R11_1": 8.56228,
+    "VBB": 2.1759,
+    "N_C21_2": 9.85629,
+    "N_C21_1": 4.34669,
+    "N_R14_1": 2.39588,
+    "VBUS": 3.17916,
+    "N_C3_1": 1.8765
+  },
+  "impedanceOrHardwareQualificationPerformed": false
+}

@@ -1,0 +1,32 @@
+import_warnings=0 import_errors=0
+
+
+{"import_result":"OK","components":263,"nets":194,"layers":4,"pins":805,"traces":59,"vias":19,"airwires":570}
+layer 0 name=L1 - Components / critical signals signal=true active=true
+layer 1 name=L2 - GND signal=false active=false
+layer 2 name=L3 - Power signal=true active=true
+layer 3 name=L4 - Signals signal=true active=true
+default_width_um=200.0 automatic_neckdown=true
+clearance_class=default same_class_clearance_um=150.0
+clearance_class=smd same_class_clearance_um=150.0
+clearance_class=kicad_default same_class_clearance_um=150.0
+clearance_class=rails same_class_clearance_um=150.0
+clearance_class=rf_fixed same_class_clearance_um=150.0
+clearance_class=usb_fixed same_class_clearance_um=150.0
+smallest_pin_neckdown_um=249.8
+route_class=default width_um=200.0 front=true back=true
+route_class=kicad_default width_um=200.0 front=true back=true
+route_class=rails width_um=500.0 front=true back=true
+route_class=rf_fixed width_um=300.0 front=true back=false
+route_class=usb_fixed width_um=220.0 front=true back=false
+global_obstacle=ConductionArea layer=L3 - Power bounds=app.freerouting.geometry.planar.IntBox@1517365b
+global_obstacle=ConductionArea layer=L2 - GND bounds=app.freerouting.geometry.planar.IntBox@4fccd51b
+global_obstacle=ViaObstacleArea layer=L3 - Power bounds=app.freerouting.geometry.planar.IntBox@44e81672
+global_obstacle=ViaObstacleArea layer=L2 - GND bounds=app.freerouting.geometry.planar.IntBox@60215eee
+global_obstacle=ViaObstacleArea layer=L4 - Signals bounds=app.freerouting.geometry.planar.IntBox@4ca8195f
+global_obstacle=ViaObstacleArea layer=L1 - Components / critical signals bounds=app.freerouting.geometry.planar.IntBox@65e579dc
+global_obstacle=ObstacleArea layer=L3 - Power bounds=app.freerouting.geometry.planar.IntBox@61baa894
+global_obstacle=ObstacleArea layer=L2 - GND bounds=app.freerouting.geometry.planar.IntBox@b065c63
+global_obstacle=ObstacleArea layer=L4 - Signals bounds=app.freerouting.geometry.planar.IntBox@768debd
+global_obstacle=ObstacleArea layer=L1 - Components / critical signals bounds=app.freerouting.geometry.planar.IntBox@490d6c15
+global_obstacle=ObstacleArea layer=L1 - Components / critical signals bounds=app.freerouting.geometry.planar.IntBox@7d4793a8

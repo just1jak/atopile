@@ -1,0 +1,105 @@
+{
+  "sourceSha256": "e6c0f6511a2c850991598809a36a497da0191568e44eb896e286c16bd249a65b",
+  "sourceUnchanged": true,
+  "note": "Native shape collision preflight only; entire routed connection still needs native DRC",
+  "sites": {
+    "U6.5": {
+      "net": "VPP",
+      "straight200umNeckToLegal600umVia": [],
+      "bounded200umDoglegToLegal600umVia": [
+        [
+          154.0875,
+          131.88125
+        ],
+        [
+          153.7875,
+          131.58125
+        ],
+        [
+          153.4875,
+          131.58125
+        ],
+        [
+          153.0875,
+          131.18125
+        ],
+        [
+          153.0875,
+          130.68125
+        ],
+        [
+          152.9875,
+          130.58125
+        ]
+      ],
+      "doglegLengthMm": 1.93137,
+      "expandedGridNodes": 260
+    },
+    "U19.21": {
+      "net": "+3.3V",
+      "straight200umNeckToLegal600umVia": [],
+      "bounded200umDoglegToLegal600umVia": [
+        [
+          168.25,
+          136.35
+        ],
+        [
+          168.25,
+          136.15
+        ],
+        [
+          168.15,
+          136.05
+        ],
+        [
+          168.15,
+          135.95
+        ],
+        [
+          167.95,
+          135.75
+        ],
+        [
+          167.75,
+          135.75
+        ],
+        [
+          167.05,
+          135.05
+        ],
+        [
+          166.85,
+          135.05
+        ],
+        [
+          166.75,
+          134.95
+        ],
+        [
+          166.45,
+          134.95
+        ],
+        [
+          166.35,
+          134.85
+        ]
+      ],
+      "doglegLengthMm": 2.69706,
+      "expandedGridNodes": 224
+    },
+    "U10.46": {
+      "net": "+3.3V",
+      "straight200umNeckToLegal600umVia": [],
+      "bounded200umDoglegToLegal600umVia": [],
+      "doglegLengthMm": null,
+      "expandedGridNodes": 375
+    },
+    "U10.43": {
+      "net": "+3.3V",
+      "straight200umNeckToLegal600umVia": [],
+      "bounded200umDoglegToLegal600umVia": [],
+      "doglegLengthMm": null,
+      "expandedGridNodes": 200
+    }
+  }
+}

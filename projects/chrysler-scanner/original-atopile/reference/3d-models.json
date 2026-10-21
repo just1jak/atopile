@@ -1,0 +1,1708 @@
+{
+  "schema": 1,
+  "model_path_prefix": "${KIPRJMOD}/../../src/3dmodels/",
+  "units": "mm; VRML file coordinates are mm / 2.54",
+  "notes": "All circuit references have models, including DNP footprints and solder states. H1-H4 are bare mounting holes and need no component model. Generic/representative models do not certify component selection or enclosure fit.",
+  "models": {
+    "R_0603_1608Metric.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "R_1206_3216Metric.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "C_0603_1608Metric.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "C_1206_3216Metric.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "D_SMB.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Diode_SMD.3dshapes/D_SMB.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "D_SOD-123.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Diode_SMD.3dshapes/D_SOD-123.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "D_SOD-323.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Diode_SMD.3dshapes/D_SOD-323.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "SOT-23.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "SOT-23-5.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "SOT-23-6.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "notes": "Generic SOT-23-6 package. U11 has a separate 90-degree model assignment to match the retained USBLC6 footprint."
+    },
+    "SOT-363_SC-70-6.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "045cc95e18ee7a13d1623c3ce6604fc833049bdb4f952f68c26e3c5767d122e4",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "VSSOP-8_2.3x2mm_P0.5mm.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Package_SON.3dshapes/WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "a159a524ab16d3406353a16f8c20b59f5679eea26e2d41174628288b5b9da702",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "PinHeader_2x03_P2.54mm_Vertical.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "30c87dd7aa515b02055124826d8c4054084971d49d819c644cd6b21295ac52c8",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "SW_SPST_TL3305A.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Button_Switch_SMD.3dshapes/SW_SPST_TL3305A.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "ca1db6ff7a0ad1348e19b4955b6f1db08cdca35b16727d90af7b99b3cdee0b22",
+      "notes": "Generic package; does not establish an orderable manufacturer part."
+    },
+    "CP_Radial_D8.0mm_P3.50mm.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Capacitor_THT.3dshapes/CP_Radial_D8.0mm_P3.50mm.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "abedfe603cd28231e16fb158d7b3f8875be74514f602e356364f48f073d0ef8e",
+      "notes": "8 mm diameter, 3.5 mm lead pitch. Body height is the library default, not a confirmed 100 uF 50 V part."
+    },
+    "QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Package_DFN_QFN.3dshapes/QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "e9d6d740f505b03e5aa0ac826330f9e269344b84656d051f50eb07ac162749eb",
+      "notes": "Generic QFN matching nominal CP2102 body and pin pitch. Pin 1 aligns with the retained footprint."
+    },
+    "QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Package_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "f7d256794c4147daf24dcae0554fae18510315e565ad1e239b475be7fef80d8b",
+      "notes": "Generic 4x4 mm QFN24 package matching AW9523B. Exposed-pad size is a library representation."
+    },
+    "L_1206_3216Metric.step": {
+      "kind": "KiCad standard package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Inductor_SMD.3dshapes/L_1206_3216Metric.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "7a76ea34101f04e5f76cf96aa1ead38be0f0b388f5d21e9dafbb3047c495e5dd",
+      "notes": "Generic 1206 inductor/ferrite body for L3/L5, which share the 1206 resistor land pattern."
+    },
+    "ESP32_PICO_V3_02.wrl": {
+      "kind": "Dimension-based representative",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Nominal 7x7x1.11 mm ESP32-PICO-V3-02 SiP with 48 contacts and 4.95 mm ground contact. Markings are representative; PCB pad geometry is unchanged.",
+      "dimension_sources": [
+        "reference/upstream/esp32-pico_series_datasheet_en.pdf, package drawing"
+      ],
+      "bounds_3d_mm": [
+        -3.5,
+        -3.5,
+        0.0,
+        3.5,
+        3.5,
+        1.118
+      ],
+      "sha256": "d0f51dc4844c52f3f67c9e0591b296231a55517a8ba54790c6c34f880f8b062a",
+      "step_companion": "ESP32_PICO_V3_02.step"
+    },
+    "ESP32_PICO_V3_02.step": {
+      "kind": "Dimension-based representative",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Nominal 7x7x1.11 mm ESP32-PICO-V3-02 SiP with 48 contacts and 4.95 mm ground contact. Markings are representative; PCB pad geometry is unchanged.",
+      "dimension_sources": [
+        "reference/upstream/esp32-pico_series_datasheet_en.pdf, package drawing"
+      ],
+      "bounds_3d_mm": [
+        -3.5,
+        -3.5,
+        0.0,
+        3.5,
+        3.5,
+        1.118
+      ],
+      "sha256": "66fee34298041ff77ab40d68ab692027795e52219fefadc98d1795dc4ff8c71b"
+    },
+    "SY6283_DFN4.wrl": {
+      "kind": "Dimension-based representative",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Nominal 1.6x1.2 mm body, 0.55 mm height and 0.75 mm contact pitch. Rotated package axes match the existing footprint.",
+      "dimension_sources": [
+        "reference/upstream/sy6283-datasheet.pdf, page 9"
+      ],
+      "bounds_3d_mm": [
+        -0.8,
+        -0.6,
+        0.0,
+        0.8,
+        0.6,
+        0.556
+      ],
+      "sha256": "4fb86a678ea60a50826b38890c3ad0b887ae2593527d31ce5fb88f048c64bfac",
+      "step_companion": "SY6283_DFN4.step"
+    },
+    "SY6283_DFN4.step": {
+      "kind": "Dimension-based representative",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Nominal 1.6x1.2 mm body, 0.55 mm height and 0.75 mm contact pitch. Rotated package axes match the existing footprint.",
+      "dimension_sources": [
+        "reference/upstream/sy6283-datasheet.pdf, page 9"
+      ],
+      "bounds_3d_mm": [
+        -0.8,
+        -0.6,
+        0.0,
+        0.8,
+        0.6,
+        0.556
+      ],
+      "sha256": "014ff197b1eb9e269ad6e820627c760e895b0712b9cbb7253fd5aa5c2ba83052"
+    },
+    "ANT3216LL00R2400A.wrl": {
+      "kind": "Dimension-based representative",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Nominal 3.2x1.6x1.2 mm ceramic antenna; 0.4 mm end terminations. Internal electrode structure is omitted.",
+      "dimension_sources": [
+        "reference/upstream/antenna-datasheet.pdf, page 2"
+      ],
+      "bounds_3d_mm": [
+        -1.6,
+        -0.8,
+        0.0,
+        1.6,
+        0.8,
+        1.2
+      ],
+      "sha256": "3d077e9e7156b8c8a761809ecf8876f2db812a5d499804ac3a08975a12bb8fde",
+      "step_companion": "ANT3216LL00R2400A.step"
+    },
+    "ANT3216LL00R2400A.step": {
+      "kind": "Dimension-based representative",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Nominal 3.2x1.6x1.2 mm ceramic antenna; 0.4 mm end terminations. Internal electrode structure is omitted.",
+      "dimension_sources": [
+        "reference/upstream/antenna-datasheet.pdf, page 2"
+      ],
+      "bounds_3d_mm": [
+        -1.6,
+        -0.8,
+        0.0,
+        1.6,
+        0.8,
+        1.2
+      ],
+      "sha256": "417dea2854007eb21f7deeed845189106a795336f7c9598e6a35f9838c08ffce"
+    },
+    "L_7.3x7.3_H3.5.wrl": {
+      "kind": "Footprint-based representative",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Representative 7.3x7.3x3.5 mm inductor matching the selected footprint. Exact orderable part, shielding and height remain provisional.",
+      "dimension_sources": [
+        "elec/src/footprints/L_7.3x7.3_H3.5.kicad_mod"
+      ],
+      "bounds_3d_mm": [
+        -3.95,
+        -3.65,
+        0.0,
+        3.95,
+        3.65,
+        3.5
+      ],
+      "sha256": "e30fa869901c795a5bea58bcb57909f1b54886eae899e5ed10ff7e751c9dede6",
+      "step_companion": "L_7.3x7.3_H3.5.step"
+    },
+    "L_7.3x7.3_H3.5.step": {
+      "kind": "Footprint-based representative",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Representative 7.3x7.3x3.5 mm inductor matching the selected footprint. Exact orderable part, shielding and height remain provisional.",
+      "dimension_sources": [
+        "elec/src/footprints/L_7.3x7.3_H3.5.kicad_mod"
+      ],
+      "bounds_3d_mm": [
+        -3.95,
+        -3.65,
+        0.0,
+        3.95,
+        3.65,
+        3.5
+      ],
+      "sha256": "44a076c3904305a8db944547c2cbd0f0f1b64b182117aef0d290be26018d7fc8"
+    },
+    "USB_B_Lumberg_2411_02.wrl": {
+      "kind": "Dimension-based representative",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Representative socket with the drawing's 16.4 mm length, 12 mm width and 10.75 mm height. Terminal locations follow the footprint; shell details and insulator are simplified.",
+      "dimension_sources": [
+        "reference/upstream/Lumberg_2411_02.pdf, page 2",
+        "https://downloads.lumberg.com/datenblaetter/en/2411_02.pdf"
+      ],
+      "bounds_3d_mm": [
+        -1.2399999999999993,
+        -8.0,
+        -3.5,
+        15.16,
+        5.5,
+        10.75
+      ],
+      "sha256": "116ea79dbcda343dfc80492427ef18db7b05991ef5d41e2c9e009c16c8975f86",
+      "step_companion": "USB_B_Lumberg_2411_02.step"
+    },
+    "USB_B_Lumberg_2411_02.step": {
+      "kind": "Dimension-based representative",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Representative socket with the drawing's 16.4 mm length, 12 mm width and 10.75 mm height. Terminal locations follow the footprint; shell details and insulator are simplified.",
+      "dimension_sources": [
+        "reference/upstream/Lumberg_2411_02.pdf, page 2",
+        "https://downloads.lumberg.com/datenblaetter/en/2411_02.pdf"
+      ],
+      "bounds_3d_mm": [
+        -1.2399999999999993,
+        -8.0,
+        -3.5,
+        15.16,
+        5.5,
+        10.75
+      ],
+      "sha256": "ec1b9c44538c9ba609fb285288efa6decb1fb1112c34cbd548899d9764b6a8fe"
+    },
+    "OBD16_V140_Representative.wrl": {
+      "kind": "Housing approximation; Gerber-matched tails",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "HOUSING APPROXIMATION ONLY. Sixteen solder-tail positions match recovered Gerber drill centers. The 32 mm face, 17 mm housing depth and 15.5 mm top height are illustrative assumptions; exact part and enclosure fit are unverified.",
+      "dimension_sources": [
+        "reference/v140-layout-reference.json, obd_drills_mm"
+      ],
+      "bounds_3d_mm": [
+        -20.0,
+        -16.0,
+        -3.0,
+        1.9497299999999997,
+        16.0,
+        15.5
+      ],
+      "sha256": "6938e3c9618636db80ce6dabb0d59fbff5fef843bb661568e4793c661198c2b8",
+      "step_companion": "OBD16_V140_Representative.step"
+    },
+    "OBD16_V140_Representative.step": {
+      "kind": "Housing approximation; Gerber-matched tails",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "HOUSING APPROXIMATION ONLY. Sixteen solder-tail positions match recovered Gerber drill centers. The 32 mm face, 17 mm housing depth and 15.5 mm top height are illustrative assumptions; exact part and enclosure fit are unverified.",
+      "dimension_sources": [
+        "reference/v140-layout-reference.json, obd_drills_mm"
+      ],
+      "bounds_3d_mm": [
+        -20.0,
+        -16.0,
+        -3.0,
+        1.9497299999999997,
+        16.0,
+        15.5
+      ],
+      "sha256": "6360ff4f36ea62ed92a562ed5532e37f57f5de6e85f04d15b8468039832b2893"
+    },
+    "SolderJumper_Bridged.wrl": {
+      "kind": "Solder-state depiction",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Solder-pad/bridge depiction, not a purchased component. Bridge height is illustrative.",
+      "dimension_sources": [
+        "SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+      ],
+      "bounds_3d_mm": [
+        -1.15,
+        -0.75,
+        0.0,
+        1.15,
+        0.75,
+        0.15
+      ],
+      "sha256": "0efe69cafe525bda3a880fa604a0c45650c79389470d7ec8a84d7b2e9852c8b4",
+      "step_companion": "SolderJumper_Bridged.step"
+    },
+    "SolderJumper_Bridged.step": {
+      "kind": "Solder-state depiction",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Solder-pad/bridge depiction, not a purchased component. Bridge height is illustrative.",
+      "dimension_sources": [
+        "SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+      ],
+      "bounds_3d_mm": [
+        -1.15,
+        -0.75,
+        0.0,
+        1.15,
+        0.75,
+        0.15
+      ],
+      "sha256": "ff742d6137dda5aa5a16553632c24688c270c93ed4fa4a7cc804c23da4537d9d"
+    },
+    "SolderJumper_Open.wrl": {
+      "kind": "Solder-state depiction",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Solder-pad/bridge depiction, not a purchased component. Bridge height is illustrative.",
+      "dimension_sources": [
+        "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+      ],
+      "bounds_3d_mm": [
+        -1.15,
+        -0.75,
+        0.0,
+        1.15,
+        0.75,
+        0.03
+      ],
+      "sha256": "f8f8bffefd1c94f5927896116430119002cc8b62ef3b6694b5eb994bf266f44c",
+      "step_companion": "SolderJumper_Open.step"
+    },
+    "SolderJumper_Open.step": {
+      "kind": "Solder-state depiction",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Solder-pad/bridge depiction, not a purchased component. Bridge height is illustrative.",
+      "dimension_sources": [
+        "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+      ],
+      "bounds_3d_mm": [
+        -1.15,
+        -0.75,
+        0.0,
+        1.15,
+        0.75,
+        0.03
+      ],
+      "sha256": "7217d528efc1af3ac1a097cbb0ae2aba89c914a589938cd231a33db6597aefb9"
+    },
+    "LED_1206_RED.wrl": {
+      "kind": "Generic colored indicator",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Generic 3.2x1.6 mm indicator LED with schematic color. Actual lens, body height and orderable LED are unconfirmed.",
+      "dimension_sources": [
+        "reference/v240-netlist.json, D23"
+      ],
+      "bounds_3d_mm": [
+        -1.6,
+        -0.8,
+        0.0,
+        1.6,
+        0.8,
+        1.015
+      ],
+      "sha256": "fbf6fc233f244f06c5c99ac0b7e5be103ada869e862e5cf571a2c646c97ad137",
+      "step_companion": "LED_1206_RED.step"
+    },
+    "LED_1206_RED.step": {
+      "kind": "Generic colored indicator",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Generic 3.2x1.6 mm indicator LED with schematic color. Actual lens, body height and orderable LED are unconfirmed.",
+      "dimension_sources": [
+        "reference/v240-netlist.json, D23"
+      ],
+      "bounds_3d_mm": [
+        -1.6,
+        -0.8,
+        0.0,
+        1.6,
+        0.8,
+        1.015
+      ],
+      "sha256": "7bf5434403c89b4a3ce05906179af2515fd197b26cf29b22b532d64fd5c6b85e"
+    },
+    "LED_1206_YELLOW.wrl": {
+      "kind": "Generic colored indicator",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Generic 3.2x1.6 mm indicator LED with schematic color. Actual lens, body height and orderable LED are unconfirmed.",
+      "dimension_sources": [
+        "reference/v240-netlist.json, D24"
+      ],
+      "bounds_3d_mm": [
+        -1.6,
+        -0.8,
+        0.0,
+        1.6,
+        0.8,
+        1.015
+      ],
+      "sha256": "e6b90242d9694713187b2b6cd3316c8f6eb3cb53657461ddd166156deab0aeb8",
+      "step_companion": "LED_1206_YELLOW.step"
+    },
+    "LED_1206_YELLOW.step": {
+      "kind": "Generic colored indicator",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Generic 3.2x1.6 mm indicator LED with schematic color. Actual lens, body height and orderable LED are unconfirmed.",
+      "dimension_sources": [
+        "reference/v240-netlist.json, D24"
+      ],
+      "bounds_3d_mm": [
+        -1.6,
+        -0.8,
+        0.0,
+        1.6,
+        0.8,
+        1.015
+      ],
+      "sha256": "9218afc3e3711109101609470655944816fc509e2da747d827b950ec2b367c33"
+    },
+    "LED_1206_GREEN.wrl": {
+      "kind": "Generic colored indicator",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Generic 3.2x1.6 mm indicator LED with schematic color. Actual lens, body height and orderable LED are unconfirmed.",
+      "dimension_sources": [
+        "reference/v240-netlist.json, D25"
+      ],
+      "bounds_3d_mm": [
+        -1.6,
+        -0.8,
+        0.0,
+        1.6,
+        0.8,
+        1.015
+      ],
+      "sha256": "6a60d9527a7822d57bd6f01faeb3d65bb6a9eae52b3224d9b869740effd60faf",
+      "step_companion": "LED_1206_GREEN.step"
+    },
+    "LED_1206_GREEN.step": {
+      "kind": "Generic colored indicator",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Generic 3.2x1.6 mm indicator LED with schematic color. Actual lens, body height and orderable LED are unconfirmed.",
+      "dimension_sources": [
+        "reference/v240-netlist.json, D25"
+      ],
+      "bounds_3d_mm": [
+        -1.6,
+        -0.8,
+        0.0,
+        1.6,
+        0.8,
+        1.015
+      ],
+      "sha256": "775ac7b2b15f85b8361a0473a212a693ecc99fd51a4f293a0a1597d4e1450917"
+    },
+    "LED_1206_BLUE.wrl": {
+      "kind": "Generic colored indicator",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Generic 3.2x1.6 mm indicator LED with schematic color. Actual lens, body height and orderable LED are unconfirmed.",
+      "dimension_sources": [
+        "reference/v240-netlist.json, D26"
+      ],
+      "bounds_3d_mm": [
+        -1.6,
+        -0.8,
+        0.0,
+        1.6,
+        0.8,
+        1.015
+      ],
+      "sha256": "eb29ab519ec90bc8fa50b3593073e92941470a21e00702abe25406fcc28c8d52",
+      "step_companion": "LED_1206_BLUE.step"
+    },
+    "LED_1206_BLUE.step": {
+      "kind": "Generic colored indicator",
+      "license": "GPL-3.0-or-later",
+      "generator": "scripts/generate_3d_models.py",
+      "notes": "Generic 3.2x1.6 mm indicator LED with schematic color. Actual lens, body height and orderable LED are unconfirmed.",
+      "dimension_sources": [
+        "reference/v240-netlist.json, D26"
+      ],
+      "bounds_3d_mm": [
+        -1.6,
+        -0.8,
+        0.0,
+        1.6,
+        0.8,
+        1.015
+      ],
+      "sha256": "e41d3548864b2b49ad3b86dcd9b03bdd97e2088c85dcc592cfc46a3cbcc68753"
+    },
+    "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step": {
+      "kind": "KiCad GCT connector package",
+      "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+      "license": "CC-BY-SA-4.0 with KiCad library exception",
+      "sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+      "notes": "GCT USB4105 family; nominal 8.94x7.35x3.31 mm envelope, standard 0.95 mm stakes, matching footprint checked against manufacturer drawing B4."
+    },
+    "ATTEND_226A-1202.step": {
+      "kind": "Manufacturer engineering CAD",
+      "source": "https://www.attend.com.tw/data/download/file/226A-1202.rar",
+      "drawing_source": "https://www.attend.com.tw/data/download/file/226A-1202.pdf",
+      "manufacturer": "ATTEND",
+      "part_number": "226A-1202",
+      "license": "Manufacturer-provided engineering CAD; rights retained by ATTEND. Not covered by project-generated-model GPL declaration.",
+      "sha256": "b7de878426ff567bcd8548e076be72a7cafc2c1dc643b73f069533428274f87a",
+      "notes": "Manufacturer 226A-1202_c_2.stp aligned to footprint using documented rigid coordinate transform; no invented housing geometry. Color absent in the supplied CAD. Physical sample and enclosure fit remain unverified.",
+      "coordinate_transform": [
+        [
+          0,
+          0,
+          -1,
+          -21.8
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          6.3
+        ]
+      ],
+      "bounds_3d_mm": [
+        -21.8,
+        -20.775,
+        -3.01,
+        2.05,
+        20.775,
+        16.1
+      ]
+    }
+  },
+  "footprints": {
+    "R_0603_1608Metric": {
+      "model": "R_0603_1608Metric.step"
+    },
+    "R_1206_3216Metric": {
+      "model": "R_1206_3216Metric.step"
+    },
+    "C_0603_1608Metric": {
+      "model": "C_0603_1608Metric.step"
+    },
+    "C_1206_3216Metric": {
+      "model": "C_1206_3216Metric.step"
+    },
+    "D_SMB": {
+      "model": "D_SMB.step"
+    },
+    "D_SOD-123": {
+      "model": "D_SOD-123.step"
+    },
+    "D_SOD-323": {
+      "model": "D_SOD-323.step"
+    },
+    "SOT-23": {
+      "model": "SOT-23.step"
+    },
+    "SOT-23-5": {
+      "model": "SOT-23-5.step"
+    },
+    "SOT-23-6": {
+      "model": "SOT-23-6.step"
+    },
+    "SOT-363_SC-70-6": {
+      "model": "SOT-363_SC-70-6.step"
+    },
+    "VSSOP-8_2.3x2mm_P0.5mm": {
+      "model": "VSSOP-8_2.3x2mm_P0.5mm.step"
+    },
+    "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm": {
+      "model": "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.step"
+    },
+    "PinHeader_2x03_P2.54mm_Vertical": {
+      "model": "PinHeader_2x03_P2.54mm_Vertical.step"
+    },
+    "SW_SPST_TL3305A": {
+      "model": "SW_SPST_TL3305A.step"
+    },
+    "CP_Radial_D8.0mm_P3.50mm": {
+      "model": "CP_Radial_D8.0mm_P3.50mm.step"
+    },
+    "CP2102_V140_Reference": {
+      "model": "QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.step"
+    },
+    "AW9523B_QFN24": {
+      "model": "QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step"
+    },
+    "USBLC6_V140_Reference": {
+      "model": "SOT-23-6.step",
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "assignment_notes": "Rotate model by 90 degrees to align pin 1 with the retained footprint."
+    },
+    "ESP32_PICO_V3_02": {
+      "model": "ESP32_PICO_V3_02.wrl"
+    },
+    "SY6283_DFN4": {
+      "model": "SY6283_DFN4.wrl"
+    },
+    "ANT3216LL00R2400A": {
+      "model": "ANT3216LL00R2400A.wrl"
+    },
+    "L_7.3x7.3_H3.5": {
+      "model": "L_7.3x7.3_H3.5.wrl"
+    },
+    "USB_B_Lumberg_2411_02_Horizontal": {
+      "model": "USB_B_Lumberg_2411_02.wrl"
+    },
+    "OBD16_V140_Reference": {
+      "model": "OBD16_V140_Representative.wrl"
+    },
+    "SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm": {
+      "model": "SolderJumper_Bridged.wrl"
+    },
+    "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm": {
+      "model": "SolderJumper_Open.wrl"
+    },
+    "LED_V140_Reference": {
+      "model": "LED_1206_RED.wrl"
+    },
+    "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal": {
+      "model": "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step"
+    },
+    "OBDII_ATTEND_226A-1202": {
+      "model": "ATTEND_226A-1202.step"
+    }
+  },
+  "references": {
+    "AE1": {
+      "model": "ANT3216LL00R2400A.wrl",
+      "dnp": false
+    },
+    "C1": {
+      "model": "CP_Radial_D8.0mm_P3.50mm.step",
+      "dnp": false
+    },
+    "C2": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C3": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C4": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C5": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C6": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C7": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C8": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C9": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C10": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C11": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C12": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C13": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C14": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C15": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C16": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C17": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C18": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C19": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C20": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C21": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C22": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C23": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C24": {
+      "model": "C_1206_3216Metric.step",
+      "dnp": false
+    },
+    "C25": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C26": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C27": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C28": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C29": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C30": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C31": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C32": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C33": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C34": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C35": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C36": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C37": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C38": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C39": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C40": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C41": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C42": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C43": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C44": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C45": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C46": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C47": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C48": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C49": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C50": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C51": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C52": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C53": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C54": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C55": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C56": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "C57": {
+      "model": "C_0603_1608Metric.step",
+      "dnp": false
+    },
+    "D1": {
+      "model": "D_SMB.step",
+      "dnp": false
+    },
+    "D2": {
+      "model": "D_SMB.step",
+      "dnp": false
+    },
+    "D3": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D4": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D5": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D6": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D7": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D8": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D9": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D10": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D11": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D12": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D13": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D14": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D15": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D16": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D17": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D18": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D19": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D20": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D21": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D22": {
+      "model": "D_SOD-123.step",
+      "dnp": false
+    },
+    "D23": {
+      "model": "LED_1206_RED.wrl",
+      "dnp": false
+    },
+    "D24": {
+      "model": "LED_1206_YELLOW.wrl",
+      "dnp": false
+    },
+    "D25": {
+      "model": "LED_1206_GREEN.wrl",
+      "dnp": false
+    },
+    "D26": {
+      "model": "LED_1206_BLUE.wrl",
+      "dnp": false
+    },
+    "D27": {
+      "model": "D_SOD-323.step",
+      "dnp": false
+    },
+    "D28": {
+      "model": "D_SOD-323.step",
+      "dnp": false
+    },
+    "D29": {
+      "model": "D_SOD-323.step",
+      "dnp": false
+    },
+    "J1": {
+      "model": "ATTEND_226A-1202.step",
+      "dnp": false
+    },
+    "J2": {
+      "model": "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+      "dnp": false
+    },
+    "J3": {
+      "model": "PinHeader_2x03_P2.54mm_Vertical.step",
+      "dnp": false
+    },
+    "JP1": {
+      "model": "SolderJumper_Bridged.wrl",
+      "dnp": false
+    },
+    "JP2": {
+      "model": "SolderJumper_Open.wrl",
+      "dnp": false
+    },
+    "L1": {
+      "model": "L_7.3x7.3_H3.5.wrl",
+      "dnp": false
+    },
+    "L2": {
+      "model": "L_7.3x7.3_H3.5.wrl",
+      "dnp": false
+    },
+    "L3": {
+      "model": "L_1206_3216Metric.step",
+      "dnp": false
+    },
+    "L4": {
+      "model": "L_7.3x7.3_H3.5.wrl",
+      "dnp": false
+    },
+    "L5": {
+      "model": "L_1206_3216Metric.step",
+      "dnp": false
+    },
+    "L6": {
+      "model": "L_7.3x7.3_H3.5.wrl",
+      "dnp": false
+    },
+    "Q1": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q2": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q3": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q4": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q5": {
+      "model": "SOT-363_SC-70-6.step",
+      "dnp": false
+    },
+    "Q6": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q7": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q8": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q9": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q10": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q11": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q12": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q13": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q14": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q15": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q16": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "Q17": {
+      "model": "SOT-23.step",
+      "dnp": false
+    },
+    "Q18": {
+      "model": "SOT-23.step",
+      "dnp": false
+    },
+    "Q19": {
+      "model": "SOT-23.step",
+      "dnp": false
+    },
+    "Q20": {
+      "model": "SOT-23.step",
+      "dnp": false
+    },
+    "R1": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R2": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R3": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R4": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R5": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R6": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R7": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R8": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R9": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R10": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R11": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R12": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R13": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R14": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R15": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R16": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R17": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R18": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R19": {
+      "model": "R_1206_3216Metric.step",
+      "dnp": false
+    },
+    "R20": {
+      "model": "R_1206_3216Metric.step",
+      "dnp": false
+    },
+    "R21": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R22": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R23": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": true
+    },
+    "R24": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": true
+    },
+    "R25": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R26": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R27": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R28": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R29": {
+      "model": "R_1206_3216Metric.step",
+      "dnp": false
+    },
+    "R30": {
+      "model": "R_1206_3216Metric.step",
+      "dnp": false
+    },
+    "R31": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R32": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R33": {
+      "model": "R_1206_3216Metric.step",
+      "dnp": false
+    },
+    "R34": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R36": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R37": {
+      "model": "R_1206_3216Metric.step",
+      "dnp": false
+    },
+    "R38": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R39": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R40": {
+      "model": "R_1206_3216Metric.step",
+      "dnp": false
+    },
+    "R41": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R42": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R43": {
+      "model": "R_1206_3216Metric.step",
+      "dnp": false
+    },
+    "R44": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R45": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R46": {
+      "model": "R_1206_3216Metric.step",
+      "dnp": false
+    },
+    "R47": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R48": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R49": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R50": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R51": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R52": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R53": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R54": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R55": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R56": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R57": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R58": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R59": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R60": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R61": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R62": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R63": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R64": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R65": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R66": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R67": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R68": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R69": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R70": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R71": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R72": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R73": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R74": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R75": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R76": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R77": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R78": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R79": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R80": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R81": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R82": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R83": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R84": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R85": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R86": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R87": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R88": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R89": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R90": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R91": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R92": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R93": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R94": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R95": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R96": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R97": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R98": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R99": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R100": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R101": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "SW1": {
+      "model": "SW_SPST_TL3305A.step",
+      "dnp": false
+    },
+    "SW2": {
+      "model": "SW_SPST_TL3305A.step",
+      "dnp": false
+    },
+    "U1": {
+      "model": "SY6283_DFN4.wrl",
+      "dnp": false
+    },
+    "U2": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "U3": {
+      "model": "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.step",
+      "dnp": false
+    },
+    "U4": {
+      "model": "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.step",
+      "dnp": false
+    },
+    "U5": {
+      "model": "SOT-23-5.step",
+      "dnp": false
+    },
+    "U6": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "U7": {
+      "model": "SOT-23-6.step",
+      "dnp": false
+    },
+    "U8": {
+      "model": "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.step",
+      "dnp": false
+    },
+    "U9": {
+      "model": "SOT-23-5.step",
+      "dnp": false
+    },
+    "U10": {
+      "model": "ESP32_PICO_V3_02.wrl",
+      "dnp": false
+    },
+    "U11": {
+      "model": "SOT-23-6.step",
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dnp": false,
+      "assignment_notes": "Rotate model by 90 degrees to align pin 1 with the retained footprint."
+    },
+    "U12": {
+      "model": "QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.step",
+      "dnp": false
+    },
+    "U13": {
+      "model": "VSSOP-8_2.3x2mm_P0.5mm.step",
+      "dnp": false
+    },
+    "U14": {
+      "model": "VSSOP-8_2.3x2mm_P0.5mm.step",
+      "dnp": false
+    },
+    "U15": {
+      "model": "VSSOP-8_2.3x2mm_P0.5mm.step",
+      "dnp": false
+    },
+    "U16": {
+      "model": "SOT-23-5.step",
+      "dnp": false
+    },
+    "U17": {
+      "model": "SOT-23-5.step",
+      "dnp": false
+    },
+    "U18": {
+      "model": "SOT-23-5.step",
+      "dnp": false
+    },
+    "U19": {
+      "model": "QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step",
+      "dnp": false
+    },
+    "R102": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    },
+    "R103": {
+      "model": "R_0603_1608Metric.step",
+      "dnp": false
+    }
+  },
+  "mounting_holes_without_hardware": [
+    "H1",
+    "H2",
+    "H3",
+    "H4"
+  ]
+}

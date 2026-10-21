@@ -1,0 +1,53 @@
+{
+  "size_mm": [
+    110,
+    55
+  ],
+  "corner_radius_mm": 2,
+  "original_size_mm": [
+    100,
+    50
+  ],
+  "mounting_holes_mm": [
+    [
+      5.00048,
+      4.9996
+    ],
+    [
+      5.00048,
+      49.99952
+    ],
+    [
+      105.0003,
+      49.99952
+    ],
+    [
+      105.0003,
+      4.9996
+    ]
+  ],
+  "description": "User-authorized board enlargement for less crowded placement. Left/top edges retained; right edge moves +10 mm and bottom edge +5 mm. Original 4 mm mounting drills retained, with right/bottom holes translated with their edges.",
+  "gerber_component_offsets_mm": {
+    "U12": [
+      10.0,
+      0.0
+    ],
+    "D23": [
+      7.619998,
+      2.942602
+    ],
+    "D24": [
+      7.619998,
+      3.222002
+    ],
+    "D25": [
+      7.619998,
+      3.501402
+    ],
+    "D26": [
+      7.619998,
+      3.780802
+    ]
+  },
+  "obd_connector": "ATTEND 226A-1202; original Gerber J1 drill pattern superseded by manufacturer rev 2 footprint"
+}

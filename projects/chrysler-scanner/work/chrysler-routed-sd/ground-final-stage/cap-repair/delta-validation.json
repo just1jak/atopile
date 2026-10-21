@@ -1,0 +1,7 @@
+{
+  "positiveNativeSelftestExactCopperIncludingFabFlags": true,
+  "positiveExactFootprintsAndZones": true,
+  "rejectsAlreadyConnectedGroundSites": true,
+  "rejectsChangedGenericTrackGeometry": true,
+  "frozenInputsUnchanged": true
+}

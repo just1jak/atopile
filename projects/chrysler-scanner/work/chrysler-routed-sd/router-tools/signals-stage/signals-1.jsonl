@@ -1,0 +1,69 @@
+{"engineViolations":34,"initial":{"VPP":1,"+3.3V":3,"PCI_TX":1,"V_PR":1,"RX2":1,"RX15_EN":1,"TX_LED":1,"ACT_LED":1,"LOG_BUTTON":1,"RX1":1,"VBB_TO_TX14":1}}
+{"pass":1,"net":"VPP","reference":"U6","pin":"5","fanout":"ALREADY_CONNECTED","route":"INSERT_ERROR","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"VPP","reference":"R10","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"+3.3V","reference":"U10","pin":"43","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"+3.3V","reference":"U10","pin":"46","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"+3.3V","reference":"U19","pin":"21","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"+3.3V","reference":"R97","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"PCI_TX","reference":"U10","pin":"16","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"PCI_TX","reference":"R18","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"V_PR","reference":"U10","pin":"11","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"V_PR","reference":"R54","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"RX2","reference":"U10","pin":"34","fanout":"ALREADY_CONNECTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":1,"net":"RX15_EN","reference":"U19","pin":"15","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"RX15_EN","reference":"R47","pin":"2","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"TX_LED","reference":"U10","pin":"15","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"TX_LED","reference":"R92","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"ACT_LED","reference":"U10","pin":"20","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"ACT_LED","reference":"R96","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"LOG_BUTTON","reference":"U10","pin":"6","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"LOG_BUTTON","reference":"R113","pin":"2","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"RX1","reference":"U10","pin":"33","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"RX1","reference":"R85","pin":"2","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"VBB_TO_TX14","reference":"U19","pin":"8","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":1,"net":"VBB_TO_TX14","reference":"Q11","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"VPP","reference":"U6","pin":"5","fanout":"INSERT_ERROR","route":"INSERT_ERROR","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":2,"net":"VPP","reference":"R10","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"+3.3V","reference":"U10","pin":"43","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"+3.3V","reference":"U10","pin":"46","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"+3.3V","reference":"U19","pin":"21","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"+3.3V","reference":"R97","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"PCI_TX","reference":"U10","pin":"16","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"PCI_TX","reference":"R18","pin":"1","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"V_PR","reference":"U10","pin":"11","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"V_PR","reference":"R54","pin":"1","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"RX15_EN","reference":"U19","pin":"15","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"RX15_EN","reference":"R47","pin":"2","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"TX_LED","reference":"U10","pin":"15","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"TX_LED","reference":"R92","pin":"1","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"ACT_LED","reference":"U10","pin":"20","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"ACT_LED","reference":"R96","pin":"1","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"LOG_BUTTON","reference":"U10","pin":"6","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"LOG_BUTTON","reference":"R113","pin":"2","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"RX1","reference":"U10","pin":"33","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"RX1","reference":"R85","pin":"2","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"VBB_TO_TX14","reference":"U19","pin":"8","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":2,"net":"VBB_TO_TX14","reference":"Q11","pin":"1","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"VPP","reference":"U6","pin":"5","fanout":"INSERT_ERROR","route":"INSERT_ERROR","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":3,"net":"VPP","reference":"R10","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"+3.3V","reference":"U10","pin":"43","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"+3.3V","reference":"U10","pin":"46","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"+3.3V","reference":"U19","pin":"21","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"+3.3V","reference":"R97","pin":"1","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":3,"after":3,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"PCI_TX","reference":"U10","pin":"16","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":3,"net":"PCI_TX","reference":"R18","pin":"1","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":3,"net":"V_PR","reference":"U10","pin":"11","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":3,"net":"V_PR","reference":"R54","pin":"1","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":3,"net":"RX15_EN","reference":"U19","pin":"15","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"RX15_EN","reference":"R47","pin":"2","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":3,"net":"TX_LED","reference":"U10","pin":"15","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":3,"net":"TX_LED","reference":"R92","pin":"1","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":3,"net":"ACT_LED","reference":"U10","pin":"20","fanout":"NOT_ROUTED","route":"INSERT_ERROR","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":3,"net":"ACT_LED","reference":"R96","pin":"1","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":3,"net":"LOG_BUTTON","reference":"U10","pin":"6","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"LOG_BUTTON","reference":"R113","pin":"2","fanout":"ALREADY_CONNECTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"RX1","reference":"U10","pin":"33","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"RX1","reference":"R85","pin":"2","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":3,"net":"VBB_TO_TX14","reference":"U19","pin":"8","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"pass":3,"net":"VBB_TO_TX14","reference":"Q11","pin":"1","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":1,"accepted":false,"rejected":"net connectivity regression"}
+{"summary":true,"inputSha256":"0f1ec2b9eacb3eee7461a9a05a656667be30112e98cc4d59b42f80c2b8801f79","initial":{"VPP":1,"+3.3V":3,"PCI_TX":1,"V_PR":1,"RX2":1,"RX15_EN":1,"TX_LED":1,"ACT_LED":1,"LOG_BUTTON":1,"RX1":1,"VBB_TO_TX14":1},"final":{"VPP":1,"+3.3V":3,"PCI_TX":1,"V_PR":1,"RX2":0,"RX15_EN":1,"TX_LED":1,"ACT_LED":1,"LOG_BUTTON":1,"RX1":1,"VBB_TO_TX14":1},"improved":true,"attempts":67,"accepted":1,"engineAirwires":71,"engineViolations":34,"allNetConnectivityPreserved":true,"protectedItemsPreserved":836,"placementsPreserved":263,"exactFixedCenterlineCoverage":true,"timeBudgetReached":false}

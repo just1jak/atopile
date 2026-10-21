@@ -1,0 +1,266 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-10-14T04:14:00.513154+00:00",
+  "engine": "FreeCAD 1.1.1",
+  "part": "ATTEND 226A-1202",
+  "pcb_sha256": "06629b279f52798185a8281b6e5d4e574720666cfebad0ee8288ba61cc44d409",
+  "model_sha256": "b7de878426ff567bcd8548e076be72a7cafc2c1dc643b73f069533428274f87a",
+  "model_valid": true,
+  "model_solids": 1,
+  "tessellated_model_bounds_mm": [
+    [
+      -21.800000000000004,
+      2.0500000000000003
+    ],
+    [
+      -20.775,
+      20.775
+    ],
+    [
+      -3.01,
+      16.100000000001
+    ]
+  ],
+  "placement_origin_board_mm": [
+    3.0,
+    25.0
+  ],
+  "tails_in_manufacturer_drills": [
+    {
+      "pin": 1,
+      "hole_center_board_mm": [
+        1.5,
+        11.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        1.5,
+        11.0
+      ]
+    },
+    {
+      "pin": 2,
+      "hole_center_board_mm": [
+        1.5,
+        15.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        1.5,
+        15.000000000000501
+      ]
+    },
+    {
+      "pin": 3,
+      "hole_center_board_mm": [
+        1.5,
+        19.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        1.5,
+        19.0000000000015
+      ]
+    },
+    {
+      "pin": 4,
+      "hole_center_board_mm": [
+        1.5,
+        23.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        1.5,
+        22.965000000002
+      ]
+    },
+    {
+      "pin": 5,
+      "hole_center_board_mm": [
+        1.5,
+        27.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        1.5,
+        26.965000000002
+      ]
+    },
+    {
+      "pin": 6,
+      "hole_center_board_mm": [
+        1.5,
+        31.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        1.5,
+        31.0000000000015
+      ]
+    },
+    {
+      "pin": 7,
+      "hole_center_board_mm": [
+        1.5,
+        35.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        1.5,
+        35.000000000000995
+      ]
+    },
+    {
+      "pin": 8,
+      "hole_center_board_mm": [
+        1.5,
+        39.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        1.5,
+        39.0
+      ]
+    },
+    {
+      "pin": 9,
+      "hole_center_board_mm": [
+        4.5,
+        11.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        4.5,
+        11.0
+      ]
+    },
+    {
+      "pin": 10,
+      "hole_center_board_mm": [
+        4.5,
+        15.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        4.5,
+        15.000000000001
+      ]
+    },
+    {
+      "pin": 11,
+      "hole_center_board_mm": [
+        4.5,
+        19.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        4.5,
+        19.0000000000025
+      ]
+    },
+    {
+      "pin": 12,
+      "hole_center_board_mm": [
+        4.5,
+        23.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        4.5,
+        23.0000000000025
+      ]
+    },
+    {
+      "pin": 13,
+      "hole_center_board_mm": [
+        4.5,
+        27.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        4.5,
+        27.0000000000025
+      ]
+    },
+    {
+      "pin": 14,
+      "hole_center_board_mm": [
+        4.5,
+        31.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        4.5,
+        31.0000000000025
+      ]
+    },
+    {
+      "pin": 15,
+      "hole_center_board_mm": [
+        4.5,
+        35.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        4.5,
+        35.0000000000015
+      ]
+    },
+    {
+      "pin": 16,
+      "hole_center_board_mm": [
+        4.5,
+        39.0
+      ],
+      "tail_volume_in_drill_mm3": 1.024,
+      "tessellated_tail_center_board_mm": [
+        4.5,
+        39.0
+      ]
+    }
+  ],
+  "pcb_intersection_volume_mm3": 0.0,
+  "mounting_hardware_checks": [
+    {
+      "hole": "H1",
+      "diameter_mm": 7,
+      "z_extent_mm": [
+        -2,
+        12
+      ],
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "hole": "H2",
+      "diameter_mm": 7,
+      "z_extent_mm": [
+        -2,
+        12
+      ],
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "hole": "H3",
+      "diameter_mm": 7,
+      "z_extent_mm": [
+        -2,
+        12
+      ],
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "hole": "H4",
+      "diameter_mm": 7,
+      "z_extent_mm": [
+        -2,
+        12
+      ],
+      "intersection_volume_mm3": 0.0
+    }
+  ],
+  "pad_copper_to_board_edge_mm": 0.32499999999999996,
+  "pcb_edge_offset_from_recommended_mm": 0.1499999999999999,
+  "physical_sample_verified": false,
+  "enclosure_fit_verified": false,
+  "scope": "Nominal supplied CAD, 1.6 mm board, recommended drills and 7 mm mounting hardware envelopes; no tolerance/load analysis."
+}

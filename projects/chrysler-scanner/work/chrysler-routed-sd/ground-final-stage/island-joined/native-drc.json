@@ -1,0 +1,302 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-20T13:56:32",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "ChryslerScanner_V240_SD.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "6edcc193-bba6-46de-897c-0f1fda6922ed"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "6edcc193-bba6-46de-897c-0f1fda6922ed"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "6edcc193-bba6-46de-897c-0f1fda6922ed"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND B.Cu' [GND] on L4 - Signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "c85111e0-830e-413f-8f53-8f84679f816d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [RX15_EN] on L1 - Components / critical signals, length 1.6963 mm",
+                    "pos": {
+                        "x": 134.4142,
+                        "y": 148.4912
+                    },
+                    "uuid": "a58c5d1a-5595-4d2d-8f0f-9402772438b3"
+                },
+                {
+                    "description": "Pad 15 [RX15_EN] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 169.9,
+                        "y": 138.5
+                    },
+                    "uuid": "d7c4fcef-b386-44af-b060-0444675121ab"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 15 [TX_LED] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 171.9375,
+                        "y": 118.7275
+                    },
+                    "uuid": "800f7529-f6b6-46a9-921d-67dd7c2899b8"
+                },
+                {
+                    "description": "Track [TX_LED] on L1 - Components / critical signals, length 1.6016 mm",
+                    "pos": {
+                        "x": 182.3208,
+                        "y": 143.2262
+                    },
+                    "uuid": "22e94eca-5993-4309-9922-519b1b13f771"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.2671 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 210.0,
+                        "y": 102.0
+                    },
+                    "uuid": "4277f7d5-b651-584f-9bec-58ca72b646c0"
+                },
+                {
+                    "description": "Track [+3.3V] on L1 - Components / critical signals, length 0.8079 mm",
+                    "pos": {
+                        "x": 209.4829,
+                        "y": 113.85
+                    },
+                    "uuid": "f026fb82-748a-4627-a209-bd269c1c7293"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.2171 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 210.0,
+                        "y": 102.0
+                    },
+                    "uuid": "4277f7d5-b651-584f-9bec-58ca72b646c0"
+                },
+                {
+                    "description": "Via [+3.3V] on L1 - Components / critical signals - L4 - Signals",
+                    "pos": {
+                        "x": 209.4829,
+                        "y": 113.85
+                    },
+                    "uuid": "7d8b3da1-b25e-47ff-89ff-1e806891b7c7"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.2671 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 210.0,
+                        "y": 102.0
+                    },
+                    "uuid": "4277f7d5-b651-584f-9bec-58ca72b646c0"
+                },
+                {
+                    "description": "Track [+3.3V] on L3 - Power, length 1.2944 mm",
+                    "pos": {
+                        "x": 209.4829,
+                        "y": 115.1444
+                    },
+                    "uuid": "83e00313-70b7-4517-88e9-343e15079bc7"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.2671 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 210.0,
+                        "y": 102.0
+                    },
+                    "uuid": "4277f7d5-b651-584f-9bec-58ca72b646c0"
+                },
+                {
+                    "description": "Track [+3.3V] on L3 - Power, length 3.2166 mm",
+                    "pos": {
+                        "x": 207.2084,
+                        "y": 117.4189
+                    },
+                    "uuid": "a8142467-b7d0-41de-9aac-407055cbe44a"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VPP] on L1 - Components / critical signals, length 1.4940 mm",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 121.9685
+                    },
+                    "uuid": "8dc0516c-651d-4af7-a656-2adaa1b58b8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [N_C17_2] on L1 - Components / critical signals, length 0.9472 mm",
+                    "pos": {
+                        "x": 155.194,
+                        "y": 131.0905
+                    },
+                    "uuid": "2965fd40-97f3-4c67-89f1-c42f6397c80e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [RX15_EN] on L1 - Components / critical signals - L4 - Signals",
+                    "pos": {
+                        "x": 134.6322,
+                        "y": 149.9695
+                    },
+                    "uuid": "4f467cb3-dc48-4b85-8ca4-82fea2693139"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [TX_LED] on L1 - Components / critical signals - L4 - Signals",
+                    "pos": {
+                        "x": 180.7192,
+                        "y": 143.2262
+                    },
+                    "uuid": "37644577-a940-4407-867e-5711f6df8f21"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [N_C5_2] on L1 - Components / critical signals, length 1.2965 mm",
+                    "pos": {
+                        "x": 136.729,
+                        "y": 107.225
+                    },
+                    "uuid": "426e8aec-d09e-4ec7-8b91-a2c1f88e6be4"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

@@ -1,0 +1,1133 @@
+Compiled from "StartupOptions.java"
+public class app.freerouting.gui.StartupOptions {
+  private static final com.google.gson.Gson GSON;
+
+  private static final java.nio.file.Path PATH;
+
+  transient boolean single_design_option;
+
+  transient boolean test_version_option;
+
+  transient boolean show_help_option;
+
+  transient boolean session_file_option;
+
+  transient boolean webstart_option;
+
+  transient java.lang.String design_input_filename;
+
+  transient java.lang.String design_output_filename;
+
+  transient java.lang.String design_rules_filename;
+
+  public java.lang.String input_directory;
+
+  public int max_passes;
+
+  public int num_threads;
+
+  public app.freerouting.autoroute.BoardUpdateStrategy board_update_strategy;
+
+  public java.lang.String hybrid_ratio;
+
+  public app.freerouting.autoroute.ItemSelectionStrategy item_selection_strategy;
+
+  transient java.lang.String[] supported_languages;
+
+  transient java.util.Locale current_locale;
+
+  public boolean save_intermediate_stages;
+
+  public float optimization_improvement_threshold;
+
+  transient java.lang.String[] ignore_net_classes_by_autorouter;
+
+  public boolean disable_logging;
+
+  public boolean disable_analytics;
+
+  public final java.lang.String user_id;
+
+  public int dialog_confirmation_timeout;
+
+  public java.lang.String host;
+
+  public app.freerouting.gui.StartupOptions();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #7                  // Field single_design_option:Z
+       9: aload_0
+      10: iconst_0
+      11: putfield      #13                 // Field test_version_option:Z
+      14: aload_0
+      15: iconst_0
+      16: putfield      #16                 // Field show_help_option:Z
+      19: aload_0
+      20: iconst_0
+      21: putfield      #19                 // Field session_file_option:Z
+      24: aload_0
+      25: iconst_0
+      26: putfield      #22                 // Field webstart_option:Z
+      29: aload_0
+      30: ldc           #25                 // int 99999
+      32: putfield      #26                 // Field max_passes:I
+      35: aload_0
+      36: iconst_1
+      37: putfield      #30                 // Field num_threads:I
+      40: aload_0
+      41: getstatic     #33                 // Field app/freerouting/autoroute/BoardUpdateStrategy.GREEDY:Lapp/freerouting/autoroute/BoardUpdateStrategy;
+      44: putfield      #39                 // Field board_update_strategy:Lapp/freerouting/autoroute/BoardUpdateStrategy;
+      47: aload_0
+      48: ldc           #42                 // String 1:1
+      50: putfield      #44                 // Field hybrid_ratio:Ljava/lang/String;
+      53: aload_0
+      54: getstatic     #48                 // Field app/freerouting/autoroute/ItemSelectionStrategy.PRIORITIZED:Lapp/freerouting/autoroute/ItemSelectionStrategy;
+      57: putfield      #54                 // Field item_selection_strategy:Lapp/freerouting/autoroute/ItemSelectionStrategy;
+      60: aload_0
+      61: bipush        12
+      63: anewarray     #57                 // class java/lang/String
+      66: dup
+      67: iconst_0
+      68: ldc           #59                 // String en
+      70: aastore
+      71: dup
+      72: iconst_1
+      73: ldc           #61                 // String de
+      75: aastore
+      76: dup
+      77: iconst_2
+      78: ldc           #63                 // String zh
+      80: aastore
+      81: dup
+      82: iconst_3
+      83: ldc           #65                 // String hi
+      85: aastore
+      86: dup
+      87: iconst_4
+      88: ldc           #67                 // String es
+      90: aastore
+      91: dup
+      92: iconst_5
+      93: ldc           #69                 // String fr
+      95: aastore
+      96: dup
+      97: bipush        6
+      99: ldc           #71                 // String ar
+     101: aastore
+     102: dup
+     103: bipush        7
+     105: ldc           #73                 // String bn
+     107: aastore
+     108: dup
+     109: bipush        8
+     111: ldc           #75                 // String ru
+     113: aastore
+     114: dup
+     115: bipush        9
+     117: ldc           #77                 // String pt
+     119: aastore
+     120: dup
+     121: bipush        10
+     123: ldc           #79                 // String ja
+     125: aastore
+     126: dup
+     127: bipush        11
+     129: ldc           #81                 // String ko
+     131: aastore
+     132: putfield      #83                 // Field supported_languages:[Ljava/lang/String;
+     135: aload_0
+     136: invokestatic  #87                 // Method java/util/Locale.getDefault:()Ljava/util/Locale;
+     139: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     142: aload_0
+     143: iconst_0
+     144: putfield      #97                 // Field save_intermediate_stages:Z
+     147: aload_0
+     148: ldc           #100                // float 1.0E-5f
+     150: putfield      #101                // Field optimization_improvement_threshold:F
+     153: aload_0
+     154: iconst_0
+     155: anewarray     #57                 // class java/lang/String
+     158: putfield      #105                // Field ignore_net_classes_by_autorouter:[Ljava/lang/String;
+     161: aload_0
+     162: iconst_0
+     163: putfield      #108                // Field disable_logging:Z
+     166: aload_0
+     167: iconst_0
+     168: putfield      #111                // Field disable_analytics:Z
+     171: aload_0
+     172: bipush        20
+     174: putfield      #114                // Field dialog_confirmation_timeout:I
+     177: aload_0
+     178: ldc           #117                // String N/A
+     180: putfield      #119                // Field host:Ljava/lang/String;
+     183: aload_0
+     184: getfield      #83                 // Field supported_languages:[Ljava/lang/String;
+     187: invokestatic  #122                // Method java/util/Arrays.stream:([Ljava/lang/Object;)Ljava/util/stream/Stream;
+     190: aload_0
+     191: getfield      #93                 // Field current_locale:Ljava/util/Locale;
+     194: invokevirtual #128                // Method java/util/Locale.getLanguage:()Ljava/lang/String;
+     197: dup
+     198: invokestatic  #132                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+     201: pop
+     202: invokedynamic #138,  0            // InvokeDynamic #0:test:(Ljava/lang/String;)Ljava/util/function/Predicate;
+     207: invokeinterface #142,  2          // InterfaceMethod java/util/stream/Stream.noneMatch:(Ljava/util/function/Predicate;)Z
+     212: ifeq          222
+     215: aload_0
+     216: getstatic     #148                // Field java/util/Locale.ENGLISH:Ljava/util/Locale;
+     219: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     222: aload_0
+     223: invokestatic  #151                // Method java/util/UUID.randomUUID:()Ljava/util/UUID;
+     226: invokevirtual #157                // Method java/util/UUID.toString:()Ljava/lang/String;
+     229: putfield      #160                // Field user_id:Ljava/lang/String;
+     232: return
+
+  public java.util.Locale getCurrentLocale();
+    Code:
+       0: aload_0
+       1: getfield      #93                 // Field current_locale:Ljava/util/Locale;
+       4: areturn
+
+  public void parseCommandLineArguments(java.lang.String[]);
+    Code:
+       0: iconst_0
+       1: istore_2
+       2: iload_2
+       3: aload_1
+       4: arraylength
+       5: if_icmpge     1403
+       8: aload_1
+       9: iload_2
+      10: aaload
+      11: ldc           #163                // String -de
+      13: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      16: ifeq          57
+      19: aload_1
+      20: arraylength
+      21: iload_2
+      22: iconst_1
+      23: iadd
+      24: if_icmple     1381
+      27: aload_1
+      28: iload_2
+      29: iconst_1
+      30: iadd
+      31: aaload
+      32: ldc           #169                // String -
+      34: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      37: ifne          1381
+      40: aload_0
+      41: iconst_1
+      42: putfield      #7                  // Field single_design_option:Z
+      45: aload_0
+      46: aload_1
+      47: iload_2
+      48: iconst_1
+      49: iadd
+      50: aaload
+      51: putfield      #171                // Field design_input_filename:Ljava/lang/String;
+      54: goto          1381
+      57: aload_1
+      58: iload_2
+      59: aaload
+      60: ldc           #174                // String -di
+      62: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      65: ifeq          101
+      68: aload_1
+      69: arraylength
+      70: iload_2
+      71: iconst_1
+      72: iadd
+      73: if_icmple     1381
+      76: aload_1
+      77: iload_2
+      78: iconst_1
+      79: iadd
+      80: aaload
+      81: ldc           #169                // String -
+      83: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      86: ifne          1381
+      89: aload_0
+      90: aload_1
+      91: iload_2
+      92: iconst_1
+      93: iadd
+      94: aaload
+      95: putfield      #176                // Field input_directory:Ljava/lang/String;
+      98: goto          1381
+     101: aload_1
+     102: iload_2
+     103: aaload
+     104: ldc           #179                // String -do
+     106: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     109: ifeq          145
+     112: aload_1
+     113: arraylength
+     114: iload_2
+     115: iconst_1
+     116: iadd
+     117: if_icmple     1381
+     120: aload_1
+     121: iload_2
+     122: iconst_1
+     123: iadd
+     124: aaload
+     125: ldc           #169                // String -
+     127: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     130: ifne          1381
+     133: aload_0
+     134: aload_1
+     135: iload_2
+     136: iconst_1
+     137: iadd
+     138: aaload
+     139: putfield      #181                // Field design_output_filename:Ljava/lang/String;
+     142: goto          1381
+     145: aload_1
+     146: iload_2
+     147: aaload
+     148: ldc           #184                // String -dr
+     150: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     153: ifeq          189
+     156: aload_1
+     157: arraylength
+     158: iload_2
+     159: iconst_1
+     160: iadd
+     161: if_icmple     1381
+     164: aload_1
+     165: iload_2
+     166: iconst_1
+     167: iadd
+     168: aaload
+     169: ldc           #169                // String -
+     171: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     174: ifne          1381
+     177: aload_0
+     178: aload_1
+     179: iload_2
+     180: iconst_1
+     181: iadd
+     182: aaload
+     183: putfield      #186                // Field design_rules_filename:Ljava/lang/String;
+     186: goto          1381
+     189: aload_1
+     190: iload_2
+     191: aaload
+     192: ldc           #189                // String -mp
+     194: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     197: ifeq          267
+     200: aload_1
+     201: arraylength
+     202: iload_2
+     203: iconst_1
+     204: iadd
+     205: if_icmple     1381
+     208: aload_1
+     209: iload_2
+     210: iconst_1
+     211: iadd
+     212: aaload
+     213: ldc           #169                // String -
+     215: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     218: ifne          1381
+     221: aload_0
+     222: aload_1
+     223: iload_2
+     224: iconst_1
+     225: iadd
+     226: aaload
+     227: invokestatic  #191                // Method java/lang/Integer.decode:(Ljava/lang/String;)Ljava/lang/Integer;
+     230: invokevirtual #197                // Method java/lang/Integer.intValue:()I
+     233: putfield      #26                 // Field max_passes:I
+     236: aload_0
+     237: getfield      #26                 // Field max_passes:I
+     240: iconst_1
+     241: if_icmpge     249
+     244: aload_0
+     245: iconst_1
+     246: putfield      #26                 // Field max_passes:I
+     249: aload_0
+     250: getfield      #26                 // Field max_passes:I
+     253: ldc           #201                // int 99998
+     255: if_icmple     1381
+     258: aload_0
+     259: ldc           #201                // int 99998
+     261: putfield      #26                 // Field max_passes:I
+     264: goto          1381
+     267: aload_1
+     268: iload_2
+     269: aaload
+     270: ldc           #202                // String -mt
+     272: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     275: ifeq          346
+     278: aload_1
+     279: arraylength
+     280: iload_2
+     281: iconst_1
+     282: iadd
+     283: if_icmple     1381
+     286: aload_1
+     287: iload_2
+     288: iconst_1
+     289: iadd
+     290: aaload
+     291: ldc           #169                // String -
+     293: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     296: ifne          1381
+     299: aload_0
+     300: aload_1
+     301: iload_2
+     302: iconst_1
+     303: iadd
+     304: aaload
+     305: invokestatic  #191                // Method java/lang/Integer.decode:(Ljava/lang/String;)Ljava/lang/Integer;
+     308: invokevirtual #197                // Method java/lang/Integer.intValue:()I
+     311: putfield      #30                 // Field num_threads:I
+     314: aload_0
+     315: getfield      #30                 // Field num_threads:I
+     318: ifgt          326
+     321: aload_0
+     322: iconst_0
+     323: putfield      #30                 // Field num_threads:I
+     326: aload_0
+     327: getfield      #30                 // Field num_threads:I
+     330: sipush        1024
+     333: if_icmple     1381
+     336: aload_0
+     337: sipush        1024
+     340: putfield      #30                 // Field num_threads:I
+     343: goto          1381
+     346: aload_1
+     347: iload_2
+     348: aaload
+     349: ldc           #204                // String -oit
+     351: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     354: ifeq          410
+     357: aload_1
+     358: arraylength
+     359: iload_2
+     360: iconst_1
+     361: iadd
+     362: if_icmple     1381
+     365: aload_1
+     366: iload_2
+     367: iconst_1
+     368: iadd
+     369: aaload
+     370: ldc           #169                // String -
+     372: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     375: ifne          1381
+     378: aload_0
+     379: aload_1
+     380: iload_2
+     381: iconst_1
+     382: iadd
+     383: aaload
+     384: invokestatic  #206                // Method java/lang/Float.parseFloat:(Ljava/lang/String;)F
+     387: ldc           #212                // float 100.0f
+     389: fdiv
+     390: putfield      #101                // Field optimization_improvement_threshold:F
+     393: aload_0
+     394: getfield      #101                // Field optimization_improvement_threshold:F
+     397: fconst_0
+     398: fcmpg
+     399: ifgt          1381
+     402: aload_0
+     403: fconst_0
+     404: putfield      #101                // Field optimization_improvement_threshold:F
+     407: goto          1381
+     410: aload_1
+     411: iload_2
+     412: aaload
+     413: ldc           #213                // String -us
+     415: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     418: ifeq          494
+     421: aload_1
+     422: arraylength
+     423: iload_2
+     424: iconst_1
+     425: iadd
+     426: if_icmple     1381
+     429: aload_1
+     430: iload_2
+     431: iconst_1
+     432: iadd
+     433: aaload
+     434: ldc           #169                // String -
+     436: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     439: ifne          1381
+     442: aload_1
+     443: iload_2
+     444: iconst_1
+     445: iadd
+     446: aaload
+     447: invokevirtual #215                // Method java/lang/String.toLowerCase:()Ljava/lang/String;
+     450: invokevirtual #218                // Method java/lang/String.trim:()Ljava/lang/String;
+     453: astore_3
+     454: aload_0
+     455: aload_3
+     456: ldc           #221                // String global
+     458: invokevirtual #223                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     461: ifeq          470
+     464: getstatic     #227                // Field app/freerouting/autoroute/BoardUpdateStrategy.GLOBAL_OPTIMAL:Lapp/freerouting/autoroute/BoardUpdateStrategy;
+     467: goto          488
+     470: aload_3
+     471: ldc           #230                // String hybrid
+     473: invokevirtual #223                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     476: ifeq          485
+     479: getstatic     #232                // Field app/freerouting/autoroute/BoardUpdateStrategy.HYBRID:Lapp/freerouting/autoroute/BoardUpdateStrategy;
+     482: goto          488
+     485: getstatic     #33                 // Field app/freerouting/autoroute/BoardUpdateStrategy.GREEDY:Lapp/freerouting/autoroute/BoardUpdateStrategy;
+     488: putfield      #39                 // Field board_update_strategy:Lapp/freerouting/autoroute/BoardUpdateStrategy;
+     491: goto          1381
+     494: aload_1
+     495: iload_2
+     496: aaload
+     497: ldc           #235                // String -is
+     499: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     502: ifeq          578
+     505: aload_1
+     506: arraylength
+     507: iload_2
+     508: iconst_1
+     509: iadd
+     510: if_icmple     1381
+     513: aload_1
+     514: iload_2
+     515: iconst_1
+     516: iadd
+     517: aaload
+     518: ldc           #169                // String -
+     520: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     523: ifne          1381
+     526: aload_1
+     527: iload_2
+     528: iconst_1
+     529: iadd
+     530: aaload
+     531: invokevirtual #215                // Method java/lang/String.toLowerCase:()Ljava/lang/String;
+     534: invokevirtual #218                // Method java/lang/String.trim:()Ljava/lang/String;
+     537: astore_3
+     538: aload_0
+     539: aload_3
+     540: ldc           #237                // String seq
+     542: invokevirtual #239                // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+     545: ifne          554
+     548: getstatic     #243                // Field app/freerouting/autoroute/ItemSelectionStrategy.SEQUENTIAL:Lapp/freerouting/autoroute/ItemSelectionStrategy;
+     551: goto          572
+     554: aload_3
+     555: ldc           #246                // String rand
+     557: invokevirtual #239                // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+     560: ifne          569
+     563: getstatic     #248                // Field app/freerouting/autoroute/ItemSelectionStrategy.RANDOM:Lapp/freerouting/autoroute/ItemSelectionStrategy;
+     566: goto          572
+     569: getstatic     #48                 // Field app/freerouting/autoroute/ItemSelectionStrategy.PRIORITIZED:Lapp/freerouting/autoroute/ItemSelectionStrategy;
+     572: putfield      #54                 // Field item_selection_strategy:Lapp/freerouting/autoroute/ItemSelectionStrategy;
+     575: goto          1381
+     578: aload_1
+     579: iload_2
+     580: aaload
+     581: ldc           #251                // String -hr
+     583: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     586: ifeq          625
+     589: aload_1
+     590: arraylength
+     591: iload_2
+     592: iconst_1
+     593: iadd
+     594: if_icmple     1381
+     597: aload_1
+     598: iload_2
+     599: iconst_1
+     600: iadd
+     601: aaload
+     602: ldc           #169                // String -
+     604: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     607: ifne          1381
+     610: aload_0
+     611: aload_1
+     612: iload_2
+     613: iconst_1
+     614: iadd
+     615: aaload
+     616: invokevirtual #218                // Method java/lang/String.trim:()Ljava/lang/String;
+     619: putfield      #44                 // Field hybrid_ratio:Ljava/lang/String;
+     622: goto          1381
+     625: aload_1
+     626: iload_2
+     627: aaload
+     628: ldc           #253                // String -l
+     630: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     633: ifeq          1062
+     636: aload_1
+     637: arraylength
+     638: iload_2
+     639: iconst_1
+     640: iadd
+     641: if_icmple     667
+     644: aload_1
+     645: iload_2
+     646: iconst_1
+     647: iadd
+     648: aaload
+     649: ldc           #59                 // String en
+     651: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     654: ifeq          667
+     657: aload_0
+     658: getstatic     #148                // Field java/util/Locale.ENGLISH:Ljava/util/Locale;
+     661: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     664: goto          1381
+     667: aload_1
+     668: arraylength
+     669: iload_2
+     670: iconst_1
+     671: iadd
+     672: if_icmple     698
+     675: aload_1
+     676: iload_2
+     677: iconst_1
+     678: iadd
+     679: aaload
+     680: ldc           #61                 // String de
+     682: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     685: ifeq          698
+     688: aload_0
+     689: getstatic     #255                // Field java/util/Locale.GERMAN:Ljava/util/Locale;
+     692: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     695: goto          1381
+     698: aload_1
+     699: arraylength
+     700: iload_2
+     701: iconst_1
+     702: iadd
+     703: if_icmple     729
+     706: aload_1
+     707: iload_2
+     708: iconst_1
+     709: iadd
+     710: aaload
+     711: ldc           #63                 // String zh
+     713: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     716: ifeq          729
+     719: aload_0
+     720: getstatic     #258                // Field java/util/Locale.SIMPLIFIED_CHINESE:Ljava/util/Locale;
+     723: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     726: goto          1381
+     729: aload_1
+     730: arraylength
+     731: iload_2
+     732: iconst_1
+     733: iadd
+     734: if_icmple     769
+     737: aload_1
+     738: iload_2
+     739: iconst_1
+     740: iadd
+     741: aaload
+     742: ldc           #65                 // String hi
+     744: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     747: ifeq          769
+     750: aload_0
+     751: new           #88                 // class java/util/Locale
+     754: dup
+     755: ldc           #65                 // String hi
+     757: ldc_w         #261                // String IN
+     760: invokespecial #263                // Method java/util/Locale."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+     763: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     766: goto          1381
+     769: aload_1
+     770: arraylength
+     771: iload_2
+     772: iconst_1
+     773: iadd
+     774: if_icmple     809
+     777: aload_1
+     778: iload_2
+     779: iconst_1
+     780: iadd
+     781: aaload
+     782: ldc           #67                 // String es
+     784: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     787: ifeq          809
+     790: aload_0
+     791: new           #88                 // class java/util/Locale
+     794: dup
+     795: ldc           #67                 // String es
+     797: ldc_w         #266                // String ES
+     800: invokespecial #263                // Method java/util/Locale."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+     803: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     806: goto          1381
+     809: aload_1
+     810: arraylength
+     811: iload_2
+     812: iconst_1
+     813: iadd
+     814: if_icmple     840
+     817: aload_1
+     818: iload_2
+     819: iconst_1
+     820: iadd
+     821: aaload
+     822: ldc           #69                 // String fr
+     824: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     827: ifeq          840
+     830: aload_0
+     831: getstatic     #268                // Field java/util/Locale.FRENCH:Ljava/util/Locale;
+     834: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     837: goto          1381
+     840: aload_1
+     841: arraylength
+     842: iload_2
+     843: iconst_1
+     844: iadd
+     845: if_icmple     880
+     848: aload_1
+     849: iload_2
+     850: iconst_1
+     851: iadd
+     852: aaload
+     853: ldc           #71                 // String ar
+     855: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     858: ifeq          880
+     861: aload_0
+     862: new           #88                 // class java/util/Locale
+     865: dup
+     866: ldc           #71                 // String ar
+     868: ldc_w         #271                // String EG
+     871: invokespecial #263                // Method java/util/Locale."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+     874: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     877: goto          1381
+     880: aload_1
+     881: arraylength
+     882: iload_2
+     883: iconst_1
+     884: iadd
+     885: if_icmple     920
+     888: aload_1
+     889: iload_2
+     890: iconst_1
+     891: iadd
+     892: aaload
+     893: ldc           #73                 // String bn
+     895: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     898: ifeq          920
+     901: aload_0
+     902: new           #88                 // class java/util/Locale
+     905: dup
+     906: ldc           #73                 // String bn
+     908: ldc_w         #273                // String BD
+     911: invokespecial #263                // Method java/util/Locale."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+     914: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     917: goto          1381
+     920: aload_1
+     921: arraylength
+     922: iload_2
+     923: iconst_1
+     924: iadd
+     925: if_icmple     960
+     928: aload_1
+     929: iload_2
+     930: iconst_1
+     931: iadd
+     932: aaload
+     933: ldc           #75                 // String ru
+     935: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     938: ifeq          960
+     941: aload_0
+     942: new           #88                 // class java/util/Locale
+     945: dup
+     946: ldc           #75                 // String ru
+     948: ldc_w         #275                // String RU
+     951: invokespecial #263                // Method java/util/Locale."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+     954: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     957: goto          1381
+     960: aload_1
+     961: arraylength
+     962: iload_2
+     963: iconst_1
+     964: iadd
+     965: if_icmple     1000
+     968: aload_1
+     969: iload_2
+     970: iconst_1
+     971: iadd
+     972: aaload
+     973: ldc           #77                 // String pt
+     975: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+     978: ifeq          1000
+     981: aload_0
+     982: new           #88                 // class java/util/Locale
+     985: dup
+     986: ldc           #77                 // String pt
+     988: ldc_w         #277                // String PT
+     991: invokespecial #263                // Method java/util/Locale."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+     994: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+     997: goto          1381
+    1000: aload_1
+    1001: arraylength
+    1002: iload_2
+    1003: iconst_1
+    1004: iadd
+    1005: if_icmple     1031
+    1008: aload_1
+    1009: iload_2
+    1010: iconst_1
+    1011: iadd
+    1012: aaload
+    1013: ldc           #79                 // String ja
+    1015: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1018: ifeq          1031
+    1021: aload_0
+    1022: getstatic     #279                // Field java/util/Locale.JAPANESE:Ljava/util/Locale;
+    1025: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+    1028: goto          1381
+    1031: aload_1
+    1032: arraylength
+    1033: iload_2
+    1034: iconst_1
+    1035: iadd
+    1036: if_icmple     1381
+    1039: aload_1
+    1040: iload_2
+    1041: iconst_1
+    1042: iadd
+    1043: aaload
+    1044: ldc           #81                 // String ko
+    1046: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1049: ifeq          1381
+    1052: aload_0
+    1053: getstatic     #282                // Field java/util/Locale.KOREAN:Ljava/util/Locale;
+    1056: putfield      #93                 // Field current_locale:Ljava/util/Locale;
+    1059: goto          1381
+    1062: aload_1
+    1063: iload_2
+    1064: aaload
+    1065: ldc_w         #285                // String -s
+    1068: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1071: ifeq          1082
+    1074: aload_0
+    1075: iconst_1
+    1076: putfield      #19                 // Field session_file_option:Z
+    1079: goto          1381
+    1082: aload_1
+    1083: iload_2
+    1084: aaload
+    1085: ldc_w         #287                // String -im
+    1088: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1091: ifeq          1146
+    1094: aload_0
+    1095: iconst_1
+    1096: putfield      #97                 // Field save_intermediate_stages:Z
+    1099: aload_1
+    1100: arraylength
+    1101: iload_2
+    1102: iconst_1
+    1103: iadd
+    1104: if_icmple     1381
+    1107: aload_1
+    1108: iload_2
+    1109: iconst_1
+    1110: iadd
+    1111: aaload
+    1112: ldc           #169                // String -
+    1114: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1117: ifne          1381
+    1120: aload_0
+    1121: aload_1
+    1122: iload_2
+    1123: iconst_1
+    1124: iadd
+    1125: aaload
+    1126: ldc_w         #289                // String 0
+    1129: invokestatic  #291                // Method java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+    1132: ifne          1139
+    1135: iconst_1
+    1136: goto          1140
+    1139: iconst_0
+    1140: putfield      #97                 // Field save_intermediate_stages:Z
+    1143: goto          1381
+    1146: aload_1
+    1147: iload_2
+    1148: aaload
+    1149: ldc_w         #294                // String -w
+    1152: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1155: ifeq          1166
+    1158: aload_0
+    1159: iconst_1
+    1160: putfield      #22                 // Field webstart_option:Z
+    1163: goto          1381
+    1166: aload_1
+    1167: iload_2
+    1168: aaload
+    1169: ldc_w         #296                // String -test
+    1172: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1175: ifeq          1186
+    1178: aload_0
+    1179: iconst_1
+    1180: putfield      #13                 // Field test_version_option:Z
+    1183: goto          1381
+    1186: aload_1
+    1187: iload_2
+    1188: aaload
+    1189: ldc_w         #298                // String -dl
+    1192: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1195: ifeq          1206
+    1198: aload_0
+    1199: iconst_1
+    1200: putfield      #108                // Field disable_logging:Z
+    1203: goto          1381
+    1206: aload_1
+    1207: iload_2
+    1208: aaload
+    1209: ldc_w         #300                // String -da
+    1212: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1215: ifeq          1226
+    1218: aload_0
+    1219: iconst_1
+    1220: putfield      #111                // Field disable_analytics:Z
+    1223: goto          1381
+    1226: aload_1
+    1227: iload_2
+    1228: aaload
+    1229: ldc_w         #302                // String -host
+    1232: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1235: ifeq          1274
+    1238: aload_1
+    1239: arraylength
+    1240: iload_2
+    1241: iconst_1
+    1242: iadd
+    1243: if_icmple     1381
+    1246: aload_1
+    1247: iload_2
+    1248: iconst_1
+    1249: iadd
+    1250: aaload
+    1251: ldc           #169                // String -
+    1253: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1256: ifne          1381
+    1259: aload_0
+    1260: aload_1
+    1261: iload_2
+    1262: iconst_1
+    1263: iadd
+    1264: aaload
+    1265: invokevirtual #218                // Method java/lang/String.trim:()Ljava/lang/String;
+    1268: putfield      #119                // Field host:Ljava/lang/String;
+    1271: goto          1381
+    1274: aload_1
+    1275: iload_2
+    1276: aaload
+    1277: ldc_w         #304                // String -help
+    1280: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1283: ifeq          1294
+    1286: aload_0
+    1287: iconst_1
+    1288: putfield      #16                 // Field show_help_option:Z
+    1291: goto          1381
+    1294: aload_1
+    1295: iload_2
+    1296: aaload
+    1297: ldc_w         #306                // String -inc
+    1300: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1303: ifeq          1324
+    1306: aload_0
+    1307: aload_1
+    1308: iload_2
+    1309: iconst_1
+    1310: iadd
+    1311: aaload
+    1312: ldc_w         #308                // String ,
+    1315: invokevirtual #310                // Method java/lang/String.split:(Ljava/lang/String;)[Ljava/lang/String;
+    1318: putfield      #105                // Field ignore_net_classes_by_autorouter:[Ljava/lang/String;
+    1321: goto          1381
+    1324: aload_1
+    1325: iload_2
+    1326: aaload
+    1327: ldc_w         #314                // String -dct
+    1330: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1333: ifeq          1381
+    1336: aload_1
+    1337: arraylength
+    1338: iload_2
+    1339: iconst_1
+    1340: iadd
+    1341: if_icmple     1381
+    1344: aload_1
+    1345: iload_2
+    1346: iconst_1
+    1347: iadd
+    1348: aaload
+    1349: ldc           #169                // String -
+    1351: invokevirtual #165                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+    1354: ifne          1381
+    1357: aload_0
+    1358: aload_1
+    1359: iload_2
+    1360: iconst_1
+    1361: iadd
+    1362: aaload
+    1363: invokestatic  #316                // Method java/lang/Integer.parseInt:(Ljava/lang/String;)I
+    1366: putfield      #114                // Field dialog_confirmation_timeout:I
+    1369: aload_0
+    1370: getfield      #114                // Field dialog_confirmation_timeout:I
+    1373: ifgt          1381
+    1376: aload_0
+    1377: iconst_0
+    1378: putfield      #114                // Field dialog_confirmation_timeout:I
+    1381: goto          1397
+    1384: astore_3
+    1385: aload_1
+    1386: iload_2
+    1387: aaload
+    1388: invokedynamic #321,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+    1393: aload_3
+    1394: invokestatic  #325                // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+    1397: iinc          2, 1
+    1400: goto          2
+    1403: return
+    Exception table:
+       from    to  target type
+           8  1381  1384   Class java/lang/Exception
+
+  public boolean getWebstartOption();
+    Code:
+       0: aload_0
+       1: getfield      #22                 // Field webstart_option:Z
+       4: ireturn
+
+  public boolean isTestVersion();
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field test_version_option:Z
+       4: ireturn
+
+  public java.lang.String getDesignDir();
+    Code:
+       0: aload_0
+       1: getfield      #176                // Field input_directory:Ljava/lang/String;
+       4: areturn
+
+  public int getMaxPasses();
+    Code:
+       0: aload_0
+       1: getfield      #26                 // Field max_passes:I
+       4: ireturn
+
+  public int getNumThreads();
+    Code:
+       0: aload_0
+       1: getfield      #30                 // Field num_threads:I
+       4: ireturn
+
+  public java.lang.String getHybridRatio();
+    Code:
+       0: aload_0
+       1: getfield      #44                 // Field hybrid_ratio:Ljava/lang/String;
+       4: areturn
+
+  public app.freerouting.autoroute.BoardUpdateStrategy getBoardUpdateStrategy();
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field board_update_strategy:Lapp/freerouting/autoroute/BoardUpdateStrategy;
+       4: areturn
+
+  public app.freerouting.autoroute.ItemSelectionStrategy getItemSelectionStrategy();
+    Code:
+       0: aload_0
+       1: getfield      #54                 // Field item_selection_strategy:Lapp/freerouting/autoroute/ItemSelectionStrategy;
+       4: areturn
+
+  public static void save(app.freerouting.gui.StartupOptions) throws java.io.IOException;
+    Code:
+       0: getstatic     #331                // Field PATH:Ljava/nio/file/Path;
+       3: getstatic     #335                // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+       6: iconst_0
+       7: anewarray     #341                // class java/nio/file/OpenOption
+      10: invokestatic  #343                // Method java/nio/file/Files.newBufferedWriter:(Ljava/nio/file/Path;Ljava/nio/charset/Charset;[Ljava/nio/file/OpenOption;)Ljava/io/BufferedWriter;
+      13: astore_1
+      14: getstatic     #349                // Field GSON:Lcom/google/gson/Gson;
+      17: aload_0
+      18: aload_1
+      19: invokevirtual #353                // Method com/google/gson/Gson.toJson:(Ljava/lang/Object;Ljava/lang/Appendable;)V
+      22: aload_1
+      23: ifnull        53
+      26: aload_1
+      27: invokevirtual #359                // Method java/io/Writer.close:()V
+      30: goto          53
+      33: astore_2
+      34: aload_1
+      35: ifnull        51
+      38: aload_1
+      39: invokevirtual #359                // Method java/io/Writer.close:()V
+      42: goto          51
+      45: astore_3
+      46: aload_2
+      47: aload_3
+      48: invokevirtual #366                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+      51: aload_2
+      52: athrow
+      53: return
+    Exception table:
+       from    to  target type
+          14    22    33   Class java/lang/Throwable
+          38    42    45   Class java/lang/Throwable
+
+  public static app.freerouting.gui.StartupOptions load() throws java.io.IOException;
+    Code:
+       0: getstatic     #331                // Field PATH:Ljava/nio/file/Path;
+       3: getstatic     #335                // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+       6: invokestatic  #370                // Method java/nio/file/Files.newBufferedReader:(Ljava/nio/file/Path;Ljava/nio/charset/Charset;)Ljava/io/BufferedReader;
+       9: astore_0
+      10: getstatic     #349                // Field GSON:Lcom/google/gson/Gson;
+      13: aload_0
+      14: ldc           #8                  // class app/freerouting/gui/StartupOptions
+      16: invokevirtual #374                // Method com/google/gson/Gson.fromJson:(Ljava/io/Reader;Ljava/lang/Class;)Ljava/lang/Object;
+      19: checkcast     #8                  // class app/freerouting/gui/StartupOptions
+      22: astore_1
+      23: aload_0
+      24: ifnull        31
+      27: aload_0
+      28: invokevirtual #378                // Method java/io/Reader.close:()V
+      31: aload_1
+      32: areturn
+      33: astore_1
+      34: aload_0
+      35: ifnull        51
+      38: aload_0
+      39: invokevirtual #378                // Method java/io/Reader.close:()V
+      42: goto          51
+      45: astore_2
+      46: aload_1
+      47: aload_2
+      48: invokevirtual #366                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+      51: aload_1
+      52: athrow
+    Exception table:
+       from    to  target type
+          10    23    33   Class java/lang/Throwable
+          38    42    45   Class java/lang/Throwable
+
+  static {};
+    Code:
+       0: new           #381                // class com/google/gson/GsonBuilder
+       3: dup
+       4: invokespecial #383                // Method com/google/gson/GsonBuilder."<init>":()V
+       7: invokevirtual #384                // Method com/google/gson/GsonBuilder.setPrettyPrinting:()Lcom/google/gson/GsonBuilder;
+      10: invokevirtual #388                // Method com/google/gson/GsonBuilder.create:()Lcom/google/gson/Gson;
+      13: putstatic     #349                // Field GSON:Lcom/google/gson/Gson;
+      16: ldc_w         #392                // String java.io.tmpdir
+      19: invokestatic  #394                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+      22: iconst_1
+      23: anewarray     #57                 // class java/lang/String
+      26: dup
+      27: iconst_0
+      28: ldc_w         #399                // String freerouting.json
+      31: aastore
+      32: invokestatic  #401                // Method java/nio/file/Paths.get:(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+      35: putstatic     #331                // Field PATH:Ljava/nio/file/Path;
+      38: return
+}

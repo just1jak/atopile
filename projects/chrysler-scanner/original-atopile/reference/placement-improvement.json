@@ -1,0 +1,15 @@
+{
+  "measurement": "Straight-line copper pad-center distance, not routed trace length",
+  "checked_bypass_parts": 14,
+  "before_mm": {
+    "mean": 17.314,
+    "max": 46.335
+  },
+  "after_mm": {
+    "mean": 1.914,
+    "max": 2.354
+  },
+  "constraints": 37,
+  "note": "Not a DRC, EMI or circuit-performance result",
+  "applies_to": "Initial migration regrouping before board enlargement and the first placement refinement; historical measurements."
+}

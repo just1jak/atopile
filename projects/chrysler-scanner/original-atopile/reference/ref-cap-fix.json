@@ -1,0 +1,32 @@
+{
+  "verified_utc": "2026-10-13T04:45:24.473688+00:00",
+  "reference_fix": {
+    "cause": "Atopile hides Reference properties and restores legacy REF** footprint text during PCB updates",
+    "visible_reference_fields": 243,
+    "reference_layer": "F.SilkS",
+    "text_height_mm": 0.8,
+    "text_stroke_mm": 0.12,
+    "F_Fab_identifiers_added": 243,
+    "post_build_helper": "scripts/finish_board.py"
+  },
+  "capacitor_fix": {
+    "reference": "C1",
+    "cause": "Previous placement and validator ignored fp_circle courtyards and used only C1 pad bounds",
+    "value_unchanged": "100 uF",
+    "footprint_unchanged": "CP_Radial_D8.0mm_P3.50mm",
+    "physical_body_diameter_mm": 8.0,
+    "full_courtyard_diameter_mm": 8.5,
+    "footprint_origin_board_mm": [
+      11.25,
+      44.75
+    ],
+    "body_center_board_mm": [
+      13.0,
+      44.75
+    ],
+    "body_and_hardware_clearance": "PASS"
+  },
+  "netlist_unchanged": true,
+  "outline_and_fixed_connectors_unchanged": true,
+  "routing_complete": false
+}

@@ -688,6 +688,18 @@ class AgentSession:
         call because the OpenAI Responses API does not carry them over
         when using previous_response_id.
         """
+        if isinstance(self._provider, CodexProvider):
+            history = self._messages
+            if (
+                history
+                and history[-1].get("role") == "assistant"
+                and history[-1].get("pending")
+            ):
+                # Exclude the active user/assistant pair, which is sent below.
+                history = history[:-1]
+                if history and history[-1].get("role") == "user":
+                    history = history[:-1]
+            self._provider.set_display_history(history)
         async for event in self._provider.stream(
             messages=messages,
             instructions=scope.build_instructions(),

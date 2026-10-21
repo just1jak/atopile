@@ -1,0 +1,3069 @@
+Compiled from "MazeSearchAlgo.java"
+public class app.freerouting.autoroute.MazeSearchAlgo {
+  private static final int ALREADY_RIPPED_COSTS;
+
+  public final app.freerouting.autoroute.AutorouteEngine autoroute_engine;
+
+  final app.freerouting.autoroute.AutorouteControl ctrl;
+
+  final java.util.SortedSet<app.freerouting.autoroute.MazeListElement> maze_expansion_list;
+
+  final app.freerouting.autoroute.DestinationDistance destination_distance;
+
+  private final app.freerouting.board.ShapeSearchTree search_tree;
+
+  private final java.util.Random random_generator;
+
+  private app.freerouting.autoroute.ExpandableObject destination_door;
+
+  private int section_no_of_destination_door;
+
+  app.freerouting.autoroute.MazeSearchAlgo(app.freerouting.autoroute.AutorouteEngine, app.freerouting.autoroute.AutorouteControl);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #7                  // class java/util/Random
+       8: dup
+       9: invokespecial #9                  // Method java/util/Random."<init>":()V
+      12: putfield      #10                 // Field random_generator:Ljava/util/Random;
+      15: aload_0
+      16: iconst_0
+      17: putfield      #16                 // Field section_no_of_destination_door:I
+      20: aload_0
+      21: aload_1
+      22: putfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+      25: aload_0
+      26: aload_2
+      27: putfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      30: aload_0
+      31: getfield      #10                 // Field random_generator:Ljava/util/Random;
+      34: aload_2
+      35: getfield      #28                 // Field app/freerouting/autoroute/AutorouteControl.ripup_costs:I
+      38: i2l
+      39: invokevirtual #33                 // Method java/util/Random.setSeed:(J)V
+      42: aload_0
+      43: aload_1
+      44: getfield      #37                 // Field app/freerouting/autoroute/AutorouteEngine.autoroute_search_tree:Lapp/freerouting/board/ShapeSearchTree;
+      47: putfield      #43                 // Field search_tree:Lapp/freerouting/board/ShapeSearchTree;
+      50: aload_0
+      51: new           #46                 // class java/util/TreeSet
+      54: dup
+      55: invokespecial #48                 // Method java/util/TreeSet."<init>":()V
+      58: putfield      #49                 // Field maze_expansion_list:Ljava/util/SortedSet;
+      61: aload_0
+      62: new           #53                 // class app/freerouting/autoroute/DestinationDistance
+      65: dup
+      66: aload_0
+      67: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      70: getfield      #55                 // Field app/freerouting/autoroute/AutorouteControl.trace_costs:[Lapp/freerouting/autoroute/AutorouteControl$ExpansionCostFactor;
+      73: aload_0
+      74: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      77: getfield      #59                 // Field app/freerouting/autoroute/AutorouteControl.layer_active:[Z
+      80: aload_0
+      81: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      84: getfield      #63                 // Field app/freerouting/autoroute/AutorouteControl.min_normal_via_cost:D
+      87: aload_0
+      88: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      91: getfield      #67                 // Field app/freerouting/autoroute/AutorouteControl.min_cheap_via_cost:D
+      94: invokespecial #70                 // Method app/freerouting/autoroute/DestinationDistance."<init>":([Lapp/freerouting/autoroute/AutorouteControl$ExpansionCostFactor;[ZDD)V
+      97: putfield      #73                 // Field destination_distance:Lapp/freerouting/autoroute/DestinationDistance;
+     100: return
+
+  public static app.freerouting.autoroute.MazeSearchAlgo get_instance(java.util.Set<app.freerouting.board.Item>, java.util.Set<app.freerouting.board.Item>, app.freerouting.autoroute.AutorouteEngine, app.freerouting.autoroute.AutorouteControl);
+    Code:
+       0: new           #11                 // class app/freerouting/autoroute/MazeSearchAlgo
+       3: dup
+       4: aload_2
+       5: aload_3
+       6: invokespecial #77                 // Method "<init>":(Lapp/freerouting/autoroute/AutorouteEngine;Lapp/freerouting/autoroute/AutorouteControl;)V
+       9: astore        4
+      11: aload         4
+      13: aload_0
+      14: aload_1
+      15: invokevirtual #80                 // Method init:(Ljava/util/Set;Ljava/util/Set;)Z
+      18: ifeq          28
+      21: aload         4
+      23: astore        5
+      25: goto          31
+      28: aconst_null
+      29: astore        5
+      31: aload         5
+      33: areturn
+
+  private static void reduce_trace_shapes_at_tie_pins(java.util.Collection<app.freerouting.board.Item>, int, app.freerouting.board.ShapeSearchTree);
+    Code:
+       0: aload_0
+       1: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+       6: astore_3
+       7: aload_3
+       8: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      13: ifeq          126
+      16: aload_3
+      17: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      22: checkcast     #100                // class app/freerouting/board/Item
+      25: astore        4
+      27: aload         4
+      29: instanceof    #102                // class app/freerouting/board/Pin
+      32: ifeq          123
+      35: aload         4
+      37: invokevirtual #104                // Method app/freerouting/board/Item.net_count:()I
+      40: iconst_1
+      41: if_icmple     123
+      44: aload         4
+      46: invokevirtual #108                // Method app/freerouting/board/Item.get_normal_contacts:()Ljava/util/Set;
+      49: astore        5
+      51: aload         4
+      53: checkcast     #102                // class app/freerouting/board/Pin
+      56: astore        6
+      58: aload         5
+      60: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      65: astore        7
+      67: aload         7
+      69: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      74: ifeq          123
+      77: aload         7
+      79: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      84: checkcast     #100                // class app/freerouting/board/Item
+      87: astore        8
+      89: aload         8
+      91: instanceof    #112                // class app/freerouting/board/PolylineTrace
+      94: ifeq          67
+      97: aload         8
+      99: iload_1
+     100: invokevirtual #114                // Method app/freerouting/board/Item.contains_net:(I)Z
+     103: ifeq          109
+     106: goto          67
+     109: aload_2
+     110: aload         6
+     112: aload         8
+     114: checkcast     #112                // class app/freerouting/board/PolylineTrace
+     117: invokevirtual #118                // Method app/freerouting/board/ShapeSearchTree.reduce_trace_shape_at_tie_pin:(Lapp/freerouting/board/Pin;Lapp/freerouting/board/PolylineTrace;)V
+     120: goto          67
+     123: goto          7
+     126: return
+
+  private static double calc_fanout_via_ripup_cost_factor(app.freerouting.board.Trace);
+    Code:
+       0: ldc2_w        #124                // double 20000.0d
+       3: dstore_1
+       4: iconst_0
+       5: istore        4
+       7: iload         4
+       9: iconst_2
+      10: if_icmpge     177
+      13: iload         4
+      15: ifne          26
+      18: aload_0
+      19: invokevirtual #126                // Method app/freerouting/board/Trace.get_start_contacts:()Ljava/util/Set;
+      22: astore_3
+      23: goto          31
+      26: aload_0
+      27: invokevirtual #131                // Method app/freerouting/board/Trace.get_end_contacts:()Ljava/util/Set;
+      30: astore_3
+      31: aload_3
+      32: invokeinterface #134,  1          // InterfaceMethod java/util/Collection.size:()I
+      37: iconst_1
+      38: if_icmpeq     44
+      41: goto          171
+      44: aload_3
+      45: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      50: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      55: checkcast     #100                // class app/freerouting/board/Item
+      58: astore        5
+      60: iconst_0
+      61: istore        6
+      63: aload         5
+      65: instanceof    #102                // class app/freerouting/board/Pin
+      68: ifeq          90
+      71: aload         5
+      73: invokevirtual #137                // Method app/freerouting/board/Item.first_layer:()I
+      76: aload         5
+      78: invokevirtual #140                // Method app/freerouting/board/Item.last_layer:()I
+      81: if_icmpne     90
+      84: iconst_1
+      85: istore        6
+      87: goto          128
+      90: aload         5
+      92: instanceof    #112                // class app/freerouting/board/PolylineTrace
+      95: ifeq          128
+      98: aload         5
+     100: invokevirtual #143                // Method app/freerouting/board/Item.get_fixed_state:()Lapp/freerouting/board/FixedState;
+     103: getstatic     #147                // Field app/freerouting/board/FixedState.SHOVE_FIXED:Lapp/freerouting/board/FixedState;
+     106: if_acmpne     128
+     109: aload         5
+     111: checkcast     #112                // class app/freerouting/board/PolylineTrace
+     114: astore        7
+     116: aload         7
+     118: invokevirtual #153                // Method app/freerouting/board/PolylineTrace.corner_count:()I
+     121: iconst_2
+     122: if_icmpne     128
+     125: iconst_1
+     126: istore        6
+     128: iload         6
+     130: ifeq          171
+     133: aload_0
+     134: invokevirtual #156                // Method app/freerouting/board/Trace.get_half_width:()I
+     137: i2d
+     138: aload_0
+     139: invokevirtual #159                // Method app/freerouting/board/Trace.get_length:()D
+     142: ddiv
+     143: dstore        7
+     145: dload         7
+     147: dload         7
+     149: dmul
+     150: dstore        7
+     152: dload         7
+     154: ldc2_w        #124                // double 20000.0d
+     157: dmul
+     158: dstore        7
+     160: dload         7
+     162: dconst_1
+     163: invokestatic  #163                // Method java/lang/Math.max:(DD)D
+     166: dstore        7
+     168: dload         7
+     170: dreturn
+     171: iinc          4, 1
+     174: goto          7
+     177: dconst_1
+     178: dreturn
+
+  private static app.freerouting.geometry.planar.FloatLine segment_projection(app.freerouting.geometry.planar.FloatLine, app.freerouting.geometry.planar.FloatLine);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #169                // Method app/freerouting/geometry/planar/FloatLine.adjust_direction:(Lapp/freerouting/geometry/planar/FloatLine;)Lapp/freerouting/geometry/planar/FloatLine;
+       5: astore_2
+       6: aload_1
+       7: aload_2
+       8: invokevirtual #175                // Method app/freerouting/geometry/planar/FloatLine.segment_projection:(Lapp/freerouting/geometry/planar/FloatLine;)Lapp/freerouting/geometry/planar/FloatLine;
+      11: astore_3
+      12: aload_1
+      13: aload_2
+      14: invokevirtual #178                // Method app/freerouting/geometry/planar/FloatLine.segment_projection_2:(Lapp/freerouting/geometry/planar/FloatLine;)Lapp/freerouting/geometry/planar/FloatLine;
+      17: astore        4
+      19: aload_3
+      20: ifnull        194
+      23: aload         4
+      25: ifnull        194
+      28: aload_3
+      29: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      32: aload_1
+      33: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      36: if_acmpeq     51
+      39: aload         4
+      41: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      44: aload_1
+      45: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      48: if_acmpne     60
+      51: aload_1
+      52: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      55: astore        6
+      57: goto          103
+      60: aload_3
+      61: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      64: aload_1
+      65: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      68: invokevirtual #185                // Method app/freerouting/geometry/planar/FloatPoint.distance_square:(Lapp/freerouting/geometry/planar/FloatPoint;)D
+      71: aload         4
+      73: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      76: aload_1
+      77: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      80: invokevirtual #185                // Method app/freerouting/geometry/planar/FloatPoint.distance_square:(Lapp/freerouting/geometry/planar/FloatPoint;)D
+      83: dcmpg
+      84: ifgt          96
+      87: aload_3
+      88: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      91: astore        6
+      93: goto          103
+      96: aload         4
+      98: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+     101: astore        6
+     103: aload_3
+     104: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     107: aload_1
+     108: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     111: if_acmpeq     126
+     114: aload         4
+     116: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     119: aload_1
+     120: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     123: if_acmpne     135
+     126: aload_1
+     127: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     130: astore        7
+     132: goto          178
+     135: aload_3
+     136: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     139: aload_1
+     140: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     143: invokevirtual #185                // Method app/freerouting/geometry/planar/FloatPoint.distance_square:(Lapp/freerouting/geometry/planar/FloatPoint;)D
+     146: aload         4
+     148: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     151: aload_1
+     152: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     155: invokevirtual #185                // Method app/freerouting/geometry/planar/FloatPoint.distance_square:(Lapp/freerouting/geometry/planar/FloatPoint;)D
+     158: dcmpg
+     159: ifgt          171
+     162: aload_3
+     163: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     166: astore        7
+     168: goto          178
+     171: aload         4
+     173: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     176: astore        7
+     178: new           #170                // class app/freerouting/geometry/planar/FloatLine
+     181: dup
+     182: aload         6
+     184: aload         7
+     186: invokespecial #194                // Method app/freerouting/geometry/planar/FloatLine."<init>":(Lapp/freerouting/geometry/planar/FloatPoint;Lapp/freerouting/geometry/planar/FloatPoint;)V
+     189: astore        5
+     191: goto          208
+     194: aload_3
+     195: ifnull        204
+     198: aload_3
+     199: astore        5
+     201: goto          208
+     204: aload         4
+     206: astore        5
+     208: aload         5
+     210: areturn
+
+  public app.freerouting.autoroute.MazeSearchAlgo$Result find_connection();
+    Code:
+       0: aload_0
+       1: invokevirtual #197                // Method occupy_next_element:()Z
+       4: ifeq          10
+       7: goto          0
+      10: aload_0
+      11: getfield      #200                // Field destination_door:Lapp/freerouting/autoroute/ExpandableObject;
+      14: ifnonnull     19
+      17: aconst_null
+      18: areturn
+      19: new           #204                // class app/freerouting/autoroute/MazeSearchAlgo$Result
+      22: dup
+      23: aload_0
+      24: getfield      #200                // Field destination_door:Lapp/freerouting/autoroute/ExpandableObject;
+      27: aload_0
+      28: getfield      #16                 // Field section_no_of_destination_door:I
+      31: invokespecial #206                // Method app/freerouting/autoroute/MazeSearchAlgo$Result."<init>":(Lapp/freerouting/autoroute/ExpandableObject;I)V
+      34: areturn
+
+  public boolean occupy_next_element();
+    Code:
+       0: aload_0
+       1: getfield      #200                // Field destination_door:Lapp/freerouting/autoroute/ExpandableObject;
+       4: ifnull        9
+       7: iconst_0
+       8: ireturn
+       9: aconst_null
+      10: astore_1
+      11: aconst_null
+      12: astore_2
+      13: iconst_0
+      14: istore_3
+      15: aload_0
+      16: getfield      #49                 // Field maze_expansion_list:Ljava/util/SortedSet;
+      19: invokeinterface #209,  1          // InterfaceMethod java/util/SortedSet.isEmpty:()Z
+      24: ifne          101
+      27: aload_0
+      28: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+      31: invokevirtual #214                // Method app/freerouting/autoroute/AutorouteEngine.is_stop_requested:()Z
+      34: ifeq          39
+      37: iconst_0
+      38: ireturn
+      39: aload_0
+      40: getfield      #49                 // Field maze_expansion_list:Ljava/util/SortedSet;
+      43: invokeinterface #217,  1          // InterfaceMethod java/util/SortedSet.iterator:()Ljava/util/Iterator;
+      48: astore        4
+      50: aload         4
+      52: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      57: checkcast     #218                // class app/freerouting/autoroute/MazeListElement
+      60: astore_1
+      61: aload_1
+      62: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+      65: istore        5
+      67: aload_1
+      68: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+      71: iload         5
+      73: invokeinterface #226,  2          // InterfaceMethod app/freerouting/autoroute/ExpandableObject.get_maze_search_element:(I)Lapp/freerouting/autoroute/MazeSearchElement;
+      78: astore_2
+      79: aload         4
+      81: invokeinterface #232,  1          // InterfaceMethod java/util/Iterator.remove:()V
+      86: aload_2
+      87: getfield      #235                // Field app/freerouting/autoroute/MazeSearchElement.is_occupied:Z
+      90: ifne          98
+      93: iconst_1
+      94: istore_3
+      95: goto          101
+      98: goto          15
+     101: iload_3
+     102: ifne          107
+     105: iconst_0
+     106: ireturn
+     107: aload_2
+     108: aload_1
+     109: getfield      #241                // Field app/freerouting/autoroute/MazeListElement.backtrack_door:Lapp/freerouting/autoroute/ExpandableObject;
+     112: putfield      #244                // Field app/freerouting/autoroute/MazeSearchElement.backtrack_door:Lapp/freerouting/autoroute/ExpandableObject;
+     115: aload_2
+     116: aload_1
+     117: getfield      #245                // Field app/freerouting/autoroute/MazeListElement.section_no_of_backtrack_door:I
+     120: putfield      #248                // Field app/freerouting/autoroute/MazeSearchElement.section_no_of_backtrack_door:I
+     123: aload_2
+     124: aload_1
+     125: getfield      #249                // Field app/freerouting/autoroute/MazeListElement.room_ripped:Z
+     128: putfield      #252                // Field app/freerouting/autoroute/MazeSearchElement.room_ripped:Z
+     131: aload_2
+     132: aload_1
+     133: getfield      #253                // Field app/freerouting/autoroute/MazeListElement.adjustment:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     136: putfield      #257                // Field app/freerouting/autoroute/MazeSearchElement.adjustment:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     139: aload_1
+     140: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     143: instanceof    #258                // class app/freerouting/autoroute/DrillPage
+     146: ifeq          156
+     149: aload_0
+     150: aload_1
+     151: invokevirtual #260                // Method expand_to_drills_of_page:(Lapp/freerouting/autoroute/MazeListElement;)V
+     154: iconst_1
+     155: ireturn
+     156: aload_1
+     157: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     160: instanceof    #264                // class app/freerouting/autoroute/TargetItemExpansionDoor
+     163: ifeq          199
+     166: aload_1
+     167: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     170: checkcast     #264                // class app/freerouting/autoroute/TargetItemExpansionDoor
+     173: astore        4
+     175: aload         4
+     177: invokevirtual #266                // Method app/freerouting/autoroute/TargetItemExpansionDoor.is_destination_door:()Z
+     180: ifeq          199
+     183: aload_0
+     184: aload         4
+     186: putfield      #200                // Field destination_door:Lapp/freerouting/autoroute/ExpandableObject;
+     189: aload_0
+     190: aload_1
+     191: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+     194: putfield      #16                 // Field section_no_of_destination_door:I
+     197: iconst_0
+     198: ireturn
+     199: aload_0
+     200: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     203: getfield      #269                // Field app/freerouting/autoroute/AutorouteControl.is_fanout:Z
+     206: ifeq          247
+     209: aload_1
+     210: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     213: instanceof    #272                // class app/freerouting/autoroute/ExpansionDrill
+     216: ifeq          247
+     219: aload_1
+     220: getfield      #241                // Field app/freerouting/autoroute/MazeListElement.backtrack_door:Lapp/freerouting/autoroute/ExpandableObject;
+     223: instanceof    #272                // class app/freerouting/autoroute/ExpansionDrill
+     226: ifeq          247
+     229: aload_0
+     230: aload_1
+     231: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     234: putfield      #200                // Field destination_door:Lapp/freerouting/autoroute/ExpandableObject;
+     237: aload_0
+     238: aload_1
+     239: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+     242: putfield      #16                 // Field section_no_of_destination_door:I
+     245: iconst_0
+     246: ireturn
+     247: aload_0
+     248: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     251: getfield      #274                // Field app/freerouting/autoroute/AutorouteControl.vias_allowed:Z
+     254: ifeq          282
+     257: aload_1
+     258: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     261: instanceof    #272                // class app/freerouting/autoroute/ExpansionDrill
+     264: ifeq          282
+     267: aload_1
+     268: getfield      #241                // Field app/freerouting/autoroute/MazeListElement.backtrack_door:Lapp/freerouting/autoroute/ExpandableObject;
+     271: instanceof    #272                // class app/freerouting/autoroute/ExpansionDrill
+     274: ifne          282
+     277: aload_0
+     278: aload_1
+     279: invokevirtual #277                // Method expand_to_other_layers:(Lapp/freerouting/autoroute/MazeListElement;)V
+     282: aload_1
+     283: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     286: ifnull        299
+     289: aload_0
+     290: aload_1
+     291: invokevirtual #284                // Method expand_to_room_doors:(Lapp/freerouting/autoroute/MazeListElement;)Z
+     294: ifne          299
+     297: iconst_1
+     298: ireturn
+     299: aload_2
+     300: iconst_1
+     301: putfield      #235                // Field app/freerouting/autoroute/MazeSearchElement.is_occupied:Z
+     304: iconst_1
+     305: ireturn
+
+  private boolean expand_to_room_doors(app.freerouting.autoroute.MazeListElement);
+    Code:
+       0: aload_1
+       1: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+       4: invokeinterface #288,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_layer:()I
+       9: istore_2
+      10: aload_0
+      11: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      14: getfield      #59                 // Field app/freerouting/autoroute/AutorouteControl.layer_active:[Z
+      17: iload_2
+      18: baload
+      19: istore_3
+      20: iload_3
+      21: ifne          47
+      24: aload_0
+      25: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+      28: getfield      #293                // Field app/freerouting/autoroute/AutorouteEngine.board:Lapp/freerouting/board/RoutingBoard;
+      31: getfield      #297                // Field app/freerouting/board/RoutingBoard.layer_structure:Lapp/freerouting/board/LayerStructure;
+      34: getfield      #303                // Field app/freerouting/board/LayerStructure.arr:[Lapp/freerouting/board/Layer;
+      37: iload_2
+      38: aaload
+      39: getfield      #309                // Field app/freerouting/board/Layer.is_signal:Z
+      42: ifeq          47
+      45: iconst_1
+      46: ireturn
+      47: aload_0
+      48: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      51: getfield      #314                // Field app/freerouting/autoroute/AutorouteControl.compensated_trace_half_width:[I
+      54: iload_2
+      55: iaload
+      56: i2d
+      57: dstore        4
+      59: iconst_0
+      60: istore        6
+      62: aload_1
+      63: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+      66: instanceof    #318                // class app/freerouting/autoroute/ExpansionDoor
+      69: ifeq          143
+      72: dload         4
+      74: ldc2_w        #320                // double 2.0d
+      77: dadd
+      78: dstore        7
+      80: aload_1
+      81: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+      84: checkcast     #318                // class app/freerouting/autoroute/ExpansionDoor
+      87: astore        9
+      89: aload_0
+      90: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      93: getfield      #322                // Field app/freerouting/autoroute/AutorouteControl.with_neckdown:Z
+      96: ifeq          129
+      99: aload_0
+     100: aload_1
+     101: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     104: invokevirtual #325                // Method check_neck_down_at_dest_pin:(Lapp/freerouting/autoroute/CompleteExpansionRoom;)D
+     107: dstore        10
+     109: dload         10
+     111: dconst_0
+     112: dcmpl
+     113: ifle          129
+     116: dload         7
+     118: dload         10
+     120: invokestatic  #329                // Method java/lang/Math.min:(DD)D
+     123: dstore        7
+     125: dload         7
+     127: dstore        4
+     129: aload_0
+     130: aload         9
+     132: ldc2_w        #320                // double 2.0d
+     135: dload         7
+     137: dmul
+     138: invokevirtual #332                // Method door_is_small:(Lapp/freerouting/autoroute/ExpansionDoor;D)Z
+     141: istore        6
+     143: aload_0
+     144: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     147: aload_1
+     148: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     151: invokevirtual #336                // Method app/freerouting/autoroute/AutorouteEngine.complete_neighbour_rooms:(Lapp/freerouting/autoroute/CompleteExpansionRoom;)V
+     154: aload_1
+     155: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+     158: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+     161: aload_1
+     162: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+     165: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     168: invokevirtual #344                // Method app/freerouting/geometry/planar/FloatPoint.middle_point:(Lapp/freerouting/geometry/planar/FloatPoint;)Lapp/freerouting/geometry/planar/FloatPoint;
+     171: astore        7
+     173: aload_0
+     174: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     177: getfield      #322                // Field app/freerouting/autoroute/AutorouteControl.with_neckdown:Z
+     180: ifeq          241
+     183: aload_1
+     184: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     187: instanceof    #264                // class app/freerouting/autoroute/TargetItemExpansionDoor
+     190: ifeq          241
+     193: aload_1
+     194: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     197: checkcast     #264                // class app/freerouting/autoroute/TargetItemExpansionDoor
+     200: getfield      #348                // Field app/freerouting/autoroute/TargetItemExpansionDoor.item:Lapp/freerouting/board/Item;
+     203: astore        8
+     205: aload         8
+     207: instanceof    #102                // class app/freerouting/board/Pin
+     210: ifeq          241
+     213: aload         8
+     215: checkcast     #102                // class app/freerouting/board/Pin
+     218: iload_2
+     219: invokevirtual #352                // Method app/freerouting/board/Pin.get_trace_neckdown_halfwidth:(I)I
+     222: i2d
+     223: dstore        9
+     225: dload         9
+     227: dconst_0
+     228: dcmpl
+     229: ifle          241
+     232: dload         4
+     234: dload         9
+     236: invokestatic  #329                // Method java/lang/Math.min:(DD)D
+     239: dstore        4
+     241: iconst_1
+     242: istore        8
+     244: aload_1
+     245: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     248: instanceof    #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+     251: ifeq          270
+     254: aload_0
+     255: aload_1
+     256: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     259: checkcast     #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+     262: invokevirtual #358                // Method room_shape_is_thick:(Lapp/freerouting/autoroute/ObstacleExpansionRoom;)Z
+     265: istore        8
+     267: goto          384
+     270: aload_1
+     271: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     274: invokeinterface #362,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+     279: astore        9
+     281: aload         9
+     283: invokevirtual #366                // Method app/freerouting/geometry/planar/TileShape.min_width:()D
+     286: ldc2_w        #320                // double 2.0d
+     289: dload         4
+     291: dmul
+     292: dcmpg
+     293: ifge          302
+     296: iconst_0
+     297: istore        8
+     299: goto          384
+     302: aload_1
+     303: getfield      #371                // Field app/freerouting/autoroute/MazeListElement.already_checked:Z
+     306: ifne          384
+     309: aload_1
+     310: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     313: invokeinterface #374,  1          // InterfaceMethod app/freerouting/autoroute/ExpandableObject.get_dimension:()I
+     318: iconst_1
+     319: if_icmpne     384
+     322: iload         6
+     324: ifne          384
+     327: aload         9
+     329: aload         7
+     331: iconst_2
+     332: invokevirtual #377                // Method app/freerouting/geometry/planar/TileShape.nearest_border_points_approx:(Lapp/freerouting/geometry/planar/FloatPoint;I)[Lapp/freerouting/geometry/planar/FloatPoint;
+     335: astore        10
+     337: aload         10
+     339: arraylength
+     340: iconst_2
+     341: if_icmpge     356
+     344: ldc_w         #381                // String MazeSearchAlgo.expand_to_room_doors: nearest_points.length == 2 expected
+     347: invokestatic  #383                // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+     350: iconst_0
+     351: istore        8
+     353: goto          384
+     356: aload         10
+     358: iconst_1
+     359: aaload
+     360: aload         7
+     362: invokevirtual #389                // Method app/freerouting/geometry/planar/FloatPoint.distance:(Lapp/freerouting/geometry/planar/FloatPoint;)D
+     365: dstore        11
+     367: dload         11
+     369: dload         4
+     371: dconst_1
+     372: dadd
+     373: dcmpl
+     374: ifle          381
+     377: iconst_1
+     378: goto          382
+     381: iconst_0
+     382: istore        8
+     384: iload_3
+     385: ifne          490
+     388: aload_1
+     389: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     392: instanceof    #272                // class app/freerouting/autoroute/ExpansionDrill
+     395: ifeq          490
+     398: aload_1
+     399: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     402: checkcast     #272                // class app/freerouting/autoroute/ExpansionDrill
+     405: getfield      #392                // Field app/freerouting/autoroute/ExpansionDrill.location:Lapp/freerouting/geometry/planar/Point;
+     408: astore        9
+     410: new           #396                // class app/freerouting/board/ItemSelectionFilter
+     413: dup
+     414: getstatic     #398                // Field app/freerouting/board/ItemSelectionFilter$SelectableChoices.CONDUCTION:Lapp/freerouting/board/ItemSelectionFilter$SelectableChoices;
+     417: invokespecial #404                // Method app/freerouting/board/ItemSelectionFilter."<init>":(Lapp/freerouting/board/ItemSelectionFilter$SelectableChoices;)V
+     420: astore        10
+     422: aload_0
+     423: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     426: getfield      #293                // Field app/freerouting/autoroute/AutorouteEngine.board:Lapp/freerouting/board/RoutingBoard;
+     429: aload         9
+     431: iload_2
+     432: aload         10
+     434: invokevirtual #407                // Method app/freerouting/board/RoutingBoard.pick_items:(Lapp/freerouting/geometry/planar/Point;ILapp/freerouting/board/ItemSelectionFilter;)Ljava/util/Set;
+     437: astore        11
+     439: aload         11
+     441: invokeinterface #411,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     446: astore        12
+     448: aload         12
+     450: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     455: ifeq          490
+     458: aload         12
+     460: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     465: checkcast     #100                // class app/freerouting/board/Item
+     468: astore        13
+     470: aload         13
+     472: aload_0
+     473: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     476: getfield      #414                // Field app/freerouting/autoroute/AutorouteControl.net_no:I
+     479: invokevirtual #114                // Method app/freerouting/board/Item.contains_net:(I)Z
+     482: ifne          487
+     485: iconst_1
+     486: ireturn
+     487: goto          448
+     490: aload_0
+     491: aload_1
+     492: iload         8
+     494: iload         6
+     496: aload         7
+     498: invokevirtual #417                // Method expand_to_target_doors:(Lapp/freerouting/autoroute/MazeListElement;ZZLapp/freerouting/geometry/planar/FloatPoint;)Z
+     501: istore        9
+     503: iload_3
+     504: ifne          509
+     507: iconst_1
+     508: ireturn
+     509: iconst_0
+     510: istore        10
+     512: aload_1
+     513: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     516: instanceof    #421                // class app/freerouting/autoroute/FreeSpaceExpansionRoom
+     519: ifeq          560
+     522: aload_1
+     523: getfield      #371                // Field app/freerouting/autoroute/MazeListElement.already_checked:Z
+     526: ifne          758
+     529: iload         6
+     531: ifeq          758
+     534: iconst_0
+     535: istore        11
+     537: iload         8
+     539: ifeq          549
+     542: aload_0
+     543: aload_1
+     544: invokevirtual #423                // Method check_leaving_ripped_item:(Lapp/freerouting/autoroute/MazeListElement;)Z
+     547: istore        11
+     549: iload         11
+     551: ifne          557
+     554: iload         9
+     556: ireturn
+     557: goto          758
+     560: aload_1
+     561: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     564: instanceof    #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+     567: ifeq          758
+     570: aload_1
+     571: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     574: checkcast     #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+     577: astore        11
+     579: aload_1
+     580: getfield      #371                // Field app/freerouting/autoroute/MazeListElement.already_checked:Z
+     583: ifne          758
+     586: iconst_0
+     587: istore        12
+     589: aload_0
+     590: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     593: getfield      #426                // Field app/freerouting/autoroute/AutorouteControl.ripup_allowed:Z
+     596: ifeq          625
+     599: aload_0
+     600: aload_1
+     601: aload         11
+     603: invokevirtual #429                // Method app/freerouting/autoroute/ObstacleExpansionRoom.get_item:()Lapp/freerouting/board/Item;
+     606: iload         6
+     608: invokevirtual #433                // Method check_ripup:(Lapp/freerouting/autoroute/MazeListElement;Lapp/freerouting/board/Item;Z)I
+     611: istore        10
+     613: iload         10
+     615: iflt          622
+     618: iconst_1
+     619: goto          623
+     622: iconst_0
+     623: istore        12
+     625: iload         10
+     627: iconst_1
+     628: if_icmpeq     751
+     631: iload         8
+     633: ifeq          751
+     636: aload         11
+     638: invokevirtual #429                // Method app/freerouting/autoroute/ObstacleExpansionRoom.get_item:()Lapp/freerouting/board/Item;
+     641: astore        13
+     643: iload         6
+     645: ifne          751
+     648: aload_0
+     649: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     652: getfield      #437                // Field app/freerouting/autoroute/AutorouteControl.max_shove_trace_recursion_depth:I
+     655: ifle          751
+     658: aload         13
+     660: instanceof    #112                // class app/freerouting/board/PolylineTrace
+     663: ifeq          751
+     666: aload_0
+     667: aload_1
+     668: aload         11
+     670: invokevirtual #440                // Method shove_trace_room:(Lapp/freerouting/autoroute/MazeListElement;Lapp/freerouting/autoroute/ObstacleExpansionRoom;)Z
+     673: ifne          751
+     676: iload         10
+     678: ifle          748
+     681: new           #218                // class app/freerouting/autoroute/MazeListElement
+     684: dup
+     685: aload_1
+     686: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     689: aload_1
+     690: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+     693: aload_1
+     694: getfield      #241                // Field app/freerouting/autoroute/MazeListElement.backtrack_door:Lapp/freerouting/autoroute/ExpandableObject;
+     697: aload_1
+     698: getfield      #245                // Field app/freerouting/autoroute/MazeListElement.section_no_of_backtrack_door:I
+     701: aload_1
+     702: getfield      #444                // Field app/freerouting/autoroute/MazeListElement.expansion_value:D
+     705: iload         10
+     707: i2d
+     708: dadd
+     709: aload_1
+     710: getfield      #447                // Field app/freerouting/autoroute/MazeListElement.sorting_value:D
+     713: iload         10
+     715: i2d
+     716: dadd
+     717: aload_1
+     718: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     721: aload_1
+     722: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+     725: iconst_1
+     726: aload_1
+     727: getfield      #253                // Field app/freerouting/autoroute/MazeListElement.adjustment:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     730: iconst_1
+     731: invokespecial #450                // Method app/freerouting/autoroute/MazeListElement."<init>":(Lapp/freerouting/autoroute/ExpandableObject;ILapp/freerouting/autoroute/ExpandableObject;IDDLapp/freerouting/autoroute/CompleteExpansionRoom;Lapp/freerouting/geometry/planar/FloatLine;ZLapp/freerouting/autoroute/MazeSearchElement$Adjustment;Z)V
+     734: astore        14
+     736: aload_0
+     737: getfield      #49                 // Field maze_expansion_list:Ljava/util/SortedSet;
+     740: aload         14
+     742: invokeinterface #453,  2          // InterfaceMethod java/util/SortedSet.add:(Ljava/lang/Object;)Z
+     747: pop
+     748: iload         9
+     750: ireturn
+     751: iload         12
+     753: ifne          758
+     756: iconst_1
+     757: ireturn
+     758: aload_1
+     759: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     762: invokeinterface #457,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_doors:()Ljava/util/List;
+     767: invokeinterface #461,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     772: astore        11
+     774: aload         11
+     776: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     781: ifeq          831
+     784: aload         11
+     786: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     791: checkcast     #318                // class app/freerouting/autoroute/ExpansionDoor
+     794: astore        12
+     796: aload         12
+     798: aload_1
+     799: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     802: if_acmpne     808
+     805: goto          774
+     808: aload_0
+     809: aload         12
+     811: aload_1
+     812: iload         10
+     814: iload         8
+     816: getstatic     #464                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.NONE:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     819: invokevirtual #469                // Method expand_to_door:(Lapp/freerouting/autoroute/ExpansionDoor;Lapp/freerouting/autoroute/MazeListElement;IZLapp/freerouting/autoroute/MazeSearchElement$Adjustment;)Z
+     822: ifeq          828
+     825: iconst_1
+     826: istore        9
+     828: goto          774
+     831: aload_0
+     832: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     835: getfield      #274                // Field app/freerouting/autoroute/AutorouteControl.vias_allowed:Z
+     838: ifeq          999
+     841: aload_1
+     842: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     845: instanceof    #272                // class app/freerouting/autoroute/ExpansionDrill
+     848: ifne          999
+     851: iload         9
+     853: ifne          861
+     856: iload         8
+     858: ifeq          939
+     861: aload_1
+     862: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     865: instanceof    #473                // class app/freerouting/autoroute/CompleteFreeSpaceExpansionRoom
+     868: ifeq          939
+     871: aload_0
+     872: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     875: getfield      #475                // Field app/freerouting/autoroute/AutorouteEngine.drill_page_array:Lapp/freerouting/autoroute/DrillPageArray;
+     878: aload_1
+     879: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     882: invokeinterface #362,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+     887: invokevirtual #479                // Method app/freerouting/autoroute/DrillPageArray.overlapping_pages:(Lapp/freerouting/geometry/planar/TileShape;)Ljava/util/Collection;
+     890: astore        11
+     892: aload         11
+     894: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+     899: astore        12
+     901: aload         12
+     903: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     908: ifeq          936
+     911: aload         12
+     913: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     918: checkcast     #258                // class app/freerouting/autoroute/DrillPage
+     921: astore        13
+     923: aload_0
+     924: aload         13
+     926: aload_1
+     927: invokevirtual #485                // Method expand_to_drill_page:(Lapp/freerouting/autoroute/DrillPage;Lapp/freerouting/autoroute/MazeListElement;)V
+     930: iconst_1
+     931: istore        9
+     933: goto          901
+     936: goto          999
+     939: aload_1
+     940: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     943: instanceof    #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+     946: ifeq          999
+     949: aload_1
+     950: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     953: checkcast     #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+     956: invokevirtual #429                // Method app/freerouting/autoroute/ObstacleExpansionRoom.get_item:()Lapp/freerouting/board/Item;
+     959: astore        11
+     961: aload         11
+     963: instanceof    #489                // class app/freerouting/board/Via
+     966: ifeq          999
+     969: aload         11
+     971: checkcast     #489                // class app/freerouting/board/Via
+     974: astore        12
+     976: aload         12
+     978: aload_0
+     979: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     982: getfield      #37                 // Field app/freerouting/autoroute/AutorouteEngine.autoroute_search_tree:Lapp/freerouting/board/ShapeSearchTree;
+     985: invokevirtual #491                // Method app/freerouting/board/Via.get_autoroute_drill_info:(Lapp/freerouting/board/ShapeSearchTree;)Lapp/freerouting/autoroute/ExpansionDrill;
+     988: astore        13
+     990: aload_0
+     991: aload         13
+     993: aload_1
+     994: iload         10
+     996: invokevirtual #495                // Method expand_to_drill:(Lapp/freerouting/autoroute/ExpansionDrill;Lapp/freerouting/autoroute/MazeListElement;I)V
+     999: iload         9
+    1001: ireturn
+
+  private boolean expand_to_target_doors(app.freerouting.autoroute.MazeListElement, boolean, boolean, app.freerouting.geometry.planar.FloatPoint);
+    Code:
+       0: iload_3
+       1: ifeq          50
+       4: iconst_0
+       5: istore        5
+       7: aload_1
+       8: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+      11: instanceof    #318                // class app/freerouting/autoroute/ExpansionDoor
+      14: ifeq          43
+      17: aload_1
+      18: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+      21: aload_1
+      22: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      25: invokeinterface #499,  2          // InterfaceMethod app/freerouting/autoroute/ExpandableObject.other_room:(Lapp/freerouting/autoroute/CompleteExpansionRoom;)Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      30: astore        6
+      32: aload         6
+      34: instanceof    #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+      37: ifeq          43
+      40: iconst_1
+      41: istore        5
+      43: iload         5
+      45: ifne          50
+      48: iconst_0
+      49: ireturn
+      50: iconst_0
+      51: istore        5
+      53: aload_1
+      54: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      57: invokeinterface #503,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_target_doors:()Ljava/util/Collection;
+      62: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      67: astore        6
+      69: aload         6
+      71: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      76: ifeq          319
+      79: aload         6
+      81: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      86: checkcast     #264                // class app/freerouting/autoroute/TargetItemExpansionDoor
+      89: astore        7
+      91: aload         7
+      93: aload_1
+      94: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+      97: if_acmpne     103
+     100: goto          69
+     103: aload         7
+     105: getfield      #348                // Field app/freerouting/autoroute/TargetItemExpansionDoor.item:Lapp/freerouting/board/Item;
+     108: checkcast     #507                // class app/freerouting/board/Connectable
+     111: aload_0
+     112: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     115: getfield      #37                 // Field app/freerouting/autoroute/AutorouteEngine.autoroute_search_tree:Lapp/freerouting/board/ShapeSearchTree;
+     118: aload         7
+     120: getfield      #509                // Field app/freerouting/autoroute/TargetItemExpansionDoor.tree_entry_no:I
+     123: invokeinterface #512,  3          // InterfaceMethod app/freerouting/board/Connectable.get_trace_connection_shape:(Lapp/freerouting/board/ShapeSearchTree;I)Lapp/freerouting/geometry/planar/TileShape;
+     128: astore        8
+     130: aload         8
+     132: aload         4
+     134: invokevirtual #516                // Method app/freerouting/geometry/planar/TileShape.nearest_point_approx:(Lapp/freerouting/geometry/planar/FloatPoint;)Lapp/freerouting/geometry/planar/FloatPoint;
+     137: astore        9
+     139: iload_2
+     140: ifne          283
+     143: iconst_1
+     144: newarray       int
+     146: astore        10
+     148: aload         10
+     150: iconst_0
+     151: aload_0
+     152: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     155: getfield      #414                // Field app/freerouting/autoroute/AutorouteControl.net_no:I
+     158: iastore
+     159: aload_1
+     160: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     163: invokeinterface #288,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_layer:()I
+     168: istore        11
+     170: iconst_2
+     171: anewarray     #519                // class app/freerouting/geometry/planar/IntPoint
+     174: astore        12
+     176: aload         12
+     178: iconst_0
+     179: aload         4
+     181: invokevirtual #521                // Method app/freerouting/geometry/planar/FloatPoint.round:()Lapp/freerouting/geometry/planar/IntPoint;
+     184: aastore
+     185: aload         12
+     187: iconst_1
+     188: aload         9
+     190: invokevirtual #521                // Method app/freerouting/geometry/planar/FloatPoint.round:()Lapp/freerouting/geometry/planar/IntPoint;
+     193: aastore
+     194: aload         12
+     196: iconst_0
+     197: aaload
+     198: aload         12
+     200: iconst_1
+     201: aaload
+     202: invokevirtual #525                // Method app/freerouting/geometry/planar/IntPoint.equals:(Ljava/lang/Object;)Z
+     205: ifne          283
+     208: new           #528                // class app/freerouting/geometry/planar/Polyline
+     211: dup
+     212: aload         12
+     214: invokespecial #530                // Method app/freerouting/geometry/planar/Polyline."<init>":([Lapp/freerouting/geometry/planar/Point;)V
+     217: astore        13
+     219: aload_0
+     220: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     223: getfield      #293                // Field app/freerouting/autoroute/AutorouteEngine.board:Lapp/freerouting/board/RoutingBoard;
+     226: aload         13
+     228: aload_0
+     229: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     232: getfield      #533                // Field app/freerouting/autoroute/AutorouteControl.trace_half_width:[I
+     235: iload         11
+     237: iaload
+     238: iload         11
+     240: aload         10
+     242: aload_0
+     243: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     246: getfield      #536                // Field app/freerouting/autoroute/AutorouteControl.trace_clearance_class_no:I
+     249: aload_0
+     250: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     253: getfield      #437                // Field app/freerouting/autoroute/AutorouteControl.max_shove_trace_recursion_depth:I
+     256: aload_0
+     257: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     260: getfield      #539                // Field app/freerouting/autoroute/AutorouteControl.max_shove_via_recursion_depth:I
+     263: aload_0
+     264: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     267: getfield      #542                // Field app/freerouting/autoroute/AutorouteControl.max_spring_over_recursion_depth:I
+     270: invokevirtual #545                // Method app/freerouting/board/RoutingBoard.check_forced_trace_polyline:(Lapp/freerouting/geometry/planar/Polyline;II[IIIII)Z
+     273: istore        14
+     275: iload         14
+     277: ifne          283
+     280: goto          69
+     283: new           #170                // class app/freerouting/geometry/planar/FloatLine
+     286: dup
+     287: aload         9
+     289: aload         9
+     291: invokespecial #194                // Method app/freerouting/geometry/planar/FloatLine."<init>":(Lapp/freerouting/geometry/planar/FloatPoint;Lapp/freerouting/geometry/planar/FloatPoint;)V
+     294: astore        10
+     296: aload_0
+     297: aload         7
+     299: iconst_0
+     300: aload         10
+     302: aload_1
+     303: iconst_0
+     304: getstatic     #464                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.NONE:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     307: invokevirtual #549                // Method expand_to_door_section:(Lapp/freerouting/autoroute/ExpandableObject;ILapp/freerouting/geometry/planar/FloatLine;Lapp/freerouting/autoroute/MazeListElement;ILapp/freerouting/autoroute/MazeSearchElement$Adjustment;)Z
+     310: ifeq          316
+     313: iconst_1
+     314: istore        5
+     316: goto          69
+     319: iload         5
+     321: ireturn
+
+  private boolean expand_to_door(app.freerouting.autoroute.ExpansionDoor, app.freerouting.autoroute.MazeListElement, int, boolean, app.freerouting.autoroute.MazeSearchElement$Adjustment);
+    Code:
+       0: aload_0
+       1: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+       4: getfield      #314                // Field app/freerouting/autoroute/AutorouteControl.compensated_trace_half_width:[I
+       7: aload_2
+       8: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      11: invokeinterface #288,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_layer:()I
+      16: iaload
+      17: i2d
+      18: dstore        6
+      20: iconst_0
+      21: istore        8
+      23: aload_1
+      24: dload         6
+      26: invokevirtual #553                // Method app/freerouting/autoroute/ExpansionDoor.get_section_segments:(D)[Lapp/freerouting/geometry/planar/FloatLine;
+      29: astore        9
+      31: iconst_0
+      32: istore        10
+      34: iload         10
+      36: aload         9
+      38: arraylength
+      39: if_icmpge     272
+      42: aload_1
+      43: getfield      #557                // Field app/freerouting/autoroute/ExpansionDoor.section_arr:[Lapp/freerouting/autoroute/MazeSearchElement;
+      46: iload         10
+      48: aaload
+      49: getfield      #235                // Field app/freerouting/autoroute/MazeSearchElement.is_occupied:Z
+      52: ifeq          58
+      55: goto          266
+      58: iload         4
+      60: ifeq          187
+      63: aload         9
+      65: iload         10
+      67: aaload
+      68: astore        11
+      70: aload_1
+      71: getfield      #561                // Field app/freerouting/autoroute/ExpansionDoor.dimension:I
+      74: iconst_1
+      75: if_icmpne     247
+      78: aload         9
+      80: arraylength
+      81: iconst_1
+      82: if_icmpne     247
+      85: aload_1
+      86: getfield      #564                // Field app/freerouting/autoroute/ExpansionDoor.first_room:Lapp/freerouting/autoroute/ExpansionRoom;
+      89: instanceof    #473                // class app/freerouting/autoroute/CompleteFreeSpaceExpansionRoom
+      92: ifeq          247
+      95: aload_1
+      96: getfield      #568                // Field app/freerouting/autoroute/ExpansionDoor.second_room:Lapp/freerouting/autoroute/ExpansionRoom;
+      99: instanceof    #473                // class app/freerouting/autoroute/CompleteFreeSpaceExpansionRoom
+     102: ifeq          247
+     105: aload         11
+     107: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+     110: aload         11
+     112: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     115: invokevirtual #344                // Method app/freerouting/geometry/planar/FloatPoint.middle_point:(Lapp/freerouting/geometry/planar/FloatPoint;)Lapp/freerouting/geometry/planar/FloatPoint;
+     118: astore        12
+     120: aload_2
+     121: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     124: invokeinterface #362,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+     129: astore        13
+     131: aload         13
+     133: invokevirtual #366                // Method app/freerouting/geometry/planar/TileShape.min_width:()D
+     136: ldc2_w        #320                // double 2.0d
+     139: dload         6
+     141: dmul
+     142: dcmpg
+     143: ifge          148
+     146: iconst_0
+     147: ireturn
+     148: aload         13
+     150: aload         12
+     152: iconst_2
+     153: invokevirtual #377                // Method app/freerouting/geometry/planar/TileShape.nearest_border_points_approx:(Lapp/freerouting/geometry/planar/FloatPoint;I)[Lapp/freerouting/geometry/planar/FloatPoint;
+     156: astore        14
+     158: aload         14
+     160: arraylength
+     161: iconst_2
+     162: if_icmplt     182
+     165: aload         14
+     167: iconst_1
+     168: aaload
+     169: aload         12
+     171: invokevirtual #389                // Method app/freerouting/geometry/planar/FloatPoint.distance:(Lapp/freerouting/geometry/planar/FloatPoint;)D
+     174: dload         6
+     176: dconst_1
+     177: dadd
+     178: dcmpg
+     179: ifgt          184
+     182: iconst_0
+     183: ireturn
+     184: goto          247
+     187: aload_1
+     188: getfield      #561                // Field app/freerouting/autoroute/ExpansionDoor.dimension:I
+     191: iconst_1
+     192: if_icmpne     225
+     195: iload         10
+     197: ifne          225
+     200: aload         9
+     202: iconst_0
+     203: aaload
+     204: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     207: aload         9
+     209: iconst_0
+     210: aaload
+     211: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+     214: invokevirtual #185                // Method app/freerouting/geometry/planar/FloatPoint.distance_square:(Lapp/freerouting/geometry/planar/FloatPoint;)D
+     217: dconst_1
+     218: dcmpg
+     219: ifge          225
+     222: goto          266
+     225: aload_2
+     226: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+     229: aload         9
+     231: iload         10
+     233: aaload
+     234: invokestatic  #571                // Method segment_projection:(Lapp/freerouting/geometry/planar/FloatLine;Lapp/freerouting/geometry/planar/FloatLine;)Lapp/freerouting/geometry/planar/FloatLine;
+     237: astore        11
+     239: aload         11
+     241: ifnonnull     247
+     244: goto          266
+     247: aload_0
+     248: aload_1
+     249: iload         10
+     251: aload         11
+     253: aload_2
+     254: iload_3
+     255: aload         5
+     257: invokevirtual #549                // Method expand_to_door_section:(Lapp/freerouting/autoroute/ExpandableObject;ILapp/freerouting/geometry/planar/FloatLine;Lapp/freerouting/autoroute/MazeListElement;ILapp/freerouting/autoroute/MazeSearchElement$Adjustment;)Z
+     260: ifeq          266
+     263: iconst_1
+     264: istore        8
+     266: iinc          10, 1
+     269: goto          34
+     272: iload         8
+     274: ireturn
+
+  private boolean door_is_small(app.freerouting.autoroute.ExpansionDoor, double);
+    Code:
+       0: aload_1
+       1: getfield      #561                // Field app/freerouting/autoroute/ExpansionDoor.dimension:I
+       4: iconst_1
+       5: if_icmpeq     28
+       8: aload_1
+       9: getfield      #564                // Field app/freerouting/autoroute/ExpansionDoor.first_room:Lapp/freerouting/autoroute/ExpansionRoom;
+      12: instanceof    #473                // class app/freerouting/autoroute/CompleteFreeSpaceExpansionRoom
+      15: ifeq          172
+      18: aload_1
+      19: getfield      #568                // Field app/freerouting/autoroute/ExpansionDoor.second_room:Lapp/freerouting/autoroute/ExpansionRoom;
+      22: instanceof    #473                // class app/freerouting/autoroute/CompleteFreeSpaceExpansionRoom
+      25: ifeq          172
+      28: aload_1
+      29: invokevirtual #574                // Method app/freerouting/autoroute/ExpansionDoor.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+      32: astore        4
+      34: aload         4
+      36: invokevirtual #575                // Method app/freerouting/geometry/planar/TileShape.is_empty:()Z
+      39: ifeq          72
+      42: aload_0
+      43: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+      46: getfield      #293                // Field app/freerouting/autoroute/AutorouteEngine.board:Lapp/freerouting/board/RoutingBoard;
+      49: invokevirtual #578                // Method app/freerouting/board/RoutingBoard.get_test_level:()Lapp/freerouting/board/TestLevel;
+      52: invokevirtual #582                // Method app/freerouting/board/TestLevel.ordinal:()I
+      55: getstatic     #587                // Field app/freerouting/board/TestLevel.ALL_DEBUGGING_OUTPUT:Lapp/freerouting/board/TestLevel;
+      58: invokevirtual #582                // Method app/freerouting/board/TestLevel.ordinal:()I
+      61: if_icmplt     70
+      64: ldc_w         #591                // String MazeSearchAlgo:check_door_width door_shape is empty
+      67: invokestatic  #383                // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      70: iconst_1
+      71: ireturn
+      72: aload_0
+      73: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+      76: getfield      #293                // Field app/freerouting/autoroute/AutorouteEngine.board:Lapp/freerouting/board/RoutingBoard;
+      79: getfield      #593                // Field app/freerouting/board/RoutingBoard.rules:Lapp/freerouting/rules/BoardRules;
+      82: invokevirtual #597                // Method app/freerouting/rules/BoardRules.get_trace_angle_restriction:()Lapp/freerouting/board/AngleRestriction;
+      85: astore        7
+      87: aload         7
+      89: getstatic     #603                // Field app/freerouting/board/AngleRestriction.NINETY_DEGREE:Lapp/freerouting/board/AngleRestriction;
+      92: if_acmpne     112
+      95: aload         4
+      97: invokevirtual #609                // Method app/freerouting/geometry/planar/TileShape.bounding_box:()Lapp/freerouting/geometry/planar/IntBox;
+     100: astore        8
+     102: aload         8
+     104: invokevirtual #613                // Method app/freerouting/geometry/planar/IntBox.max_width:()D
+     107: dstore        5
+     109: goto          159
+     112: aload         7
+     114: getstatic     #618                // Field app/freerouting/board/AngleRestriction.FORTYFIVE_DEGREE:Lapp/freerouting/board/AngleRestriction;
+     117: if_acmpne     137
+     120: aload         4
+     122: invokevirtual #621                // Method app/freerouting/geometry/planar/TileShape.bounding_octagon:()Lapp/freerouting/geometry/planar/IntOctagon;
+     125: astore        8
+     127: aload         8
+     129: invokevirtual #625                // Method app/freerouting/geometry/planar/IntOctagon.max_width:()D
+     132: dstore        5
+     134: goto          159
+     137: aload         4
+     139: invokevirtual #628                // Method app/freerouting/geometry/planar/TileShape.diagonal_corner_segment:()Lapp/freerouting/geometry/planar/FloatLine;
+     142: astore        8
+     144: aload         8
+     146: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     149: aload         8
+     151: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+     154: invokevirtual #389                // Method app/freerouting/geometry/planar/FloatPoint.distance:(Lapp/freerouting/geometry/planar/FloatPoint;)D
+     157: dstore        5
+     159: dload         5
+     161: dload_2
+     162: dcmpg
+     163: ifge          170
+     166: iconst_1
+     167: goto          171
+     170: iconst_0
+     171: ireturn
+     172: iconst_0
+     173: ireturn
+
+  private boolean expand_to_door_section(app.freerouting.autoroute.ExpandableObject, int, app.freerouting.geometry.planar.FloatLine, app.freerouting.autoroute.MazeListElement, int, app.freerouting.autoroute.MazeSearchElement$Adjustment);
+    Code:
+       0: aload_1
+       1: iload_2
+       2: invokeinterface #226,  2          // InterfaceMethod app/freerouting/autoroute/ExpandableObject.get_maze_search_element:(I)Lapp/freerouting/autoroute/MazeSearchElement;
+       7: getfield      #235                // Field app/freerouting/autoroute/MazeSearchElement.is_occupied:Z
+      10: ifne          17
+      13: aload_3
+      14: ifnonnull     19
+      17: iconst_0
+      18: ireturn
+      19: aload_1
+      20: aload         4
+      22: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      25: invokeinterface #499,  2          // InterfaceMethod app/freerouting/autoroute/ExpandableObject.other_room:(Lapp/freerouting/autoroute/CompleteExpansionRoom;)Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      30: astore        7
+      32: aload         4
+      34: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      37: invokeinterface #288,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_layer:()I
+      42: istore        8
+      44: aload_3
+      45: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      48: aload_3
+      49: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+      52: invokevirtual #344                // Method app/freerouting/geometry/planar/FloatPoint.middle_point:(Lapp/freerouting/geometry/planar/FloatPoint;)Lapp/freerouting/geometry/planar/FloatPoint;
+      55: astore        9
+      57: aload         4
+      59: getfield      #444                // Field app/freerouting/autoroute/MazeListElement.expansion_value:D
+      62: iload         5
+      64: i2d
+      65: dadd
+      66: aload         9
+      68: aload         4
+      70: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+      73: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      76: aload         4
+      78: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+      81: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+      84: invokevirtual #344                // Method app/freerouting/geometry/planar/FloatPoint.middle_point:(Lapp/freerouting/geometry/planar/FloatPoint;)Lapp/freerouting/geometry/planar/FloatPoint;
+      87: aload_0
+      88: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      91: getfield      #55                 // Field app/freerouting/autoroute/AutorouteControl.trace_costs:[Lapp/freerouting/autoroute/AutorouteControl$ExpansionCostFactor;
+      94: iload         8
+      96: aaload
+      97: getfield      #632                // Field app/freerouting/autoroute/AutorouteControl$ExpansionCostFactor.horizontal:D
+     100: aload_0
+     101: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     104: getfield      #55                 // Field app/freerouting/autoroute/AutorouteControl.trace_costs:[Lapp/freerouting/autoroute/AutorouteControl$ExpansionCostFactor;
+     107: iload         8
+     109: aaload
+     110: getfield      #637                // Field app/freerouting/autoroute/AutorouteControl$ExpansionCostFactor.vertical:D
+     113: invokevirtual #640                // Method app/freerouting/geometry/planar/FloatPoint.weighted_distance:(Lapp/freerouting/geometry/planar/FloatPoint;DD)D
+     116: dadd
+     117: dstore        10
+     119: dload         10
+     121: aload_0
+     122: getfield      #73                 // Field destination_distance:Lapp/freerouting/autoroute/DestinationDistance;
+     125: aload         9
+     127: iload         8
+     129: invokevirtual #644                // Method app/freerouting/autoroute/DestinationDistance.calculate:(Lapp/freerouting/geometry/planar/FloatPoint;I)D
+     132: dadd
+     133: dstore        12
+     135: iload         5
+     137: ifle          148
+     140: aload         6
+     142: getstatic     #464                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.NONE:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     145: if_acmpeq     164
+     148: aload         4
+     150: getfield      #371                // Field app/freerouting/autoroute/MazeListElement.already_checked:Z
+     153: ifeq          168
+     156: aload         4
+     158: getfield      #249                // Field app/freerouting/autoroute/MazeListElement.room_ripped:Z
+     161: ifeq          168
+     164: iconst_1
+     165: goto          169
+     168: iconst_0
+     169: istore        14
+     171: new           #218                // class app/freerouting/autoroute/MazeListElement
+     174: dup
+     175: aload_1
+     176: iload_2
+     177: aload         4
+     179: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     182: aload         4
+     184: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+     187: dload         10
+     189: dload         12
+     191: aload         7
+     193: aload_3
+     194: iload         14
+     196: aload         6
+     198: iconst_0
+     199: invokespecial #450                // Method app/freerouting/autoroute/MazeListElement."<init>":(Lapp/freerouting/autoroute/ExpandableObject;ILapp/freerouting/autoroute/ExpandableObject;IDDLapp/freerouting/autoroute/CompleteExpansionRoom;Lapp/freerouting/geometry/planar/FloatLine;ZLapp/freerouting/autoroute/MazeSearchElement$Adjustment;Z)V
+     202: astore        15
+     204: aload_0
+     205: getfield      #49                 // Field maze_expansion_list:Ljava/util/SortedSet;
+     208: aload         15
+     210: invokeinterface #453,  2          // InterfaceMethod java/util/SortedSet.add:(Ljava/lang/Object;)Z
+     215: pop
+     216: iconst_1
+     217: ireturn
+
+  private void expand_to_drill(app.freerouting.autoroute.ExpansionDrill, app.freerouting.autoroute.MazeListElement, int);
+    Code:
+       0: aload_2
+       1: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+       4: invokeinterface #288,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_layer:()I
+       9: istore        4
+      11: aload_0
+      12: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      15: getfield      #314                // Field app/freerouting/autoroute/AutorouteControl.compensated_trace_half_width:[I
+      18: iload         4
+      20: iaload
+      21: istore        5
+      23: aload_2
+      24: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      27: invokeinterface #362,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+      32: invokevirtual #366                // Method app/freerouting/geometry/planar/TileShape.min_width:()D
+      35: iconst_2
+      36: iload         5
+      38: imul
+      39: i2d
+      40: dcmpg
+      41: ifge          48
+      44: iconst_1
+      45: goto          49
+      48: iconst_0
+      49: istore        6
+      51: iload         6
+      53: ifeq          83
+      56: aload_2
+      57: getfield      #241                // Field app/freerouting/autoroute/MazeListElement.backtrack_door:Lapp/freerouting/autoroute/ExpandableObject;
+      60: ifnull        82
+      63: aload_1
+      64: invokevirtual #648                // Method app/freerouting/autoroute/ExpansionDrill.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+      67: aload_2
+      68: getfield      #241                // Field app/freerouting/autoroute/MazeListElement.backtrack_door:Lapp/freerouting/autoroute/ExpandableObject;
+      71: invokeinterface #649,  1          // InterfaceMethod app/freerouting/autoroute/ExpandableObject.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+      76: invokevirtual #650                // Method app/freerouting/geometry/planar/TileShape.intersects:(Lapp/freerouting/geometry/planar/Shape;)Z
+      79: ifne          83
+      82: return
+      83: aload_0
+      84: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      87: getfield      #654                // Field app/freerouting/autoroute/AutorouteControl.via_radius_arr:[D
+      90: iload         4
+      92: daload
+      93: dstore        7
+      95: aload_1
+      96: invokevirtual #648                // Method app/freerouting/autoroute/ExpansionDrill.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+      99: dload         7
+     101: invokevirtual #658                // Method app/freerouting/geometry/planar/TileShape.shrink:(D)Lapp/freerouting/geometry/planar/ConvexShape;
+     104: astore        9
+     106: aload_2
+     107: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+     110: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+     113: aload_2
+     114: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+     117: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     120: invokevirtual #344                // Method app/freerouting/geometry/planar/FloatPoint.middle_point:(Lapp/freerouting/geometry/planar/FloatPoint;)Lapp/freerouting/geometry/planar/FloatPoint;
+     123: astore        10
+     125: aload_2
+     126: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     129: instanceof    #258                // class app/freerouting/autoroute/DrillPage
+     132: ifeq          195
+     135: aload_2
+     136: getfield      #241                // Field app/freerouting/autoroute/MazeListElement.backtrack_door:Lapp/freerouting/autoroute/ExpandableObject;
+     139: instanceof    #264                // class app/freerouting/autoroute/TargetItemExpansionDoor
+     142: ifeq          195
+     145: aload_2
+     146: getfield      #241                // Field app/freerouting/autoroute/MazeListElement.backtrack_door:Lapp/freerouting/autoroute/ExpandableObject;
+     149: checkcast     #264                // class app/freerouting/autoroute/TargetItemExpansionDoor
+     152: getfield      #348                // Field app/freerouting/autoroute/TargetItemExpansionDoor.item:Lapp/freerouting/board/Item;
+     155: astore        11
+     157: aload         11
+     159: instanceof    #102                // class app/freerouting/board/Pin
+     162: ifeq          195
+     165: aload         11
+     167: checkcast     #102                // class app/freerouting/board/Pin
+     170: aload_1
+     171: getfield      #392                // Field app/freerouting/autoroute/ExpansionDrill.location:Lapp/freerouting/geometry/planar/Point;
+     174: invokevirtual #662                // Method app/freerouting/geometry/planar/Point.to_float:()Lapp/freerouting/geometry/planar/FloatPoint;
+     177: iload         5
+     179: iload         4
+     181: invokevirtual #668                // Method app/freerouting/board/Pin.nearest_trace_exit_corner:(Lapp/freerouting/geometry/planar/FloatPoint;II)Lapp/freerouting/geometry/planar/FloatPoint;
+     184: astore        12
+     186: aload         12
+     188: ifnull        195
+     191: aload         12
+     193: astore        10
+     195: aload         9
+     197: aload         10
+     199: invokeinterface #672,  2          // InterfaceMethod app/freerouting/geometry/planar/ConvexShape.nearest_point_approx:(Lapp/freerouting/geometry/planar/FloatPoint;)Lapp/freerouting/geometry/planar/FloatPoint;
+     204: astore        11
+     206: new           #170                // class app/freerouting/geometry/planar/FloatLine
+     209: dup
+     210: aload         11
+     212: aload         11
+     214: invokespecial #194                // Method app/freerouting/geometry/planar/FloatLine."<init>":(Lapp/freerouting/geometry/planar/FloatPoint;Lapp/freerouting/geometry/planar/FloatPoint;)V
+     217: astore        12
+     219: iload         4
+     221: aload_1
+     222: getfield      #675                // Field app/freerouting/autoroute/ExpansionDrill.first_layer:I
+     225: isub
+     226: istore        13
+     228: aload_2
+     229: getfield      #444                // Field app/freerouting/autoroute/MazeListElement.expansion_value:D
+     232: iload_3
+     233: i2d
+     234: dadd
+     235: aload         11
+     237: aload         10
+     239: aload_0
+     240: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     243: getfield      #55                 // Field app/freerouting/autoroute/AutorouteControl.trace_costs:[Lapp/freerouting/autoroute/AutorouteControl$ExpansionCostFactor;
+     246: iload         4
+     248: aaload
+     249: getfield      #632                // Field app/freerouting/autoroute/AutorouteControl$ExpansionCostFactor.horizontal:D
+     252: aload_0
+     253: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     256: getfield      #55                 // Field app/freerouting/autoroute/AutorouteControl.trace_costs:[Lapp/freerouting/autoroute/AutorouteControl$ExpansionCostFactor;
+     259: iload         4
+     261: aaload
+     262: getfield      #637                // Field app/freerouting/autoroute/AutorouteControl$ExpansionCostFactor.vertical:D
+     265: invokevirtual #640                // Method app/freerouting/geometry/planar/FloatPoint.weighted_distance:(Lapp/freerouting/geometry/planar/FloatPoint;DD)D
+     268: dadd
+     269: dstore        14
+     271: aload_2
+     272: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     275: instanceof    #258                // class app/freerouting/autoroute/DrillPage
+     278: ifeq          296
+     281: aload_2
+     282: getfield      #241                // Field app/freerouting/autoroute/MazeListElement.backtrack_door:Lapp/freerouting/autoroute/ExpandableObject;
+     285: astore        16
+     287: aload_2
+     288: getfield      #245                // Field app/freerouting/autoroute/MazeListElement.section_no_of_backtrack_door:I
+     291: istore        17
+     293: goto          320
+     296: aload_2
+     297: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     300: astore        16
+     302: aload_2
+     303: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+     306: istore        17
+     308: dload         14
+     310: aload_0
+     311: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     314: getfield      #63                 // Field app/freerouting/autoroute/AutorouteControl.min_normal_via_cost:D
+     317: dadd
+     318: dstore        14
+     320: dload         14
+     322: aload_0
+     323: getfield      #73                 // Field destination_distance:Lapp/freerouting/autoroute/DestinationDistance;
+     326: aload         11
+     328: iload         4
+     330: invokevirtual #644                // Method app/freerouting/autoroute/DestinationDistance.calculate:(Lapp/freerouting/geometry/planar/FloatPoint;I)D
+     333: dadd
+     334: dstore        18
+     336: new           #218                // class app/freerouting/autoroute/MazeListElement
+     339: dup
+     340: aload_1
+     341: iload         13
+     343: aload         16
+     345: iload         17
+     347: dload         14
+     349: dload         18
+     351: aconst_null
+     352: aload         12
+     354: aload_2
+     355: getfield      #249                // Field app/freerouting/autoroute/MazeListElement.room_ripped:Z
+     358: getstatic     #464                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.NONE:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     361: iconst_0
+     362: invokespecial #450                // Method app/freerouting/autoroute/MazeListElement."<init>":(Lapp/freerouting/autoroute/ExpandableObject;ILapp/freerouting/autoroute/ExpandableObject;IDDLapp/freerouting/autoroute/CompleteExpansionRoom;Lapp/freerouting/geometry/planar/FloatLine;ZLapp/freerouting/autoroute/MazeSearchElement$Adjustment;Z)V
+     365: astore        20
+     367: aload_0
+     368: getfield      #49                 // Field maze_expansion_list:Ljava/util/SortedSet;
+     371: aload         20
+     373: invokeinterface #453,  2          // InterfaceMethod java/util/SortedSet.add:(Ljava/lang/Object;)Z
+     378: pop
+     379: return
+
+  private void expand_to_drill_page(app.freerouting.autoroute.DrillPage, app.freerouting.autoroute.MazeListElement);
+    Code:
+       0: aload_2
+       1: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+       4: invokeinterface #288,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_layer:()I
+       9: istore_3
+      10: aload_2
+      11: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+      14: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+      17: aload_2
+      18: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+      21: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+      24: invokevirtual #344                // Method app/freerouting/geometry/planar/FloatPoint.middle_point:(Lapp/freerouting/geometry/planar/FloatPoint;)Lapp/freerouting/geometry/planar/FloatPoint;
+      27: astore        4
+      29: aload_1
+      30: getfield      #677                // Field app/freerouting/autoroute/DrillPage.shape:Lapp/freerouting/geometry/planar/IntBox;
+      33: aload         4
+      35: invokevirtual #681                // Method app/freerouting/geometry/planar/IntBox.nearest_point:(Lapp/freerouting/geometry/planar/FloatPoint;)Lapp/freerouting/geometry/planar/FloatPoint;
+      38: astore        5
+      40: aload_2
+      41: getfield      #444                // Field app/freerouting/autoroute/MazeListElement.expansion_value:D
+      44: aload_0
+      45: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      48: getfield      #63                 // Field app/freerouting/autoroute/AutorouteControl.min_normal_via_cost:D
+      51: dadd
+      52: dstore        6
+      54: dload         6
+      56: aload         5
+      58: aload         4
+      60: aload_0
+      61: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      64: getfield      #55                 // Field app/freerouting/autoroute/AutorouteControl.trace_costs:[Lapp/freerouting/autoroute/AutorouteControl$ExpansionCostFactor;
+      67: iload_3
+      68: aaload
+      69: getfield      #632                // Field app/freerouting/autoroute/AutorouteControl$ExpansionCostFactor.horizontal:D
+      72: aload_0
+      73: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      76: getfield      #55                 // Field app/freerouting/autoroute/AutorouteControl.trace_costs:[Lapp/freerouting/autoroute/AutorouteControl$ExpansionCostFactor;
+      79: iload_3
+      80: aaload
+      81: getfield      #637                // Field app/freerouting/autoroute/AutorouteControl$ExpansionCostFactor.vertical:D
+      84: invokevirtual #640                // Method app/freerouting/geometry/planar/FloatPoint.weighted_distance:(Lapp/freerouting/geometry/planar/FloatPoint;DD)D
+      87: dadd
+      88: aload_0
+      89: getfield      #73                 // Field destination_distance:Lapp/freerouting/autoroute/DestinationDistance;
+      92: aload         5
+      94: iload_3
+      95: invokevirtual #644                // Method app/freerouting/autoroute/DestinationDistance.calculate:(Lapp/freerouting/geometry/planar/FloatPoint;I)D
+      98: dadd
+      99: dstore        8
+     101: new           #218                // class app/freerouting/autoroute/MazeListElement
+     104: dup
+     105: aload_1
+     106: iload_3
+     107: aload_2
+     108: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+     111: aload_2
+     112: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+     115: dload         6
+     117: dload         8
+     119: aload_2
+     120: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     123: aload_2
+     124: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+     127: aload_2
+     128: getfield      #249                // Field app/freerouting/autoroute/MazeListElement.room_ripped:Z
+     131: getstatic     #464                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.NONE:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     134: iconst_0
+     135: invokespecial #450                // Method app/freerouting/autoroute/MazeListElement."<init>":(Lapp/freerouting/autoroute/ExpandableObject;ILapp/freerouting/autoroute/ExpandableObject;IDDLapp/freerouting/autoroute/CompleteExpansionRoom;Lapp/freerouting/geometry/planar/FloatLine;ZLapp/freerouting/autoroute/MazeSearchElement$Adjustment;Z)V
+     138: astore        10
+     140: aload_0
+     141: getfield      #49                 // Field maze_expansion_list:Ljava/util/SortedSet;
+     144: aload         10
+     146: invokeinterface #453,  2          // InterfaceMethod java/util/SortedSet.add:(Ljava/lang/Object;)Z
+     151: pop
+     152: return
+
+  private void expand_to_drills_of_page(app.freerouting.autoroute.MazeListElement);
+    Code:
+       0: aload_1
+       1: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+       4: istore_2
+       5: aload_1
+       6: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+       9: checkcast     #258                // class app/freerouting/autoroute/DrillPage
+      12: astore_3
+      13: aload_3
+      14: aload_0
+      15: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+      18: aload_0
+      19: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      22: getfield      #684                // Field app/freerouting/autoroute/AutorouteControl.attach_smd_allowed:Z
+      25: invokevirtual #687                // Method app/freerouting/autoroute/DrillPage.get_drills:(Lapp/freerouting/autoroute/AutorouteEngine;Z)Ljava/util/Collection;
+      28: astore        4
+      30: aload         4
+      32: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      37: astore        5
+      39: aload         5
+      41: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      46: ifeq          128
+      49: aload         5
+      51: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      56: checkcast     #272                // class app/freerouting/autoroute/ExpansionDrill
+      59: astore        6
+      61: iload_2
+      62: aload         6
+      64: getfield      #675                // Field app/freerouting/autoroute/ExpansionDrill.first_layer:I
+      67: isub
+      68: istore        7
+      70: iload         7
+      72: iflt          39
+      75: iload         7
+      77: aload         6
+      79: getfield      #691                // Field app/freerouting/autoroute/ExpansionDrill.room_arr:[Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      82: arraylength
+      83: if_icmplt     89
+      86: goto          39
+      89: aload         6
+      91: getfield      #691                // Field app/freerouting/autoroute/ExpansionDrill.room_arr:[Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      94: iload         7
+      96: aaload
+      97: aload_1
+      98: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     101: if_acmpne     125
+     104: aload         6
+     106: iload         7
+     108: invokevirtual #695                // Method app/freerouting/autoroute/ExpansionDrill.get_maze_search_element:(I)Lapp/freerouting/autoroute/MazeSearchElement;
+     111: getfield      #235                // Field app/freerouting/autoroute/MazeSearchElement.is_occupied:Z
+     114: ifne          125
+     117: aload_0
+     118: aload         6
+     120: aload_1
+     121: iconst_0
+     122: invokevirtual #495                // Method expand_to_drill:(Lapp/freerouting/autoroute/ExpansionDrill;Lapp/freerouting/autoroute/MazeListElement;I)V
+     125: goto          39
+     128: return
+
+  private void expand_to_other_layers(app.freerouting.autoroute.MazeListElement);
+    Code:
+       0: iconst_0
+       1: istore_2
+       2: iconst_m1
+       3: istore_3
+       4: aload_1
+       5: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+       8: checkcast     #272                // class app/freerouting/autoroute/ExpansionDrill
+      11: astore        4
+      13: aload         4
+      15: getfield      #675                // Field app/freerouting/autoroute/ExpansionDrill.first_layer:I
+      18: aload_1
+      19: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+      22: iadd
+      23: istore        5
+      25: iconst_0
+      26: istore        6
+      28: iconst_0
+      29: istore        7
+      31: aload         4
+      33: getfield      #691                // Field app/freerouting/autoroute/ExpansionDrill.room_arr:[Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      36: aload_1
+      37: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+      40: aaload
+      41: instanceof    #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+      44: ifeq          144
+      47: aload_0
+      48: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      51: getfield      #426                // Field app/freerouting/autoroute/AutorouteControl.ripup_allowed:Z
+      54: ifne          58
+      57: return
+      58: aload         4
+      60: getfield      #691                // Field app/freerouting/autoroute/ExpansionDrill.room_arr:[Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      63: aload_1
+      64: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+      67: aaload
+      68: checkcast     #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+      71: invokevirtual #429                // Method app/freerouting/autoroute/ObstacleExpansionRoom.get_item:()Lapp/freerouting/board/Item;
+      74: astore        9
+      76: aload         9
+      78: instanceof    #489                // class app/freerouting/board/Via
+      81: ifne          85
+      84: return
+      85: aload         9
+      87: checkcast     #489                // class app/freerouting/board/Via
+      90: invokevirtual #696                // Method app/freerouting/board/Via.get_padstack:()Lapp/freerouting/library/Padstack;
+      93: astore        10
+      95: aload_0
+      96: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      99: getfield      #700                // Field app/freerouting/autoroute/AutorouteControl.via_rule:Lapp/freerouting/rules/ViaRule;
+     102: aload         10
+     104: invokevirtual #704                // Method app/freerouting/rules/ViaRule.contains_padstack:(Lapp/freerouting/library/Padstack;)Z
+     107: ifeq          125
+     110: aload         9
+     112: invokevirtual #710                // Method app/freerouting/board/Item.clearance_class_no:()I
+     115: aload_0
+     116: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     119: getfield      #713                // Field app/freerouting/autoroute/AutorouteControl.via_clearance_class:I
+     122: if_icmpeq     126
+     125: return
+     126: aload         10
+     128: invokevirtual #716                // Method app/freerouting/library/Padstack.from_layer:()I
+     131: istore_2
+     132: aload         10
+     134: invokevirtual #721                // Method app/freerouting/library/Padstack.to_layer:()I
+     137: istore_3
+     138: iconst_1
+     139: istore        8
+     141: goto          510
+     144: iconst_1
+     145: newarray       int
+     147: astore        9
+     149: aload         9
+     151: iconst_0
+     152: aload_0
+     153: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     156: getfield      #414                // Field app/freerouting/autoroute/AutorouteControl.net_no:I
+     159: iastore
+     160: iconst_0
+     161: istore        8
+     163: aload         4
+     165: getfield      #675                // Field app/freerouting/autoroute/ExpansionDrill.first_layer:I
+     168: aload_0
+     169: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     172: getfield      #724                // Field app/freerouting/autoroute/AutorouteControl.via_lower_bound:I
+     175: invokestatic  #727                // Method java/lang/Math.max:(II)I
+     178: istore        10
+     180: aload         4
+     182: getfield      #730                // Field app/freerouting/autoroute/ExpansionDrill.last_layer:I
+     185: aload_0
+     186: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     189: getfield      #732                // Field app/freerouting/autoroute/AutorouteControl.via_upper_bound:I
+     192: invokestatic  #735                // Method java/lang/Math.min:(II)I
+     195: istore        11
+     197: iload         5
+     199: istore        12
+     201: aload         4
+     203: getfield      #691                // Field app/freerouting/autoroute/ExpansionDrill.room_arr:[Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     206: iload         12
+     208: aload         4
+     210: getfield      #675                // Field app/freerouting/autoroute/ExpansionDrill.first_layer:I
+     213: isub
+     214: aaload
+     215: invokeinterface #362,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+     220: astore        13
+     222: aload_0
+     223: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     226: getfield      #654                // Field app/freerouting/autoroute/AutorouteControl.via_radius_arr:[D
+     229: iload         12
+     231: daload
+     232: aload_0
+     233: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     236: getfield      #713                // Field app/freerouting/autoroute/AutorouteControl.via_clearance_class:I
+     239: aload_0
+     240: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     243: getfield      #684                // Field app/freerouting/autoroute/AutorouteControl.attach_smd_allowed:Z
+     246: aload         13
+     248: aload         4
+     250: getfield      #392                // Field app/freerouting/autoroute/ExpansionDrill.location:Lapp/freerouting/geometry/planar/Point;
+     253: iload         12
+     255: aload         9
+     257: aload_0
+     258: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     261: getfield      #437                // Field app/freerouting/autoroute/AutorouteControl.max_shove_trace_recursion_depth:I
+     264: iconst_0
+     265: aload_0
+     266: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     269: getfield      #293                // Field app/freerouting/autoroute/AutorouteEngine.board:Lapp/freerouting/board/RoutingBoard;
+     272: invokestatic  #737                // Method app/freerouting/board/ForcedViaAlgo.check_layer:(DIZLapp/freerouting/geometry/planar/TileShape;Lapp/freerouting/geometry/planar/Point;I[IIILapp/freerouting/board/RoutingBoard;)Lapp/freerouting/board/ForcedPadAlgo$CheckDrillResult;
+     275: astore        14
+     277: aload         14
+     279: getstatic     #743                // Field app/freerouting/board/ForcedPadAlgo$CheckDrillResult.NOT_DRILLABLE:Lapp/freerouting/board/ForcedPadAlgo$CheckDrillResult;
+     282: if_acmpne     293
+     285: iload         12
+     287: iconst_1
+     288: iadd
+     289: istore_2
+     290: goto          348
+     293: aload         14
+     295: getstatic     #749                // Field app/freerouting/board/ForcedPadAlgo$CheckDrillResult.DRILLABLE_WITH_ATTACH_SMD:Lapp/freerouting/board/ForcedPadAlgo$CheckDrillResult;
+     298: if_acmpne     329
+     301: iload         12
+     303: ifne          312
+     306: iconst_1
+     307: istore        6
+     309: goto          329
+     312: iload         12
+     314: aload_0
+     315: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     318: getfield      #752                // Field app/freerouting/autoroute/AutorouteControl.layer_count:I
+     321: iconst_1
+     322: isub
+     323: if_icmpne     329
+     326: iconst_1
+     327: istore        7
+     329: iload         12
+     331: iload         10
+     333: if_icmpgt     342
+     336: iload         10
+     338: istore_2
+     339: goto          348
+     342: iinc          12, -1
+     345: goto          201
+     348: iload_2
+     349: aload         4
+     351: getfield      #675                // Field app/freerouting/autoroute/ExpansionDrill.first_layer:I
+     354: if_icmple     358
+     357: return
+     358: iload         5
+     360: iconst_1
+     361: iadd
+     362: istore        12
+     364: iload         12
+     366: iload         11
+     368: if_icmple     377
+     371: iload         11
+     373: istore_3
+     374: goto          500
+     377: aload         4
+     379: getfield      #691                // Field app/freerouting/autoroute/ExpansionDrill.room_arr:[Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     382: iload         12
+     384: aload         4
+     386: getfield      #675                // Field app/freerouting/autoroute/ExpansionDrill.first_layer:I
+     389: isub
+     390: aaload
+     391: invokeinterface #362,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+     396: astore        13
+     398: aload_0
+     399: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     402: getfield      #654                // Field app/freerouting/autoroute/AutorouteControl.via_radius_arr:[D
+     405: iload         12
+     407: daload
+     408: aload_0
+     409: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     412: getfield      #713                // Field app/freerouting/autoroute/AutorouteControl.via_clearance_class:I
+     415: aload_0
+     416: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     419: getfield      #684                // Field app/freerouting/autoroute/AutorouteControl.attach_smd_allowed:Z
+     422: aload         13
+     424: aload         4
+     426: getfield      #392                // Field app/freerouting/autoroute/ExpansionDrill.location:Lapp/freerouting/geometry/planar/Point;
+     429: iload         12
+     431: aload         9
+     433: aload_0
+     434: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     437: getfield      #437                // Field app/freerouting/autoroute/AutorouteControl.max_shove_trace_recursion_depth:I
+     440: iconst_0
+     441: aload_0
+     442: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     445: getfield      #293                // Field app/freerouting/autoroute/AutorouteEngine.board:Lapp/freerouting/board/RoutingBoard;
+     448: invokestatic  #737                // Method app/freerouting/board/ForcedViaAlgo.check_layer:(DIZLapp/freerouting/geometry/planar/TileShape;Lapp/freerouting/geometry/planar/Point;I[IIILapp/freerouting/board/RoutingBoard;)Lapp/freerouting/board/ForcedPadAlgo$CheckDrillResult;
+     451: astore        14
+     453: aload         14
+     455: getstatic     #743                // Field app/freerouting/board/ForcedPadAlgo$CheckDrillResult.NOT_DRILLABLE:Lapp/freerouting/board/ForcedPadAlgo$CheckDrillResult;
+     458: if_acmpne     469
+     461: iload         12
+     463: iconst_1
+     464: isub
+     465: istore_3
+     466: goto          500
+     469: aload         14
+     471: getstatic     #749                // Field app/freerouting/board/ForcedPadAlgo$CheckDrillResult.DRILLABLE_WITH_ATTACH_SMD:Lapp/freerouting/board/ForcedPadAlgo$CheckDrillResult;
+     474: if_acmpne     494
+     477: iload         12
+     479: aload_0
+     480: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     483: getfield      #752                // Field app/freerouting/autoroute/AutorouteControl.layer_count:I
+     486: iconst_1
+     487: isub
+     488: if_icmpne     494
+     491: iconst_1
+     492: istore        7
+     494: iinc          12, 1
+     497: goto          364
+     500: iload_3
+     501: aload         4
+     503: getfield      #730                // Field app/freerouting/autoroute/ExpansionDrill.last_layer:I
+     506: if_icmpge     510
+     509: return
+     510: iload_2
+     511: istore        9
+     513: iload         9
+     515: iload_3
+     516: if_icmpgt     848
+     519: iload         9
+     521: iload         5
+     523: if_icmpne     529
+     526: goto          842
+     529: iload         9
+     531: iload         5
+     533: if_icmpge     547
+     536: iload         9
+     538: istore        10
+     540: iload         5
+     542: istore        11
+     544: goto          555
+     547: iload         5
+     549: istore        10
+     551: iload         9
+     553: istore        11
+     555: iconst_0
+     556: istore        12
+     558: iconst_0
+     559: istore        13
+     561: iload         13
+     563: aload_0
+     564: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     567: getfield      #755                // Field app/freerouting/autoroute/AutorouteControl.via_info_arr:[Lapp/freerouting/autoroute/AutorouteControl$ViaMask;
+     570: arraylength
+     571: if_icmpge     686
+     574: aload_0
+     575: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     578: getfield      #755                // Field app/freerouting/autoroute/AutorouteControl.via_info_arr:[Lapp/freerouting/autoroute/AutorouteControl$ViaMask;
+     581: iload         13
+     583: aaload
+     584: astore        14
+     586: iload         10
+     588: aload         14
+     590: getfield      #759                // Field app/freerouting/autoroute/AutorouteControl$ViaMask.from_layer:I
+     593: if_icmplt     680
+     596: iload         11
+     598: aload         14
+     600: getfield      #763                // Field app/freerouting/autoroute/AutorouteControl$ViaMask.to_layer:I
+     603: if_icmpgt     680
+     606: aload         14
+     608: getfield      #759                // Field app/freerouting/autoroute/AutorouteControl$ViaMask.from_layer:I
+     611: iload_2
+     612: if_icmplt     680
+     615: aload         14
+     617: getfield      #763                // Field app/freerouting/autoroute/AutorouteControl$ViaMask.to_layer:I
+     620: iload_3
+     621: if_icmpgt     680
+     624: iconst_1
+     625: istore        15
+     627: aload         14
+     629: getfield      #759                // Field app/freerouting/autoroute/AutorouteControl$ViaMask.from_layer:I
+     632: ifne          640
+     635: iload         6
+     637: ifne          662
+     640: aload         14
+     642: getfield      #763                // Field app/freerouting/autoroute/AutorouteControl$ViaMask.to_layer:I
+     645: aload_0
+     646: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     649: getfield      #752                // Field app/freerouting/autoroute/AutorouteControl.layer_count:I
+     652: iconst_1
+     653: isub
+     654: if_icmpne     669
+     657: iload         7
+     659: ifeq          669
+     662: aload         14
+     664: getfield      #765                // Field app/freerouting/autoroute/AutorouteControl$ViaMask.attach_smd_allowed:Z
+     667: istore        15
+     669: iload         15
+     671: ifeq          680
+     674: iconst_1
+     675: istore        12
+     677: goto          686
+     680: iinc          13, 1
+     683: goto          561
+     686: iload         12
+     688: ifne          694
+     691: goto          842
+     694: aload         4
+     696: iload         9
+     698: aload         4
+     700: getfield      #675                // Field app/freerouting/autoroute/ExpansionDrill.first_layer:I
+     703: isub
+     704: invokevirtual #695                // Method app/freerouting/autoroute/ExpansionDrill.get_maze_search_element:(I)Lapp/freerouting/autoroute/MazeSearchElement;
+     707: astore        13
+     709: aload         13
+     711: getfield      #235                // Field app/freerouting/autoroute/MazeSearchElement.is_occupied:Z
+     714: ifeq          720
+     717: goto          842
+     720: aload_1
+     721: getfield      #444                // Field app/freerouting/autoroute/MazeListElement.expansion_value:D
+     724: aload_0
+     725: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     728: getfield      #766                // Field app/freerouting/autoroute/AutorouteControl.add_via_costs:[Lapp/freerouting/autoroute/AutorouteControl$ViaCost;
+     731: iload         5
+     733: aaload
+     734: getfield      #770                // Field app/freerouting/autoroute/AutorouteControl$ViaCost.to_layer:[I
+     737: iload         9
+     739: iaload
+     740: i2d
+     741: dadd
+     742: dstore        14
+     744: aload_1
+     745: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+     748: getfield      #181                // Field app/freerouting/geometry/planar/FloatLine.a:Lapp/freerouting/geometry/planar/FloatPoint;
+     751: aload_1
+     752: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+     755: getfield      #191                // Field app/freerouting/geometry/planar/FloatLine.b:Lapp/freerouting/geometry/planar/FloatPoint;
+     758: invokevirtual #344                // Method app/freerouting/geometry/planar/FloatPoint.middle_point:(Lapp/freerouting/geometry/planar/FloatPoint;)Lapp/freerouting/geometry/planar/FloatPoint;
+     761: astore        16
+     763: dload         14
+     765: aload_0
+     766: getfield      #73                 // Field destination_distance:Lapp/freerouting/autoroute/DestinationDistance;
+     769: aload         16
+     771: iload         9
+     773: invokevirtual #644                // Method app/freerouting/autoroute/DestinationDistance.calculate:(Lapp/freerouting/geometry/planar/FloatPoint;I)D
+     776: dadd
+     777: dstore        17
+     779: iload         9
+     781: aload         4
+     783: getfield      #675                // Field app/freerouting/autoroute/ExpansionDrill.first_layer:I
+     786: isub
+     787: istore        19
+     789: new           #218                // class app/freerouting/autoroute/MazeListElement
+     792: dup
+     793: aload         4
+     795: iload         19
+     797: aload         4
+     799: aload_1
+     800: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+     803: dload         14
+     805: dload         17
+     807: aload         4
+     809: getfield      #691                // Field app/freerouting/autoroute/ExpansionDrill.room_arr:[Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     812: iload         19
+     814: aaload
+     815: aload_1
+     816: getfield      #340                // Field app/freerouting/autoroute/MazeListElement.shape_entry:Lapp/freerouting/geometry/planar/FloatLine;
+     819: iload         8
+     821: getstatic     #464                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.NONE:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     824: iconst_0
+     825: invokespecial #450                // Method app/freerouting/autoroute/MazeListElement."<init>":(Lapp/freerouting/autoroute/ExpandableObject;ILapp/freerouting/autoroute/ExpandableObject;IDDLapp/freerouting/autoroute/CompleteExpansionRoom;Lapp/freerouting/geometry/planar/FloatLine;ZLapp/freerouting/autoroute/MazeSearchElement$Adjustment;Z)V
+     828: astore        20
+     830: aload_0
+     831: getfield      #49                 // Field maze_expansion_list:Ljava/util/SortedSet;
+     834: aload         20
+     836: invokeinterface #453,  2          // InterfaceMethod java/util/SortedSet.add:(Ljava/lang/Object;)Z
+     841: pop
+     842: iinc          9, 1
+     845: goto          513
+     848: return
+
+  private boolean init(java.util.Set<app.freerouting.board.Item>, java.util.Set<app.freerouting.board.Item>);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+       5: getfield      #414                // Field app/freerouting/autoroute/AutorouteControl.net_no:I
+       8: aload_0
+       9: getfield      #43                 // Field search_tree:Lapp/freerouting/board/ShapeSearchTree;
+      12: invokestatic  #774                // Method reduce_trace_shapes_at_tie_pins:(Ljava/util/Collection;ILapp/freerouting/board/ShapeSearchTree;)V
+      15: aload_2
+      16: aload_0
+      17: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      20: getfield      #414                // Field app/freerouting/autoroute/AutorouteControl.net_no:I
+      23: aload_0
+      24: getfield      #43                 // Field search_tree:Lapp/freerouting/board/ShapeSearchTree;
+      27: invokestatic  #774                // Method reduce_trace_shapes_at_tie_pins:(Ljava/util/Collection;ILapp/freerouting/board/ShapeSearchTree;)V
+      30: iconst_0
+      31: istore_3
+      32: aload_2
+      33: invokeinterface #411,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+      38: astore        4
+      40: aload         4
+      42: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      47: ifeq          152
+      50: aload         4
+      52: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      57: checkcast     #100                // class app/freerouting/board/Item
+      60: astore        5
+      62: aload_0
+      63: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+      66: invokevirtual #214                // Method app/freerouting/autoroute/AutorouteEngine.is_stop_requested:()Z
+      69: ifeq          74
+      72: iconst_0
+      73: ireturn
+      74: aload         5
+      76: invokevirtual #778                // Method app/freerouting/board/Item.get_autoroute_info:()Lapp/freerouting/autoroute/ItemAutorouteInfo;
+      79: astore        6
+      81: aload         6
+      83: iconst_0
+      84: invokevirtual #782                // Method app/freerouting/autoroute/ItemAutorouteInfo.set_start_info:(Z)V
+      87: iconst_0
+      88: istore        7
+      90: iload         7
+      92: aload         5
+      94: aload_0
+      95: getfield      #43                 // Field search_tree:Lapp/freerouting/board/ShapeSearchTree;
+      98: invokevirtual #788                // Method app/freerouting/board/Item.tree_shape_count:(Lapp/freerouting/datastructures/ShapeTree;)I
+     101: if_icmpge     147
+     104: aload         5
+     106: aload_0
+     107: getfield      #43                 // Field search_tree:Lapp/freerouting/board/ShapeSearchTree;
+     110: iload         7
+     112: invokevirtual #792                // Method app/freerouting/board/Item.get_tree_shape:(Lapp/freerouting/datastructures/ShapeTree;I)Lapp/freerouting/geometry/planar/TileShape;
+     115: astore        8
+     117: aload         8
+     119: ifnull        141
+     122: aload_0
+     123: getfield      #73                 // Field destination_distance:Lapp/freerouting/autoroute/DestinationDistance;
+     126: aload         8
+     128: invokevirtual #609                // Method app/freerouting/geometry/planar/TileShape.bounding_box:()Lapp/freerouting/geometry/planar/IntBox;
+     131: aload         5
+     133: iload         7
+     135: invokevirtual #796                // Method app/freerouting/board/Item.shape_layer:(I)I
+     138: invokevirtual #799                // Method app/freerouting/autoroute/DestinationDistance.join:(Lapp/freerouting/geometry/planar/IntBox;I)V
+     141: iinc          7, 1
+     144: goto          90
+     147: iconst_1
+     148: istore_3
+     149: goto          40
+     152: iload_3
+     153: ifne          208
+     156: aload_0
+     157: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     160: getfield      #269                // Field app/freerouting/autoroute/AutorouteControl.is_fanout:Z
+     163: ifeq          208
+     166: aload_0
+     167: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     170: getfield      #293                // Field app/freerouting/autoroute/AutorouteEngine.board:Lapp/freerouting/board/RoutingBoard;
+     173: getfield      #803                // Field app/freerouting/board/RoutingBoard.bounding_box:Lapp/freerouting/geometry/planar/IntBox;
+     176: astore        4
+     178: aload_0
+     179: getfield      #73                 // Field destination_distance:Lapp/freerouting/autoroute/DestinationDistance;
+     182: aload         4
+     184: iconst_0
+     185: invokevirtual #799                // Method app/freerouting/autoroute/DestinationDistance.join:(Lapp/freerouting/geometry/planar/IntBox;I)V
+     188: aload_0
+     189: getfield      #73                 // Field destination_distance:Lapp/freerouting/autoroute/DestinationDistance;
+     192: aload         4
+     194: aload_0
+     195: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     198: getfield      #752                // Field app/freerouting/autoroute/AutorouteControl.layer_count:I
+     201: iconst_1
+     202: isub
+     203: invokevirtual #799                // Method app/freerouting/autoroute/DestinationDistance.join:(Lapp/freerouting/geometry/planar/IntBox;I)V
+     206: iconst_1
+     207: istore_3
+     208: iload_3
+     209: ifne          214
+     212: iconst_0
+     213: ireturn
+     214: new           #805                // class java/util/LinkedList
+     217: dup
+     218: invokespecial #807                // Method java/util/LinkedList."<init>":()V
+     221: astore        4
+     223: aload_1
+     224: invokeinterface #411,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     229: astore        5
+     231: aload         5
+     233: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     238: ifeq          359
+     241: aload         5
+     243: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     248: checkcast     #100                // class app/freerouting/board/Item
+     251: astore        6
+     253: aload_0
+     254: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     257: invokevirtual #214                // Method app/freerouting/autoroute/AutorouteEngine.is_stop_requested:()Z
+     260: ifeq          265
+     263: iconst_0
+     264: ireturn
+     265: aload         6
+     267: invokevirtual #778                // Method app/freerouting/board/Item.get_autoroute_info:()Lapp/freerouting/autoroute/ItemAutorouteInfo;
+     270: astore        7
+     272: aload         7
+     274: iconst_1
+     275: invokevirtual #782                // Method app/freerouting/autoroute/ItemAutorouteInfo.set_start_info:(Z)V
+     278: aload         6
+     280: instanceof    #507                // class app/freerouting/board/Connectable
+     283: ifeq          356
+     286: iconst_0
+     287: istore        8
+     289: iload         8
+     291: aload         6
+     293: aload_0
+     294: getfield      #43                 // Field search_tree:Lapp/freerouting/board/ShapeSearchTree;
+     297: invokevirtual #788                // Method app/freerouting/board/Item.tree_shape_count:(Lapp/freerouting/datastructures/ShapeTree;)I
+     300: if_icmpge     356
+     303: aload         6
+     305: checkcast     #507                // class app/freerouting/board/Connectable
+     308: aload_0
+     309: getfield      #43                 // Field search_tree:Lapp/freerouting/board/ShapeSearchTree;
+     312: iload         8
+     314: invokeinterface #512,  3          // InterfaceMethod app/freerouting/board/Connectable.get_trace_connection_shape:(Lapp/freerouting/board/ShapeSearchTree;I)Lapp/freerouting/geometry/planar/TileShape;
+     319: astore        9
+     321: aload_0
+     322: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     325: aconst_null
+     326: aload         6
+     328: iload         8
+     330: invokevirtual #796                // Method app/freerouting/board/Item.shape_layer:(I)I
+     333: aload         9
+     335: invokevirtual #808                // Method app/freerouting/autoroute/AutorouteEngine.add_incomplete_expansion_room:(Lapp/freerouting/geometry/planar/TileShape;ILapp/freerouting/geometry/planar/TileShape;)Lapp/freerouting/autoroute/IncompleteFreeSpaceExpansionRoom;
+     338: astore        10
+     340: aload         4
+     342: aload         10
+     344: invokeinterface #812,  2          // InterfaceMethod java/util/Collection.add:(Ljava/lang/Object;)Z
+     349: pop
+     350: iinc          8, 1
+     353: goto          289
+     356: goto          231
+     359: new           #805                // class java/util/LinkedList
+     362: dup
+     363: invokespecial #807                // Method java/util/LinkedList."<init>":()V
+     366: astore        5
+     368: aload_0
+     369: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     372: getfield      #813                // Field app/freerouting/autoroute/AutorouteEngine.maintain_database:Z
+     375: ifeq          394
+     378: aload         5
+     380: aload_0
+     381: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     384: aload_1
+     385: invokevirtual #816                // Method app/freerouting/autoroute/AutorouteEngine.get_rooms_with_target_items:(Ljava/util/Set;)Ljava/util/Set;
+     388: invokeinterface #820,  2          // InterfaceMethod java/util/Collection.addAll:(Ljava/util/Collection;)Z
+     393: pop
+     394: aload         4
+     396: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+     401: astore        6
+     403: aload         6
+     405: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     410: ifeq          461
+     413: aload         6
+     415: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     420: checkcast     #824                // class app/freerouting/autoroute/IncompleteFreeSpaceExpansionRoom
+     423: astore        7
+     425: aload_0
+     426: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     429: invokevirtual #214                // Method app/freerouting/autoroute/AutorouteEngine.is_stop_requested:()Z
+     432: ifeq          437
+     435: iconst_0
+     436: ireturn
+     437: aload_0
+     438: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     441: aload         7
+     443: invokevirtual #826                // Method app/freerouting/autoroute/AutorouteEngine.complete_expansion_room:(Lapp/freerouting/autoroute/IncompleteFreeSpaceExpansionRoom;)Ljava/util/Collection;
+     446: astore        8
+     448: aload         5
+     450: aload         8
+     452: invokeinterface #820,  2          // InterfaceMethod java/util/Collection.addAll:(Ljava/util/Collection;)Z
+     457: pop
+     458: goto          403
+     461: iconst_0
+     462: istore        6
+     464: aload         5
+     466: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+     471: astore        7
+     473: aload         7
+     475: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     480: ifeq          676
+     483: aload         7
+     485: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     490: checkcast     #473                // class app/freerouting/autoroute/CompleteFreeSpaceExpansionRoom
+     493: astore        8
+     495: aload         8
+     497: invokevirtual #830                // Method app/freerouting/autoroute/CompleteFreeSpaceExpansionRoom.get_target_doors:()Ljava/util/Collection;
+     500: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+     505: astore        9
+     507: aload         9
+     509: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     514: ifeq          673
+     517: aload         9
+     519: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     524: checkcast     #264                // class app/freerouting/autoroute/TargetItemExpansionDoor
+     527: astore        10
+     529: aload_0
+     530: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     533: invokevirtual #214                // Method app/freerouting/autoroute/AutorouteEngine.is_stop_requested:()Z
+     536: ifeq          541
+     539: iconst_0
+     540: ireturn
+     541: aload         10
+     543: invokevirtual #266                // Method app/freerouting/autoroute/TargetItemExpansionDoor.is_destination_door:()Z
+     546: ifeq          552
+     549: goto          507
+     552: aload         10
+     554: getfield      #348                // Field app/freerouting/autoroute/TargetItemExpansionDoor.item:Lapp/freerouting/board/Item;
+     557: checkcast     #507                // class app/freerouting/board/Connectable
+     560: aload_0
+     561: getfield      #43                 // Field search_tree:Lapp/freerouting/board/ShapeSearchTree;
+     564: aload         10
+     566: getfield      #509                // Field app/freerouting/autoroute/TargetItemExpansionDoor.tree_entry_no:I
+     569: invokeinterface #512,  3          // InterfaceMethod app/freerouting/board/Connectable.get_trace_connection_shape:(Lapp/freerouting/board/ShapeSearchTree;I)Lapp/freerouting/geometry/planar/TileShape;
+     574: astore        11
+     576: aload         11
+     578: aload         10
+     580: getfield      #831                // Field app/freerouting/autoroute/TargetItemExpansionDoor.room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     583: invokeinterface #362,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+     588: invokevirtual #834                // Method app/freerouting/geometry/planar/TileShape.intersection:(Lapp/freerouting/geometry/planar/TileShape;)Lapp/freerouting/geometry/planar/TileShape;
+     591: astore        11
+     593: aload         11
+     595: invokevirtual #838                // Method app/freerouting/geometry/planar/TileShape.centre_of_gravity:()Lapp/freerouting/geometry/planar/FloatPoint;
+     598: astore        12
+     600: new           #170                // class app/freerouting/geometry/planar/FloatLine
+     603: dup
+     604: aload         12
+     606: aload         12
+     608: invokespecial #194                // Method app/freerouting/geometry/planar/FloatLine."<init>":(Lapp/freerouting/geometry/planar/FloatPoint;Lapp/freerouting/geometry/planar/FloatPoint;)V
+     611: astore        13
+     613: aload_0
+     614: getfield      #73                 // Field destination_distance:Lapp/freerouting/autoroute/DestinationDistance;
+     617: aload         12
+     619: aload         8
+     621: invokevirtual #841                // Method app/freerouting/autoroute/CompleteFreeSpaceExpansionRoom.get_layer:()I
+     624: invokevirtual #644                // Method app/freerouting/autoroute/DestinationDistance.calculate:(Lapp/freerouting/geometry/planar/FloatPoint;I)D
+     627: dstore        14
+     629: new           #218                // class app/freerouting/autoroute/MazeListElement
+     632: dup
+     633: aload         10
+     635: iconst_0
+     636: aconst_null
+     637: iconst_0
+     638: dconst_0
+     639: dload         14
+     641: aload         8
+     643: aload         13
+     645: iconst_0
+     646: getstatic     #464                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.NONE:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     649: iconst_0
+     650: invokespecial #450                // Method app/freerouting/autoroute/MazeListElement."<init>":(Lapp/freerouting/autoroute/ExpandableObject;ILapp/freerouting/autoroute/ExpandableObject;IDDLapp/freerouting/autoroute/CompleteExpansionRoom;Lapp/freerouting/geometry/planar/FloatLine;ZLapp/freerouting/autoroute/MazeSearchElement$Adjustment;Z)V
+     653: astore        16
+     655: aload_0
+     656: getfield      #49                 // Field maze_expansion_list:Ljava/util/SortedSet;
+     659: aload         16
+     661: invokeinterface #453,  2          // InterfaceMethod java/util/SortedSet.add:(Ljava/lang/Object;)Z
+     666: pop
+     667: iconst_1
+     668: istore        6
+     670: goto          507
+     673: goto          473
+     676: iload         6
+     678: ireturn
+
+  private boolean room_shape_is_thick(app.freerouting.autoroute.ObstacleExpansionRoom);
+    Code:
+       0: aload_1
+       1: invokevirtual #429                // Method app/freerouting/autoroute/ObstacleExpansionRoom.get_item:()Lapp/freerouting/board/Item;
+       4: astore_2
+       5: aload_1
+       6: invokevirtual #842                // Method app/freerouting/autoroute/ObstacleExpansionRoom.get_layer:()I
+       9: istore_3
+      10: aload_2
+      11: instanceof    #127                // class app/freerouting/board/Trace
+      14: ifeq          43
+      17: aload_2
+      18: checkcast     #127                // class app/freerouting/board/Trace
+      21: invokevirtual #156                // Method app/freerouting/board/Trace.get_half_width:()I
+      24: aload_0
+      25: getfield      #43                 // Field search_tree:Lapp/freerouting/board/ShapeSearchTree;
+      28: aload_2
+      29: invokevirtual #710                // Method app/freerouting/board/Item.clearance_class_no:()I
+      32: iload_3
+      33: invokevirtual #843                // Method app/freerouting/board/ShapeSearchTree.clearance_compensation_value:(II)I
+      36: iadd
+      37: i2d
+      38: dstore        4
+      40: goto          87
+      43: aload_2
+      44: instanceof    #489                // class app/freerouting/board/Via
+      47: ifeq          78
+      50: aload_2
+      51: checkcast     #489                // class app/freerouting/board/Via
+      54: aload_0
+      55: getfield      #43                 // Field search_tree:Lapp/freerouting/board/ShapeSearchTree;
+      58: iload_3
+      59: invokevirtual #846                // Method app/freerouting/board/Via.get_tree_shape_on_layer:(Lapp/freerouting/board/ShapeSearchTree;I)Lapp/freerouting/geometry/planar/TileShape;
+      62: astore        6
+      64: ldc2_w        #849                // double 0.5d
+      67: aload         6
+      69: invokevirtual #851                // Method app/freerouting/geometry/planar/TileShape.max_width:()D
+      72: dmul
+      73: dstore        4
+      75: goto          87
+      78: ldc_w         #852                // String MazeSearchAlgo. room_shape_is_thick: unexpected obstacle item
+      81: invokestatic  #383                // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      84: dconst_0
+      85: dstore        4
+      87: dload         4
+      89: aload_0
+      90: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      93: getfield      #314                // Field app/freerouting/autoroute/AutorouteControl.compensated_trace_half_width:[I
+      96: iload_3
+      97: iaload
+      98: i2d
+      99: dcmpl
+     100: iflt          107
+     103: iconst_1
+     104: goto          108
+     107: iconst_0
+     108: ireturn
+
+  private int check_ripup(app.freerouting.autoroute.MazeListElement, app.freerouting.board.Item, boolean);
+    Code:
+       0: aload_2
+       1: invokevirtual #854                // Method app/freerouting/board/Item.is_routable:()Z
+       4: ifne          9
+       7: iconst_m1
+       8: ireturn
+       9: iload_3
+      10: ifeq          24
+      13: aload_0
+      14: aload_1
+      15: aload_2
+      16: invokevirtual #857                // Method enter_through_small_door:(Lapp/freerouting/autoroute/MazeListElement;Lapp/freerouting/board/Item;)Z
+      19: ifne          24
+      22: iconst_m1
+      23: ireturn
+      24: aload_1
+      25: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+      28: aload_1
+      29: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      32: invokeinterface #499,  2          // InterfaceMethod app/freerouting/autoroute/ExpandableObject.other_room:(Lapp/freerouting/autoroute/CompleteExpansionRoom;)Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      37: astore        4
+      39: aload_1
+      40: getfield      #253                // Field app/freerouting/autoroute/MazeListElement.adjustment:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+      43: getstatic     #464                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.NONE:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+      46: if_acmpeq     53
+      49: iconst_1
+      50: goto          54
+      53: iconst_0
+      54: istore        5
+      56: aconst_null
+      57: astore        6
+      59: aload         4
+      61: instanceof    #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+      64: ifeq          77
+      67: aload         4
+      69: checkcast     #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+      72: invokevirtual #429                // Method app/freerouting/autoroute/ObstacleExpansionRoom.get_item:()Lapp/freerouting/board/Item;
+      75: astore        6
+      77: iload         5
+      79: ifeq          104
+      82: aload         6
+      84: ifnull        112
+      87: aload         6
+      89: aload_2
+      90: if_acmpeq     112
+      93: aload         6
+      95: aload_2
+      96: invokevirtual #861                // Method app/freerouting/board/Item.shares_net:(Lapp/freerouting/board/Item;)Z
+      99: ifeq          112
+     102: iconst_m1
+     103: ireturn
+     104: aload         6
+     106: aload_2
+     107: if_acmpne     112
+     110: iconst_1
+     111: ireturn
+     112: dconst_1
+     113: dstore        7
+     115: dconst_1
+     116: dstore        9
+     118: aload_2
+     119: instanceof    #127                // class app/freerouting/board/Trace
+     122: ifeq          159
+     125: aload_2
+     126: checkcast     #127                // class app/freerouting/board/Trace
+     129: astore        11
+     131: aload         11
+     133: invokevirtual #156                // Method app/freerouting/board/Trace.get_half_width:()I
+     136: i2d
+     137: dstore        9
+     139: aload_0
+     140: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     143: getfield      #865                // Field app/freerouting/autoroute/AutorouteControl.remove_unconnected_vias:Z
+     146: ifne          156
+     149: aload         11
+     151: invokestatic  #868                // Method calc_fanout_via_ripup_cost_factor:(Lapp/freerouting/board/Trace;)D
+     154: dstore        7
+     156: goto          318
+     159: aload_2
+     160: instanceof    #489                // class app/freerouting/board/Via
+     163: ifeq          318
+     166: aload_0
+     167: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     170: getfield      #865                // Field app/freerouting/autoroute/AutorouteControl.remove_unconnected_vias:Z
+     173: ifne          180
+     176: iconst_1
+     177: goto          181
+     180: iconst_0
+     181: istore        11
+     183: aload_2
+     184: invokevirtual #108                // Method app/freerouting/board/Item.get_normal_contacts:()Ljava/util/Set;
+     187: astore        12
+     189: iconst_0
+     190: istore        13
+     192: aload         12
+     194: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+     199: astore        14
+     201: aload         14
+     203: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     208: ifeq          293
+     211: aload         14
+     213: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     218: checkcast     #100                // class app/freerouting/board/Item
+     221: astore        15
+     223: aload         15
+     225: instanceof    #127                // class app/freerouting/board/Trace
+     228: ifeq          239
+     231: aload         15
+     233: invokevirtual #872                // Method app/freerouting/board/Item.is_user_fixed:()Z
+     236: ifeq          241
+     239: iconst_m1
+     240: ireturn
+     241: iinc          13, 1
+     244: aload         15
+     246: checkcast     #127                // class app/freerouting/board/Trace
+     249: astore        16
+     251: dload         9
+     253: aload         16
+     255: invokevirtual #156                // Method app/freerouting/board/Trace.get_half_width:()I
+     258: i2d
+     259: invokestatic  #163                // Method java/lang/Math.max:(DD)D
+     262: dstore        9
+     264: iload         11
+     266: ifeq          290
+     269: aload         16
+     271: invokestatic  #868                // Method calc_fanout_via_ripup_cost_factor:(Lapp/freerouting/board/Trace;)D
+     274: dstore        17
+     276: dload         17
+     278: dconst_1
+     279: dcmpl
+     280: ifle          290
+     283: dload         17
+     285: dstore        7
+     287: iconst_0
+     288: istore        11
+     290: goto          201
+     293: dload         7
+     295: dconst_1
+     296: dcmpg
+     297: ifgt          318
+     300: dload         9
+     302: ldc2_w        #849                // double 0.5d
+     305: iload         13
+     307: iconst_1
+     308: isub
+     309: iconst_0
+     310: invokestatic  #727                // Method java/lang/Math.max:(II)I
+     313: i2d
+     314: dmul
+     315: dmul
+     316: dstore        9
+     318: aload_0
+     319: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     322: getfield      #28                 // Field app/freerouting/autoroute/AutorouteControl.ripup_costs:I
+     325: i2d
+     326: dload         9
+     328: dmul
+     329: dstore        11
+     331: dconst_1
+     332: dstore        13
+     334: dload         7
+     336: dconst_1
+     337: dcmpg
+     338: ifgt          359
+     341: aload_2
+     342: invokestatic  #875                // Method app/freerouting/autoroute/Connection.get:(Lapp/freerouting/board/Item;)Lapp/freerouting/autoroute/Connection;
+     345: astore        15
+     347: aload         15
+     349: ifnull        359
+     352: aload         15
+     354: invokevirtual #881                // Method app/freerouting/autoroute/Connection.get_detour:()D
+     357: dstore        13
+     359: aload_0
+     360: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     363: getfield      #884                // Field app/freerouting/autoroute/AutorouteControl.ripup_pass_no:I
+     366: iconst_4
+     367: if_icmplt     386
+     370: aload_0
+     371: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     374: getfield      #884                // Field app/freerouting/autoroute/AutorouteControl.ripup_pass_no:I
+     377: iconst_3
+     378: irem
+     379: ifeq          386
+     382: iconst_1
+     383: goto          387
+     386: iconst_0
+     387: istore        15
+     389: iload         15
+     391: ifeq          421
+     394: aload_0
+     395: getfield      #10                 // Field random_generator:Ljava/util/Random;
+     398: invokevirtual #887                // Method java/util/Random.nextDouble:()D
+     401: dstore        16
+     403: ldc2_w        #849                // double 0.5d
+     406: dload         16
+     408: dload         16
+     410: dmul
+     411: dadd
+     412: dstore        18
+     414: dload         13
+     416: dload         18
+     418: dmul
+     419: dstore        13
+     421: dload         11
+     423: dload         13
+     425: ddiv
+     426: dstore        11
+     428: dload         11
+     430: dload         7
+     432: dmul
+     433: dstore        11
+     435: dload         11
+     437: d2i
+     438: iconst_1
+     439: invokestatic  #727                // Method java/lang/Math.max:(II)I
+     442: istore        16
+     444: ldc_w         #892                // int 21474836
+     447: istore        17
+     449: iload         16
+     451: ldc_w         #892                // int 21474836
+     454: invokestatic  #735                // Method java/lang/Math.min:(II)I
+     457: ireturn
+
+  private boolean shove_trace_room(app.freerouting.autoroute.MazeListElement, app.freerouting.autoroute.ObstacleExpansionRoom);
+    Code:
+       0: aload_1
+       1: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+       4: ifeq          27
+       7: aload_1
+       8: getfield      #220                // Field app/freerouting/autoroute/MazeListElement.section_no_of_door:I
+      11: aload_1
+      12: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+      15: invokeinterface #893,  1          // InterfaceMethod app/freerouting/autoroute/ExpandableObject.maze_search_element_count:()I
+      20: iconst_1
+      21: isub
+      22: if_icmpeq     27
+      25: iconst_1
+      26: ireturn
+      27: iconst_0
+      28: istore_3
+      29: aload_1
+      30: getfield      #253                // Field app/freerouting/autoroute/MazeListElement.adjustment:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+      33: getstatic     #896                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.RIGHT:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+      36: if_acmpeq     155
+      39: new           #805                // class java/util/LinkedList
+      42: dup
+      43: invokespecial #807                // Method java/util/LinkedList."<init>":()V
+      46: astore        4
+      48: aload_1
+      49: aload_2
+      50: aload_0
+      51: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+      54: getfield      #293                // Field app/freerouting/autoroute/AutorouteEngine.board:Lapp/freerouting/board/RoutingBoard;
+      57: aload_0
+      58: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+      61: iconst_0
+      62: aload         4
+      64: invokestatic  #899                // Method app/freerouting/autoroute/MazeShoveTraceAlgo.check_shove_trace_line:(Lapp/freerouting/autoroute/MazeListElement;Lapp/freerouting/autoroute/ObstacleExpansionRoom;Lapp/freerouting/board/RoutingBoard;Lapp/freerouting/autoroute/AutorouteControl;ZLjava/util/Collection;)Z
+      67: ifeq          72
+      70: iconst_1
+      71: istore_3
+      72: aload         4
+      74: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      79: astore        5
+      81: aload         5
+      83: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      88: ifeq          155
+      91: aload         5
+      93: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      98: checkcast     #905                // class app/freerouting/autoroute/MazeShoveTraceAlgo$DoorSection
+     101: astore        6
+     103: aload         6
+     105: getfield      #907                // Field app/freerouting/autoroute/MazeShoveTraceAlgo$DoorSection.door:Lapp/freerouting/autoroute/ExpansionDoor;
+     108: getfield      #561                // Field app/freerouting/autoroute/ExpansionDoor.dimension:I
+     111: iconst_2
+     112: if_icmpne     123
+     115: getstatic     #910                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.LEFT:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     118: astore        7
+     120: goto          128
+     123: getstatic     #464                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.NONE:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     126: astore        7
+     128: aload_0
+     129: aload         6
+     131: getfield      #907                // Field app/freerouting/autoroute/MazeShoveTraceAlgo$DoorSection.door:Lapp/freerouting/autoroute/ExpansionDoor;
+     134: aload         6
+     136: getfield      #913                // Field app/freerouting/autoroute/MazeShoveTraceAlgo$DoorSection.section_no:I
+     139: aload         6
+     141: getfield      #916                // Field app/freerouting/autoroute/MazeShoveTraceAlgo$DoorSection.section_line:Lapp/freerouting/geometry/planar/FloatLine;
+     144: aload_1
+     145: iconst_0
+     146: aload         7
+     148: invokevirtual #549                // Method expand_to_door_section:(Lapp/freerouting/autoroute/ExpandableObject;ILapp/freerouting/geometry/planar/FloatLine;Lapp/freerouting/autoroute/MazeListElement;ILapp/freerouting/autoroute/MazeSearchElement$Adjustment;)Z
+     151: pop
+     152: goto          81
+     155: aload_1
+     156: getfield      #253                // Field app/freerouting/autoroute/MazeListElement.adjustment:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     159: getstatic     #910                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.LEFT:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     162: if_acmpeq     281
+     165: new           #805                // class java/util/LinkedList
+     168: dup
+     169: invokespecial #807                // Method java/util/LinkedList."<init>":()V
+     172: astore        4
+     174: aload_1
+     175: aload_2
+     176: aload_0
+     177: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     180: getfield      #293                // Field app/freerouting/autoroute/AutorouteEngine.board:Lapp/freerouting/board/RoutingBoard;
+     183: aload_0
+     184: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     187: iconst_1
+     188: aload         4
+     190: invokestatic  #899                // Method app/freerouting/autoroute/MazeShoveTraceAlgo.check_shove_trace_line:(Lapp/freerouting/autoroute/MazeListElement;Lapp/freerouting/autoroute/ObstacleExpansionRoom;Lapp/freerouting/board/RoutingBoard;Lapp/freerouting/autoroute/AutorouteControl;ZLjava/util/Collection;)Z
+     193: ifeq          198
+     196: iconst_1
+     197: istore_3
+     198: aload         4
+     200: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+     205: astore        5
+     207: aload         5
+     209: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     214: ifeq          281
+     217: aload         5
+     219: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     224: checkcast     #905                // class app/freerouting/autoroute/MazeShoveTraceAlgo$DoorSection
+     227: astore        6
+     229: aload         6
+     231: getfield      #907                // Field app/freerouting/autoroute/MazeShoveTraceAlgo$DoorSection.door:Lapp/freerouting/autoroute/ExpansionDoor;
+     234: getfield      #561                // Field app/freerouting/autoroute/ExpansionDoor.dimension:I
+     237: iconst_2
+     238: if_icmpne     249
+     241: getstatic     #896                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.RIGHT:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     244: astore        7
+     246: goto          254
+     249: getstatic     #464                // Field app/freerouting/autoroute/MazeSearchElement$Adjustment.NONE:Lapp/freerouting/autoroute/MazeSearchElement$Adjustment;
+     252: astore        7
+     254: aload_0
+     255: aload         6
+     257: getfield      #907                // Field app/freerouting/autoroute/MazeShoveTraceAlgo$DoorSection.door:Lapp/freerouting/autoroute/ExpansionDoor;
+     260: aload         6
+     262: getfield      #913                // Field app/freerouting/autoroute/MazeShoveTraceAlgo$DoorSection.section_no:I
+     265: aload         6
+     267: getfield      #916                // Field app/freerouting/autoroute/MazeShoveTraceAlgo$DoorSection.section_line:Lapp/freerouting/geometry/planar/FloatLine;
+     270: aload_1
+     271: iconst_0
+     272: aload         7
+     274: invokevirtual #549                // Method expand_to_door_section:(Lapp/freerouting/autoroute/ExpandableObject;ILapp/freerouting/geometry/planar/FloatLine;Lapp/freerouting/autoroute/MazeListElement;ILapp/freerouting/autoroute/MazeSearchElement$Adjustment;)Z
+     277: pop
+     278: goto          207
+     281: iload_3
+     282: ireturn
+
+  private double check_neck_down_at_dest_pin(app.freerouting.autoroute.CompleteExpansionRoom);
+    Code:
+       0: aload_1
+       1: invokeinterface #503,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_target_doors:()Ljava/util/Collection;
+       6: astore_2
+       7: aload_2
+       8: invokeinterface #84,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      13: astore_3
+      14: aload_3
+      15: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      20: ifeq          67
+      23: aload_3
+      24: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      29: checkcast     #264                // class app/freerouting/autoroute/TargetItemExpansionDoor
+      32: astore        4
+      34: aload         4
+      36: getfield      #348                // Field app/freerouting/autoroute/TargetItemExpansionDoor.item:Lapp/freerouting/board/Item;
+      39: instanceof    #102                // class app/freerouting/board/Pin
+      42: ifeq          64
+      45: aload         4
+      47: getfield      #348                // Field app/freerouting/autoroute/TargetItemExpansionDoor.item:Lapp/freerouting/board/Item;
+      50: checkcast     #102                // class app/freerouting/board/Pin
+      53: aload_1
+      54: invokeinterface #288,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_layer:()I
+      59: invokevirtual #352                // Method app/freerouting/board/Pin.get_trace_neckdown_halfwidth:(I)I
+      62: i2d
+      63: dreturn
+      64: goto          14
+      67: dconst_0
+      68: dreturn
+
+  private boolean enter_through_small_door(app.freerouting.autoroute.MazeListElement, app.freerouting.board.Item);
+    Code:
+       0: aload_1
+       1: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+       4: invokeinterface #374,  1          // InterfaceMethod app/freerouting/autoroute/ExpandableObject.get_dimension:()I
+       9: iconst_1
+      10: if_icmpeq     15
+      13: iconst_0
+      14: ireturn
+      15: aload_1
+      16: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+      19: invokeinterface #649,  1          // InterfaceMethod app/freerouting/autoroute/ExpandableObject.get_shape:()Lapp/freerouting/geometry/planar/TileShape;
+      24: astore_3
+      25: aconst_null
+      26: astore        4
+      28: aload_3
+      29: iconst_0
+      30: invokevirtual #919                // Method app/freerouting/geometry/planar/TileShape.corner_approx:(I)Lapp/freerouting/geometry/planar/FloatPoint;
+      33: astore        5
+      35: aload_3
+      36: invokevirtual #923                // Method app/freerouting/geometry/planar/TileShape.border_line_count:()I
+      39: istore        6
+      41: iconst_1
+      42: istore        7
+      44: iload         7
+      46: iload         6
+      48: if_icmpge     94
+      51: aload_3
+      52: iload         7
+      54: invokevirtual #919                // Method app/freerouting/geometry/planar/TileShape.corner_approx:(I)Lapp/freerouting/geometry/planar/FloatPoint;
+      57: astore        8
+      59: aload         8
+      61: aload         5
+      63: invokevirtual #185                // Method app/freerouting/geometry/planar/FloatPoint.distance_square:(Lapp/freerouting/geometry/planar/FloatPoint;)D
+      66: dconst_1
+      67: dcmpl
+      68: ifle          84
+      71: aload_3
+      72: iload         7
+      74: iconst_1
+      75: isub
+      76: invokevirtual #926                // Method app/freerouting/geometry/planar/TileShape.border_line:(I)Lapp/freerouting/geometry/planar/Line;
+      79: astore        4
+      81: goto          94
+      84: aload         8
+      86: astore        5
+      88: iinc          7, 1
+      91: goto          44
+      94: aload         4
+      96: ifnonnull     101
+      99: iconst_0
+     100: ireturn
+     101: aload_3
+     102: invokevirtual #838                // Method app/freerouting/geometry/planar/TileShape.centre_of_gravity:()Lapp/freerouting/geometry/planar/FloatPoint;
+     105: invokevirtual #521                // Method app/freerouting/geometry/planar/FloatPoint.round:()Lapp/freerouting/geometry/planar/IntPoint;
+     108: astore        7
+     110: aload_1
+     111: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+     114: invokeinterface #288,  1          // InterfaceMethod app/freerouting/autoroute/CompleteExpansionRoom.get_layer:()I
+     119: istore        8
+     121: aload_0
+     122: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     125: getfield      #314                // Field app/freerouting/autoroute/AutorouteControl.compensated_trace_half_width:[I
+     128: iload         8
+     130: iaload
+     131: iconst_2
+     132: iadd
+     133: istore        9
+     135: iconst_3
+     136: anewarray     #930                // class app/freerouting/geometry/planar/Line
+     139: astore        10
+     141: aload         10
+     143: iconst_0
+     144: aload         4
+     146: iload         9
+     148: i2d
+     149: invokevirtual #932                // Method app/freerouting/geometry/planar/Line.translate:(D)Lapp/freerouting/geometry/planar/Line;
+     152: aastore
+     153: aload         10
+     155: iconst_1
+     156: new           #930                // class app/freerouting/geometry/planar/Line
+     159: dup
+     160: aload         7
+     162: aload         4
+     164: invokevirtual #936                // Method app/freerouting/geometry/planar/Line.direction:()Lapp/freerouting/geometry/planar/Direction;
+     167: iconst_2
+     168: invokevirtual #940                // Method app/freerouting/geometry/planar/Direction.turn_45_degree:(I)Lapp/freerouting/geometry/planar/Direction;
+     171: invokespecial #946                // Method app/freerouting/geometry/planar/Line."<init>":(Lapp/freerouting/geometry/planar/Point;Lapp/freerouting/geometry/planar/Direction;)V
+     174: aastore
+     175: aload         10
+     177: iconst_2
+     178: aload         4
+     180: iload         9
+     182: ineg
+     183: i2d
+     184: invokevirtual #932                // Method app/freerouting/geometry/planar/Line.translate:(D)Lapp/freerouting/geometry/planar/Line;
+     187: aastore
+     188: new           #528                // class app/freerouting/geometry/planar/Polyline
+     191: dup
+     192: aload         10
+     194: invokespecial #949                // Method app/freerouting/geometry/planar/Polyline."<init>":([Lapp/freerouting/geometry/planar/Line;)V
+     197: astore        11
+     199: aload         11
+     201: iload         9
+     203: iconst_0
+     204: invokevirtual #952                // Method app/freerouting/geometry/planar/Polyline.offset_shape:(II)Lapp/freerouting/geometry/planar/TileShape;
+     207: astore        12
+     209: iconst_1
+     210: newarray       int
+     212: astore        13
+     214: aload         13
+     216: iconst_0
+     217: aload_0
+     218: getfield      #24                 // Field ctrl:Lapp/freerouting/autoroute/AutorouteControl;
+     221: getfield      #414                // Field app/freerouting/autoroute/AutorouteControl.net_no:I
+     224: iastore
+     225: new           #46                 // class java/util/TreeSet
+     228: dup
+     229: invokespecial #48                 // Method java/util/TreeSet."<init>":()V
+     232: astore        14
+     234: aload_0
+     235: getfield      #20                 // Field autoroute_engine:Lapp/freerouting/autoroute/AutorouteEngine;
+     238: getfield      #37                 // Field app/freerouting/autoroute/AutorouteEngine.autoroute_search_tree:Lapp/freerouting/board/ShapeSearchTree;
+     241: aload         12
+     243: iload         8
+     245: aload         13
+     247: aload         14
+     249: invokevirtual #956                // Method app/freerouting/board/ShapeSearchTree.overlapping_objects:(Lapp/freerouting/geometry/planar/ConvexShape;I[ILjava/util/Set;)V
+     252: aload         14
+     254: invokeinterface #411,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     259: astore        15
+     261: aload         15
+     263: invokeinterface #90,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     268: ifeq          341
+     271: aload         15
+     273: invokeinterface #96,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     278: checkcast     #960                // class app/freerouting/board/SearchTreeObject
+     281: astore        16
+     283: aload         16
+     285: instanceof    #100                // class app/freerouting/board/Item
+     288: ifeq          261
+     291: aload         16
+     293: aload_2
+     294: if_acmpne     300
+     297: goto          261
+     300: aload         16
+     302: checkcast     #100                // class app/freerouting/board/Item
+     305: astore        17
+     307: aload         17
+     309: aload_2
+     310: invokevirtual #861                // Method app/freerouting/board/Item.shares_net:(Lapp/freerouting/board/Item;)Z
+     313: ifne          318
+     316: iconst_0
+     317: ireturn
+     318: aload         17
+     320: invokevirtual #108                // Method app/freerouting/board/Item.get_normal_contacts:()Ljava/util/Set;
+     323: astore        18
+     325: aload         18
+     327: aload_2
+     328: invokeinterface #962,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+     333: ifne          338
+     336: iconst_0
+     337: ireturn
+     338: goto          261
+     341: iconst_1
+     342: ireturn
+
+  private boolean check_leaving_ripped_item(app.freerouting.autoroute.MazeListElement);
+    Code:
+       0: aload_1
+       1: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+       4: instanceof    #318                // class app/freerouting/autoroute/ExpansionDoor
+       7: ifne          12
+      10: iconst_0
+      11: ireturn
+      12: aload_1
+      13: getfield      #223                // Field app/freerouting/autoroute/MazeListElement.door:Lapp/freerouting/autoroute/ExpandableObject;
+      16: checkcast     #318                // class app/freerouting/autoroute/ExpansionDoor
+      19: astore_2
+      20: aload_2
+      21: aload_1
+      22: getfield      #280                // Field app/freerouting/autoroute/MazeListElement.next_room:Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      25: invokevirtual #965                // Method app/freerouting/autoroute/ExpansionDoor.other_room:(Lapp/freerouting/autoroute/CompleteExpansionRoom;)Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      28: astore_3
+      29: aload_3
+      30: instanceof    #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+      33: ifne          38
+      36: iconst_0
+      37: ireturn
+      38: aload_3
+      39: checkcast     #356                // class app/freerouting/autoroute/ObstacleExpansionRoom
+      42: invokevirtual #429                // Method app/freerouting/autoroute/ObstacleExpansionRoom.get_item:()Lapp/freerouting/board/Item;
+      45: astore        4
+      47: aload         4
+      49: invokevirtual #854                // Method app/freerouting/board/Item.is_routable:()Z
+      52: ifne          57
+      55: iconst_0
+      56: ireturn
+      57: aload_0
+      58: aload_1
+      59: aload         4
+      61: invokevirtual #857                // Method enter_through_small_door:(Lapp/freerouting/autoroute/MazeListElement;Lapp/freerouting/board/Item;)Z
+      64: ireturn
+}

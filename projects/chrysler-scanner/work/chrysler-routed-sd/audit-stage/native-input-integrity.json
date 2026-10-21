@@ -1,0 +1,174 @@
+{
+  "design": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/design",
+  "nativeVersion": "10.0.7",
+  "schematicPages": 23,
+  "allDesignInputBytesAndMtimesUnchanged": true,
+  "inputs": {
+    "22_sd-logger.kicad_sch": {
+      "sha256": "bfe7e4f6fdebc1d2447c5fb7a413442d9b704b5c934c914aaae974ac77739a70",
+      "size": 72893,
+      "mtime_ns": 1792525826582224591
+    },
+    "08_power-5v.kicad_sch": {
+      "sha256": "bdb47ee04533396d5185946acd6c0de8cb5f8f19d773ee016bac6744bcd68680",
+      "size": 85531,
+      "mtime_ns": 1792525673055968504
+    },
+    "21_obd.kicad_sch": {
+      "sha256": "edf81d1fbf5bb9fbaee47166c43b762f42b4020447b4bdfd05d10c29ce76c391",
+      "size": 12858,
+      "mtime_ns": 1792525673056218839
+    },
+    "20_leds.kicad_sch": {
+      "sha256": "c45b9b6af0e04db03858975c5e916ba0aa31ace0a38b9e5c5e9d7d1daf938cf8",
+      "size": 82781,
+      "mtime_ns": 1792525673056627674
+    },
+    "09_power-vpp.kicad_sch": {
+      "sha256": "bcf5fb02f7e78b89055546bc15a1ab1a9d6abccab9d051217741cb454eae30d3",
+      "size": 69738,
+      "mtime_ns": 1792525673057011801
+    },
+    "04_sci-6-12.kicad_sch": {
+      "sha256": "e47ec005f63d366cc1cadcd668d11046a069d88791220f9f95bb0a811c33a894",
+      "size": 82069,
+      "mtime_ns": 1792525673061324822
+    },
+    "12_program-6.kicad_sch": {
+      "sha256": "156ca54a204302480f685f2209fa32ac037e6114a01cd6f1d7cb53a03bdad0d6",
+      "size": 64523,
+      "mtime_ns": 1792525673061694199
+    },
+    "14_program-12.kicad_sch": {
+      "sha256": "f0f7ba0113124857582880ab341c9ab1925452e3c4a6b645f681c804674641f5",
+      "size": 64433,
+      "mtime_ns": 1792525673062065993
+    },
+    "16_mcu.kicad_sch": {
+      "sha256": "a776a3ccd68e274d4fba440cb42518d1b747d628c23501f47efafa65affb1c95",
+      "size": 86434,
+      "mtime_ns": 1792525673062470620
+    },
+    "19_usb.kicad_sch": {
+      "sha256": "a1881edd41865f99d52ca024367e3b9bb30445235e958a42c6ce0ca1b1f97a28",
+      "size": 117020,
+      "mtime_ns": 1792525673063017456
+    },
+    "10_power-vbb.kicad_sch": {
+      "sha256": "99c89dc660264768362d5e1b8af194d5e77e12c248680858d683dbb3cad0bd4b",
+      "size": 70053,
+      "mtime_ns": 1792525673063467458
+    },
+    "07_vehicle-input.kicad_sch": {
+      "sha256": "dadc49a8de4b924582fe378782d4bbc979fb6ae3d22c438820f602c269106b2c",
+      "size": 16870,
+      "mtime_ns": 1792525673063805835
+    },
+    "11_power-7v5.kicad_sch": {
+      "sha256": "a93f5b3338774d1ff1b734a5c02bf08b31e5d696ee68174156469b19f25ab07a",
+      "size": 74141,
+      "mtime_ns": 1792525673064466047
+    },
+    "15_program-14.kicad_sch": {
+      "sha256": "ed58a7f98095b0150a33289db8b97c4949f717a58d794dc60c87a92148bff9d0",
+      "size": 64707,
+      "mtime_ns": 1792525673064809007
+    },
+    "05_sci-rx.kicad_sch": {
+      "sha256": "a6ad3e06ee495b13a9997e7a2ffbc1f49d47153fecc724921d3cb24a826d5ac0",
+      "size": 56712,
+      "mtime_ns": 1792525673065125258
+    },
+    "17_adc.kicad_sch": {
+      "sha256": "66ebdbc7b0d2959bed791cbe57d9aafe6ff7273a3f5d54176f7889b037626957",
+      "size": 38689,
+      "mtime_ns": 1792525673065358426
+    },
+    "06_obd-protection.kicad_sch": {
+      "sha256": "ef076349ada280903d5580d67a2740d8c68966b75abce4d5613118dbf4f7de42",
+      "size": 38275,
+      "mtime_ns": 1792525673065622677
+    },
+    "01_ccd.kicad_sch": {
+      "sha256": "aa208a17924f503a46b69e40afcc690e0ae8827720eccf4536234621f3749f5d",
+      "size": 123360,
+      "mtime_ns": 1792525673066036013
+    },
+    "02_pci.kicad_sch": {
+      "sha256": "ab6c035be4598f5a9b5ab4206508f1873605193994f363dd6431e52c4a6b8978",
+      "size": 58442,
+      "mtime_ns": 1792525673066353723
+    },
+    "18_control.kicad_sch": {
+      "sha256": "3a147ad1fd4b93d5da3f7e16d4d8c910480787b47cae7f9edc381ca95b14af06",
+      "size": 46807,
+      "mtime_ns": 1792525673066637474
+    },
+    "ChryslerScanner_V240_SD.kicad_sch": {
+      "sha256": "c7033df3c3f63015fe14cdb47d0cc175aa155b25509de7469d5a0dec137c95ca",
+      "size": 14546,
+      "mtime_ns": 1792526455757902014
+    },
+    "13_program-9.kicad_sch": {
+      "sha256": "4a4ec05d01f6b4d14455df5e334168f76005ea8ab80997016dfb19f046159528",
+      "size": 64540,
+      "mtime_ns": 1792525673067344769
+    },
+    "03_sci-14-9.kicad_sch": {
+      "sha256": "fd1cf933223361ff8bb6ce85a006fd6a256fb209dd92d1c1e92e7f8b56b43be2",
+      "size": 56170,
+      "mtime_ns": 1792525673067916147
+    },
+    "ChryslerScanner.kicad_sym": {
+      "sha256": "af87ad25d37b113c4b04bd8b193a7e36b7f9ad55c39ab0ff8b2cc6565f8a22c7",
+      "size": 845534,
+      "mtime_ns": 1792525673060112483
+    },
+    "SDLogger.kicad_sym": {
+      "sha256": "09501079e6bf01ba3a4a181b75396cf65dac83c34e40900c94023f3518626eb2",
+      "size": 28252,
+      "mtime_ns": 1792525673060755861
+    },
+    "ChryslerScanner_V240_SD.kicad_pro": {
+      "sha256": "19a79898a741de0d39de0849bcd958cbd2fc3eb943d100a71b50c39aa4d712f7",
+      "size": 17016,
+      "mtime_ns": 1792525790109941702
+    },
+    "sym-lib-table": {
+      "sha256": "4febfc4c7f94c9eb6576f9fc935f7432a99a4d2d570cb483d5706536b336a23e",
+      "size": 330,
+      "mtime_ns": 1792525673064062503
+    }
+  },
+  "runs": [
+    {
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "--output",
+        "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/audit-stage/ChryslerScanner_V240_SD.xml",
+        "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/design/ChryslerScanner_V240_SD.kicad_sch"
+      ],
+      "seconds": 1.262,
+      "returnCode": 0
+    },
+    {
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--output",
+        "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/audit-stage/erc-native.json",
+        "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/design/ChryslerScanner_V240_SD.kicad_sch"
+      ],
+      "seconds": 2.186,
+      "returnCode": 0
+    }
+  ]
+}

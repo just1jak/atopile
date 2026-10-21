@@ -1,0 +1,254 @@
+Compiled from "BoardHandlingHeadless.java"
+public class app.freerouting.interactive.BoardHandlingHeadless implements app.freerouting.interactive.IBoardHandling {
+  public final app.freerouting.interactive.ActivityReplayFile activityReplayFile;
+
+  public app.freerouting.interactive.Settings settings;
+
+  protected app.freerouting.board.RoutingBoard board;
+
+  protected java.util.Locale locale;
+
+  protected boolean save_intermediate_stages;
+
+  protected float optimization_improvement_threshold;
+
+  private byte[] serializedBoard;
+
+  public app.freerouting.interactive.ThreadActionListener autorouter_listener;
+
+  public app.freerouting.interactive.BoardHandlingHeadless(java.util.Locale, boolean, float);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #7                  // class app/freerouting/interactive/ActivityReplayFile
+       8: dup
+       9: invokespecial #9                  // Method app/freerouting/interactive/ActivityReplayFile."<init>":()V
+      12: putfield      #10                 // Field activityReplayFile:Lapp/freerouting/interactive/ActivityReplayFile;
+      15: aload_0
+      16: aload_1
+      17: putfield      #16                 // Field locale:Ljava/util/Locale;
+      20: aload_0
+      21: iload_2
+      22: putfield      #20                 // Field save_intermediate_stages:Z
+      25: aload_0
+      26: fload_3
+      27: putfield      #24                 // Field optimization_improvement_threshold:F
+      30: return
+
+  public app.freerouting.board.RoutingBoard get_routing_board();
+    Code:
+       0: aload_0
+       1: getfield      #28                 // Field board:Lapp/freerouting/board/RoutingBoard;
+       4: areturn
+
+  public synchronized void update_routing_board(app.freerouting.board.RoutingBoard);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #28                 // Field board:Lapp/freerouting/board/RoutingBoard;
+       5: aload_0
+       6: aconst_null
+       7: putfield      #32                 // Field serializedBoard:[B
+      10: return
+
+  public synchronized app.freerouting.board.RoutingBoard deep_copy_routing_board();
+    Code:
+       0: aconst_null
+       1: astore_1
+       2: aconst_null
+       3: astore_2
+       4: aload_0
+       5: getfield      #32                 // Field serializedBoard:[B
+       8: ifnonnull     48
+      11: new           #36                 // class java/io/ByteArrayOutputStream
+      14: dup
+      15: invokespecial #38                 // Method java/io/ByteArrayOutputStream."<init>":()V
+      18: astore_3
+      19: new           #39                 // class java/io/ObjectOutputStream
+      22: dup
+      23: aload_3
+      24: invokespecial #41                 // Method java/io/ObjectOutputStream."<init>":(Ljava/io/OutputStream;)V
+      27: astore_1
+      28: aload_1
+      29: aload_0
+      30: getfield      #28                 // Field board:Lapp/freerouting/board/RoutingBoard;
+      33: invokevirtual #44                 // Method java/io/ObjectOutputStream.writeObject:(Ljava/lang/Object;)V
+      36: aload_1
+      37: invokevirtual #48                 // Method java/io/ObjectOutputStream.flush:()V
+      40: aload_0
+      41: aload_3
+      42: invokevirtual #51                 // Method java/io/ByteArrayOutputStream.toByteArray:()[B
+      45: putfield      #32                 // Field serializedBoard:[B
+      48: new           #55                 // class java/io/ByteArrayInputStream
+      51: dup
+      52: aload_0
+      53: getfield      #32                 // Field serializedBoard:[B
+      56: invokespecial #57                 // Method java/io/ByteArrayInputStream."<init>":([B)V
+      59: astore_3
+      60: new           #60                 // class java/io/ObjectInputStream
+      63: dup
+      64: aload_3
+      65: invokespecial #62                 // Method java/io/ObjectInputStream."<init>":(Ljava/io/InputStream;)V
+      68: astore_2
+      69: aload_2
+      70: invokevirtual #65                 // Method java/io/ObjectInputStream.readObject:()Ljava/lang/Object;
+      73: checkcast     #69                 // class app/freerouting/board/RoutingBoard
+      76: astore        4
+      78: aload         4
+      80: aload_0
+      81: getfield      #28                 // Field board:Lapp/freerouting/board/RoutingBoard;
+      84: invokevirtual #71                 // Method app/freerouting/board/RoutingBoard.get_test_level:()Lapp/freerouting/board/TestLevel;
+      87: invokevirtual #75                 // Method app/freerouting/board/RoutingBoard.set_test_level:(Lapp/freerouting/board/TestLevel;)V
+      90: aload         4
+      92: invokevirtual #79                 // Method app/freerouting/board/RoutingBoard.clear_all_item_temporary_autoroute_data:()V
+      95: aload         4
+      97: invokevirtual #82                 // Method app/freerouting/board/RoutingBoard.finish_autoroute:()V
+     100: aload         4
+     102: astore        5
+     104: aload_1
+     105: ifnull        112
+     108: aload_1
+     109: invokevirtual #85                 // Method java/io/ObjectOutputStream.close:()V
+     112: aload_2
+     113: ifnull        120
+     116: aload_2
+     117: invokevirtual #88                 // Method java/io/ObjectInputStream.close:()V
+     120: goto          125
+     123: astore        6
+     125: aload         5
+     127: areturn
+     128: astore_3
+     129: getstatic     #91                 // Field java/lang/System.err:Ljava/io/PrintStream;
+     132: aload_3
+     133: invokedynamic #97,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/Exception;)Ljava/lang/String;
+     138: invokevirtual #101                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     141: aconst_null
+     142: astore        4
+     144: aload_1
+     145: ifnull        152
+     148: aload_1
+     149: invokevirtual #85                 // Method java/io/ObjectOutputStream.close:()V
+     152: aload_2
+     153: ifnull        160
+     156: aload_2
+     157: invokevirtual #88                 // Method java/io/ObjectInputStream.close:()V
+     160: goto          165
+     163: astore        5
+     165: aload         4
+     167: areturn
+     168: astore        7
+     170: aload_1
+     171: ifnull        178
+     174: aload_1
+     175: invokevirtual #85                 // Method java/io/ObjectOutputStream.close:()V
+     178: aload_2
+     179: ifnull        186
+     182: aload_2
+     183: invokevirtual #88                 // Method java/io/ObjectInputStream.close:()V
+     186: goto          191
+     189: astore        8
+     191: aload         7
+     193: athrow
+    Exception table:
+       from    to  target type
+         104   120   123   Class java/lang/Exception
+           4   104   128   Class java/lang/Exception
+         144   160   163   Class java/lang/Exception
+           4   104   168   any
+         128   144   168   any
+         170   186   189   Class java/lang/Exception
+         168   170   168   any
+
+  public app.freerouting.interactive.Settings get_settings();
+    Code:
+       0: aload_0
+       1: getfield      #107                // Field settings:Lapp/freerouting/interactive/Settings;
+       4: areturn
+
+  public void initialize_manual_trace_half_widths();
+    Code:
+       0: iconst_0
+       1: istore_1
+       2: iload_1
+       3: aload_0
+       4: getfield      #107                // Field settings:Lapp/freerouting/interactive/Settings;
+       7: getfield      #111                // Field app/freerouting/interactive/Settings.manual_trace_half_width_arr:[I
+      10: arraylength
+      11: if_icmpge     43
+      14: aload_0
+      15: getfield      #107                // Field settings:Lapp/freerouting/interactive/Settings;
+      18: getfield      #111                // Field app/freerouting/interactive/Settings.manual_trace_half_width_arr:[I
+      21: iload_1
+      22: aload_0
+      23: getfield      #28                 // Field board:Lapp/freerouting/board/RoutingBoard;
+      26: getfield      #117                // Field app/freerouting/board/RoutingBoard.rules:Lapp/freerouting/rules/BoardRules;
+      29: invokevirtual #121                // Method app/freerouting/rules/BoardRules.get_default_net_class:()Lapp/freerouting/rules/NetClass;
+      32: iload_1
+      33: invokevirtual #127                // Method app/freerouting/rules/NetClass.get_trace_half_width:(I)I
+      36: iastore
+      37: iinc          1, 1
+      40: goto          2
+      43: return
+
+  public void create_board(app.freerouting.geometry.planar.IntBox, app.freerouting.board.LayerStructure, app.freerouting.geometry.planar.PolylineShape[], java.lang.String, app.freerouting.rules.BoardRules, app.freerouting.board.Communication, app.freerouting.board.TestLevel);
+    Code:
+       0: aload_0
+       1: getfield      #28                 // Field board:Lapp/freerouting/board/RoutingBoard;
+       4: ifnull        12
+       7: ldc           #133                // String  BoardHandling.create_board: app.freerouting.board already created
+       9: invokestatic  #135                // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      12: iconst_0
+      13: istore        8
+      15: aload         5
+      17: ifnull        72
+      20: aload         4
+      22: ifnull        56
+      25: aload         5
+      27: getfield      #140                // Field app/freerouting/rules/BoardRules.clearance_matrix:Lapp/freerouting/rules/ClearanceMatrix;
+      30: ifnull        56
+      33: aload         5
+      35: getfield      #140                // Field app/freerouting/rules/BoardRules.clearance_matrix:Lapp/freerouting/rules/ClearanceMatrix;
+      38: aload         4
+      40: invokevirtual #144                // Method app/freerouting/rules/ClearanceMatrix.get_no:(Ljava/lang/String;)I
+      43: istore        8
+      45: iload         8
+      47: iconst_0
+      48: invokestatic  #150                // Method java/lang/Math.max:(II)I
+      51: istore        8
+      53: goto          72
+      56: aload         5
+      58: invokevirtual #121                // Method app/freerouting/rules/BoardRules.get_default_net_class:()Lapp/freerouting/rules/NetClass;
+      61: getfield      #156                // Field app/freerouting/rules/NetClass.default_item_clearance_classes:Lapp/freerouting/rules/DefaultItemClearanceClasses;
+      64: getstatic     #160                // Field app/freerouting/rules/DefaultItemClearanceClasses$ItemClass.AREA:Lapp/freerouting/rules/DefaultItemClearanceClasses$ItemClass;
+      67: invokevirtual #166                // Method app/freerouting/rules/DefaultItemClearanceClasses.get:(Lapp/freerouting/rules/DefaultItemClearanceClasses$ItemClass;)I
+      70: istore        8
+      72: aload_0
+      73: new           #69                 // class app/freerouting/board/RoutingBoard
+      76: dup
+      77: aload_1
+      78: aload_2
+      79: aload_3
+      80: iload         8
+      82: aload         5
+      84: aload         6
+      86: aload         7
+      88: invokespecial #172                // Method app/freerouting/board/RoutingBoard."<init>":(Lapp/freerouting/geometry/planar/IntBox;Lapp/freerouting/board/LayerStructure;[Lapp/freerouting/geometry/planar/PolylineShape;ILapp/freerouting/rules/BoardRules;Lapp/freerouting/board/Communication;Lapp/freerouting/board/TestLevel;)V
+      91: putfield      #28                 // Field board:Lapp/freerouting/board/RoutingBoard;
+      94: aload_0
+      95: new           #112                // class app/freerouting/interactive/Settings
+      98: dup
+      99: aload_0
+     100: getfield      #28                 // Field board:Lapp/freerouting/board/RoutingBoard;
+     103: aload_0
+     104: getfield      #10                 // Field activityReplayFile:Lapp/freerouting/interactive/ActivityReplayFile;
+     107: invokespecial #175                // Method app/freerouting/interactive/Settings."<init>":(Lapp/freerouting/board/RoutingBoard;Lapp/freerouting/interactive/ActivityReplayFile;)V
+     110: putfield      #107                // Field settings:Lapp/freerouting/interactive/Settings;
+     113: return
+
+  public java.util.Locale get_locale();
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field locale:Ljava/util/Locale;
+       4: areturn
+}

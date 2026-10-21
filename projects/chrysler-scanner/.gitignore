@@ -1,0 +1,14 @@
+.local-checks/
+.pio/
+*.class
+*.lck
+*.kicad_prl
+*-backups/
+.env*
+!.env.example
+!.env.sample
+auth.json
+credentials.json
+secrets.json
+secrets.h
+secrets.hpp

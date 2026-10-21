@@ -1,0 +1,8 @@
+.venv/
+.ato/
+build/
+__pycache__/
+.DS_Store
+*.kicad_pcb.lck
+*.kicad_prl
+*-backups/

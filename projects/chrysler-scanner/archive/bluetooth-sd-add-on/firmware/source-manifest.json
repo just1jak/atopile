@@ -1,0 +1,88 @@
+{
+  "status": "source frozen after independent review",
+  "host_tests": "passed with AddressSanitizer and UndefinedBehaviorSanitizer",
+  "embedded_build": "pending disk recovery",
+  "hardware_tested": false,
+  "files": {
+    "LICENSE": {
+      "sha256": "c3bc1fd94148c28485e8bab1d5a28edbc8e3870f2bd9be7127c68c8b7a0ea5df",
+      "bytes": 35126
+    },
+    "PROTOCOL_SOURCES.md": {
+      "sha256": "c0d7e884118d04b023f9fea09294b2e813b46f45b81bf014bfba6d65339bb2ff",
+      "bytes": 5604
+    },
+    "README.md": {
+      "sha256": "ea1a3ea405a3795cc123efe85d134be729808e686b6c6c72b92ccc325c66c160",
+      "bytes": 6731
+    },
+    "card/logger.cfg": {
+      "sha256": "1ca923d16b37f18be6faa106a5e29f26483ab0e2daf69fe63718c55edaf9ac6f",
+      "bytes": 1063
+    },
+    "include/board_pins.hpp": {
+      "sha256": "fc706428b400de2ee04a45e66af396bf27c222e7adee7b51d17557c81b115924",
+      "bytes": 510
+    },
+    "include/capture_format.hpp": {
+      "sha256": "446d0f855626af4855d7685d5c8cd9e36ab8d50dcf31d615038daa6c5080b165",
+      "bytes": 2093
+    },
+    "include/chrysler/protocol.hpp": {
+      "sha256": "5e7e7825afd84c6f7d1778d4e5aa580a4797edf1243026c8b144ce72919e1bed",
+      "bytes": 4153
+    },
+    "include/control_policy.hpp": {
+      "sha256": "e8ad19ea9d8afb1ea95a3452d7fff1642ef9d259807cbfc3c17163f20236bf8b",
+      "bytes": 684
+    },
+    "include/logger_core.hpp": {
+      "sha256": "009dc4ce7f5ab76c6132f8dcb7a0641a02ce43d307e8a529d1d1e2fb54165b76",
+      "bytes": 6164
+    },
+    "include/producer_gate.hpp": {
+      "sha256": "b7f0ca1a56cb913afe98a64135089536f7411936a67247296096ccf8a94919d8",
+      "bytes": 894
+    },
+    "include/scanner_state.hpp": {
+      "sha256": "c5b33c9dea97eb8481ad6a0b4e6eaac0a14d90b66ed521aedec77cd2ea8ebe52",
+      "bytes": 1815
+    },
+    "include/session_storage.hpp": {
+      "sha256": "267a8005401ae62aacaf8e6c88a398e6ef2ddf038320b3c9319fa224b63925cf",
+      "bytes": 5055
+    },
+    "platformio.ini": {
+      "sha256": "2d65a08fde8f7c09419c37f6df0d88f681a08287c474acb9ad8c970ac22455b6",
+      "bytes": 495
+    },
+    "src/main.cpp": {
+      "sha256": "430fd7731a8d95cb0c5787893b837477ae512c50852cef9c6879d9b6084c14d1",
+      "bytes": 19813
+    },
+    "src/protocol.cpp": {
+      "sha256": "5ff630c88ecb2170532f6563d988f899569f6bfe9f8da34d5d8eb38d676ed8ea",
+      "bytes": 9260
+    },
+    "test/test_firmware.cpp": {
+      "sha256": "406bc5d03b60c837205ca22b91da4230eeffbebfb2bd11ae36b8d8a52184ab38",
+      "bytes": 10846
+    },
+    "tools/build.sh": {
+      "sha256": "8995b864fb0542bb55833dc165166180cf07e871fc0f326924d516fa6b436324",
+      "bytes": 533
+    },
+    "tools/export_bundle.py": {
+      "sha256": "90fe7141009938f2dde76a8bc5b7f3e599ee2008a7e5a6636c8cf76ee53f5d31",
+      "bytes": 2893
+    },
+    "tools/test_host.sh": {
+      "sha256": "526b9fe866dc66164717957e607f7795505c9d9c5ef4d8314c5d551eaa56c385",
+      "bytes": 343
+    },
+    "validation.json": {
+      "sha256": "09cc8bf93d83d2aae5559849393b2228244124ec3c29ebb906f9ac3cde3eca89",
+      "bytes": 565
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "protected_footprints_including_mounting_holes": 241,
+  "retained_placement_pad_and_paste_geometry_unchanged": true,
+  "outline_and_zones_unchanged": true,
+  "changed_or_added_footprints": [
+    "J2",
+    "U11",
+    "R102",
+    "R103"
+  ],
+  "retained_circuit_pin_maps_unchanged": 238,
+  "applies_to": "Prior 100 x 50 mm USB-C revision before board expansion; original check retained as historical evidence"
+}

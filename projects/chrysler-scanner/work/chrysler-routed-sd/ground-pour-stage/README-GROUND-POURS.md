@@ -1,0 +1,13 @@
+# Outer-ground copper experiment
+
+The latest frozen handoff is `check3/outer-ground-experiment.kicad_pcb`, SHA256 `b260a0ba4146e57d98317f00db63c77b64d65c32e3895dced6286c34db5a5aad`. It is a separate copy of native-check3 (`ef04cbf3c3684f35bd772a8967efb9a48ef19005a6a3491f0022c58e6fc4b9d1`), with the expert router's ground fanout already present. Earlier check1/check2 variants are retained as experiment evidence and are superseded.
+
+The copy adds F.Cu and B.Cu GND pours with 0.20 mm clearance. Surface-mount pads use solid copper connections; through-hole pads retain 0.20 mm thermal gaps and 0.25 mm spokes. Isolated pour removal remains enabled. A new F.Cu copper-pour-only reserve follows the actual locked RF tracks and pads with 0.80 mm extra clearance from their copper. It leaves tracks, vias and pads allowed. The original antenna keepout, both original ground planes, all original copper, all 263 complete footprint blocks and all pad attributes remain unchanged.
+
+On the latest copy, native in-memory zone filling reduces missing connections from 72 to 50. The ground net changes from 60 connected groups to 38 groups among 175 pads, leaving 37 ground joins plus 13 other joins. This adds 22 valid ground connections beyond the router's existing fanout. The benefit overlaps the router's fanout, so it cannot be added arithmetically to the earlier experiment's benefit.
+
+Native full DRC introduces no new errors or warnings. Four pre-existing copper-edge errors and three pre-existing redundant-track warnings remain. The frozen copy is therefore a stitching seed, **not a completed board**. `check3/ground-pour-experiment.json` contains the exact native before/after partitions, hashes, preservation checks and DRC findings; `check3/native-drc.json` is the full native report.
+
+The initial all-thermal variant reduced missing connections substantially but created 18 starved thermal-relief errors. The solid-SMD/thermal-through-hole variant resolves those errors through actual additional ground copper, while retaining all native rules and minimum spoke requirements. It changes heat flow during soldering; the assembly/reflow process must account for ground-connected surface-mount pads. No thermal, RF impedance or hardware qualification is claimed.
+
+The remaining isolated ground islands and exposed pads require deliberate ground stitches. Adding pours does not substitute for checking that every ground pad reaches the same native connected group, and connected islands must ultimately join the inner ground plane. No source board or original project file was modified by these experiments.

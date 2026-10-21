@@ -40,6 +40,11 @@ from faebryk.libs.kicad.fileformats import kicad
 MAX_COMPONENTS = 256
 MAX_PINS = 16_384
 MAX_MANIFEST_BYTES = 16_384
+MAX_PROJECT_CONFIG_BYTES = 65_536
+MAX_SCHEMATIC_BYTES = 8 * 1024 * 1024
+MAX_HIERARCHY_BYTES = 64 * 1024 * 1024
+MAX_HIERARCHY_FILES = 512
+MAX_HIERARCHY_DEPTH = 32
 MAX_NETLIST_BYTES = 32 * 1024 * 1024
 NATIVE_VERIFY_TIMEOUT = 45
 _ASSOCIATION_WARNING = (
@@ -362,15 +367,8 @@ def _find_cli() -> str:
     )
 
 
-def verify_native_connectivity(
-    path: Path, data: dict[str, Any]
-) -> dict[str, set[tuple[str, str]]]:
-    """Use KiCad's own parser/connectivity engine, requiring exact named nets."""
-    expected = _terminal_assignments(data)
-    expected_nets: dict[str, set[tuple[str, str]]] = {}
-    for terminal, net in expected.items():
-        if net is not None:
-            expected_nets.setdefault(net, set()).add(terminal)
+def _native_netlist(path: Path) -> list:
+    """Read native connectivity without writing any output beside the schematic."""
     environment = {
         key: value
         for key, value in _clean_env_for_kicad().items()
@@ -386,7 +384,7 @@ def verify_native_connectivity(
             "ATOPILE_AGENT_ANTHROPIC_API_KEY",
         }
     }
-    with tempfile.TemporaryDirectory(prefix=".verify-", dir=path.parent) as temp:
+    with tempfile.TemporaryDirectory(prefix="atopile-schematic-verify-") as temp:
         netlist_path = Path(temp) / "native.net"
         try:
             result = subprocess.run(
@@ -415,12 +413,32 @@ def verify_native_connectivity(
             detail = (
                 result.stderr or result.stdout or "no netlist was produced"
             ).strip()[-600:]
-            raise RuntimeError("KiCad rejected the generated schematic: " + detail)
+            raise RuntimeError("KiCad rejected the schematic: " + detail)
         with netlist_path.open("rb") as source:
             raw = source.read(MAX_NETLIST_BYTES + 1)
         if len(raw) > MAX_NETLIST_BYTES:
             raise RuntimeError("KiCad verification netlist exceeds the size limit")
-        native = sexpdata.loads(raw.decode("utf-8"))
+        try:
+            native = sexpdata.loads(raw.decode("utf-8"))
+        except Exception as error:
+            raise RuntimeError(
+                "KiCad produced an invalid verification netlist"
+            ) from error
+        if not isinstance(native, list) or _tag(native) != "export":
+            raise RuntimeError("KiCad produced an invalid verification netlist")
+    return native
+
+
+def verify_native_connectivity(
+    path: Path, data: dict[str, Any]
+) -> dict[str, set[tuple[str, str]]]:
+    """Use KiCad's own parser/connectivity engine, requiring exact named nets."""
+    expected = _terminal_assignments(data)
+    expected_nets: dict[str, set[tuple[str, str]]] = {}
+    for terminal, net in expected.items():
+        if net is not None:
+            expected_nets.setdefault(net, set()).add(terminal)
+    native = _native_netlist(path)
     native_references = {
         str(_field(component, "ref")[1])
         for component in _children(_field(native, "components"), "comp")
@@ -467,6 +485,154 @@ def verify_native_connectivity(
     if not seen <= expected.keys():
         raise RuntimeError("KiCad exported an unexpected schematic terminal")
     return actual_nets
+
+
+def _read_local_file(root: Path, path: Path, limit: int) -> bytes:
+    path = _safe_path(root, path)
+    if not path.is_file() or not stat.S_ISREG(path.stat().st_mode):
+        raise ValueError("Configured schematic inputs must be regular project files")
+    with path.open("rb") as source:
+        raw = source.read(limit + 1)
+    if len(raw) > limit:
+        raise ValueError("Configured schematic input exceeds its size limit")
+    return raw
+
+
+def _relative_schematic(root: Path, parent: Path, value: Any) -> Path:
+    # KiCad expands variables itself. Only literal relative paths can be checked
+    # before invoking it, so reject URI/drive/env syntax rather than guessing.
+    if (
+        not isinstance(value, str)
+        or not value
+        or len(value) > 4096
+        or any(ord(char) < 32 for char in value)
+        or any(char in value for char in ("\\", ":", "$"))
+        or value.startswith("~")
+        or Path(value).is_absolute()
+        or Path(value).suffix.lower() != ".kicad_sch"
+    ):
+        raise ValueError(
+            "Configured schematic paths must be literal project-relative .kicad_sch files"
+        )
+    return _safe_path(root, parent / value)
+
+
+def _configured_schematic(root: Path, target: str) -> Path | None:
+    config_path = root / ".atopile-local.json"
+    if not config_path.exists() and not config_path.is_symlink():
+        return None
+    raw = _read_local_file(root, config_path, MAX_PROJECT_CONFIG_BYTES)
+    try:
+        config = json.loads(raw)
+    except (ValueError, UnicodeError) as error:
+        raise ValueError(".atopile-local.json must contain valid JSON") from error
+    if not isinstance(config, dict) or not isinstance(
+        config.get("schematics", {}), dict
+    ):
+        raise ValueError(
+            ".atopile-local.json schematics must be an object keyed by target"
+        )
+    schematics = config.get("schematics", {})
+    if target not in schematics:
+        return None
+    return _relative_schematic(root, root, schematics[target])
+
+
+def _hierarchy_revision(root: Path, schematic: Path) -> str:
+    """Confine and bound every native child sheet before KiCad can load it."""
+    files: dict[Path, bytes] = {}
+    active: set[Path] = set()
+    total = 0
+
+    def visit(path: Path, depth: int) -> None:
+        nonlocal total
+        path = _safe_path(root, path)
+        if path in active:
+            raise ValueError("Configured schematic hierarchy contains a sheet cycle")
+        if path in files:
+            return
+        if depth > MAX_HIERARCHY_DEPTH or len(files) >= MAX_HIERARCHY_FILES:
+            raise ValueError("Configured schematic hierarchy exceeds its sheet limit")
+        raw = _read_local_file(root, path, MAX_SCHEMATIC_BYTES)
+        total += len(raw)
+        if total > MAX_HIERARCHY_BYTES:
+            raise ValueError("Configured schematic hierarchy exceeds its size limit")
+        try:
+            document = sexpdata.loads(raw.decode("utf-8"))
+        except Exception as error:
+            raise ValueError(
+                "Configured schematic contains invalid KiCad syntax"
+            ) from error
+        if not isinstance(document, list) or _tag(document) != "kicad_sch":
+            raise ValueError(
+                "Configured schematic must be a native .kicad_sch document"
+            )
+        files[path] = raw
+        active.add(path)
+        for sheet in _children(document, "sheet"):
+            filenames = [
+                prop[2]
+                for prop in _children(sheet, "property")
+                if len(prop) > 2
+                and str(prop[1]).lower().replace(" ", "") == "sheetfile"
+            ]
+            if len(filenames) != 1:
+                raise ValueError(
+                    "Each native schematic sheet needs one Sheetfile property"
+                )
+            visit(_relative_schematic(root, path.parent, filenames[0]), depth + 1)
+        active.remove(path)
+
+    visit(schematic, 0)
+    digest = hashlib.sha256()
+    for path, raw in sorted(files.items()):
+        digest.update(path.relative_to(root).as_posix().encode("utf-8") + b"\0")
+        digest.update(len(raw).to_bytes(8, "big"))
+        digest.update(raw)
+    return digest.hexdigest()[:16]
+
+
+def _open_configured_schematic(root: Path, target: str, path: Path) -> dict[str, Any]:
+    config = ProjectConfig.from_path(root)
+    if config is None or target not in config.builds:
+        raise ValueError(f"Unknown build target: {target}")
+    layout = _safe_path(root, config.builds[target].paths.layout)
+    revision = _hierarchy_revision(root, path)
+    native = _native_netlist(path)
+    references = [
+        str(_field(component, "ref")[1])
+        for component in _children(_field(native, "components"), "comp")
+        if len(_field(component, "ref")) > 1
+    ]
+    if not references or len(references) != len(set(references)):
+        raise RuntimeError("KiCad exported empty or duplicate schematic references")
+    # Single-pin native nets include deliberate no-connects. Count connected
+    # native nets, without suggesting they were compared against the PCB.
+    net_count = sum(
+        len(_children(net, "node")) > 1
+        for net in _children(_field(native, "nets"), "net")
+    )
+    if (
+        _configured_schematic(root, target) != path
+        or _hierarchy_revision(root, path) != revision
+    ):
+        raise RuntimeError(
+            "Configured schematic changed during native verification; try again"
+        )
+    return {
+        "path": str(path),
+        "relativePath": str(path.relative_to(root)),
+        "projectRoot": str(root),
+        "target": target,
+        "revision": revision,
+        "layoutPath": str(layout),
+        "componentCount": len(references),
+        "netCount": net_count,
+        "warnings": [
+            "Opening the configured existing KiCad schematic; PCB connectivity was not compared."
+        ],
+        "reused": True,
+    }
 
 
 def _manifest(directory: Path) -> dict[str, Any] | None:
@@ -517,6 +683,11 @@ def export_schematic(
     if not isinstance(force_new, bool):
         raise ValueError("force_new must be a boolean")
     root = Path(project_root).resolve()
+    if (
+        not force_new
+        and (configured := _configured_schematic(root, target)) is not None
+    ):
+        return _open_configured_schematic(root, target, configured)
     data = get_schematic_data(root, target)
     config = ProjectConfig.from_path(root)
     directory = _safe_path(

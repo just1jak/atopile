@@ -1,0 +1,11 @@
+{
+  "donorSha256": "b260a0ba4146e57d98317f00db63c77b64d65c32e3895dced6286c34db5a5aad",
+  "exactThreeZoneUuids": [
+    "6edcc193-bba6-46de-897c-0f1fda6922ed",
+    "c8ff6bee-907d-45d0-9fb2-fe0c2f8d5823",
+    "c85111e0-830e-413f-8f53-8f84679f816d"
+  ],
+  "allNineZoneDefinitionsMatchApprovedDonor": true,
+  "allFootprintBlocksUnchanged": true,
+  "nativeBoardSha256BeforeFinalRefill": "16fee28a1ab0dd2f40cf40d11f6cb6adc73fc6342f3349b68dad1fe041192e5c"
+}

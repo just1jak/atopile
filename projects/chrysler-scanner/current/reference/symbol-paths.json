@@ -1,0 +1,1826 @@
+{
+  "project": "ChryslerScanner_V240_SD",
+  "root_uuid": "b35850f9-3522-5e00-90df-092fcfbfe6bd",
+  "sd_sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+  "parts": {
+    "U2": {
+      "reference": "U2",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "252c44b2-98ff-5b06-9f06-e0f2d1f1bbf4",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/252c44b2-98ff-5b06-9f06-e0f2d1f1bbf4"
+    },
+    "U3": {
+      "reference": "U3",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "dc5b235f-87fe-5e06-94da-858f241d2e6c",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/dc5b235f-87fe-5e06-94da-858f241d2e6c"
+    },
+    "U4": {
+      "reference": "U4",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "745188f1-b836-5236-a0ca-5b49b043606a",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/745188f1-b836-5236-a0ca-5b49b043606a"
+    },
+    "L1": {
+      "reference": "L1",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "ddf8f5b8-9150-5a48-bbb7-bd105fbd5384",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/ddf8f5b8-9150-5a48-bbb7-bd105fbd5384"
+    },
+    "D4": {
+      "reference": "D4",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "5e8ef1af-05d1-5403-88c2-752851df3549",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/5e8ef1af-05d1-5403-88c2-752851df3549"
+    },
+    "D5": {
+      "reference": "D5",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "6382703b-7c7e-5c94-81b0-cf9c2e4d6086",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/6382703b-7c7e-5c94-81b0-cf9c2e4d6086"
+    },
+    "D6": {
+      "reference": "D6",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "fbb931be-edd8-542e-8592-802042f5537c",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/fbb931be-edd8-542e-8592-802042f5537c"
+    },
+    "C4": {
+      "reference": "C4",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "e4022b45-313a-5a09-ade3-eaf4f7cb1946",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/e4022b45-313a-5a09-ade3-eaf4f7cb1946"
+    },
+    "C5": {
+      "reference": "C5",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "09736868-83d4-5dc9-b9e5-e29196d65ebf",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/09736868-83d4-5dc9-b9e5-e29196d65ebf"
+    },
+    "C6": {
+      "reference": "C6",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "fc16c501-87f1-56d7-8832-7ee1e3f05705",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/fc16c501-87f1-56d7-8832-7ee1e3f05705"
+    },
+    "C7": {
+      "reference": "C7",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "793875a9-214a-5e14-975d-a43a7d192585",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/793875a9-214a-5e14-975d-a43a7d192585"
+    },
+    "C8": {
+      "reference": "C8",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "3944a7c1-2749-5ee8-9fb7-bcce0db773f6",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/3944a7c1-2749-5ee8-9fb7-bcce0db773f6"
+    },
+    "C9": {
+      "reference": "C9",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "a369e8d7-90b5-5bff-a29b-85d0bcb7dfe3",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/a369e8d7-90b5-5bff-a29b-85d0bcb7dfe3"
+    },
+    "C10": {
+      "reference": "C10",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "6f219d56-2e39-5535-a9ec-0da351b4a062",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/6f219d56-2e39-5535-a9ec-0da351b4a062"
+    },
+    "R1": {
+      "reference": "R1",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "aad4f0e5-7883-54f8-8ac1-954bd0b21a85",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/aad4f0e5-7883-54f8-8ac1-954bd0b21a85"
+    },
+    "R2": {
+      "reference": "R2",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "2fc9583f-e53a-5882-a07c-2264f8563a80",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/2fc9583f-e53a-5882-a07c-2264f8563a80"
+    },
+    "R3": {
+      "reference": "R3",
+      "sheet_file": "08_power-5v.kicad_sch",
+      "sheet_uuid": "8b2918f6-133a-526b-9e0d-76336bfda048",
+      "symbol_uuid": "a1912a2c-5c58-5492-8b89-bb0b68073579",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/a1912a2c-5c58-5492-8b89-bb0b68073579"
+    },
+    "J1": {
+      "reference": "J1",
+      "sheet_file": "21_obd.kicad_sch",
+      "sheet_uuid": "4e1d2b46-44eb-5faa-a46b-fa17e19b37a7",
+      "symbol_uuid": "9124bce6-8f13-5b5d-a8e4-1150ff37de35",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/4e1d2b46-44eb-5faa-a46b-fa17e19b37a7/9124bce6-8f13-5b5d-a8e4-1150ff37de35"
+    },
+    "D23": {
+      "reference": "D23",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "0daa5102-eead-558b-98d2-8719d806d674",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/0daa5102-eead-558b-98d2-8719d806d674"
+    },
+    "D24": {
+      "reference": "D24",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "7d05dcf2-3362-5421-ab04-0b72df999ec0",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/7d05dcf2-3362-5421-ab04-0b72df999ec0"
+    },
+    "D25": {
+      "reference": "D25",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "aaf45ae6-6d9d-5ca0-bd0b-20f81cac9f24",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/aaf45ae6-6d9d-5ca0-bd0b-20f81cac9f24"
+    },
+    "D26": {
+      "reference": "D26",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "69eb2447-5424-596f-990f-a0005a59240a",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/69eb2447-5424-596f-990f-a0005a59240a"
+    },
+    "Q17": {
+      "reference": "Q17",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "1bbe01ab-66e9-5d60-9fce-fcf72e1cf5dd",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/1bbe01ab-66e9-5d60-9fce-fcf72e1cf5dd"
+    },
+    "Q18": {
+      "reference": "Q18",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "43bd0bad-5d33-5af0-ae71-0862a03b0a6c",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/43bd0bad-5d33-5af0-ae71-0862a03b0a6c"
+    },
+    "Q19": {
+      "reference": "Q19",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "3a9e6a11-be63-5343-ab6e-81cff56729c7",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/3a9e6a11-be63-5343-ab6e-81cff56729c7"
+    },
+    "Q20": {
+      "reference": "Q20",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "2cd1f633-2601-561d-b458-77f819aafe8b",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/2cd1f633-2601-561d-b458-77f819aafe8b"
+    },
+    "R89": {
+      "reference": "R89",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "beecd8c8-88b9-5236-a1d7-15aaf0521188",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/beecd8c8-88b9-5236-a1d7-15aaf0521188"
+    },
+    "R90": {
+      "reference": "R90",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "c258d894-2004-5201-88f3-9417020ddf2a",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/c258d894-2004-5201-88f3-9417020ddf2a"
+    },
+    "R91": {
+      "reference": "R91",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "146e6b13-ff9b-5cf2-bbde-57e1cf5bc601",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/146e6b13-ff9b-5cf2-bbde-57e1cf5bc601"
+    },
+    "R92": {
+      "reference": "R92",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "6c814cb8-2b0f-5e75-b8f4-d220e2182c68",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/6c814cb8-2b0f-5e75-b8f4-d220e2182c68"
+    },
+    "R93": {
+      "reference": "R93",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "e1245452-bf35-5920-a916-1b443f0bac45",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/e1245452-bf35-5920-a916-1b443f0bac45"
+    },
+    "R94": {
+      "reference": "R94",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "ab164567-be11-5604-a7b4-3911c89798a0",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/ab164567-be11-5604-a7b4-3911c89798a0"
+    },
+    "R95": {
+      "reference": "R95",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "7e76c148-9680-5113-8416-810e4915ead8",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/7e76c148-9680-5113-8416-810e4915ead8"
+    },
+    "R96": {
+      "reference": "R96",
+      "sheet_file": "20_leds.kicad_sch",
+      "sheet_uuid": "2580b799-019d-5855-977e-5641c7349506",
+      "symbol_uuid": "55dcbd02-d8b2-544f-8f7c-60b9445d03da",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506/55dcbd02-d8b2-544f-8f7c-60b9445d03da"
+    },
+    "U5": {
+      "reference": "U5",
+      "sheet_file": "09_power-vpp.kicad_sch",
+      "sheet_uuid": "fae9fc47-44e4-56d1-add1-102db9cad16d",
+      "symbol_uuid": "dfb83bdc-fda9-5242-a57f-bdd8f51d42cb",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/dfb83bdc-fda9-5242-a57f-bdd8f51d42cb"
+    },
+    "L2": {
+      "reference": "L2",
+      "sheet_file": "09_power-vpp.kicad_sch",
+      "sheet_uuid": "fae9fc47-44e4-56d1-add1-102db9cad16d",
+      "symbol_uuid": "e996c3d4-bb07-5a24-ace7-6bc885147ef4",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/e996c3d4-bb07-5a24-ace7-6bc885147ef4"
+    },
+    "L3": {
+      "reference": "L3",
+      "sheet_file": "09_power-vpp.kicad_sch",
+      "sheet_uuid": "fae9fc47-44e4-56d1-add1-102db9cad16d",
+      "symbol_uuid": "b373c216-9fa5-5a1e-a6d5-cfa6d1282a18",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/b373c216-9fa5-5a1e-a6d5-cfa6d1282a18"
+    },
+    "D7": {
+      "reference": "D7",
+      "sheet_file": "09_power-vpp.kicad_sch",
+      "sheet_uuid": "fae9fc47-44e4-56d1-add1-102db9cad16d",
+      "symbol_uuid": "a8a7b953-82c3-5729-bfc4-a2e44a870b84",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/a8a7b953-82c3-5729-bfc4-a2e44a870b84"
+    },
+    "C13": {
+      "reference": "C13",
+      "sheet_file": "09_power-vpp.kicad_sch",
+      "sheet_uuid": "fae9fc47-44e4-56d1-add1-102db9cad16d",
+      "symbol_uuid": "239c8bd3-88c6-5107-86b4-9c4a13716dec",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/239c8bd3-88c6-5107-86b4-9c4a13716dec"
+    },
+    "C14": {
+      "reference": "C14",
+      "sheet_file": "09_power-vpp.kicad_sch",
+      "sheet_uuid": "fae9fc47-44e4-56d1-add1-102db9cad16d",
+      "symbol_uuid": "a397eed8-ac42-58b2-b1c0-47d356686cf5",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/a397eed8-ac42-58b2-b1c0-47d356686cf5"
+    },
+    "C15": {
+      "reference": "C15",
+      "sheet_file": "09_power-vpp.kicad_sch",
+      "sheet_uuid": "fae9fc47-44e4-56d1-add1-102db9cad16d",
+      "symbol_uuid": "f0b20e20-370f-5f5e-b10c-a855318ddb03",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/f0b20e20-370f-5f5e-b10c-a855318ddb03"
+    },
+    "C16": {
+      "reference": "C16",
+      "sheet_file": "09_power-vpp.kicad_sch",
+      "sheet_uuid": "fae9fc47-44e4-56d1-add1-102db9cad16d",
+      "symbol_uuid": "a76729e3-9ad8-56e0-a7d5-3ec979fb6e09",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/a76729e3-9ad8-56e0-a7d5-3ec979fb6e09"
+    },
+    "R8": {
+      "reference": "R8",
+      "sheet_file": "09_power-vpp.kicad_sch",
+      "sheet_uuid": "fae9fc47-44e4-56d1-add1-102db9cad16d",
+      "symbol_uuid": "ce763972-a67e-51a7-90e9-a44c1f0a5678",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/ce763972-a67e-51a7-90e9-a44c1f0a5678"
+    },
+    "R9": {
+      "reference": "R9",
+      "sheet_file": "09_power-vpp.kicad_sch",
+      "sheet_uuid": "fae9fc47-44e4-56d1-add1-102db9cad16d",
+      "symbol_uuid": "c59c7a3b-c9f6-5cc8-85af-ed07ae0fe113",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/c59c7a3b-c9f6-5cc8-85af-ed07ae0fe113"
+    },
+    "Q2": {
+      "reference": "Q2",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "9e6307de-6d87-5a98-927c-68facfd68529",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/9e6307de-6d87-5a98-927c-68facfd68529"
+    },
+    "U13": {
+      "reference": "U13",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "efc6a1f8-ed88-5ad8-99ea-e470cd24be02",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/efc6a1f8-ed88-5ad8-99ea-e470cd24be02"
+    },
+    "Q6": {
+      "reference": "Q6",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "3eec2b7d-6ca5-5615-9146-d57e7745aba7",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/3eec2b7d-6ca5-5615-9146-d57e7745aba7"
+    },
+    "R29": {
+      "reference": "R29",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "ab1097d8-5bf4-52f0-ae86-81729cff21ac",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/ab1097d8-5bf4-52f0-ae86-81729cff21ac"
+    },
+    "R30": {
+      "reference": "R30",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "7fd05129-74ed-5c31-9743-1df06d9ad5a7",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/7fd05129-74ed-5c31-9743-1df06d9ad5a7"
+    },
+    "R31": {
+      "reference": "R31",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "f18f2b9a-7167-5968-9edf-da1f256063d0",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/f18f2b9a-7167-5968-9edf-da1f256063d0"
+    },
+    "R32": {
+      "reference": "R32",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "2a2a038f-7c0a-569f-b792-da2c8827579d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/2a2a038f-7c0a-569f-b792-da2c8827579d"
+    },
+    "R33": {
+      "reference": "R33",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "57df3d84-c850-5d62-a7c7-a54798f5a03d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/57df3d84-c850-5d62-a7c7-a54798f5a03d"
+    },
+    "R34": {
+      "reference": "R34",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "79a29032-de7a-52d3-84e7-fabe7eeff501",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/79a29032-de7a-52d3-84e7-fabe7eeff501"
+    },
+    "R75": {
+      "reference": "R75",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "47a2a11a-347c-5104-949b-da163e5f3dbd",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/47a2a11a-347c-5104-949b-da163e5f3dbd"
+    },
+    "R76": {
+      "reference": "R76",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "e5a84760-bbaf-5dca-a30d-7e1c1aeed872",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/e5a84760-bbaf-5dca-a30d-7e1c1aeed872"
+    },
+    "C38": {
+      "reference": "C38",
+      "sheet_file": "04_sci-6-12.kicad_sch",
+      "sheet_uuid": "8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+      "symbol_uuid": "9cd6ecd8-9719-5faa-9807-f09a955f6380",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/9cd6ecd8-9719-5faa-9807-f09a955f6380"
+    },
+    "Q8": {
+      "reference": "Q8",
+      "sheet_file": "12_program-6.kicad_sch",
+      "sheet_uuid": "d24526bf-1665-5e09-804e-7766ac8ed522",
+      "symbol_uuid": "bbda32fb-4456-5c7c-95e1-ee88eb80c3c8",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d24526bf-1665-5e09-804e-7766ac8ed522/bbda32fb-4456-5c7c-95e1-ee88eb80c3c8"
+    },
+    "Q12": {
+      "reference": "Q12",
+      "sheet_file": "12_program-6.kicad_sch",
+      "sheet_uuid": "d24526bf-1665-5e09-804e-7766ac8ed522",
+      "symbol_uuid": "77587c38-387c-5ac9-bee9-bd62e65e6145",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d24526bf-1665-5e09-804e-7766ac8ed522/77587c38-387c-5ac9-bee9-bd62e65e6145"
+    },
+    "D15": {
+      "reference": "D15",
+      "sheet_file": "12_program-6.kicad_sch",
+      "sheet_uuid": "d24526bf-1665-5e09-804e-7766ac8ed522",
+      "symbol_uuid": "d7915f9f-2368-55d7-9c5c-72456b54288d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d24526bf-1665-5e09-804e-7766ac8ed522/d7915f9f-2368-55d7-9c5c-72456b54288d"
+    },
+    "D19": {
+      "reference": "D19",
+      "sheet_file": "12_program-6.kicad_sch",
+      "sheet_uuid": "d24526bf-1665-5e09-804e-7766ac8ed522",
+      "symbol_uuid": "e9d561da-88f3-514d-9268-2cb72394b635",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d24526bf-1665-5e09-804e-7766ac8ed522/e9d561da-88f3-514d-9268-2cb72394b635"
+    },
+    "R55": {
+      "reference": "R55",
+      "sheet_file": "12_program-6.kicad_sch",
+      "sheet_uuid": "d24526bf-1665-5e09-804e-7766ac8ed522",
+      "symbol_uuid": "64a876f1-bb20-52af-befc-886c3c838b9e",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d24526bf-1665-5e09-804e-7766ac8ed522/64a876f1-bb20-52af-befc-886c3c838b9e"
+    },
+    "R56": {
+      "reference": "R56",
+      "sheet_file": "12_program-6.kicad_sch",
+      "sheet_uuid": "d24526bf-1665-5e09-804e-7766ac8ed522",
+      "symbol_uuid": "8f556d6c-90f8-59eb-a298-7faa4b0c44cc",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d24526bf-1665-5e09-804e-7766ac8ed522/8f556d6c-90f8-59eb-a298-7faa4b0c44cc"
+    },
+    "R63": {
+      "reference": "R63",
+      "sheet_file": "12_program-6.kicad_sch",
+      "sheet_uuid": "d24526bf-1665-5e09-804e-7766ac8ed522",
+      "symbol_uuid": "83cf93ad-be7a-53bd-99ed-ce3b399f8f49",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d24526bf-1665-5e09-804e-7766ac8ed522/83cf93ad-be7a-53bd-99ed-ce3b399f8f49"
+    },
+    "R64": {
+      "reference": "R64",
+      "sheet_file": "12_program-6.kicad_sch",
+      "sheet_uuid": "d24526bf-1665-5e09-804e-7766ac8ed522",
+      "symbol_uuid": "5e47d36c-ec39-5a71-81ab-4dd435078821",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d24526bf-1665-5e09-804e-7766ac8ed522/5e47d36c-ec39-5a71-81ab-4dd435078821"
+    },
+    "R65": {
+      "reference": "R65",
+      "sheet_file": "12_program-6.kicad_sch",
+      "sheet_uuid": "d24526bf-1665-5e09-804e-7766ac8ed522",
+      "symbol_uuid": "942b4f06-f902-573e-ad13-4c2ce63aca59",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d24526bf-1665-5e09-804e-7766ac8ed522/942b4f06-f902-573e-ad13-4c2ce63aca59"
+    },
+    "Q10": {
+      "reference": "Q10",
+      "sheet_file": "14_program-12.kicad_sch",
+      "sheet_uuid": "66e1551e-d973-5aea-8598-c702df9afca6",
+      "symbol_uuid": "41276ad4-a97d-5c4d-90c7-f98c6b9b4d04",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/66e1551e-d973-5aea-8598-c702df9afca6/41276ad4-a97d-5c4d-90c7-f98c6b9b4d04"
+    },
+    "Q14": {
+      "reference": "Q14",
+      "sheet_file": "14_program-12.kicad_sch",
+      "sheet_uuid": "66e1551e-d973-5aea-8598-c702df9afca6",
+      "symbol_uuid": "ee5bcc29-8eca-56b6-b17c-d3d63e6cf182",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/66e1551e-d973-5aea-8598-c702df9afca6/ee5bcc29-8eca-56b6-b17c-d3d63e6cf182"
+    },
+    "D17": {
+      "reference": "D17",
+      "sheet_file": "14_program-12.kicad_sch",
+      "sheet_uuid": "66e1551e-d973-5aea-8598-c702df9afca6",
+      "symbol_uuid": "88584b1d-61c0-5020-85c8-230fb4b40f9a",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/66e1551e-d973-5aea-8598-c702df9afca6/88584b1d-61c0-5020-85c8-230fb4b40f9a"
+    },
+    "D21": {
+      "reference": "D21",
+      "sheet_file": "14_program-12.kicad_sch",
+      "sheet_uuid": "66e1551e-d973-5aea-8598-c702df9afca6",
+      "symbol_uuid": "8287b944-8f05-5a3f-9f77-983037bf602e",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/66e1551e-d973-5aea-8598-c702df9afca6/8287b944-8f05-5a3f-9f77-983037bf602e"
+    },
+    "R59": {
+      "reference": "R59",
+      "sheet_file": "14_program-12.kicad_sch",
+      "sheet_uuid": "66e1551e-d973-5aea-8598-c702df9afca6",
+      "symbol_uuid": "3b4bdaff-7883-5c5e-a1f6-4c797a1786cb",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/66e1551e-d973-5aea-8598-c702df9afca6/3b4bdaff-7883-5c5e-a1f6-4c797a1786cb"
+    },
+    "R60": {
+      "reference": "R60",
+      "sheet_file": "14_program-12.kicad_sch",
+      "sheet_uuid": "66e1551e-d973-5aea-8598-c702df9afca6",
+      "symbol_uuid": "3e2723f5-d47d-50cc-a1f1-90bf79794d0d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/66e1551e-d973-5aea-8598-c702df9afca6/3e2723f5-d47d-50cc-a1f1-90bf79794d0d"
+    },
+    "R69": {
+      "reference": "R69",
+      "sheet_file": "14_program-12.kicad_sch",
+      "sheet_uuid": "66e1551e-d973-5aea-8598-c702df9afca6",
+      "symbol_uuid": "98f4dbc0-5c18-5459-874d-3eaad8c71a53",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/66e1551e-d973-5aea-8598-c702df9afca6/98f4dbc0-5c18-5459-874d-3eaad8c71a53"
+    },
+    "R70": {
+      "reference": "R70",
+      "sheet_file": "14_program-12.kicad_sch",
+      "sheet_uuid": "66e1551e-d973-5aea-8598-c702df9afca6",
+      "symbol_uuid": "47b7b15b-dc4a-5a59-9429-dedf6da82448",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/66e1551e-d973-5aea-8598-c702df9afca6/47b7b15b-dc4a-5a59-9429-dedf6da82448"
+    },
+    "R71": {
+      "reference": "R71",
+      "sheet_file": "14_program-12.kicad_sch",
+      "sheet_uuid": "66e1551e-d973-5aea-8598-c702df9afca6",
+      "symbol_uuid": "4401afa9-1bac-5fab-844b-96ddf416b385",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/66e1551e-d973-5aea-8598-c702df9afca6/4401afa9-1bac-5fab-844b-96ddf416b385"
+    },
+    "U10": {
+      "reference": "U10",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "615dee24-5a75-5fa6-b087-8c0ad0708b15",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/615dee24-5a75-5fa6-b087-8c0ad0708b15"
+    },
+    "AE1": {
+      "reference": "AE1",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "172da74d-daae-5cf0-aa7d-db7395fce888",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/172da74d-daae-5cf0-aa7d-db7395fce888"
+    },
+    "R22": {
+      "reference": "R22",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "dc728128-04d4-59c2-ad30-461c5b4eed93",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/dc728128-04d4-59c2-ad30-461c5b4eed93"
+    },
+    "R23": {
+      "reference": "R23",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "e96ccfe7-f9d3-5daa-88f8-4eef9327399b",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/e96ccfe7-f9d3-5daa-88f8-4eef9327399b"
+    },
+    "R24": {
+      "reference": "R24",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "e9c7e4ee-b1e3-52a7-80a1-f03d5eec1ac9",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/e9c7e4ee-b1e3-52a7-80a1-f03d5eec1ac9"
+    },
+    "R48": {
+      "reference": "R48",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "1e3ae1da-3cd9-555f-886a-6c66107782f6",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/1e3ae1da-3cd9-555f-886a-6c66107782f6"
+    },
+    "C26": {
+      "reference": "C26",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "a5b6f548-5d7e-5381-b2cd-250f21578fb0",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/a5b6f548-5d7e-5381-b2cd-250f21578fb0"
+    },
+    "C27": {
+      "reference": "C27",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "dc7ae42d-5e12-575a-87dc-0751df164e56",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/dc7ae42d-5e12-575a-87dc-0751df164e56"
+    },
+    "C28": {
+      "reference": "C28",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "211794e5-d2c6-5878-9e0c-9bf24fce0bce",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/211794e5-d2c6-5878-9e0c-9bf24fce0bce"
+    },
+    "C29": {
+      "reference": "C29",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "e55d63b1-070d-5145-8d0e-706ea0e3218f",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/e55d63b1-070d-5145-8d0e-706ea0e3218f"
+    },
+    "C30": {
+      "reference": "C30",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "2bb0ef6c-1fdf-535a-bff9-2b078c439946",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/2bb0ef6c-1fdf-535a-bff9-2b078c439946"
+    },
+    "C31": {
+      "reference": "C31",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "ab196831-c18b-5e2d-8c6a-249414a408fd",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/ab196831-c18b-5e2d-8c6a-249414a408fd"
+    },
+    "C32": {
+      "reference": "C32",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "4e2273c6-ad33-516f-adb5-096826f38423",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/4e2273c6-ad33-516f-adb5-096826f38423"
+    },
+    "C33": {
+      "reference": "C33",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "88989d34-19bb-5ee0-aadb-80a77dd91110",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/88989d34-19bb-5ee0-aadb-80a77dd91110"
+    },
+    "C45": {
+      "reference": "C45",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "3a9326ec-5631-5f82-87a8-1ab606926b5d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/3a9326ec-5631-5f82-87a8-1ab606926b5d"
+    },
+    "C46": {
+      "reference": "C46",
+      "sheet_file": "16_mcu.kicad_sch",
+      "sheet_uuid": "dafba844-e0ed-5189-9d62-63659a892123",
+      "symbol_uuid": "d7b5f608-6a7e-5356-bba1-cad545c913ce",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123/d7b5f608-6a7e-5356-bba1-cad545c913ce"
+    },
+    "U12": {
+      "reference": "U12",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "fff2e3c2-63c2-5294-b917-0cfbc1d3af65",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/fff2e3c2-63c2-5294-b917-0cfbc1d3af65"
+    },
+    "U11": {
+      "reference": "U11",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "36d173c5-29d3-5027-a2ab-d68d1b13f4f1",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/36d173c5-29d3-5027-a2ab-d68d1b13f4f1"
+    },
+    "Q5": {
+      "reference": "Q5",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "c6de94f0-e152-56bb-b717-8445109ee0b2",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/c6de94f0-e152-56bb-b717-8445109ee0b2"
+    },
+    "U1": {
+      "reference": "U1",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "d0d9afe0-585a-5f2c-b95e-3d78e17ceb53",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/d0d9afe0-585a-5f2c-b95e-3d78e17ceb53"
+    },
+    "JP2": {
+      "reference": "JP2",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "a10139b7-b4bd-51d8-a88f-a67fd10559f9",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/a10139b7-b4bd-51d8-a88f-a67fd10559f9"
+    },
+    "R25": {
+      "reference": "R25",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "19f69b1c-c172-5b6c-aa7f-932726c67e3b",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/19f69b1c-c172-5b6c-aa7f-932726c67e3b"
+    },
+    "R26": {
+      "reference": "R26",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "7040790a-f47e-55b9-8c36-cfc08595e3c3",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/7040790a-f47e-55b9-8c36-cfc08595e3c3"
+    },
+    "R27": {
+      "reference": "R27",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "f2bcfc0d-a83e-53a5-8556-753648425cae",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/f2bcfc0d-a83e-53a5-8556-753648425cae"
+    },
+    "R28": {
+      "reference": "R28",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "4e45581a-20f1-5578-9213-9c9b766f6fd5",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/4e45581a-20f1-5578-9213-9c9b766f6fd5"
+    },
+    "C2": {
+      "reference": "C2",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "bc58ffb8-a2c3-53c4-b0fd-81cb7cae67fd",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/bc58ffb8-a2c3-53c4-b0fd-81cb7cae67fd"
+    },
+    "C3": {
+      "reference": "C3",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "f934020a-79dd-5d65-b2bc-30cbdfc0a8a7",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/f934020a-79dd-5d65-b2bc-30cbdfc0a8a7"
+    },
+    "C34": {
+      "reference": "C34",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "86a3ec5f-21bf-56c7-a2bd-6ce0c19dd9da",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/86a3ec5f-21bf-56c7-a2bd-6ce0c19dd9da"
+    },
+    "C35": {
+      "reference": "C35",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "dec426fc-b086-5123-b0a4-7d6eafe13c7d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/dec426fc-b086-5123-b0a4-7d6eafe13c7d"
+    },
+    "D3": {
+      "reference": "D3",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "734493fc-46d0-512c-bf2c-a8a796ddf4c6",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/734493fc-46d0-512c-bf2c-a8a796ddf4c6"
+    },
+    "SW1": {
+      "reference": "SW1",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "20dd07f0-fb82-5b6d-8517-abe6f287c588",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/20dd07f0-fb82-5b6d-8517-abe6f287c588"
+    },
+    "SW2": {
+      "reference": "SW2",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "d34194b2-6613-5753-b76d-2470e8f41b38",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/d34194b2-6613-5753-b76d-2470e8f41b38"
+    },
+    "J2": {
+      "reference": "J2",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "880601b3-bb06-54f3-89c5-3fa06024a17c",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/880601b3-bb06-54f3-89c5-3fa06024a17c"
+    },
+    "R102": {
+      "reference": "R102",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "ce6b9737-e7ae-59db-be72-cfcdbf9a4842",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/ce6b9737-e7ae-59db-be72-cfcdbf9a4842"
+    },
+    "R103": {
+      "reference": "R103",
+      "sheet_file": "19_usb.kicad_sch",
+      "sheet_uuid": "1a324728-1d33-5386-99ad-5d39e8f946d4",
+      "symbol_uuid": "b922c9fb-157e-596a-9079-5c9fa93ce29a",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4/b922c9fb-157e-596a-9079-5c9fa93ce29a"
+    },
+    "U6": {
+      "reference": "U6",
+      "sheet_file": "10_power-vbb.kicad_sch",
+      "sheet_uuid": "b691e5db-65dd-5bde-b591-124c57215619",
+      "symbol_uuid": "d7151dd7-9a27-5a00-be9c-c01f98883ad5",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/d7151dd7-9a27-5a00-be9c-c01f98883ad5"
+    },
+    "L4": {
+      "reference": "L4",
+      "sheet_file": "10_power-vbb.kicad_sch",
+      "sheet_uuid": "b691e5db-65dd-5bde-b591-124c57215619",
+      "symbol_uuid": "63750584-321b-588a-94bc-7345cbb3b0ef",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/63750584-321b-588a-94bc-7345cbb3b0ef"
+    },
+    "L5": {
+      "reference": "L5",
+      "sheet_file": "10_power-vbb.kicad_sch",
+      "sheet_uuid": "b691e5db-65dd-5bde-b591-124c57215619",
+      "symbol_uuid": "74c97939-0c36-5b08-860a-1860503275bb",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/74c97939-0c36-5b08-860a-1860503275bb"
+    },
+    "D8": {
+      "reference": "D8",
+      "sheet_file": "10_power-vbb.kicad_sch",
+      "sheet_uuid": "b691e5db-65dd-5bde-b591-124c57215619",
+      "symbol_uuid": "62c6b965-5cd5-5695-8f96-77c26ec5c42e",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/62c6b965-5cd5-5695-8f96-77c26ec5c42e"
+    },
+    "C17": {
+      "reference": "C17",
+      "sheet_file": "10_power-vbb.kicad_sch",
+      "sheet_uuid": "b691e5db-65dd-5bde-b591-124c57215619",
+      "symbol_uuid": "2f19391f-fa86-591f-8746-7a269a1e9828",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/2f19391f-fa86-591f-8746-7a269a1e9828"
+    },
+    "C18": {
+      "reference": "C18",
+      "sheet_file": "10_power-vbb.kicad_sch",
+      "sheet_uuid": "b691e5db-65dd-5bde-b591-124c57215619",
+      "symbol_uuid": "65888e33-9d26-5486-9f65-93c86f598d9c",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/65888e33-9d26-5486-9f65-93c86f598d9c"
+    },
+    "C19": {
+      "reference": "C19",
+      "sheet_file": "10_power-vbb.kicad_sch",
+      "sheet_uuid": "b691e5db-65dd-5bde-b591-124c57215619",
+      "symbol_uuid": "7e779c72-b246-52db-b43a-6a84163361ed",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/7e779c72-b246-52db-b43a-6a84163361ed"
+    },
+    "R10": {
+      "reference": "R10",
+      "sheet_file": "10_power-vbb.kicad_sch",
+      "sheet_uuid": "b691e5db-65dd-5bde-b591-124c57215619",
+      "symbol_uuid": "52a2873a-a1c3-5fe2-863a-e18ec8167b71",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/52a2873a-a1c3-5fe2-863a-e18ec8167b71"
+    },
+    "R11": {
+      "reference": "R11",
+      "sheet_file": "10_power-vbb.kicad_sch",
+      "sheet_uuid": "b691e5db-65dd-5bde-b591-124c57215619",
+      "symbol_uuid": "88e0e798-2e01-5956-b18c-bc292d999b44",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/88e0e798-2e01-5956-b18c-bc292d999b44"
+    },
+    "R12": {
+      "reference": "R12",
+      "sheet_file": "10_power-vbb.kicad_sch",
+      "sheet_uuid": "b691e5db-65dd-5bde-b591-124c57215619",
+      "symbol_uuid": "8896ce5f-e5c2-542e-a3a6-d5b75d792c93",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/8896ce5f-e5c2-542e-a3a6-d5b75d792c93"
+    },
+    "C1": {
+      "reference": "C1",
+      "sheet_file": "07_vehicle-input.kicad_sch",
+      "sheet_uuid": "0fa4b058-4feb-583b-8296-ab82d4297b8b",
+      "symbol_uuid": "e7634fd1-4f1c-5304-b76f-41f055ae43e6",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b/e7634fd1-4f1c-5304-b76f-41f055ae43e6"
+    },
+    "D1": {
+      "reference": "D1",
+      "sheet_file": "07_vehicle-input.kicad_sch",
+      "sheet_uuid": "0fa4b058-4feb-583b-8296-ab82d4297b8b",
+      "symbol_uuid": "d0ad5683-e075-525c-aacb-70175a0e0300",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b/d0ad5683-e075-525c-aacb-70175a0e0300"
+    },
+    "D2": {
+      "reference": "D2",
+      "sheet_file": "07_vehicle-input.kicad_sch",
+      "sheet_uuid": "0fa4b058-4feb-583b-8296-ab82d4297b8b",
+      "symbol_uuid": "fc7d1e72-348b-5d52-8876-9d04e1756ce3",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b/fc7d1e72-348b-5d52-8876-9d04e1756ce3"
+    },
+    "JP1": {
+      "reference": "JP1",
+      "sheet_file": "07_vehicle-input.kicad_sch",
+      "sheet_uuid": "0fa4b058-4feb-583b-8296-ab82d4297b8b",
+      "symbol_uuid": "9ccb32c1-dce7-5be3-9b82-fabf14a2dcfc",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b/9ccb32c1-dce7-5be3-9b82-fabf14a2dcfc"
+    },
+    "U7": {
+      "reference": "U7",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "b69c0835-3c95-5656-b8cc-231bfaf99a67",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/b69c0835-3c95-5656-b8cc-231bfaf99a67"
+    },
+    "U8": {
+      "reference": "U8",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "b4dd3c69-8d8f-5d35-8ae4-6b0de646db85",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/b4dd3c69-8d8f-5d35-8ae4-6b0de646db85"
+    },
+    "L6": {
+      "reference": "L6",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "70a0d55f-e92f-5513-a5c5-de1e432810e2",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/70a0d55f-e92f-5513-a5c5-de1e432810e2"
+    },
+    "D9": {
+      "reference": "D9",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "67bc9985-4c81-5be9-92a3-7c7411ac0c2f",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/67bc9985-4c81-5be9-92a3-7c7411ac0c2f"
+    },
+    "D10": {
+      "reference": "D10",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "26f013e6-1693-546b-9f66-002ac8231a73",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/26f013e6-1693-546b-9f66-002ac8231a73"
+    },
+    "C20": {
+      "reference": "C20",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "0986f3e2-2f14-5c93-b288-75c443b92c76",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/0986f3e2-2f14-5c93-b288-75c443b92c76"
+    },
+    "C21": {
+      "reference": "C21",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "a7d98323-7651-5302-a1e1-d2a929c35472",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/a7d98323-7651-5302-a1e1-d2a929c35472"
+    },
+    "C22": {
+      "reference": "C22",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "1eb92a0c-e8b4-5227-859e-6592e0a1d849",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/1eb92a0c-e8b4-5227-859e-6592e0a1d849"
+    },
+    "C23": {
+      "reference": "C23",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "f13d2678-cb3d-5687-a8a3-4573fd13cf6b",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/f13d2678-cb3d-5687-a8a3-4573fd13cf6b"
+    },
+    "C24": {
+      "reference": "C24",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "c333886b-064c-5ac7-992f-ad66408bc6db",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/c333886b-064c-5ac7-992f-ad66408bc6db"
+    },
+    "R13": {
+      "reference": "R13",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "02d78bc5-a3aa-5cf6-9115-d4c763e3f7dc",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/02d78bc5-a3aa-5cf6-9115-d4c763e3f7dc"
+    },
+    "R14": {
+      "reference": "R14",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "fe4d0e4d-3ba8-56b9-a0a6-4903a118020a",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/fe4d0e4d-3ba8-56b9-a0a6-4903a118020a"
+    },
+    "R15": {
+      "reference": "R15",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "087b9f68-f22d-58f7-9290-b23ba8c06286",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/087b9f68-f22d-58f7-9290-b23ba8c06286"
+    },
+    "R16": {
+      "reference": "R16",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "b02536cc-a55c-5d51-9d11-e5c04f1b135a",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/b02536cc-a55c-5d51-9d11-e5c04f1b135a"
+    },
+    "R17": {
+      "reference": "R17",
+      "sheet_file": "11_power-7v5.kicad_sch",
+      "sheet_uuid": "c458c47b-e020-51c7-843f-83257f39000b",
+      "symbol_uuid": "87e886c5-8e0f-56ee-ad56-c1d7a15a1d1b",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/87e886c5-8e0f-56ee-ad56-c1d7a15a1d1b"
+    },
+    "Q11": {
+      "reference": "Q11",
+      "sheet_file": "15_program-14.kicad_sch",
+      "sheet_uuid": "60c5bdd2-75d0-5b7e-aaeb-53c59cf219af",
+      "symbol_uuid": "8503ba35-4a63-5d79-a684-5e3a5eab9c62",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/60c5bdd2-75d0-5b7e-aaeb-53c59cf219af/8503ba35-4a63-5d79-a684-5e3a5eab9c62"
+    },
+    "Q15": {
+      "reference": "Q15",
+      "sheet_file": "15_program-14.kicad_sch",
+      "sheet_uuid": "60c5bdd2-75d0-5b7e-aaeb-53c59cf219af",
+      "symbol_uuid": "a7547362-28bb-52c0-9188-3c8a0580aa46",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/60c5bdd2-75d0-5b7e-aaeb-53c59cf219af/a7547362-28bb-52c0-9188-3c8a0580aa46"
+    },
+    "D18": {
+      "reference": "D18",
+      "sheet_file": "15_program-14.kicad_sch",
+      "sheet_uuid": "60c5bdd2-75d0-5b7e-aaeb-53c59cf219af",
+      "symbol_uuid": "2299db59-0ddc-5b6b-ab68-973cd2f50e0b",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/60c5bdd2-75d0-5b7e-aaeb-53c59cf219af/2299db59-0ddc-5b6b-ab68-973cd2f50e0b"
+    },
+    "D22": {
+      "reference": "D22",
+      "sheet_file": "15_program-14.kicad_sch",
+      "sheet_uuid": "60c5bdd2-75d0-5b7e-aaeb-53c59cf219af",
+      "symbol_uuid": "5433d74c-c9db-5cea-9f29-b1ff24b5275d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/60c5bdd2-75d0-5b7e-aaeb-53c59cf219af/5433d74c-c9db-5cea-9f29-b1ff24b5275d"
+    },
+    "R61": {
+      "reference": "R61",
+      "sheet_file": "15_program-14.kicad_sch",
+      "sheet_uuid": "60c5bdd2-75d0-5b7e-aaeb-53c59cf219af",
+      "symbol_uuid": "9ced4d3b-1120-56aa-9c7a-5846a2dd6f69",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/60c5bdd2-75d0-5b7e-aaeb-53c59cf219af/9ced4d3b-1120-56aa-9c7a-5846a2dd6f69"
+    },
+    "R62": {
+      "reference": "R62",
+      "sheet_file": "15_program-14.kicad_sch",
+      "sheet_uuid": "60c5bdd2-75d0-5b7e-aaeb-53c59cf219af",
+      "symbol_uuid": "e1836d1e-d314-5067-a7ed-f22d85ae32d7",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/60c5bdd2-75d0-5b7e-aaeb-53c59cf219af/e1836d1e-d314-5067-a7ed-f22d85ae32d7"
+    },
+    "R72": {
+      "reference": "R72",
+      "sheet_file": "15_program-14.kicad_sch",
+      "sheet_uuid": "60c5bdd2-75d0-5b7e-aaeb-53c59cf219af",
+      "symbol_uuid": "86b36d40-a5ef-51d6-a23f-174bf4f1e180",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/60c5bdd2-75d0-5b7e-aaeb-53c59cf219af/86b36d40-a5ef-51d6-a23f-174bf4f1e180"
+    },
+    "R73": {
+      "reference": "R73",
+      "sheet_file": "15_program-14.kicad_sch",
+      "sheet_uuid": "60c5bdd2-75d0-5b7e-aaeb-53c59cf219af",
+      "symbol_uuid": "9be9603a-e4ce-5836-8ab0-30ee77a70a66",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/60c5bdd2-75d0-5b7e-aaeb-53c59cf219af/9be9603a-e4ce-5836-8ab0-30ee77a70a66"
+    },
+    "R74": {
+      "reference": "R74",
+      "sheet_file": "15_program-14.kicad_sch",
+      "sheet_uuid": "60c5bdd2-75d0-5b7e-aaeb-53c59cf219af",
+      "symbol_uuid": "b80283ff-1544-5381-b413-175e92c096b3",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/60c5bdd2-75d0-5b7e-aaeb-53c59cf219af/b80283ff-1544-5381-b413-175e92c096b3"
+    },
+    "Q4": {
+      "reference": "Q4",
+      "sheet_file": "05_sci-rx.kicad_sch",
+      "sheet_uuid": "da66e837-bf1f-5723-bfb3-578273c855b0",
+      "symbol_uuid": "1458ce75-f060-5a35-a6c2-c5f583a0b283",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/da66e837-bf1f-5723-bfb3-578273c855b0/1458ce75-f060-5a35-a6c2-c5f583a0b283"
+    },
+    "U15": {
+      "reference": "U15",
+      "sheet_file": "05_sci-rx.kicad_sch",
+      "sheet_uuid": "da66e837-bf1f-5723-bfb3-578273c855b0",
+      "symbol_uuid": "2468f396-e473-5d7a-a6c7-5511648f7f84",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/da66e837-bf1f-5723-bfb3-578273c855b0/2468f396-e473-5d7a-a6c7-5511648f7f84"
+    },
+    "R42": {
+      "reference": "R42",
+      "sheet_file": "05_sci-rx.kicad_sch",
+      "sheet_uuid": "da66e837-bf1f-5723-bfb3-578273c855b0",
+      "symbol_uuid": "f0dd18d7-b49d-5037-b1e6-e004b2134438",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/da66e837-bf1f-5723-bfb3-578273c855b0/f0dd18d7-b49d-5037-b1e6-e004b2134438"
+    },
+    "R43": {
+      "reference": "R43",
+      "sheet_file": "05_sci-rx.kicad_sch",
+      "sheet_uuid": "da66e837-bf1f-5723-bfb3-578273c855b0",
+      "symbol_uuid": "68f104c3-28ca-5997-9c8d-c94da91e0a63",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/da66e837-bf1f-5723-bfb3-578273c855b0/68f104c3-28ca-5997-9c8d-c94da91e0a63"
+    },
+    "R44": {
+      "reference": "R44",
+      "sheet_file": "05_sci-rx.kicad_sch",
+      "sheet_uuid": "da66e837-bf1f-5723-bfb3-578273c855b0",
+      "symbol_uuid": "23454dbe-b0cf-509c-858d-46813331bc2c",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/da66e837-bf1f-5723-bfb3-578273c855b0/23454dbe-b0cf-509c-858d-46813331bc2c"
+    },
+    "R45": {
+      "reference": "R45",
+      "sheet_file": "05_sci-rx.kicad_sch",
+      "sheet_uuid": "da66e837-bf1f-5723-bfb3-578273c855b0",
+      "symbol_uuid": "1215a164-942e-5c77-a90c-1e229b737967",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/da66e837-bf1f-5723-bfb3-578273c855b0/1215a164-942e-5c77-a90c-1e229b737967"
+    },
+    "R46": {
+      "reference": "R46",
+      "sheet_file": "05_sci-rx.kicad_sch",
+      "sheet_uuid": "da66e837-bf1f-5723-bfb3-578273c855b0",
+      "symbol_uuid": "9e5196b6-6e93-51b3-abda-50f0d6f5f36b",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/da66e837-bf1f-5723-bfb3-578273c855b0/9e5196b6-6e93-51b3-abda-50f0d6f5f36b"
+    },
+    "R47": {
+      "reference": "R47",
+      "sheet_file": "05_sci-rx.kicad_sch",
+      "sheet_uuid": "da66e837-bf1f-5723-bfb3-578273c855b0",
+      "symbol_uuid": "a60eae0d-d986-5652-b0f0-c90f74a625b9",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/da66e837-bf1f-5723-bfb3-578273c855b0/a60eae0d-d986-5652-b0f0-c90f74a625b9"
+    },
+    "C43": {
+      "reference": "C43",
+      "sheet_file": "05_sci-rx.kicad_sch",
+      "sheet_uuid": "da66e837-bf1f-5723-bfb3-578273c855b0",
+      "symbol_uuid": "6332d002-1282-5998-815f-db0b0af853e2",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/da66e837-bf1f-5723-bfb3-578273c855b0/6332d002-1282-5998-815f-db0b0af853e2"
+    },
+    "R49": {
+      "reference": "R49",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "56d85bd0-717f-544f-b2c0-4c24aa71ec26",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/56d85bd0-717f-544f-b2c0-4c24aa71ec26"
+    },
+    "R50": {
+      "reference": "R50",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "730c0888-9af2-5646-9f60-420018ca80f6",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/730c0888-9af2-5646-9f60-420018ca80f6"
+    },
+    "R51": {
+      "reference": "R51",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "28b3a37f-631a-564a-a312-d3350eb95cde",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/28b3a37f-631a-564a-a312-d3350eb95cde"
+    },
+    "R52": {
+      "reference": "R52",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "902759e4-5aa5-5006-b549-85ed4a232f54",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/902759e4-5aa5-5006-b549-85ed4a232f54"
+    },
+    "R53": {
+      "reference": "R53",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "b8dbbe42-d779-5541-9287-5a0fee24ff8c",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/b8dbbe42-d779-5541-9287-5a0fee24ff8c"
+    },
+    "R54": {
+      "reference": "R54",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "aa290417-b4de-555b-aca9-dd53b6bf73b5",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/aa290417-b4de-555b-aca9-dd53b6bf73b5"
+    },
+    "C47": {
+      "reference": "C47",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "be73ad16-7329-5bdc-bec8-53aa66fdde59",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/be73ad16-7329-5bdc-bec8-53aa66fdde59"
+    },
+    "C48": {
+      "reference": "C48",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "e597380f-f5fd-54ab-9c4c-7113965182cf",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/e597380f-f5fd-54ab-9c4c-7113965182cf"
+    },
+    "C49": {
+      "reference": "C49",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "68ffad5b-b309-5327-89ea-48164d2d8f02",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/68ffad5b-b309-5327-89ea-48164d2d8f02"
+    },
+    "D27": {
+      "reference": "D27",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "5822be18-0fd2-55ec-ae0c-587190b0f5fe",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/5822be18-0fd2-55ec-ae0c-587190b0f5fe"
+    },
+    "D28": {
+      "reference": "D28",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "15d0da8a-f523-51b8-978f-481546e9ce31",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/15d0da8a-f523-51b8-978f-481546e9ce31"
+    },
+    "D29": {
+      "reference": "D29",
+      "sheet_file": "17_adc.kicad_sch",
+      "sheet_uuid": "fa114f2a-a86c-5eb2-a452-4746db30dc63",
+      "symbol_uuid": "8863cbd6-a204-552b-bf8f-e9333776dca2",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63/8863cbd6-a204-552b-bf8f-e9333776dca2"
+    },
+    "D11": {
+      "reference": "D11",
+      "sheet_file": "06_obd-protection.kicad_sch",
+      "sheet_uuid": "2b7322d4-b293-5e04-aed8-12afd5c8581a",
+      "symbol_uuid": "2bed7ea9-08f1-5038-b681-459efef868c4",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a/2bed7ea9-08f1-5038-b681-459efef868c4"
+    },
+    "D12": {
+      "reference": "D12",
+      "sheet_file": "06_obd-protection.kicad_sch",
+      "sheet_uuid": "2b7322d4-b293-5e04-aed8-12afd5c8581a",
+      "symbol_uuid": "321c3f36-36f3-5ba9-adc9-33c3b4fc4895",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a/321c3f36-36f3-5ba9-adc9-33c3b4fc4895"
+    },
+    "D13": {
+      "reference": "D13",
+      "sheet_file": "06_obd-protection.kicad_sch",
+      "sheet_uuid": "2b7322d4-b293-5e04-aed8-12afd5c8581a",
+      "symbol_uuid": "d9082153-0131-5f89-a70e-6f69a7244dd7",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a/d9082153-0131-5f89-a70e-6f69a7244dd7"
+    },
+    "D14": {
+      "reference": "D14",
+      "sheet_file": "06_obd-protection.kicad_sch",
+      "sheet_uuid": "2b7322d4-b293-5e04-aed8-12afd5c8581a",
+      "symbol_uuid": "bc49aa7a-7893-5740-909b-c37a919c219f",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a/bc49aa7a-7893-5740-909b-c37a919c219f"
+    },
+    "C25": {
+      "reference": "C25",
+      "sheet_file": "06_obd-protection.kicad_sch",
+      "sheet_uuid": "2b7322d4-b293-5e04-aed8-12afd5c8581a",
+      "symbol_uuid": "c16fdcd7-25e9-5e8d-86a4-b7edca948d7c",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a/c16fdcd7-25e9-5e8d-86a4-b7edca948d7c"
+    },
+    "C36": {
+      "reference": "C36",
+      "sheet_file": "06_obd-protection.kicad_sch",
+      "sheet_uuid": "2b7322d4-b293-5e04-aed8-12afd5c8581a",
+      "symbol_uuid": "582499a8-8400-5e18-bc77-3d077c9c9d54",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a/582499a8-8400-5e18-bc77-3d077c9c9d54"
+    },
+    "C37": {
+      "reference": "C37",
+      "sheet_file": "06_obd-protection.kicad_sch",
+      "sheet_uuid": "2b7322d4-b293-5e04-aed8-12afd5c8581a",
+      "symbol_uuid": "291f9005-b44b-5c4f-a547-583a05453865",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a/291f9005-b44b-5c4f-a547-583a05453865"
+    },
+    "C39": {
+      "reference": "C39",
+      "sheet_file": "06_obd-protection.kicad_sch",
+      "sheet_uuid": "2b7322d4-b293-5e04-aed8-12afd5c8581a",
+      "symbol_uuid": "958c11c8-92cc-5426-b455-a0c6cbbc11fc",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a/958c11c8-92cc-5426-b455-a0c6cbbc11fc"
+    },
+    "C40": {
+      "reference": "C40",
+      "sheet_file": "06_obd-protection.kicad_sch",
+      "sheet_uuid": "2b7322d4-b293-5e04-aed8-12afd5c8581a",
+      "symbol_uuid": "4ca81ed5-5b9a-5019-9224-21324e3bcd32",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a/4ca81ed5-5b9a-5019-9224-21324e3bcd32"
+    },
+    "C42": {
+      "reference": "C42",
+      "sheet_file": "06_obd-protection.kicad_sch",
+      "sheet_uuid": "2b7322d4-b293-5e04-aed8-12afd5c8581a",
+      "symbol_uuid": "ba8d6cf8-dc36-596f-a263-6751ed31925c",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a/ba8d6cf8-dc36-596f-a263-6751ed31925c"
+    },
+    "C44": {
+      "reference": "C44",
+      "sheet_file": "06_obd-protection.kicad_sch",
+      "sheet_uuid": "2b7322d4-b293-5e04-aed8-12afd5c8581a",
+      "symbol_uuid": "ce3f1075-e20d-5c88-ae22-6f84271b56ca",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a/ce3f1075-e20d-5c88-ae22-6f84271b56ca"
+    },
+    "Q7": {
+      "reference": "Q7",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "bfad871f-16e9-5e4d-9f09-9408125923b8",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/bfad871f-16e9-5e4d-9f09-9408125923b8"
+    },
+    "Q16": {
+      "reference": "Q16",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "96d357b6-a085-5b11-9cfd-e690177422b8",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/96d357b6-a085-5b11-9cfd-e690177422b8"
+    },
+    "U16": {
+      "reference": "U16",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "1e5f89a3-bffc-5e93-860f-78abf2cb7895",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/1e5f89a3-bffc-5e93-860f-78abf2cb7895"
+    },
+    "U17": {
+      "reference": "U17",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "4427df56-d5e9-55a3-b992-8f6606887f2d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/4427df56-d5e9-55a3-b992-8f6606887f2d"
+    },
+    "U18": {
+      "reference": "U18",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "024d4345-db83-53d5-a461-ab0c4591ca1d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/024d4345-db83-53d5-a461-ab0c4591ca1d"
+    },
+    "R77": {
+      "reference": "R77",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "834a1375-1d3c-5a9e-a8ac-a7e035118021",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/834a1375-1d3c-5a9e-a8ac-a7e035118021"
+    },
+    "R78": {
+      "reference": "R78",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "baf8504a-d3e7-52b0-b78f-2b7d58332552",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/baf8504a-d3e7-52b0-b78f-2b7d58332552"
+    },
+    "R79": {
+      "reference": "R79",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "d8d1d323-56cd-5273-9796-60b7596aa8ed",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/d8d1d323-56cd-5273-9796-60b7596aa8ed"
+    },
+    "R80": {
+      "reference": "R80",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "8c0d5649-a107-5739-97cd-5f867a52c041",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/8c0d5649-a107-5739-97cd-5f867a52c041"
+    },
+    "R81": {
+      "reference": "R81",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "2b0c3db5-b055-5ad2-a7e9-8b3b929e2d11",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/2b0c3db5-b055-5ad2-a7e9-8b3b929e2d11"
+    },
+    "R82": {
+      "reference": "R82",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "2fb38413-c59d-5250-b6a9-6eb1e0ebd0ce",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/2fb38413-c59d-5250-b6a9-6eb1e0ebd0ce"
+    },
+    "R83": {
+      "reference": "R83",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "1500ddbe-e38b-584f-ae84-b4d32072beb7",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/1500ddbe-e38b-584f-ae84-b4d32072beb7"
+    },
+    "R84": {
+      "reference": "R84",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "66948780-9fc4-5f03-ba95-48f66cc23232",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/66948780-9fc4-5f03-ba95-48f66cc23232"
+    },
+    "R85": {
+      "reference": "R85",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "ef8447a3-6f66-51aa-9c2c-812756f30dee",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/ef8447a3-6f66-51aa-9c2c-812756f30dee"
+    },
+    "R97": {
+      "reference": "R97",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "9a6c3338-7690-5f48-a62d-43cb52671a85",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/9a6c3338-7690-5f48-a62d-43cb52671a85"
+    },
+    "R98": {
+      "reference": "R98",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "c8343f13-597e-52f1-8073-db12e77c3812",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/c8343f13-597e-52f1-8073-db12e77c3812"
+    },
+    "R99": {
+      "reference": "R99",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "34b1bf5e-4bf3-5e22-8e45-9785a92cb087",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/34b1bf5e-4bf3-5e22-8e45-9785a92cb087"
+    },
+    "R100": {
+      "reference": "R100",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "d57c4216-f7ed-5913-9554-6464e61808f4",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/d57c4216-f7ed-5913-9554-6464e61808f4"
+    },
+    "R101": {
+      "reference": "R101",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "3fe6f585-cf2c-5a2d-852c-c5a6d36a8a36",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/3fe6f585-cf2c-5a2d-852c-c5a6d36a8a36"
+    },
+    "C50": {
+      "reference": "C50",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "97a5cc62-e45a-5eff-94b4-13a8be126cf7",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/97a5cc62-e45a-5eff-94b4-13a8be126cf7"
+    },
+    "C51": {
+      "reference": "C51",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "53c84e7e-27ae-5e5a-8fe1-d373e9a15a72",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/53c84e7e-27ae-5e5a-8fe1-d373e9a15a72"
+    },
+    "C52": {
+      "reference": "C52",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "0d1d42fa-a2dc-5b07-941a-7ca06211f11a",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/0d1d42fa-a2dc-5b07-941a-7ca06211f11a"
+    },
+    "C53": {
+      "reference": "C53",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "0436d42c-aeb7-5416-945b-3dbfb5b470a5",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/0436d42c-aeb7-5416-945b-3dbfb5b470a5"
+    },
+    "C54": {
+      "reference": "C54",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "a50123fd-f85f-51c6-9f74-9dd6e15b900d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/a50123fd-f85f-51c6-9f74-9dd6e15b900d"
+    },
+    "C55": {
+      "reference": "C55",
+      "sheet_file": "01_ccd.kicad_sch",
+      "sheet_uuid": "96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+      "symbol_uuid": "c4f7a6e0-072f-54ad-9a70-fdaa7a707e4e",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/c4f7a6e0-072f-54ad-9a70-fdaa7a707e4e"
+    },
+    "Q1": {
+      "reference": "Q1",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "078e26ec-ec5c-5004-868a-144a1fbe09a4",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/078e26ec-ec5c-5004-868a-144a1fbe09a4"
+    },
+    "U9": {
+      "reference": "U9",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "01ecf2bf-606a-54d1-9510-c5f62b588a90",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/01ecf2bf-606a-54d1-9510-c5f62b588a90"
+    },
+    "R4": {
+      "reference": "R4",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "81c5d513-d989-54e4-8e63-3436f2a6676d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/81c5d513-d989-54e4-8e63-3436f2a6676d"
+    },
+    "R5": {
+      "reference": "R5",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "2565f231-2b05-5a71-9704-9c52608c5641",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/2565f231-2b05-5a71-9704-9c52608c5641"
+    },
+    "R6": {
+      "reference": "R6",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "ac766519-b7cd-535c-ad9f-7375b6956881",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/ac766519-b7cd-535c-ad9f-7375b6956881"
+    },
+    "R7": {
+      "reference": "R7",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "897808c6-19a4-58a8-8d94-9ba50ab5073d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/897808c6-19a4-58a8-8d94-9ba50ab5073d"
+    },
+    "R18": {
+      "reference": "R18",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "4ba3f78a-2bf8-5ff1-853c-a81e401151a1",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/4ba3f78a-2bf8-5ff1-853c-a81e401151a1"
+    },
+    "R19": {
+      "reference": "R19",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "8a1f0420-498e-579c-a1ec-d45e48699e99",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/8a1f0420-498e-579c-a1ec-d45e48699e99"
+    },
+    "R20": {
+      "reference": "R20",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "17d71c56-2885-5774-9dc9-5d213b9b7c0f",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/17d71c56-2885-5774-9dc9-5d213b9b7c0f"
+    },
+    "R21": {
+      "reference": "R21",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "1345b73a-a1da-5173-99a7-641e6ea5f389",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/1345b73a-a1da-5173-99a7-641e6ea5f389"
+    },
+    "C11": {
+      "reference": "C11",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "cef68618-625f-5880-98c5-7eb8520bdead",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/cef68618-625f-5880-98c5-7eb8520bdead"
+    },
+    "C12": {
+      "reference": "C12",
+      "sheet_file": "02_pci.kicad_sch",
+      "sheet_uuid": "467c33fc-7b6d-5be4-8240-0d2755a5f561",
+      "symbol_uuid": "1fcef4cb-a84b-548a-ae37-31f38da39416",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/1fcef4cb-a84b-548a-ae37-31f38da39416"
+    },
+    "U19": {
+      "reference": "U19",
+      "sheet_file": "18_control.kicad_sch",
+      "sheet_uuid": "28c29c45-2882-5ba2-8271-25819e81bba6",
+      "symbol_uuid": "8398c4ef-06d3-5042-9f4c-8914f612446f",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/28c29c45-2882-5ba2-8271-25819e81bba6/8398c4ef-06d3-5042-9f4c-8914f612446f"
+    },
+    "R86": {
+      "reference": "R86",
+      "sheet_file": "18_control.kicad_sch",
+      "sheet_uuid": "28c29c45-2882-5ba2-8271-25819e81bba6",
+      "symbol_uuid": "1db8e58b-773b-5921-bd85-fce90e652c56",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/28c29c45-2882-5ba2-8271-25819e81bba6/1db8e58b-773b-5921-bd85-fce90e652c56"
+    },
+    "R87": {
+      "reference": "R87",
+      "sheet_file": "18_control.kicad_sch",
+      "sheet_uuid": "28c29c45-2882-5ba2-8271-25819e81bba6",
+      "symbol_uuid": "dc3e07a3-1e92-5402-9995-646f531f6abe",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/28c29c45-2882-5ba2-8271-25819e81bba6/dc3e07a3-1e92-5402-9995-646f531f6abe"
+    },
+    "R88": {
+      "reference": "R88",
+      "sheet_file": "18_control.kicad_sch",
+      "sheet_uuid": "28c29c45-2882-5ba2-8271-25819e81bba6",
+      "symbol_uuid": "09086a35-a640-561b-9efc-d3cec701f04d",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/28c29c45-2882-5ba2-8271-25819e81bba6/09086a35-a640-561b-9efc-d3cec701f04d"
+    },
+    "C56": {
+      "reference": "C56",
+      "sheet_file": "18_control.kicad_sch",
+      "sheet_uuid": "28c29c45-2882-5ba2-8271-25819e81bba6",
+      "symbol_uuid": "c78f9ccc-619b-57fe-a289-47ce1ac2e45b",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/28c29c45-2882-5ba2-8271-25819e81bba6/c78f9ccc-619b-57fe-a289-47ce1ac2e45b"
+    },
+    "C57": {
+      "reference": "C57",
+      "sheet_file": "18_control.kicad_sch",
+      "sheet_uuid": "28c29c45-2882-5ba2-8271-25819e81bba6",
+      "symbol_uuid": "add27c05-199d-51d6-b4f9-892f177871bf",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/28c29c45-2882-5ba2-8271-25819e81bba6/add27c05-199d-51d6-b4f9-892f177871bf"
+    },
+    "J3": {
+      "reference": "J3",
+      "sheet_file": "18_control.kicad_sch",
+      "sheet_uuid": "28c29c45-2882-5ba2-8271-25819e81bba6",
+      "symbol_uuid": "e9a37269-7449-59d9-a5df-6094a3ff17e2",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/28c29c45-2882-5ba2-8271-25819e81bba6/e9a37269-7449-59d9-a5df-6094a3ff17e2"
+    },
+    "Q9": {
+      "reference": "Q9",
+      "sheet_file": "13_program-9.kicad_sch",
+      "sheet_uuid": "3ff849df-958f-5be2-8569-468445a4ea89",
+      "symbol_uuid": "03e5c16a-59fe-53f1-a9af-ebfd075959fe",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/3ff849df-958f-5be2-8569-468445a4ea89/03e5c16a-59fe-53f1-a9af-ebfd075959fe"
+    },
+    "Q13": {
+      "reference": "Q13",
+      "sheet_file": "13_program-9.kicad_sch",
+      "sheet_uuid": "3ff849df-958f-5be2-8569-468445a4ea89",
+      "symbol_uuid": "1099cc7b-e287-52e1-a4d9-37cb506818ca",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/3ff849df-958f-5be2-8569-468445a4ea89/1099cc7b-e287-52e1-a4d9-37cb506818ca"
+    },
+    "D16": {
+      "reference": "D16",
+      "sheet_file": "13_program-9.kicad_sch",
+      "sheet_uuid": "3ff849df-958f-5be2-8569-468445a4ea89",
+      "symbol_uuid": "138e49b6-1988-5c05-a2d4-e3ca7a8ea6e3",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/3ff849df-958f-5be2-8569-468445a4ea89/138e49b6-1988-5c05-a2d4-e3ca7a8ea6e3"
+    },
+    "D20": {
+      "reference": "D20",
+      "sheet_file": "13_program-9.kicad_sch",
+      "sheet_uuid": "3ff849df-958f-5be2-8569-468445a4ea89",
+      "symbol_uuid": "91b8cae8-b5fd-594a-aa34-75f15d6ae56c",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/3ff849df-958f-5be2-8569-468445a4ea89/91b8cae8-b5fd-594a-aa34-75f15d6ae56c"
+    },
+    "R57": {
+      "reference": "R57",
+      "sheet_file": "13_program-9.kicad_sch",
+      "sheet_uuid": "3ff849df-958f-5be2-8569-468445a4ea89",
+      "symbol_uuid": "28b4223d-5ceb-5a3c-8f7d-989271667bf1",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/3ff849df-958f-5be2-8569-468445a4ea89/28b4223d-5ceb-5a3c-8f7d-989271667bf1"
+    },
+    "R58": {
+      "reference": "R58",
+      "sheet_file": "13_program-9.kicad_sch",
+      "sheet_uuid": "3ff849df-958f-5be2-8569-468445a4ea89",
+      "symbol_uuid": "b3b3bf73-eba2-5ad9-8e4a-ee328c06e061",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/3ff849df-958f-5be2-8569-468445a4ea89/b3b3bf73-eba2-5ad9-8e4a-ee328c06e061"
+    },
+    "R66": {
+      "reference": "R66",
+      "sheet_file": "13_program-9.kicad_sch",
+      "sheet_uuid": "3ff849df-958f-5be2-8569-468445a4ea89",
+      "symbol_uuid": "7b15dd26-2df5-5d63-b219-2d4bcd9803b0",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/3ff849df-958f-5be2-8569-468445a4ea89/7b15dd26-2df5-5d63-b219-2d4bcd9803b0"
+    },
+    "R67": {
+      "reference": "R67",
+      "sheet_file": "13_program-9.kicad_sch",
+      "sheet_uuid": "3ff849df-958f-5be2-8569-468445a4ea89",
+      "symbol_uuid": "e350137c-a3ab-5686-92aa-6781443d18c6",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/3ff849df-958f-5be2-8569-468445a4ea89/e350137c-a3ab-5686-92aa-6781443d18c6"
+    },
+    "R68": {
+      "reference": "R68",
+      "sheet_file": "13_program-9.kicad_sch",
+      "sheet_uuid": "3ff849df-958f-5be2-8569-468445a4ea89",
+      "symbol_uuid": "3f1328e8-90c3-59c9-8fb5-763ad6431941",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/3ff849df-958f-5be2-8569-468445a4ea89/3f1328e8-90c3-59c9-8fb5-763ad6431941"
+    },
+    "Q3": {
+      "reference": "Q3",
+      "sheet_file": "03_sci-14-9.kicad_sch",
+      "sheet_uuid": "d52669ab-e923-5314-abe4-66ade96ca057",
+      "symbol_uuid": "9f7029bf-910a-5618-b7ff-98c3a60f7e40",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d52669ab-e923-5314-abe4-66ade96ca057/9f7029bf-910a-5618-b7ff-98c3a60f7e40"
+    },
+    "U14": {
+      "reference": "U14",
+      "sheet_file": "03_sci-14-9.kicad_sch",
+      "sheet_uuid": "d52669ab-e923-5314-abe4-66ade96ca057",
+      "symbol_uuid": "8465bfd3-8bde-5ba5-b536-690cfc680303",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d52669ab-e923-5314-abe4-66ade96ca057/8465bfd3-8bde-5ba5-b536-690cfc680303"
+    },
+    "R36": {
+      "reference": "R36",
+      "sheet_file": "03_sci-14-9.kicad_sch",
+      "sheet_uuid": "d52669ab-e923-5314-abe4-66ade96ca057",
+      "symbol_uuid": "2de6e367-1b18-53b4-bb7e-bfb78c63e03b",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d52669ab-e923-5314-abe4-66ade96ca057/2de6e367-1b18-53b4-bb7e-bfb78c63e03b"
+    },
+    "R37": {
+      "reference": "R37",
+      "sheet_file": "03_sci-14-9.kicad_sch",
+      "sheet_uuid": "d52669ab-e923-5314-abe4-66ade96ca057",
+      "symbol_uuid": "54498238-4ce2-5e86-ae88-012dc6fc7f7e",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d52669ab-e923-5314-abe4-66ade96ca057/54498238-4ce2-5e86-ae88-012dc6fc7f7e"
+    },
+    "R38": {
+      "reference": "R38",
+      "sheet_file": "03_sci-14-9.kicad_sch",
+      "sheet_uuid": "d52669ab-e923-5314-abe4-66ade96ca057",
+      "symbol_uuid": "c101dbd6-ef63-5291-8166-590862cc8928",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d52669ab-e923-5314-abe4-66ade96ca057/c101dbd6-ef63-5291-8166-590862cc8928"
+    },
+    "R39": {
+      "reference": "R39",
+      "sheet_file": "03_sci-14-9.kicad_sch",
+      "sheet_uuid": "d52669ab-e923-5314-abe4-66ade96ca057",
+      "symbol_uuid": "3eb8e58f-0ea7-584a-98c8-c4574e7fb41c",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d52669ab-e923-5314-abe4-66ade96ca057/3eb8e58f-0ea7-584a-98c8-c4574e7fb41c"
+    },
+    "R40": {
+      "reference": "R40",
+      "sheet_file": "03_sci-14-9.kicad_sch",
+      "sheet_uuid": "d52669ab-e923-5314-abe4-66ade96ca057",
+      "symbol_uuid": "1b0a2b00-ea9b-51c8-8287-a6532d7773e4",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d52669ab-e923-5314-abe4-66ade96ca057/1b0a2b00-ea9b-51c8-8287-a6532d7773e4"
+    },
+    "R41": {
+      "reference": "R41",
+      "sheet_file": "03_sci-14-9.kicad_sch",
+      "sheet_uuid": "d52669ab-e923-5314-abe4-66ade96ca057",
+      "symbol_uuid": "3ac8e459-044d-580e-90fb-9adc48a02097",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d52669ab-e923-5314-abe4-66ade96ca057/3ac8e459-044d-580e-90fb-9adc48a02097"
+    },
+    "C41": {
+      "reference": "C41",
+      "sheet_file": "03_sci-14-9.kicad_sch",
+      "sheet_uuid": "d52669ab-e923-5314-abe4-66ade96ca057",
+      "symbol_uuid": "f86e5dec-ac02-5e45-86d5-6a38febc3f64",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d52669ab-e923-5314-abe4-66ade96ca057/f86e5dec-ac02-5e45-86d5-6a38febc3f64"
+    },
+    "J4": {
+      "reference": "J4",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "3a18b252-7d35-58c9-a9d4-e9ffce346fd2",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/3a18b252-7d35-58c9-a9d4-e9ffce346fd2"
+    },
+    "U20": {
+      "reference": "U20",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "34113019-f382-58d1-a7c5-0cb43f115ccc",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/34113019-f382-58d1-a7c5-0cb43f115ccc"
+    },
+    "R104": {
+      "reference": "R104",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "42e1de41-255b-54aa-a93d-333bb1c8cd67",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/42e1de41-255b-54aa-a93d-333bb1c8cd67"
+    },
+    "R105": {
+      "reference": "R105",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "03d091b6-6a47-5ba9-b6f0-161bb1ad02da",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/03d091b6-6a47-5ba9-b6f0-161bb1ad02da"
+    },
+    "R106": {
+      "reference": "R106",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "a01c66f7-f856-58f1-b334-a6d23892ac0f",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/a01c66f7-f856-58f1-b334-a6d23892ac0f"
+    },
+    "R107": {
+      "reference": "R107",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "d0da9c5a-f850-53c9-b27f-d2935a6582e4",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/d0da9c5a-f850-53c9-b27f-d2935a6582e4"
+    },
+    "R108": {
+      "reference": "R108",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "029b45fe-5f3d-5968-84ea-14efdf32ce73",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/029b45fe-5f3d-5968-84ea-14efdf32ce73"
+    },
+    "R109": {
+      "reference": "R109",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "256550a3-302c-5df4-a1e2-401d7f4c9a26",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/256550a3-302c-5df4-a1e2-401d7f4c9a26"
+    },
+    "R110": {
+      "reference": "R110",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "7259ced1-c12d-5cc3-8b71-fe6f969a2971",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/7259ced1-c12d-5cc3-8b71-fe6f969a2971"
+    },
+    "R111": {
+      "reference": "R111",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "f374c005-2237-5ba4-b23f-ce9a5819f007",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/f374c005-2237-5ba4-b23f-ce9a5819f007"
+    },
+    "R112": {
+      "reference": "R112",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "f7a02c6f-ea57-52fa-a23c-1898f8604ade",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/f7a02c6f-ea57-52fa-a23c-1898f8604ade"
+    },
+    "R113": {
+      "reference": "R113",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "e70cdbc1-9dda-5df4-9699-7780a379cc03",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/e70cdbc1-9dda-5df4-9699-7780a379cc03"
+    },
+    "R114": {
+      "reference": "R114",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "735ba712-2f79-55e5-8b88-311637ce27ff",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/735ba712-2f79-55e5-8b88-311637ce27ff"
+    },
+    "C58": {
+      "reference": "C58",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "91784c00-2263-5e21-9058-9800cc3c7f13",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/91784c00-2263-5e21-9058-9800cc3c7f13"
+    },
+    "C59": {
+      "reference": "C59",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "0b8bd4c5-8c0e-56e2-9471-6eda298f5d8e",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/0b8bd4c5-8c0e-56e2-9471-6eda298f5d8e"
+    },
+    "C60": {
+      "reference": "C60",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "442c74e7-b926-53cd-a29b-7fe6e42bf189",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/442c74e7-b926-53cd-a29b-7fe6e42bf189"
+    },
+    "C61": {
+      "reference": "C61",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "56726549-7695-5518-9ae6-07f009e9f5cd",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/56726549-7695-5518-9ae6-07f009e9f5cd"
+    },
+    "SW3": {
+      "reference": "SW3",
+      "sheet_file": "22_sd-logger.kicad_sch",
+      "sheet_uuid": "20b0c196-4c86-57a4-a18b-3a4f1ce692e0",
+      "symbol_uuid": "cedff551-7040-518a-b89c-8836136bf22f",
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/20b0c196-4c86-57a4-a18b-3a4f1ce692e0/cedff551-7040-518a-b89c-8836136bf22f"
+    }
+  },
+  "mechanical_board_only": [
+    "H1",
+    "H2",
+    "H3",
+    "H4"
+  ]
+}

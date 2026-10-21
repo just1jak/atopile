@@ -1,0 +1,13 @@
+{
+  "nativeEffectiveNetClasses": {
+    "+12V": "Power",
+    "J1962-16": "Power",
+    "LNA_IN": "RF",
+    "N_R23_1": "RF",
+    "D+": "USB",
+    "D-P": "USB",
+    "ACT_LED": "Default"
+  },
+  "boardMinimumRulesUnchanged": true,
+  "sourceProjectUntouched": true
+}

@@ -1,0 +1,345 @@
+{
+  "schema": 1,
+  "native_text_metrics": "reference/schematic-text-metrics.json",
+  "layout_strategy": "Rigid connected-drawing packing; independent reference/value and port text spacing; native A4/A3 pages",
+  "known_source_issue": "U3/U4/U8 TLV767 DRV pin 5 is NC; must be grounded in source before routing",
+  "sheets": [
+    {
+      "id": "ccd",
+      "size_mm": [
+        420,
+        297
+      ],
+      "clusters": 7,
+      "content_bottom_mm": 234.66,
+      "reference_value_fields_repositioned": 58,
+      "ports_repositioned": 6,
+      "redundant_ports_removed": 2,
+      "unused_wire_tails_removed": 4,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A3"
+    },
+    {
+      "id": "pci",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 3,
+      "content_bottom_mm": 143.22,
+      "reference_value_fields_repositioned": 26,
+      "ports_repositioned": 1,
+      "redundant_ports_removed": 3,
+      "unused_wire_tails_removed": 4,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "sci-14-9",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 4,
+      "content_bottom_mm": 135.6,
+      "reference_value_fields_repositioned": 24,
+      "ports_repositioned": 2,
+      "redundant_ports_removed": 3,
+      "unused_wire_tails_removed": 5,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "sci-6-12",
+      "size_mm": [
+        420,
+        297
+      ],
+      "clusters": 5,
+      "content_bottom_mm": 168.62,
+      "reference_value_fields_repositioned": 32,
+      "ports_repositioned": 3,
+      "redundant_ports_removed": 3,
+      "unused_wire_tails_removed": 5,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A3"
+    },
+    {
+      "id": "sci-rx",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 4,
+      "content_bottom_mm": 135.74,
+      "reference_value_fields_repositioned": 24,
+      "ports_repositioned": 2,
+      "redundant_ports_removed": 3,
+      "unused_wire_tails_removed": 3,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "obd-protection",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 9,
+      "content_bottom_mm": 120.36,
+      "reference_value_fields_repositioned": 22,
+      "ports_repositioned": 8,
+      "redundant_ports_removed": 21,
+      "unused_wire_tails_removed": 21,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "vehicle-input",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 2,
+      "content_bottom_mm": 102.58,
+      "reference_value_fields_repositioned": 8,
+      "ports_repositioned": 1,
+      "redundant_ports_removed": 2,
+      "unused_wire_tails_removed": 2,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "power-5v",
+      "size_mm": [
+        420,
+        297
+      ],
+      "clusters": 4,
+      "content_bottom_mm": 147.32,
+      "reference_value_fields_repositioned": 38,
+      "ports_repositioned": 0,
+      "redundant_ports_removed": 0,
+      "unused_wire_tails_removed": 0,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A3"
+    },
+    {
+      "id": "power-vpp",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 2,
+      "content_bottom_mm": 102.58,
+      "reference_value_fields_repositioned": 20,
+      "ports_repositioned": 0,
+      "redundant_ports_removed": 2,
+      "unused_wire_tails_removed": 2,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "power-vbb",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 1,
+      "content_bottom_mm": 102.58,
+      "reference_value_fields_repositioned": 20,
+      "ports_repositioned": 0,
+      "redundant_ports_removed": 1,
+      "unused_wire_tails_removed": 1,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "power-7v5",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 2,
+      "content_bottom_mm": 147.32,
+      "reference_value_fields_repositioned": 32,
+      "ports_repositioned": 0,
+      "redundant_ports_removed": 0,
+      "unused_wire_tails_removed": 0,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "program-6",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 2,
+      "content_bottom_mm": 125.44,
+      "reference_value_fields_repositioned": 22,
+      "ports_repositioned": 2,
+      "redundant_ports_removed": 0,
+      "unused_wire_tails_removed": 0,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "program-9",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 2,
+      "content_bottom_mm": 125.44,
+      "reference_value_fields_repositioned": 22,
+      "ports_repositioned": 2,
+      "redundant_ports_removed": 0,
+      "unused_wire_tails_removed": 0,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "program-12",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 2,
+      "content_bottom_mm": 125.44,
+      "reference_value_fields_repositioned": 22,
+      "ports_repositioned": 2,
+      "redundant_ports_removed": 0,
+      "unused_wire_tails_removed": 0,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "program-14",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 2,
+      "content_bottom_mm": 125.44,
+      "reference_value_fields_repositioned": 22,
+      "ports_repositioned": 2,
+      "redundant_ports_removed": 0,
+      "unused_wire_tails_removed": 0,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "mcu",
+      "size_mm": [
+        420,
+        297
+      ],
+      "clusters": 7,
+      "content_bottom_mm": 194.02,
+      "reference_value_fields_repositioned": 34,
+      "ports_repositioned": 0,
+      "redundant_ports_removed": 1,
+      "unused_wire_tails_removed": 1,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A3"
+    },
+    {
+      "id": "adc",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 3,
+      "content_bottom_mm": 107.66,
+      "reference_value_fields_repositioned": 24,
+      "ports_repositioned": 0,
+      "redundant_ports_removed": 6,
+      "unused_wire_tails_removed": 6,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "control",
+      "size_mm": [
+        420,
+        297
+      ],
+      "clusters": 3,
+      "content_bottom_mm": 161.0,
+      "reference_value_fields_repositioned": 16,
+      "ports_repositioned": 0,
+      "redundant_ports_removed": 0,
+      "unused_wire_tails_removed": 0,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A3"
+    },
+    {
+      "id": "usb",
+      "size_mm": [
+        420,
+        297
+      ],
+      "clusters": 13,
+      "content_bottom_mm": 194.02,
+      "reference_value_fields_repositioned": 42,
+      "ports_repositioned": 1,
+      "redundant_ports_removed": 4,
+      "unused_wire_tails_removed": 4,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A3"
+    },
+    {
+      "id": "leds",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 4,
+      "content_bottom_mm": 89.88,
+      "reference_value_fields_repositioned": 32,
+      "ports_repositioned": 4,
+      "redundant_ports_removed": 0,
+      "unused_wire_tails_removed": 0,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    },
+    {
+      "id": "obd",
+      "size_mm": [
+        297,
+        210
+      ],
+      "clusters": 1,
+      "content_bottom_mm": 127.0,
+      "reference_value_fields_repositioned": 2,
+      "ports_repositioned": 0,
+      "redundant_ports_removed": 0,
+      "unused_wire_tails_removed": 0,
+      "estimated_caption_collisions": [],
+      "circuit_scale": 2.0,
+      "page_format": "A4"
+    }
+  ],
+  "native_netlist_validation_required": true
+}

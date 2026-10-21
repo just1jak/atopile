@@ -1,0 +1,28 @@
+{
+  "input": "work/chrysler-routed-sd/route-pass-3/seed.kicad_pcb",
+  "input_sha256": "885d634678ffe7d6f8eeff15715fc6a4433b2a22a81bfe3fc86fbc6eb20c6f31",
+  "before": {
+    "footprints": 263,
+    "track_segments": 103,
+    "vias": 19,
+    "zones": 6,
+    "airwires_before_zone_refill": 571,
+    "thin_tracks": [],
+    "non_copper_route_layers": []
+  },
+  "session_sha256": "2d271c772387a6a2d33f8423af3862813aa0c5873c3e5958763cc0c19cf2ebf9",
+  "output": "work/chrysler-routed-sd/signal-logic-stage/native6/ChryslerScanner_V240_SD.kicad_pcb",
+  "output_sha256": "2215e2eb6c7e9db4d046d53979e81226429c2d703222b95dca6b7c3455fb96ab",
+  "component_pad_and_net_assignments_preserved": true,
+  "original_protected_copper_preserved": 122,
+  "exact_duplicate_copper_removed": 0,
+  "after": {
+    "footprints": 263,
+    "track_segments": 2181,
+    "vias": 210,
+    "zones": 6,
+    "airwires_before_zone_refill": 94,
+    "thin_tracks": [],
+    "non_copper_route_layers": []
+  }
+}

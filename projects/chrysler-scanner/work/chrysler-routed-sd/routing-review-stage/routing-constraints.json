@@ -1,0 +1,105 @@
+{
+  "units": "mm",
+  "status": "engineering starting targets; not fabricated stackup/thermal qualification",
+  "default": {
+    "width": 0.25,
+    "clearance": 0.15,
+    "min_neck_width": 0.15,
+    "via_diameter": 0.6,
+    "via_drill": 0.3
+  },
+  "critical_locked": {
+    "RF": {
+      "nets": [
+        "LNA_IN",
+        "N_R23_1"
+      ],
+      "width": 0.3,
+      "layer": "F.Cu",
+      "impedance_target_ohm": 50
+    },
+    "USB": {
+      "nets": [
+        "D+",
+        "D-",
+        "D+P",
+        "D-P"
+      ],
+      "width": 0.22,
+      "paired_gap": 0.15,
+      "impedance_target_ohm": 90,
+      "connector_fanout_width": 0.2,
+      "layer": "F.Cu primary trunks, short B.Cu duplicate-contact crossover"
+    },
+    "switch": {
+      "nets": [
+        "N_C5_2",
+        "N_D7_2",
+        "N_C17_2",
+        "N_C21_2"
+      ],
+      "width": 0.6,
+      "layer": "F.Cu"
+    },
+    "output_local": {
+      "nets": [
+        "N_R2_1",
+        "N_R8_1",
+        "N_R11_1",
+        "N_R14_1"
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    "bootstrap": {
+      "nets": [
+        "N_C5_1",
+        "N_C17_1",
+        "N_C21_1"
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    }
+  },
+  "remaining_power_targets": {
+    "main_rails": {
+      "nets": [
+        "+12V",
+        "+5V",
+        "N_C3_1"
+      ],
+      "trunk_width": 0.8,
+      "branch_width": 0.5,
+      "require_short_pin_neckdown": true
+    },
+    "secondary_rails": {
+      "nets": [
+        "+3.3V",
+        "SD_3V3",
+        "+7.5V",
+        "VPP",
+        "VBB"
+      ],
+      "trunk_width": 0.5,
+      "require_short_pin_neckdown": true
+    },
+    "HV_programming": {
+      "nets": [
+        "VPP",
+        "VBB"
+      ],
+      "target_routing_clearance": 0.3,
+      "note": "Existing intrinsic package clearances remain governed by the native project rules; no global relaxation."
+    }
+  },
+  "final_gates": [
+    "native full-board airwires exactly0 after zone refill",
+    "native full DRC errors0 and warnings0; no new exclusions",
+    "all263 footprint blocks unchanged against physical seed",
+    "all pad net endpoint sets unchanged",
+    "locked critical copper and antenna keepouts unchanged",
+    "no signal tracks crossing the In1.Cu GND reference plane",
+    "review primary rail trunk widths and any neckdown lengths",
+    "antenna matching, actual power budget, and fabrication impedance/thermal qualification remain hardware gates"
+  ]
+}

@@ -1,0 +1,2155 @@
+{
+  "sha": "8e632c7a1144873db60d0614810417855c54a059",
+  "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/8e632c7a1144873db60d0614810417855c54a059",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+      "size": 66,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/dfe0770424b2a19faf507a501ebfc23be8f54e7b"
+    },
+    {
+      "path": "Arduino",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "77c3d473492fe42449749b869e2e62233c975c8a",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/77c3d473492fe42449749b869e2e62233c975c8a"
+    },
+    {
+      "path": "Arduino/ChryslerCCDSCIScanner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "78588f79b4e795a8c4f9750a97535e0eba69f972",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/78588f79b4e795a8c4f9750a97535e0eba69f972"
+    },
+    {
+      "path": "Arduino/ChryslerCCDSCIScanner/ChryslerCCDSCIScanner.ino",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f411fe37f363605ca6d462fc3bae63773fc72dde",
+      "size": 352665,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/f411fe37f363605ca6d462fc3bae63773fc72dde"
+    },
+    {
+      "path": "Arduino/ChryslerCCDSCIScanner/ChryslerCCDSCIScanner.ino.mega.hex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96166d1c046bd09bfc89577924d40d0d8174a23b",
+      "size": 127136,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/96166d1c046bd09bfc89577924d40d0d8174a23b"
+    },
+    {
+      "path": "Arduino/ChryslerCCDSCIScanner/ChryslerCCDSCIScanner.ino.with_bootloader.mega.hex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a580aeb3d4d10547539d5d8e416627b4586d82c5",
+      "size": 147656,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a580aeb3d4d10547539d5d8e416627b4586d82c5"
+    },
+    {
+      "path": "Documentation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "73f6ebb2cd5fe9a0eb8b3a383ed3bad93b191d9c",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/73f6ebb2cd5fe9a0eb8b3a383ed3bad93b191d9c"
+    },
+    {
+      "path": "Documentation/ChryslerCCDSCIScanner_UART_Protocol.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffd870e4a15aa63724c60e7f5e606c9e073d827a",
+      "size": 141206,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/ffd870e4a15aa63724c60e7f5e606c9e073d827a"
+    },
+    {
+      "path": "Documentation/ChryslerCCDSCIScanner_Users_Guide.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df8c3f6ba29707d00b78a46e2baa0ec26b20992b",
+      "size": 4419492,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/df8c3f6ba29707d00b78a46e2baa0ec26b20992b"
+    },
+    {
+      "path": "GUI",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22555da9d450c196a285b6668ed6347ec2b23fde",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/22555da9d450c196a285b6668ed6347ec2b23fde"
+    },
+    {
+      "path": "GUI/ChryslerScanner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c1258fa7ba3b5bf7a9d7383d88abbaadab02034a",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/c1258fa7ba3b5bf7a9d7383d88abbaadab02034a"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ABSToolsForm.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a08ad521428ac7afb7d5a4495f3c5c868f27438",
+      "size": 5723,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/4a08ad521428ac7afb7d5a4495f3c5c868f27438"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ABSToolsForm.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9a12cf972a0a1a92a312c5cefbc1f4f1d872b73",
+      "size": 49111,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/d9a12cf972a0a1a92a312c5cefbc1f4f1d872b73"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ABSToolsForm.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01ec2252425d0d5dd1499d90b48af6a66ebd4102",
+      "size": 14324,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/01ec2252425d0d5dd1499d90b48af6a66ebd4102"
+    },
+    {
+      "path": "GUI/ChryslerScanner/AboutForm.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d907aaf93010763fd010a6439658e3c4bef534c",
+      "size": 4294,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/2d907aaf93010763fd010a6439658e3c4bef534c"
+    },
+    {
+      "path": "GUI/ChryslerScanner/AboutForm.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec1675447584385dddc7cff53d5502b6a9f8c73d",
+      "size": 1128,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/ec1675447584385dddc7cff53d5502b6a9f8c73d"
+    },
+    {
+      "path": "GUI/ChryslerScanner/AboutForm.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b03313d56992271e46751ff3a659f63c3f120f9f",
+      "size": 14017,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/b03313d56992271e46751ff3a659f63c3f120f9f"
+    },
+    {
+      "path": "GUI/ChryslerScanner/App.config",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eadce35eaf4d7ca23f46c2298337ae6b99312e94",
+      "size": 1778,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/eadce35eaf4d7ca23f46c2298337ae6b99312e94"
+    },
+    {
+      "path": "GUI/ChryslerScanner/BootstrapToolsForm.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71d8dae44dea98a94ab3e4236d5b1599f29ca059",
+      "size": 22272,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/71d8dae44dea98a94ab3e4236d5b1599f29ca059"
+    },
+    {
+      "path": "GUI/ChryslerScanner/BootstrapToolsForm.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb6a4277bac3e3ca6a223ad2c7b7a858d0661ba6",
+      "size": 154030,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/fb6a4277bac3e3ca6a223ad2c7b7a858d0661ba6"
+    },
+    {
+      "path": "GUI/ChryslerScanner/BootstrapToolsForm.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d497c061bcd9cecc9387cc05c89cb168cd06272c",
+      "size": 43424,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/d497c061bcd9cecc9387cc05c89cb168cd06272c"
+    },
+    {
+      "path": "GUI/ChryslerScanner/CCD.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2d6454345a4d0ed04d77ec893a615345c3df1df",
+      "size": 182859,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a2d6454345a4d0ed04d77ec893a615345c3df1df"
+    },
+    {
+      "path": "GUI/ChryslerScanner/CCDDiagnosticsTable.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80ed452d805d551b6f44b292b9cf85df4705af7a",
+      "size": 6151,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/80ed452d805d551b6f44b292b9cf85df4705af7a"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ChryslerScanner.csproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc515682c8ae17f957454257d6bfe24128d1ede7",
+      "size": 9883,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/cc515682c8ae17f957454257d6bfe24128d1ede7"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ChryslerScanner.csproj.user",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c10e84bab3003321cc164654bf70a4d2df291927",
+      "size": 226,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/c10e84bab3003321cc164654bf70a4d2df291927"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ChryslerScanner.sln",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0f7a62677da89f4001b293efea7b23f9bdb31ec",
+      "size": 1109,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/c0f7a62677da89f4001b293efea7b23f9bdb31ec"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a7d5a4c58af67a44cdccfa32851ef7753dc1acd",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/6a7d5a4c58af67a44cdccfa32851ef7753dc1acd"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Converters",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae75b9ecb8334c18fb0c497067574831907f387d",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/ae75b9ecb8334c18fb0c497067574831907f387d"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Converters/BinaryStateConverter.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e7304ed3b791c985ae10a2bdb9e3e9ce09b8fc8",
+      "size": 2440,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/1e7304ed3b791c985ae10a2bdb9e3e9ce09b8fc8"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Converters/Converter.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0b380fda300ddc23d44985a5a60ae05b5f63c7b",
+      "size": 1756,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/f0b380fda300ddc23d44985a5a60ae05b5f63c7b"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Converters/NumericConverter.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5d3d1241ebe1019c20f6de85f13ba2c6039f0e8",
+      "size": 2762,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/f5d3d1241ebe1019c20f6de85f13ba2c6039f0e8"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Converters/Operator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7af09cacb05503ca73adfee8a6d95ced54506a92",
+      "size": 903,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/7af09cacb05503ca73adfee8a6d95ced54506a92"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Converters/StateConverter.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d92de91d9e82ecf0610ea62e616b0fdf30cf9eb1",
+      "size": 2646,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/d92de91d9e82ecf0610ea62e616b0fdf30cf9eb1"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Converters/UnknownConverter.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edf7e3575b4569920425a995c6326656a6e39544",
+      "size": 1593,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/edf7e3575b4569920425a995c6326656a6e39544"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Database.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed9847acc86912cd31751007dab8fde6d426a0d9",
+      "size": 11975,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/ed9847acc86912cd31751007dab8fde6d426a0d9"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "71ad71c75489b70632188aef505bfb89300fa3f2",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/71ad71c75489b70632188aef505bfb89300fa3f2"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/BDSRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b60408d0f9fe0419f8b68e3b1cdcd48251830ccc",
+      "size": 1477,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/b60408d0f9fe0419f8b68e3b1cdcd48251830ccc"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/DADRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a733608671a2625da1153c14d62eec6a15c75f99",
+      "size": 1848,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a733608671a2625da1153c14d62eec6a15c75f99"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/DESRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f609c4ef42fe626fb224f5f49f461393c87eb7ca",
+      "size": 1233,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/f609c4ef42fe626fb224f5f49f461393c87eb7ca"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/MenuRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e863d01a96614ad636ee96469c24beefe94240d",
+      "size": 2251,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/2e863d01a96614ad636ee96469c24beefe94240d"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/ModuleDataElemRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "babdcda1e3cefed2b85fb934446fa125dd45d341",
+      "size": 1558,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/babdcda1e3cefed2b85fb934446fa125dd45d341"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/ModuleRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "313f576a851b6391697c9915957e0dc9204b1814",
+      "size": 1662,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/313f576a851b6391697c9915957e0dc9204b1814"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/NCRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5326a1ec6579e7c9f30cde6ec6ac6357d251c457",
+      "size": 1454,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5326a1ec6579e7c9f30cde6ec6ac6357d251c457"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/NDSRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "559b77f7475c58bb0e44ac69edd7ecfc1e0d6d66",
+      "size": 2456,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/559b77f7475c58bb0e44ac69edd7ecfc1e0d6d66"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/Record.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dea8406c1f3328b22f493f93f4f3eaacbf7e3bd3",
+      "size": 932,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/dea8406c1f3328b22f493f93f4f3eaacbf7e3bd3"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/RecordUnknownWithString.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a19b26b2af804f95f0f988160fc5bd01c6cfd5f5",
+      "size": 1295,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a19b26b2af804f95f0f988160fc5bd01c6cfd5f5"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/SCRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29448f00fb14aebf8da7cfb4c92d84dedb225ed3",
+      "size": 1295,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/29448f00fb14aebf8da7cfb4c92d84dedb225ed3"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/SDSRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4ec1981d12bc7ad09d40f49d18de55ee9b04c90",
+      "size": 1286,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/b4ec1981d12bc7ad09d40f49d18de55ee9b04c90"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/ServiceCatRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a69accfe923f8f4217351d7c0c5ae4cec52aac22",
+      "size": 1258,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a69accfe923f8f4217351d7c0c5ae4cec52aac22"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/StateEntryRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13bf47ae7ac94812a9ff32754ed00f2978d22243",
+      "size": 1398,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/13bf47ae7ac94812a9ff32754ed00f2978d22243"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/StringRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f6f4a98fd7ff23a59625355df643174aaf2920b",
+      "size": 3055,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/7f6f4a98fd7ff23a59625355df643174aaf2920b"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Records/TXRecord.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e989d5956ada5c0e76d7f36e236e73c1b7c8336",
+      "size": 5552,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/8e989d5956ada5c0e76d7f36e236e73c1b7c8336"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/SimpleBinaryReader.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb666d21137a51f3923bfc832336d4ece5818214",
+      "size": 5049,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/eb666d21137a51f3923bfc832336d4ece5818214"
+    },
+    {
+      "path": "GUI/ChryslerScanner/DB/Table.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35f8d5e099244947da4e969dc2dfd309c2c0dfd4",
+      "size": 10799,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/35f8d5e099244947da4e969dc2dfd309c2c0dfd4"
+    },
+    {
+      "path": "GUI/ChryslerScanner/EngineToolsForm.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1f5d0a055210574f62e8fa5c95e1b46c9663510",
+      "size": 57156,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/d1f5d0a055210574f62e8fa5c95e1b46c9663510"
+    },
+    {
+      "path": "GUI/ChryslerScanner/EngineToolsForm.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c53199431179cbc4bdb28bad0cbe34a43377024",
+      "size": 133643,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/9c53199431179cbc4bdb28bad0cbe34a43377024"
+    },
+    {
+      "path": "GUI/ChryslerScanner/EngineToolsForm.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a793061ec92e619214c02a7d82c78132bc25f8db",
+      "size": 102107,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a793061ec92e619214c02a7d82c78132bc25f8db"
+    },
+    {
+      "path": "GUI/ChryslerScanner/FlickerFreeListBox.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28699f8f291c39a4411b2c2d70c9901be17a0f74",
+      "size": 6298,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/28699f8f291c39a4411b2c2d70c9901be17a0f74"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Helpers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c55e42a463f314efa05ffbd3715acf3ed79e9c0",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/5c55e42a463f314efa05ffbd3715acf3ed79e9c0"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Helpers/PacketHelper.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdc9d8001c906e8bf81fd0b3ec80ce6ea4a07ad0",
+      "size": 7735,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/fdc9d8001c906e8bf81fd0b3ec80ce6ea4a07ad0"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Helpers/StringExt.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbd30895aad52c85ce49ea052254d49dcedb2394",
+      "size": 175,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/bbd30895aad52c85ce49ea052254d49dcedb2394"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Helpers/UnlockAlgorithm.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b8958694a174d4c16a6a804f67bc7ab9d256392",
+      "size": 4363,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/9b8958694a174d4c16a6a804f67bc7ab9d256392"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Helpers/Util.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a08d48f3b698e277f0d3074282d52aa579371a8",
+      "size": 11112,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5a08d48f3b698e277f0d3074282d52aa579371a8"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Languages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b100c3ebb787837ab6b409db5857aaacb355b98a",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/b100c3ebb787837ab6b409db5857aaacb355b98a"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Languages/strings.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3b612a9395cc0910f973c1ba80fc9fc49e3bdbe",
+      "size": 23343,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/f3b612a9395cc0910f973c1ba80fc9fc49e3bdbe"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Languages/strings.es.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Languages/strings.es.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6861ebcd4205eaa7bc6c9dc81c0b32226945c2b",
+      "size": 13493,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/d6861ebcd4205eaa7bc6c9dc81c0b32226945c2b"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Languages/strings.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6867ef081851145902542fa3af78079928d0dbd3",
+      "size": 12138,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/6867ef081851145902542fa3af78079928d0dbd3"
+    },
+    {
+      "path": "GUI/ChryslerScanner/MainForm.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e04a57bcae59cab48c1d716edb34c693c95df2dc",
+      "size": 101663,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/e04a57bcae59cab48c1d716edb34c693c95df2dc"
+    },
+    {
+      "path": "GUI/ChryslerScanner/MainForm.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b2109f44bcac169242b9b10da9deb4a74530c9e",
+      "size": 404845,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/7b2109f44bcac169242b9b10da9deb4a74530c9e"
+    },
+    {
+      "path": "GUI/ChryslerScanner/MainForm.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2270dad54be9baf3b83e2570768151720e5c0bdb",
+      "size": 212253,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/2270dad54be9baf3b83e2570768151720e5c0bdb"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ef68975793cfa063a9de0518dae2da766070e29",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/1ef68975793cfa063a9de0518dae2da766070e29"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Models/Packet.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f729dbe378e2583c3f6328e083318ae25c0b56f",
+      "size": 404,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/3f729dbe378e2583c3f6328e083318ae25c0b56f"
+    },
+    {
+      "path": "GUI/ChryslerScanner/PCI.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "911575ff32d5193bd430c7ede083462a141fc8e2",
+      "size": 50179,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/911575ff32d5193bd430c7ede083462a141fc8e2"
+    },
+    {
+      "path": "GUI/ChryslerScanner/PCIDiagnosticsTable.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6d097ebf1c623f97c1b73471a74b13df2947975",
+      "size": 7192,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a6d097ebf1c623f97c1b73471a74b13df2947975"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Program.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f10dea9355d9a7e981839537b861c530d6e3020",
+      "size": 554,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/0f10dea9355d9a7e981839537b861c530d6e3020"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Properties",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21bc40e0628dcc97f729afdbc2e5cd6a88092743",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/21bc40e0628dcc97f729afdbc2e5cd6a88092743"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Properties/AssemblyInfo.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4b365da815a2778c700d7c911f7c533b0212a5c",
+      "size": 1537,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/d4b365da815a2778c700d7c911f7c533b0212a5c"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Properties/Resources.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e1d32e592417375ad140007cb985aaabbc2cd65",
+      "size": 2796,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/6e1d32e592417375ad140007cb985aaabbc2cd65"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Properties/Resources.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1af7de150c99c12dd67a509fe57c10d63e4eeb04",
+      "size": 5698,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/1af7de150c99c12dd67a509fe57c10d63e4eeb04"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Properties/Settings.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31690882ea71d2c9725b4c247a56415531170d03",
+      "size": 4518,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/31690882ea71d2c9725b4c247a56415531170d03"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Properties/Settings.settings",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00e90bd52588ae193d3d78d280f35fd3d54da6f9",
+      "size": 1331,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/00e90bd52588ae193d3d78d280f35fd3d54da6f9"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ReadMemoryForm.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f8703ff5dd123090c138ed72a00fbccff7bb875",
+      "size": 28252,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/2f8703ff5dd123090c138ed72a00fbccff7bb875"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ReadMemoryForm.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5efacdea2c926514d44d871f332d1ad337fde0dd",
+      "size": 82173,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5efacdea2c926514d44d871f332d1ad337fde0dd"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ReadMemoryForm.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76caace03bed6c3a42c6d97c604d010e1f91f22e",
+      "size": 86571,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/76caace03bed6c3a42c6d97c604d010e1f91f22e"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ReadWriteMemoryForm.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94a11679be81ddb1376369498cf3c46e913efc7e",
+      "size": 42842,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/94a11679be81ddb1376369498cf3c46e913efc7e"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ReadWriteMemoryForm.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be6adfd42a3ab9891c8fce750b9deaee5424e167",
+      "size": 119755,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/be6adfd42a3ab9891c8fce750b9deaee5424e167"
+    },
+    {
+      "path": "GUI/ChryslerScanner/ReadWriteMemoryForm.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ab408ae9e3a69c4848b97504e49d37f38a7790d",
+      "size": 79230,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/0ab408ae9e3a69c4848b97504e49d37f38a7790d"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "17797acbd628b3b7595be1a4c3233b4b241b8bc6",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/17797acbd628b3b7595be1a4c3233b4b241b8bc6"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Resources/appicon.ico",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed682f057970d779b46063bb206af336a0124881",
+      "size": 9367,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/ed682f057970d779b46063bb206af336a0124881"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Resources/chrysler_icon_64x64.ico",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2da5d42080dadb35f22bb0dae99d3bcf45dcc21",
+      "size": 16958,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a2da5d42080dadb35f22bb0dae99d3bcf45dcc21"
+    },
+    {
+      "path": "GUI/ChryslerScanner/SCIPCM.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78beb241b6620a786f693d0521d1d75dd3831449",
+      "size": 714970,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/78beb241b6620a786f693d0521d1d75dd3831449"
+    },
+    {
+      "path": "GUI/ChryslerScanner/SCIPCMDiagnosticsTable.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c64d339a9660184dd7ec35b7fb436337b8353fe1",
+      "size": 8736,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/c64d339a9660184dd7ec35b7fb436337b8353fe1"
+    },
+    {
+      "path": "GUI/ChryslerScanner/SCITCM.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0a4579e978ec3f34c31d6846d02972125594c34",
+      "size": 8236,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/e0a4579e978ec3f34c31d6846d02972125594c34"
+    },
+    {
+      "path": "GUI/ChryslerScanner/SCITCMDiagnosticsTable.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07e5b82ff847e4cddf15a4f00c8642aaf0e4e214",
+      "size": 4287,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/07e5b82ff847e4cddf15a4f00c8642aaf0e4e214"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Services",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba1bfa229b87a1a77847da93fbba0183e0e5c621",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/ba1bfa229b87a1a77847da93fbba0183e0e5c621"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Services/ContainerManager.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d03017baed2445fa3ea09d4f955526d5c53b62a9",
+      "size": 638,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/d03017baed2445fa3ea09d4f955526d5c53b62a9"
+    },
+    {
+      "path": "GUI/ChryslerScanner/Services/SerialService.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4347379c167a25b86d627ffd1ca7e5d29162b21",
+      "size": 5886,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/d4347379c167a25b86d627ffd1ca7e5d29162b21"
+    },
+    {
+      "path": "GUI/ChryslerScanner/bin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23639dcc44661800bd571bc387fb0a4f87403589",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/23639dcc44661800bd571bc387fb0a4f87403589"
+    },
+    {
+      "path": "GUI/ChryslerScanner/bin/Debug",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "464cc6175cfb3cd94e624967468010fbada6cc2a",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/464cc6175cfb3cd94e624967468010fbada6cc2a"
+    },
+    {
+      "path": "GUI/ChryslerScanner/bin/Debug/ChryslerScanner_GUI.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4c9e863724623db2696d7262d9bac284c3b84d3",
+      "size": 12618756,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/e4c9e863724623db2696d7262d9bac284c3b84d3"
+    },
+    {
+      "path": "GUI/ChryslerScanner/bin/Release",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3a56c2f7b83efd5f6bd50999ddf810d3825326c",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/a3a56c2f7b83efd5f6bd50999ddf810d3825326c"
+    },
+    {
+      "path": "GUI/ChryslerScanner/bin/Release/ChryslerScanner_GUI.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "756fc15870a484a46ca7707928d8947d7c0d68d3",
+      "size": 12618864,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/756fc15870a484a46ca7707928d8947d7c0d68d3"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e419e042146a2ce2e354202d4f7d8e4a3d66f31",
+      "size": 35126,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/9e419e042146a2ce2e354202d4f7d8e4a3d66f31"
+    },
+    {
+      "path": "PCB",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "73996e8dd7993d3d23cf08bcf9f31703a33d91de",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/73996e8dd7993d3d23cf08bcf9f31703a33d91de"
+    },
+    {
+      "path": "PCB/V140",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c0f13267f68e7e7487a17f4375ecc20726e74ac1",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/c0f13267f68e7e7487a17f4375ecc20726e74ac1"
+    },
+    {
+      "path": "PCB/V140/bom",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b118b1675ac43540530124fc1ac4327c978de878",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/b118b1675ac43540530124fc1ac4327c978de878"
+    },
+    {
+      "path": "PCB/V140/bom/ChryslerCCDSCIScanner_V140_BOM.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77dcabf415de12004b8e0134e60be0800f4ac82a",
+      "size": 8581,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/77dcabf415de12004b8e0134e60be0800f4ac82a"
+    },
+    {
+      "path": "PCB/V140/box",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2dd57fe68bfbd82f179d891afd0a838c1f1c948",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/c2dd57fe68bfbd82f179d891afd0a838c1f1c948"
+    },
+    {
+      "path": "PCB/V140/box/OBD-II_adapter_bottom.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ababb4661a582be329461ca71ff51db2401985f1",
+      "size": 408684,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/ababb4661a582be329461ca71ff51db2401985f1"
+    },
+    {
+      "path": "PCB/V140/box/OBD-II_adapter_top.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00585b14f5357420511bf3cf32ebd01b444f10f5",
+      "size": 474384,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/00585b14f5357420511bf3cf32ebd01b444f10f5"
+    },
+    {
+      "path": "PCB/V140/box/OBD-II_cable_holder.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bd8bb2186802a40dc0058914d00a9dcc4b67f07",
+      "size": 88384,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/1bd8bb2186802a40dc0058914d00a9dcc4b67f07"
+    },
+    {
+      "path": "PCB/V140/box/box_bottom.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51485abe6b75b71729c2e4fd1398e1340a9a5f37",
+      "size": 318684,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/51485abe6b75b71729c2e4fd1398e1340a9a5f37"
+    },
+    {
+      "path": "PCB/V140/box/box_top.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f1b2f18104b5e449db26aa37293141dd7e23db1",
+      "size": 603984,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/7f1b2f18104b5e449db26aa37293141dd7e23db1"
+    },
+    {
+      "path": "PCB/V140/box/box_top_raw.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7dd77fb43eeaa20ffd347cda9b6b57730504cd38",
+      "size": 394684,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/7dd77fb43eeaa20ffd347cda9b6b57730504cd38"
+    },
+    {
+      "path": "PCB/V140/box/led_extender_fixture.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22fc8712974b38fe5152d8d43f9e58f8432c9716",
+      "size": 56884,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/22fc8712974b38fe5152d8d43f9e58f8432c9716"
+    },
+    {
+      "path": "PCB/V140/box/led_extender_transparent.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c39e259348bb840d5ca6eb3953aa7654d951cdd",
+      "size": 37284,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/2c39e259348bb840d5ca6eb3953aa7654d951cdd"
+    },
+    {
+      "path": "PCB/V140/box/preview_01.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "037385baf8b813e53c2b7421587d91cb50358308",
+      "size": 34094,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/037385baf8b813e53c2b7421587d91cb50358308"
+    },
+    {
+      "path": "PCB/V140/box/preview_02.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f829ed2cdb9e262e713b84af6240d46f301701f1",
+      "size": 103814,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/f829ed2cdb9e262e713b84af6240d46f301701f1"
+    },
+    {
+      "path": "PCB/V140/box/preview_03.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9064e753a275fcb3fa7ce3cd99ba4aac19fc70ef",
+      "size": 37720,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/9064e753a275fcb3fa7ce3cd99ba4aac19fc70ef"
+    },
+    {
+      "path": "PCB/V140/box/preview_04.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fed235749299460305712c058a6df5fa445ce54",
+      "size": 41707,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/9fed235749299460305712c058a6df5fa445ce54"
+    },
+    {
+      "path": "PCB/V140/box/preview_05.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89e7c94a3d5288830340c969e9b20205d50638f9",
+      "size": 33017,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/89e7c94a3d5288830340c969e9b20205d50638f9"
+    },
+    {
+      "path": "PCB/V140/box/reset_button.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9364bac4a9f624a21fac80a4849e0e3fd4751185",
+      "size": 175484,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/9364bac4a9f624a21fac80a4849e0e3fd4751185"
+    },
+    {
+      "path": "PCB/V140/renders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "430268270949380f3c11d31228ddd69de233c247",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/430268270949380f3c11d31228ddd69de233c247"
+    },
+    {
+      "path": "PCB/V140/renders/ChryslerCCDSCIScanner_V140_bottom_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f5a8c17b7790d16415ab10e3c2b101e62ccf0e1",
+      "size": 117392,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5f5a8c17b7790d16415ab10e3c2b101e62ccf0e1"
+    },
+    {
+      "path": "PCB/V140/renders/ChryslerCCDSCIScanner_V140_top_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46642b39f13c8eb1a5526105262db8f592dc7ec1",
+      "size": 188020,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/46642b39f13c8eb1a5526105262db8f592dc7ec1"
+    },
+    {
+      "path": "PCB/V140/schematic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f168767368bdffdf7b31b4ff584fa6ab81e7de81",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/f168767368bdffdf7b31b4ff584fa6ab81e7de81"
+    },
+    {
+      "path": "PCB/V140/schematic/ChryslerCCDSCIScanner_V140_schematic.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25c53c61a6f845d8c7c0050851f73dceff9f873a",
+      "size": 67070,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/25c53c61a6f845d8c7c0050851f73dceff9f873a"
+    },
+    {
+      "path": "PCB/V141",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3ce15763fc80dabee5f949d05f0be4cc3b5009f",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/b3ce15763fc80dabee5f949d05f0be4cc3b5009f"
+    },
+    {
+      "path": "PCB/V141/bom",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b4fc022199a61a365118b678c680d79cd32eeec",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/5b4fc022199a61a365118b678c680d79cd32eeec"
+    },
+    {
+      "path": "PCB/V141/bom/ChryslerCCDSCIScanner_V141_BOM.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "658b706ecf7a8953deee98a7ed96277f01bc414f",
+      "size": 8563,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/658b706ecf7a8953deee98a7ed96277f01bc414f"
+    },
+    {
+      "path": "PCB/V141/renders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7fb4c94931314d03bf6db6170d14542f6f2e55a",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/a7fb4c94931314d03bf6db6170d14542f6f2e55a"
+    },
+    {
+      "path": "PCB/V141/renders/ChryslerCCDSCIScanner_V141_bottom_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6093c14e8b7d0f889c3df2bd494dd35f5943413b",
+      "size": 941990,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/6093c14e8b7d0f889c3df2bd494dd35f5943413b"
+    },
+    {
+      "path": "PCB/V141/renders/ChryslerCCDSCIScanner_V141_bottom_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0ef0551edea2bd543df3dd59b6f32c6ef6180e0",
+      "size": 264384,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a0ef0551edea2bd543df3dd59b6f32c6ef6180e0"
+    },
+    {
+      "path": "PCB/V141/renders/ChryslerCCDSCIScanner_V141_top_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d681580add3087fbe1ea312c7eea79565f50d51",
+      "size": 1163439,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/1d681580add3087fbe1ea312c7eea79565f50d51"
+    },
+    {
+      "path": "PCB/V141/renders/ChryslerCCDSCIScanner_V141_top_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f596508ee57997a0453e4009c46e49c40e0c085",
+      "size": 479983,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/7f596508ee57997a0453e4009c46e49c40e0c085"
+    },
+    {
+      "path": "PCB/V141/schematic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee9d56711d357510c863af8758fe5ceb72df57be",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/ee9d56711d357510c863af8758fe5ceb72df57be"
+    },
+    {
+      "path": "PCB/V141/schematic/ChryslerCCDSCIScanner_V141_schematic.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cb7355afc7066b2b62b087a52d1748c6ecc8c65",
+      "size": 68481,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5cb7355afc7066b2b62b087a52d1748c6ecc8c65"
+    },
+    {
+      "path": "PCB/V142",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2a24c631c72aa7805f4fadb9a0dc955fac5d42a",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/c2a24c631c72aa7805f4fadb9a0dc955fac5d42a"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6ddea7cbd308e85007cf64295542c5c83e7f31e",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/a6ddea7cbd308e85007cf64295542c5c83e7f31e"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/OBD1_5-pin_male_SCI_DLC_bottom.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53bfbee4998e32d0f071a5485652865620c09890",
+      "size": 6684,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/53bfbee4998e32d0f071a5485652865620c09890"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/OBD1_5-pin_male_SCI_DLC_top.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb998f320896580c1990861eb58178991937fb41",
+      "size": 26084,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/cb998f320896580c1990861eb58178991937fb41"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/OBD1_6-pin_female_CCD_DLC.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7acbaaa34329e7549ae09f58e80473c5f3eaf22e",
+      "size": 52084,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/7acbaaa34329e7549ae09f58e80473c5f3eaf22e"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/OBD2_cable_holder.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42a6ef4f048e86e72611b25cfeccd5c7b43087dc",
+      "size": 82284,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/42a6ef4f048e86e72611b25cfeccd5c7b43087dc"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/OBD2_connector_bottom_01.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd27ee6fd775e6f27a03353c3323ed04ec4bcec6",
+      "size": 924284,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/cd27ee6fd775e6f27a03353c3323ed04ec4bcec6"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/OBD2_connector_bottom_02.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d9f6c8b3f41e8df527a03ce652eb1fefd63109c",
+      "size": 1411484,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/3d9f6c8b3f41e8df527a03ce652eb1fefd63109c"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/OBD2_connector_top_01.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "405f2696bcd0da869714716d20cb519797e2f5aa",
+      "size": 993884,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/405f2696bcd0da869714716d20cb519797e2f5aa"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/OBD2_connector_top_02.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45478dba4b4625790d93e3b2b3b7d8993eac9e18",
+      "size": 1542084,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/45478dba4b4625790d93e3b2b3b7d8993eac9e18"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/V142_LED_extender_fixture.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9f11569f6cb222e27c47f56e52a76962b02e866",
+      "size": 117984,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a9f11569f6cb222e27c47f56e52a76962b02e866"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/V142_LED_extender_transparent.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39524756600b624347a92840a94e0f1dee9ca5a0",
+      "size": 62084,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/39524756600b624347a92840a94e0f1dee9ca5a0"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/V142_box_bottom.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfd9d187945793f3778e6701a05765825e402ace",
+      "size": 4228384,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/dfd9d187945793f3778e6701a05765825e402ace"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/V142_box_top.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f2ce174c30fea3768ef1378b4968129c6f9b40d",
+      "size": 2090584,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/1f2ce174c30fea3768ef1378b4968129c6f9b40d"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/V142_box_top_raw.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66b40c1e24c2f67f4d5cbb0287b0a5d5bd604410",
+      "size": 1344084,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/66b40c1e24c2f67f4d5cbb0287b0a5d5bd604410"
+    },
+    {
+      "path": "PCB/V142/3D-printed_parts/V142_reset_button.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faa80e0080c6886e4fc0222ab9e7dac0d1f5e5ab",
+      "size": 204084,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/faa80e0080c6886e4fc0222ab9e7dac0d1f5e5ab"
+    },
+    {
+      "path": "PCB/V142/Assemblies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ba2ad3481ba6d5e4ea0a729c7154d35c0d3583e",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/7ba2ad3481ba6d5e4ea0a729c7154d35c0d3583e"
+    },
+    {
+      "path": "PCB/V142/Assemblies/ChryslerCCDSCIScanner_V142_box.STEP",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81c9afbc972f46a5e2ddccc06e40e6caf7332117",
+      "size": 3109045,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/81c9afbc972f46a5e2ddccc06e40e6caf7332117"
+    },
+    {
+      "path": "PCB/V142/Assemblies/ChryslerCCDSCIScanner_V142_box_back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0ba85f07b3a82ec06864bd0d65674ab7bcb9439",
+      "size": 51218,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/d0ba85f07b3a82ec06864bd0d65674ab7bcb9439"
+    },
+    {
+      "path": "PCB/V142/Assemblies/ChryslerCCDSCIScanner_V142_box_front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a7a0d8604fbb866f97542479e80b06903d5abe7",
+      "size": 59594,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5a7a0d8604fbb866f97542479e80b06903d5abe7"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD1_5-pin_male_SCI_DLC.STEP",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f945c9d0aeb5c94ef8d06f2ec3326545adb8c0f2",
+      "size": 433408,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/f945c9d0aeb5c94ef8d06f2ec3326545adb8c0f2"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD1_5-pin_male_SCI_DLC_back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c87cc80a274584685a776d2c759e4ba09085301",
+      "size": 11377,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/1c87cc80a274584685a776d2c759e4ba09085301"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD1_5-pin_male_SCI_DLC_front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a841279b68314fbe5730b508048c21e7d41346e2",
+      "size": 27414,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a841279b68314fbe5730b508048c21e7d41346e2"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD1_6-pin_female_CCD_DLC.STEP",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7790c7bf85a8d2cd2bf8e3cd06610d5ac9e6b30b",
+      "size": 339614,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/7790c7bf85a8d2cd2bf8e3cd06610d5ac9e6b30b"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD1_6-pin_female_CCD_DLC_back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "101c67e4537a01f43d8639cbe8f1bdcf753dada5",
+      "size": 17205,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/101c67e4537a01f43d8639cbe8f1bdcf753dada5"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD1_6-pin_female_CCD_DLC_front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2facab148543701db1347706f28db13d28767062",
+      "size": 19298,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/2facab148543701db1347706f28db13d28767062"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_female_connector_01.STEP",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77263b4aca88e1164f9d51922c8e885d0b66dd66",
+      "size": 1332018,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/77263b4aca88e1164f9d51922c8e885d0b66dd66"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_female_connector_01_back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "805e868084532f7d802eef3932d1e109c9f86aad",
+      "size": 54786,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/805e868084532f7d802eef3932d1e109c9f86aad"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_female_connector_01_front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a598fd5931bf7fe736ef6bf5755bfd36deec996",
+      "size": 65285,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/9a598fd5931bf7fe736ef6bf5755bfd36deec996"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_female_connector_01_inside.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b4368a52390907595b31ce82a3bd141c8d8b697",
+      "size": 82516,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/6b4368a52390907595b31ce82a3bd141c8d8b697"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_female_connector_02.STEP",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e10f1342787e7541f010a89df80b808a515e480",
+      "size": 1562318,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/3e10f1342787e7541f010a89df80b808a515e480"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_female_connector_02_back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59c06463084e67b7078b99f387a7e5ed1df0b6e8",
+      "size": 68089,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/59c06463084e67b7078b99f387a7e5ed1df0b6e8"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_female_connector_02_front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "083b8f6050d84fa3b2ba5fd4f520e68ad179f45d",
+      "size": 77425,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/083b8f6050d84fa3b2ba5fd4f520e68ad179f45d"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_female_connector_02_inside.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a61cf6033288880625bf29a6422b0fdd09fc5aee",
+      "size": 115878,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a61cf6033288880625bf29a6422b0fdd09fc5aee"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_female_connector_02_section.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fa47d9985837b738c074b0a301415ca8db14e20",
+      "size": 79970,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5fa47d9985837b738c074b0a301415ca8db14e20"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_male_connector_01.STEP",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e9eafe26995b853dfc41f9e2e493f02af676197",
+      "size": 1311810,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/9e9eafe26995b853dfc41f9e2e493f02af676197"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_male_connector_01_back.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62b8f2c986128c73b70d491193898bbf7e98f51a",
+      "size": 61257,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/62b8f2c986128c73b70d491193898bbf7e98f51a"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_male_connector_01_front.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f55adb6378df18eaca46e38cddc6638c774ea096",
+      "size": 80887,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/f55adb6378df18eaca46e38cddc6638c774ea096"
+    },
+    {
+      "path": "PCB/V142/Assemblies/OBD2_male_connector_01_inside.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d30e81d87a1af7a9ad2175a203b6d951af03bc2",
+      "size": 97298,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/4d30e81d87a1af7a9ad2175a203b6d951af03bc2"
+    },
+    {
+      "path": "PCB/V142/ChryslerCCDSCIScanner_V142",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1484e8a67107ec28d9b929208a0b9cfc71d46736",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/1484e8a67107ec28d9b929208a0b9cfc71d46736"
+    },
+    {
+      "path": "PCB/V142/ChryslerCCDSCIScanner_V142/bom",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "299c45805cb259e33b40e8007445c1c1006aa9bb",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/299c45805cb259e33b40e8007445c1c1006aa9bb"
+    },
+    {
+      "path": "PCB/V142/ChryslerCCDSCIScanner_V142/bom/ChryslerCCDSCIScanner_V142_BOM.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b78dddf9daae075017d5db87b9f818bded37941",
+      "size": 8598,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/2b78dddf9daae075017d5db87b9f818bded37941"
+    },
+    {
+      "path": "PCB/V142/ChryslerCCDSCIScanner_V142/renders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "135da651a5bbaa174f6b7f31dae05f3d67527021",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/135da651a5bbaa174f6b7f31dae05f3d67527021"
+    },
+    {
+      "path": "PCB/V142/ChryslerCCDSCIScanner_V142/renders/ChryslerCCDSCIScanner_V142_bottom_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c37d5d9cb4e224c86ddeb3c7c058807dc76d394c",
+      "size": 985364,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/c37d5d9cb4e224c86ddeb3c7c058807dc76d394c"
+    },
+    {
+      "path": "PCB/V142/ChryslerCCDSCIScanner_V142/renders/ChryslerCCDSCIScanner_V142_bottom_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5875b21d6c626fb330178aacc04ddee5a06a4c28",
+      "size": 284489,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5875b21d6c626fb330178aacc04ddee5a06a4c28"
+    },
+    {
+      "path": "PCB/V142/ChryslerCCDSCIScanner_V142/renders/ChryslerCCDSCIScanner_V142_top_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc03b878ba4042eaf6c97515bdf21e0475a21124",
+      "size": 1153640,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/bc03b878ba4042eaf6c97515bdf21e0475a21124"
+    },
+    {
+      "path": "PCB/V142/ChryslerCCDSCIScanner_V142/renders/ChryslerCCDSCIScanner_V142_top_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62decefe6d05b6d089fb59a353856c451a02e799",
+      "size": 478686,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/62decefe6d05b6d089fb59a353856c451a02e799"
+    },
+    {
+      "path": "PCB/V142/ChryslerCCDSCIScanner_V142/schematic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c3fec05e9e9f4d3b49aa23c9aae1a5531a54c7c",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/7c3fec05e9e9f4d3b49aa23c9aae1a5531a54c7c"
+    },
+    {
+      "path": "PCB/V142/ChryslerCCDSCIScanner_V142/schematic/ChryslerCCDSCIScanner_V142_schematic.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7ed76e14aa87c7e4ee990de283e3c19aa2de512",
+      "size": 68867,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/c7ed76e14aa87c7e4ee990de283e3c19aa2de512"
+    },
+    {
+      "path": "PCB/V142/EngineConnector_V100",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5fdc7f5773300ec85fd50012db5ef7f1d094e444",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/5fdc7f5773300ec85fd50012db5ef7f1d094e444"
+    },
+    {
+      "path": "PCB/V142/EngineConnector_V100/bom",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "941ca1a0b29b7eacc5d5a3221afbd5da862a905d",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/941ca1a0b29b7eacc5d5a3221afbd5da862a905d"
+    },
+    {
+      "path": "PCB/V142/EngineConnector_V100/bom/EngineConnector_V100_BOM.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb97bbebc9b39c0abf798f36b27ea729dd7c4a50",
+      "size": 95,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/cb97bbebc9b39c0abf798f36b27ea729dd7c4a50"
+    },
+    {
+      "path": "PCB/V142/EngineConnector_V100/renders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "81679130623fab668321fc9b2328b4209700ecad",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/81679130623fab668321fc9b2328b4209700ecad"
+    },
+    {
+      "path": "PCB/V142/EngineConnector_V100/renders/EngineConnector_V100_bottom_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c6f98874810f5fcb1197f2f4dedc1a9f8b6f60c",
+      "size": 218448,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/7c6f98874810f5fcb1197f2f4dedc1a9f8b6f60c"
+    },
+    {
+      "path": "PCB/V142/EngineConnector_V100/renders/EngineConnector_V100_bottom_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7da283b9fff414623c096a52a23e2ae2a88dca8d",
+      "size": 24786,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/7da283b9fff414623c096a52a23e2ae2a88dca8d"
+    },
+    {
+      "path": "PCB/V142/EngineConnector_V100/renders/EngineConnector_V100_top_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1f3100ac1e941ed46c46f32444490a4f5b6919c",
+      "size": 164926,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/f1f3100ac1e941ed46c46f32444490a4f5b6919c"
+    },
+    {
+      "path": "PCB/V142/EngineConnector_V100/renders/EngineConnector_V100_top_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33014c7d7fb297984e06c85fc34dfb4fc2610ca6",
+      "size": 18400,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/33014c7d7fb297984e06c85fc34dfb4fc2610ca6"
+    },
+    {
+      "path": "PCB/V142/EngineConnector_V100/schematic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2bdd1f7730ebce6c925104d96fd02b53441dea89",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/2bdd1f7730ebce6c925104d96fd02b53441dea89"
+    },
+    {
+      "path": "PCB/V142/EngineConnector_V100/schematic/EngineConnector_V100_schematic.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b019d22c284abb0a0f6a355dc38188b4b369ae2",
+      "size": 9884,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/9b019d22c284abb0a0f6a355dc38188b4b369ae2"
+    },
+    {
+      "path": "PCB/V142/SCIBusLogicInverter_V100",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "20f6daf048e98a76107d7d9774d3d5447d323c53",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/20f6daf048e98a76107d7d9774d3d5447d323c53"
+    },
+    {
+      "path": "PCB/V142/SCIBusLogicInverter_V100/bom",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "704f1940d1c50ca85dfb0bd1414a71622304535a",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/704f1940d1c50ca85dfb0bd1414a71622304535a"
+    },
+    {
+      "path": "PCB/V142/SCIBusLogicInverter_V100/bom/SCIBusLogicInverter_V100_BOM.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c099f6eb55261e6047ae663ef1488244b5362f7a",
+      "size": 1431,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/c099f6eb55261e6047ae663ef1488244b5362f7a"
+    },
+    {
+      "path": "PCB/V142/SCIBusLogicInverter_V100/renders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b39a937d930a19fc6822256c8dba7d82949bca64",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/b39a937d930a19fc6822256c8dba7d82949bca64"
+    },
+    {
+      "path": "PCB/V142/SCIBusLogicInverter_V100/renders/SCIBusLogicInverter_V100_bottom_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07e679ff57ac48ce62fa7ded3c2b81b83ef70ab6",
+      "size": 298118,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/07e679ff57ac48ce62fa7ded3c2b81b83ef70ab6"
+    },
+    {
+      "path": "PCB/V142/SCIBusLogicInverter_V100/renders/SCIBusLogicInverter_V100_bottom_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65228e9d1cae0bad2d383c55c0c1d9ee67c8b42e",
+      "size": 34377,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/65228e9d1cae0bad2d383c55c0c1d9ee67c8b42e"
+    },
+    {
+      "path": "PCB/V142/SCIBusLogicInverter_V100/renders/SCIBusLogicInverter_V100_top_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c5f7d48e721fea087f850bfcc84754dff45e46e",
+      "size": 333419,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/3c5f7d48e721fea087f850bfcc84754dff45e46e"
+    },
+    {
+      "path": "PCB/V142/SCIBusLogicInverter_V100/renders/SCIBusLogicInverter_V100_top_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c27f972412c3a037ceb8f77dfce50867ee755ca",
+      "size": 42339,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/6c27f972412c3a037ceb8f77dfce50867ee755ca"
+    },
+    {
+      "path": "PCB/V142/SCIBusLogicInverter_V100/schematic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae63ad77a68105914c2736dfac9c9f4c35a6b1f2",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/ae63ad77a68105914c2736dfac9c9f4c35a6b1f2"
+    },
+    {
+      "path": "PCB/V142/SCIBusLogicInverter_V100/schematic/SCIBusLogicInverter_V100_schematic.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ed96cc104bfe85d277dd670894ab2288bc61f8f",
+      "size": 16670,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5ed96cc104bfe85d277dd670894ab2288bc61f8f"
+    },
+    {
+      "path": "PCB/V143",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7828a61adf807934f862319a876af331ff394dd",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/d7828a61adf807934f862319a876af331ff394dd"
+    },
+    {
+      "path": "PCB/V143/ChryslerCCDSCIScanner_V143",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3dc0c8d2ba505fce2ba109bcd9ae09153cbd69c",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/a3dc0c8d2ba505fce2ba109bcd9ae09153cbd69c"
+    },
+    {
+      "path": "PCB/V143/ChryslerCCDSCIScanner_V143/bom",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ffe3fc35c7054d1f5e4f0ea41e3886a2bd54ed5",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/9ffe3fc35c7054d1f5e4f0ea41e3886a2bd54ed5"
+    },
+    {
+      "path": "PCB/V143/ChryslerCCDSCIScanner_V143/bom/ChryslerCCDSCIScanner_V143_BOM.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a91da676a3a4770705eeb0c9e5223315f71a5f4",
+      "size": 9181,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/3a91da676a3a4770705eeb0c9e5223315f71a5f4"
+    },
+    {
+      "path": "PCB/V143/ChryslerCCDSCIScanner_V143/renders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f88d028df516895098c4ffb930e254df4ace395c",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/f88d028df516895098c4ffb930e254df4ace395c"
+    },
+    {
+      "path": "PCB/V143/ChryslerCCDSCIScanner_V143/renders/ChryslerCCDSCIScanner_V143_bottom_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a30e49cd722ee62a66137e406a9a78388941cfb3",
+      "size": 1034811,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a30e49cd722ee62a66137e406a9a78388941cfb3"
+    },
+    {
+      "path": "PCB/V143/ChryslerCCDSCIScanner_V143/renders/ChryslerCCDSCIScanner_V143_bottom_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0428648e894fd209feddf82c423bce5ce0ddee3d",
+      "size": 302636,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/0428648e894fd209feddf82c423bce5ce0ddee3d"
+    },
+    {
+      "path": "PCB/V143/ChryslerCCDSCIScanner_V143/renders/ChryslerCCDSCIScanner_V143_top_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "645eb0676ff3a41f7a5a91bb4b65a3e47292b247",
+      "size": 1187322,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/645eb0676ff3a41f7a5a91bb4b65a3e47292b247"
+    },
+    {
+      "path": "PCB/V143/ChryslerCCDSCIScanner_V143/renders/ChryslerCCDSCIScanner_V143_top_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74687dd1a18965412f9230344e24e2a0047b306d",
+      "size": 485398,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/74687dd1a18965412f9230344e24e2a0047b306d"
+    },
+    {
+      "path": "PCB/V143/ChryslerCCDSCIScanner_V143/schematic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cf2bfa0d1fcf32adc1f8067eabd49b2e8edfe160",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/cf2bfa0d1fcf32adc1f8067eabd49b2e8edfe160"
+    },
+    {
+      "path": "PCB/V143/ChryslerCCDSCIScanner_V143/schematic/ChryslerCCDSCIScanner_V143_schematic.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc9b2af93f0db162b6e19995833e08e279d88407",
+      "size": 71110,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/bc9b2af93f0db162b6e19995833e08e279d88407"
+    },
+    {
+      "path": "PCB/V144",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "706cc4aab87db75d9e16b04ef44db47d7ced92c8",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/706cc4aab87db75d9e16b04ef44db47d7ced92c8"
+    },
+    {
+      "path": "PCB/V144/ChryslerCCDSCIScanner_V144",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8921da919e45817b25f9d78ea6d4a4b71c7be271",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/8921da919e45817b25f9d78ea6d4a4b71c7be271"
+    },
+    {
+      "path": "PCB/V144/ChryslerCCDSCIScanner_V144/bom",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fcfe4223c7bbc14c2903d1062aa804022c255bf8",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/fcfe4223c7bbc14c2903d1062aa804022c255bf8"
+    },
+    {
+      "path": "PCB/V144/ChryslerCCDSCIScanner_V144/bom/ChryslerCCDSCIScanner_V144_BOM.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a4bf8be81b04741f34906ab5eeb36b97ddf01ef",
+      "size": 6687,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/6a4bf8be81b04741f34906ab5eeb36b97ddf01ef"
+    },
+    {
+      "path": "PCB/V144/ChryslerCCDSCIScanner_V144/renders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ba26f7b3a8535a45cc706b49d4f0c0b8c199d77",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/9ba26f7b3a8535a45cc706b49d4f0c0b8c199d77"
+    },
+    {
+      "path": "PCB/V144/ChryslerCCDSCIScanner_V144/renders/ChryslerCCDSCIScanner_V144_bottom_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df5c8cbe8d79f293e5e1c2145cafdd28075eff4e",
+      "size": 1341950,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/df5c8cbe8d79f293e5e1c2145cafdd28075eff4e"
+    },
+    {
+      "path": "PCB/V144/ChryslerCCDSCIScanner_V144/renders/ChryslerCCDSCIScanner_V144_bottom_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f98ae315f9661beb840b2d4db760278fb39197a2",
+      "size": 300919,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/f98ae315f9661beb840b2d4db760278fb39197a2"
+    },
+    {
+      "path": "PCB/V144/ChryslerCCDSCIScanner_V144/renders/ChryslerCCDSCIScanner_V144_top_render.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76fdd2e6c3130efe251b4c9358629ce3a718183f",
+      "size": 1437790,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/76fdd2e6c3130efe251b4c9358629ce3a718183f"
+    },
+    {
+      "path": "PCB/V144/ChryslerCCDSCIScanner_V144/renders/ChryslerCCDSCIScanner_V144_top_render.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "800580b1aaf217f8f8fc6f92a61e382f201ab307",
+      "size": 475527,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/800580b1aaf217f8f8fc6f92a61e382f201ab307"
+    },
+    {
+      "path": "PCB/V144/ChryslerCCDSCIScanner_V144/schematic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b77fe4240d6013fdf0aadfe77f71eea01e35995",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/5b77fe4240d6013fdf0aadfe77f71eea01e35995"
+    },
+    {
+      "path": "PCB/V144/ChryslerCCDSCIScanner_V144/schematic/ChryslerCCDSCIScanner_V144_schematic.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "514ea36d6c60ad8208a0810d41e9de48fe8f735f",
+      "size": 98563,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/514ea36d6c60ad8208a0810d41e9de48fe8f735f"
+    },
+    {
+      "path": "PCB/V144/ChryslerCCDSCIScanner_V144/schematic/ChryslerCCDSCIScanner_V144_schematic_bw.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cf4612067784f2180a825e3a9bef56aa425d186",
+      "size": 97244,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/7cf4612067784f2180a825e3a9bef56aa425d186"
+    },
+    {
+      "path": "PCB/V150",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0990ba08e11675725e2958c337f4096d3a39ce09",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/0990ba08e11675725e2958c337f4096d3a39ce09"
+    },
+    {
+      "path": "PCB/V150/ChryslerCCDSCIScanner_V150",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8be33969d6e8d9989fe77c42701dd5d2b01db9c1",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/8be33969d6e8d9989fe77c42701dd5d2b01db9c1"
+    },
+    {
+      "path": "PCB/V150/ChryslerCCDSCIScanner_V150/schematic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f898103e45d7fcf6e4ce9c1c3b525145883fa57b",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/f898103e45d7fcf6e4ce9c1c3b525145883fa57b"
+    },
+    {
+      "path": "PCB/V150/ChryslerCCDSCIScanner_V150/schematic/ChryslerCCDSCIScanner_V150_schematic.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd956e1fca3dccbb2e5e07c5d00a4362a991fd4c",
+      "size": 320152,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/dd956e1fca3dccbb2e5e07c5d00a4362a991fd4c"
+    },
+    {
+      "path": "PCB/V150/ChryslerCCDSCIScanner_V150/schematic/ChryslerCCDSCIScanner_V150_schematic_bw.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af58abbead3a1e7cfe47480fcf965bfce718f188",
+      "size": 318321,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/af58abbead3a1e7cfe47480fcf965bfce718f188"
+    },
+    {
+      "path": "PCB/V210",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ef888fb6339aa6d9b9f6259fc3207f91132c366",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/9ef888fb6339aa6d9b9f6259fc3207f91132c366"
+    },
+    {
+      "path": "PCB/V210/ChryslerScanner_V210",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4318da776438fb2ee3f190490af132615ef1576a",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/4318da776438fb2ee3f190490af132615ef1576a"
+    },
+    {
+      "path": "PCB/V210/ChryslerScanner_V210/schematic",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3debb918bb36f6b909d381fcd3da03a8f241a99b",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/3debb918bb36f6b909d381fcd3da03a8f241a99b"
+    },
+    {
+      "path": "PCB/V210/ChryslerScanner_V210/schematic/ChryslerScanner_V210_schematic.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b9cb414ee8c09f0cda04c793353661bb93db2d0",
+      "size": 366975,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/2b9cb414ee8c09f0cda04c793353661bb93db2d0"
+    },
+    {
+      "path": "PCB/V210/ChryslerScanner_V210/schematic/ChryslerScanner_V210_schematic_bw.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "886edfb54648681d82e4cacd823f38174b806aa2",
+      "size": 364884,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/886edfb54648681d82e4cacd823f38174b806aa2"
+    },
+    {
+      "path": "PlatformIO",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "caaa70c9104c0c3907bfb50bc71327fb0a1743d7",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/caaa70c9104c0c3907bfb50bc71327fb0a1743d7"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8357143df29283f53f0c7d478fcb4329c499fdb3",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/8357143df29283f53f0c7d478fcb4329c499fdb3"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89cc49cbd652508924b868ea609fa8f6b758ec56",
+      "size": 94,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/89cc49cbd652508924b868ea609fa8f6b758ec56"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/.vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e5236ffb1fb4584c6dbf82e6b6bcdccebcd8ddd0",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/e5236ffb1fb4584c6dbf82e6b6bcdccebcd8ddd0"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/.vscode/extensions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "080e70d08b9811fa743afe5094658dba0ed6b7c2",
+      "size": 274,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/080e70d08b9811fa743afe5094658dba0ed6b7c2"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e11f465041378093e6797c37df958e23f3cd08aa",
+      "size": 141,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/e11f465041378093e6797c37df958e23f3cd08aa"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/efuse_table_gen.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb3c6cf0398af5d931e8e42d7181aa7137fb7acc",
+      "size": 192,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/cb3c6cf0398af5d931e8e42d7181aa7137fb7acc"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/efuse_table_gen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b66f73ab13672e952557f0851ff7a21f9bc3846",
+      "size": 20361,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5b66f73ab13672e952557f0851ff7a21f9bc3846"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/include",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "777e9f8a78c7699d14af2e6c906af7cc6c8e1354",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/777e9f8a78c7699d14af2e6c906af7cc6c8e1354"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/include/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "194dcd43252dcbeb2044ee38510415041a0e7b47",
+      "size": 1386,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/194dcd43252dcbeb2044ee38510415041a0e7b47"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/include/bootstrap.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e00b139d2a751c6f2775c2d845cf954a967548d2",
+      "size": 70793,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/e00b139d2a751c6f2775c2d845cf954a967548d2"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/include/config.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ecc019627f857edab1fad67b4cb37857519e1bd",
+      "size": 4451,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/3ecc019627f857edab1fad67b4cb37857519e1bd"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/include/enums.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e17d723380b42042a5b1d0d50b8c280bb7fbe67",
+      "size": 6489,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/0e17d723380b42042a5b1d0d50b8c280bb7fbe67"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/include/esp_efuse_custom_table.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2631d273fe775fb23c0ac8c7c85246aa8e8b13a1",
+      "size": 1150,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/2631d273fe775fb23c0ac8c7c85246aa8e8b13a1"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/include/macros.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f47704933582b5be59d83f6cd6fa08a4d6a00ef4",
+      "size": 532,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/f47704933582b5be59d83f6cd6fa08a4d6a00ef4"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db66f361c28968cc61b51aa3e2b4e15a23cf2eab",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/db66f361c28968cc61b51aa3e2b4e15a23cf2eab"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/lib/AW9523",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f42cf7f0e8ae581cb2b86180ca624cdfad2bf89f",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/f42cf7f0e8ae581cb2b86180ca624cdfad2bf89f"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/lib/AW9523/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "295f7eb34766897a92eb2cfac7a4c6f3da7e82ed",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/295f7eb34766897a92eb2cfac7a4c6f3da7e82ed"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/lib/AW9523/src/AW9523.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3dae4ef891b93b3015d8d4fbffb222e2f88becc",
+      "size": 1418,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/d3dae4ef891b93b3015d8d4fbffb222e2f88becc"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/lib/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6debab1e8b4c3faa0d06f4ff44bce343ce2cdcbf",
+      "size": 1037,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/6debab1e8b4c3faa0d06f4ff44bce343ce2cdcbf"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/partition_custom_table.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbd422023cec8e09d6a2223a9df851822a9573b7",
+      "size": 217,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/dbd422023cec8e09d6a2223a9df851822a9573b7"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/platformio.ini",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cf4ed3c977375ed7a0e2159a99562b3081c8352",
+      "size": 533,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5cf4ed3c977375ed7a0e2159a99562b3081c8352"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/sdkconfig.pico32",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a0a74a1bd84ba1fc4152ab99d3b96e91bcb45e9",
+      "size": 46050,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/9a0a74a1bd84ba1fc4152ab99d3b96e91bcb45e9"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b314b8faa6a1137cd12291e9dc7e85bbdb86621",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/5b314b8faa6a1137cd12291e9dc7e85bbdb86621"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/src/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "483bc0cfc50a380fbdaa854f4538109090940fa7",
+      "size": 199,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/483bc0cfc50a380fbdaa854f4538109090940fa7"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/src/ChryslerScanner.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa58020417eb3c447c9e8902eb320e4793555600",
+      "size": 292192,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/aa58020417eb3c447c9e8902eb320e4793555600"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/src/esp_efuse_custom_table.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d592a524b1ec0aa8d28d32d5879913a2119e869f",
+      "size": 1709,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/d592a524b1ec0aa8d28d32d5879913a2119e869f"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/src/esp_efuse_custom_table.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3fd453592d70a4a9ff3453ace7c7803ee501f9d",
+      "size": 133,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/a3fd453592d70a4a9ff3453ace7c7803ee501f9d"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/src/esp_efuse_table.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42cee2eb7685736ce660915f515f12b9d5cb8704",
+      "size": 5915,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/42cee2eb7685736ce660915f515f12b9d5cb8704"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/src/main.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "def0be2e47528a90448f79e9635cc99e868346be",
+      "size": 223846,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/def0be2e47528a90448f79e9635cc99e868346be"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9a3943f6c87f82cb1b42b56e433ba3b796d6b764",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/9a3943f6c87f82cb1b42b56e433ba3b796d6b764"
+    },
+    {
+      "path": "PlatformIO/ChryslerScanner/test/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b94d0890faa00a63737892509a5ca77ad3bdc6c3",
+      "size": 504,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/b94d0890faa00a63737892509a5ca77ad3bdc6c3"
+    },
+    {
+      "path": "Python",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b6bdcaf5ce0de0b7e21e910d3d9014e69289e1e9",
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/b6bdcaf5ce0de0b7e21e910d3d9014e69289e1e9"
+    },
+    {
+      "path": "Python/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a66950073ca7d7da1280c3969f5bccbc3b23baa",
+      "size": 490,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5a66950073ca7d7da1280c3969f5bccbc3b23baa"
+    },
+    {
+      "path": "Python/ccd.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f8c19dc7f557778cf804649073d8129c1cd4196",
+      "size": 2915,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/6f8c19dc7f557778cf804649073d8129c1cd4196"
+    },
+    {
+      "path": "Python/requests.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "647a38292bef5c5e1beba6a049df2d49fde04c28",
+      "size": 72,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/647a38292bef5c5e1beba6a049df2d49fde04c28"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aa0b41543dc04d107080fc4a79d3f290c7c8b2b",
+      "size": 1034,
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/blobs/5aa0b41543dc04d107080fc4a79d3f290c7c8b2b"
+    }
+  ],
+  "truncated": false
+}

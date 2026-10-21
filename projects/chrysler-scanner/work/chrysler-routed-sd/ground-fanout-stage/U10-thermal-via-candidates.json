@@ -1,0 +1,82 @@
+{
+  "status": "read-only candidate probe; not applied",
+  "reference": "U10.49",
+  "viaDiameterMM": 0.6,
+  "drillMM": 0.3,
+  "extraClearanceMarginMM": 0.02,
+  "manufacturingCondition": "Via-in-pad requires explicit filled/capped fabrication treatment and assembly approval; ordinary tenting is not equivalent",
+  "candidates": [
+    {
+      "xyMM": [
+        173.6875,
+        115.3625
+      ],
+      "nativeClearanceProbePassed": true,
+      "conflicts": []
+    },
+    {
+      "xyMM": [
+        172.7875,
+        114.46249999999999
+      ],
+      "nativeClearanceProbePassed": true,
+      "conflicts": []
+    },
+    {
+      "xyMM": [
+        174.5875,
+        114.46249999999999
+      ],
+      "nativeClearanceProbePassed": true,
+      "conflicts": []
+    },
+    {
+      "xyMM": [
+        172.7875,
+        116.2625
+      ],
+      "nativeClearanceProbePassed": true,
+      "conflicts": []
+    },
+    {
+      "xyMM": [
+        174.5875,
+        116.2625
+      ],
+      "nativeClearanceProbePassed": true,
+      "conflicts": []
+    },
+    {
+      "xyMM": [
+        172.4875,
+        115.3625
+      ],
+      "nativeClearanceProbePassed": true,
+      "conflicts": []
+    },
+    {
+      "xyMM": [
+        174.8875,
+        115.3625
+      ],
+      "nativeClearanceProbePassed": true,
+      "conflicts": []
+    },
+    {
+      "xyMM": [
+        173.6875,
+        114.1625
+      ],
+      "nativeClearanceProbePassed": true,
+      "conflicts": []
+    },
+    {
+      "xyMM": [
+        173.6875,
+        116.5625
+      ],
+      "nativeClearanceProbePassed": true,
+      "conflicts": []
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "repo": "KiCad/kicad-footprints",
+  "commit": "7ebfa6b23cc292a56f751b7b5f4a0e12eeef69dd",
+  "paths": [
+    "Resistor_SMD.pretty/R_1206_3216Metric.kicad_mod",
+    "Capacitor_SMD.pretty/C_1206_3216Metric.kicad_mod",
+    "LED_SMD.pretty/LED_1206_3216Metric.kicad_mod",
+    "Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+    "Package_TO_SOT_SMD.pretty/SOT-23-5.kicad_mod",
+    "Package_TO_SOT_SMD.pretty/SOT-23-6.kicad_mod",
+    "Package_TO_SOT_SMD.pretty/SOT-363_SC-70-6.kicad_mod",
+    "Package_TO_SOT_SMD.pretty/TSOT-23-8.kicad_mod",
+    "Package_SON.pretty/WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.kicad_mod",
+    "Package_DFN_QFN.pretty/QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.kicad_mod",
+    "Package_DFN_QFN.pretty/QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.6mm.kicad_mod",
+    "Diode_SMD.pretty/D_SMB.kicad_mod",
+    "Diode_SMD.pretty/D_SOD-123.kicad_mod",
+    "Diode_SMD.pretty/D_SOD-323.kicad_mod",
+    "Inductor_SMD.pretty/L_7.3x7.3_H3.5.kicad_mod",
+    "Capacitor_THT.pretty/CP_Radial_D8.0mm_P3.50mm.kicad_mod",
+    "Connector_USB.pretty/USB_B_Lumberg_2411_02_Horizontal.kicad_mod",
+    "Connector_PinHeader_2.54mm.pretty/PinHeader_2x03_P2.54mm_Vertical.kicad_mod",
+    "Jumper.pretty/SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm.kicad_mod",
+    "Jumper.pretty/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm.kicad_mod",
+    "Button_Switch_SMD.pretty/SW_SPST_TL3305A.kicad_mod",
+    "Package_SO.pretty/VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
+    "Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod",
+    "Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod",
+    "Capacitor_SMD.pretty/C_0805_2012Metric.kicad_mod"
+  ],
+  "normalization": "Converted old module syntax, layers, line strokes and arc representation to KiCad modern syntax; removed external 3D-model references. Pad geometry preserved.",
+  "usb_c_addition": {
+    "footprint": "elec/src/footprints/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod",
+    "source": "KiCad 10.0.7 bundled footprint library; geometry checked against GCT USB4105 B4 manufacturer drawing",
+    "manufacturer_drawing": "reference/upstream/GCT_USB4105.pdf",
+    "source_sha256": "3b8d7da3cae5114ec83022a759a78925113bc2eeec100ea447594f6d8687e4b8",
+    "license": "CC-BY-SA-4.0 with KiCad library exception",
+    "project_sha256": "6fa2e8707d01462fe2608afecafb86f9d75c7a730020f75ae169363c40f3b584",
+    "project_adjustments": [
+      "Bundled model uses a relative project path",
+      "SMD contact mask expansion is 0.025 mm per side; copper, pad numbers and drills match the KiCad package geometry"
+    ]
+  }
+}

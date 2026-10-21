@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "pcb_sha256": "ae124a36b4bf2eb464037c07c6d1baa42a7c667960e7c0ab253907d2496ad0ae",
+  "baseline_pcb_sha256": "4c8f7dfa2a95fb8fa6879874c2f06246c110fe0322cce19e5fc7cb2764e9a2cb",
+  "baseline": "110 x 55 mm USB-C board immediately before ATTEND change",
+  "other_footprint_positions_rotations_and_pad_geometry_preserved": 244,
+  "all_connected_net_endpoint_sets_preserved": 142,
+  "obd_terminal_connections_preserved": 16,
+  "changed_component": "J1",
+  "outline_mm": [
+    110,
+    55
+  ],
+  "routing_complete": false,
+  "routine_build_and_finish_preserve_selected_connector_and_all_models": true,
+  "routine_build_preserved_footprints_pads_models_and_reference_fields": 245,
+  "applies_to": "OBD connector installation phase before the first placement pass. The 244-other-footprint preservation claim is historical; current layout preservation is audited in placement-pass-1-verification.json."
+}

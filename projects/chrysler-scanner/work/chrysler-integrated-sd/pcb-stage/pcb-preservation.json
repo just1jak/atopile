@@ -1,0 +1,245 @@
+{
+  "basePcbSha256": "26ab8409f172eb33b40b5439eaa213b2366efa97b0da22439521719e94e71080",
+  "pcbSha256": "7eb9e1a94a9ad4c71e47d1c7245f232716e6905fbe046c4cd940806cf378af65",
+  "originalUnchanged": true,
+  "originalMtimeUnchanged": true,
+  "baseFootprintsPreserved": 245,
+  "baseFootprintUUIDsPreserved": true,
+  "basePadUUIDsAndPhysicalGeometryPreserved": true,
+  "baseElectricalAssignmentsPreservedExceptDeclaredSixNCs": true,
+  "outlineAndExistingDrawingsPreserved": true,
+  "originalZonesAndKeepoutsPreserved": true,
+  "addedFootprints": 18,
+  "totalFootprints": 263,
+  "allAddedFootprintsBack": true,
+  "newTracks": 0,
+  "newVias": 0,
+  "routingComplete": false,
+  "firmwareDeferred": true,
+  "minimumBackEnclosureClearanceMm": 7,
+  "newSchematicPathsApplied": true,
+  "mcuPadChanges": [
+    {
+      "ref": "U10",
+      "pad": "5",
+      "from": "5",
+      "to": "SD_MISO",
+      "gpio": 36
+    },
+    {
+      "ref": "U10",
+      "pad": "6",
+      "from": "6",
+      "to": "LOG_BUTTON",
+      "gpio": 37
+    },
+    {
+      "ref": "U10",
+      "pad": "7",
+      "from": "7",
+      "to": "SD_DETECT",
+      "gpio": 38
+    },
+    {
+      "ref": "U10",
+      "pad": "21",
+      "from": "21",
+      "to": "MCU_SD_CS",
+      "gpio": 15
+    },
+    {
+      "ref": "U10",
+      "pad": "27",
+      "from": "27",
+      "to": "MCU_SD_MOSI",
+      "gpio": 20
+    },
+    {
+      "ref": "U10",
+      "pad": "38",
+      "from": "38",
+      "to": "MCU_SD_SCK",
+      "gpio": 19
+    }
+  ],
+  "placements": {
+    "J4": {
+      "xy": [
+        190,
+        146
+      ],
+      "preFlipAngle": 0,
+      "actualBackAngle": 180.0,
+      "fpUuid": "59d2cd89-b239-53a9-86d5-1b98e967dc47"
+    },
+    "U20": {
+      "xy": [
+        190,
+        128
+      ],
+      "preFlipAngle": 0,
+      "actualBackAngle": 180.0,
+      "fpUuid": "55b6d370-33d0-57da-9b93-526b1cc2823c"
+    },
+    "R104": {
+      "xy": [
+        181,
+        112
+      ],
+      "preFlipAngle": 180,
+      "actualBackAngle": 0.0,
+      "fpUuid": "f18efe99-5693-54ad-a725-22aedc249cb4"
+    },
+    "R105": {
+      "xy": [
+        179,
+        117.1
+      ],
+      "preFlipAngle": 180,
+      "actualBackAngle": 0.0,
+      "fpUuid": "ded0e616-2b82-5cf3-9628-75742514dfbe"
+    },
+    "R106": {
+      "xy": [
+        174.94,
+        121
+      ],
+      "preFlipAngle": -90,
+      "actualBackAngle": -90.0,
+      "fpUuid": "ed3bfb31-98d6-50bc-bcdd-3cae9b0a9458"
+    },
+    "R107": {
+      "xy": [
+        188,
+        135.4
+      ],
+      "preFlipAngle": -90,
+      "actualBackAngle": -90.0,
+      "fpUuid": "a10b4f03-ca20-5e17-b88c-319497a2fd7b"
+    },
+    "R108": {
+      "xy": [
+        186,
+        135.4
+      ],
+      "preFlipAngle": -90,
+      "actualBackAngle": -90.0,
+      "fpUuid": "db7705ef-95bf-5357-ab83-49ba49c23157"
+    },
+    "R109": {
+      "xy": [
+        194,
+        135.4
+      ],
+      "preFlipAngle": -90,
+      "actualBackAngle": -90.0,
+      "fpUuid": "4c1e2f06-ddc8-58b5-80cb-724faad1ac11"
+    },
+    "R110": {
+      "xy": [
+        196,
+        135.4
+      ],
+      "preFlipAngle": -90,
+      "actualBackAngle": -90.0,
+      "fpUuid": "051b47a5-36fa-5066-9360-61341187ae29"
+    },
+    "R111": {
+      "xy": [
+        184,
+        135.4
+      ],
+      "preFlipAngle": -90,
+      "actualBackAngle": -90.0,
+      "fpUuid": "974f323b-6f18-516e-89fd-f6f0e919a9c4"
+    },
+    "R112": {
+      "xy": [
+        172,
+        121
+      ],
+      "preFlipAngle": -90,
+      "actualBackAngle": -90.0,
+      "fpUuid": "02c8eb1a-24b2-5552-8d67-a69e0ca939ec"
+    },
+    "R113": {
+      "xy": [
+        168,
+        114.1
+      ],
+      "preFlipAngle": 90,
+      "actualBackAngle": 90.0,
+      "fpUuid": "c55e6587-e5a0-5239-9dc2-e74c41f35c1f"
+    },
+    "R114": {
+      "xy": [
+        168,
+        117.7
+      ],
+      "preFlipAngle": 90,
+      "actualBackAngle": 90.0,
+      "fpUuid": "39da01fa-0fe9-5801-be1c-02b40b688a8a"
+    },
+    "C58": {
+      "xy": [
+        196,
+        125.7
+      ],
+      "preFlipAngle": 90,
+      "actualBackAngle": 90.0,
+      "fpUuid": "9282b014-a010-576f-9cc6-8383feb3be8f"
+    },
+    "C59": {
+      "xy": [
+        196,
+        130.3
+      ],
+      "preFlipAngle": 90,
+      "actualBackAngle": 90.0,
+      "fpUuid": "b1f5b1df-712c-5340-a916-bb93f119ea39"
+    },
+    "C60": {
+      "xy": [
+        190.5,
+        135.4
+      ],
+      "preFlipAngle": 0,
+      "actualBackAngle": 180.0,
+      "fpUuid": "ba928faf-2c4f-5f58-b312-44d151d39619"
+    },
+    "C61": {
+      "xy": [
+        181,
+        126
+      ],
+      "preFlipAngle": 0,
+      "actualBackAngle": 180.0,
+      "fpUuid": "cd2bd293-2360-52d3-8e26-0bac0359951e"
+    },
+    "SW3": {
+      "xy": [
+        174,
+        151
+      ],
+      "preFlipAngle": 0,
+      "actualBackAngle": 180.0,
+      "fpUuid": "93e09510-f5d5-5931-8d12-b2cf83222c45"
+    }
+  },
+  "manifestSha256": "e579decad3650faf3f47111c07f53e449433200ac1e215d2e7af1219bc491f3b",
+  "baseNativeAirwireCount": 561,
+  "finalNativeAirwireCount": 607,
+  "additionalAirwires": 46,
+  "originalOutlineCoordinatesAndZonePropertiesPreserved": true,
+  "base3dModelGeometryPreserved": true,
+  "mechanicalBoardOnlyMetadataAdded": [
+    "H1",
+    "H2",
+    "H3",
+    "H4"
+  ],
+  "unconnectedReportLimitNote": "CLI DRC JSON reports499 missing items; full native connectivity API counts shown separately",
+  "ncCanonicalizationReport": "nc-name-canonicalization.json",
+  "additionalIsolatedNCNameMetadataChanges": 40,
+  "assignedNetNamesAndMembershipPreserved": true
+}

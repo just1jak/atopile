@@ -1,0 +1,49 @@
+(session tiny
+  (base_design tiny)
+  (placement
+    (resolution um 10)
+    (component RouterSmoke:Pad1
+      (place P2 1170000 -1060000 front 0)
+      (place P1 1030000 -1060000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version 10.0.7)
+    )
+    (library_out 
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net SMOKE_NET
+        (wire
+          (path F.Cu 2000
+            1030000 -1060000
+            1170000 -1060000
+          )
+        )
+      )
+    )
+  )
+)

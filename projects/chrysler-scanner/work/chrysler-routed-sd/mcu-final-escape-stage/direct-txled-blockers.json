@@ -1,0 +1,128 @@
+[
+  {
+    "net": "TX_LED",
+    "positionMm": [
+      171.9375,
+      119.3475
+    ],
+    "blockers": [
+      {
+        "uuid": "2441b0e2-60dc-472b-acd4-b558b8574f7f",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          172.259,
+          119.2894
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      },
+      {
+        "uuid": "35e4541a-a0cb-4806-b498-4b06bccbae80",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          173.6549,
+          119.2894
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      },
+      {
+        "uuid": "5b8eee42-cb11-4164-bf52-564d28eb289d",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          170.7787,
+          118.3271
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      },
+      {
+        "uuid": "ef2bb34a-eae7-4b4d-aa1a-4e524be01772",
+        "net": "+3.3V",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          172.0,
+          119.5484
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      },
+      {
+        "uuid": "5bb6c0de-9712-4580-bc99-d912eda3678c",
+        "net": "RX_LED",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          171.4375,
+          119.6138
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu"
+        ]
+      },
+      {
+        "uuid": "c3b5ae3c-a5c1-4c28-8026-ff08daa793c2",
+        "net": "PCI_TX",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          172.4375,
+          118.7275
+        ],
+        "locked": false,
+        "conflicts": [
+          "F.Cu"
+        ]
+      },
+      {
+        "uuid": "45731709-5a6b-513e-b655-1a068a01a3c2",
+        "net": "PWR_LED",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          171.299901,
+          119.395201
+        ],
+        "locked": false,
+        "conflicts": [
+          "In2.Cu"
+        ]
+      },
+      {
+        "uuid": "973f8799-3534-5ba0-a144-40a28ac93e1b",
+        "net": "PWR_LED",
+        "item": "PCB_TRACK",
+        "positionMm": [
+          171.599901,
+          119.695201
+        ],
+        "locked": false,
+        "conflicts": [
+          "In2.Cu"
+        ]
+      },
+      {
+        "uuid": "c0dae6ab-5f13-4075-8064-61846178cc03",
+        "net": "+3.3V",
+        "item": "R112.1",
+        "positionMm": [
+          172.0,
+          120.175
+        ],
+        "locked": false,
+        "conflicts": [
+          "B.Cu"
+        ]
+      }
+    ]
+  }
+]

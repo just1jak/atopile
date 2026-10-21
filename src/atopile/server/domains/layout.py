@@ -8,6 +8,8 @@ import logging
 from pathlib import Path
 from typing import Awaitable, Callable
 
+from atopile.model.pcb_transaction import finish_board_edit
+
 from atopile.model.file_watcher import FileWatcher
 from atopile.server.domains.layout_models import (
     ActionRequest,
@@ -26,6 +28,12 @@ LayoutListener = Callable[[WsMessage], Awaitable[None] | None]
 
 
 def _reload_pcb_in_kicad(pcb_path: Path) -> None:
+    from atopile.agent.local_config import local_mode_enabled
+
+    # Local edits target the saved file. Do not silently discard an unsaved
+    # native KiCad buffer by asking its GUI to reload that file after a commit.
+    if local_mode_enabled():
+        return
     try:
         from faebryk.libs.kicad.ipc import reload_pcb
 
@@ -42,6 +50,7 @@ class LayoutService:
         self._current_path: Path | None = None
         self._watcher: FileWatcher | None = None
         self._listeners: set[LayoutListener] = set()
+        self._action_lock = asyncio.Lock()
 
     def load(self, path: Path) -> None:
         resolved = path.resolve()
@@ -72,6 +81,10 @@ class LayoutService:
         self._listeners.discard(listener)
 
     async def clear(self) -> None:
+        async with self._action_lock:
+            await self._clear()
+
+    async def _clear(self) -> None:
         if self._watcher is not None:
             self._watcher.stop()
             self._watcher = None
@@ -79,6 +92,10 @@ class LayoutService:
         self._current_path = None
 
     async def open(self, path: Path) -> RenderModel:
+        async with self._action_lock:
+            return await self._open(path)
+
+    async def _open(self, path: Path) -> RenderModel:
         resolved = path.resolve()
         if self._current_path != resolved or self._manager is None:
             await asyncio.to_thread(self.load, resolved)
@@ -86,9 +103,10 @@ class LayoutService:
         return await asyncio.to_thread(self.manager.get_render_model)
 
     async def get_render_model(self) -> RenderModel:
-        if not self.is_loaded:
-            raise RuntimeError("No PCB loaded in layout editor")
-        return await asyncio.to_thread(self.manager.get_render_model)
+        async with self._action_lock:
+            if not self.is_loaded:
+                raise RuntimeError("No PCB loaded in layout editor")
+            return await asyncio.to_thread(self.manager.get_render_model)
 
     async def start_watcher(self) -> None:
         if self._watcher:
@@ -122,6 +140,10 @@ class LayoutService:
             self._listeners.discard(listener)
 
     async def _on_file_change(self, _result: object) -> None:
+        async with self._action_lock:
+            await self._reload_after_file_change()
+
+    async def _reload_after_file_change(self) -> None:
         if not self._current_path or not self._manager:
             return
 
@@ -158,6 +180,31 @@ class LayoutService:
         return model
 
     async def execute_action(self, req: ActionRequest) -> StatusResponse:
+        return await finish_board_edit(self._execute_serialized_action(req))
+
+    async def _execute_serialized_action(self, req: ActionRequest) -> StatusResponse:
+        async with self._action_lock:
+            try:
+                return await self._execute_action(req)
+            except Exception as exc:
+                # save() discards unsaved changes and reloads the actual disk
+                # version. Publish it so optimistic UI edits cannot linger.
+                if self.is_loaded:
+                    try:
+                        model = await asyncio.to_thread(self.manager.get_render_model)
+                        await self.broadcast(
+                            WsMessage(type="layout_updated", model=model)
+                        )
+                    except Exception:
+                        log.exception("Could not publish PCB after a rejected edit")
+                return StatusResponse(
+                    status="error",
+                    code="edit_failed",
+                    message=str(exc),
+                    action_id=req.client_action_id,
+                )
+
+    async def _execute_action(self, req: ActionRequest) -> StatusResponse:
         if not self.is_loaded:
             return StatusResponse(
                 status="error",

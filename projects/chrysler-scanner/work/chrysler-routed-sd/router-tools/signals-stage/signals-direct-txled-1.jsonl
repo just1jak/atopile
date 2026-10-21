@@ -1,0 +1,2 @@
+{"drillMm":0.3,"explicitAnchor":"U10.15 TX_LED","viaMm":[171.9375,119.3475],"requiresNativeFilledCappedStamp":true,"attachAllowedOnlyThisVia":true,"diameterMm":0.6,"nativeValidationRequired":true}
+{"blockedAnchor":1668995,"otherNet":"+3.3V","expectedCore":1500.0,"blockedBy":2939,"otherType":"Pin","layer":3,"actualCore":1266.0}

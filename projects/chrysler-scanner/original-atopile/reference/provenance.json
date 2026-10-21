@@ -1,0 +1,52 @@
+{
+  "upstream_repository": "https://github.com/laszlodaniel/ChryslerScanner",
+  "commit": "4ddc6e5d1c260c87c6139f60079932ffde6e5d9a",
+  "checked_date": "2026-10-12",
+  "hardware_version": "2.4.0",
+  "schematic_revision": "2.4.0-1",
+  "schematic_date": "2026-01-05",
+  "sha256": {
+    "gerbers/ChryslerCCDSCIScanner_V140.topsilkscreen.ger": "bc2b7bd51a78055b5278dd4d5f22fde4c86d413ba8eebe6f7a0ed884f6d69616",
+    "gerbers/ChryslerCCDSCIScanner_V140.bottomlayer.ger": "6174f43ff865ff1eccf8886ddbfe0a10fea34f3c35f6b5e14e2946552688309f",
+    "gerbers/ChryslerCCDSCIScanner_V140.drills.xln": "ef673d42305eec55f8a868dc47f2ea1965e0d7e5b689cc6f7d0e1a4101823571",
+    "gerbers/ChryslerCCDSCIScanner_V140.bottomsilkscreen.ger": "be46be0b1016e7fc971286e445d3cea47d0a51ac8536e838f15e62959b06ca1b",
+    "gerbers/ChryslerCCDSCIScanner_V140.toplayer.ger": "59571af2bdb8a3d73731f524b0063e3682046178e90291d9742ae0524f356a34",
+    "gerbers/ChryslerCCDSCIScanner_V140.topsoldermask.ger": "66b435933be7ec449acdc32394ee965420f9aa77cae14b42ca81051d360eadb4",
+    "gerbers/ChryslerCCDSCIScanner_V140.boardoutline.ger": "ad3ca29d57f0ac69b27927b18da73e55bf384c278c73f095a3b1c0395c2294cd",
+    "gerbers/ChryslerCCDSCIScanner_V140.bottomsoldermask.ger": "ab2a45c583eaec38c0018319bbbbe4d6a699f3281c57197ab38cb8562a5e1729",
+    "reference/upstream/ChryslerScanner_V240_schematic.pdf": "334b04164cfa96183cf502f690024a764cc719671f20583043f37604c9ed590d",
+    "reference/upstream/esp32-pico_series_datasheet_en.pdf": "5912569e285d1d6f6f524fb5ad748e56b126f19fd982cec5a058ae9bb2815243",
+    "reference/upstream/sy6283-datasheet.pdf": "ed4edaa19a2770f6cc7c9b114e612158710e891dee3253a286eebea270c48230",
+    "reference/upstream/aw9523b-datasheet.pdf": "7d3de781d52f5ca137ebeb84a9bc503924f3172b89a26b883595d9e83899323c",
+    "reference/upstream/antenna-datasheet.pdf": "78e7a1e42a174fac9d161b81855e2c6baedb3ea8afcc3787ebb461822cb876ca",
+    "reference/upstream/GCT_USB4105.pdf": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5"
+  },
+  "original_gerbers_modified": false,
+  "compiler": "atopile 0.15.9",
+  "status": "unrouted engineering migration",
+  "local_hardware_revision": "V240-USB-C-OBD",
+  "local_hardware_override_file": "reference/hardware-overrides.json",
+  "local_board_expansion": {
+    "size_mm": [
+      110,
+      55
+    ],
+    "original_size_mm": [
+      100,
+      50
+    ],
+    "user_authorized": true,
+    "mechanical_plan": "reference/board-mechanics.json",
+    "placement_report": "reference/board-expansion.json"
+  },
+  "upstream_rechecked_2026_10_13": {
+    "commit": "4ddc6e5d1c260c87c6139f60079932ffde6e5d9a",
+    "editable_schematic_files_found": 0,
+    "v240_pdf_schematic_available": true
+  },
+  "local_schematic_visualization": {
+    "source": "reference/v240-netlist.json",
+    "path": "elec/schematic/ChryslerScanner_V240.kicad_sch",
+    "validation": "reference/schematic-validation.json"
+  }
+}

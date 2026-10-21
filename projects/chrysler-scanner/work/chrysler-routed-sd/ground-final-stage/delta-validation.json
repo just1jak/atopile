@@ -1,0 +1,10 @@
+{
+  "positiveNativeSelftestExactCopperIncludingFabFlags": true,
+  "positiveExactFootprintsAndZones": true,
+  "rejectsAlreadyConnectedGroundSites": true,
+  "rejectsChangedNativeTrackGeometryInMemory": true,
+  "frozenInputsUnchanged": true,
+  "sourceSha256": "2f528b2be3fae336cd450178b0b0271a0f80f16cb4a6e65e577221f564d61bb7",
+  "frozenCandidateSha256": "f5b42ba76001f790c445533dfcd8567136b5b018127ac8982a2b04650661a2d1",
+  "positiveSelftestDuplicateRemovedAfterExactNativeComparison": true
+}

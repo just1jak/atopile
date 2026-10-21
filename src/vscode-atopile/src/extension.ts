@@ -413,6 +413,8 @@ async function startCoreServer(
     command: resolved.command,
     args: [...resolved.prefixArgs, "serve", "core", ...(isWebUi ? ["--force"] : [])],
     readyMarker: CORE_SERVER_READY_MARKER,
+    // Allow cold Python imports and worker startup to complete.
+    timeoutMs: 180_000,
     env: { ...resolved.env, ...portEnv },
   });
 

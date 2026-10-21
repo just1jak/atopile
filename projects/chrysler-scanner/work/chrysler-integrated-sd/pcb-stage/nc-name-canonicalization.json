@@ -1,0 +1,936 @@
+{
+  "authoritativeNetlistSha256": "413c741a9b1a2ec5bf89b9e212ddf13fc4e38899c238599126adcd31803744d2",
+  "explicitMapSha256": "ce5b5349e8636488be96c1ef82740719112430042722a5b59d368678efcfdaae",
+  "pcbBeforeSha256": "00a894bba0facbdebfc22979da83b949a805efce8a6a3a07c46b8fc520616470",
+  "pcbAfterSha256": "7eb9e1a94a9ad4c71e47d1c7245f232716e6905fbe046c4cd940806cf378af65",
+  "renamedSingletons": 40,
+  "allAuthoritativeNCDeclarationsVerified": true,
+  "allBeforeAndAfterPhysicalNetEndpointsSingletons": true,
+  "connectedNetNamesAndExactEndpointSetsUnchanged": true,
+  "all263FootprintsAndAllPadUUIDsPhysicalGeometryUnchanged": true,
+  "drawingAndZoneGeometryAndPropertiesUnchanged": true,
+  "nativeAirwiresBefore": 607,
+  "nativeAirwiresAfter": 607,
+  "changes": [
+    {
+      "reference": "AE1",
+      "pin": "2",
+      "padUuid": "780c9a29-6891-49e0-a4c2-94a17ce89419",
+      "from": "2",
+      "to": "unconnected-(AE1-Pad2)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "AE1",
+          "2",
+          "780c9a29-6891-49e0-a4c2-94a17ce89419"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "AE1",
+          "2",
+          "780c9a29-6891-49e0-a4c2-94a17ce89419"
+        ]
+      ]
+    },
+    {
+      "reference": "J1",
+      "pin": "1",
+      "padUuid": "45752582-4c23-403b-9067-2c34f2f03438",
+      "from": "1",
+      "to": "unconnected-(J1-Pad1)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "J1",
+          "1",
+          "45752582-4c23-403b-9067-2c34f2f03438"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "J1",
+          "1",
+          "45752582-4c23-403b-9067-2c34f2f03438"
+        ]
+      ]
+    },
+    {
+      "reference": "J1",
+      "pin": "8",
+      "padUuid": "7175f0a0-c532-4300-ba46-89e6aca9dae4",
+      "from": "8",
+      "to": "unconnected-(J1-Pad8)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "J1",
+          "8",
+          "7175f0a0-c532-4300-ba46-89e6aca9dae4"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "J1",
+          "8",
+          "7175f0a0-c532-4300-ba46-89e6aca9dae4"
+        ]
+      ]
+    },
+    {
+      "reference": "J1",
+      "pin": "10",
+      "padUuid": "903835c2-781d-4d02-97c3-38ffa397f168",
+      "from": "10",
+      "to": "unconnected-(J1-Pad10)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "J1",
+          "10",
+          "903835c2-781d-4d02-97c3-38ffa397f168"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "J1",
+          "10",
+          "903835c2-781d-4d02-97c3-38ffa397f168"
+        ]
+      ]
+    },
+    {
+      "reference": "J1",
+      "pin": "13",
+      "padUuid": "823cbb7b-c959-4631-b1c2-76b22665ae86",
+      "from": "13",
+      "to": "unconnected-(J1-Pad13)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "J1",
+          "13",
+          "823cbb7b-c959-4631-b1c2-76b22665ae86"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "J1",
+          "13",
+          "823cbb7b-c959-4631-b1c2-76b22665ae86"
+        ]
+      ]
+    },
+    {
+      "reference": "J2",
+      "pin": "A8",
+      "padUuid": "6abb94fc-1331-41e1-9002-68927173cd38",
+      "from": "A8",
+      "to": "unconnected-(J2-PadA8)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "J2",
+          "A8",
+          "6abb94fc-1331-41e1-9002-68927173cd38"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "J2",
+          "A8",
+          "6abb94fc-1331-41e1-9002-68927173cd38"
+        ]
+      ]
+    },
+    {
+      "reference": "J2",
+      "pin": "B8",
+      "padUuid": "dca3f9c4-82e9-4e2c-9698-351f58bc8155",
+      "from": "B8",
+      "to": "unconnected-(J2-PadB8)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "J2",
+          "B8",
+          "dca3f9c4-82e9-4e2c-9698-351f58bc8155"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "J2",
+          "B8",
+          "dca3f9c4-82e9-4e2c-9698-351f58bc8155"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "8",
+      "padUuid": "c35208ee-2439-48e0-ae65-37d4d7af6507",
+      "from": "u10-8",
+      "to": "unconnected-(U10-Pad8)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "8",
+          "c35208ee-2439-48e0-ae65-37d4d7af6507"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "8",
+          "c35208ee-2439-48e0-ae65-37d4d7af6507"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "18",
+      "padUuid": "f0943fbc-9ba6-4a11-b34f-8b8b46804d39",
+      "from": "18",
+      "to": "unconnected-(U10-Pad18)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "18",
+          "f0943fbc-9ba6-4a11-b34f-8b8b46804d39"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "18",
+          "f0943fbc-9ba6-4a11-b34f-8b8b46804d39"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "22",
+      "padUuid": "776b0702-5117-413a-b3dc-feec0cdd72b2",
+      "from": "22",
+      "to": "unconnected-(U10-Pad22)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "22",
+          "776b0702-5117-413a-b3dc-feec0cdd72b2"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "22",
+          "776b0702-5117-413a-b3dc-feec0cdd72b2"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "25",
+      "padUuid": "48276326-bac0-4ccd-81b5-e3c2f3b353cd",
+      "from": "25",
+      "to": "unconnected-(U10-Pad25)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "25",
+          "48276326-bac0-4ccd-81b5-e3c2f3b353cd"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "25",
+          "48276326-bac0-4ccd-81b5-e3c2f3b353cd"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "28",
+      "padUuid": "682e0000-7702-469b-ba44-8f7ed6639b4d",
+      "from": "28",
+      "to": "unconnected-(U10-Pad28)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "28",
+          "682e0000-7702-469b-ba44-8f7ed6639b4d"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "28",
+          "682e0000-7702-469b-ba44-8f7ed6639b4d"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "29",
+      "padUuid": "59ed820a-df8d-4c4c-bcac-39ee361d30ba",
+      "from": "29",
+      "to": "unconnected-(U10-Pad29)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "29",
+          "59ed820a-df8d-4c4c-bcac-39ee361d30ba"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "29",
+          "59ed820a-df8d-4c4c-bcac-39ee361d30ba"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "30",
+      "padUuid": "e898a164-d63c-4dba-aa51-a57822b24d18",
+      "from": "30",
+      "to": "unconnected-(U10-Pad30)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "30",
+          "e898a164-d63c-4dba-aa51-a57822b24d18"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "30",
+          "e898a164-d63c-4dba-aa51-a57822b24d18"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "31",
+      "padUuid": "9a968bee-35e2-4fa9-8604-f5cb7ec6aee8",
+      "from": "31",
+      "to": "unconnected-(U10-Pad31)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "31",
+          "9a968bee-35e2-4fa9-8604-f5cb7ec6aee8"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "31",
+          "9a968bee-35e2-4fa9-8604-f5cb7ec6aee8"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "35",
+      "padUuid": "2875c4db-5ca4-4af3-be2f-63002eb768a7",
+      "from": "35",
+      "to": "unconnected-(U10-Pad35)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "35",
+          "2875c4db-5ca4-4af3-be2f-63002eb768a7"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "35",
+          "2875c4db-5ca4-4af3-be2f-63002eb768a7"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "36",
+      "padUuid": "238548da-3cef-4542-80cf-688e0ce19542",
+      "from": "36",
+      "to": "unconnected-(U10-Pad36)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "36",
+          "238548da-3cef-4542-80cf-688e0ce19542"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "36",
+          "238548da-3cef-4542-80cf-688e0ce19542"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "44",
+      "padUuid": "69e33cf4-af84-411a-8c4c-c1babd427106",
+      "from": "44",
+      "to": "unconnected-(U10-Pad44)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "44",
+          "69e33cf4-af84-411a-8c4c-c1babd427106"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "44",
+          "69e33cf4-af84-411a-8c4c-c1babd427106"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "45",
+      "padUuid": "038d6dc0-b5fb-476a-ae8a-e6f182a5f552",
+      "from": "45",
+      "to": "unconnected-(U10-Pad45)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "45",
+          "038d6dc0-b5fb-476a-ae8a-e6f182a5f552"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "45",
+          "038d6dc0-b5fb-476a-ae8a-e6f182a5f552"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "47",
+      "padUuid": "1e093eda-ecfa-4f53-930d-ff00ce1130da",
+      "from": "47",
+      "to": "unconnected-(U10-Pad47)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "47",
+          "1e093eda-ecfa-4f53-930d-ff00ce1130da"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "47",
+          "1e093eda-ecfa-4f53-930d-ff00ce1130da"
+        ]
+      ]
+    },
+    {
+      "reference": "U10",
+      "pin": "48",
+      "padUuid": "d9a40a62-21fc-4095-87e9-918e05198505",
+      "from": "48",
+      "to": "unconnected-(U10-Pad48)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U10",
+          "48",
+          "d9a40a62-21fc-4095-87e9-918e05198505"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U10",
+          "48",
+          "d9a40a62-21fc-4095-87e9-918e05198505"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "1",
+      "padUuid": "8c013526-d606-4597-9ee9-b9bfa2a8cdda",
+      "from": "u12-1",
+      "to": "unconnected-(U12-Pad1)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "1",
+          "8c013526-d606-4597-9ee9-b9bfa2a8cdda"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "1",
+          "8c013526-d606-4597-9ee9-b9bfa2a8cdda"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "2",
+      "padUuid": "5a854d0d-8f11-4620-bf61-a5f1fd5c1f81",
+      "from": "u12-2",
+      "to": "unconnected-(U12-Pad2)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "2",
+          "5a854d0d-8f11-4620-bf61-a5f1fd5c1f81"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "2",
+          "5a854d0d-8f11-4620-bf61-a5f1fd5c1f81"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "10",
+      "padUuid": "3fa387ef-0285-405b-a5e8-66f5e5b70388",
+      "from": "u12-10",
+      "to": "unconnected-(U12-Pad10)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "10",
+          "3fa387ef-0285-405b-a5e8-66f5e5b70388"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "10",
+          "3fa387ef-0285-405b-a5e8-66f5e5b70388"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "11",
+      "padUuid": "df27a690-375a-4085-97a2-4bbaef19e500",
+      "from": "11",
+      "to": "unconnected-(U12-Pad11)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "11",
+          "df27a690-375a-4085-97a2-4bbaef19e500"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "11",
+          "df27a690-375a-4085-97a2-4bbaef19e500"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "12",
+      "padUuid": "9d9dba56-bb40-4829-b783-bc6383d677bd",
+      "from": "12",
+      "to": "unconnected-(U12-Pad12)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "12",
+          "9d9dba56-bb40-4829-b783-bc6383d677bd"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "12",
+          "9d9dba56-bb40-4829-b783-bc6383d677bd"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "13",
+      "padUuid": "fd83abf4-5770-46a8-9bb4-fbe63a40e4c2",
+      "from": "u12-13",
+      "to": "unconnected-(U12-Pad13)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "13",
+          "fd83abf4-5770-46a8-9bb4-fbe63a40e4c2"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "13",
+          "fd83abf4-5770-46a8-9bb4-fbe63a40e4c2"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "14",
+      "padUuid": "42c2d7d4-7b56-488d-83e4-8d7c45a4d495",
+      "from": "14",
+      "to": "unconnected-(U12-Pad14)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "14",
+          "42c2d7d4-7b56-488d-83e4-8d7c45a4d495"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "14",
+          "42c2d7d4-7b56-488d-83e4-8d7c45a4d495"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "15",
+      "padUuid": "6cc2a13f-a518-428c-b649-e1e7715baf2d",
+      "from": "15",
+      "to": "unconnected-(U12-Pad15)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "15",
+          "6cc2a13f-a518-428c-b649-e1e7715baf2d"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "15",
+          "6cc2a13f-a518-428c-b649-e1e7715baf2d"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "16",
+      "padUuid": "43288a8c-bd44-4645-91bb-69f4f607d345",
+      "from": "16",
+      "to": "unconnected-(U12-Pad16)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "16",
+          "43288a8c-bd44-4645-91bb-69f4f607d345"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "16",
+          "43288a8c-bd44-4645-91bb-69f4f607d345"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "17",
+      "padUuid": "7d0ba3c8-0098-46ae-95c3-71f9c66199ea",
+      "from": "17",
+      "to": "unconnected-(U12-Pad17)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "17",
+          "7d0ba3c8-0098-46ae-95c3-71f9c66199ea"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "17",
+          "7d0ba3c8-0098-46ae-95c3-71f9c66199ea"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "18",
+      "padUuid": "42f68f0d-0c1d-4d74-8b8c-91ad459fa5cf",
+      "from": "u12-18",
+      "to": "unconnected-(U12-Pad18)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "18",
+          "42f68f0d-0c1d-4d74-8b8c-91ad459fa5cf"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "18",
+          "42f68f0d-0c1d-4d74-8b8c-91ad459fa5cf"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "19",
+      "padUuid": "a51ee88b-8fcc-42c2-a37a-a51d678cd145",
+      "from": "19",
+      "to": "unconnected-(U12-Pad19)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "19",
+          "a51ee88b-8fcc-42c2-a37a-a51d678cd145"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "19",
+          "a51ee88b-8fcc-42c2-a37a-a51d678cd145"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "20",
+      "padUuid": "7da2a917-235f-4d89-8b8d-d83e2e58206a",
+      "from": "20",
+      "to": "unconnected-(U12-Pad20)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "20",
+          "7da2a917-235f-4d89-8b8d-d83e2e58206a"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "20",
+          "7da2a917-235f-4d89-8b8d-d83e2e58206a"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "21",
+      "padUuid": "b527c49d-723d-49f4-a45d-b1105ff57719",
+      "from": "u12-21",
+      "to": "unconnected-(U12-Pad21)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "21",
+          "b527c49d-723d-49f4-a45d-b1105ff57719"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "21",
+          "b527c49d-723d-49f4-a45d-b1105ff57719"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "22",
+      "padUuid": "c9b77c15-70d1-46ea-b1d0-16a1eba8a1e1",
+      "from": "u12-22",
+      "to": "unconnected-(U12-Pad22)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "22",
+          "c9b77c15-70d1-46ea-b1d0-16a1eba8a1e1"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "22",
+          "c9b77c15-70d1-46ea-b1d0-16a1eba8a1e1"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "23",
+      "padUuid": "5d2505c8-d785-463c-900e-0f29d183904d",
+      "from": "23",
+      "to": "unconnected-(U12-Pad23)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "23",
+          "5d2505c8-d785-463c-900e-0f29d183904d"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "23",
+          "5d2505c8-d785-463c-900e-0f29d183904d"
+        ]
+      ]
+    },
+    {
+      "reference": "U12",
+      "pin": "27",
+      "padUuid": "dcf2d0df-ad1d-4cc0-b542-c58ab2bacf9f",
+      "from": "u12-27",
+      "to": "unconnected-(U12-Pad27)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U12",
+          "27",
+          "dcf2d0df-ad1d-4cc0-b542-c58ab2bacf9f"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U12",
+          "27",
+          "dcf2d0df-ad1d-4cc0-b542-c58ab2bacf9f"
+        ]
+      ]
+    },
+    {
+      "reference": "U17",
+      "pin": "1",
+      "padUuid": "6799a329-6c63-433b-be86-a11b3949ba2c",
+      "from": "u17-1",
+      "to": "unconnected-(U17-Pad1)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U17",
+          "1",
+          "6799a329-6c63-433b-be86-a11b3949ba2c"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U17",
+          "1",
+          "6799a329-6c63-433b-be86-a11b3949ba2c"
+        ]
+      ]
+    },
+    {
+      "reference": "U18",
+      "pin": "1",
+      "padUuid": "ec516aea-5b4d-45ba-8a7c-8c69ddc00a2d",
+      "from": "u18-1",
+      "to": "unconnected-(U18-Pad1)",
+      "authoritativeNoConnect": true,
+      "authoritativeNet": null,
+      "beforeEndpoints": [
+        [
+          "U18",
+          "1",
+          "ec516aea-5b4d-45ba-8a7c-8c69ddc00a2d"
+        ]
+      ],
+      "afterEndpoints": [
+        [
+          "U18",
+          "1",
+          "ec516aea-5b4d-45ba-8a7c-8c69ddc00a2d"
+        ]
+      ]
+    }
+  ]
+}

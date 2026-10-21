@@ -1,0 +1,9 @@
+requires-atopile: '0.15.9'
+paths:
+  src: ./elec/src
+  layout: ./elec/layout
+builds:
+  v240:
+    entry: elec/src/main.ato:ChryslerScannerV240
+    paths:
+      layout: /Users/justinkobely/Downloads/ChryslerCCDSCIScanner_V140/elec/layout/v240/v240.kicad_pcb

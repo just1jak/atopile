@@ -1,0 +1,2149 @@
+{
+  "C38.2": {
+    "filledIslandRegions": 1,
+    "options": [
+      {
+        "xy": [
+          128.3375,
+          138.4375
+        ],
+        "distanceMm": 0.14142,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          128.2875,
+          138.3875
+        ],
+        "distanceMm": 0.15811,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          128.3875,
+          138.4875
+        ],
+        "distanceMm": 0.15811,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          128.2875,
+          138.4375
+        ],
+        "distanceMm": 0.18028,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          128.3375,
+          138.4875
+        ],
+        "distanceMm": 0.18028,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          128.2375,
+          138.3375
+        ],
+        "distanceMm": 0.2,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          128.4375,
+          138.5375
+        ],
+        "distanceMm": 0.2,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          128.2375,
+          138.2875
+        ],
+        "distanceMm": 0.20616,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          128.2375,
+          138.3875
+        ],
+        "distanceMm": 0.20616,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          128.3875,
+          138.5375
+        ],
+        "distanceMm": 0.20616,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          128.2875,
+          138.4875
+        ],
+        "distanceMm": 0.21213,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          128.2375,
+          138.4375
+        ],
+        "distanceMm": 0.22361,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "54c7227c-eb75-5f12-a84a-02c7fa595d0d",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.758549,
+              138.078651
+            ],
+            "end": [
+              128.358549,
+              138.478651
+            ]
+          },
+          {
+            "uuid": "dc89ca8d-b70e-5d1e-89ae-bb3534fc8b4b",
+            "net": "TX12_EN",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              128.358549,
+              138.478651
+            ],
+            "end": [
+              128.358549,
+              139.178651
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "C57.2": {
+    "filledIslandRegions": 1,
+    "options": [
+      {
+        "xy": [
+          171.175,
+          135.275
+        ],
+        "distanceMm": 0.75,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": []
+      },
+      {
+        "xy": [
+          171.375,
+          135.375
+        ],
+        "distanceMm": 0.97082,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "7ca2bc72-a6fb-4f0d-98e4-d1fba540b67b",
+            "net": "+5V",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              172.6425,
+              135.75
+            ],
+            "end": [
+              171.4814,
+              134.5889
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          171.375,
+          135.425
+        ],
+        "distanceMm": 1.0,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "7ca2bc72-a6fb-4f0d-98e4-d1fba540b67b",
+            "net": "+5V",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              172.6425,
+              135.75
+            ],
+            "end": [
+              171.4814,
+              134.5889
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          171.425,
+          135.375
+        ],
+        "distanceMm": 1.01242,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "7ca2bc72-a6fb-4f0d-98e4-d1fba540b67b",
+            "net": "+5V",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              172.6425,
+              135.75
+            ],
+            "end": [
+              171.4814,
+              134.5889
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          171.425,
+          135.425
+        ],
+        "distanceMm": 1.04043,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "7ca2bc72-a6fb-4f0d-98e4-d1fba540b67b",
+            "net": "+5V",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              172.6425,
+              135.75
+            ],
+            "end": [
+              171.4814,
+              134.5889
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          171.475,
+          135.375
+        ],
+        "distanceMm": 1.05475,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "7ca2bc72-a6fb-4f0d-98e4-d1fba540b67b",
+            "net": "+5V",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              172.6425,
+              135.75
+            ],
+            "end": [
+              171.4814,
+              134.5889
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          171.425,
+          135.475
+        ],
+        "distanceMm": 1.07005,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "7ca2bc72-a6fb-4f0d-98e4-d1fba540b67b",
+            "net": "+5V",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              172.6425,
+              135.75
+            ],
+            "end": [
+              171.4814,
+              134.5889
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          171.475,
+          135.425
+        ],
+        "distanceMm": 1.08167,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "7ca2bc72-a6fb-4f0d-98e4-d1fba540b67b",
+            "net": "+5V",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              172.6425,
+              135.75
+            ],
+            "end": [
+              171.4814,
+              134.5889
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          171.475,
+          135.475
+        ],
+        "distanceMm": 1.11018,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "7ca2bc72-a6fb-4f0d-98e4-d1fba540b67b",
+            "net": "+5V",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              172.6425,
+              135.75
+            ],
+            "end": [
+              171.4814,
+              134.5889
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          171.475,
+          135.525
+        ],
+        "distanceMm": 1.14018,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "7ca2bc72-a6fb-4f0d-98e4-d1fba540b67b",
+            "net": "+5V",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              172.6425,
+              135.75
+            ],
+            "end": [
+              171.4814,
+              134.5889
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          171.125,
+          135.275
+        ],
+        "distanceMm": 0.71063,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "35146132-b459-4bcd-a596-7679a7be115a",
+            "net": "VBB_TO_TX6",
+            "layer": "In2.Cu",
+            "widthMm": 0.2,
+            "start": [
+              160.1202,
+              125.0136
+            ],
+            "end": [
+              171.4166,
+              136.31
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          171.275,
+          135.325
+        ],
+        "distanceMm": 0.86023,
+        "requiresFilledCappedViaInOwnPad": true,
+        "groundNeck": null,
+        "blockingTracks": [
+          {
+            "uuid": "7ca2bc72-a6fb-4f0d-98e4-d1fba540b67b",
+            "net": "+5V",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              172.6425,
+              135.75
+            ],
+            "end": [
+              171.4814,
+              134.5889
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "C60.2": {
+    "filledIslandRegions": 1,
+    "options": [
+      {
+        "xy": [
+          188.725,
+          133.9
+        ],
+        "distanceMm": 1.80278,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              188.725,
+              133.9
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "00c1b17d-72f3-4bcf-85ab-fe5fc9367a1f",
+            "net": "+5V",
+            "layer": "F.Cu",
+            "widthMm": 0.5,
+            "start": [
+              189.325,
+              132.5
+            ],
+            "end": [
+              189.325,
+              135.5
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          188.725,
+          133.85
+        ],
+        "distanceMm": 1.84459,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              188.725,
+              133.85
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "00c1b17d-72f3-4bcf-85ab-fe5fc9367a1f",
+            "net": "+5V",
+            "layer": "F.Cu",
+            "widthMm": 0.5,
+            "start": [
+              189.325,
+              132.5
+            ],
+            "end": [
+              189.325,
+              135.5
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          188.675,
+          133.85
+        ],
+        "distanceMm": 1.87216,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              188.675,
+              133.85
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "00c1b17d-72f3-4bcf-85ab-fe5fc9367a1f",
+            "net": "+5V",
+            "layer": "F.Cu",
+            "widthMm": 0.5,
+            "start": [
+              189.325,
+              132.5
+            ],
+            "end": [
+              189.325,
+              135.5
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          190.075,
+          134.4
+        ],
+        "distanceMm": 1.05948,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              190.075,
+              134.4
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "4d674bba-9a0b-4c87-bb32-f29ec0422560",
+            "net": "EN",
+            "layer": "In2.Cu",
+            "widthMm": 0.2,
+            "start": [
+              190.2498,
+              144.5047
+            ],
+            "end": [
+              190.2498,
+              131.2239
+            ]
+          },
+          {
+            "uuid": "815db229-e901-4beb-9a69-915d81a79d86",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              190.236,
+              134.5219
+            ],
+            "end": [
+              190.6015,
+              134.8874
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          190.075,
+          134.35
+        ],
+        "distanceMm": 1.1068,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              190.075,
+              134.35
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "4d674bba-9a0b-4c87-bb32-f29ec0422560",
+            "net": "EN",
+            "layer": "In2.Cu",
+            "widthMm": 0.2,
+            "start": [
+              190.2498,
+              144.5047
+            ],
+            "end": [
+              190.2498,
+              131.2239
+            ]
+          },
+          {
+            "uuid": "815db229-e901-4beb-9a69-915d81a79d86",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              190.236,
+              134.5219
+            ],
+            "end": [
+              190.6015,
+              134.8874
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          190.125,
+          134.35
+        ],
+        "distanceMm": 1.12361,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              190.125,
+              134.35
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "4d674bba-9a0b-4c87-bb32-f29ec0422560",
+            "net": "EN",
+            "layer": "In2.Cu",
+            "widthMm": 0.2,
+            "start": [
+              190.2498,
+              144.5047
+            ],
+            "end": [
+              190.2498,
+              131.2239
+            ]
+          },
+          {
+            "uuid": "815db229-e901-4beb-9a69-915d81a79d86",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              190.236,
+              134.5219
+            ],
+            "end": [
+              190.6015,
+              134.8874
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          190.075,
+          134.3
+        ],
+        "distanceMm": 1.15434,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              190.075,
+              134.3
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "4d674bba-9a0b-4c87-bb32-f29ec0422560",
+            "net": "EN",
+            "layer": "In2.Cu",
+            "widthMm": 0.2,
+            "start": [
+              190.2498,
+              144.5047
+            ],
+            "end": [
+              190.2498,
+              131.2239
+            ]
+          },
+          {
+            "uuid": "815db229-e901-4beb-9a69-915d81a79d86",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              190.236,
+              134.5219
+            ],
+            "end": [
+              190.6015,
+              134.8874
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          190.125,
+          134.3
+        ],
+        "distanceMm": 1.17047,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              190.125,
+              134.3
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "4d674bba-9a0b-4c87-bb32-f29ec0422560",
+            "net": "EN",
+            "layer": "In2.Cu",
+            "widthMm": 0.2,
+            "start": [
+              190.2498,
+              144.5047
+            ],
+            "end": [
+              190.2498,
+              131.2239
+            ]
+          },
+          {
+            "uuid": "815db229-e901-4beb-9a69-915d81a79d86",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              190.236,
+              134.5219
+            ],
+            "end": [
+              190.6015,
+              134.8874
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          190.175,
+          134.3
+        ],
+        "distanceMm": 1.18849,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              190.175,
+              134.3
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "4d674bba-9a0b-4c87-bb32-f29ec0422560",
+            "net": "EN",
+            "layer": "In2.Cu",
+            "widthMm": 0.2,
+            "start": [
+              190.2498,
+              144.5047
+            ],
+            "end": [
+              190.2498,
+              131.2239
+            ]
+          },
+          {
+            "uuid": "815db229-e901-4beb-9a69-915d81a79d86",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              190.236,
+              134.5219
+            ],
+            "end": [
+              190.6015,
+              134.8874
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          190.075,
+          134.25
+        ],
+        "distanceMm": 1.20208,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              190.075,
+              134.25
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "4d674bba-9a0b-4c87-bb32-f29ec0422560",
+            "net": "EN",
+            "layer": "In2.Cu",
+            "widthMm": 0.2,
+            "start": [
+              190.2498,
+              144.5047
+            ],
+            "end": [
+              190.2498,
+              131.2239
+            ]
+          },
+          {
+            "uuid": "815db229-e901-4beb-9a69-915d81a79d86",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              190.236,
+              134.5219
+            ],
+            "end": [
+              190.6015,
+              134.8874
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          190.125,
+          134.25
+        ],
+        "distanceMm": 1.21758,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              190.125,
+              134.25
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "4d674bba-9a0b-4c87-bb32-f29ec0422560",
+            "net": "EN",
+            "layer": "In2.Cu",
+            "widthMm": 0.2,
+            "start": [
+              190.2498,
+              144.5047
+            ],
+            "end": [
+              190.2498,
+              131.2239
+            ]
+          },
+          {
+            "uuid": "815db229-e901-4beb-9a69-915d81a79d86",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              190.236,
+              134.5219
+            ],
+            "end": [
+              190.6015,
+              134.8874
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          190.175,
+          134.25
+        ],
+        "distanceMm": 1.23491,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              189.725,
+              135.4
+            ],
+            [
+              190.175,
+              134.25
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "c6d6065d-75d9-45bb-8ad5-aef176227016",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              188.0531,
+              134.5219
+            ],
+            "end": [
+              190.236,
+              134.5219
+            ]
+          },
+          {
+            "uuid": "4d674bba-9a0b-4c87-bb32-f29ec0422560",
+            "net": "EN",
+            "layer": "In2.Cu",
+            "widthMm": 0.2,
+            "start": [
+              190.2498,
+              144.5047
+            ],
+            "end": [
+              190.2498,
+              131.2239
+            ]
+          },
+          {
+            "uuid": "815db229-e901-4beb-9a69-915d81a79d86",
+            "net": "SD_3V3",
+            "layer": "B.Cu",
+            "widthMm": 0.5,
+            "start": [
+              190.236,
+              134.5219
+            ],
+            "end": [
+              190.6015,
+              134.8874
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "J4.SH": {
+    "filledIslandRegions": 1,
+    "options": [
+      {
+        "xy": [
+          183.725,
+          137.725
+        ],
+        "distanceMm": 2.02608,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.725,
+              137.725
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          183.675,
+          137.775
+        ],
+        "distanceMm": 2.06155,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.675,
+              137.775
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          183.675,
+          137.725
+        ],
+        "distanceMm": 2.07425,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.675,
+              137.725
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          183.625,
+          137.825
+        ],
+        "distanceMm": 2.09881,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.625,
+              137.825
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          183.625,
+          137.775
+        ],
+        "distanceMm": 2.11009,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.625,
+              137.775
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          183.625,
+          137.725
+        ],
+        "distanceMm": 2.1225,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.625,
+              137.725
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          183.575,
+          137.875
+        ],
+        "distanceMm": 2.13776,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.575,
+              137.875
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          183.575,
+          137.825
+        ],
+        "distanceMm": 2.14767,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.575,
+              137.825
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          183.575,
+          137.775
+        ],
+        "distanceMm": 2.1587,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.575,
+              137.775
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          183.575,
+          137.725
+        ],
+        "distanceMm": 2.17083,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.575,
+              137.725
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          183.525,
+          137.875
+        ],
+        "distanceMm": 2.18689,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.525,
+              137.875
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      },
+      {
+        "xy": [
+          183.525,
+          137.825
+        ],
+        "distanceMm": 2.19659,
+        "requiresFilledCappedViaInOwnPad": false,
+        "groundNeck": {
+          "layer": "B.Cu",
+          "widthMm": 0.25,
+          "points": [
+            [
+              185.675,
+              138.275
+            ],
+            [
+              183.525,
+              137.825
+            ]
+          ]
+        },
+        "blockingTracks": [
+          {
+            "uuid": "129af44d-9a24-470f-bcaa-09854bda114c",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              136.225
+            ],
+            "end": [
+              184.0,
+              138.056
+            ]
+          },
+          {
+            "uuid": "4dee1b37-8103-5144-a4c2-010b5e43e5c0",
+            "net": "SD_DAT2",
+            "layer": "B.Cu",
+            "widthMm": 0.2,
+            "start": [
+              184.0,
+              138.056
+            ],
+            "end": [
+              184.0,
+              138.356
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

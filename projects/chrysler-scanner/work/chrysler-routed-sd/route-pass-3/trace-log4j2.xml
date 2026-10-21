@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN"><Appenders><Console name="progress" target="SYSTEM_OUT"><RegexFilter regex="(?i).*(pass |passes|autorout|optim|incomplete|routed|duration).*" onMatch="ACCEPT" onMismatch="DENY"/><PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %msg%n"/></Console></Appenders><Loggers><Root level="ALL"><AppenderRef ref="progress" level="TRACE"/></Root></Loggers></Configuration>

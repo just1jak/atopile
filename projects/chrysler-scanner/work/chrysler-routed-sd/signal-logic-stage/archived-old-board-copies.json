@@ -1,0 +1,33 @@
+{
+  "scope": "Reversible compression of superseded routing work copies only; all source bytes verified and retained in gzip; latest full-ground boards and live helper inputs unchanged",
+  "boards": [
+    {
+      "file": "work/chrysler-routed-sd/signal-logic-stage/native4logic/ChryslerScanner_V240_SD.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/signal-logic-stage/native4logic/ChryslerScanner_V240_SD.kicad_pcb.gz",
+      "original_bytes": 2739799,
+      "gzip_bytes": 568914,
+      "sha256_uncompressed": "f4844cb68fc2bf8b717d4353cb18ba7efbc182d1e2691bdab4b5b13d7a777ef3"
+    },
+    {
+      "file": "work/chrysler-routed-sd/signal-logic-stage/native5/ChryslerScanner_V240_SD.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/signal-logic-stage/native5/ChryslerScanner_V240_SD.kicad_pcb.gz",
+      "original_bytes": 2720113,
+      "gzip_bytes": 564454,
+      "sha256_uncompressed": "200ea42f02e2801d806df5eb9ed93a85a6603c1002ac61e24614f274989f3f30"
+    },
+    {
+      "file": "work/chrysler-routed-sd/signal-logic-stage/native5-stitched/ChryslerScanner_V240_SD.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/signal-logic-stage/native5-stitched/ChryslerScanner_V240_SD.kicad_pcb.gz",
+      "original_bytes": 2727928,
+      "gzip_bytes": 565879,
+      "sha256_uncompressed": "e91f9041e65c3366900e52df23e768f1672a523e6ab2ce1250c401867627b0c4"
+    },
+    {
+      "file": "work/chrysler-routed-sd/signal-logic-stage/native6/ChryslerScanner_V240_SD.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/signal-logic-stage/native6/ChryslerScanner_V240_SD.kicad_pcb.gz",
+      "original_bytes": 1589168,
+      "gzip_bytes": 288759,
+      "sha256_uncompressed": "2215e2eb6c7e9db4d046d53979e81226429c2d703222b95dca6b7c3455fb96ab"
+    }
+  ]
+}

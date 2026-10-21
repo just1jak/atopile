@@ -1,0 +1,27 @@
+{"engineViolations":34,"initial":{"VPP":0,"+3.3V":0,"PCI_TX":0,"V_PR":0,"RX2":0,"RX15_EN":0,"TX_LED":1,"ACT_LED":0,"LOG_BUTTON":0,"RX1":0,"VBB_TO_TX14":0}}
+{"pass":3,"net":"TX_LED","reference":"U10","pin":"15","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":3,"net":"RX7_BIAS_EN","reference":"U19","pin":"16","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":3,"net":"V_BT","reference":"U10","pin":"10","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":3,"net":"SD_MISO","reference":"U10","pin":"5","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"net":"+3.3V","repairRound":1,"after":1,"route":"ROUTED","accepted":true,"before":2}
+{"net":"PCI_TX","repairRound":1,"after":1,"route":"ROUTED","accepted":false,"before":1}
+{"net":"PCI_TX","repairRound":1,"after":0,"route":"ROUTED","accepted":true,"before":1}
+{"net":"V_PR","repairRound":1,"after":0,"route":"ROUTED","accepted":true,"before":1}
+{"net":"RX15_EN","repairRound":1,"after":0,"route":"ROUTED","accepted":true,"before":1}
+{"net":"+3.3V","repairRound":2,"after":0,"route":"ALREADY_CONNECTED","accepted":true,"before":1}
+{"passComplete":3,"approvedNonGroundMissing":3,"queuedMissingNets":{"RX7_BIAS_EN":1,"V_BT":1,"TX_LED":1},"nonTargetRestored":true,"nonGroundMissing":3}
+{"pass":4,"net":"V_BT","reference":"U10","pin":"10","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":4,"net":"RX7_BIAS_EN","reference":"U19","pin":"16","fanout":"NOT_ROUTED","route":"INSERT_ERROR","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":4,"net":"RX7_BIAS_EN","reference":"Q6","pin":"2","fanout":"NOT_ROUTED","route":"NOT_ROUTED","before":1,"after":1,"accepted":false,"rejected":"no improvement or new escape via"}
+{"pass":4,"net":"TX_LED","reference":"U10","pin":"15","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":4,"net":"V_PR","reference":"U10","pin":"11","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":4,"net":"PCI_TX","reference":"U10","pin":"16","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"passComplete":4,"approvedNonGroundMissing":3,"queuedMissingNets":{"RX7_BIAS_EN":1,"V_BT":1,"TX_LED":1},"nonTargetRestored":true,"nonGroundMissing":3}
+{"pass":5,"net":"TX_LED","reference":"U10","pin":"15","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":5,"net":"RX7_BIAS_EN","reference":"U19","pin":"16","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"pass":5,"net":"V_BT","reference":"U10","pin":"10","fanout":"NOT_ROUTED","route":"ROUTED","before":1,"after":0,"accepted":true}
+{"net":"PCI_TX","repairRound":1,"after":0,"route":"ROUTED","accepted":true,"before":1}
+{"net":"V_PR","repairRound":1,"after":0,"route":"ROUTED","accepted":true,"before":1}
+{"net":"RX15_EN","repairRound":1,"after":0,"route":"ROUTED","accepted":true,"before":1}
+{"passComplete":5,"approvedNonGroundMissing":3,"queuedMissingNets":{"RX7_BIAS_EN":1,"V_BT":1,"TX_LED":1},"nonTargetRestored":true,"nonGroundMissing":3}
+{"summary":true,"inputSha256":"9b348977731ca291169fc7ebffe6cad4d00718b8f66c7740596a62d098913f63","initial":{"VPP":0,"+3.3V":0,"PCI_TX":0,"V_PR":0,"RX2":0,"RX15_EN":0,"TX_LED":1,"ACT_LED":0,"LOG_BUTTON":0,"RX1":0,"VBB_TO_TX14":0},"final":{"VPP":0,"+3.3V":0,"PCI_TX":0,"V_PR":0,"RX2":0,"RX15_EN":0,"TX_LED":1,"ACT_LED":0,"LOG_BUTTON":0,"RX1":0,"VBB_TO_TX14":0},"improved":true,"allRemainingNonGroundNets":{"RX7_BIAS_EN":1,"V_BT":1,"TX_LED":1},"beforeNonGroundMissing":4,"afterNonGroundMissing":3,"attempts":13,"accepted":19,"engineAirwires":65,"engineViolations":34,"nonTargetConnectivityPreserved":true,"groundBefore":61,"groundAfter":62,"protectedItemsPreserved":836,"placementsPreserved":263,"exactFixedCenterlineCoverage":true,"timeBudgetReached":false}

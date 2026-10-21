@@ -1,0 +1,242 @@
+Reference,SchematicValue,OrderableHint,Manufacturer,Footprint,DNP,PackageReview
+AE1,ANT3216LL00R2400A,ANT3216LL00R2400A,Yageo,ANT3216LL00R2400A,False,verify chosen orderable package against BOM
+C1,100μF,100μF,Generic,CP_Radial_D8.0mm_P3.50mm,False,package choice: verify 100uF 50V diameter/height
+C2,10μF,10μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C3,10μF,10μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C4,10μF,10μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C5,0.1μF,0.1μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C6,22μF,22μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C7,10μF,10μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C8,22μF,22μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C9,10μF,10μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C10,22μF,22μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C11,0.1μF,0.1μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C12,220pF,220pF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C13,10μF,10μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C14,22μF,22μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C15,10μF,10μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C16,10μF,10μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C17,0.1μF,0.1μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C18,22μF,22μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C19,10μF,10μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C20,10μF,10μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C21,0.1μF,0.1μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C22,22μF,22μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C23,10μF,10μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C24,22μF,22μF,Generic,C_1206_3216Metric,False,package choice: verify voltage/DC bias
+C25,220pF,220pF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C26,10μF,10μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C27,10μF,10μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C28,10μF,10μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C29,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C30,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C31,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C32,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C33,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C34,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C35,10μF,10μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C36,220pF,220pF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C37,220pF,220pF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C38,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C39,220pF,220pF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C40,220pF,220pF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C41,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C42,220pF,220pF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C43,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C44,220pF,220pF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C45,1μF,1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C46,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C47,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C48,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C49,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C50,220pF,220pF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C51,220pF,220pF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C52,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C53,220pF,220pF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C54,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C55,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C56,10μF,10μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+C57,0.1μF,0.1μF,Generic,C_0603_1608Metric,False,package choice: verify voltage/DC bias
+D1,SMBJ30CA,SMBJ30CA,Generic,D_SMB,False,package choice: verify exact diode suffix
+D2,SS56,SS56,Generic,D_SMB,False,package choice: verify exact diode suffix
+D3,LMBR130T1G,LMBR130T1G,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D4,DSK34,DSK34,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D5,DSK34,DSK34,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D6,DSK34,DSK34,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D7,DSK34,DSK34,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D8,DSK34,DSK34,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D9,DSK34,DSK34,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D10,DSK34,DSK34,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D11,MSK4005,MSK4005,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D12,ESD5Z12V,ESD5Z12V,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D13,ESD5Z12V,ESD5Z12V,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D14,ESD5Z12V,ESD5Z12V,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D15,MSK4005,MSK4005,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D16,MSK4005,MSK4005,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D17,MSK4005,MSK4005,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D18,MSK4005,MSK4005,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D19,MSK4005,MSK4005,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D20,MSK4005,MSK4005,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D21,MSK4005,MSK4005,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D22,MSK4005,MSK4005,Generic,D_SOD-123,False,package choice: verify exact diode suffix
+D23,RED,RED,Generic,LED_V140_Reference,False,retained Gerber geometry
+D24,YELLOW,YELLOW,Generic,LED_V140_Reference,False,retained Gerber geometry
+D25,GREEN,GREEN,Generic,LED_V140_Reference,False,retained Gerber geometry
+D26,BLUE,BLUE,Generic,LED_V140_Reference,False,retained Gerber geometry
+D27,ESD5Z3V3,ESD5Z3V3,Generic,D_SOD-323,False,package choice: verify exact diode suffix
+D28,ESD5Z3V3,ESD5Z3V3,Generic,D_SOD-323,False,package choice: verify exact diode suffix
+D29,ESD5Z3V3,ESD5Z3V3,Generic,D_SOD-323,False,package choice: verify exact diode suffix
+J1,226A-1202,226A-1202,ATTEND,OBDII_ATTEND_226A-1202,False,"Manufacturer drawing rev 2: 4 mm pitch, 3 mm tail-row spacing, 1.35 mm drills, 2.35 mm pads. Pin 1 upper-left, mating face left. PCB edge moved 0.15 mm outward relative to recommended layout for 0.325 mm copper clearance."
+J2,USB-C,USB4105-GF-A,GCT,USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,False,16-contact USB 2.0 receptacle; standard 0.95 mm shell stakes; KiCad footprint checked against GCT USB4105 drawing revision B4.
+J3,I2C,I2C,Generic,PinHeader_2x03_P2.54mm_Vertical,False,verify chosen orderable package against BOM
+JP1,SGND,SGND,Generic,SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm,False,verify chosen orderable package against BOM
+JP2,USBPWRBYP,USBPWRBYP,Generic,SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm,False,verify chosen orderable package against BOM
+L1,22µH,22µH,Generic,L_7.3x7.3_H3.5,False,22uH package provisional: >=1.7A per schematic
+L2,22µH,22µH,Generic,L_7.3x7.3_H3.5,False,22uH package provisional: >=1.7A per schematic
+L3,240nH,240nH,Generic,R_1206_3216Metric,False,ferrite/inductor package provisional: verify impedance/current
+L4,22µH,22µH,Generic,L_7.3x7.3_H3.5,False,22uH package provisional: >=1.7A per schematic
+L5,470nH,470nH,Generic,R_1206_3216Metric,False,ferrite/inductor package provisional: verify impedance/current
+L6,22µH,22µH,Generic,L_7.3x7.3_H3.5,False,22uH package provisional: >=1.7A per schematic
+Q1,CJ3439KDW,CJ3439KDW,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q2,2N7002DW,2N7002DW,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q3,2N7002DW,2N7002DW,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q4,2N7002DW,2N7002DW,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q5,UMH3N,UMH3N,ROHM,SOT-363_SC-70-6,False,package choice: verify manufacturer suffix
+Q6,CJ3439KDW,CJ3439KDW,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q7,HSSK8811,HSSK8811,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q8,HSW4602,HSW4602,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q9,HSW4602,HSW4602,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q10,HSW4602,HSW4602,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q11,HSW4602,HSW4602,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q12,HSW4602,HSW4602,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q13,HSW4602,HSW4602,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q14,HSW4602,HSW4602,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q15,HSW4602,HSW4602,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q16,CJ3439KDW,CJ3439KDW,Generic,SOT-23-6,False,package choice: verify manufacturer suffix
+Q17,AO3400,AO3400,Generic,SOT-23,False,package choice: verify manufacturer suffix
+Q18,AO3400,AO3400,Generic,SOT-23,False,package choice: verify manufacturer suffix
+Q19,AO3400,AO3400,Generic,SOT-23,False,package choice: verify manufacturer suffix
+Q20,AO3400,AO3400,Generic,SOT-23,False,package choice: verify manufacturer suffix
+R1,100kΩ,100kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R2,68kΩ,68kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R3,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R4,2kΩ,2kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R5,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R6,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R7,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R8,110kΩ,110kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R9,6.8kΩ,6.8kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R10,100kΩ,100kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R11,158kΩ,158kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R12,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R13,100kΩ,100kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R14,100kΩ,100kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R15,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R16,82.5kΩ,82.5kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R17,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R18,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R19,360Ω,360Ω,Generic,R_1206_3216Metric,False,package choice: verify power/voltage/tolerance
+R20,1kΩ,1kΩ,Generic,R_1206_3216Metric,False,package choice: verify power/voltage/tolerance
+R21,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R22,0Ω,0Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R23,nc,nc,Generic,R_0603_1608Metric,True,package choice: verify power/voltage/tolerance
+R24,nc,nc,Generic,R_0603_1608Metric,True,package choice: verify power/voltage/tolerance
+R25,499Ω,499Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R26,22kΩ,22kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R27,47kΩ,47kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R28,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R29,4.7kΩ,4.7kΩ,Generic,R_1206_3216Metric,False,package choice: verify power/voltage/tolerance
+R30,4.7kΩ,4.7kΩ,Generic,R_1206_3216Metric,False,package choice: verify power/voltage/tolerance
+R31,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R32,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R33,4.7kΩ,4.7kΩ,Generic,R_1206_3216Metric,False,package choice: verify power/voltage/tolerance
+R34,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R36,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R37,4.7kΩ,4.7kΩ,Generic,R_1206_3216Metric,False,package choice: verify power/voltage/tolerance
+R38,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R39,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R40,4.7kΩ,4.7kΩ,Generic,R_1206_3216Metric,False,package choice: verify power/voltage/tolerance
+R41,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R42,1kΩ,1kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R43,4.7kΩ,4.7kΩ,Generic,R_1206_3216Metric,False,package choice: verify power/voltage/tolerance
+R44,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R45,1kΩ,1kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R46,4.7kΩ,4.7kΩ,Generic,R_1206_3216Metric,False,package choice: verify power/voltage/tolerance
+R47,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R48,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R49,8.66kΩ,8.66kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R50,1.62kΩ,1.62kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R51,8.66kΩ,8.66kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R52,1.62kΩ,1.62kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R53,18.2kΩ,18.2kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R54,1.62kΩ,1.62kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R55,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R56,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R57,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R58,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R59,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R60,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R61,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R62,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R63,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R64,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R65,1.1kΩ,1.1kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R66,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R67,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R68,1.1kΩ,1.1kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R69,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R70,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R71,1.1kΩ,1.1kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R72,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R73,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R74,1.1kΩ,1.1kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R75,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R76,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R77,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R78,13kΩ,13kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R79,120Ω,120Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R80,13kΩ,13kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R81,10Ω,10Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R82,10Ω,10Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R83,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R84,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R85,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R86,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R87,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R88,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R89,470Ω,470Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R90,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R91,300Ω,300Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R92,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R93,1kΩ,1kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R94,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R95,470Ω,470Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R96,10kΩ,10kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R97,4.7kΩ,4.7kΩ,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R98,100Ω,100Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R99,100Ω,100Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R100,360Ω,360Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R101,360Ω,360Ω,Generic,R_0603_1608Metric,False,package choice: verify power/voltage/tolerance
+R102,5.1kΩ,RC0603FR-075K1L,Yageo,R_0603_1608Metric,False,"5.1 kohm, 1%, 0603, CC1-to-GND Rd termination; independent from CC2."
+R103,5.1kΩ,RC0603FR-075K1L,Yageo,R_0603_1608Metric,False,"5.1 kohm, 1%, 0603, CC2-to-GND Rd termination; independent from CC1."
+SW1,RESET,RESET,E-Switch,SW_SPST_TL3305A,False,verify chosen orderable package against BOM
+SW2,BOOT,BOOT,E-Switch,SW_SPST_TL3305A,False,verify chosen orderable package against BOM
+U1,SY6283,SY6283DRC,Silergy,SY6283_DFN4,False,Gerber or manufacturer dimensions
+U2,LMR14010,LMR14010,Texas Instruments,SOT-23-6,False,verify chosen orderable package against BOM
+U3,TLV76750DRV,TLV76750DRV,Texas Instruments,WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm,False,verify chosen orderable package against BOM
+U4,TLV76733DRV,TLV76733DRV,Texas Instruments,WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm,False,verify chosen orderable package against BOM
+U5,LGS6302,LGS6302B5,Legend-Si,SOT-23-5,False,verify chosen orderable package against BOM
+U6,LMR14010,LMR14010,Texas Instruments,SOT-23-6,False,verify chosen orderable package against BOM
+U7,LMR14010,LMR14010,Texas Instruments,SOT-23-6,False,verify chosen orderable package against BOM
+U8,TLV76701DRV,TLV76701DRV,Texas Instruments,WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm,False,verify chosen orderable package against BOM
+U9,TS391C,TS391ILT,STMicroelectronics,SOT-23-5,False,verify chosen orderable package against BOM
+U10,ESP32-PICO-V3-02,ESP32-PICO-V3-02,Espressif,ESP32_PICO_V3_02,False,Gerber or manufacturer dimensions
+U11,USBLC6-2SC6,USBLC6-2SC6,STMicroelectronics,USBLC6_V140_Reference,False,Gerber or manufacturer dimensions
+U12,CP2102,CP2102,Silicon Labs,CP2102_V140_Reference,False,Gerber or manufacturer dimensions
+U13,74LVC2G66,74LVC2G66DP,Nexperia,VSSOP-8_2.3x2mm_P0.5mm,False,verify chosen orderable package against BOM
+U14,74LVC2G66,74LVC2G66DP,Nexperia,VSSOP-8_2.3x2mm_P0.5mm,False,verify chosen orderable package against BOM
+U15,74LVC2G66,74LVC2G66DP,Nexperia,VSSOP-8_2.3x2mm_P0.5mm,False,verify chosen orderable package against BOM
+U16,TS391C,TS391ILT,STMicroelectronics,SOT-23-5,False,verify chosen orderable package against BOM
+U17,74LVC1G17,74LVC1G17,Nexperia,SOT-23-5,False,verify chosen orderable package against BOM
+U18,74LVC1G14,74LVC1G14,Nexperia,SOT-23-5,False,verify chosen orderable package against BOM
+U19,AW9523B,AW9523BTQR,Awinic,AW9523B_QFN24,False,Gerber or manufacturer dimensions

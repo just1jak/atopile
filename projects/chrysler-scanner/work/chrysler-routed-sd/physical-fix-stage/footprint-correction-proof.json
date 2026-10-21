@@ -1,0 +1,1920 @@
+{
+  "source": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-integrated-sd/pcb-stage/ChryslerScanner_V240_SD.kicad_pcb",
+  "sourceSha256": "7eb9e1a94a9ad4c71e47d1c7245f232716e6905fbe046c4cd940806cf378af65",
+  "pcb": "ChryslerScanner_V240_SD.kicad_pcb",
+  "pcbSha256": "f2b5c36611bb8ea9b47a6f21de91bd04ad656ecaa4f75047ede9a9424269604e",
+  "footprintsPreserved": 263,
+  "originalPadUUIDsPreserved": 817,
+  "allElectricalNetEndpointSetsExact": true,
+  "allFootprintAnchorsAnglesPathsModelsAndLocksExact": true,
+  "allOtherPadsUnchanged": true,
+  "allOutlineDrawingsKeepoutAndPlaneDefinitionsExact": true,
+  "addedPasteOnlyPads": [
+    "e88eeab1-d6c5-5693-a3ab-98bab8e111e7",
+    "c2a69820-e119-58ee-9895-80169dced2b4",
+    "80089048-a131-5d4a-86f1-d67719008e79",
+    "9a5f38cb-5e4f-5c33-abba-ded9ccaf2077",
+    "50fe36e1-f960-5546-82fc-51b7a72a9bb2",
+    "0006968c-df7b-55e9-a528-2cf22d2b77ea",
+    "1918ed54-0516-5a40-8295-ae974605b6d2",
+    "a0e69656-9968-50f8-8155-a7e414a84fff",
+    "31a8af15-3124-509d-a31d-2a13e235e649"
+  ],
+  "addedGroundVia": {
+    "uuid": "27aa1a71-49fe-5c2c-965e-2ca4e46969c3",
+    "positionMM": [
+      178.5,
+      113.5
+    ],
+    "diameterMM": 0.6,
+    "drillMM": 0.3,
+    "net": "GND",
+    "purpose": "Join retained In1/In2 ground reference planes"
+  },
+  "CP2102ManufacturerURL": "https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf",
+  "GCTManufacturerURL": "https://gct.co/files/drawings/usb4105.pdf",
+  "changes": [
+    {
+      "reference": "U12",
+      "pad": "1",
+      "uuid": "8c013526-d606-4597-9ee9-b9bfa2a8cdda",
+      "before": {
+        "number": "1",
+        "xy": [
+          202479982,
+          116940018
+        ],
+        "local": [
+          -2500000,
+          -1500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad1)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "1",
+        "xy": [
+          202479982,
+          116840018
+        ],
+        "local": [
+          -2400000,
+          -1500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad1)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "2",
+      "uuid": "5a854d0d-8f11-4620-bf61-a5f1fd5c1f81",
+      "before": {
+        "number": "2",
+        "xy": [
+          202979982,
+          116940018
+        ],
+        "local": [
+          -2500000,
+          -1000000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad2)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "2",
+        "xy": [
+          202979982,
+          116840018
+        ],
+        "local": [
+          -2400000,
+          -1000000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad2)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "3",
+      "uuid": "3296ba1d-9923-477f-8f8d-c47c027700aa",
+      "before": {
+        "number": "3",
+        "xy": [
+          203479982,
+          116940018
+        ],
+        "local": [
+          -2500000,
+          -500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "GND",
+        "mask": "None"
+      },
+      "after": {
+        "number": "3",
+        "xy": [
+          203479982,
+          116840018
+        ],
+        "local": [
+          -2400000,
+          -500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "GND",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "4",
+      "uuid": "4b8c8c9a-cfd9-4a67-b62d-775a66d5fb1c",
+      "before": {
+        "number": "4",
+        "xy": [
+          203979982,
+          116940018
+        ],
+        "local": [
+          -2500000,
+          0
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "D+P",
+        "mask": "None"
+      },
+      "after": {
+        "number": "4",
+        "xy": [
+          203979982,
+          116840018
+        ],
+        "local": [
+          -2400000,
+          0
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "D+P",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "5",
+      "uuid": "c417599c-e30d-4bf5-80a5-fef2cf35128b",
+      "before": {
+        "number": "5",
+        "xy": [
+          204479982,
+          116940018
+        ],
+        "local": [
+          -2500000,
+          500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "D-P",
+        "mask": "None"
+      },
+      "after": {
+        "number": "5",
+        "xy": [
+          204479982,
+          116840018
+        ],
+        "local": [
+          -2400000,
+          500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "D-P",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "6",
+      "uuid": "cb795ec7-61e8-47c0-a6fa-125ca547b7a3",
+      "before": {
+        "number": "6",
+        "xy": [
+          204979982,
+          116940018
+        ],
+        "local": [
+          -2500000,
+          1000000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "+3.3V",
+        "mask": "None"
+      },
+      "after": {
+        "number": "6",
+        "xy": [
+          204979982,
+          116840018
+        ],
+        "local": [
+          -2400000,
+          1000000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "+3.3V",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "7",
+      "uuid": "01e58086-0a73-41db-9aac-9b514e48a418",
+      "before": {
+        "number": "7",
+        "xy": [
+          205479982,
+          116940018
+        ],
+        "local": [
+          -2500000,
+          1500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "+3.3V",
+        "mask": "None"
+      },
+      "after": {
+        "number": "7",
+        "xy": [
+          205479982,
+          116840018
+        ],
+        "local": [
+          -2400000,
+          1500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "+3.3V",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "8",
+      "uuid": "41c7c52f-2e17-428a-b8e6-ae37d789f3b6",
+      "before": {
+        "number": "8",
+        "xy": [
+          206479982,
+          115940018
+        ],
+        "local": [
+          -1500000,
+          2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "N_R26_2",
+        "mask": "None"
+      },
+      "after": {
+        "number": "8",
+        "xy": [
+          206379982,
+          115940018
+        ],
+        "local": [
+          -1500000,
+          2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "N_R26_2",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "9",
+      "uuid": "ddb4af32-b4e8-4249-91fc-5737da8f767b",
+      "before": {
+        "number": "9",
+        "xy": [
+          206479982,
+          115440018
+        ],
+        "local": [
+          -1000000,
+          2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "N_R28_2",
+        "mask": "None"
+      },
+      "after": {
+        "number": "9",
+        "xy": [
+          206379982,
+          115440018
+        ],
+        "local": [
+          -1000000,
+          2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "N_R28_2",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "10",
+      "uuid": "3fa387ef-0285-405b-a5e8-66f5e5b70388",
+      "before": {
+        "number": "10",
+        "xy": [
+          206479982,
+          114940018
+        ],
+        "local": [
+          -500000,
+          2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad10)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "10",
+        "xy": [
+          206379982,
+          114940018
+        ],
+        "local": [
+          -500000,
+          2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad10)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "11",
+      "uuid": "df27a690-375a-4085-97a2-4bbaef19e500",
+      "before": {
+        "number": "11",
+        "xy": [
+          206479982,
+          114440018
+        ],
+        "local": [
+          0,
+          2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad11)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "11",
+        "xy": [
+          206379982,
+          114440018
+        ],
+        "local": [
+          0,
+          2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad11)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "12",
+      "uuid": "9d9dba56-bb40-4829-b783-bc6383d677bd",
+      "before": {
+        "number": "12",
+        "xy": [
+          206479982,
+          113940018
+        ],
+        "local": [
+          500000,
+          2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad12)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "12",
+        "xy": [
+          206379982,
+          113940018
+        ],
+        "local": [
+          500000,
+          2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad12)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "13",
+      "uuid": "fd83abf4-5770-46a8-9bb4-fbe63a40e4c2",
+      "before": {
+        "number": "13",
+        "xy": [
+          206479982,
+          113440018
+        ],
+        "local": [
+          1000000,
+          2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad13)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "13",
+        "xy": [
+          206379982,
+          113440018
+        ],
+        "local": [
+          1000000,
+          2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad13)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "14",
+      "uuid": "42c2d7d4-7b56-488d-83e4-8d7c45a4d495",
+      "before": {
+        "number": "14",
+        "xy": [
+          206479982,
+          112940018
+        ],
+        "local": [
+          1500000,
+          2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad14)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "14",
+        "xy": [
+          206379982,
+          112940018
+        ],
+        "local": [
+          1500000,
+          2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad14)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "15",
+      "uuid": "6cc2a13f-a518-428c-b649-e1e7715baf2d",
+      "before": {
+        "number": "15",
+        "xy": [
+          205479982,
+          111940018
+        ],
+        "local": [
+          2500000,
+          1500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad15)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "15",
+        "xy": [
+          205479982,
+          112040018
+        ],
+        "local": [
+          2400000,
+          1500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad15)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "16",
+      "uuid": "43288a8c-bd44-4645-91bb-69f4f607d345",
+      "before": {
+        "number": "16",
+        "xy": [
+          204979982,
+          111940018
+        ],
+        "local": [
+          2500000,
+          1000000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad16)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "16",
+        "xy": [
+          204979982,
+          112040018
+        ],
+        "local": [
+          2400000,
+          1000000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad16)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "17",
+      "uuid": "7d0ba3c8-0098-46ae-95c3-71f9c66199ea",
+      "before": {
+        "number": "17",
+        "xy": [
+          204479982,
+          111940018
+        ],
+        "local": [
+          2500000,
+          500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad17)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "17",
+        "xy": [
+          204479982,
+          112040018
+        ],
+        "local": [
+          2400000,
+          500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad17)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "18",
+      "uuid": "42f68f0d-0c1d-4d74-8b8c-91ad459fa5cf",
+      "before": {
+        "number": "18",
+        "xy": [
+          203979982,
+          111940018
+        ],
+        "local": [
+          2500000,
+          0
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad18)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "18",
+        "xy": [
+          203979982,
+          112040018
+        ],
+        "local": [
+          2400000,
+          0
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad18)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "19",
+      "uuid": "a51ee88b-8fcc-42c2-a37a-a51d678cd145",
+      "before": {
+        "number": "19",
+        "xy": [
+          203479982,
+          111940018
+        ],
+        "local": [
+          2500000,
+          -500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad19)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "19",
+        "xy": [
+          203479982,
+          112040018
+        ],
+        "local": [
+          2400000,
+          -500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad19)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "20",
+      "uuid": "7da2a917-235f-4d89-8b8d-d83e2e58206a",
+      "before": {
+        "number": "20",
+        "xy": [
+          202979982,
+          111940018
+        ],
+        "local": [
+          2500000,
+          -1000000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad20)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "20",
+        "xy": [
+          202979982,
+          112040018
+        ],
+        "local": [
+          2400000,
+          -1000000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad20)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "21",
+      "uuid": "b527c49d-723d-49f4-a45d-b1105ff57719",
+      "before": {
+        "number": "21",
+        "xy": [
+          202479982,
+          111940018
+        ],
+        "local": [
+          2500000,
+          -1500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          1518666,
+          318770
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad21)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "21",
+        "xy": [
+          202479982,
+          112040018
+        ],
+        "local": [
+          2400000,
+          -1500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          900000,
+          250000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad21)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "22",
+      "uuid": "c9b77c15-70d1-46ea-b1d0-16a1eba8a1e1",
+      "before": {
+        "number": "22",
+        "xy": [
+          201479982,
+          112940018
+        ],
+        "local": [
+          1500000,
+          -2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad22)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "22",
+        "xy": [
+          201579982,
+          112940018
+        ],
+        "local": [
+          1500000,
+          -2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad22)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "23",
+      "uuid": "5d2505c8-d785-463c-900e-0f29d183904d",
+      "before": {
+        "number": "23",
+        "xy": [
+          201479982,
+          113440018
+        ],
+        "local": [
+          1000000,
+          -2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad23)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "23",
+        "xy": [
+          201579982,
+          113440018
+        ],
+        "local": [
+          1000000,
+          -2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad23)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "24",
+      "uuid": "da04133e-ffce-4ded-9959-9934b5e3c2e2",
+      "before": {
+        "number": "24",
+        "xy": [
+          201479982,
+          113940018
+        ],
+        "local": [
+          500000,
+          -2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "RTS",
+        "mask": "None"
+      },
+      "after": {
+        "number": "24",
+        "xy": [
+          201579982,
+          113940018
+        ],
+        "local": [
+          500000,
+          -2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "RTS",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "25",
+      "uuid": "40cb6e6c-0d74-4130-bed6-6a6cedec10a0",
+      "before": {
+        "number": "25",
+        "xy": [
+          201479982,
+          114440018
+        ],
+        "local": [
+          0,
+          -2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "TX0",
+        "mask": "None"
+      },
+      "after": {
+        "number": "25",
+        "xy": [
+          201579982,
+          114440018
+        ],
+        "local": [
+          0,
+          -2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "TX0",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "26",
+      "uuid": "601fad3c-37ef-42ba-9535-369306114f72",
+      "before": {
+        "number": "26",
+        "xy": [
+          201479982,
+          114940018
+        ],
+        "local": [
+          -500000,
+          -2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "RX0",
+        "mask": "None"
+      },
+      "after": {
+        "number": "26",
+        "xy": [
+          201579982,
+          114940018
+        ],
+        "local": [
+          -500000,
+          -2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "RX0",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "27",
+      "uuid": "dcf2d0df-ad1d-4cc0-b542-c58ab2bacf9f",
+      "before": {
+        "number": "27",
+        "xy": [
+          201479982,
+          115440018
+        ],
+        "local": [
+          -1000000,
+          -2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad27)",
+        "mask": "None"
+      },
+      "after": {
+        "number": "27",
+        "xy": [
+          201579982,
+          115440018
+        ],
+        "local": [
+          -1000000,
+          -2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "unconnected-(U12-Pad27)",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "28",
+      "uuid": "175ee8e3-5a40-4f3c-8e5c-98198656e51c",
+      "before": {
+        "number": "28",
+        "xy": [
+          201479982,
+          115940018
+        ],
+        "local": [
+          -1500000,
+          -2500000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          318770,
+          1518666
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "DTR",
+        "mask": "None"
+      },
+      "after": {
+        "number": "28",
+        "xy": [
+          201579982,
+          115940018
+        ],
+        "local": [
+          -1500000,
+          -2400000
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          250000,
+          900000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "DTR",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "U12",
+      "pad": "29",
+      "uuid": "f37b1c84-42bd-419f-8ca7-7e5aee0d1bd6",
+      "before": {
+        "number": "29",
+        "xy": [
+          203979982,
+          114440018
+        ],
+        "local": [
+          0,
+          0
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          2801620,
+          2801620
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "GND",
+        "mask": "None"
+      },
+      "after": {
+        "number": "29",
+        "xy": [
+          203979982,
+          114440018
+        ],
+        "local": [
+          0,
+          0
+        ],
+        "angle": 90.0,
+        "shape": 1,
+        "size": [
+          3300000,
+          3300000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00000003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "GND",
+        "mask": "60000"
+      }
+    },
+    {
+      "reference": "J2",
+      "pad": "A1",
+      "uuid": "6e3ebec7-83a3-4d91-8905-4b765cecbe9a",
+      "before": {
+        "number": "A1",
+        "xy": [
+          202645000,
+          132200000
+        ],
+        "local": [
+          -3200000,
+          -3680000
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "size": [
+          600000,
+          1150000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "GND",
+        "mask": "25000"
+      },
+      "after": {
+        "number": "A1",
+        "xy": [
+          202645000,
+          132200000
+        ],
+        "local": [
+          -3200000,
+          -3680000
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "size": [
+          600000,
+          1150000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.4166666667,
+        "net": "GND",
+        "mask": "25000"
+      }
+    },
+    {
+      "reference": "J2",
+      "pad": "A12",
+      "uuid": "202e60a7-76af-4458-b990-25ff72340931",
+      "before": {
+        "number": "A12",
+        "xy": [
+          202645000,
+          125800000
+        ],
+        "local": [
+          3200000,
+          -3680000
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "size": [
+          600000,
+          1150000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "GND",
+        "mask": "25000"
+      },
+      "after": {
+        "number": "A12",
+        "xy": [
+          202645000,
+          125800000
+        ],
+        "local": [
+          3200000,
+          -3680000
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "size": [
+          600000,
+          1150000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.4166666667,
+        "net": "GND",
+        "mask": "25000"
+      }
+    },
+    {
+      "reference": "J2",
+      "pad": "B1",
+      "uuid": "9186e189-4f60-4225-9538-5b0db14606e6",
+      "before": {
+        "number": "B1",
+        "xy": [
+          202645000,
+          125800000
+        ],
+        "local": [
+          3200000,
+          -3680000
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "size": [
+          600000,
+          1150000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "GND",
+        "mask": "25000"
+      },
+      "after": {
+        "number": "B1",
+        "xy": [
+          202645000,
+          125800000
+        ],
+        "local": [
+          3200000,
+          -3680000
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "size": [
+          600000,
+          1150000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.4166666667,
+        "net": "GND",
+        "mask": "25000"
+      }
+    },
+    {
+      "reference": "J2",
+      "pad": "B12",
+      "uuid": "4cb58fa9-1918-4541-89bb-74fe8b7edf8b",
+      "before": {
+        "number": "B12",
+        "xy": [
+          202645000,
+          132200000
+        ],
+        "local": [
+          -3200000,
+          -3680000
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "size": [
+          600000,
+          1150000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.25,
+        "net": "GND",
+        "mask": "25000"
+      },
+      "after": {
+        "number": "B12",
+        "xy": [
+          202645000,
+          132200000
+        ],
+        "local": [
+          -3200000,
+          -3680000
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "size": [
+          600000,
+          1150000
+        ],
+        "drill": [
+          0,
+          0
+        ],
+        "layers": "00000000_00000000_00000000_00002003",
+        "attribute": 1,
+        "roundRatio": 0.4166666667,
+        "net": "GND",
+        "mask": "25000"
+      }
+    }
+  ],
+  "routingComplete": false
+}

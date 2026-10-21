@@ -2,7 +2,7 @@
   "name": "atopile-local",
   "displayName": "Atopile Local",
   "description": "Local circuit design with ChatGPT, KiCad schematics, and PCB inspection.",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "publisher": "local-atopile",
   "repository": {
     "type": "git",

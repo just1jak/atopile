@@ -1,0 +1,23 @@
+{
+  "size_before_mm": [
+    100,
+    50
+  ],
+  "size_after_mm": [
+    110,
+    55
+  ],
+  "area_increase_percent": 21,
+  "critical_links_preserved": 41,
+  "rigid_clusters": 201,
+  "inter_cluster_neighbors_under_025mm_before": 109,
+  "inter_cluster_neighbors_under_025mm_after": 1,
+  "minimum_inter_cluster_gap_mm": 0.19,
+  "original_obd_drill_locations_retained": true,
+  "routing_complete": false,
+  "critical_pairs_relative_placement_independently_checked": true,
+  "original_local_pad_and_paste_geometry_preserved_footprints": 245,
+  "original_component_rotations_preserved": true,
+  "pcb_sha256": "4c8f7dfa2a95fb8fa6879874c2f06246c110fe0322cce19e5fc7cb2764e9a2cb",
+  "applies_to": "Board enlargement phase before ATTEND J1 replacement; historical snapshot"
+}

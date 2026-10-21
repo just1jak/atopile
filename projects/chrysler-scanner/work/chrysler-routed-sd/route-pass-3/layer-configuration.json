@@ -1,0 +1,7 @@
+{
+  "source": "work/chrysler-routed-sd/route-pass-3/strict-ascii.dsn",
+  "input_sha256": "da05833cc1fad70fdceaece70d2c06939e5b61883f8c10e68a1eecac6d9313d5",
+  "output_sha256": "febb8f41853d5b94a044f3d3c54bbbca45cf4db135c19f1ee5b588b16f29341b",
+  "dsn_only_type_change": "In2.Cu signal-active; In1.Cu continuous GND power plane preserved",
+  "all_other_dsn_bytes_identical": true
+}

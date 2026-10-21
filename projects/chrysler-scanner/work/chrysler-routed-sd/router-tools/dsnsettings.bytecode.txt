@@ -1,0 +1,517 @@
+Compiled from "AutorouteSettings.java"
+public class app.freerouting.designforms.specctra.AutorouteSettings {
+  public app.freerouting.designforms.specctra.AutorouteSettings();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  static app.freerouting.interactive.AutorouteSettings read_scope(app.freerouting.designforms.specctra.IJFlexScanner, app.freerouting.designforms.specctra.LayerStructure);
+    Code:
+       0: new           #7                  // class app/freerouting/interactive/AutorouteSettings
+       3: dup
+       4: aload_1
+       5: getfield      #9                  // Field app/freerouting/designforms/specctra/LayerStructure.arr:[Lapp/freerouting/designforms/specctra/Layer;
+       8: arraylength
+       9: invokespecial #15                 // Method app/freerouting/interactive/AutorouteSettings."<init>":(I)V
+      12: astore_2
+      13: iconst_0
+      14: istore_3
+      15: iconst_1
+      16: istore        4
+      18: iconst_1
+      19: istore        5
+      21: aconst_null
+      22: astore        6
+      24: aload         6
+      26: astore        7
+      28: aload_0
+      29: invokeinterface #18,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+      34: astore        6
+      36: goto          50
+      39: astore        8
+      41: ldc           #26                 // String AutorouteSettings.read_scope: IO error scanning file
+      43: aload         8
+      45: invokestatic  #28                 // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+      48: aconst_null
+      49: areturn
+      50: aload         6
+      52: ifnonnull     71
+      55: aload_0
+      56: invokeinterface #34,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+      61: invokedynamic #38,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      66: invokestatic  #42                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      69: aconst_null
+      70: areturn
+      71: aload         6
+      73: getstatic     #46                 // Field app/freerouting/designforms/specctra/Keyword.CLOSED_BRACKET:Lapp/freerouting/designforms/specctra/Keyword;
+      76: if_acmpne     82
+      79: goto          264
+      82: aload         7
+      84: getstatic     #52                 // Field app/freerouting/designforms/specctra/Keyword.OPEN_BRACKET:Lapp/freerouting/designforms/specctra/Keyword;
+      87: if_acmpne     261
+      90: aload         6
+      92: getstatic     #55                 // Field app/freerouting/designforms/specctra/Keyword.FANOUT:Lapp/freerouting/designforms/specctra/Keyword;
+      95: if_acmpne     106
+      98: aload_0
+      99: invokestatic  #58                 // Method app/freerouting/designforms/specctra/DsnFile.read_on_off_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)Z
+     102: istore_3
+     103: goto          261
+     106: aload         6
+     108: getstatic     #64                 // Field app/freerouting/designforms/specctra/Keyword.AUTOROUTE:Lapp/freerouting/designforms/specctra/Keyword;
+     111: if_acmpne     123
+     114: aload_0
+     115: invokestatic  #58                 // Method app/freerouting/designforms/specctra/DsnFile.read_on_off_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)Z
+     118: istore        4
+     120: goto          261
+     123: aload         6
+     125: getstatic     #67                 // Field app/freerouting/designforms/specctra/Keyword.POSTROUTE:Lapp/freerouting/designforms/specctra/Keyword;
+     128: if_acmpne     140
+     131: aload_0
+     132: invokestatic  #58                 // Method app/freerouting/designforms/specctra/DsnFile.read_on_off_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)Z
+     135: istore        5
+     137: goto          261
+     140: aload         6
+     142: getstatic     #70                 // Field app/freerouting/designforms/specctra/Keyword.VIAS:Lapp/freerouting/designforms/specctra/Keyword;
+     145: if_acmpne     159
+     148: aload_2
+     149: aload_0
+     150: invokestatic  #58                 // Method app/freerouting/designforms/specctra/DsnFile.read_on_off_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)Z
+     153: invokevirtual #73                 // Method app/freerouting/interactive/AutorouteSettings.set_vias_allowed:(Z)V
+     156: goto          261
+     159: aload         6
+     161: getstatic     #77                 // Field app/freerouting/designforms/specctra/Keyword.VIA_COSTS:Lapp/freerouting/designforms/specctra/Keyword;
+     164: if_acmpne     178
+     167: aload_2
+     168: aload_0
+     169: invokestatic  #80                 // Method app/freerouting/designforms/specctra/DsnFile.read_integer_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)I
+     172: invokevirtual #84                 // Method app/freerouting/interactive/AutorouteSettings.set_via_costs:(I)V
+     175: goto          261
+     178: aload         6
+     180: getstatic     #87                 // Field app/freerouting/designforms/specctra/Keyword.PLANE_VIA_COSTS:Lapp/freerouting/designforms/specctra/Keyword;
+     183: if_acmpne     197
+     186: aload_2
+     187: aload_0
+     188: invokestatic  #80                 // Method app/freerouting/designforms/specctra/DsnFile.read_integer_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)I
+     191: invokevirtual #90                 // Method app/freerouting/interactive/AutorouteSettings.set_plane_via_costs:(I)V
+     194: goto          261
+     197: aload         6
+     199: getstatic     #93                 // Field app/freerouting/designforms/specctra/Keyword.START_RIPUP_COSTS:Lapp/freerouting/designforms/specctra/Keyword;
+     202: if_acmpne     216
+     205: aload_2
+     206: aload_0
+     207: invokestatic  #80                 // Method app/freerouting/designforms/specctra/DsnFile.read_integer_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)I
+     210: invokevirtual #96                 // Method app/freerouting/interactive/AutorouteSettings.set_start_ripup_costs:(I)V
+     213: goto          261
+     216: aload         6
+     218: getstatic     #99                 // Field app/freerouting/designforms/specctra/Keyword.START_PASS_NO:Lapp/freerouting/designforms/specctra/Keyword;
+     221: if_acmpne     235
+     224: aload_2
+     225: aload_0
+     226: invokestatic  #80                 // Method app/freerouting/designforms/specctra/DsnFile.read_integer_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)I
+     229: invokevirtual #102                // Method app/freerouting/interactive/AutorouteSettings.set_start_pass_no:(I)V
+     232: goto          261
+     235: aload         6
+     237: getstatic     #105                // Field app/freerouting/designforms/specctra/Keyword.LAYER_RULE:Lapp/freerouting/designforms/specctra/Keyword;
+     240: if_acmpne     256
+     243: aload_0
+     244: aload_1
+     245: aload_2
+     246: invokestatic  #108                // Method read_layer_rule:(Lapp/freerouting/designforms/specctra/IJFlexScanner;Lapp/freerouting/designforms/specctra/LayerStructure;Lapp/freerouting/interactive/AutorouteSettings;)Lapp/freerouting/interactive/AutorouteSettings;
+     249: astore_2
+     250: aload_2
+     251: ifnonnull     261
+     254: aconst_null
+     255: areturn
+     256: aload_0
+     257: invokestatic  #114                // Method app/freerouting/designforms/specctra/ScopeKeyword.skip_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)Z
+     260: pop
+     261: goto          24
+     264: aload_2
+     265: iload_3
+     266: invokevirtual #119                // Method app/freerouting/interactive/AutorouteSettings.set_with_fanout:(Z)V
+     269: aload_2
+     270: iload         4
+     272: invokevirtual #122                // Method app/freerouting/interactive/AutorouteSettings.set_with_autoroute:(Z)V
+     275: aload_2
+     276: iload         5
+     278: invokevirtual #125                // Method app/freerouting/interactive/AutorouteSettings.set_with_postroute:(Z)V
+     281: aload_2
+     282: areturn
+    Exception table:
+       from    to  target type
+          28    36    39   Class java/io/IOException
+
+  static app.freerouting.interactive.AutorouteSettings read_layer_rule(app.freerouting.designforms.specctra.IJFlexScanner, app.freerouting.designforms.specctra.LayerStructure, app.freerouting.interactive.AutorouteSettings);
+    Code:
+       0: aload_0
+       1: iconst_3
+       2: invokeinterface #130,  2          // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.yybegin:(I)V
+       7: aload_0
+       8: invokeinterface #18,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+      13: astore_3
+      14: goto          28
+      17: astore        4
+      19: ldc           #133                // String AutorouteSettings.read_layer_rule: IO error scanning file
+      21: aload         4
+      23: invokestatic  #28                 // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+      26: aconst_null
+      27: areturn
+      28: aload_3
+      29: instanceof    #135                // class java/lang/String
+      32: ifne          51
+      35: aload_0
+      36: invokeinterface #34,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+      41: invokedynamic #137,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      46: invokestatic  #42                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      49: aconst_null
+      50: areturn
+      51: aload_1
+      52: aload_3
+      53: checkcast     #135                // class java/lang/String
+      56: invokevirtual #138                // Method app/freerouting/designforms/specctra/LayerStructure.get_no:(Ljava/lang/String;)I
+      59: istore        4
+      61: iload         4
+      63: ifge          82
+      66: aload_0
+      67: invokeinterface #34,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+      72: invokedynamic #142,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      77: invokestatic  #42                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      80: aconst_null
+      81: areturn
+      82: aload_3
+      83: astore        5
+      85: aload_0
+      86: invokeinterface #18,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+      91: astore_3
+      92: goto          106
+      95: astore        6
+      97: ldc           #133                // String AutorouteSettings.read_layer_rule: IO error scanning file
+      99: aload         6
+     101: invokestatic  #28                 // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+     104: aconst_null
+     105: areturn
+     106: aload_3
+     107: ifnonnull     126
+     110: aload_0
+     111: invokeinterface #34,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+     116: invokedynamic #143,  0            // InvokeDynamic #3:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     121: invokestatic  #42                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+     124: aconst_null
+     125: areturn
+     126: aload_3
+     127: getstatic     #46                 // Field app/freerouting/designforms/specctra/Keyword.CLOSED_BRACKET:Lapp/freerouting/designforms/specctra/Keyword;
+     130: if_acmpne     136
+     133: goto          317
+     136: aload         5
+     138: getstatic     #52                 // Field app/freerouting/designforms/specctra/Keyword.OPEN_BRACKET:Lapp/freerouting/designforms/specctra/Keyword;
+     141: if_acmpne     314
+     144: aload_3
+     145: getstatic     #144                // Field app/freerouting/designforms/specctra/Keyword.ACTIVE:Lapp/freerouting/designforms/specctra/Keyword;
+     148: if_acmpne     164
+     151: aload_2
+     152: iload         4
+     154: aload_0
+     155: invokestatic  #58                 // Method app/freerouting/designforms/specctra/DsnFile.read_on_off_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)Z
+     158: invokevirtual #147                // Method app/freerouting/interactive/AutorouteSettings.set_layer_active:(IZ)V
+     161: goto          314
+     164: aload_3
+     165: getstatic     #151                // Field app/freerouting/designforms/specctra/Keyword.PREFERRED_DIRECTION:Lapp/freerouting/designforms/specctra/Keyword;
+     168: if_acmpne     269
+     171: iconst_1
+     172: istore        6
+     174: aload_0
+     175: invokeinterface #18,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+     180: astore_3
+     181: aload_3
+     182: getstatic     #154                // Field app/freerouting/designforms/specctra/Keyword.VERTICAL:Lapp/freerouting/designforms/specctra/Keyword;
+     185: if_acmpne     194
+     188: iconst_0
+     189: istore        6
+     191: goto          217
+     194: aload_3
+     195: getstatic     #157                // Field app/freerouting/designforms/specctra/Keyword.HORIZONTAL:Lapp/freerouting/designforms/specctra/Keyword;
+     198: if_acmpeq     217
+     201: aload_0
+     202: invokeinterface #34,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+     207: invokedynamic #160,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     212: invokestatic  #42                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+     215: aconst_null
+     216: areturn
+     217: aload_2
+     218: iload         4
+     220: iload         6
+     222: invokevirtual #161                // Method app/freerouting/interactive/AutorouteSettings.set_preferred_direction_is_horizontal:(IZ)V
+     225: aload_0
+     226: invokeinterface #18,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+     231: astore_3
+     232: aload_3
+     233: getstatic     #46                 // Field app/freerouting/designforms/specctra/Keyword.CLOSED_BRACKET:Lapp/freerouting/designforms/specctra/Keyword;
+     236: if_acmpeq     255
+     239: aload_0
+     240: invokeinterface #34,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+     245: invokedynamic #164,  0            // InvokeDynamic #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     250: invokestatic  #42                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+     253: aconst_null
+     254: areturn
+     255: goto          314
+     258: astore        6
+     260: ldc           #133                // String AutorouteSettings.read_layer_rule: IO error scanning file
+     262: aload         6
+     264: invokestatic  #28                 // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+     267: aconst_null
+     268: areturn
+     269: aload_3
+     270: getstatic     #165                // Field app/freerouting/designforms/specctra/Keyword.PREFERRED_DIRECTION_TRACE_COSTS:Lapp/freerouting/designforms/specctra/Keyword;
+     273: if_acmpne     289
+     276: aload_2
+     277: iload         4
+     279: aload_0
+     280: invokestatic  #168                // Method app/freerouting/designforms/specctra/DsnFile.read_float_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)D
+     283: invokevirtual #172                // Method app/freerouting/interactive/AutorouteSettings.set_preferred_direction_trace_costs:(ID)V
+     286: goto          314
+     289: aload_3
+     290: getstatic     #176                // Field app/freerouting/designforms/specctra/Keyword.AGAINST_PREFERRED_DIRECTION_TRACE_COSTS:Lapp/freerouting/designforms/specctra/Keyword;
+     293: if_acmpne     309
+     296: aload_2
+     297: iload         4
+     299: aload_0
+     300: invokestatic  #168                // Method app/freerouting/designforms/specctra/DsnFile.read_float_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)D
+     303: invokevirtual #179                // Method app/freerouting/interactive/AutorouteSettings.set_against_preferred_direction_trace_costs:(ID)V
+     306: goto          314
+     309: aload_0
+     310: invokestatic  #114                // Method app/freerouting/designforms/specctra/ScopeKeyword.skip_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)Z
+     313: pop
+     314: goto          82
+     317: aload_2
+     318: areturn
+    Exception table:
+       from    to  target type
+           7    14    17   Class java/io/IOException
+          85    92    95   Class java/io/IOException
+         171   216   258   Class java/io/IOException
+         217   254   258   Class java/io/IOException
+
+  static void write_scope(app.freerouting.datastructures.IndentFileWriter, app.freerouting.interactive.AutorouteSettings, app.freerouting.board.LayerStructure, app.freerouting.datastructures.IdentifierType) throws java.io.IOException;
+    Code:
+       0: aload_0
+       1: invokevirtual #182                // Method app/freerouting/datastructures/IndentFileWriter.start_scope:()V
+       4: aload_0
+       5: ldc           #187                // String autoroute_settings
+       7: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+      10: aload_0
+      11: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+      14: aload_0
+      15: ldc           #195                // String (fanout
+      17: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+      20: aload_1
+      21: invokevirtual #197                // Method app/freerouting/interactive/AutorouteSettings.get_with_fanout:()Z
+      24: ifeq          36
+      27: aload_0
+      28: ldc           #201                // String on)
+      30: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+      33: goto          42
+      36: aload_0
+      37: ldc           #203                // String off)
+      39: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+      42: aload_0
+      43: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+      46: aload_0
+      47: ldc           #205                // String (autoroute
+      49: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+      52: aload_1
+      53: invokevirtual #207                // Method app/freerouting/interactive/AutorouteSettings.get_with_autoroute:()Z
+      56: ifeq          68
+      59: aload_0
+      60: ldc           #201                // String on)
+      62: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+      65: goto          74
+      68: aload_0
+      69: ldc           #203                // String off)
+      71: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+      74: aload_0
+      75: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+      78: aload_0
+      79: ldc           #210                // String (postroute
+      81: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+      84: aload_1
+      85: invokevirtual #212                // Method app/freerouting/interactive/AutorouteSettings.get_with_postroute:()Z
+      88: ifeq          100
+      91: aload_0
+      92: ldc           #201                // String on)
+      94: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+      97: goto          106
+     100: aload_0
+     101: ldc           #203                // String off)
+     103: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     106: aload_0
+     107: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+     110: aload_0
+     111: ldc           #215                // String (vias
+     113: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     116: aload_1
+     117: invokevirtual #217                // Method app/freerouting/interactive/AutorouteSettings.get_vias_allowed:()Z
+     120: ifeq          132
+     123: aload_0
+     124: ldc           #201                // String on)
+     126: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     129: goto          138
+     132: aload_0
+     133: ldc           #203                // String off)
+     135: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     138: aload_0
+     139: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+     142: aload_0
+     143: ldc           #220                // String (via_costs
+     145: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     148: aload_1
+     149: invokevirtual #222                // Method app/freerouting/interactive/AutorouteSettings.get_via_costs:()I
+     152: istore        4
+     154: aload_0
+     155: iload         4
+     157: invokestatic  #226                // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+     160: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     163: aload_0
+     164: ldc           #230                // String )
+     166: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     169: aload_0
+     170: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+     173: aload_0
+     174: ldc           #232                // String (plane_via_costs
+     176: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     179: aload_1
+     180: invokevirtual #234                // Method app/freerouting/interactive/AutorouteSettings.get_plane_via_costs:()I
+     183: istore        4
+     185: aload_0
+     186: iload         4
+     188: invokestatic  #226                // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+     191: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     194: aload_0
+     195: ldc           #230                // String )
+     197: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     200: aload_0
+     201: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+     204: aload_0
+     205: ldc           #237                // String (start_ripup_costs
+     207: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     210: aload_1
+     211: invokevirtual #239                // Method app/freerouting/interactive/AutorouteSettings.get_start_ripup_costs:()I
+     214: istore        4
+     216: aload_0
+     217: iload         4
+     219: invokestatic  #226                // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+     222: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     225: aload_0
+     226: ldc           #230                // String )
+     228: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     231: aload_0
+     232: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+     235: aload_0
+     236: ldc           #242                // String (start_pass_no
+     238: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     241: aload_1
+     242: invokevirtual #244                // Method app/freerouting/interactive/AutorouteSettings.get_start_pass_no:()I
+     245: istore        4
+     247: aload_0
+     248: iload         4
+     250: invokestatic  #226                // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+     253: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     256: aload_0
+     257: ldc           #230                // String )
+     259: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     262: iconst_0
+     263: istore        4
+     265: iload         4
+     267: aload_2
+     268: getfield      #247                // Field app/freerouting/board/LayerStructure.arr:[Lapp/freerouting/board/Layer;
+     271: arraylength
+     272: if_icmpge     456
+     275: aload_2
+     276: getfield      #247                // Field app/freerouting/board/LayerStructure.arr:[Lapp/freerouting/board/Layer;
+     279: iload         4
+     281: aaload
+     282: astore        5
+     284: aload_0
+     285: invokevirtual #182                // Method app/freerouting/datastructures/IndentFileWriter.start_scope:()V
+     288: aload_0
+     289: ldc           #252                // String layer_rule
+     291: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     294: aload_3
+     295: aload         5
+     297: getfield      #254                // Field app/freerouting/board/Layer.name:Ljava/lang/String;
+     300: aload_0
+     301: invokevirtual #260                // Method app/freerouting/datastructures/IdentifierType.write:(Ljava/lang/String;Ljava/io/OutputStreamWriter;)V
+     304: aload_0
+     305: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+     308: aload_0
+     309: ldc_w         #265                // String (active
+     312: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     315: aload_1
+     316: iload         4
+     318: invokevirtual #267                // Method app/freerouting/interactive/AutorouteSettings.get_layer_active:(I)Z
+     321: ifeq          333
+     324: aload_0
+     325: ldc           #201                // String on)
+     327: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     330: goto          339
+     333: aload_0
+     334: ldc           #203                // String off)
+     336: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     339: aload_0
+     340: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+     343: aload_0
+     344: ldc_w         #271                // String (preferred_direction
+     347: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     350: aload_1
+     351: iload         4
+     353: invokevirtual #273                // Method app/freerouting/interactive/AutorouteSettings.get_preferred_direction_is_horizontal:(I)Z
+     356: ifeq          369
+     359: aload_0
+     360: ldc_w         #276                // String horizontal)
+     363: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     366: goto          376
+     369: aload_0
+     370: ldc_w         #278                // String vertical)
+     373: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     376: aload_0
+     377: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+     380: aload_0
+     381: ldc_w         #280                // String (preferred_direction_trace_costs
+     384: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     387: aload_1
+     388: iload         4
+     390: invokevirtual #282                // Method app/freerouting/interactive/AutorouteSettings.get_preferred_direction_trace_costs:(I)D
+     393: d2f
+     394: fstore        6
+     396: aload_0
+     397: fload         6
+     399: invokestatic  #286                // Method java/lang/String.valueOf:(F)Ljava/lang/String;
+     402: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     405: aload_0
+     406: ldc           #230                // String )
+     408: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     411: aload_0
+     412: invokevirtual #192                // Method app/freerouting/datastructures/IndentFileWriter.new_line:()V
+     415: aload_0
+     416: ldc_w         #289                // String (against_preferred_direction_trace_costs
+     419: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     422: aload_1
+     423: iload         4
+     425: invokevirtual #291                // Method app/freerouting/interactive/AutorouteSettings.get_against_preferred_direction_trace_costs:(I)D
+     428: d2f
+     429: fstore        6
+     431: aload_0
+     432: fload         6
+     434: invokestatic  #286                // Method java/lang/String.valueOf:(F)Ljava/lang/String;
+     437: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     440: aload_0
+     441: ldc           #230                // String )
+     443: invokevirtual #189                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+     446: aload_0
+     447: invokevirtual #294                // Method app/freerouting/datastructures/IndentFileWriter.end_scope:()V
+     450: iinc          4, 1
+     453: goto          265
+     456: aload_0
+     457: invokevirtual #294                // Method app/freerouting/datastructures/IndentFileWriter.end_scope:()V
+     460: return
+}

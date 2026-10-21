@@ -1,0 +1,138 @@
+{
+  "scope": "Compile, read-only DSN parse and32guard/unit tests; no routing or native board writes",
+  "inputDsnSha256": "9877d490b21aaf1b64820abaf4e7b78892dba2b3a068099904d2bb8c4debe4d2",
+  "runs": [
+    {
+      "program": "javac",
+      "arguments": [
+        "-cp",
+        "<verified-freerouting-1.9.0.jar>",
+        "-d",
+        "./.verify/classes",
+        "./source/router-tools/AnchorSearch.java",
+        "./source/router-tools/AnchoredEscape.java",
+        "./source/router-tools/CheckpointToSes.java",
+        "./source/router-tools/DsnToCore.java",
+        "./source/router-tools/EscapeHints.java",
+        "./source/router-tools/ExportAnchoredSes.java",
+        "./source/router-tools/GroundFanout.java",
+        "./source/router-tools/GroundFanoutCoverageTest.java",
+        "./source/router-tools/InspectCoreState.java",
+        "./source/router-tools/InspectGround.java",
+        "./source/router-tools/InspectItems.java",
+        "./source/router-tools/InspectRules.java",
+        "./source/router-tools/LoadDsnOnly.java",
+        "./source/router-tools/RepairSearch.java",
+        "./source/router-tools/RouteOnly.java",
+        "./source/router-tools/RouteOnlyExportStateTest.java",
+        "./source/router-tools/TargetedRoute.java",
+        "./source/router-tools/TargetedRouteGuardTest.java"
+      ],
+      "returnCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "program": "sandbox-exec",
+      "arguments": [
+        "-f",
+        "./source/router-tools/offline.sb",
+        "/opt/homebrew/opt/openjdk@17/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx192m",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "<verified-freerouting-1.9.0.jar>:./.verify/classes",
+        "DsnToCore",
+        "./inputs/atopile-sd-native2-fullground-precise.dsn",
+        "./.verify/parsed.core.frb"
+      ],
+      "returnCode": 0,
+      "stdout": "{\"pins\":805,\"nativeFilesUnchanged\":true,\"nativeUnlockedCopperNormalized\":1101,\"missing\":{\"N_C3_1\":1,\"VBB\":1,\"RX15_EN\":1,\"TX_LED\":1,\"PCI_RX\":1},\"components\":263,\"sourceSha256\":\"9877d490b21aaf1b64820abaf4e7b78892dba2b3a068099904d2bb8c4debe4d2\",\"initializedPositiveSearchCosts\":true,\"engineViolations\":299}",
+      "stderr": ""
+    },
+    {
+      "program": "sandbox-exec",
+      "arguments": [
+        "-f",
+        "./source/router-tools/offline.sb",
+        "/opt/homebrew/opt/openjdk@17/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx192m",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "<verified-freerouting-1.9.0.jar>:./.verify/classes",
+        "InspectRules",
+        "./.verify/parsed.core.frb",
+        "PCI_RX"
+      ],
+      "returnCode": 0,
+      "stdout": "class=kicad_default viaAllowed=true attachAllowed=false\nlayer=0 active=true horizontalCost=1.0 verticalCost=2.5\nlayer=1 active=false horizontalCost=2.5 verticalCost=1.0\nlayer=2 active=true horizontalCost=1.0 verticalCost=2.5\nlayer=3 active=true horizontalCost=2.5 verticalCost=1.0",
+      "stderr": ""
+    },
+    {
+      "program": "sandbox-exec",
+      "arguments": [
+        "-f",
+        "./source/router-tools/offline.sb",
+        "/opt/homebrew/opt/openjdk@17/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx192m",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "<verified-freerouting-1.9.0.jar>:./.verify/classes",
+        "TargetedRouteGuardTest",
+        "./.verify/parsed.core.frb"
+      ],
+      "returnCode": 0,
+      "stdout": "5 targeted routing guard tests passed; source checkpoint unchanged",
+      "stderr": ""
+    },
+    {
+      "program": "sandbox-exec",
+      "arguments": [
+        "-f",
+        "./source/router-tools/offline.sb",
+        "/opt/homebrew/opt/openjdk@17/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx192m",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "<verified-freerouting-1.9.0.jar>:./.verify/classes",
+        "GroundFanoutCoverageTest"
+      ],
+      "returnCode": 0,
+      "stdout": "7 exact fixed-trace coverage tests passed",
+      "stderr": ""
+    },
+    {
+      "program": "sandbox-exec",
+      "arguments": [
+        "-f",
+        "./source/router-tools/offline.sb",
+        "/opt/homebrew/opt/openjdk@17/bin/java",
+        "-XX:-UsePerfData",
+        "-Xmx192m",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "<verified-freerouting-1.9.0.jar>:./.verify/classes",
+        "RouteOnlyExportStateTest"
+      ],
+      "returnCode": 0,
+      "stdout": "8 export-state tests passed; new victims allowed, protected extensions refused",
+      "stderr": ""
+    },
+    {
+      "program": "python3",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "test_specctra_tools"
+      ],
+      "returnCode": 0,
+      "stdout": "",
+      "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.014s\n\nOK"
+    }
+  ]
+}

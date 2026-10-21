@@ -1,0 +1,674 @@
+{
+  "seed": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/route-pass-3/seed.kicad_pcb",
+  "candidate": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/signal-power-stage/ChryslerScanner_V240_SD.kicad_pcb",
+  "auditMode": "preservation only",
+  "seedSha256": "885d634678ffe7d6f8eeff15715fc6a4433b2a22a81bfe3fc86fbc6eb20c6f31",
+  "candidateSha256": "16fee28a1ab0dd2f40cf40d11f6cb6adc73fc6342f3349b68dad1fe041192e5c",
+  "changes": {
+    "footprintBlocks": [],
+    "nativeFootprintsAndPads": [],
+    "protectedCopper": [],
+    "zonesAndAntennaKeepouts": []
+  },
+  "footprintCount": 263,
+  "protectedSeedCopperCount": 122,
+  "protectedSeedLockedCopperCount": 122,
+  "trackSegmentsByCanonicalLayer": {
+    "F.Cu": 1642,
+    "B.Cu": 228,
+    "In2.Cu": 306
+  },
+  "routesOnNonCopper": [],
+  "tracksBelow0p15mm": [],
+  "nonGroundTracksOnGroundReferenceLayer": [],
+  "railLengthByWidthMm": {
+    "J1962-16": {
+      "0.5": 70.25278,
+      "1.0": 12.64828
+    },
+    "+12V": {
+      "0.5": 159.45671
+    },
+    "+3.3V": {
+      "0.2": 6.70523,
+      "0.2498": 1.47968,
+      "0.2998": 0.41238,
+      "0.3756": 0.6644,
+      "0.5": 320.35998
+    },
+    "+5V": {
+      "0.3756": 1.38145,
+      "0.5": 243.21081
+    },
+    "+7.5V": {
+      "0.3756": 0.19542,
+      "0.5": 95.72863
+    },
+    "VBUS": {
+      "0.5": 41.4818
+    },
+    "N_C3_1": {
+      "0.4": 1.8765,
+      "0.5": 19.87688
+    },
+    "VBB": {
+      "0.5": 112.08054,
+      "0.8": 2.1759
+    },
+    "VPP": {
+      "0.2": 2.19076,
+      "0.5": 105.63497,
+      "0.8": 3.00003
+    },
+    "SD_3V3": {
+      "0.5": 31.39212
+    },
+    "N_R2_1": {
+      "0.3756": 0.19033,
+      "0.5": 23.73367,
+      "0.8": 2.55012
+    },
+    "N_R8_1": {
+      "0.5": 17.21771,
+      "0.8": 4.38779
+    },
+    "N_R11_1": {
+      "0.5": 15.31156,
+      "0.8": 8.56228
+    },
+    "N_R14_1": {
+      "0.3756": 1.34413,
+      "0.5": 30.52713,
+      "0.8": 2.39588
+    }
+  },
+  "zoneBoundaryAndSettingsPreservation": true,
+  "nativeProjectDesignSettingsAndExclusionsUnchanged": true,
+  "nativeZoneRefillInMemory": true,
+  "fullNativeAirwires": 45,
+  "disconnectedNetGroups": {
+    "GND": [
+      {
+        "count": 119,
+        "pads": [
+          "C1.2",
+          "C10.2",
+          "C13.2",
+          "C14.2",
+          "C15.2",
+          "C16.2",
+          "C18.2",
+          "C2.2",
+          "C22.2",
+          "C24.2",
+          "C25.2",
+          "C26.2",
+          "C27.2",
+          "C28.2",
+          "C29.2",
+          "C3.2",
+          "C30.2",
+          "C31.2",
+          "C32.2",
+          "C33.2",
+          "C34.2",
+          "C35.2",
+          "C36.1",
+          "C37.1",
+          "C39.1",
+          "C4.2",
+          "C40.1",
+          "C42.2",
+          "C44.2",
+          "C45.2",
+          "C46.2",
+          "C47.2",
+          "C48.2",
+          "C49.2",
+          "C55.2",
+          "C56.2",
+          "C58.2",
+          "C59.2",
+          "C6.2",
+          "C61.2",
+          "C7.2",
+          "C9.2",
+          "D1.2",
+          "D12.2",
+          "D13.2",
+          "D14.2",
+          "D27.2",
+          "D28.2",
+          "D29.2",
+          "D4.2",
+          "D8.2",
+          "D9.2",
+          "J1.4",
+          "J2.A1",
+          "J2.A12",
+          "J2.B1",
+          "J2.B12",
+          "J2.SH",
+          "J2.SH",
+          "J2.SH",
+          "J2.SH",
+          "J3.2",
+          "J3.4",
+          "J4.10",
+          "J4.6",
+          "J4.SH",
+          "J4.SH",
+          "J4.SH",
+          "Q12.5",
+          "Q15.5",
+          "Q16.1",
+          "Q17.2",
+          "Q18.2",
+          "Q19.2",
+          "Q20.2",
+          "Q8.5",
+          "Q9.5",
+          "R102.2",
+          "R12.2",
+          "R15.2",
+          "R17.2",
+          "R23.2",
+          "R24.2",
+          "R27.2",
+          "R3.2",
+          "R50.2",
+          "R52.2",
+          "R54.2",
+          "R55.2",
+          "R57.2",
+          "R63.2",
+          "R72.2",
+          "R9.2",
+          "R90.2",
+          "R92.2",
+          "R96.2",
+          "SW1.1",
+          "SW2.1",
+          "SW2.1",
+          "SW3.2",
+          "SW3.2",
+          "U1.1",
+          "U18.3",
+          "U2.2",
+          "U20.2",
+          "U20.2",
+          "U3.3",
+          "U3.5",
+          "U3.7",
+          "U4.3",
+          "U4.5",
+          "U4.7",
+          "U5.2",
+          "U6.2",
+          "U7.2",
+          "U8.3",
+          "U8.5",
+          "U8.7",
+          "U9.2"
+        ]
+      },
+      {
+        "count": 5,
+        "pads": [
+          "U19.18",
+          "U19.22",
+          "U19.24",
+          "U19.25",
+          "U19.9"
+        ]
+      },
+      {
+        "count": 5,
+        "pads": [
+          "C51.2",
+          "C52.1",
+          "C54.2",
+          "R77.1",
+          "R80.2"
+        ]
+      },
+      {
+        "count": 4,
+        "pads": [
+          "C8.2",
+          "Q1.1",
+          "R18.2",
+          "R21.2"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "Q11.5",
+          "R61.2"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "U12.29",
+          "U12.3"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "Q14.5",
+          "R69.2"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "R38.1",
+          "R41.2"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "R44.1",
+          "U15.4"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "C41.2",
+          "U14.4"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "C11.1",
+          "R5.2"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "Q6.1",
+          "R75.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U11.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R34.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R66.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U17.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q10.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C19.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C57.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C53.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q13.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.SH"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C38.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C43.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C23.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R31.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.49"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R47.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW1.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R103.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U13.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C50.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "JP1.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R59.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C12.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U16.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C60.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C20.2"
+        ]
+      }
+    ],
+    "PCI_TX": [
+      {
+        "count": 2,
+        "pads": [
+          "R18.1",
+          "R19.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.16"
+        ]
+      }
+    ],
+    "V_PR": [
+      {
+        "count": 4,
+        "pads": [
+          "C49.1",
+          "D29.1",
+          "R53.2",
+          "R54.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.11"
+        ]
+      }
+    ],
+    "RX15_EN": [
+      {
+        "count": 2,
+        "pads": [
+          "R47.2",
+          "U15.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.15"
+        ]
+      }
+    ],
+    "TX_LED": [
+      {
+        "count": 2,
+        "pads": [
+          "Q18.1",
+          "R92.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.15"
+        ]
+      }
+    ],
+    "ACT_LED": [
+      {
+        "count": 2,
+        "pads": [
+          "Q20.1",
+          "R96.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.20"
+        ]
+      }
+    ],
+    "LOG_BUTTON": [
+      {
+        "count": 3,
+        "pads": [
+          "R113.2",
+          "SW3.1",
+          "SW3.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.6"
+        ]
+      }
+    ],
+    "RX1": [
+      {
+        "count": 3,
+        "pads": [
+          "C53.1",
+          "R85.2",
+          "U16.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.33"
+        ]
+      }
+    ],
+    "VBB_TO_TX14": [
+      {
+        "count": 2,
+        "pads": [
+          "Q11.1",
+          "R61.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.8"
+        ]
+      }
+    ]
+  },
+  "ground": {
+    "padCount": 175,
+    "connectedGroupCount": 38,
+    "largestConnectedGroupCount": 119,
+    "isolatedFromMainGroup": [
+      "C11.1",
+      "C12.2",
+      "C19.2",
+      "C20.2",
+      "C23.2",
+      "C38.2",
+      "C41.2",
+      "C43.2",
+      "C50.2",
+      "C51.2",
+      "C52.1",
+      "C53.2",
+      "C54.2",
+      "C57.2",
+      "C60.2",
+      "C8.2",
+      "J4.SH",
+      "JP1.2",
+      "Q1.1",
+      "Q10.5",
+      "Q11.5",
+      "Q13.5",
+      "Q14.5",
+      "Q6.1",
+      "R103.2",
+      "R18.2",
+      "R21.2",
+      "R31.1",
+      "R34.2",
+      "R38.1",
+      "R41.2",
+      "R44.1",
+      "R47.1",
+      "R5.2",
+      "R59.2",
+      "R61.2",
+      "R66.2",
+      "R69.2",
+      "R75.2",
+      "R77.1",
+      "R80.2",
+      "SW1.1",
+      "U10.49",
+      "U11.2",
+      "U12.29",
+      "U12.3",
+      "U13.4",
+      "U14.4",
+      "U15.4",
+      "U16.2",
+      "U17.3",
+      "U19.18",
+      "U19.22",
+      "U19.24",
+      "U19.25",
+      "U19.9"
+    ]
+  },
+  "planeFilledAreasMm2": {
+    "6edcc193-bba6-46de-897c-0f1fda6922ed": 3457.583136,
+    "c85111e0-830e-413f-8f53-8f84679f816d": 4970.619724,
+    "809ac7f6-290e-5503-8766-4621c2d3fabe": 5488.964534,
+    "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 50.597812
+  },
+  "approvedZoneBaseline": {
+    "path": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/ground-pour-stage/check3/outer-ground-experiment.kicad_pcb",
+    "sha256": "b260a0ba4146e57d98317f00db63c77b64d65c32e3895dced6286c34db5a5aad",
+    "addedZoneUuids": [
+      "6edcc193-bba6-46de-897c-0f1fda6922ed",
+      "c85111e0-830e-413f-8f53-8f84679f816d",
+      "c8ff6bee-907d-45d0-9fb2-fe0c2f8d5823"
+    ]
+  },
+  "nativeDrc": {
+    "path": "work/chrysler-routed-sd/signal-power-stage/native-drc.json",
+    "errors": 4,
+    "warnings": 3,
+    "reportedUnconnectedListCount": 45,
+    "sourceMatchesCandidate": true,
+    "bothErrorAndWarningChecksIncluded": true
+  },
+  "inputFilesBytesAndMtimeUnchanged": true,
+  "preservationAndMinimumGeometryPassed": true,
+  "completeConnectivityPassed": false,
+  "groundReferenceLayerUnbrokenBySignalTracks": true,
+  "auditPassed": true,
+  "freshNativeDrcRunByThisInvocation": false
+}

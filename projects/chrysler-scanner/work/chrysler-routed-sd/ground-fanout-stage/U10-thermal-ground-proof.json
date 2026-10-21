@@ -1,0 +1,78 @@
+{
+  "source": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/route-pass-3/seed.kicad_pcb",
+  "sourceSha256": "885d634678ffe7d6f8eeff15715fc6a4433b2a22a81bfe3fc86fbc6eb20c6f31",
+  "candidate": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/ground-fanout-stage/U10-thermal-ground.kicad_pcb",
+  "candidateSha256": "78d43f6b993212da5eb73e36c0922549d647f886e48fe098a262e90c8b358fdf",
+  "array": "2x2,1.8mm pitch centered in4.5mm exposed groundpad",
+  "vias": [
+    {
+      "uuid": "50402f88-141d-5d86-a0b2-7825b2d4a832",
+      "xyMM": [
+        172.7875,
+        114.4625
+      ],
+      "diameterMM": 0.6,
+      "drillMM": 0.3,
+      "filled": true,
+      "capped": true,
+      "bottomTenting": "tented",
+      "topTenting": "not_tented",
+      "locked": true
+    },
+    {
+      "uuid": "6f078372-39bd-5267-9cbc-e0ce862332a1",
+      "xyMM": [
+        174.5875,
+        114.4625
+      ],
+      "diameterMM": 0.6,
+      "drillMM": 0.3,
+      "filled": true,
+      "capped": true,
+      "bottomTenting": "tented",
+      "topTenting": "not_tented",
+      "locked": true
+    },
+    {
+      "uuid": "70daa8d3-d1cc-5033-9f43-fe20733af40d",
+      "xyMM": [
+        172.7875,
+        116.2625
+      ],
+      "diameterMM": 0.6,
+      "drillMM": 0.3,
+      "filled": true,
+      "capped": true,
+      "bottomTenting": "tented",
+      "topTenting": "not_tented",
+      "locked": true
+    },
+    {
+      "uuid": "3bd10a67-15de-5150-82de-734977f6525e",
+      "xyMM": [
+        174.5875,
+        116.2625
+      ],
+      "diameterMM": 0.6,
+      "drillMM": 0.3,
+      "filled": true,
+      "capped": true,
+      "bottomTenting": "tented",
+      "topTenting": "not_tented",
+      "locked": true
+    }
+  ],
+  "originalCopperPreserved": 122,
+  "allOriginalFootprintsPadsNetsAndPlaneDefinitionsExact": true,
+  "nativeConnectionToIn1GroundPlaneVerified": true,
+  "nativeDRCPending": false,
+  "fabricationRequirement": "Four0.30mm drill vias IN U10 thermal pad must be FILLED and COPPER-CAPPED/PLANARIZED; bottom soldermask tenting also specified. Ordinary open/tented vias are not an equivalent substitution.",
+  "routingComplete": false,
+  "nativeDRC": {
+    "version": "10.0.7",
+    "errors": 0,
+    "warnings": 0,
+    "path": "U10-thermal-ground-drc.json",
+    "unconnected": 499
+  }
+}

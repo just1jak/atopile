@@ -1,0 +1,106 @@
+{
+  "status": "native KiCad10 preflight passed against frozen seed; final routed-copper collision check still required",
+  "units": "absolute mm",
+  "net": "J1962-16",
+  "trunk_width": 1.0,
+  "tracks": [
+    {
+      "net": "J1962-16",
+      "layer": "F.Cu",
+      "width": 1.0,
+      "points": [
+        [
+          104.5,
+          139
+        ],
+        [
+          106,
+          140.5
+        ],
+        [
+          107.5,
+          142
+        ],
+        [
+          110.35,
+          142
+        ],
+        [
+          111.35,
+          141
+        ]
+      ]
+    },
+    {
+      "net": "J1962-16",
+      "layer": "F.Cu",
+      "width": 1.0,
+      "points": [
+        [
+          111.35,
+          141
+        ],
+        [
+          111.25,
+          140.9
+        ],
+        [
+          111.25,
+          136.9
+        ]
+      ]
+    },
+    {
+      "net": "GND",
+      "layer": "F.Cu",
+      "width": 1.2,
+      "points": [
+        [
+          115.65,
+          141
+        ],
+        [
+          115.65,
+          143
+        ]
+      ]
+    }
+  ],
+  "vias": [
+    {
+      "net": "GND",
+      "xy": [
+        115.25,
+        143
+      ],
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND",
+      "xy": [
+        116.05,
+        143
+      ],
+      "diameter": 0.6,
+      "drill": 0.3
+    }
+  ],
+  "preserve_sense_branch": {
+    "ref": "R49",
+    "pin": "1",
+    "xy": [
+      177.5,
+      128.325
+    ]
+  },
+  "rationale": "J1.16 enters the TVS junction, then the protection diode; short wide TVS ground path to In1 ground plane. Current and pulse qualification remain hardware gates.",
+  "input_sha256": "305c25c4343da4b42a94263ae38396ea80f88e0707c983143691ad1652f639e6",
+  "preflight": {
+    "candidate": "input-power-preflight.kicad_pcb",
+    "sha256": "885d634678ffe7d6f8eeff15715fc6a4433b2a22a81bfe3fc86fbc6eb20c6f31",
+    "native_drc_errors": 0,
+    "native_drc_warnings": 0,
+    "protected_seed_geometry_unchanged": true
+  }
+}

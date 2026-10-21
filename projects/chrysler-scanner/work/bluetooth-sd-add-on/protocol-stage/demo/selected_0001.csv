@@ -1,0 +1,8 @@
+host_us,utc_us,scanner_ms,bus,profile,metric,value,unit
+1000100,0,1000,PCI,upstream_broadcast_2023,"engine_rpm",2000.000000,"rpm"
+1000100,0,1000,PCI,upstream_broadcast_2023,"vehicle_speed_kph",78.857856,"km/h"
+1000100,0,1000,PCI,upstream_broadcast_2023,"manifold_absolute_pressure_kpa",101.000000,"kPa"
+1010000,0,1010,PCI,upstream_broadcast_2023,"battery_voltage_v",14.000000,"V"
+1010000,0,1010,PCI,upstream_broadcast_2023,"oil_pressure_kpa",344.737850,"kPa"
+1010000,0,1010,PCI,upstream_broadcast_2023,"coolant_temperature_c",85.000000,"degC"
+1010000,0,1010,PCI,upstream_broadcast_2023,"ambient_temperature_c",40.000000,"degC"

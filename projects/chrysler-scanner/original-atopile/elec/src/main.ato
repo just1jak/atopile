@@ -1,0 +1,1764 @@
+# ChryslerScanner V240 schematic revision 2.4.0-1 (2026-01-05).
+# Complete physical parts, same-numbered multi-unit symbols merged.
+# Floating pins are intentional NCs; see reference/v240-netlist.json.
+# Local hardware revision V240-USB-C-OBD: see reference/hardware-overrides.json; upstream PDF unchanged.
+from "parts.ato" import Part_AE1
+from "parts.ato" import Part_C1
+from "parts.ato" import Part_C2
+from "parts.ato" import Part_C3
+from "parts.ato" import Part_C4
+from "parts.ato" import Part_C5
+from "parts.ato" import Part_C6
+from "parts.ato" import Part_C7
+from "parts.ato" import Part_C8
+from "parts.ato" import Part_C9
+from "parts.ato" import Part_C10
+from "parts.ato" import Part_C11
+from "parts.ato" import Part_C12
+from "parts.ato" import Part_C13
+from "parts.ato" import Part_C14
+from "parts.ato" import Part_C15
+from "parts.ato" import Part_C16
+from "parts.ato" import Part_C17
+from "parts.ato" import Part_C18
+from "parts.ato" import Part_C19
+from "parts.ato" import Part_C20
+from "parts.ato" import Part_C21
+from "parts.ato" import Part_C22
+from "parts.ato" import Part_C23
+from "parts.ato" import Part_C24
+from "parts.ato" import Part_C25
+from "parts.ato" import Part_C26
+from "parts.ato" import Part_C27
+from "parts.ato" import Part_C28
+from "parts.ato" import Part_C29
+from "parts.ato" import Part_C30
+from "parts.ato" import Part_C31
+from "parts.ato" import Part_C32
+from "parts.ato" import Part_C33
+from "parts.ato" import Part_C34
+from "parts.ato" import Part_C35
+from "parts.ato" import Part_C36
+from "parts.ato" import Part_C37
+from "parts.ato" import Part_C38
+from "parts.ato" import Part_C39
+from "parts.ato" import Part_C40
+from "parts.ato" import Part_C41
+from "parts.ato" import Part_C42
+from "parts.ato" import Part_C43
+from "parts.ato" import Part_C44
+from "parts.ato" import Part_C45
+from "parts.ato" import Part_C46
+from "parts.ato" import Part_C47
+from "parts.ato" import Part_C48
+from "parts.ato" import Part_C49
+from "parts.ato" import Part_C50
+from "parts.ato" import Part_C51
+from "parts.ato" import Part_C52
+from "parts.ato" import Part_C53
+from "parts.ato" import Part_C54
+from "parts.ato" import Part_C55
+from "parts.ato" import Part_C56
+from "parts.ato" import Part_C57
+from "parts.ato" import Part_D1
+from "parts.ato" import Part_D2
+from "parts.ato" import Part_D3
+from "parts.ato" import Part_D4
+from "parts.ato" import Part_D5
+from "parts.ato" import Part_D6
+from "parts.ato" import Part_D7
+from "parts.ato" import Part_D8
+from "parts.ato" import Part_D9
+from "parts.ato" import Part_D10
+from "parts.ato" import Part_D11
+from "parts.ato" import Part_D12
+from "parts.ato" import Part_D13
+from "parts.ato" import Part_D14
+from "parts.ato" import Part_D15
+from "parts.ato" import Part_D16
+from "parts.ato" import Part_D17
+from "parts.ato" import Part_D18
+from "parts.ato" import Part_D19
+from "parts.ato" import Part_D20
+from "parts.ato" import Part_D21
+from "parts.ato" import Part_D22
+from "parts.ato" import Part_D23
+from "parts.ato" import Part_D24
+from "parts.ato" import Part_D25
+from "parts.ato" import Part_D26
+from "parts.ato" import Part_D27
+from "parts.ato" import Part_D28
+from "parts.ato" import Part_D29
+from "parts.ato" import Part_J1
+from "parts.ato" import Part_J2
+from "parts.ato" import Part_J3
+from "parts.ato" import Part_JP1
+from "parts.ato" import Part_JP2
+from "parts.ato" import Part_L1
+from "parts.ato" import Part_L2
+from "parts.ato" import Part_L3
+from "parts.ato" import Part_L4
+from "parts.ato" import Part_L5
+from "parts.ato" import Part_L6
+from "parts.ato" import Part_Q1
+from "parts.ato" import Part_Q2
+from "parts.ato" import Part_Q3
+from "parts.ato" import Part_Q4
+from "parts.ato" import Part_Q5
+from "parts.ato" import Part_Q6
+from "parts.ato" import Part_Q7
+from "parts.ato" import Part_Q8
+from "parts.ato" import Part_Q9
+from "parts.ato" import Part_Q10
+from "parts.ato" import Part_Q11
+from "parts.ato" import Part_Q12
+from "parts.ato" import Part_Q13
+from "parts.ato" import Part_Q14
+from "parts.ato" import Part_Q15
+from "parts.ato" import Part_Q16
+from "parts.ato" import Part_Q17
+from "parts.ato" import Part_Q18
+from "parts.ato" import Part_Q19
+from "parts.ato" import Part_Q20
+from "parts.ato" import Part_R1
+from "parts.ato" import Part_R2
+from "parts.ato" import Part_R3
+from "parts.ato" import Part_R4
+from "parts.ato" import Part_R5
+from "parts.ato" import Part_R6
+from "parts.ato" import Part_R7
+from "parts.ato" import Part_R8
+from "parts.ato" import Part_R9
+from "parts.ato" import Part_R10
+from "parts.ato" import Part_R11
+from "parts.ato" import Part_R12
+from "parts.ato" import Part_R13
+from "parts.ato" import Part_R14
+from "parts.ato" import Part_R15
+from "parts.ato" import Part_R16
+from "parts.ato" import Part_R17
+from "parts.ato" import Part_R18
+from "parts.ato" import Part_R19
+from "parts.ato" import Part_R20
+from "parts.ato" import Part_R21
+from "parts.ato" import Part_R22
+from "parts.ato" import Part_R23
+from "parts.ato" import Part_R24
+from "parts.ato" import Part_R25
+from "parts.ato" import Part_R26
+from "parts.ato" import Part_R27
+from "parts.ato" import Part_R28
+from "parts.ato" import Part_R29
+from "parts.ato" import Part_R30
+from "parts.ato" import Part_R31
+from "parts.ato" import Part_R32
+from "parts.ato" import Part_R33
+from "parts.ato" import Part_R34
+from "parts.ato" import Part_R36
+from "parts.ato" import Part_R37
+from "parts.ato" import Part_R38
+from "parts.ato" import Part_R39
+from "parts.ato" import Part_R40
+from "parts.ato" import Part_R41
+from "parts.ato" import Part_R42
+from "parts.ato" import Part_R43
+from "parts.ato" import Part_R44
+from "parts.ato" import Part_R45
+from "parts.ato" import Part_R46
+from "parts.ato" import Part_R47
+from "parts.ato" import Part_R48
+from "parts.ato" import Part_R49
+from "parts.ato" import Part_R50
+from "parts.ato" import Part_R51
+from "parts.ato" import Part_R52
+from "parts.ato" import Part_R53
+from "parts.ato" import Part_R54
+from "parts.ato" import Part_R55
+from "parts.ato" import Part_R56
+from "parts.ato" import Part_R57
+from "parts.ato" import Part_R58
+from "parts.ato" import Part_R59
+from "parts.ato" import Part_R60
+from "parts.ato" import Part_R61
+from "parts.ato" import Part_R62
+from "parts.ato" import Part_R63
+from "parts.ato" import Part_R64
+from "parts.ato" import Part_R65
+from "parts.ato" import Part_R66
+from "parts.ato" import Part_R67
+from "parts.ato" import Part_R68
+from "parts.ato" import Part_R69
+from "parts.ato" import Part_R70
+from "parts.ato" import Part_R71
+from "parts.ato" import Part_R72
+from "parts.ato" import Part_R73
+from "parts.ato" import Part_R74
+from "parts.ato" import Part_R75
+from "parts.ato" import Part_R76
+from "parts.ato" import Part_R77
+from "parts.ato" import Part_R78
+from "parts.ato" import Part_R79
+from "parts.ato" import Part_R80
+from "parts.ato" import Part_R81
+from "parts.ato" import Part_R82
+from "parts.ato" import Part_R83
+from "parts.ato" import Part_R84
+from "parts.ato" import Part_R85
+from "parts.ato" import Part_R86
+from "parts.ato" import Part_R87
+from "parts.ato" import Part_R88
+from "parts.ato" import Part_R89
+from "parts.ato" import Part_R90
+from "parts.ato" import Part_R91
+from "parts.ato" import Part_R92
+from "parts.ato" import Part_R93
+from "parts.ato" import Part_R94
+from "parts.ato" import Part_R95
+from "parts.ato" import Part_R96
+from "parts.ato" import Part_R97
+from "parts.ato" import Part_R98
+from "parts.ato" import Part_R99
+from "parts.ato" import Part_R100
+from "parts.ato" import Part_R101
+from "parts.ato" import Part_R102
+from "parts.ato" import Part_R103
+from "parts.ato" import Part_SW1
+from "parts.ato" import Part_SW2
+from "parts.ato" import Part_U1
+from "parts.ato" import Part_U2
+from "parts.ato" import Part_U3
+from "parts.ato" import Part_U4
+from "parts.ato" import Part_U5
+from "parts.ato" import Part_U6
+from "parts.ato" import Part_U7
+from "parts.ato" import Part_U8
+from "parts.ato" import Part_U9
+from "parts.ato" import Part_U10
+from "parts.ato" import Part_U11
+from "parts.ato" import Part_U12
+from "parts.ato" import Part_U13
+from "parts.ato" import Part_U14
+from "parts.ato" import Part_U15
+from "parts.ato" import Part_U16
+from "parts.ato" import Part_U17
+from "parts.ato" import Part_U18
+from "parts.ato" import Part_U19
+from "parts.ato" import Part_H1
+from "parts.ato" import Part_H2
+from "parts.ato" import Part_H3
+from "parts.ato" import Part_H4
+
+module ChryslerScannerV240:
+    ae1 = new Part_AE1
+    c1 = new Part_C1
+    c2 = new Part_C2
+    c3 = new Part_C3
+    c4 = new Part_C4
+    c5 = new Part_C5
+    c6 = new Part_C6
+    c7 = new Part_C7
+    c8 = new Part_C8
+    c9 = new Part_C9
+    c10 = new Part_C10
+    c11 = new Part_C11
+    c12 = new Part_C12
+    c13 = new Part_C13
+    c14 = new Part_C14
+    c15 = new Part_C15
+    c16 = new Part_C16
+    c17 = new Part_C17
+    c18 = new Part_C18
+    c19 = new Part_C19
+    c20 = new Part_C20
+    c21 = new Part_C21
+    c22 = new Part_C22
+    c23 = new Part_C23
+    c24 = new Part_C24
+    c25 = new Part_C25
+    c26 = new Part_C26
+    c27 = new Part_C27
+    c28 = new Part_C28
+    c29 = new Part_C29
+    c30 = new Part_C30
+    c31 = new Part_C31
+    c32 = new Part_C32
+    c33 = new Part_C33
+    c34 = new Part_C34
+    c35 = new Part_C35
+    c36 = new Part_C36
+    c37 = new Part_C37
+    c38 = new Part_C38
+    c39 = new Part_C39
+    c40 = new Part_C40
+    c41 = new Part_C41
+    c42 = new Part_C42
+    c43 = new Part_C43
+    c44 = new Part_C44
+    c45 = new Part_C45
+    c46 = new Part_C46
+    c47 = new Part_C47
+    c48 = new Part_C48
+    c49 = new Part_C49
+    c50 = new Part_C50
+    c51 = new Part_C51
+    c52 = new Part_C52
+    c53 = new Part_C53
+    c54 = new Part_C54
+    c55 = new Part_C55
+    c56 = new Part_C56
+    c57 = new Part_C57
+    d1 = new Part_D1
+    d2 = new Part_D2
+    d3 = new Part_D3
+    d4 = new Part_D4
+    d5 = new Part_D5
+    d6 = new Part_D6
+    d7 = new Part_D7
+    d8 = new Part_D8
+    d9 = new Part_D9
+    d10 = new Part_D10
+    d11 = new Part_D11
+    d12 = new Part_D12
+    d13 = new Part_D13
+    d14 = new Part_D14
+    d15 = new Part_D15
+    d16 = new Part_D16
+    d17 = new Part_D17
+    d18 = new Part_D18
+    d19 = new Part_D19
+    d20 = new Part_D20
+    d21 = new Part_D21
+    d22 = new Part_D22
+    d23 = new Part_D23
+    d24 = new Part_D24
+    d25 = new Part_D25
+    d26 = new Part_D26
+    d27 = new Part_D27
+    d28 = new Part_D28
+    d29 = new Part_D29
+    j1 = new Part_J1
+    j2 = new Part_J2
+    j3 = new Part_J3
+    jp1 = new Part_JP1
+    jp2 = new Part_JP2
+    l1 = new Part_L1
+    l2 = new Part_L2
+    l3 = new Part_L3
+    l4 = new Part_L4
+    l5 = new Part_L5
+    l6 = new Part_L6
+    q1 = new Part_Q1
+    q2 = new Part_Q2
+    q3 = new Part_Q3
+    q4 = new Part_Q4
+    q5 = new Part_Q5
+    q6 = new Part_Q6
+    q7 = new Part_Q7
+    q8 = new Part_Q8
+    q9 = new Part_Q9
+    q10 = new Part_Q10
+    q11 = new Part_Q11
+    q12 = new Part_Q12
+    q13 = new Part_Q13
+    q14 = new Part_Q14
+    q15 = new Part_Q15
+    q16 = new Part_Q16
+    q17 = new Part_Q17
+    q18 = new Part_Q18
+    q19 = new Part_Q19
+    q20 = new Part_Q20
+    r1 = new Part_R1
+    r2 = new Part_R2
+    r3 = new Part_R3
+    r4 = new Part_R4
+    r5 = new Part_R5
+    r6 = new Part_R6
+    r7 = new Part_R7
+    r8 = new Part_R8
+    r9 = new Part_R9
+    r10 = new Part_R10
+    r11 = new Part_R11
+    r12 = new Part_R12
+    r13 = new Part_R13
+    r14 = new Part_R14
+    r15 = new Part_R15
+    r16 = new Part_R16
+    r17 = new Part_R17
+    r18 = new Part_R18
+    r19 = new Part_R19
+    r20 = new Part_R20
+    r21 = new Part_R21
+    r22 = new Part_R22
+    r23 = new Part_R23
+    r24 = new Part_R24
+    r25 = new Part_R25
+    r26 = new Part_R26
+    r27 = new Part_R27
+    r28 = new Part_R28
+    r29 = new Part_R29
+    r30 = new Part_R30
+    r31 = new Part_R31
+    r32 = new Part_R32
+    r33 = new Part_R33
+    r34 = new Part_R34
+    r36 = new Part_R36
+    r37 = new Part_R37
+    r38 = new Part_R38
+    r39 = new Part_R39
+    r40 = new Part_R40
+    r41 = new Part_R41
+    r42 = new Part_R42
+    r43 = new Part_R43
+    r44 = new Part_R44
+    r45 = new Part_R45
+    r46 = new Part_R46
+    r47 = new Part_R47
+    r48 = new Part_R48
+    r49 = new Part_R49
+    r50 = new Part_R50
+    r51 = new Part_R51
+    r52 = new Part_R52
+    r53 = new Part_R53
+    r54 = new Part_R54
+    r55 = new Part_R55
+    r56 = new Part_R56
+    r57 = new Part_R57
+    r58 = new Part_R58
+    r59 = new Part_R59
+    r60 = new Part_R60
+    r61 = new Part_R61
+    r62 = new Part_R62
+    r63 = new Part_R63
+    r64 = new Part_R64
+    r65 = new Part_R65
+    r66 = new Part_R66
+    r67 = new Part_R67
+    r68 = new Part_R68
+    r69 = new Part_R69
+    r70 = new Part_R70
+    r71 = new Part_R71
+    r72 = new Part_R72
+    r73 = new Part_R73
+    r74 = new Part_R74
+    r75 = new Part_R75
+    r76 = new Part_R76
+    r77 = new Part_R77
+    r78 = new Part_R78
+    r79 = new Part_R79
+    r80 = new Part_R80
+    r81 = new Part_R81
+    r82 = new Part_R82
+    r83 = new Part_R83
+    r84 = new Part_R84
+    r85 = new Part_R85
+    r86 = new Part_R86
+    r87 = new Part_R87
+    r88 = new Part_R88
+    r89 = new Part_R89
+    r90 = new Part_R90
+    r91 = new Part_R91
+    r92 = new Part_R92
+    r93 = new Part_R93
+    r94 = new Part_R94
+    r95 = new Part_R95
+    r96 = new Part_R96
+    r97 = new Part_R97
+    r98 = new Part_R98
+    r99 = new Part_R99
+    r100 = new Part_R100
+    r101 = new Part_R101
+    r102 = new Part_R102
+    r103 = new Part_R103
+    sw1 = new Part_SW1
+    sw2 = new Part_SW2
+    u1 = new Part_U1
+    u2 = new Part_U2
+    u3 = new Part_U3
+    u4 = new Part_U4
+    u5 = new Part_U5
+    u6 = new Part_U6
+    u7 = new Part_U7
+    u8 = new Part_U8
+    u9 = new Part_U9
+    u10 = new Part_U10
+    u11 = new Part_U11
+    u12 = new Part_U12
+    u13 = new Part_U13
+    u14 = new Part_U14
+    u15 = new Part_U15
+    u16 = new Part_U16
+    u17 = new Part_U17
+    u18 = new Part_U18
+    u19 = new Part_U19
+    h1 = new Part_H1
+    h2 = new Part_H2
+    h3 = new Part_H3
+    h4 = new Part_H4
+
+    # +12V
+    signal n000_net__12V
+    n000_net__12V.override_net_name = "+12V"
+    n000_net__12V ~ c1.1
+    n000_net__12V ~ c4.1
+    n000_net__12V ~ c11.2
+    n000_net__12V ~ c13.1
+    n000_net__12V ~ c20.1
+    n000_net__12V ~ d2.1
+    n000_net__12V ~ l2.1
+    n000_net__12V ~ r1.1
+    n000_net__12V ~ r13.1
+    n000_net__12V ~ u2.5
+    n000_net__12V ~ u5.5
+    n000_net__12V ~ u7.5
+    n000_net__12V ~ u9.5
+
+    # +3.3V
+    signal n001_net__3_3V
+    n001_net__3_3V.override_net_name = "+3.3V"
+    n001_net__3_3V ~ c10.1
+    n001_net__3_3V ~ c26.1
+    n001_net__3_3V ~ c27.1
+    n001_net__3_3V ~ c28.1
+    n001_net__3_3V ~ c29.1
+    n001_net__3_3V ~ c30.1
+    n001_net__3_3V ~ c31.1
+    n001_net__3_3V ~ c32.1
+    n001_net__3_3V ~ c34.1
+    n001_net__3_3V ~ c35.1
+    n001_net__3_3V ~ c38.1
+    n001_net__3_3V ~ c41.1
+    n001_net__3_3V ~ c43.1
+    n001_net__3_3V ~ c56.1
+    n001_net__3_3V ~ c57.1
+    n001_net__3_3V ~ d6.2
+    n001_net__3_3V ~ j3.3
+    n001_net__3_3V ~ q2.2
+    n001_net__3_3V ~ q2.5
+    n001_net__3_3V ~ q3.2
+    n001_net__3_3V ~ q3.5
+    n001_net__3_3V ~ q4.5
+    n001_net__3_3V ~ q4.2
+    n001_net__3_3V ~ r7.1
+    n001_net__3_3V ~ r28.1
+    n001_net__3_3V ~ r30.1
+    n001_net__3_3V ~ r33.2
+    n001_net__3_3V ~ r37.1
+    n001_net__3_3V ~ r40.2
+    n001_net__3_3V ~ r43.1
+    n001_net__3_3V ~ r46.1
+    n001_net__3_3V ~ r48.1
+    n001_net__3_3V ~ r85.1
+    n001_net__3_3V ~ r86.1
+    n001_net__3_3V ~ r87.1
+    n001_net__3_3V ~ r88.1
+    n001_net__3_3V ~ r94.2
+    n001_net__3_3V ~ r97.1
+    n001_net__3_3V ~ u4.1
+    n001_net__3_3V ~ u4.2
+    n001_net__3_3V ~ u10.1
+    n001_net__3_3V ~ u10.19
+    n001_net__3_3V ~ u10.3
+    n001_net__3_3V ~ u10.37
+    n001_net__3_3V ~ u10.4
+    n001_net__3_3V ~ u10.43
+    n001_net__3_3V ~ u10.46
+    n001_net__3_3V ~ u12.6
+    n001_net__3_3V ~ u12.7
+    n001_net__3_3V ~ u13.8
+    n001_net__3_3V ~ u14.8
+    n001_net__3_3V ~ u15.8
+    n001_net__3_3V ~ u19.21
+
+    # +5V
+    signal n002_net__5V
+    n002_net__5V.override_net_name = "+5V"
+    n002_net__5V ~ c8.1
+    n002_net__5V ~ c9.1
+    n002_net__5V ~ c52.2
+    n002_net__5V ~ c54.1
+    n002_net__5V ~ c55.1
+    n002_net__5V ~ d3.1
+    n002_net__5V ~ d5.2
+    n002_net__5V ~ d6.1
+    n002_net__5V ~ j3.1
+    n002_net__5V ~ q6.4
+    n002_net__5V ~ q16.4
+    n002_net__5V ~ r4.1
+    n002_net__5V ~ r29.1
+    n002_net__5V ~ r32.2
+    n002_net__5V ~ r36.1
+    n002_net__5V ~ r39.2
+    n002_net__5V ~ r45.1
+    n002_net__5V ~ r76.1
+    n002_net__5V ~ r78.1
+    n002_net__5V ~ r89.1
+    n002_net__5V ~ r91.1
+    n002_net__5V ~ r93.1
+    n002_net__5V ~ r95.1
+    n002_net__5V ~ u3.1
+    n002_net__5V ~ u3.2
+    n002_net__5V ~ u4.4
+    n002_net__5V ~ u4.6
+    n002_net__5V ~ u5.4
+    n002_net__5V ~ u16.5
+    n002_net__5V ~ u17.5
+    n002_net__5V ~ u18.5
+
+    # +7.5V
+    signal n003_net__7_5V
+    n003_net__7_5V.override_net_name = "+7.5V"
+    n003_net__7_5V ~ c24.1
+    n003_net__7_5V ~ d10.2
+    n003_net__7_5V ~ q1.4
+    n003_net__7_5V ~ r16.1
+    n003_net__7_5V ~ r20.1
+    n003_net__7_5V ~ u8.1
+
+    # ACT_LED
+    signal n004_net_ACT_LED
+    n004_net_ACT_LED.override_net_name = "ACT_LED"
+    n004_net_ACT_LED ~ q20.1
+    n004_net_ACT_LED ~ r96.1
+    n004_net_ACT_LED ~ u10.20
+
+    # CCD+
+    signal n005_net_CCD_
+    n005_net_CCD_.override_net_name = "CCD+"
+    n005_net_CCD_ ~ c50.1
+    n005_net_CCD_ ~ r81.2
+    n005_net_CCD_ ~ r84.1
+    n005_net_CCD_ ~ r100.2
+
+    # CCD-
+    signal n006_net_CCD_
+    n006_net_CCD_.override_net_name = "CCD-"
+    n006_net_CCD_ ~ c51.1
+    n006_net_CCD_ ~ r82.2
+    n006_net_CCD_ ~ r83.1
+    n006_net_CCD_ ~ r101.2
+
+    # D+
+    signal n007_net_D_
+    n007_net_D_.override_net_name = "D+"
+    n007_net_D_ ~ j2.A6
+    n007_net_D_ ~ j2.B6
+    n007_net_D_ ~ u11.1
+
+    # D+P
+    signal n008_net_D_P
+    n008_net_D_P.override_net_name = "D+P"
+    n008_net_D_P ~ u11.6
+    n008_net_D_P ~ u12.4
+
+    # D-
+    signal n009_net_D_
+    n009_net_D_.override_net_name = "D-"
+    n009_net_D_ ~ j2.A7
+    n009_net_D_ ~ j2.B7
+    n009_net_D_ ~ u11.3
+
+    # D-P
+    signal n010_net_D_P
+    n010_net_D_P.override_net_name = "D-P"
+    n010_net_D_P ~ u11.4
+    n010_net_D_P ~ u12.5
+
+    # DTR
+    signal n011_net_DTR
+    n011_net_DTR.override_net_name = "DTR"
+    n011_net_DTR ~ q5.2
+    n011_net_DTR ~ q5.4
+    n011_net_DTR ~ u12.28
+
+    # EN
+    signal n012_net_EN
+    n012_net_EN.override_net_name = "EN"
+    n012_net_EN ~ c45.1
+    n012_net_EN ~ c46.1
+    n012_net_EN ~ q5.6
+    n012_net_EN ~ r48.2
+    n012_net_EN ~ sw1.2
+    n012_net_EN ~ u10.9
+
+    # GND
+    signal n013_net_GND
+    n013_net_GND.override_net_name = "GND"
+    n013_net_GND ~ c1.2
+    n013_net_GND ~ c2.2
+    n013_net_GND ~ c3.2
+    n013_net_GND ~ c4.2
+    n013_net_GND ~ c6.2
+    n013_net_GND ~ c7.2
+    n013_net_GND ~ c8.2
+    n013_net_GND ~ c9.2
+    n013_net_GND ~ c10.2
+    n013_net_GND ~ c11.1
+    n013_net_GND ~ c12.2
+    n013_net_GND ~ c13.2
+    n013_net_GND ~ c14.2
+    n013_net_GND ~ c15.2
+    n013_net_GND ~ c16.2
+    n013_net_GND ~ c18.2
+    n013_net_GND ~ c19.2
+    n013_net_GND ~ c20.2
+    n013_net_GND ~ c22.2
+    n013_net_GND ~ c23.2
+    n013_net_GND ~ c24.2
+    n013_net_GND ~ c25.2
+    n013_net_GND ~ c26.2
+    n013_net_GND ~ c27.2
+    n013_net_GND ~ c28.2
+    n013_net_GND ~ c29.2
+    n013_net_GND ~ c30.2
+    n013_net_GND ~ c31.2
+    n013_net_GND ~ c32.2
+    n013_net_GND ~ c33.2
+    n013_net_GND ~ c34.2
+    n013_net_GND ~ c35.2
+    n013_net_GND ~ c36.1
+    n013_net_GND ~ c37.1
+    n013_net_GND ~ c38.2
+    n013_net_GND ~ c39.1
+    n013_net_GND ~ c40.1
+    n013_net_GND ~ c41.2
+    n013_net_GND ~ c42.2
+    n013_net_GND ~ c43.2
+    n013_net_GND ~ c44.2
+    n013_net_GND ~ c45.2
+    n013_net_GND ~ c46.2
+    n013_net_GND ~ c47.2
+    n013_net_GND ~ c48.2
+    n013_net_GND ~ c49.2
+    n013_net_GND ~ c50.2
+    n013_net_GND ~ c51.2
+    n013_net_GND ~ c52.1
+    n013_net_GND ~ c53.2
+    n013_net_GND ~ c54.2
+    n013_net_GND ~ c55.2
+    n013_net_GND ~ c56.2
+    n013_net_GND ~ c57.2
+    n013_net_GND ~ d1.2
+    n013_net_GND ~ d4.2
+    n013_net_GND ~ d8.2
+    n013_net_GND ~ d9.2
+    n013_net_GND ~ d12.2
+    n013_net_GND ~ d13.2
+    n013_net_GND ~ d14.2
+    n013_net_GND ~ d27.2
+    n013_net_GND ~ d28.2
+    n013_net_GND ~ d29.2
+    n013_net_GND ~ j1.4
+    n013_net_GND ~ j2.A1
+    n013_net_GND ~ j2.A12
+    n013_net_GND ~ j2.B1
+    n013_net_GND ~ j2.B12
+    n013_net_GND ~ j2.SH
+    n013_net_GND ~ j3.2
+    n013_net_GND ~ j3.4
+    n013_net_GND ~ jp1.2
+    n013_net_GND ~ q1.1
+    n013_net_GND ~ q6.1
+    n013_net_GND ~ q8.5
+    n013_net_GND ~ q9.5
+    n013_net_GND ~ q10.5
+    n013_net_GND ~ q11.5
+    n013_net_GND ~ q12.5
+    n013_net_GND ~ q13.5
+    n013_net_GND ~ q14.5
+    n013_net_GND ~ q15.5
+    n013_net_GND ~ q16.1
+    n013_net_GND ~ q17.2
+    n013_net_GND ~ q18.2
+    n013_net_GND ~ q19.2
+    n013_net_GND ~ q20.2
+    n013_net_GND ~ r3.2
+    n013_net_GND ~ r5.2
+    n013_net_GND ~ r9.2
+    n013_net_GND ~ r12.2
+    n013_net_GND ~ r15.2
+    n013_net_GND ~ r17.2
+    n013_net_GND ~ r18.2
+    n013_net_GND ~ r21.2
+    n013_net_GND ~ r23.2
+    n013_net_GND ~ r24.2
+    n013_net_GND ~ r27.2
+    n013_net_GND ~ r31.1
+    n013_net_GND ~ r34.2
+    n013_net_GND ~ r38.1
+    n013_net_GND ~ r41.2
+    n013_net_GND ~ r44.1
+    n013_net_GND ~ r47.1
+    n013_net_GND ~ r50.2
+    n013_net_GND ~ r52.2
+    n013_net_GND ~ r54.2
+    n013_net_GND ~ r55.2
+    n013_net_GND ~ r57.2
+    n013_net_GND ~ r59.2
+    n013_net_GND ~ r61.2
+    n013_net_GND ~ r63.2
+    n013_net_GND ~ r66.2
+    n013_net_GND ~ r69.2
+    n013_net_GND ~ r72.2
+    n013_net_GND ~ r75.2
+    n013_net_GND ~ r77.1
+    n013_net_GND ~ r80.2
+    n013_net_GND ~ r90.2
+    n013_net_GND ~ r92.2
+    n013_net_GND ~ r96.2
+    n013_net_GND ~ r102.2
+    n013_net_GND ~ r103.2
+    n013_net_GND ~ sw1.1
+    n013_net_GND ~ sw2.1
+    n013_net_GND ~ u1.1
+    n013_net_GND ~ u2.2
+    n013_net_GND ~ u3.3
+    n013_net_GND ~ u3.7
+    n013_net_GND ~ u4.3
+    n013_net_GND ~ u4.7
+    n013_net_GND ~ u5.2
+    n013_net_GND ~ u6.2
+    n013_net_GND ~ u7.2
+    n013_net_GND ~ u8.3
+    n013_net_GND ~ u8.7
+    n013_net_GND ~ u9.2
+    n013_net_GND ~ u10.49
+    n013_net_GND ~ u11.2
+    n013_net_GND ~ u12.3
+    n013_net_GND ~ u12.29
+    n013_net_GND ~ u13.4
+    n013_net_GND ~ u14.4
+    n013_net_GND ~ u15.4
+    n013_net_GND ~ u16.2
+    n013_net_GND ~ u17.3
+    n013_net_GND ~ u18.3
+    n013_net_GND ~ u19.18
+    n013_net_GND ~ u19.22
+    n013_net_GND ~ u19.24
+    n013_net_GND ~ u19.9
+    n013_net_GND ~ u19.25
+    n013_net_GND ~ u3.5
+    n013_net_GND ~ u4.5
+    n013_net_GND ~ u8.5
+
+    # IO0
+    signal n014_net_IO0
+    n014_net_IO0.override_net_name = "IO0"
+    n014_net_IO0 ~ q5.3
+    n014_net_IO0 ~ sw2.2
+    n014_net_IO0 ~ u10.23
+
+    # J1962-11
+    signal n015_net_J1962_11
+    n015_net_J1962_11.override_net_name = "J1962-11"
+    n015_net_J1962_11 ~ d14.1
+    n015_net_J1962_11 ~ j1.11
+    n015_net_J1962_11 ~ q7.6
+    n015_net_J1962_11 ~ r82.1
+
+    # J1962-12
+    signal n016_net_J1962_12
+    n016_net_J1962_12.override_net_name = "J1962-12"
+    n016_net_J1962_12 ~ c37.2
+    n016_net_J1962_12 ~ d17.1
+    n016_net_J1962_12 ~ d21.1
+    n016_net_J1962_12 ~ j1.12
+    n016_net_J1962_12 ~ q2.3
+    n016_net_J1962_12 ~ r32.1
+
+    # J1962-14
+    signal n017_net_J1962_14
+    n017_net_J1962_14.override_net_name = "J1962-14"
+    n017_net_J1962_14 ~ c39.2
+    n017_net_J1962_14 ~ d18.1
+    n017_net_J1962_14 ~ d22.1
+    n017_net_J1962_14 ~ j1.14
+    n017_net_J1962_14 ~ q3.6
+    n017_net_J1962_14 ~ r36.2
+
+    # J1962-15
+    signal n018_net_J1962_15
+    n018_net_J1962_15.override_net_name = "J1962-15"
+    n018_net_J1962_15 ~ c44.1
+    n018_net_J1962_15 ~ j1.15
+    n018_net_J1962_15 ~ q4.3
+    n018_net_J1962_15 ~ r45.2
+
+    # J1962-16
+    signal n019_net_J1962_16
+    n019_net_J1962_16.override_net_name = "J1962-16"
+    n019_net_J1962_16 ~ d1.1
+    n019_net_J1962_16 ~ d2.2
+    n019_net_J1962_16 ~ j1.16
+    n019_net_J1962_16 ~ r49.1
+
+    # J1962-2
+    signal n020_net_J1962_2
+    n020_net_J1962_2.override_net_name = "J1962-2"
+    n020_net_J1962_2 ~ c25.1
+    n020_net_J1962_2 ~ d11.1
+    n020_net_J1962_2 ~ d12.1
+    n020_net_J1962_2 ~ j1.2
+    n020_net_J1962_2 ~ r6.1
+    n020_net_J1962_2 ~ r21.1
+
+    # J1962-3
+    signal n021_net_J1962_3
+    n021_net_J1962_3.override_net_name = "J1962-3"
+    n021_net_J1962_3 ~ d13.1
+    n021_net_J1962_3 ~ j1.3
+    n021_net_J1962_3 ~ q7.3
+    n021_net_J1962_3 ~ r81.1
+
+    # J1962-6
+    signal n022_net_J1962_6
+    n022_net_J1962_6.override_net_name = "J1962-6"
+    n022_net_J1962_6 ~ c36.2
+    n022_net_J1962_6 ~ d15.1
+    n022_net_J1962_6 ~ d19.1
+    n022_net_J1962_6 ~ j1.6
+    n022_net_J1962_6 ~ q2.6
+    n022_net_J1962_6 ~ r29.2
+
+    # J1962-7
+    signal n023_net_J1962_7
+    n023_net_J1962_7.override_net_name = "J1962-7"
+    n023_net_J1962_7 ~ c42.1
+    n023_net_J1962_7 ~ j1.7
+    n023_net_J1962_7 ~ q4.6
+    n023_net_J1962_7 ~ r42.2
+
+    # J1962-9
+    signal n024_net_J1962_9
+    n024_net_J1962_9.override_net_name = "J1962-9"
+    n024_net_J1962_9 ~ c40.2
+    n024_net_J1962_9 ~ d16.1
+    n024_net_J1962_9 ~ d20.1
+    n024_net_J1962_9 ~ j1.9
+    n024_net_J1962_9 ~ q3.3
+    n024_net_J1962_9 ~ r39.1
+
+    # LNA_IN
+    signal n025_net_LNA_IN
+    n025_net_LNA_IN.override_net_name = "LNA_IN"
+    n025_net_LNA_IN ~ r22.2
+    n025_net_LNA_IN ~ r24.1
+    n025_net_LNA_IN ~ u10.2
+
+    # N_C17_1
+    signal n026_net_N_C17_1
+    n026_net_N_C17_1.override_net_name = "N_C17_1"
+    n026_net_N_C17_1 ~ c17.1
+    n026_net_N_C17_1 ~ u6.1
+
+    # N_C17_2
+    signal n027_net_N_C17_2
+    n027_net_N_C17_2.override_net_name = "N_C17_2"
+    n027_net_N_C17_2 ~ c17.2
+    n027_net_N_C17_2 ~ d8.1
+    n027_net_N_C17_2 ~ l4.1
+    n027_net_N_C17_2 ~ u6.6
+
+    # N_C21_1
+    signal n028_net_N_C21_1
+    n028_net_N_C21_1.override_net_name = "N_C21_1"
+    n028_net_N_C21_1 ~ c21.1
+    n028_net_N_C21_1 ~ u7.1
+
+    # N_C21_2
+    signal n029_net_N_C21_2
+    n029_net_N_C21_2.override_net_name = "N_C21_2"
+    n029_net_N_C21_2 ~ c21.2
+    n029_net_N_C21_2 ~ d9.1
+    n029_net_N_C21_2 ~ l6.1
+    n029_net_N_C21_2 ~ u7.6
+
+    # N_C33_1
+    signal n030_net_N_C33_1
+    n030_net_N_C33_1.override_net_name = "N_C33_1"
+    n030_net_N_C33_1 ~ c33.1
+    n030_net_N_C33_1 ~ u10.26
+
+    # N_C3_1
+    signal n031_net_N_C3_1
+    n031_net_N_C3_1.override_net_name = "N_C3_1"
+    n031_net_N_C3_1 ~ c3.1
+    n031_net_N_C3_1 ~ d3.2
+    n031_net_N_C3_1 ~ jp2.2
+    n031_net_N_C3_1 ~ u1.4
+
+    # N_C5_1
+    signal n032_net_N_C5_1
+    n032_net_N_C5_1.override_net_name = "N_C5_1"
+    n032_net_N_C5_1 ~ c5.1
+    n032_net_N_C5_1 ~ u2.1
+
+    # N_C5_2
+    signal n033_net_N_C5_2
+    n033_net_N_C5_2.override_net_name = "N_C5_2"
+    n033_net_N_C5_2 ~ c5.2
+    n033_net_N_C5_2 ~ d4.1
+    n033_net_N_C5_2 ~ l1.1
+    n033_net_N_C5_2 ~ u2.6
+
+    # N_D7_2
+    signal n034_net_N_D7_2
+    n034_net_N_D7_2.override_net_name = "N_D7_2"
+    n034_net_N_D7_2 ~ d7.2
+    n034_net_N_D7_2 ~ l2.2
+    n034_net_N_D7_2 ~ u5.1
+
+    # N_J1_5
+    signal n035_net_N_J1_5
+    n035_net_N_J1_5.override_net_name = "N_J1_5"
+    n035_net_N_J1_5 ~ j1.5
+    n035_net_N_J1_5 ~ jp1.1
+
+    # N_Q10B_4
+    signal n036_net_N_Q10B_4
+    n036_net_N_Q10B_4.override_net_name = "N_Q10B_4"
+    n036_net_N_Q10B_4 ~ d17.2
+    n036_net_N_Q10B_4 ~ q10.4
+
+    # N_Q11B_4
+    signal n037_net_N_Q11B_4
+    n037_net_N_Q11B_4.override_net_name = "N_Q11B_4"
+    n037_net_N_Q11B_4 ~ d18.2
+    n037_net_N_Q11B_4 ~ q11.4
+
+    # N_Q12B_4
+    signal n038_net_N_Q12B_4
+    n038_net_N_Q12B_4.override_net_name = "N_Q12B_4"
+    n038_net_N_Q12B_4 ~ d19.2
+    n038_net_N_Q12B_4 ~ q12.4
+
+    # N_Q13B_4
+    signal n039_net_N_Q13B_4
+    n039_net_N_Q13B_4.override_net_name = "N_Q13B_4"
+    n039_net_N_Q13B_4 ~ d20.2
+    n039_net_N_Q13B_4 ~ q13.4
+
+    # N_Q14B_4
+    signal n040_net_N_Q14B_4
+    n040_net_N_Q14B_4.override_net_name = "N_Q14B_4"
+    n040_net_N_Q14B_4 ~ d21.2
+    n040_net_N_Q14B_4 ~ q14.4
+
+    # N_Q15B_4
+    signal n041_net_N_Q15B_4
+    n041_net_N_Q15B_4.override_net_name = "N_Q15B_4"
+    n041_net_N_Q15B_4 ~ d22.2
+    n041_net_N_Q15B_4 ~ q15.4
+
+    # N_Q17_3
+    signal n042_net_N_Q17_3
+    n042_net_N_Q17_3.override_net_name = "N_Q17_3"
+    n042_net_N_Q17_3 ~ d23.1
+    n042_net_N_Q17_3 ~ q17.3
+
+    # N_Q18_3
+    signal n043_net_N_Q18_3
+    n043_net_N_Q18_3.override_net_name = "N_Q18_3"
+    n043_net_N_Q18_3 ~ d24.1
+    n043_net_N_Q18_3 ~ q18.3
+
+    # N_Q19_3
+    signal n044_net_N_Q19_3
+    n044_net_N_Q19_3.override_net_name = "N_Q19_3"
+    n044_net_N_Q19_3 ~ d25.1
+    n044_net_N_Q19_3 ~ q19.3
+
+    # N_Q1B_3
+    signal n045_net_N_Q1B_3
+    n045_net_N_Q1B_3.override_net_name = "N_Q1B_3"
+    n045_net_N_Q1B_3 ~ d11.2
+    n045_net_N_Q1B_3 ~ q1.3
+
+    # N_Q20_3
+    signal n046_net_N_Q20_3
+    n046_net_N_Q20_3.override_net_name = "N_Q20_3"
+    n046_net_N_Q20_3 ~ d26.1
+    n046_net_N_Q20_3 ~ q20.3
+
+    # N_Q8B_4
+    signal n047_net_N_Q8B_4
+    n047_net_N_Q8B_4.override_net_name = "N_Q8B_4"
+    n047_net_N_Q8B_4 ~ d15.2
+    n047_net_N_Q8B_4 ~ q8.4
+
+    # N_Q9B_4
+    signal n048_net_N_Q9B_4
+    n048_net_N_Q9B_4.override_net_name = "N_Q9B_4"
+    n048_net_N_Q9B_4 ~ d16.2
+    n048_net_N_Q9B_4 ~ q9.4
+
+    # N_R100_1
+    signal n049_net_N_R100_1
+    n049_net_N_R100_1.override_net_name = "N_R100_1"
+    n049_net_N_R100_1 ~ q16.3
+    n049_net_N_R100_1 ~ r100.1
+
+    # N_R101_1
+    signal n050_net_N_R101_1
+    n050_net_N_R101_1.override_net_name = "N_R101_1"
+    n050_net_N_R101_1 ~ q16.6
+    n050_net_N_R101_1 ~ r101.1
+
+    # N_R10_2
+    signal n051_net_N_R10_2
+    n051_net_N_R10_2.override_net_name = "N_R10_2"
+    n051_net_N_R10_2 ~ r10.2
+    n051_net_N_R10_2 ~ u6.4
+
+    # N_R11_1
+    signal n052_net_N_R11_1
+    n052_net_N_R11_1.override_net_name = "N_R11_1"
+    n052_net_N_R11_1 ~ c18.1
+    n052_net_N_R11_1 ~ l4.2
+    n052_net_N_R11_1 ~ l5.1
+    n052_net_N_R11_1 ~ r11.1
+
+    # N_R11_2
+    signal n053_net_N_R11_2
+    n053_net_N_R11_2.override_net_name = "N_R11_2"
+    n053_net_N_R11_2 ~ r11.2
+    n053_net_N_R11_2 ~ r12.1
+    n053_net_N_R11_2 ~ u6.3
+
+    # N_R13_2
+    signal n054_net_N_R13_2
+    n054_net_N_R13_2.override_net_name = "N_R13_2"
+    n054_net_N_R13_2 ~ r13.2
+    n054_net_N_R13_2 ~ u7.4
+
+    # N_R14_1
+    signal n055_net_N_R14_1
+    n055_net_N_R14_1.override_net_name = "N_R14_1"
+    n055_net_N_R14_1 ~ c22.1
+    n055_net_N_R14_1 ~ c23.1
+    n055_net_N_R14_1 ~ d10.1
+    n055_net_N_R14_1 ~ l6.2
+    n055_net_N_R14_1 ~ r14.1
+    n055_net_N_R14_1 ~ u8.4
+    n055_net_N_R14_1 ~ u8.6
+
+    # N_R14_2
+    signal n056_net_N_R14_2
+    n056_net_N_R14_2.override_net_name = "N_R14_2"
+    n056_net_N_R14_2 ~ r14.2
+    n056_net_N_R14_2 ~ r15.1
+    n056_net_N_R14_2 ~ u7.3
+
+    # N_R16_2
+    signal n057_net_N_R16_2
+    n057_net_N_R16_2.override_net_name = "N_R16_2"
+    n057_net_N_R16_2 ~ r16.2
+    n057_net_N_R16_2 ~ r17.1
+    n057_net_N_R16_2 ~ u8.2
+
+    # N_R19_2
+    signal n058_net_N_R19_2
+    n058_net_N_R19_2.override_net_name = "N_R19_2"
+    n058_net_N_R19_2 ~ q1.2
+    n058_net_N_R19_2 ~ r19.2
+
+    # N_R1_2
+    signal n059_net_N_R1_2
+    n059_net_N_R1_2.override_net_name = "N_R1_2"
+    n059_net_N_R1_2 ~ r1.2
+    n059_net_N_R1_2 ~ u2.4
+
+    # N_R20_2
+    signal n060_net_N_R20_2
+    n060_net_N_R20_2.override_net_name = "N_R20_2"
+    n060_net_N_R20_2 ~ q1.6
+    n060_net_N_R20_2 ~ q1.5
+    n060_net_N_R20_2 ~ r20.2
+
+    # N_R23_1
+    signal n061_net_N_R23_1
+    n061_net_N_R23_1.override_net_name = "N_R23_1"
+    n061_net_N_R23_1 ~ ae1.1
+    n061_net_N_R23_1 ~ r22.1
+    n061_net_N_R23_1 ~ r23.1
+
+    # N_R25_1
+    signal n062_net_N_R25_1
+    n062_net_N_R25_1.override_net_name = "N_R25_1"
+    n062_net_N_R25_1 ~ r25.1
+    n062_net_N_R25_1 ~ u10.41
+
+    # N_R26_2
+    signal n063_net_N_R26_2
+    n063_net_N_R26_2.override_net_name = "N_R26_2"
+    n063_net_N_R26_2 ~ r26.2
+    n063_net_N_R26_2 ~ r27.1
+    n063_net_N_R26_2 ~ u12.8
+
+    # N_R28_2
+    signal n064_net_N_R28_2
+    n064_net_N_R28_2.override_net_name = "N_R28_2"
+    n064_net_N_R28_2 ~ r28.2
+    n064_net_N_R28_2 ~ u12.9
+
+    # N_R2_1
+    signal n065_net_N_R2_1
+    n065_net_N_R2_1.override_net_name = "N_R2_1"
+    n065_net_N_R2_1 ~ c6.1
+    n065_net_N_R2_1 ~ c7.1
+    n065_net_N_R2_1 ~ d5.1
+    n065_net_N_R2_1 ~ l1.2
+    n065_net_N_R2_1 ~ r2.1
+    n065_net_N_R2_1 ~ u3.4
+    n065_net_N_R2_1 ~ u3.6
+
+    # N_R30_2
+    signal n066_net_N_R30_2
+    n066_net_N_R30_2.override_net_name = "N_R30_2"
+    n066_net_N_R30_2 ~ q2.1
+    n066_net_N_R30_2 ~ r30.2
+    n066_net_N_R30_2 ~ u13.2
+
+    # N_R33_1
+    signal n067_net_N_R33_1
+    n067_net_N_R33_1.override_net_name = "N_R33_1"
+    n067_net_N_R33_1 ~ q2.4
+    n067_net_N_R33_1 ~ r33.1
+    n067_net_N_R33_1 ~ u13.6
+
+    # N_R37_2
+    signal n068_net_N_R37_2
+    n068_net_N_R37_2.override_net_name = "N_R37_2"
+    n068_net_N_R37_2 ~ q3.1
+    n068_net_N_R37_2 ~ r37.2
+    n068_net_N_R37_2 ~ u14.2
+
+    # N_R3_1
+    signal n069_net_N_R3_1
+    n069_net_N_R3_1.override_net_name = "N_R3_1"
+    n069_net_N_R3_1 ~ r2.2
+    n069_net_N_R3_1 ~ r3.1
+    n069_net_N_R3_1 ~ u2.3
+
+    # N_R40_1
+    signal n070_net_N_R40_1
+    n070_net_N_R40_1.override_net_name = "N_R40_1"
+    n070_net_N_R40_1 ~ q3.4
+    n070_net_N_R40_1 ~ r40.1
+    n070_net_N_R40_1 ~ u14.6
+
+    # N_R43_2
+    signal n071_net_N_R43_2
+    n071_net_N_R43_2.override_net_name = "N_R43_2"
+    n071_net_N_R43_2 ~ q4.1
+    n071_net_N_R43_2 ~ r43.2
+    n071_net_N_R43_2 ~ u15.2
+
+    # N_R46_2
+    signal n072_net_N_R46_2
+    n072_net_N_R46_2.override_net_name = "N_R46_2"
+    n072_net_N_R46_2 ~ q4.4
+    n072_net_N_R46_2 ~ r46.2
+    n072_net_N_R46_2 ~ u15.6
+
+    # N_R4_2
+    signal n073_net_N_R4_2
+    n073_net_N_R4_2.override_net_name = "N_R4_2"
+    n073_net_N_R4_2 ~ r4.2
+    n073_net_N_R4_2 ~ r5.1
+    n073_net_N_R4_2 ~ u9.1
+
+    # N_R56_2
+    signal n074_net_N_R56_2
+    n074_net_N_R56_2.override_net_name = "N_R56_2"
+    n074_net_N_R56_2 ~ q8.6
+    n074_net_N_R56_2 ~ q8.3
+    n074_net_N_R56_2 ~ r56.2
+
+    # N_R58_2
+    signal n075_net_N_R58_2
+    n075_net_N_R58_2.override_net_name = "N_R58_2"
+    n075_net_N_R58_2 ~ q9.6
+    n075_net_N_R58_2 ~ q9.3
+    n075_net_N_R58_2 ~ r58.2
+
+    # N_R60_2
+    signal n076_net_N_R60_2
+    n076_net_N_R60_2.override_net_name = "N_R60_2"
+    n076_net_N_R60_2 ~ q10.6
+    n076_net_N_R60_2 ~ q10.3
+    n076_net_N_R60_2 ~ r60.2
+
+    # N_R62_2
+    signal n077_net_N_R62_2
+    n077_net_N_R62_2.override_net_name = "N_R62_2"
+    n077_net_N_R62_2 ~ q11.6
+    n077_net_N_R62_2 ~ q11.3
+    n077_net_N_R62_2 ~ r62.2
+
+    # N_R64_2
+    signal n078_net_N_R64_2
+    n078_net_N_R64_2.override_net_name = "N_R64_2"
+    n078_net_N_R64_2 ~ q12.3
+    n078_net_N_R64_2 ~ r64.2
+    n078_net_N_R64_2 ~ r65.1
+
+    # N_R65_2
+    signal n079_net_N_R65_2
+    n079_net_N_R65_2.override_net_name = "N_R65_2"
+    n079_net_N_R65_2 ~ q12.6
+    n079_net_N_R65_2 ~ r65.2
+
+    # N_R67_2
+    signal n080_net_N_R67_2
+    n080_net_N_R67_2.override_net_name = "N_R67_2"
+    n080_net_N_R67_2 ~ q13.3
+    n080_net_N_R67_2 ~ r67.2
+    n080_net_N_R67_2 ~ r68.1
+
+    # N_R68_2
+    signal n081_net_N_R68_2
+    n081_net_N_R68_2.override_net_name = "N_R68_2"
+    n081_net_N_R68_2 ~ q13.6
+    n081_net_N_R68_2 ~ r68.2
+
+    # N_R6_2
+    signal n082_net_N_R6_2
+    n082_net_N_R6_2.override_net_name = "N_R6_2"
+    n082_net_N_R6_2 ~ r6.2
+    n082_net_N_R6_2 ~ u9.3
+
+    # N_R70_2
+    signal n083_net_N_R70_2
+    n083_net_N_R70_2.override_net_name = "N_R70_2"
+    n083_net_N_R70_2 ~ q14.3
+    n083_net_N_R70_2 ~ r70.2
+    n083_net_N_R70_2 ~ r71.1
+
+    # N_R71_2
+    signal n084_net_N_R71_2
+    n084_net_N_R71_2.override_net_name = "N_R71_2"
+    n084_net_N_R71_2 ~ q14.6
+    n084_net_N_R71_2 ~ r71.2
+
+    # N_R73_2
+    signal n085_net_N_R73_2
+    n085_net_N_R73_2.override_net_name = "N_R73_2"
+    n085_net_N_R73_2 ~ q15.3
+    n085_net_N_R73_2 ~ r73.2
+    n085_net_N_R73_2 ~ r74.1
+
+    # N_R74_2
+    signal n086_net_N_R74_2
+    n086_net_N_R74_2.override_net_name = "N_R74_2"
+    n086_net_N_R74_2 ~ q15.6
+    n086_net_N_R74_2 ~ r74.2
+
+    # N_R76_2
+    signal n087_net_N_R76_2
+    n087_net_N_R76_2.override_net_name = "N_R76_2"
+    n087_net_N_R76_2 ~ q6.6
+    n087_net_N_R76_2 ~ q6.5
+    n087_net_N_R76_2 ~ r76.2
+
+    # N_R78_2
+    signal n088_net_N_R78_2
+    n088_net_N_R78_2.override_net_name = "N_R78_2"
+    n088_net_N_R78_2 ~ q7.1
+    n088_net_N_R78_2 ~ r78.2
+    n088_net_N_R78_2 ~ r79.1
+
+    # N_R79_2
+    signal n089_net_N_R79_2
+    n089_net_N_R79_2.override_net_name = "N_R79_2"
+    n089_net_N_R79_2 ~ q7.4
+    n089_net_N_R79_2 ~ r79.2
+    n089_net_N_R79_2 ~ r80.1
+
+    # N_R83_2
+    signal n090_net_N_R83_2
+    n090_net_N_R83_2.override_net_name = "N_R83_2"
+    n090_net_N_R83_2 ~ r83.2
+    n090_net_N_R83_2 ~ u16.3
+
+    # N_R84_2
+    signal n091_net_N_R84_2
+    n091_net_N_R84_2.override_net_name = "N_R84_2"
+    n091_net_N_R84_2 ~ r84.2
+    n091_net_N_R84_2 ~ u16.1
+
+    # N_R88_2
+    signal n092_net_N_R88_2
+    n092_net_N_R88_2.override_net_name = "N_R88_2"
+    n092_net_N_R88_2 ~ r88.2
+    n092_net_N_R88_2 ~ u19.23
+
+    # N_R89_2
+    signal n093_net_N_R89_2
+    n093_net_N_R89_2.override_net_name = "N_R89_2"
+    n093_net_N_R89_2 ~ d23.2
+    n093_net_N_R89_2 ~ r89.2
+
+    # N_R8_1
+    signal n094_net_N_R8_1
+    n094_net_N_R8_1.override_net_name = "N_R8_1"
+    n094_net_N_R8_1 ~ c14.1
+    n094_net_N_R8_1 ~ d7.1
+    n094_net_N_R8_1 ~ l3.1
+    n094_net_N_R8_1 ~ r8.1
+
+    # N_R8_2
+    signal n095_net_N_R8_2
+    n095_net_N_R8_2.override_net_name = "N_R8_2"
+    n095_net_N_R8_2 ~ r8.2
+    n095_net_N_R8_2 ~ r9.1
+    n095_net_N_R8_2 ~ u5.3
+
+    # N_R91_2
+    signal n096_net_N_R91_2
+    n096_net_N_R91_2.override_net_name = "N_R91_2"
+    n096_net_N_R91_2 ~ d24.2
+    n096_net_N_R91_2 ~ r91.2
+
+    # N_R93_2
+    signal n097_net_N_R93_2
+    n097_net_N_R93_2.override_net_name = "N_R93_2"
+    n097_net_N_R93_2 ~ d25.2
+    n097_net_N_R93_2 ~ r93.2
+
+    # N_R95_2
+    signal n098_net_N_R95_2
+    n098_net_N_R95_2.override_net_name = "N_R95_2"
+    n098_net_N_R95_2 ~ d26.2
+    n098_net_N_R95_2 ~ r95.2
+
+    # N_R98_1
+    signal n099_net_N_R98_1
+    n099_net_N_R98_1.override_net_name = "N_R98_1"
+    n099_net_N_R98_1 ~ r98.1
+    n099_net_N_R98_1 ~ u17.4
+
+    # N_R98_2
+    signal n100_net_N_R98_2
+    n100_net_N_R98_2.override_net_name = "N_R98_2"
+    n100_net_N_R98_2 ~ q16.5
+    n100_net_N_R98_2 ~ r98.2
+
+    # N_R99_1
+    signal n101_net_N_R99_1
+    n101_net_N_R99_1.override_net_name = "N_R99_1"
+    n101_net_N_R99_1 ~ r99.1
+    n101_net_N_R99_1 ~ u18.4
+
+    # N_R99_2
+    signal n102_net_N_R99_2
+    n102_net_N_R99_2.override_net_name = "N_R99_2"
+    n102_net_N_R99_2 ~ q16.2
+    n102_net_N_R99_2 ~ r99.2
+
+    # PCI_RX
+    signal n103_net_PCI_RX
+    n103_net_PCI_RX.override_net_name = "PCI_RX"
+    n103_net_PCI_RX ~ c12.1
+    n103_net_PCI_RX ~ r7.2
+    n103_net_PCI_RX ~ u9.4
+    n103_net_PCI_RX ~ u10.17
+
+    # PCI_TX
+    signal n104_net_PCI_TX
+    n104_net_PCI_TX.override_net_name = "PCI_TX"
+    n104_net_PCI_TX ~ r18.1
+    n104_net_PCI_TX ~ r19.1
+    n104_net_PCI_TX ~ u10.16
+
+    # PWR_LED
+    signal n105_net_PWR_LED
+    n105_net_PWR_LED.override_net_name = "PWR_LED"
+    n105_net_PWR_LED ~ q19.1
+    n105_net_PWR_LED ~ r94.1
+    n105_net_PWR_LED ~ u10.12
+
+    # RTS
+    signal n106_net_RTS
+    n106_net_RTS.override_net_name = "RTS"
+    n106_net_RTS ~ q5.1
+    n106_net_RTS ~ q5.5
+    n106_net_RTS ~ u12.24
+
+    # RX0
+    signal n107_net_RX0
+    n107_net_RX0.override_net_name = "RX0"
+    n107_net_RX0 ~ u10.40
+    n107_net_RX0 ~ u12.26
+
+    # RX1
+    signal n108_net_RX1
+    n108_net_RX1.override_net_name = "RX1"
+    n108_net_RX1 ~ c53.1
+    n108_net_RX1 ~ r85.2
+    n108_net_RX1 ~ u10.33
+    n108_net_RX1 ~ u16.4
+
+    # RX15_EN
+    signal n109_net_RX15_EN
+    n109_net_RX15_EN.override_net_name = "RX15_EN"
+    n109_net_RX15_EN ~ r47.2
+    n109_net_RX15_EN ~ u15.3
+    n109_net_RX15_EN ~ u19.15
+
+    # RX2
+    signal n110_net_RX2
+    n110_net_RX2.override_net_name = "RX2"
+    n110_net_RX2 ~ u10.34
+    n110_net_RX2 ~ u15.1
+    n110_net_RX2 ~ u15.5
+
+    # RX7_BIAS
+    signal n111_net_RX7_BIAS
+    n111_net_RX7_BIAS.override_net_name = "RX7_BIAS"
+    n111_net_RX7_BIAS ~ q6.3
+    n111_net_RX7_BIAS ~ r42.1
+
+    # RX7_BIAS_EN
+    signal n112_net_RX7_BIAS_EN
+    n112_net_RX7_BIAS_EN.override_net_name = "RX7_BIAS_EN"
+    n112_net_RX7_BIAS_EN ~ q6.2
+    n112_net_RX7_BIAS_EN ~ r75.1
+    n112_net_RX7_BIAS_EN ~ u19.16
+
+    # RX7_EN
+    signal n113_net_RX7_EN
+    n113_net_RX7_EN.override_net_name = "RX7_EN"
+    n113_net_RX7_EN ~ r44.2
+    n113_net_RX7_EN ~ u15.7
+    n113_net_RX7_EN ~ u19.14
+
+    # RX_LED
+    signal n114_net_RX_LED
+    n114_net_RX_LED.override_net_name = "RX_LED"
+    n114_net_RX_LED ~ q17.1
+    n114_net_RX_LED ~ r90.1
+    n114_net_RX_LED ~ u10.14
+
+    # SCL
+    signal n115_net_SCL
+    n115_net_SCL.override_net_name = "SCL"
+    n115_net_SCL ~ j3.5
+    n115_net_SCL ~ r87.2
+    n115_net_SCL ~ u10.39
+    n115_net_SCL ~ u19.19
+
+    # SDA
+    signal n116_net_SDA
+    n116_net_SDA.override_net_name = "SDA"
+    n116_net_SDA ~ j3.6
+    n116_net_SDA ~ r86.2
+    n116_net_SDA ~ u10.42
+    n116_net_SDA ~ u19.20
+
+    # TBEN
+    signal n117_net_TBEN
+    n117_net_TBEN.override_net_name = "TBEN"
+    n117_net_TBEN ~ q7.5
+    n117_net_TBEN ~ q7.2
+    n117_net_TBEN ~ r77.2
+    n117_net_TBEN ~ u19.17
+
+    # TX0
+    signal n118_net_TX0
+    n118_net_TX0.override_net_name = "TX0"
+    n118_net_TX0 ~ r25.2
+    n118_net_TX0 ~ u12.25
+
+    # TX1
+    signal n119_net_TX1
+    n119_net_TX1.override_net_name = "TX1"
+    n119_net_TX1 ~ r97.2
+    n119_net_TX1 ~ u10.32
+    n119_net_TX1 ~ u17.2
+    n119_net_TX1 ~ u18.2
+
+    # TX12_EN
+    signal n120_net_TX12_EN
+    n120_net_TX12_EN.override_net_name = "TX12_EN"
+    n120_net_TX12_EN ~ r34.1
+    n120_net_TX12_EN ~ u13.3
+    n120_net_TX12_EN ~ u19.3
+
+    # TX14_EN
+    signal n121_net_TX14_EN
+    n121_net_TX14_EN.override_net_name = "TX14_EN"
+    n121_net_TX14_EN ~ r38.2
+    n121_net_TX14_EN ~ u14.7
+    n121_net_TX14_EN ~ u19.4
+
+    # TX2
+    signal n122_net_TX2
+    n122_net_TX2.override_net_name = "TX2"
+    n122_net_TX2 ~ u10.24
+    n122_net_TX2 ~ u13.1
+    n122_net_TX2 ~ u13.5
+    n122_net_TX2 ~ u14.1
+    n122_net_TX2 ~ u14.5
+
+    # TX6_EN
+    signal n123_net_TX6_EN
+    n123_net_TX6_EN.override_net_name = "TX6_EN"
+    n123_net_TX6_EN ~ r31.2
+    n123_net_TX6_EN ~ u13.7
+    n123_net_TX6_EN ~ u19.1
+
+    # TX9_EN
+    signal n124_net_TX9_EN
+    n124_net_TX9_EN.override_net_name = "TX9_EN"
+    n124_net_TX9_EN ~ r41.1
+    n124_net_TX9_EN ~ u14.3
+    n124_net_TX9_EN ~ u19.2
+
+    # TX_LED
+    signal n125_net_TX_LED
+    n125_net_TX_LED.override_net_name = "TX_LED"
+    n125_net_TX_LED ~ q18.1
+    n125_net_TX_LED ~ r92.1
+    n125_net_TX_LED ~ u10.15
+
+    # USB_CC1
+    signal n126_net_USB_CC1
+    n126_net_USB_CC1.override_net_name = "USB_CC1"
+    n126_net_USB_CC1 ~ j2.A5
+    n126_net_USB_CC1 ~ r102.1
+
+    # USB_CC2
+    signal n127_net_USB_CC2
+    n127_net_USB_CC2.override_net_name = "USB_CC2"
+    n127_net_USB_CC2 ~ j2.B5
+    n127_net_USB_CC2 ~ r103.1
+
+    # VBB
+    signal n128_net_VBB
+    n128_net_VBB.override_net_name = "VBB"
+    n128_net_VBB ~ c19.1
+    n128_net_VBB ~ l5.2
+    n128_net_VBB ~ q8.2
+    n128_net_VBB ~ q9.2
+    n128_net_VBB ~ q10.2
+    n128_net_VBB ~ q11.2
+    n128_net_VBB ~ r51.1
+    n128_net_VBB ~ r56.1
+    n128_net_VBB ~ r58.1
+    n128_net_VBB ~ r60.1
+    n128_net_VBB ~ r62.1
+
+    # VBB_TO_TX12
+    signal n129_net_VBB_TO_TX12
+    n129_net_VBB_TO_TX12.override_net_name = "VBB_TO_TX12"
+    n129_net_VBB_TO_TX12 ~ q10.1
+    n129_net_VBB_TO_TX12 ~ r59.1
+    n129_net_VBB_TO_TX12 ~ u19.7
+
+    # VBB_TO_TX14
+    signal n130_net_VBB_TO_TX14
+    n130_net_VBB_TO_TX14.override_net_name = "VBB_TO_TX14"
+    n130_net_VBB_TO_TX14 ~ q11.1
+    n130_net_VBB_TO_TX14 ~ r61.1
+    n130_net_VBB_TO_TX14 ~ u19.8
+
+    # VBB_TO_TX6
+    signal n131_net_VBB_TO_TX6
+    n131_net_VBB_TO_TX6.override_net_name = "VBB_TO_TX6"
+    n131_net_VBB_TO_TX6 ~ q8.1
+    n131_net_VBB_TO_TX6 ~ r55.1
+    n131_net_VBB_TO_TX6 ~ u19.5
+
+    # VBB_TO_TX9
+    signal n132_net_VBB_TO_TX9
+    n132_net_VBB_TO_TX9.override_net_name = "VBB_TO_TX9"
+    n132_net_VBB_TO_TX9 ~ q9.1
+    n132_net_VBB_TO_TX9 ~ r57.1
+    n132_net_VBB_TO_TX9 ~ u19.6
+
+    # VBUS
+    signal n133_net_VBUS
+    n133_net_VBUS.override_net_name = "VBUS"
+    n133_net_VBUS ~ c2.1
+    n133_net_VBUS ~ j2.A4
+    n133_net_VBUS ~ j2.A9
+    n133_net_VBUS ~ j2.B4
+    n133_net_VBUS ~ j2.B9
+    n133_net_VBUS ~ jp2.1
+    n133_net_VBUS ~ r26.1
+    n133_net_VBUS ~ u1.2
+    n133_net_VBUS ~ u1.3
+    n133_net_VBUS ~ u11.5
+
+    # VPP
+    signal n134_net_VPP
+    n134_net_VPP.override_net_name = "VPP"
+    n134_net_VPP ~ c15.1
+    n134_net_VPP ~ c16.1
+    n134_net_VPP ~ l3.2
+    n134_net_VPP ~ q12.2
+    n134_net_VPP ~ q13.2
+    n134_net_VPP ~ q14.2
+    n134_net_VPP ~ q15.2
+    n134_net_VPP ~ r10.1
+    n134_net_VPP ~ r53.1
+    n134_net_VPP ~ r64.1
+    n134_net_VPP ~ r67.1
+    n134_net_VPP ~ r70.1
+    n134_net_VPP ~ r73.1
+    n134_net_VPP ~ u6.5
+
+    # VPP_TO_TX12
+    signal n135_net_VPP_TO_TX12
+    n135_net_VPP_TO_TX12.override_net_name = "VPP_TO_TX12"
+    n135_net_VPP_TO_TX12 ~ q14.1
+    n135_net_VPP_TO_TX12 ~ r69.1
+    n135_net_VPP_TO_TX12 ~ u19.12
+
+    # VPP_TO_TX14
+    signal n136_net_VPP_TO_TX14
+    n136_net_VPP_TO_TX14.override_net_name = "VPP_TO_TX14"
+    n136_net_VPP_TO_TX14 ~ q15.1
+    n136_net_VPP_TO_TX14 ~ r72.1
+    n136_net_VPP_TO_TX14 ~ u19.13
+
+    # VPP_TO_TX6
+    signal n137_net_VPP_TO_TX6
+    n137_net_VPP_TO_TX6.override_net_name = "VPP_TO_TX6"
+    n137_net_VPP_TO_TX6 ~ q12.1
+    n137_net_VPP_TO_TX6 ~ r63.1
+    n137_net_VPP_TO_TX6 ~ u19.10
+
+    # VPP_TO_TX9
+    signal n138_net_VPP_TO_TX9
+    n138_net_VPP_TO_TX9.override_net_name = "VPP_TO_TX9"
+    n138_net_VPP_TO_TX9 ~ q13.1
+    n138_net_VPP_TO_TX9 ~ r66.1
+    n138_net_VPP_TO_TX9 ~ u19.11
+
+    # V_BA
+    signal n139_net_V_BA
+    n139_net_V_BA.override_net_name = "V_BA"
+    n139_net_V_BA ~ c47.1
+    n139_net_V_BA ~ d27.1
+    n139_net_V_BA ~ r49.2
+    n139_net_V_BA ~ r50.1
+    n139_net_V_BA ~ u10.13
+
+    # V_BT
+    signal n140_net_V_BT
+    n140_net_V_BT.override_net_name = "V_BT"
+    n140_net_V_BT ~ c48.1
+    n140_net_V_BT ~ d28.1
+    n140_net_V_BT ~ r51.2
+    n140_net_V_BT ~ r52.1
+    n140_net_V_BT ~ u10.10
+
+    # V_PR
+    signal n141_net_V_PR
+    n141_net_V_PR.override_net_name = "V_PR"
+    n141_net_V_PR ~ c49.1
+    n141_net_V_PR ~ d29.1
+    n141_net_V_PR ~ r53.2
+    n141_net_V_PR ~ r54.1
+    n141_net_V_PR ~ u10.11

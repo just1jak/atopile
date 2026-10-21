@@ -1,0 +1,234 @@
+{
+  "pathsAreRelativeToRepositoryRoot": true,
+  "includesOnlyOwnCurrentDependenciesAndCopiedDiagnostics": true,
+  "files": [
+    {
+      "path": "work/chrysler-routed-sd/mcu-final-escape-stage/input/ChryslerScanner_V240_SD.kicad_pcb",
+      "bytes": 2855866,
+      "sha256": "0902c778c8f56598a5c9c79f36f420d5f87bf48f2c6ba173834abb14c671b795",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/mcu-final-escape-stage/input/ChryslerScanner_V240_SD.kicad_pro",
+      "bytes": 20559,
+      "sha256": "71e6d2aab50e0b06567c37f5ff406621a6e2a866393cea7fe732bc78c2a084aa",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/mcu-final-escape-stage/prototype_direct.py",
+      "bytes": 3517,
+      "sha256": "292d77437932531031fef373a4f17d977d8f26c4480cc279ac5d2f9fd19cec5e",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/mcu-final-escape-stage/inspect_candidates.py",
+      "bytes": 1541,
+      "sha256": "787bf375056ca30bc1585f5540b5b5e9657fc7c75b78ff58d5ba35b178f2d81c",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/mcu-final-escape-stage/inspect_direct_txled.py",
+      "bytes": 1433,
+      "sha256": "040764d7020e4a68920840cc163764a0a2d3402ed78a133336299df995b195bb",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/mcu-final-escape-stage/candidate-blockers.json",
+      "bytes": 8220,
+      "sha256": "56469069bce02dc20d5797ac6e176a518b3e47f6a8351cae5a17f32d9ba119f1",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/mcu-final-escape-stage/direct-txled-blockers.json",
+      "bytes": 2596,
+      "sha256": "464174b4550f60723e960bbc486579952452b8323f17e3659d59927843a70e0d",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/ground-detour-stage/apply_detours.py",
+      "bytes": 8619,
+      "sha256": "2a8139cdb186cca03d8dd9f1f0664cddad7bb9d6778ffdfab024ef7e0b01100e",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/audit-stage/audit_routed_board.py",
+      "bytes": 16718,
+      "sha256": "c45f56b9e7194fd981a9995968f3bd9728b859546b0e354de26de8707a4afe5b",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/ground-final-stage/apply_ground_repair_delta.py",
+      "bytes": 6909,
+      "sha256": "dc62c9f28a63802e992dcdc094bc3675589e813500b9def72a2f08ba8b471e98",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/ground-final-stage/ground-repair-delta.json",
+      "bytes": 19955,
+      "sha256": "918552193931d58b98eaae6fbbca71b2be50a8d81a5df1db6b9186e0f9c4e9f5",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/ground-final-stage/delta-validation.json",
+      "bytes": 491,
+      "sha256": "97b304d9db502d57dd89d2eb91a5fd12d6dd423ee479d6aff70e18a754506785",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/ground-final-stage/combined/ChryslerScanner_V240_SD.kicad_pcb",
+      "bytes": 2852636,
+      "sha256": "f5b42ba76001f790c445533dfcd8567136b5b018127ac8982a2b04650661a2d1",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/router-tools/signals-stage/alternate-pin-escape-hints-v2.json",
+      "bytes": 6118,
+      "sha256": "ceaf576b335afb94317b6bf38b754778a8adcece2b15c3c761ddcccb13d9f9b9",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/route-pass-3/seed.kicad_pcb",
+      "bytes": 1228390,
+      "sha256": "885d634678ffe7d6f8eeff15715fc6a4433b2a22a81bfe3fc86fbc6eb20c6f31",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/ground-pour-stage/check3/outer-ground-experiment.kicad_pcb",
+      "bytes": 2691580,
+      "sha256": "b260a0ba4146e57d98317f00db63c77b64d65c32e3895dced6286c34db5a5aad",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/pcb_route_io.py",
+      "bytes": 6680,
+      "sha256": "dc067fae9504543ae6ad2ffee038fead26d08c68a6c970de1695816008ec64bc",
+      "symlink": false
+    },
+    {
+      "path": "work/disk-cleanup-stage/frozen-pcb-duplicates.json",
+      "bytes": 1433,
+      "sha256": "cdcf985daa404df9714dd5815a97926b460b5ab8259d80a4c38be1cfc75e5092",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/r112-txled-draft-recipe.json",
+      "bytes": 5255,
+      "sha256": "2f853386856d9796ccc9d547e07cb0f4256fff784286ce5472afa2381afe20d5",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/frozen-source-rx7-shift-proof.json",
+      "bytes": 8152,
+      "sha256": "62f26ded1e8ae76eabb913c72ff533d05cbb7209d6757fc9c07bbea2a2980661",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/historical-pin-hint-blockers.json",
+      "bytes": 9158,
+      "sha256": "28aaba72102d5aa95f7c46d0b7365b40312fa6a8359fa4b4ec1929cdeaa5143e",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-manifest.json",
+      "bytes": 6874,
+      "sha256": "014a0beaf6503184bb073012c082a7db7395e6e61f94fe25326de134b973d9db",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/R112-TXLED-handoff.md",
+      "bytes": 7889,
+      "sha256": "617122f7c2be189db4fb309186ff61709606d226cd9217530524e20d3b31ec32",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/prototype_direct.INCOMPLETE.py",
+      "bytes": 3517,
+      "sha256": "292d77437932531031fef373a4f17d977d8f26c4480cc279ac5d2f9fd19cec5e",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-pcirx-local--join_pci_rx_front.py",
+      "bytes": 7498,
+      "sha256": "1146f3e9e66d706ffa6a4dbcc4116dd163858844b9b06b6139ec416dd33dd232",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor-alt--apply_anchor_fine.py",
+      "bytes": 8849,
+      "sha256": "856f4e90c1c4cbb399aaaba21e4f980f3e59ba03a2a7cdcb101067227a858ae8",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor-alt--apply_anchor.py",
+      "bytes": 8845,
+      "sha256": "75f34eea0103272e2fd369f7e71bec2908d729e9bc609666424caacc39e56b49",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-pcirx-local--join_pci_rx_back_from_via.py",
+      "bytes": 5342,
+      "sha256": "3cd482e0022f63dee9345de384e7c4780894516c04daa2495e964e1a4ebb4525",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor--verify_cap_delta.py",
+      "bytes": 2362,
+      "sha256": "6712abf0d44f025bf815a4070fcb74193e08840cc23d8c3a34846f3a944601f3",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-final-ground-caps--find_cap_sites.py",
+      "bytes": 4806,
+      "sha256": "cf9821a0b3bfd97aec1a5d798a10b873356d3381e24f7fe5b64a4c02dbdb5803",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-pcirx-local--join_pci_rx_front_fine.py",
+      "bytes": 7502,
+      "sha256": "451c6ba79c1e66d052fbc1a5462833ca996b292251f1248e1b15c9bf71970c89",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor--apply_anchor.py",
+      "bytes": 8844,
+      "sha256": "4dac96d2bcf81d4355f060aa42c735d132fad3d0bc3508e54c1610aca5fe9d3b",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor--apply_cap_repair_delta.py",
+      "bytes": 6868,
+      "sha256": "4c5776de561de665e8b4f1e92c8c7ab195d561d5b55336b857102818dd9283e8",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor--make_cap_delta.py",
+      "bytes": 2055,
+      "sha256": "0e075a6e18efb7dd2dde389723f15b68ba00786a567549985c10b3370a6ef449",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-pcirx-local--join_pci_rx_back_fine.py",
+      "bytes": 5342,
+      "sha256": "8995702c10a020d91eef5195410dfe22d7331d3c4df2ffc06eac66709cea180d",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-final-ground-caps--apply_cap_detours.py",
+      "bytes": 8513,
+      "sha256": "8fe51d25daf4283fb6aac3ae12e580b1328610411910a73b4edbf4885ca5563f",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-final-ground-caps--find_short_ground_neck.py",
+      "bytes": 7227,
+      "sha256": "f9dfc68b66083795f38c2bdbb6c7350b08f3853a4eb52a7e03077a0610687894",
+      "symlink": false
+    },
+    {
+      "path": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-pcirx-local--join_pci_rx.py",
+      "bytes": 7502,
+      "sha256": "73d6b47594e6173954ce80484f357995f3aacbe8ec42c07911f88b0e1939baad",
+      "symlink": false
+    }
+  ]
+}

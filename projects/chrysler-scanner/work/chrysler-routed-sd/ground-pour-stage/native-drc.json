@@ -1,0 +1,2318 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-20T13:14:29",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "outer-ground-experiment.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 1 [GND] of C52 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 120.75,
+                        "y": 107.775
+                    },
+                    "uuid": "79c26aeb-486d-40ab-9463-cf1554cb94a4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [GND] of U13 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 123.8625,
+                        "y": 141.3375
+                    },
+                    "uuid": "9e34a738-3d57-477a-9687-90ac70d101c2"
+                },
+                {
+                    "description": "Pad 2 [GND] of C38 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 128.4375,
+                        "y": 138.3375
+                    },
+                    "uuid": "47909c98-ed77-4328-a695-51a6878f8380"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 4 [GND] of U13 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 123.8625,
+                        "y": 141.3375
+                    },
+                    "uuid": "9e34a738-3d57-477a-9687-90ac70d101c2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C50 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 124.5,
+                        "y": 113.975
+                    },
+                    "uuid": "ae978dd9-d09d-4bc9-ba47-596803f024e9"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 4 [GND] of U14 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 125.5,
+                        "y": 134.8
+                    },
+                    "uuid": "f35d17e2-83c5-4f86-8ebf-dbaec854ef33"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [GND] of U14 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 125.5,
+                        "y": 134.8
+                    },
+                    "uuid": "f35d17e2-83c5-4f86-8ebf-dbaec854ef33"
+                },
+                {
+                    "description": "Pad 2 [GND] of C38 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 128.4375,
+                        "y": 138.3375
+                    },
+                    "uuid": "47909c98-ed77-4328-a695-51a6878f8380"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C38 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 128.4375,
+                        "y": 138.3375
+                    },
+                    "uuid": "47909c98-ed77-4328-a695-51a6878f8380"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [GND] of Q9 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 134.6125
+                    },
+                    "uuid": "50117ecd-091b-4027-9047-bf1b23fc0a9c"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 5 [GND] of Q13 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 140.7,
+                        "y": 134.8875
+                    },
+                    "uuid": "3b6e275b-eb47-49f5-973d-93288464a334"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 5 [GND] of Q10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 151.25,
+                        "y": 149.6125
+                    },
+                    "uuid": "2b7f6b1a-1563-425b-b1ca-68325afaf962"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND B.Cu' [GND] on L4 - Signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "8310b373-f1e5-4536-b4f3-1384e4fa9813"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'L2 GND reference - fill after routing' [GND] on L2 - GND, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "809ac7f6-290e-5503-8766-4621c2d3fabe"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C26 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 172.0,
+                        "y": 121.175
+                    },
+                    "uuid": "a2e7d141-2b94-478a-9493-da80bbea449a"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND B.Cu' [GND] on L4 - Signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "8310b373-f1e5-4536-b4f3-1384e4fa9813"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'L2 GND reference - fill after routing' [GND] on L2 - GND, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "809ac7f6-290e-5503-8766-4621c2d3fabe"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C23 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 185.775,
+                        "y": 115.75
+                    },
+                    "uuid": "5d991bc6-d667-4e33-a533-80c01f35f846"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND B.Cu' [GND] on L4 - Signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "8310b373-f1e5-4536-b4f3-1384e4fa9813"
+                },
+                {
+                    "description": "Pad 2 [GND] of C60 on L4 - Signals",
+                    "pos": {
+                        "x": 189.725,
+                        "y": 135.4
+                    },
+                    "uuid": "d11fdab2-67db-4f0d-8b41-126e45e624d8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C60 on L4 - Signals",
+                    "pos": {
+                        "x": 189.725,
+                        "y": 135.4
+                    },
+                    "uuid": "d11fdab2-67db-4f0d-8b41-126e45e624d8"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND B.Cu' [GND] on L4 - Signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "8310b373-f1e5-4536-b4f3-1384e4fa9813"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "PTH pad SH [GND] of J2",
+                    "pos": {
+                        "x": 203.22,
+                        "y": 124.68
+                    },
+                    "uuid": "6a8af92a-66ec-4429-b364-6c69de6a7f23"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND B.Cu' [GND] on L4 - Signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "8310b373-f1e5-4536-b4f3-1384e4fa9813"
+                },
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VPP] on L1 - Components / critical signals, length 2.0684 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 136.275
+                    },
+                    "uuid": "fb73c204-847b-4b5c-8f24-928ab9790914"
+                },
+                {
+                    "description": "Pad 5 [VPP] of U6 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 154.0875,
+                        "y": 131.88125
+                    },
+                    "uuid": "f7e25700-f2d6-4d12-9317-3b9e29b19d10"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [N_R14_1] of U8 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 192.8625,
+                        "y": 113.35
+                    },
+                    "uuid": "4928b977-0d1e-4ba0-a984-84baa677defa"
+                },
+                {
+                    "description": "Track [N_R14_1] on L1 - Components / critical signals, length 0.0180 mm",
+                    "pos": {
+                        "x": 192.8498,
+                        "y": 114.6627
+                    },
+                    "uuid": "342514b8-228c-408d-bf57-bb034910778e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [N_R14_1] of U8 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 192.8625,
+                        "y": 113.35
+                    },
+                    "uuid": "4928b977-0d1e-4ba0-a984-84baa677defa"
+                },
+                {
+                    "description": "Track [N_R14_1] on L1 - Components / critical signals, length 2.3959 mm",
+                    "pos": {
+                        "x": 195.105,
+                        "y": 105.96
+                    },
+                    "uuid": "4031cf23-11a9-417f-9fa0-bec1608eddc5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [DTR] of Q5 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 198.8,
+                        "y": 140.75
+                    },
+                    "uuid": "89d23864-7887-4071-a8f1-5c3dba1649e9"
+                },
+                {
+                    "description": "Track [DTR] on L1 - Components / critical signals, length 0.2884 mm",
+                    "pos": {
+                        "x": 200.9884,
+                        "y": 141.4
+                    },
+                    "uuid": "d9db9089-b3e6-46c1-9396-d29a9bda5718"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 23 [IO0] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 175.9375,
+                        "y": 118.7275
+                    },
+                    "uuid": "ccf18a70-47e1-4e0e-97a0-68833e5588d6"
+                },
+                {
+                    "description": "Track [IO0] on L1 - Components / critical signals, length 1.6491 mm",
+                    "pos": {
+                        "x": 192.7002,
+                        "y": 145.274
+                    },
+                    "uuid": "83b79453-ff97-4d62-8570-2907f46ca9ca"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [N_R58_2] of Q9 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 132.8,
+                        "y": 134.6125
+                    },
+                    "uuid": "2e30af96-c791-4310-82de-f9dac1a682b6"
+                },
+                {
+                    "description": "Pad 3 [N_R58_2] of Q9 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 134.7,
+                        "y": 136.8875
+                    },
+                    "uuid": "2b03c102-d8c8-4a16-8647-7e7645bae12e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [+3.3V] on L4 - Signals, length 1.3182 mm",
+                    "pos": {
+                        "x": 168.0,
+                        "y": 114.925
+                    },
+                    "uuid": "c786855a-9216-428a-8d54-b7888b7244e0"
+                },
+                {
+                    "description": "Track [+3.3V] on L1 - Components / critical signals, length 1.9500 mm",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 116.25
+                    },
+                    "uuid": "0ead9e61-2e29-4daa-9a02-78f9997442c5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [+3.3V] on L4 - Signals, length 1.3268 mm",
+                    "pos": {
+                        "x": 169.4792,
+                        "y": 112.6661
+                    },
+                    "uuid": "db7c10a0-6d29-4bb1-82d2-7f821f56fe95"
+                },
+                {
+                    "description": "Pad 1 [+3.3V] of C29 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 168.525,
+                        "y": 112.5
+                    },
+                    "uuid": "03c51aa2-9c17-4418-9c05-8ecca21e302e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [+3.3V] on L1 - Components / critical signals, length 0.7237 mm",
+                    "pos": {
+                        "x": 169.4792,
+                        "y": 113.9929
+                    },
+                    "uuid": "c503cd5c-2fea-40bb-b654-f994cc514481"
+                },
+                {
+                    "description": "Pad 3 [+3.3V] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 170.3225,
+                        "y": 113.6125
+                    },
+                    "uuid": "423c35b6-6112-4ba4-8c0e-8e80b9cef3b6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [+3.3V] on L1 - Components / critical signals, length 0.3749 mm",
+                    "pos": {
+                        "x": 170.3225,
+                        "y": 112.5601
+                    },
+                    "uuid": "2c4bcbb9-1507-4bb3-bef9-154eb3468613"
+                },
+                {
+                    "description": "Pad 46 [+3.3V] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 171.9375,
+                        "y": 111.9975
+                    },
+                    "uuid": "0b783ad7-2c66-446d-8f70-2a2f3e816a17"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 43 [+3.3V] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 173.4375,
+                        "y": 111.9975
+                    },
+                    "uuid": "e391b2fa-c14e-45e7-afab-2b5c283c84a8"
+                },
+                {
+                    "description": "Pad 46 [+3.3V] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 171.9375,
+                        "y": 111.9975
+                    },
+                    "uuid": "0b783ad7-2c66-446d-8f70-2a2f3e816a17"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [TX1] of U18 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 128.3875,
+                        "y": 103.5
+                    },
+                    "uuid": "bdd73a8f-41c7-47d3-a310-3ec2d31903e3"
+                },
+                {
+                    "description": "Pad 32 [TX1] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 177.0525,
+                        "y": 114.6125
+                    },
+                    "uuid": "bb1ab3d9-418c-4d09-afc3-2d0419933cd5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 16 [RX7_BIAS_EN] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 169.9,
+                        "y": 138.0
+                    },
+                    "uuid": "e2d83375-f365-43f4-983a-d083d728a603"
+                },
+                {
+                    "description": "Track [RX7_BIAS_EN] on L1 - Components / critical signals, length 0.0530 mm",
+                    "pos": {
+                        "x": 133.075,
+                        "y": 143.675
+                    },
+                    "uuid": "5082a1ba-2e70-4ef3-9e01-2cfaad4dd929"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [N_R33_1] of Q2 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 120.3,
+                        "y": 141.3875
+                    },
+                    "uuid": "c0f1b046-191f-4af2-86bb-4bfa638d6cae"
+                },
+                {
+                    "description": "Pad 6 [N_R33_1] of U13 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 126.9625,
+                        "y": 140.8375
+                    },
+                    "uuid": "e29f74a9-7deb-4c26-ade5-ffa6321e2fd7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [USB_CC2] of R103 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 200.575,
+                        "y": 126.0
+                    },
+                    "uuid": "65299ed4-155b-467a-9b31-8954c790e0c1"
+                },
+                {
+                    "description": "Pad B5 [USB_CC2] of J2 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 202.645,
+                        "y": 127.25
+                    },
+                    "uuid": "a2d6e4a6-6c0b-49cf-93af-e677a1f2f060"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [N_R88_2] of R88 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 167.175,
+                        "y": 141.75
+                    },
+                    "uuid": "59138f41-d448-4871-a1dd-1758497f775c"
+                },
+                {
+                    "description": "Pad 23 [N_R88_2] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 167.25,
+                        "y": 136.35
+                    },
+                    "uuid": "2eef76bc-88ce-4187-bd74-c343737d892a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 11 [V_PR] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 170.3225,
+                        "y": 117.6125
+                    },
+                    "uuid": "9044d4f2-d8a8-478d-b17b-d882104996d4"
+                },
+                {
+                    "description": "Track [V_PR] on L1 - Components / critical signals, length 1.4983 mm",
+                    "pos": {
+                        "x": 170.9983,
+                        "y": 128.525
+                    },
+                    "uuid": "788bf2d0-f05d-4da9-b2eb-52c2324283fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 41 [N_R25_1] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 174.4375,
+                        "y": 111.9975
+                    },
+                    "uuid": "ca74f7b7-b4dc-4b6b-9e27-51905df46b75"
+                },
+                {
+                    "description": "Pad 1 [N_R25_1] of R25 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 199.25,
+                        "y": 112.675
+                    },
+                    "uuid": "059e599c-ffa4-494c-ab14-d7722a15fbb3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [J1962-7] on L1 - Components / critical signals, length 1.9867 mm",
+                    "pos": {
+                        "x": 106.3452,
+                        "y": 133.5702
+                    },
+                    "uuid": "6dcd0e35-8b86-4f44-a2db-ff4259ec0c66"
+                },
+                {
+                    "description": "Track [J1962-7] on L1 - Components / critical signals, length 1.0500 mm",
+                    "pos": {
+                        "x": 128.3875,
+                        "y": 148.55
+                    },
+                    "uuid": "8715d8b3-a19c-46b8-b2b2-e45c33d1ebeb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VBB_TO_TX6] on L1 - Components / critical signals, length 0.8424 mm",
+                    "pos": {
+                        "x": 132.8,
+                        "y": 129.8875
+                    },
+                    "uuid": "1304a131-5268-4b0f-aaaa-148661773f03"
+                },
+                {
+                    "description": "Pad 5 [VBB_TO_TX6] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 166.1,
+                        "y": 139.0
+                    },
+                    "uuid": "ed6851cb-363a-4d57-972b-0b3717e8061d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Via [TX14_EN] on L1 - Components / critical signals - L4 - Signals",
+                    "pos": {
+                        "x": 124.592,
+                        "y": 132.5683
+                    },
+                    "uuid": "9437666d-de48-4f29-803c-8b3d221a7397"
+                },
+                {
+                    "description": "Pad 4 [TX14_EN] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 166.1,
+                        "y": 138.5
+                    },
+                    "uuid": "aec7a8fc-68af-45bc-990b-d96c7a38acd9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [J1962-6] on L1 - Components / critical signals, length 2.0244 mm",
+                    "pos": {
+                        "x": 106.3185,
+                        "y": 132.4565
+                    },
+                    "uuid": "972a33e3-0b75-4d27-a8ff-247ce1a6555f"
+                },
+                {
+                    "description": "Track [J1962-6] on L1 - Components / critical signals, length 0.6275 mm",
+                    "pos": {
+                        "x": 121.0001,
+                        "y": 142.7682
+                    },
+                    "uuid": "c1e14a38-e13c-4549-9f78-175f22cc47ff"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [J1962-6] of D15 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 137.0,
+                        "y": 130.9
+                    },
+                    "uuid": "a92ff2c6-8b5e-480e-9b86-e96edf800c0c"
+                },
+                {
+                    "description": "Track [J1962-6] on L1 - Components / critical signals, length 0.3628 mm",
+                    "pos": {
+                        "x": 122.2,
+                        "y": 141.7503
+                    },
+                    "uuid": "24dc24bc-e264-4efd-ac5b-255ce4513c8f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [J1962-6] of D19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 143.75,
+                        "y": 130.9
+                    },
+                    "uuid": "8148702c-bcc2-4557-832e-73c8aee7b361"
+                },
+                {
+                    "description": "Pad 1 [J1962-6] of D15 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 137.0,
+                        "y": 130.9
+                    },
+                    "uuid": "a92ff2c6-8b5e-480e-9b86-e96edf800c0c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [RX2] on L1 - Components / critical signals, length 0.6619 mm",
+                    "pos": {
+                        "x": 136.8625,
+                        "y": 150.6875
+                    },
+                    "uuid": "846953b3-b0ca-494a-bf41-e2c63c334da0"
+                },
+                {
+                    "description": "Pad 34 [RX2] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 177.0525,
+                        "y": 113.6125
+                    },
+                    "uuid": "859b9c2f-bc7c-4103-809a-ea7b1252a922"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [RX7_EN] of U15 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 136.8625,
+                        "y": 149.6875
+                    },
+                    "uuid": "f014a58c-3ab3-4b72-a1eb-bd65537b345b"
+                },
+                {
+                    "description": "Pad 2 [RX7_EN] of R44 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 136.825,
+                        "y": 152.25
+                    },
+                    "uuid": "04f3ded2-5d90-4011-8d66-8bc33087d3c1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 14 [RX7_EN] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 169.9,
+                        "y": 139.0
+                    },
+                    "uuid": "0cff689d-b835-4d97-8d6d-4471498102b7"
+                },
+                {
+                    "description": "Pad 7 [RX7_EN] of U15 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 136.8625,
+                        "y": 149.6875
+                    },
+                    "uuid": "f014a58c-3ab3-4b72-a1eb-bd65537b345b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 9 [N_R28_2] of U12 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 206.379982,
+                        "y": 115.440018
+                    },
+                    "uuid": "ddb4af32-b4e8-4249-91fc-5737da8f767b"
+                },
+                {
+                    "description": "Pad 2 [N_R28_2] of R28 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 208.5,
+                        "y": 115.325
+                    },
+                    "uuid": "50c5d55d-c0d5-46fa-9cce-0a0561658b5b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [N_R79_2] of R79 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 115.325,
+                        "y": 112.25
+                    },
+                    "uuid": "90be7433-7d08-4b82-ac25-89f082432188"
+                },
+                {
+                    "description": "Track [N_R79_2] on L1 - Components / critical signals, length 3.2625 mm",
+                    "pos": {
+                        "x": 118.75,
+                        "y": 108.9125
+                    },
+                    "uuid": "7d365c86-985e-4c86-9cdf-7eb3dea1a7a3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [TBEN] on L1 - Components / critical signals, length 1.7875 mm",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 110.3875
+                    },
+                    "uuid": "b20a1b24-80bb-4b45-bd8d-10f4d0156e8a"
+                },
+                {
+                    "description": "Pad 17 [TBEN] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 169.9,
+                        "y": 137.5
+                    },
+                    "uuid": "1fc712ad-a854-432e-b4fb-40bfa4277267"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VPP_TO_TX9] on L1 - Components / critical signals, length 0.8178 mm",
+                    "pos": {
+                        "x": 139.1717,
+                        "y": 136.5842
+                    },
+                    "uuid": "0c077722-029c-42a9-aa08-ef930a1c3094"
+                },
+                {
+                    "description": "Pad 11 [VPP_TO_TX9] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 168.75,
+                        "y": 140.15
+                    },
+                    "uuid": "65fafedf-affc-4dab-9825-68a0fc84c9c8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [LOG_BUTTON] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 170.3225,
+                        "y": 115.1125
+                    },
+                    "uuid": "8375f969-b6f3-4e82-981b-d2cd8f91ab80"
+                },
+                {
+                    "description": "Track [LOG_BUTTON] on L4 - Signals, length 0.5537 mm",
+                    "pos": {
+                        "x": 167.6085,
+                        "y": 113.6665
+                    },
+                    "uuid": "ccf3dcb1-88f3-400e-aba9-13a4320b0b19"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 12 [PWR_LED] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 170.3225,
+                        "y": 118.1125
+                    },
+                    "uuid": "c56d6ae5-a4d2-45a8-85c2-688650b941d4"
+                },
+                {
+                    "description": "Track [PWR_LED] on L1 - Components / critical signals, length 1.7250 mm",
+                    "pos": {
+                        "x": 185.175,
+                        "y": 124.25
+                    },
+                    "uuid": "5338d177-409c-407a-b334-5592ecb031c5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 17 [PCI_RX] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 172.9375,
+                        "y": 118.7275
+                    },
+                    "uuid": "a0af64b5-7ed2-4c62-8525-1f30b22ce238"
+                },
+                {
+                    "description": "Track [PCI_RX] on L1 - Components / critical signals, length 1.5925 mm",
+                    "pos": {
+                        "x": 121.425,
+                        "y": 121.3425
+                    },
+                    "uuid": "a4cc2f4e-c4f4-4a83-a745-68db40343ee1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [MCU_SD_CS] on L4 - Signals, length 1.0449 mm",
+                    "pos": {
+                        "x": 173.8951,
+                        "y": 120.175
+                    },
+                    "uuid": "0c6a0939-3b61-4865-a6b0-098847525985"
+                },
+                {
+                    "description": "Pad 21 [MCU_SD_CS] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 174.9375,
+                        "y": 118.7275
+                    },
+                    "uuid": "4aa83b98-e8de-414c-b441-c0d5c316d300"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 27 [MCU_SD_MOSI] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 177.0525,
+                        "y": 117.1125
+                    },
+                    "uuid": "4107e3c8-0043-47e0-8d8a-158459079f9d"
+                },
+                {
+                    "description": "Pad 1 [MCU_SD_MOSI] of R105 on L4 - Signals",
+                    "pos": {
+                        "x": 178.175,
+                        "y": 117.1
+                    },
+                    "uuid": "7b94d674-faac-44cc-bea5-15b6778525d7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 40 [RX0] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 174.9375,
+                        "y": 111.9975
+                    },
+                    "uuid": "32a39b83-b202-4ae0-95b9-5e6fd652dbb0"
+                },
+                {
+                    "description": "Pad 26 [RX0] of U12 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 201.579982,
+                        "y": 114.940018
+                    },
+                    "uuid": "601fad3c-37ef-42ba-9535-369306114f72"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [SDA] on L3 - Power, length 0.9330 mm",
+                    "pos": {
+                        "x": 172.5315,
+                        "y": 136.3896
+                    },
+                    "uuid": "5fed1c50-3999-419a-a3b9-5323470e1535"
+                },
+                {
+                    "description": "Pad 20 [SDA] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 168.75,
+                        "y": 136.35
+                    },
+                    "uuid": "47161e39-20e3-4698-b4c6-610e440bff6a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 12 [VPP_TO_TX12] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 169.25,
+                        "y": 140.15
+                    },
+                    "uuid": "4305466f-9d61-42d6-96df-11a65c7fd18b"
+                },
+                {
+                    "description": "Track [VPP_TO_TX12] on L1 - Components / critical signals, length 1.0609 mm",
+                    "pos": {
+                        "x": 156.6748,
+                        "y": 148.5002
+                    },
+                    "uuid": "95488c2f-1c30-4895-a730-ddf46507f91c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VBB_TO_TX14] on L1 - Components / critical signals, length 0.6166 mm",
+                    "pos": {
+                        "x": 166.989,
+                        "y": 148.186
+                    },
+                    "uuid": "c1edb186-836d-4606-9d22-31833755e34a"
+                },
+                {
+                    "description": "Pad 8 [VBB_TO_TX14] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 167.25,
+                        "y": 140.15
+                    },
+                    "uuid": "b63ac0cc-8bbb-4ae0-8a4d-41273968b4fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 4 [GND] of U13 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 123.8625,
+                        "y": 141.3375
+                    },
+                    "uuid": "9e34a738-3d57-477a-9687-90ac70d101c2"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 2 [GND] of R34 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 121.75,
+                        "y": 144.825
+                    },
+                    "uuid": "1444fd2a-76e1-43f0-b9ad-0d761994236b"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 2 [GND] of R9 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 150.175,
+                        "y": 105.75
+                    },
+                    "uuid": "6644e264-25d7-41c1-a69f-46ebbb8629bf"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 3 [GND] of U17 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 117.3875,
+                        "y": 102.55
+                    },
+                    "uuid": "235b0ad0-c056-4209-a26d-750d5c699d88"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C26 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 172.0,
+                        "y": 121.175
+                    },
+                    "uuid": "a2e7d141-2b94-478a-9493-da80bbea449a"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 5 [GND] of Q10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 151.25,
+                        "y": 149.6125
+                    },
+                    "uuid": "2b7f6b1a-1563-425b-b1ca-68325afaf962"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 5 [GND] of Q13 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 140.7,
+                        "y": 134.8875
+                    },
+                    "uuid": "3b6e275b-eb47-49f5-973d-93288464a334"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad A12 [GND] of J2 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 202.645,
+                        "y": 125.8
+                    },
+                    "uuid": "202e60a7-76af-4458-b990-25ff72340931"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad B1 [GND] of J2 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 202.645,
+                        "y": 125.8
+                    },
+                    "uuid": "9186e189-4f60-4225-9538-5b0db14606e6"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 3 [GND] of U12 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 203.479982,
+                        "y": 116.840018
+                    },
+                    "uuid": "3296ba1d-9923-477f-8f8d-c47c027700aa"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C23 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 185.775,
+                        "y": 115.75
+                    },
+                    "uuid": "5d991bc6-d667-4e33-a533-80c01f35f846"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 9 [GND] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 140.15
+                    },
+                    "uuid": "6996c48f-5f57-4a08-8eda-754337e44cae"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 18 [GND] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 169.9,
+                        "y": 137.0
+                    },
+                    "uuid": "ebf0b5ea-0e2d-4f55-b498-dd539820523f"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 22 [GND] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 136.35
+                    },
+                    "uuid": "5b21a9ca-8ab5-4ea1-b441-18834d53f60e"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 24 [GND] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 166.75,
+                        "y": 136.35
+                    },
+                    "uuid": "94b09ba7-4edb-4c2d-90c2-4f93bd992f51"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 2 [GND] of U16 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 123.1375,
+                        "y": 103.5
+                    },
+                    "uuid": "d0b8e4fc-54b5-473e-ba8a-731162a6e99d"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 5 [GND] of Q15 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 176.3875,
+                        "y": 150.25
+                    },
+                    "uuid": "cc0c0b86-f4a4-4729-a044-20177962f4f3"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer L1 - Components / critical signals; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'Experimental outer GND F.Cu' [GND] on L1 - Components / critical signals, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "19904d4e-29d3-4d4f-9c97-d431de0c976b"
+                },
+                {
+                    "description": "Pad 2 [GND] of U9 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 116.3875,
+                        "y": 121.9625
+                    },
+                    "uuid": "9161847f-af34-472d-af9c-7374302bf622"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VPP] on L1 - Components / critical signals, length 1.4940 mm",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 121.9685
+                    },
+                    "uuid": "917eddd4-26d2-48fa-8d49-f004db1cf1a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [N_C17_2] on L1 - Components / critical signals, length 0.9472 mm",
+                    "pos": {
+                        "x": 155.194,
+                        "y": 131.0905
+                    },
+                    "uuid": "5a347972-3c95-4b51-88f7-e1c134b556b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [N_C5_2] on L1 - Components / critical signals, length 1.2965 mm",
+                    "pos": {
+                        "x": 136.729,
+                        "y": 107.225
+                    },
+                    "uuid": "960a8d27-7825-4955-b8cc-20cb5f41cc02"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

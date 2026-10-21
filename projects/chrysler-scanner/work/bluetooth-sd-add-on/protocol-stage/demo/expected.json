@@ -1,0 +1,33 @@
+{
+  "synthetic": true,
+  "real_vehicle_capture": false,
+  "hardware_validated": false,
+  "profile": "upstream_broadcast_2023",
+  "utc_known": false,
+  "ble_chunk_count": 3,
+  "validated_frame_count": 2,
+  "selected_row_count": 7,
+  "frames": [
+    {
+      "scanner_ms": 1000,
+      "host_us": 1000100,
+      "hex": "3D 00 0D C7 01 00 00 03 E8 10 1F 40 27 10 65 17 1F",
+      "expected": {
+        "engine_rpm": 2000.0,
+        "vehicle_speed_kph": 78.857856,
+        "manifold_absolute_pressure_kpa": 101.0
+      }
+    },
+    {
+      "scanner_ms": 1010,
+      "host_us": 1010000,
+      "hex": "3D 00 0C C7 01 00 00 03 F2 C0 E0 64 7D 50 DF B6",
+      "expected": {
+        "battery_voltage_v": 14.0,
+        "oil_pressure_kpa": 344.73785,
+        "coolant_temperature_c": 85.0,
+        "ambient_temperature_c": 40.0
+      }
+    }
+  ]
+}

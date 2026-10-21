@@ -1,0 +1,668 @@
+{
+  "input_sha256": "410f798e39d7afc944ee8c5d471beb819477fa8616d9d40f4cdbdf4a815cdd93",
+  "tracks": [
+    {
+      "net": "N_C5_2",
+      "width": 0.6,
+      "layer": "F.Cu",
+      "points": [
+        [
+          135.4075,
+          107.2
+        ],
+        [
+          135.725,
+          106.8825
+        ],
+        [
+          135.725,
+          102.675
+        ],
+        [
+          135.9,
+          102.5
+        ]
+      ],
+      "kind": "U2 switch/diode/bootstrap"
+    },
+    {
+      "net": "N_C5_2",
+      "width": 0.6,
+      "layer": "F.Cu",
+      "points": [
+        [
+          135.4075,
+          107.2
+        ],
+        [
+          138.05,
+          107.25
+        ]
+      ],
+      "kind": "U2 switch to inductor"
+    },
+    {
+      "net": "N_C5_1",
+      "width": 0.25,
+      "layer": "F.Cu",
+      "points": [
+        [
+          133.1325,
+          107.2
+        ],
+        [
+          132.775,
+          106.8425
+        ],
+        [
+          132.775,
+          105
+        ]
+      ],
+      "kind": "U2 bootstrap"
+    },
+    {
+      "net": "N_R2_1",
+      "width": 0.8,
+      "layer": "F.Cu",
+      "points": [
+        [
+          144.45,
+          107.25
+        ],
+        [
+          147,
+          107.275
+        ]
+      ],
+      "kind": "U2 inductor to output capacitor"
+    },
+    {
+      "net": "N_D7_2",
+      "width": 0.6,
+      "layer": "F.Cu",
+      "points": [
+        [
+          153.6375,
+          109.45
+        ],
+        [
+          153.5,
+          111.35
+        ]
+      ],
+      "kind": "U5 switch to rectifier"
+    },
+    {
+      "net": "N_D7_2",
+      "width": 0.6,
+      "layer": "F.Cu",
+      "points": [
+        [
+          153.6375,
+          109.45
+        ],
+        [
+          155.05,
+          109.45
+        ],
+        [
+          156.05,
+          108.45
+        ],
+        [
+          156.05,
+          107.25
+        ]
+      ],
+      "kind": "U5 switch to inductor"
+    },
+    {
+      "net": "N_R8_1",
+      "width": 0.8,
+      "layer": "F.Cu",
+      "points": [
+        [
+          153.5,
+          114.65
+        ],
+        [
+          153.525,
+          116.75
+        ],
+        [
+          153.5,
+          119.0375
+        ]
+      ],
+      "kind": "U5 rectifier/output capacitor/filter"
+    },
+    {
+      "net": "VPP",
+      "width": 0.8,
+      "layer": "F.Cu",
+      "points": [
+        [
+          153.5,
+          121.9625
+        ],
+        [
+          156.5,
+          121.975
+        ]
+      ],
+      "kind": "U5 filter to output capacitor"
+    },
+    {
+      "net": "N_C17_2",
+      "width": 0.6,
+      "layer": "F.Cu",
+      "points": [
+        [
+          154.0875,
+          130.93125
+        ],
+        [
+          154.35,
+          130.66875
+        ],
+        [
+          154.35,
+          128.88125
+        ]
+      ],
+      "kind": "U6 switch to diode"
+    },
+    {
+      "net": "N_C17_2",
+      "width": 0.6,
+      "layer": "F.Cu",
+      "points": [
+        [
+          154.0875,
+          130.93125
+        ],
+        [
+          156.3,
+          131.25
+        ]
+      ],
+      "kind": "U6 switch to inductor"
+    },
+    {
+      "net": "N_C17_2",
+      "width": 0.6,
+      "layer": "F.Cu",
+      "points": [
+        [
+          156.3,
+          131.25
+        ],
+        [
+          156.3,
+          133.5
+        ],
+        [
+          154.91875,
+          134.88125
+        ],
+        [
+          154.175,
+          134.88125
+        ]
+      ],
+      "kind": "U6 switch to bootstrap capacitor"
+    },
+    {
+      "net": "N_C17_1",
+      "width": 0.25,
+      "layer": "F.Cu",
+      "points": [
+        [
+          151.8125,
+          130.93125
+        ],
+        [
+          150.5,
+          130.93125
+        ],
+        [
+          150.5,
+          134.15625
+        ],
+        [
+          151.225,
+          134.88125
+        ]
+      ],
+      "kind": "U6 bootstrap"
+    },
+    {
+      "net": "N_R11_1",
+      "width": 0.8,
+      "layer": "F.Cu",
+      "points": [
+        [
+          162.7,
+          131.25
+        ],
+        [
+          162.7,
+          136.475
+        ],
+        [
+          162.725,
+          136.5
+        ]
+      ],
+      "kind": "U6 inductor to output capacitor"
+    },
+    {
+      "net": "N_R11_1",
+      "width": 0.8,
+      "layer": "F.Cu",
+      "points": [
+        [
+          162.725,
+          136.5
+        ],
+        [
+          162.725,
+          139.1125
+        ],
+        [
+          162.2375,
+          139.6
+        ]
+      ],
+      "kind": "U6 output capacitor to filter"
+    },
+    {
+      "net": "VBB",
+      "width": 0.8,
+      "layer": "F.Cu",
+      "points": [
+        [
+          159.3125,
+          139.6
+        ],
+        [
+          159.25,
+          141.775
+        ]
+      ],
+      "kind": "U6 filter to output capacitor"
+    },
+    {
+      "net": "N_C21_2",
+      "width": 0.6,
+      "layer": "F.Cu",
+      "points": [
+        [
+          188.6375,
+          111.55
+        ],
+        [
+          190.165,
+          111.55
+        ],
+        [
+          190.505,
+          111.21
+        ]
+      ],
+      "kind": "U7 switch to diode"
+    },
+    {
+      "net": "N_C21_2",
+      "width": 0.6,
+      "layer": "F.Cu",
+      "points": [
+        [
+          188.6375,
+          111.55
+        ],
+        [
+          188.705,
+          111.4825
+        ],
+        [
+          188.705,
+          105.96
+        ]
+      ],
+      "kind": "U7 switch to inductor"
+    },
+    {
+      "net": "N_C21_2",
+      "width": 0.6,
+      "layer": "F.Cu",
+      "points": [
+        [
+          188.705,
+          109.25
+        ],
+        [
+          186.475,
+          109.25
+        ]
+      ],
+      "kind": "U7 switch to bootstrap capacitor"
+    },
+    {
+      "net": "N_C21_1",
+      "width": 0.25,
+      "layer": "F.Cu",
+      "points": [
+        [
+          186.3625,
+          111.55
+        ],
+        [
+          185.6,
+          111.55
+        ],
+        [
+          185.6,
+          110.6
+        ],
+        [
+          184.25,
+          109.25
+        ],
+        [
+          183.525,
+          109.25
+        ]
+      ],
+      "kind": "U7 bootstrap"
+    },
+    {
+      "net": "N_R14_1",
+      "width": 0.8,
+      "layer": "F.Cu",
+      "points": [
+        [
+          195.105,
+          105.96
+        ],
+        [
+          197.5,
+          106.025
+        ]
+      ],
+      "kind": "U7 inductor to output capacitor"
+    },
+    {
+      "net": "VBUS",
+      "width": 0.5,
+      "layer": "F.Cu",
+      "points": [
+        [
+          199.625,
+          116.6
+        ],
+        [
+          199.625,
+          117.9
+        ],
+        [
+          199.5,
+          119.775
+        ]
+      ],
+      "kind": "USB switch input decoupling"
+    },
+    {
+      "net": "N_C3_1",
+      "width": 0.4,
+      "layer": "F.Cu",
+      "points": [
+        [
+          198.875,
+          116.6
+        ],
+        [
+          197,
+          116.525
+        ]
+      ],
+      "kind": "USB switch output decoupling"
+    },
+    {
+      "net": "GND",
+      "width": 0.35,
+      "layer": "F.Cu",
+      "points": [
+        [
+          133.1325,
+          108.15
+        ],
+        [
+          132,
+          108.15
+        ]
+      ],
+      "kind": "Power stage adjacent ground return"
+    },
+    {
+      "net": "GND",
+      "width": 0.35,
+      "layer": "F.Cu",
+      "points": [
+        [
+          132.6,
+          102.5
+        ],
+        [
+          131.5,
+          102.5
+        ]
+      ],
+      "kind": "Power stage adjacent ground return"
+    },
+    {
+      "net": "GND",
+      "width": 0.35,
+      "layer": "F.Cu",
+      "points": [
+        [
+          147,
+          110.225
+        ],
+        [
+          147,
+          111.5
+        ]
+      ],
+      "kind": "Power stage adjacent ground return"
+    },
+    {
+      "net": "GND",
+      "width": 0.35,
+      "layer": "F.Cu",
+      "points": [
+        [
+          153.6375,
+          108.5
+        ],
+        [
+          154.7,
+          108.5
+        ]
+      ],
+      "kind": "Power stage adjacent ground return"
+    },
+    {
+      "net": "GND",
+      "width": 0.35,
+      "layer": "F.Cu",
+      "points": [
+        [
+          151.8125,
+          131.88125
+        ],
+        [
+          152.8,
+          131.88125
+        ]
+      ],
+      "kind": "Power stage adjacent ground return"
+    },
+    {
+      "net": "GND",
+      "width": 0.35,
+      "layer": "F.Cu",
+      "points": [
+        [
+          151.05,
+          128.88125
+        ],
+        [
+          150,
+          128.88125
+        ]
+      ],
+      "kind": "Power stage adjacent ground return"
+    },
+    {
+      "net": "GND",
+      "width": 0.35,
+      "layer": "F.Cu",
+      "points": [
+        [
+          159.775,
+          136.5
+        ],
+        [
+          159.775,
+          137.8
+        ]
+      ],
+      "kind": "Power stage adjacent ground return"
+    },
+    {
+      "net": "GND",
+      "width": 0.35,
+      "layer": "F.Cu",
+      "points": [
+        [
+          186.3625,
+          112.5
+        ],
+        [
+          185.3,
+          112.5
+        ]
+      ],
+      "kind": "Power stage adjacent ground return"
+    },
+    {
+      "net": "GND",
+      "width": 0.35,
+      "layer": "F.Cu",
+      "points": [
+        [
+          193.805,
+          111.21
+        ],
+        [
+          194.9,
+          111.21
+        ]
+      ],
+      "kind": "Power stage adjacent ground return"
+    },
+    {
+      "net": "GND",
+      "width": 0.35,
+      "layer": "F.Cu",
+      "points": [
+        [
+          197.5,
+          108.975
+        ],
+        [
+          197.5,
+          110.2
+        ]
+      ],
+      "kind": "Power stage adjacent ground return"
+    }
+  ],
+  "vias": [
+    {
+      "net": "GND",
+      "xy": [
+        132,
+        108.15
+      ]
+    },
+    {
+      "net": "GND",
+      "xy": [
+        131.5,
+        102.5
+      ]
+    },
+    {
+      "net": "GND",
+      "xy": [
+        147,
+        111.5
+      ]
+    },
+    {
+      "net": "GND",
+      "xy": [
+        154.7,
+        108.5
+      ]
+    },
+    {
+      "net": "GND",
+      "xy": [
+        152.8,
+        131.88125
+      ]
+    },
+    {
+      "net": "GND",
+      "xy": [
+        150,
+        128.88125
+      ]
+    },
+    {
+      "net": "GND",
+      "xy": [
+        159.775,
+        137.8
+      ]
+    },
+    {
+      "net": "GND",
+      "xy": [
+        185.3,
+        112.5
+      ]
+    },
+    {
+      "net": "GND",
+      "xy": [
+        194.9,
+        111.21
+      ]
+    },
+    {
+      "net": "GND",
+      "xy": [
+        197.5,
+        110.2
+      ]
+    }
+  ],
+  "track_keepouts": [],
+  "units": "absolute mm",
+  "status": "candidate requiring native DRC"
+}

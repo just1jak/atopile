@@ -1,12 +1,20 @@
 """Deterministic protocol tests; no login, model requests, or credentials used."""
 
 import asyncio
+import json
 from pathlib import Path
 
 import pytest
 
 from atopile.agent.providers.base import ModelId, StreamDone
-from atopile.agent.providers.codex import CodexProvider, codex_environment
+from atopile.agent.providers.codex import (
+    CodexProvider,
+    codex_environment,
+    tool_catalog_fingerprint,
+    migration_history,
+    MIGRATION_HISTORY_CHARS,
+    MIGRATION_MESSAGE_CHARS,
+)
 
 TOOL = {
     "type": "function",
@@ -16,7 +24,9 @@ TOOL = {
 }
 
 
-def test_app_server_keeps_dynamic_tool_bridge_running_without_native_access(monkeypatch):
+def test_app_server_keeps_dynamic_tool_bridge_running_without_native_access(
+    monkeypatch,
+):
     """A real model discovers this registry via exec, before any tool/call RPC."""
     import json
     from types import SimpleNamespace
@@ -221,16 +231,27 @@ def test_busy_window_resume_keeps_conversation_for_retry():
         async def send(self, message):
             if message.get("method") == "thread/resume":
                 self.sent.append(message)
-                await self.queue.put({"id": message["id"], "error": {
-                    "message": "thread saved-conversation already has an active writer"
-                }})
+                await self.queue.put(
+                    {
+                        "id": message["id"],
+                        "error": {
+                            "message": "thread saved-conversation already has an active writer"
+                        },
+                    }
+                )
                 return
             await super().send(message)
 
     async def scenario():
         server = BusyServer()
         provider = make(server)
-        provider.restore({"provider": "codex", "thread_id": "saved-conversation"})
+        provider.restore(
+            {
+                "provider": "codex",
+                "thread_id": "saved-conversation",
+                "tool_catalog_fingerprint": tool_catalog_fingerprint([TOOL]),
+            }
+        )
         try:
             with pytest.raises(RuntimeError, match="another Atopile Local window"):
                 await run(provider, [{"role": "user", "content": "Read the board"}])
@@ -389,6 +410,7 @@ def test_resume_restores_cumulative_usage_baseline():
             {
                 "provider": "codex",
                 "thread_id": "thread-1",
+                "tool_catalog_fingerprint": tool_catalog_fingerprint([TOOL]),
                 "native_usage": {
                     "input_tokens": 152,
                     "output_tokens": 10,
@@ -500,6 +522,339 @@ def test_session_loop_limit_cancels_unexecuted_native_tool_request():
             assert not provider._pending
             reply = next(message for message in server.sent if message.get("id") == 77)
             assert reply["result"]["success"] is False
+        finally:
+            await provider.aclose()
+
+    asyncio.run(scenario())
+
+
+def test_catalog_fingerprint_covers_schema_and_description_but_not_order():
+    other = {**TOOL, "name": "layout_get_routes"}
+    assert tool_catalog_fingerprint([TOOL, other]) == tool_catalog_fingerprint(
+        [other, TOOL]
+    )
+    assert tool_catalog_fingerprint([TOOL]) != tool_catalog_fingerprint([other])
+    assert tool_catalog_fingerprint([TOOL]) != tool_catalog_fingerprint(
+        [{**TOOL, "description": "Changed behavior"}]
+    )
+    assert tool_catalog_fingerprint([TOOL]) != tool_catalog_fingerprint(
+        [{**TOOL, "parameters": {"type": "object", "required": ["target"]}}]
+    )
+
+
+@pytest.mark.parametrize("saved_fingerprint", [None, "sha256:v1:old-catalog"])
+@pytest.mark.parametrize(
+    "new_tool",
+    [
+        "layout_get_routes",
+        "layout_add_track_segment",
+        "layout_add_via",
+        "layout_delete_copper",
+    ],
+)
+def test_old_catalog_starts_current_tools_and_preserves_old_thread(
+    saved_fingerprint, new_tool
+):
+    class CurrentCatalogServer(FakeServer):
+        async def emit(self, method, params, request_id=None):
+            if method == "item/tool/call":
+                params = {**params, "tool": new_tool}
+            await super().emit(method, params, request_id)
+
+    async def scenario():
+        server = CurrentCatalogServer()
+        provider = make(server)
+        state = {"provider": "codex", "thread_id": "original-native-thread"}
+        if saved_fingerprint is not None:
+            state["tool_catalog_fingerprint"] = saved_fingerprint
+        provider.restore(state)
+        provider.set_display_history(
+            [
+                {"role": "user", "content": "Preserve the OBD connector position."},
+                {
+                    "role": "assistant",
+                    "content": "Understood; first inspect the current board.",
+                    "toolTraces": [{"result": "OLD_RAW_BOARD_DATA"}],
+                    "reasoning": "PRIVATE_REASONING",
+                },
+                {"role": "tool", "content": "OLD_TOOL_RESULT"},
+            ]
+        )
+        tools = [TOOL, {**TOOL, "name": new_tool}]
+        try:
+            events = [
+                event
+                async for event in provider.stream(
+                    messages=[{"role": "user", "content": "Read routes now"}],
+                    instructions="Use current board preflight",
+                    tools=tools,
+                )
+            ]
+            response = next(e.response for e in events if isinstance(e, StreamDone))
+            assert response.tool_calls[0].name == new_tool
+            starts = [m for m in server.sent if m.get("method") == "thread/start"]
+            assert len(starts) == 1
+            assert {s["name"] for s in starts[0]["params"]["dynamicTools"]} == {
+                TOOL["name"],
+                new_tool,
+            }
+            assert not any(
+                m.get("method")
+                in {"thread/resume", "thread/archive", "thread/delete", "thread/fork"}
+                for m in server.sent
+            )
+            turn = next(m for m in server.sent if m.get("method") == "turn/start")
+            text = turn["params"]["input"][0]["text"]
+            assert "Preserve the OBD connector position." in text
+            assert (
+                "untrusted background" in text
+                and "Refresh project, target and board facts" in text
+            )
+            assert (
+                "OLD_RAW_BOARD_DATA" not in text
+                and "OLD_TOOL_RESULT" not in text
+                and "PRIVATE_REASONING" not in text
+            )
+            assert text.count("Read routes now") == 1
+            saved = provider.snapshot()
+            assert saved["previous_thread_ids"] == ["original-native-thread"]
+            assert saved["thread_id"] == "thread-1"
+            assert saved["tool_catalog_fingerprint"] == tool_catalog_fingerprint(tools)
+            assert saved["migration_seed_pending"] is False
+            # Following tool replies and user turns do not replay the seed.
+            await provider.complete(
+                messages=[
+                    {
+                        "type": "function_call_output",
+                        "call_id": "call-1",
+                        "output": "fresh result",
+                    }
+                ],
+                instructions="Use current board preflight",
+                tools=tools,
+            )
+            await provider.complete(
+                messages=[{"role": "user", "content": "Continue"}],
+                instructions="Use current board preflight",
+                tools=tools,
+            )
+            turns = [m for m in server.sent if m.get("method") == "turn/start"]
+            assert len(turns) == 2
+            assert (
+                "Historical display conversation"
+                not in turns[1]["params"]["input"][0]["text"]
+            )
+        finally:
+            await provider.aclose()
+
+    asyncio.run(scenario())
+
+
+def test_same_catalog_resumes_without_history_seed_or_unsupported_parameters():
+    async def scenario():
+        server = FakeServer()
+        provider = make(server)
+        provider.restore(
+            {
+                "provider": "codex",
+                "thread_id": "thread-1",
+                "tool_catalog_fingerprint": tool_catalog_fingerprint([TOOL]),
+                "previous_thread_ids": ["older-thread"],
+            }
+        )
+        provider.set_display_history([{"role": "user", "content": "OLD_DISPLAY_TEXT"}])
+        try:
+            await run(provider, [{"role": "user", "content": "Continue"}])
+            resume = next(m for m in server.sent if m.get("method") == "thread/resume")
+            assert resume["params"]["threadId"] == "thread-1"
+            assert "dynamicTools" not in resume["params"]
+            assert not any(m.get("method") == "thread/start" for m in server.sent)
+            turn = next(m for m in server.sent if m.get("method") == "turn/start")
+            assert "OLD_DISPLAY_TEXT" not in turn["params"]["input"][0]["text"]
+            assert provider.snapshot()["previous_thread_ids"] == ["older-thread"]
+        finally:
+            await provider.aclose()
+
+    asyncio.run(scenario())
+
+
+def test_migration_display_seed_is_bounded_and_ignores_nontext_payloads():
+    messages = [
+        {"role": "user", "content": f"turn-{i} " + "\u0001" * 3000} for i in range(50)
+    ]
+    messages += [
+        {"role": "tool", "content": "RAW_TOOL_RESULT"},
+        {"role": "assistant", "content": "UNFINISHED", "pending": True},
+        {"role": "user", "content": {"not": "display text"}},
+    ]
+    result = migration_history(messages)
+    assert len(result) <= MIGRATION_HISTORY_CHARS
+    history = json.loads(result)
+    assert 1 <= len(history) <= 12
+    assert all(len(item["content"]) <= MIGRATION_MESSAGE_CHARS for item in history)
+    assert all(set(item) == {"role", "content"} for item in history)
+    assert "[truncated]" in result
+    assert (
+        "turn-49" in result
+        and "RAW_TOOL_RESULT" not in result
+        and "UNFINISHED" not in result
+    )
+
+
+def test_session_excludes_active_user_and_pending_assistant_from_migration_seed():
+    from types import SimpleNamespace
+    from atopile.agent.session import AgentSession
+    from atopile.agent.tools.registry import ToolRegistry
+
+    async def scenario():
+        provider = make(FakeServer())
+        session = AgentSession(
+            session_id="migration-history",
+            project_root=Path.cwd(),
+            provider=provider,
+            model=ModelId("codex-default"),
+            registry=ToolRegistry(),
+            skill_ids=[],
+            messages=[
+                {"role": "user", "content": "Completed user turn"},
+                {"role": "assistant", "content": "Completed assistant turn"},
+            ],
+        )
+        session._start_run("CURRENT_USER_MUST_NOT_BE_SEEDED")
+
+        async def stream(**kwargs):
+            if False:
+                yield None
+
+        provider.stream = stream
+        async for _ in session._stream_model(
+            [{"role": "user", "content": "CURRENT_USER_MUST_NOT_BE_SEEDED"}],
+            SimpleNamespace(build_instructions=lambda: "Current instructions"),
+        ):
+            pass
+        assert "Completed user turn" in provider._display_history
+        assert "Completed assistant turn" in provider._display_history
+        assert "CURRENT_USER_MUST_NOT_BE_SEEDED" not in provider._display_history
+
+    asyncio.run(scenario())
+
+
+def test_migrated_snapshot_resumes_and_delivers_pending_history_once():
+    async def scenario():
+        first = make(FakeServer())
+        first.restore({"provider": "codex", "thread_id": "original-thread"})
+        try:
+            await first._ensure_thread("Current instructions", [TOOL])
+            state = first.snapshot()
+            assert state["migration_seed_pending"] is True
+        finally:
+            await first.aclose()
+        server = FakeServer()
+        restored = make(server)
+        restored.restore(state)
+        restored.set_display_history(
+            [{"role": "user", "content": "Useful earlier constraints"}]
+        )
+        try:
+            await run(
+                restored,
+                [{"role": "user", "content": "Continue"}],
+                "Current instructions",
+            )
+            assert any(m.get("method") == "thread/resume" for m in server.sent)
+            assert not any(m.get("method") == "thread/start" for m in server.sent)
+            turn = next(m for m in server.sent if m.get("method") == "turn/start")
+            text = turn["params"]["input"][0]["text"]
+            assert (
+                "Useful earlier constraints" in text
+                and "bounded, partial excerpt" in text
+            )
+            assert restored.snapshot()["migration_seed_pending"] is False
+            assert restored.snapshot()["previous_thread_ids"] == ["original-thread"]
+        finally:
+            await restored.aclose()
+
+    asyncio.run(scenario())
+
+
+def test_old_native_thread_metadata_is_bounded_without_remote_deletion():
+    provider = make(FakeServer())
+    provider.restore(
+        {
+            "provider": "codex",
+            "thread_id": "current",
+            "previous_thread_ids": [f"old-{i}" for i in range(80)],
+        }
+    )
+    assert provider.snapshot()["previous_thread_ids"] == [
+        f"old-{i}" for i in range(48, 80)
+    ]
+
+
+def test_failed_catalog_migration_keeps_original_native_thread_for_retry():
+    class StartFailure(FakeServer):
+        async def send(self, message):
+            if message.get("method") == "thread/start":
+                self.sent.append(message)
+                await self.queue.put(
+                    {
+                        "id": message["id"],
+                        "error": {"message": "temporary start failure"},
+                    }
+                )
+                return
+            await super().send(message)
+
+    async def scenario():
+        server = StartFailure()
+        provider = make(server)
+        provider.restore(
+            {"provider": "codex", "thread_id": "preserve-this-native-thread"}
+        )
+        try:
+            with pytest.raises(RuntimeError, match="temporary start failure"):
+                await run(provider, [{"role": "user", "content": "Continue"}])
+            assert provider.snapshot()["thread_id"] == "preserve-this-native-thread"
+            assert not any(
+                m.get("method") in {"thread/archive", "thread/delete", "thread/resume"}
+                for m in server.sent
+            )
+        finally:
+            await provider.aclose()
+
+    asyncio.run(scenario())
+
+
+def test_catalog_change_waits_for_active_tool_result_before_migrating():
+    async def scenario():
+        server = FakeServer()
+        provider = make(server)
+        expanded = [TOOL, {**TOOL, "name": "layout_get_routes"}]
+        try:
+            await run(provider, [{"role": "user", "content": "Read nets"}])
+            await provider.complete(
+                messages=[
+                    {
+                        "type": "function_call_output",
+                        "call_id": "call-1",
+                        "output": "fresh nets",
+                    }
+                ],
+                instructions="Read circuit nets",
+                tools=expanded,
+            )
+            assert sum(m.get("method") == "thread/start" for m in server.sent) == 1
+            assert not any(m.get("method") == "turn/interrupt" for m in server.sent)
+            await provider.complete(
+                messages=[{"role": "user", "content": "Read routes"}],
+                instructions="Read circuit nets",
+                tools=expanded,
+            )
+            starts = [m for m in server.sent if m.get("method") == "thread/start"]
+            assert len(starts) == 2
+            assert "layout_get_routes" in {
+                spec["name"] for spec in starts[1]["params"]["dynamicTools"]
+            }
         finally:
             await provider.aclose()
 

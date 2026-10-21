@@ -1,0 +1,467 @@
+Compiled from "Via.java"
+public class app.freerouting.board.Via extends app.freerouting.board.DrillItem implements java.io.Serializable {
+  public final boolean attach_allowed;
+
+  private app.freerouting.library.Padstack padstack;
+
+  private transient app.freerouting.geometry.planar.Shape[] precalculated_shapes;
+
+  private transient app.freerouting.autoroute.ExpansionDrill autoroute_drill_info;
+
+  public app.freerouting.board.Via(app.freerouting.library.Padstack, app.freerouting.geometry.planar.Point, int[], int, int, int, app.freerouting.board.FixedState, boolean, app.freerouting.board.BasicBoard);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: aload_3
+       3: iload         4
+       5: iload         5
+       7: iload         6
+       9: aload         7
+      11: aload         9
+      13: invokespecial #1                  // Method app/freerouting/board/DrillItem."<init>":(Lapp/freerouting/geometry/planar/Point;[IIIILapp/freerouting/board/FixedState;Lapp/freerouting/board/BasicBoard;)V
+      16: aload_0
+      17: aload_1
+      18: putfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+      21: aload_0
+      22: iload         8
+      24: putfield      #13                 // Field attach_allowed:Z
+      27: return
+
+  public app.freerouting.board.Item copy(int);
+    Code:
+       0: new           #8                  // class app/freerouting/board/Via
+       3: dup
+       4: aload_0
+       5: getfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+       8: aload_0
+       9: invokevirtual #17                 // Method get_center:()Lapp/freerouting/geometry/planar/Point;
+      12: aload_0
+      13: getfield      #21                 // Field net_no_arr:[I
+      16: aload_0
+      17: invokevirtual #25                 // Method clearance_class_no:()I
+      20: iload_1
+      21: aload_0
+      22: invokevirtual #29                 // Method get_component_no:()I
+      25: aload_0
+      26: invokevirtual #32                 // Method get_fixed_state:()Lapp/freerouting/board/FixedState;
+      29: aload_0
+      30: getfield      #13                 // Field attach_allowed:Z
+      33: aload_0
+      34: getfield      #36                 // Field board:Lapp/freerouting/board/BasicBoard;
+      37: invokespecial #40                 // Method "<init>":(Lapp/freerouting/library/Padstack;Lapp/freerouting/geometry/planar/Point;[IIIILapp/freerouting/board/FixedState;ZLapp/freerouting/board/BasicBoard;)V
+      40: areturn
+
+  public app.freerouting.geometry.planar.Shape get_shape(int);
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+       4: ifnonnull     14
+       7: ldc           #43                 // String Via.get_shape: padstack is null
+       9: invokestatic  #45                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      12: aconst_null
+      13: areturn
+      14: aload_0
+      15: getfield      #51                 // Field precalculated_shapes:[Lapp/freerouting/geometry/planar/Shape;
+      18: ifnonnull     124
+      21: aload_0
+      22: aload_0
+      23: getfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+      26: invokevirtual #55                 // Method app/freerouting/library/Padstack.to_layer:()I
+      29: aload_0
+      30: getfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+      33: invokevirtual #60                 // Method app/freerouting/library/Padstack.from_layer:()I
+      36: isub
+      37: iconst_1
+      38: iadd
+      39: anewarray     #63                 // class app/freerouting/geometry/planar/Shape
+      42: putfield      #51                 // Field precalculated_shapes:[Lapp/freerouting/geometry/planar/Shape;
+      45: iconst_0
+      46: istore_2
+      47: iload_2
+      48: aload_0
+      49: getfield      #51                 // Field precalculated_shapes:[Lapp/freerouting/geometry/planar/Shape;
+      52: arraylength
+      53: if_icmpge     124
+      56: iload_2
+      57: aload_0
+      58: invokevirtual #65                 // Method first_layer:()I
+      61: iadd
+      62: istore_3
+      63: aload_0
+      64: invokevirtual #17                 // Method get_center:()Lapp/freerouting/geometry/planar/Point;
+      67: getstatic     #68                 // Field app/freerouting/geometry/planar/Point.ZERO:Lapp/freerouting/geometry/planar/IntPoint;
+      70: invokevirtual #74                 // Method app/freerouting/geometry/planar/Point.difference_by:(Lapp/freerouting/geometry/planar/Point;)Lapp/freerouting/geometry/planar/Vector;
+      73: astore        4
+      75: aload_0
+      76: getfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+      79: iload_3
+      80: invokevirtual #78                 // Method app/freerouting/library/Padstack.get_shape:(I)Lapp/freerouting/geometry/planar/ConvexShape;
+      83: astore        5
+      85: aload         5
+      87: ifnonnull     100
+      90: aload_0
+      91: getfield      #51                 // Field precalculated_shapes:[Lapp/freerouting/geometry/planar/Shape;
+      94: iload_2
+      95: aconst_null
+      96: aastore
+      97: goto          118
+     100: aload_0
+     101: getfield      #51                 // Field precalculated_shapes:[Lapp/freerouting/geometry/planar/Shape;
+     104: iload_2
+     105: aload         5
+     107: aload         4
+     109: invokeinterface #82,  2           // InterfaceMethod app/freerouting/geometry/planar/Shape.translate_by:(Lapp/freerouting/geometry/planar/Vector;)Lapp/freerouting/geometry/planar/Area;
+     114: checkcast     #63                 // class app/freerouting/geometry/planar/Shape
+     117: aastore
+     118: iinc          2, 1
+     121: goto          47
+     124: aload_0
+     125: getfield      #51                 // Field precalculated_shapes:[Lapp/freerouting/geometry/planar/Shape;
+     128: iload_1
+     129: aaload
+     130: areturn
+
+  public app.freerouting.library.Padstack get_padstack();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+       4: areturn
+
+  public void set_padstack(app.freerouting.library.Padstack);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+       5: return
+
+  public boolean is_routable();
+    Code:
+       0: aload_0
+       1: invokevirtual #86                 // Method is_user_fixed:()Z
+       4: ifne          18
+       7: aload_0
+       8: invokevirtual #90                 // Method net_count:()I
+      11: ifle          18
+      14: iconst_1
+      15: goto          19
+      18: iconst_0
+      19: ireturn
+
+  public boolean is_obstacle(app.freerouting.board.Item);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: if_acmpeq     12
+       5: aload_1
+       6: instanceof    #93                 // class app/freerouting/board/ComponentObstacleArea
+       9: ifeq          14
+      12: iconst_0
+      13: ireturn
+      14: aload_1
+      15: instanceof    #95                 // class app/freerouting/board/ConductionArea
+      18: ifeq          33
+      21: aload_1
+      22: checkcast     #95                 // class app/freerouting/board/ConductionArea
+      25: invokevirtual #97                 // Method app/freerouting/board/ConductionArea.get_is_obstacle:()Z
+      28: ifne          33
+      31: iconst_0
+      32: ireturn
+      33: aload_1
+      34: aload_0
+      35: invokevirtual #100                // Method app/freerouting/board/Item.shares_net:(Lapp/freerouting/board/Item;)Z
+      38: ifne          43
+      41: iconst_1
+      42: ireturn
+      43: aload_1
+      44: instanceof    #106                // class app/freerouting/board/Trace
+      47: ifeq          52
+      50: iconst_0
+      51: ireturn
+      52: aload_0
+      53: getfield      #13                 // Field attach_allowed:Z
+      56: ifeq          76
+      59: aload_1
+      60: instanceof    #108                // class app/freerouting/board/Pin
+      63: ifeq          76
+      66: aload_1
+      67: checkcast     #108                // class app/freerouting/board/Pin
+      70: invokevirtual #110                // Method app/freerouting/board/Pin.drill_allowed:()Z
+      73: ifne          80
+      76: iconst_1
+      77: goto          81
+      80: iconst_0
+      81: ireturn
+
+  public boolean is_tail();
+    Code:
+       0: aload_0
+       1: invokevirtual #113                // Method get_normal_contacts:()Ljava/util/Set;
+       4: astore_1
+       5: aload_1
+       6: invokeinterface #117,  1          // InterfaceMethod java/util/Collection.size:()I
+      11: iconst_1
+      12: if_icmpgt     17
+      15: iconst_1
+      16: ireturn
+      17: aload_1
+      18: invokeinterface #122,  1          // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      23: astore_2
+      24: aload_2
+      25: invokeinterface #126,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      30: checkcast     #101                // class app/freerouting/board/Item
+      33: astore_3
+      34: aload_3
+      35: invokevirtual #132                // Method app/freerouting/board/Item.first_layer:()I
+      38: istore        4
+      40: aload_3
+      41: invokevirtual #133                // Method app/freerouting/board/Item.last_layer:()I
+      44: istore        5
+      46: aload_2
+      47: invokeinterface #136,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      52: ifeq          85
+      55: aload_2
+      56: invokeinterface #126,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      61: checkcast     #101                // class app/freerouting/board/Item
+      64: astore_3
+      65: aload_3
+      66: invokevirtual #132                // Method app/freerouting/board/Item.first_layer:()I
+      69: iload         4
+      71: if_icmpne     83
+      74: aload_3
+      75: invokevirtual #133                // Method app/freerouting/board/Item.last_layer:()I
+      78: iload         5
+      80: if_icmpeq     46
+      83: iconst_0
+      84: ireturn
+      85: iconst_1
+      86: ireturn
+
+  public void change_placement_side(app.freerouting.geometry.planar.IntPoint);
+    Code:
+       0: aload_0
+       1: getfield      #36                 // Field board:Lapp/freerouting/board/BasicBoard;
+       4: ifnonnull     8
+       7: return
+       8: aload_0
+       9: getfield      #36                 // Field board:Lapp/freerouting/board/BasicBoard;
+      12: getfield      #139                // Field app/freerouting/board/BasicBoard.library:Lapp/freerouting/library/BoardLibrary;
+      15: aload_0
+      16: getfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+      19: invokevirtual #145                // Method app/freerouting/library/BoardLibrary.get_mirrored_via_padstack:(Lapp/freerouting/library/Padstack;)Lapp/freerouting/library/Padstack;
+      22: astore_2
+      23: aload_2
+      24: ifnonnull     28
+      27: return
+      28: aload_0
+      29: aload_2
+      30: putfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+      33: aload_0
+      34: aload_1
+      35: invokespecial #151                // Method app/freerouting/board/DrillItem.change_placement_side:(Lapp/freerouting/geometry/planar/IntPoint;)V
+      38: aload_0
+      39: invokevirtual #155                // Method clear_derived_data:()V
+      42: return
+
+  public app.freerouting.autoroute.ExpansionDrill get_autoroute_drill_info(app.freerouting.board.ShapeSearchTree);
+    Code:
+       0: aload_0
+       1: getfield      #159                // Field autoroute_drill_info:Lapp/freerouting/autoroute/ExpansionDrill;
+       4: ifnonnull     90
+       7: aload_0
+       8: invokevirtual #163                // Method get_autoroute_info:()Lapp/freerouting/autoroute/ItemAutorouteInfo;
+      11: astore_2
+      12: aload_0
+      13: invokevirtual #17                 // Method get_center:()Lapp/freerouting/geometry/planar/Point;
+      16: invokestatic  #167                // Method app/freerouting/geometry/planar/TileShape.get_instance:(Lapp/freerouting/geometry/planar/Point;)Lapp/freerouting/geometry/planar/IntBox;
+      19: astore_3
+      20: aload_0
+      21: new           #173                // class app/freerouting/autoroute/ExpansionDrill
+      24: dup
+      25: aload_3
+      26: aload_0
+      27: invokevirtual #17                 // Method get_center:()Lapp/freerouting/geometry/planar/Point;
+      30: aload_0
+      31: invokevirtual #65                 // Method first_layer:()I
+      34: aload_0
+      35: invokevirtual #175                // Method last_layer:()I
+      38: invokespecial #176                // Method app/freerouting/autoroute/ExpansionDrill."<init>":(Lapp/freerouting/geometry/planar/TileShape;Lapp/freerouting/geometry/planar/Point;II)V
+      41: putfield      #159                // Field autoroute_drill_info:Lapp/freerouting/autoroute/ExpansionDrill;
+      44: aload_0
+      45: invokevirtual #175                // Method last_layer:()I
+      48: aload_0
+      49: invokevirtual #65                 // Method first_layer:()I
+      52: isub
+      53: iconst_1
+      54: iadd
+      55: istore        4
+      57: iconst_0
+      58: istore        5
+      60: iload         5
+      62: iload         4
+      64: if_icmpge     90
+      67: aload_0
+      68: getfield      #159                // Field autoroute_drill_info:Lapp/freerouting/autoroute/ExpansionDrill;
+      71: getfield      #179                // Field app/freerouting/autoroute/ExpansionDrill.room_arr:[Lapp/freerouting/autoroute/CompleteExpansionRoom;
+      74: iload         5
+      76: aload_2
+      77: iload         5
+      79: aload_1
+      80: invokevirtual #183                // Method app/freerouting/autoroute/ItemAutorouteInfo.get_expansion_room:(ILapp/freerouting/board/ShapeSearchTree;)Lapp/freerouting/autoroute/ObstacleExpansionRoom;
+      83: aastore
+      84: iinc          5, 1
+      87: goto          60
+      90: aload_0
+      91: getfield      #159                // Field autoroute_drill_info:Lapp/freerouting/autoroute/ExpansionDrill;
+      94: areturn
+
+  public void clear_derived_data();
+    Code:
+       0: aload_0
+       1: invokespecial #189                // Method app/freerouting/board/DrillItem.clear_derived_data:()V
+       4: aload_0
+       5: aconst_null
+       6: putfield      #51                 // Field precalculated_shapes:[Lapp/freerouting/geometry/planar/Shape;
+       9: aload_0
+      10: aconst_null
+      11: putfield      #159                // Field autoroute_drill_info:Lapp/freerouting/autoroute/ExpansionDrill;
+      14: return
+
+  public void clear_autoroute_info();
+    Code:
+       0: aload_0
+       1: invokespecial #190                // Method app/freerouting/board/DrillItem.clear_autoroute_info:()V
+       4: aload_0
+       5: aconst_null
+       6: putfield      #159                // Field autoroute_drill_info:Lapp/freerouting/autoroute/ExpansionDrill;
+       9: return
+
+  public boolean is_selected_by_filter(app.freerouting.board.ItemSelectionFilter);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #193                // Method is_selected_by_fixed_filter:(Lapp/freerouting/board/ItemSelectionFilter;)Z
+       5: ifne          10
+       8: iconst_0
+       9: ireturn
+      10: aload_1
+      11: getstatic     #197                // Field app/freerouting/board/ItemSelectionFilter$SelectableChoices.VIAS:Lapp/freerouting/board/ItemSelectionFilter$SelectableChoices;
+      14: invokevirtual #203                // Method app/freerouting/board/ItemSelectionFilter.is_selected:(Lapp/freerouting/board/ItemSelectionFilter$SelectableChoices;)Z
+      17: ireturn
+
+  public java.awt.Color[] get_draw_colors(app.freerouting.boardgraphics.GraphicsContext);
+    Code:
+       0: aload_0
+       1: invokevirtual #90                 // Method net_count:()I
+       4: ifne          15
+       7: aload_1
+       8: invokevirtual #209                // Method app/freerouting/boardgraphics/GraphicsContext.get_obstacle_colors:()[Ljava/awt/Color;
+      11: astore_2
+      12: goto          43
+      15: aload_0
+      16: invokevirtual #65                 // Method first_layer:()I
+      19: aload_0
+      20: invokevirtual #175                // Method last_layer:()I
+      23: if_icmplt     34
+      26: aload_1
+      27: invokevirtual #215                // Method app/freerouting/boardgraphics/GraphicsContext.get_pin_colors:()[Ljava/awt/Color;
+      30: astore_2
+      31: goto          43
+      34: aload_1
+      35: aload_0
+      36: invokevirtual #86                 // Method is_user_fixed:()Z
+      39: invokevirtual #218                // Method app/freerouting/boardgraphics/GraphicsContext.get_via_colors:(Z)[Ljava/awt/Color;
+      42: astore_2
+      43: aload_2
+      44: areturn
+
+  public double get_draw_intensity(app.freerouting.boardgraphics.GraphicsContext);
+    Code:
+       0: aload_0
+       1: invokevirtual #90                 // Method net_count:()I
+       4: ifne          15
+       7: aload_1
+       8: invokevirtual #222                // Method app/freerouting/boardgraphics/GraphicsContext.get_obstacle_color_intensity:()D
+      11: dstore_2
+      12: goto          39
+      15: aload_0
+      16: invokevirtual #65                 // Method first_layer:()I
+      19: aload_0
+      20: invokevirtual #175                // Method last_layer:()I
+      23: if_icmplt     34
+      26: aload_1
+      27: invokevirtual #226                // Method app/freerouting/boardgraphics/GraphicsContext.get_pin_color_intensity:()D
+      30: dstore_2
+      31: goto          39
+      34: aload_1
+      35: invokevirtual #229                // Method app/freerouting/boardgraphics/GraphicsContext.get_via_color_intensity:()D
+      38: dstore_2
+      39: dload_2
+      40: dreturn
+
+  public void print_info(app.freerouting.board.ObjectInfoPanel, java.util.Locale);
+    Code:
+       0: ldc           #232                // String app.freerouting.board.ObjectInfoPanel
+       2: aload_2
+       3: invokestatic  #234                // Method java/util/ResourceBundle.getBundle:(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;
+       6: astore_3
+       7: aload_1
+       8: aload_3
+       9: ldc           #240                // String via
+      11: invokevirtual #242                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+      14: invokeinterface #246,  2          // InterfaceMethod app/freerouting/board/ObjectInfoPanel.append_bold:(Ljava/lang/String;)Z
+      19: pop
+      20: aload_1
+      21: aload_3
+      22: ldc           #252                // String at
+      24: invokevirtual #242                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+      27: invokedynamic #254,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      32: invokeinterface #257,  2          // InterfaceMethod app/freerouting/board/ObjectInfoPanel.append:(Ljava/lang/String;)Z
+      37: pop
+      38: aload_1
+      39: aload_0
+      40: invokevirtual #17                 // Method get_center:()Lapp/freerouting/geometry/planar/Point;
+      43: invokevirtual #260                // Method app/freerouting/geometry/planar/Point.to_float:()Lapp/freerouting/geometry/planar/FloatPoint;
+      46: invokeinterface #264,  2          // InterfaceMethod app/freerouting/board/ObjectInfoPanel.append:(Lapp/freerouting/geometry/planar/FloatPoint;)Z
+      51: pop
+      52: aload_1
+      53: aload_3
+      54: ldc_w         #267                // String padstack
+      57: invokevirtual #242                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+      60: invokedynamic #268,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      65: invokeinterface #257,  2          // InterfaceMethod app/freerouting/board/ObjectInfoPanel.append:(Ljava/lang/String;)Z
+      70: pop
+      71: aload_1
+      72: aload_0
+      73: getfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+      76: getfield      #269                // Field app/freerouting/library/Padstack.name:Ljava/lang/String;
+      79: aload_3
+      80: ldc_w         #273                // String padstack_info
+      83: invokevirtual #242                // Method java/util/ResourceBundle.getString:(Ljava/lang/String;)Ljava/lang/String;
+      86: aload_0
+      87: getfield      #7                  // Field padstack:Lapp/freerouting/library/Padstack;
+      90: invokeinterface #275,  4          // InterfaceMethod app/freerouting/board/ObjectInfoPanel.append:(Ljava/lang/String;Ljava/lang/String;Lapp/freerouting/board/ObjectInfoPanel$Printable;)Z
+      95: pop
+      96: aload_0
+      97: aload_1
+      98: aload_2
+      99: invokevirtual #278                // Method print_connectable_item_info:(Lapp/freerouting/board/ObjectInfoPanel;Ljava/util/Locale;)V
+     102: aload_1
+     103: invokeinterface #282,  1          // InterfaceMethod app/freerouting/board/ObjectInfoPanel.newline:()Z
+     108: pop
+     109: return
+
+  public boolean write(java.io.ObjectOutputStream);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: invokevirtual #285                // Method java/io/ObjectOutputStream.writeObject:(Ljava/lang/Object;)V
+       5: goto          11
+       8: astore_2
+       9: iconst_0
+      10: ireturn
+      11: iconst_1
+      12: ireturn
+    Exception table:
+       from    to  target type
+           0     5     8   Class java/io/IOException
+}

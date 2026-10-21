@@ -1,0 +1,6 @@
+(footprint "Pad1" (version 20240108) (generator pcbnew)
+ (layer "F.Cu") (attr smd)
+ (fp_text reference "REF**" (at 0 -2) (layer "F.SilkS") (effects (font (size 1 1) (thickness .15))))
+ (fp_text value "Pad1" (at 0 2) (layer "F.Fab") (effects (font (size 1 1) (thickness .15))))
+ (fp_rect (start -1.25 -1.25) (end 1.25 1.25) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))
+ (pad "1" smd rect (at 0 0) (size 2 2) (layers "F.Cu" "F.Mask" "F.Paste")))

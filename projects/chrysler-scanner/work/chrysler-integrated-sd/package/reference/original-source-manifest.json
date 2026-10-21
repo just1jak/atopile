@@ -1,0 +1,130 @@
+{
+  "source_root": "/Users/justinkobely/Downloads/ChryslerCCDSCIScanner_V140",
+  "files": {
+    "elec/layout/v240/v240.kicad_pcb": {
+      "sha256": "26ab8409f172eb33b40b5439eaa213b2366efa97b0da22439521719e94e71080",
+      "size": 905770,
+      "mtime_ns": 1792418314123834551
+    },
+    "elec/layout/v240/v240.kicad_pro": {
+      "sha256": "6ccbe5c7cd8c4aaa6dabf15c42775d854d2ec166482d6f2f99a6339c537302d7",
+      "size": 16997,
+      "mtime_ns": 1792417942116947414
+    },
+    "reference/v240-netlist.json": {
+      "sha256": "413c741a9b1a2ec5bf89b9e212ddf13fc4e38899c238599126adcd31803744d2",
+      "size": 306764,
+      "mtime_ns": 1792417552412867408
+    },
+    "elec/schematic/01_ccd.kicad_sch": {
+      "sha256": "9a1c12612732395af48cfec8def7cc7a6d1799a8f2639564fd5b22ca8cca3675",
+      "size": 121173,
+      "mtime_ns": 1791952935008168505
+    },
+    "elec/schematic/02_pci.kicad_sch": {
+      "sha256": "4ae3d33d197e65b0bd43dc5c593b634466ba93d3b48917c3d2b07e7d4487c66b",
+      "size": 57598,
+      "mtime_ns": 1791952935151141879
+    },
+    "elec/schematic/03_sci-14-9.kicad_sch": {
+      "sha256": "0214f795a5e947e0f582fee92fc414a51a2a57b596ba53c89f578c0415fef773",
+      "size": 55840,
+      "mtime_ns": 1791952935282186966
+    },
+    "elec/schematic/04_sci-6-12.kicad_sch": {
+      "sha256": "9be20436ae89f9adfe1bc22b7211534e2266f8f500bffbc66eae92605076d5f1",
+      "size": 81544,
+      "mtime_ns": 1791952935496550903
+    },
+    "elec/schematic/05_sci-rx.kicad_sch": {
+      "sha256": "6e273b855537ce3fbeb6861b78fabc441fdf41879c594c93868cce40a8f7b94a",
+      "size": 56386,
+      "mtime_ns": 1791952935629552155
+    },
+    "elec/schematic/06_obd-protection.kicad_sch": {
+      "sha256": "4c30aa2957a58fda179efb0441dfffe5c92c9a4b4b5bc704405cc2f20df90560",
+      "size": 38197,
+      "mtime_ns": 1791952935740096956
+    },
+    "elec/schematic/07_vehicle-input.kicad_sch": {
+      "sha256": "d164356fe706c44457f30a8d358f01471c4f7ae198b1c3478ede497ea0ee5eeb",
+      "size": 16939,
+      "mtime_ns": 1791952935769016531
+    },
+    "elec/schematic/08_power-5v.kicad_sch": {
+      "sha256": "3af364c9af49429a514439bf56f90c4bf4277a028df8d2ca86538f25243ae5b7",
+      "size": 83905,
+      "mtime_ns": 1791952936086586355
+    },
+    "elec/schematic/09_power-vpp.kicad_sch": {
+      "sha256": "af4980849f1c295501536a5883df43bbd2d9b930b521d0f8cb1894c7f1323568",
+      "size": 69111,
+      "mtime_ns": 1791952936203021280
+    },
+    "elec/schematic/10_power-vbb.kicad_sch": {
+      "sha256": "b7f36729cb95a1975eed40107aa9dfa99a9bf072d6bc696fa593937c216ad684",
+      "size": 68901,
+      "mtime_ns": 1791952936313348582
+    },
+    "elec/schematic/11_power-7v5.kicad_sch": {
+      "sha256": "cba4c6789c25085d08710c07604d14161c744902eb03b4bec17e2e76f39ef27a",
+      "size": 72507,
+      "mtime_ns": 1791952936526918313
+    },
+    "elec/schematic/12_program-6.kicad_sch": {
+      "sha256": "b1cdc9bd8dc973bd0ec8eb255211fcef38a34573b759bb1b371126b88bc7dba5",
+      "size": 63379,
+      "mtime_ns": 1791952936634327325
+    },
+    "elec/schematic/13_program-9.kicad_sch": {
+      "sha256": "51b3519959e91088e1cb8eb2438a65379394361963c491536e7b1aa5a8464b4e",
+      "size": 63396,
+      "mtime_ns": 1791952936741478544
+    },
+    "elec/schematic/14_program-12.kicad_sch": {
+      "sha256": "6fc3e1a49a14987d60957dc7b55a64be744380494957af5898571f31ab53c7b0",
+      "size": 63286,
+      "mtime_ns": 1791952936849776513
+    },
+    "elec/schematic/15_program-14.kicad_sch": {
+      "sha256": "5036ce7c5e793041f1a948b4e9466034f83aa345999ce5da5b87b8d7c0a8e395",
+      "size": 63558,
+      "mtime_ns": 1791952936957662274
+    },
+    "elec/schematic/16_mcu.kicad_sch": {
+      "sha256": "7c04f80e9ed04ebeae51918d5ab443ac33719430bee5b10003eb478e6a9b51b6",
+      "size": 84065,
+      "mtime_ns": 1791952937334421670
+    },
+    "elec/schematic/17_adc.kicad_sch": {
+      "sha256": "620ef62377af9959c92365e0802784da1458f2ae0ee90fed49fa718f99e22a15",
+      "size": 38893,
+      "mtime_ns": 1791952937449831014
+    },
+    "elec/schematic/18_control.kicad_sch": {
+      "sha256": "0f1cf45eb865efd4879ab1ec3d69cbd75a720ab81afd7d152570c352282e1ea0",
+      "size": 46678,
+      "mtime_ns": 1791952937586413643
+    },
+    "elec/schematic/19_usb.kicad_sch": {
+      "sha256": "8b61a6caf3d4d791f623fa36833091c2769b9effd8715df13f4cae9e97327e77",
+      "size": 116310,
+      "mtime_ns": 1791952938238116881
+    },
+    "elec/schematic/20_leds.kicad_sch": {
+      "sha256": "f2ab2eb218396807163eaa09ac3dd5be2a7370a9b5ba42a186f06ebf63c1b547",
+      "size": 80913,
+      "mtime_ns": 1791952938391493923
+    },
+    "elec/schematic/21_obd.kicad_sch": {
+      "sha256": "884bbc13b23d387f71fda0d0763fe5f2ae7b7bb7bc680990b0972c8e73c47596",
+      "size": 12608,
+      "mtime_ns": 1791952938412421293
+    },
+    "elec/schematic/ChryslerScanner_V240.kicad_sch": {
+      "sha256": "d0e0368496aa6b53d4f1631978dceaca4cbf5fd76a52ad6fa9e0f2415d7f522b",
+      "size": 14170,
+      "mtime_ns": 1791952938416498542
+    }
+  }
+}

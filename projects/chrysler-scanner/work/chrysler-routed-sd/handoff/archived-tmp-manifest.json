@@ -1,0 +1,117 @@
+{
+  "records": [
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-c26-anchor/apply_anchor.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor--apply_anchor.py",
+      "sha256": "4dac96d2bcf81d4355f060aa42c735d132fad3d0bc3508e54c1610aca5fe9d3b",
+      "bytes": 8844,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-c26-anchor/apply_cap_repair_delta.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor--apply_cap_repair_delta.py",
+      "sha256": "4c5776de561de665e8b4f1e92c8c7ab195d561d5b55336b857102818dd9283e8",
+      "bytes": 6868,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-c26-anchor/make_cap_delta.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor--make_cap_delta.py",
+      "sha256": "0e075a6e18efb7dd2dde389723f15b68ba00786a567549985c10b3370a6ef449",
+      "bytes": 2055,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-c26-anchor/verify_cap_delta.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor--verify_cap_delta.py",
+      "sha256": "6712abf0d44f025bf815a4070fcb74193e08840cc23d8c3a34846f3a944601f3",
+      "bytes": 2362,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-final-ground-caps/apply_cap_detours.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-final-ground-caps--apply_cap_detours.py",
+      "sha256": "8fe51d25daf4283fb6aac3ae12e580b1328610411910a73b4edbf4885ca5563f",
+      "bytes": 8513,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-final-ground-caps/find_cap_sites.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-final-ground-caps--find_cap_sites.py",
+      "sha256": "cf9821a0b3bfd97aec1a5d798a10b873356d3381e24f7fe5b64a4c02dbdb5803",
+      "bytes": 4806,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-final-ground-caps/find_short_ground_neck.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-final-ground-caps--find_short_ground_neck.py",
+      "sha256": "f9dfc68b66083795f38c2bdbb6c7350b08f3853a4eb52a7e03077a0610687894",
+      "bytes": 7227,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-pcirx-local/join_pci_rx.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-pcirx-local--join_pci_rx.py",
+      "sha256": "73d6b47594e6173954ce80484f357995f3aacbe8ec42c07911f88b0e1939baad",
+      "bytes": 7502,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-pcirx-local/join_pci_rx_back_fine.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-pcirx-local--join_pci_rx_back_fine.py",
+      "sha256": "8995702c10a020d91eef5195410dfe22d7331d3c4df2ffc06eac66709cea180d",
+      "bytes": 5342,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-pcirx-local/join_pci_rx_back_from_via.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-pcirx-local--join_pci_rx_back_from_via.py",
+      "sha256": "3cd482e0022f63dee9345de384e7c4780894516c04daa2495e964e1a4ebb4525",
+      "bytes": 5342,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-pcirx-local/join_pci_rx_front.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-pcirx-local--join_pci_rx_front.py",
+      "sha256": "1146f3e9e66d706ffa6a4dbcc4116dd163858844b9b06b6139ec416dd33dd232",
+      "bytes": 7498,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-pcirx-local/join_pci_rx_front_fine.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-pcirx-local--join_pci_rx_front_fine.py",
+      "sha256": "451c6ba79c1e66d052fbc1a5462833ca996b292251f1248e1b15c9bf71970c89",
+      "bytes": 7502,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-c26-anchor-alt/apply_anchor.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor-alt--apply_anchor.py",
+      "sha256": "75f34eea0103272e2fd369f7e71bec2908d729e9bc609666424caacc39e56b49",
+      "bytes": 8845,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-c26-anchor-alt/apply_anchor_fine.py",
+      "retainedPath": "work/chrysler-routed-sd/handoff/archived-tmp-diagnostics/atopile-sd-c26-anchor-alt--apply_anchor_fine.py",
+      "sha256": "856f4e90c1c4cbb399aaaba21e4f980f3e59ba03a2a7cdcb101067227a858ae8",
+      "bytes": 8849,
+      "status": "historical diagnostic; not the current accepted PCB or a passing routing result"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-pin-hint-blockers.json",
+      "retainedPath": "work/chrysler-routed-sd/handoff/historical-pin-hint-blockers.json",
+      "sha256": "28aaba72102d5aa95f7c46d0b7365b40312fa6a8359fa4b4ec1929cdeaa5143e",
+      "bytes": 9158,
+      "status": "read-only evidence snapshot"
+    },
+    {
+      "originalTemporaryPath": "/private/tmp/atopile-sd-rx7-escape-shift/rx7-shift-proof.json",
+      "retainedPath": "work/chrysler-routed-sd/handoff/frozen-source-rx7-shift-proof.json",
+      "sha256": "62f26ded1e8ae76eabb913c72ff533d05cbb7209d6757fc9c07bbea2a2980661",
+      "bytes": 8152,
+      "status": "read-only evidence snapshot"
+    }
+  ],
+  "allCopiedBytesSha256Verified": true
+}

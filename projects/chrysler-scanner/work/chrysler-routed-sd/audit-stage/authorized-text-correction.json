@@ -1,0 +1,9 @@
+{
+  "file": "ChryslerScanner_V240_SD.kicad_sch",
+  "scope": "one displayed text string only",
+  "oldText": "Electrical review: U3 / U4 / U8 pin 5 requires GND; currently NC in the source.",
+  "newText": "U3 / U4 / U8 pin 5 is connected to GND; corrected to match the PCB and source netlist.",
+  "beforeSha256": "75da06a1881070aa309ed3a1a60c035781f47f446dc730293d68987f2fed37e2",
+  "afterSha256": "c7033df3c3f63015fe14cdb47d0cc175aa155b25509de7469d5a0dec137c95ca",
+  "allOtherBytesExact": true
+}

@@ -1,0 +1,412 @@
+[
+  {
+    "sha": "ed6ebb71d4b0239f76f238b40155f2fdd9c91085",
+    "node_id": "C_kwDOCHCEYtoAKGVkNmViYjcxZDRiMDIzOWY3NmYyMzhiNDAxNTVmMmZkZDljOTEwODU",
+    "commit": {
+      "author": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2026-06-12T13:15:08Z"
+      },
+      "committer": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2026-06-12T13:15:08Z"
+      },
+      "message": "Update to v0.16.8",
+      "tree": {
+        "sha": "c9e44bb12df639ab1cd4b79c679207992d2027a5",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/c9e44bb12df639ab1cd4b79c679207992d2027a5"
+      },
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/commits/ed6ebb71d4b0239f76f238b40155f2fdd9c91085",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/ed6ebb71d4b0239f76f238b40155f2fdd9c91085",
+    "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/ed6ebb71d4b0239f76f238b40155f2fdd9c91085",
+    "comments_url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/ed6ebb71d4b0239f76f238b40155f2fdd9c91085/comments",
+    "author": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5a1bd0a293a5202f0c43ba6e9204e2a95011cfeb",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/5a1bd0a293a5202f0c43ba6e9204e2a95011cfeb",
+        "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/5a1bd0a293a5202f0c43ba6e9204e2a95011cfeb"
+      }
+    ]
+  },
+  {
+    "sha": "5a1bd0a293a5202f0c43ba6e9204e2a95011cfeb",
+    "node_id": "C_kwDOCHCEYtoAKDVhMWJkMGEyOTNhNTIwMmYwYzQzYmE2ZTkyMDRlMmE5NTAxMWNmZWI",
+    "commit": {
+      "author": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2026-05-08T08:30:02Z"
+      },
+      "committer": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2026-05-08T08:30:02Z"
+      },
+      "message": "Improve firmware updater",
+      "tree": {
+        "sha": "928f93c3558cb3a25e7a6ad3b08967d7521f6ccf",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/928f93c3558cb3a25e7a6ad3b08967d7521f6ccf"
+      },
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/commits/5a1bd0a293a5202f0c43ba6e9204e2a95011cfeb",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/5a1bd0a293a5202f0c43ba6e9204e2a95011cfeb",
+    "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/5a1bd0a293a5202f0c43ba6e9204e2a95011cfeb",
+    "comments_url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/5a1bd0a293a5202f0c43ba6e9204e2a95011cfeb/comments",
+    "author": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e502f8053ba2e645222cc64c052c11524e26d09c",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/e502f8053ba2e645222cc64c052c11524e26d09c",
+        "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/e502f8053ba2e645222cc64c052c11524e26d09c"
+      }
+    ]
+  },
+  {
+    "sha": "975abb9543a75051c4c342c2036475ebbc172075",
+    "node_id": "C_kwDOCHCEYtoAKDk3NWFiYjk1NDNhNzUwNTFjNGMzNDJjMjAzNjQ3NWViYmMxNzIwNzU",
+    "commit": {
+      "author": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2026-04-30T09:11:26Z"
+      },
+      "committer": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2026-04-30T09:11:26Z"
+      },
+      "message": "Update to v0.8.5",
+      "tree": {
+        "sha": "dd65ee3302cf64c3962f4b92c6105751b9a36ce3",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/dd65ee3302cf64c3962f4b92c6105751b9a36ce3"
+      },
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/commits/975abb9543a75051c4c342c2036475ebbc172075",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/975abb9543a75051c4c342c2036475ebbc172075",
+    "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/975abb9543a75051c4c342c2036475ebbc172075",
+    "comments_url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/975abb9543a75051c4c342c2036475ebbc172075/comments",
+    "author": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8d6ec6c178f380bde534debfc8008762df631513",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/8d6ec6c178f380bde534debfc8008762df631513",
+        "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/8d6ec6c178f380bde534debfc8008762df631513"
+      }
+    ]
+  },
+  {
+    "sha": "e7de997d38b13d6bec47335b28fdeccc11879178",
+    "node_id": "C_kwDOCHCEYtoAKGU3ZGU5OTdkMzhiMTNkNmJlYzQ3MzM1YjI4ZmRlY2NjMTE4NzkxNzg",
+    "commit": {
+      "author": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2026-01-24T09:01:02Z"
+      },
+      "committer": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2026-01-24T09:01:02Z"
+      },
+      "message": "Refactor updater logic and add support for V2.4.0+ hardware\n\n- Hardware Support: Added logic to distinguish between ESP32 V2 legacy (PICO-D4) and V2.4.0+ (PICO-V3-02) hardware revisions.\n\n-User Experience: Implemented manual hardware selection prompts for \"empty\" devices without a stored version string.",
+      "tree": {
+        "sha": "8dcc9011d1c1f5fb1e2894cfcabede39c0fb6df3",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/8dcc9011d1c1f5fb1e2894cfcabede39c0fb6df3"
+      },
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/commits/e7de997d38b13d6bec47335b28fdeccc11879178",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/e7de997d38b13d6bec47335b28fdeccc11879178",
+    "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/e7de997d38b13d6bec47335b28fdeccc11879178",
+    "comments_url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/e7de997d38b13d6bec47335b28fdeccc11879178/comments",
+    "author": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "90a0276995e119394407d039867538d3a36b6159",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/90a0276995e119394407d039867538d3a36b6159",
+        "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/90a0276995e119394407d039867538d3a36b6159"
+      }
+    ]
+  },
+  {
+    "sha": "79ec778df37af819f75703910ff4326732361758",
+    "node_id": "C_kwDOCHCEYtoAKDc5ZWM3NzhkZjM3YWY4MTlmNzU3MDM5MTBmZjQzMjY3MzIzNjE3NTg",
+    "commit": {
+      "author": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2024-09-22T06:50:42Z"
+      },
+      "committer": {
+        "name": "László Dániel",
+        "email": "laszlodaniel@gmail.com",
+        "date": "2024-09-22T06:50:42Z"
+      },
+      "message": "Adjust task stack sizes\n\nAdd OTA update library to scanner firmware.\n\nBump esp_littlefs version from 1.8.0 to 1.14.8\nBump littlefs version from 2.7.0 to 2.9.3\n\nModify partition table to include app1 ota partition for future wireless firmware update.\n\nRename partition_table.bin to partitions.bin.",
+      "tree": {
+        "sha": "a641aa289aec29e66af2f2fdb9d7875cd2006faa",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/trees/a641aa289aec29e66af2f2fdb9d7875cd2006faa"
+      },
+      "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/git/commits/79ec778df37af819f75703910ff4326732361758",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/79ec778df37af819f75703910ff4326732361758",
+    "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/79ec778df37af819f75703910ff4326732361758",
+    "comments_url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/79ec778df37af819f75703910ff4326732361758/comments",
+    "author": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "laszlodaniel",
+      "id": 20598072,
+      "node_id": "MDQ6VXNlcjIwNTk4MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20598072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laszlodaniel",
+      "html_url": "https://github.com/laszlodaniel",
+      "followers_url": "https://api.github.com/users/laszlodaniel/followers",
+      "following_url": "https://api.github.com/users/laszlodaniel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laszlodaniel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laszlodaniel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laszlodaniel/subscriptions",
+      "organizations_url": "https://api.github.com/users/laszlodaniel/orgs",
+      "repos_url": "https://api.github.com/users/laszlodaniel/repos",
+      "events_url": "https://api.github.com/users/laszlodaniel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laszlodaniel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "474c47f8e0d4f786d461d1c5356c2e50fb063303",
+        "url": "https://api.github.com/repos/laszlodaniel/ChryslerScanner/commits/474c47f8e0d4f786d461d1c5356c2e50fb063303",
+        "html_url": "https://github.com/laszlodaniel/ChryslerScanner/commit/474c47f8e0d4f786d461d1c5356c2e50fb063303"
+      }
+    ]
+  }
+]

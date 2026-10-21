@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/router-tools/offline.sb",
+    "/opt/homebrew/opt/openjdk@17/bin/java",
+    "-jar",
+    "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/router-tools/freerouting-1.9.0.jar",
+    "-da",
+    "-dl",
+    "-de",
+    "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/router-smoke/tiny.dsn",
+    "-do",
+    "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/router-smoke/tiny.ses",
+    "-mp",
+    "2",
+    "-mt",
+    "1",
+    "-dct",
+    "0"
+  ],
+  "elapsedSeconds": 3.053,
+  "returnCode": 0,
+  "timeout": false,
+  "sesCreated": true,
+  "networkDenied": true,
+  "stdoutBytes": 0,
+  "stderrBytes": 3255
+}

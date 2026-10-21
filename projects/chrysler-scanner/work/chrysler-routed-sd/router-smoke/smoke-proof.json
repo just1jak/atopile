@@ -1,0 +1,16 @@
+{
+  "engine": "Freerouting1.9.0/Java17",
+  "nativeDSNExport": true,
+  "nativeSESImport": true,
+  "pads": 2,
+  "nets": 1,
+  "airwiresBefore": 1,
+  "airwiresAfter": 0,
+  "tracksOrVias": 1,
+  "allPhysicalDRCErrorsAndWarnings": 0,
+  "missingConnections": 0,
+  "inputCopyUnchanged": true,
+  "dsnSha256": "95a476c36097c8249689e8c7f31c8369fb8c9c464554020dbca068ca4c6e5ba0",
+  "sesSha256": "993d80137cb90df2eb1c8827e47ed74875184ee484415e50f9dfc2ad90e1464f",
+  "routedPcbSha256": "e6c2f6d4eab2f6fd41f4ca74e5d96bdaae3ebb35c4f157e3e857ccab15a00548"
+}

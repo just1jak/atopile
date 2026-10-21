@@ -1,0 +1,8 @@
+{"id":5642,"type":"PolylineTrace","fixed":"UNFIXED","nets":["TBEN"],"layer":0,"halfWidthCore":1000,"firstCore":"app.freerouting.geometry.planar.IntPoint@73ad2d6","lastCore":"app.freerouting.geometry.planar.IntPoint@7085bdee","pointsMm":[[117.0,109.25],[117.0,110.3875]]}
+{"id":5641,"type":"PolylineTrace","fixed":"UNFIXED","nets":["TBEN"],"layer":0,"halfWidthCore":1000,"firstCore":"app.freerouting.geometry.planar.IntPoint@369f73a2","lastCore":"app.freerouting.geometry.planar.IntPoint@1f28c152","pointsMm":[[117.0,108.1125],[117.0,109.25]]}
+{"id":5632,"type":"Via","fixed":"UNFIXED","nets":["TBEN"],"positionMm":[117.0,109.25],"attachAllowed":false}
+{"id":4862,"type":"PolylineTrace","fixed":"UNFIXED","nets":["TBEN"],"layer":0,"halfWidthCore":1000,"firstCore":"app.freerouting.geometry.planar.IntPoint@7d907bac","lastCore":"app.freerouting.geometry.planar.IntPoint@7791a895","pointsMm":[[117.0,112.175],[117.0,110.3875]]}
+{"id":2713,"type":"Pin","fixed":"UNFIXED","nets":["TBEN"],"pin":"17","reference":"U19","positionMm":[169.9,137.5]}
+{"id":485,"type":"Pin","fixed":"UNFIXED","nets":["TBEN"],"pin":"5","reference":"Q7","positionMm":[117.0,108.1125]}
+{"id":482,"type":"Pin","fixed":"UNFIXED","nets":["TBEN"],"pin":"2","reference":"Q7","positionMm":[117.0,110.3875]}
+{"id":167,"type":"Pin","fixed":"UNFIXED","nets":["TBEN"],"pin":"2","reference":"R77","positionMm":[117.0,112.175]}

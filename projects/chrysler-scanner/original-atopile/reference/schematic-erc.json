@@ -1,0 +1,141 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-13T21:42:21",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd",
+            "violations": []
+        },
+        {
+            "path": "/CCD interface/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4",
+            "violations": []
+        },
+        {
+            "path": "/PCI / J1850/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561",
+            "violations": []
+        },
+        {
+            "path": "/SCI TX14 / TX9/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d52669ab-e923-5314-abe4-66ade96ca057",
+            "violations": []
+        },
+        {
+            "path": "/SCI TX6 / TX12 + RX bias/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42",
+            "violations": []
+        },
+        {
+            "path": "/SCI RX7 / RX15/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/da66e837-bf1f-5723-bfb3-578273c855b0",
+            "violations": []
+        },
+        {
+            "path": "/OBD line protection/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a",
+            "violations": []
+        },
+        {
+            "path": "/Vehicle power input/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/0fa4b058-4feb-583b-8296-ab82d4297b8b",
+            "violations": []
+        },
+        {
+            "path": "/5 V / 3.3 V supplies/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048",
+            "violations": []
+        },
+        {
+            "path": "/VPP boost supply/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d",
+            "violations": []
+        },
+        {
+            "path": "/VBB supply/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619",
+            "violations": []
+        },
+        {
+            "path": "/7.5 V supply/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b",
+            "violations": []
+        },
+        {
+            "path": "/SCI TX6 VBB / VPP drivers/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/d24526bf-1665-5e09-804e-7766ac8ed522",
+            "violations": []
+        },
+        {
+            "path": "/SCI TX9 VBB / VPP drivers/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/3ff849df-958f-5be2-8569-468445a4ea89",
+            "violations": []
+        },
+        {
+            "path": "/SCI TX12 VBB / VPP drivers/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/66e1551e-d973-5aea-8598-c702df9afca6",
+            "violations": []
+        },
+        {
+            "path": "/SCI TX14 VBB / VPP drivers/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/60c5bdd2-75d0-5b7e-aaeb-53c59cf219af",
+            "violations": []
+        },
+        {
+            "path": "/ESP32 + RF/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/dafba844-e0ed-5189-9d62-63659a892123",
+            "violations": []
+        },
+        {
+            "path": "/Voltage monitoring/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fa114f2a-a86c-5eb2-a452-4746db30dc63",
+            "violations": []
+        },
+        {
+            "path": "/I/O expander + I2C/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/28c29c45-2882-5ba2-8271-25819e81bba6",
+            "violations": []
+        },
+        {
+            "path": "/USB + reset / boot/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/1a324728-1d33-5386-99ad-5d39e8f946d4",
+            "violations": []
+        },
+        {
+            "path": "/Status LED drivers/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2580b799-019d-5855-977e-5641c7349506",
+            "violations": []
+        },
+        {
+            "path": "/OBD connector/",
+            "uuid_path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/4e1d2b46-44eb-5faa-a46b-fa17e19b37a7",
+            "violations": []
+        }
+    ],
+    "source": "ChryslerScanner_V240.kicad_sch"
+}

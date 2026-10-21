@@ -1,0 +1,177 @@
+{
+  "hardware_revision": "V240-USB-C-OBD",
+  "description": "User-requested USB-C and ATTEND 226A-1202 OBD-II connector revisions; upstream V240 PDF remains unchanged.",
+  "usb_role": "USB 2.0 full-speed device / 5 V sink using the existing CP2102 and power path",
+  "power_delivery": false,
+  "super_speed": false,
+  "parts": {
+    "J2": {
+      "value": "USB-C",
+      "manufacturer": "GCT",
+      "orderable_hint": "USB4105-GF-A",
+      "footprint": "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "package_note": "16-contact USB 2.0 receptacle; standard 0.95 mm shell stakes; KiCad footprint checked against GCT USB4105 drawing revision B4.",
+      "pins": {
+        "A1": "GND",
+        "A4": "VBUS",
+        "A5": "USB_CC1",
+        "A6": "D+",
+        "A7": "D-",
+        "A8": null,
+        "A9": "VBUS",
+        "A12": "GND",
+        "B1": "GND",
+        "B4": "VBUS",
+        "B5": "USB_CC2",
+        "B6": "D+",
+        "B7": "D-",
+        "B8": null,
+        "B9": "VBUS",
+        "B12": "GND",
+        "SH": "GND"
+      }
+    },
+    "R102": {
+      "value": "5.1k\u03a9",
+      "manufacturer": "Yageo",
+      "orderable_hint": "RC0603FR-075K1L",
+      "footprint": "R_0603_1608Metric",
+      "package_note": "5.1 kohm, 1%, 0603, CC1-to-GND Rd termination; independent from CC2.",
+      "pins": {
+        "1": "USB_CC1",
+        "2": "GND"
+      }
+    },
+    "R103": {
+      "value": "5.1k\u03a9",
+      "manufacturer": "Yageo",
+      "orderable_hint": "RC0603FR-075K1L",
+      "footprint": "R_0603_1608Metric",
+      "package_note": "5.1 kohm, 1%, 0603, CC2-to-GND Rd termination; independent from CC1.",
+      "pins": {
+        "1": "USB_CC2",
+        "2": "GND"
+      }
+    },
+    "J1": {
+      "value": "226A-1202",
+      "manufacturer": "ATTEND",
+      "orderable_hint": "226A-1202",
+      "footprint": "OBDII_ATTEND_226A-1202",
+      "package_note": "Manufacturer drawing rev 2: 4 mm pitch, 3 mm tail-row spacing, 1.35 mm drills, 2.35 mm pads. Pin 1 upper-left, mating face left. PCB edge moved 0.15 mm outward relative to recommended layout for 0.325 mm copper clearance.",
+      "pins": {
+        "1": null,
+        "10": null,
+        "11": "J1962-11",
+        "12": "J1962-12",
+        "13": null,
+        "14": "J1962-14",
+        "15": "J1962-15",
+        "16": "J1962-16",
+        "2": "J1962-2",
+        "3": "J1962-3",
+        "4": "GND",
+        "5": "N_J1_5",
+        "6": "J1962-6",
+        "7": "J1962-7",
+        "8": null,
+        "9": "J1962-9"
+      }
+    }
+  },
+  "placement": {
+    "J2": {
+      "xy_mm": [
+        106.325,
+        29.0
+      ],
+      "rotation_deg": 90,
+      "group": "usb",
+      "reason": "Expanded-board spacing; critical pin-distance pairs preserved as rigid clusters",
+      "courtyard_mm": [
+        101.56499999999998,
+        23.68,
+        110.505,
+        34.32
+      ]
+    },
+    "R102": {
+      "xy_mm": [
+        99.75,
+        31.5
+      ],
+      "rotation_deg": 180,
+      "group": "usb",
+      "reason": "First placement pass: local net spans, feedback/loop and bypass proximity; connector/RF/mechanical anchors retained",
+      "courtyard_mm": [
+        98.27,
+        30.77,
+        101.23,
+        32.23
+      ]
+    },
+    "R103": {
+      "xy_mm": [
+        99.75,
+        26.0
+      ],
+      "rotation_deg": 180,
+      "group": "usb",
+      "reason": "First placement pass: local net spans, feedback/loop and bypass proximity; connector/RF/mechanical anchors retained",
+      "courtyard_mm": [
+        98.27,
+        25.27,
+        101.23,
+        26.73
+      ]
+    },
+    "U11": {
+      "xy_mm": [
+        99.1,
+        28.75
+      ],
+      "rotation_deg": 90,
+      "group": "usb",
+      "reason": "First placement pass: local net spans, feedback/loop and bypass proximity; connector/RF/mechanical anchors retained",
+      "courtyard_mm": [
+        96.94999999999999,
+        26.9,
+        101.25,
+        30.6
+      ]
+    },
+    "J1": {
+      "xy_mm": [
+        3.0,
+        25.0
+      ],
+      "rotation_deg": 0,
+      "group": "obd",
+      "reason": "ATTEND 226A-1202 rev 2 tail pattern; 0.15 mm inward offset improves pad-to-edge clearance to 0.325 mm; manufacturer CAD board/hardware clearance checked",
+      "courtyard_mm": [
+        0.07500000000000018,
+        9.575,
+        5.925,
+        40.425
+      ]
+    }
+  },
+  "sources": [
+    "https://gct.co/files/drawings/usb4105.pdf",
+    "https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/Connector_USB.pretty/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod",
+    "https://www.st.com/resource/en/technical_article/dm00496853-overview-of-usb-type-c-and-power-delivery-technologies-stmicroelectronics.pdf",
+    "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-075K1L",
+    "https://www.attend.com.tw/en/product.php?act=view&id=11",
+    "https://www.attend.com.tw/data/download/file/226A-1202.pdf",
+    "https://www.attend.com.tw/data/download/file/226A-1202.rar"
+  ],
+  "routing_notes": [
+    "Join A6/B6 to D+ and A7/B7 to D- near J2, then route through U11 to the CP2102. Keep the duplicate-pad stubs short.",
+    "CC1 and CC2 each have their own 5.1 kohm Rd. Do not short them together.",
+    "Connect all four VBUS contacts to the existing VBUS net, all four ground contacts and shell stakes to GND. SBU1/SBU2 remain NC.",
+    "The connector change does not add USB-PD, higher-voltage input or USB 3.x capability. Default USB current and existing power protection require review with the complete circuit.",
+    "Preserve the existing U11 data-line protection; review additional CC/VBUS ESD protection and USB input-current limits before fabrication. The board remains unrouted.",
+    "USB-C SMD pad mask expansion is 0.025 mm per side, leaving a 0.15 mm mask bridge at the 0.5 mm-pitch, 0.3 mm-wide contact row with the planned black mask."
+  ],
+  "usb_c_smd_solder_mask_margin_mm": 0.025
+}

@@ -1,0 +1,7 @@
+atopile==0.15.9
+pymupdf==1.28.2
+gerbonara==1.6.3
+sexpdata==1.0.2
+shapely==2.2.0
+matplotlib==3.11.2
+numpy==2.5.4

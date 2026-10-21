@@ -1,0 +1,26 @@
+Reference,Quantity,Value,ManufacturerPartNumber,Footprint,Datasheet,AssemblyNote
+U1,1,XIAO ESP32-S3 (base),113991114,Local:XIAO_ESP32S3_Socket,https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/,
+U2,1,MCP1825S-3302E/DB,MCP1825S-3302E/DB,Package_TO_SOT_SMD:SOT-223-3_TabPin2,https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP1825-Family-Data-Sheet-DS20002056.pdf,
+J1,1,microSD Hirose DM3AT,DM3AT-SF-PEJM5,Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5,https://www.hirose.com/en/product/p/CL0609-0031-0-00,
+R1,1,33R,RC0805FR-0733RL,Resistor_SMD:R_0805_2012Metric,,
+R2,1,33R,RC0805FR-0733RL,Resistor_SMD:R_0805_2012Metric,,
+R3,1,33R,RC0805FR-0733RL,Resistor_SMD:R_0805_2012Metric,,
+R4,1,10k,RC0805FR-0710KL,Resistor_SMD:R_0805_2012Metric,,
+R5,1,10k,RC0805FR-0710KL,Resistor_SMD:R_0805_2012Metric,,
+R6,1,10k,RC0805FR-0710KL,Resistor_SMD:R_0805_2012Metric,,
+R7,1,10k,RC0805FR-0710KL,Resistor_SMD:R_0805_2012Metric,,
+R8,1,10k,RC0805FR-0710KL,Resistor_SMD:R_0805_2012Metric,,
+R9,1,1k,RC0805FR-071KL,Resistor_SMD:R_0805_2012Metric,,
+D1,1,GREEN / STATUS,LTST-C170GKT,LED_SMD:LED_0805_2012Metric,,
+SW1,1,STOP / EJECT,B3F-1000,Button_Switch_THT:SW_PUSH_6mm,,
+R10,1,10k,RC0805FR-0710KL,Resistor_SMD:R_0805_2012Metric,,
+C1,1,10uF,GRM21BR71A106KE51L,Capacitor_SMD:C_0805_2012Metric,,
+C2,1,10uF,GRM21BR71A106KE51L,Capacitor_SMD:C_0805_2012Metric,,
+C3,1,100nF,GRM21BR71A104KA01L,Capacitor_SMD:C_0805_2012Metric,,
+C4,1,100uF,6SVPC100M,Capacitor_SMD:CP_Elec_5x5.9,,
+H1,1,M3 NPTH,3.2mm NPTH,MountingHole:MountingHole_3.2mm_M3,,Mechanical hole; no purchased part
+H2,1,M3 NPTH,3.2mm NPTH,MountingHole:MountingHole_3.2mm_M3,,Mechanical hole; no purchased part
+H3,1,M3 NPTH,3.2mm NPTH,MountingHole:MountingHole_3.2mm_M3,,Mechanical hole; no purchased part
+H4,1,M3 NPTH,3.2mm NPTH,MountingHole:MountingHole_3.2mm_M3,,Mechanical hole; no purchased part
+XIAO carrier sockets,2,"1x7 female socket,2.54mm pitch",SSW-107-01-S-S,Part of U1 socket land pattern,https://www.samtec.com/products/ssw-107-01-s-s,Verify chosen mating header height before enclosure
+XIAO male headers,2,"1x7 male header,2.54mm pitch",TSW-107-07-G-S,Solder to XIAO module,https://www.samtec.com/products/tsw-107-07-g-s,0.635mm square posts; module bought without headers

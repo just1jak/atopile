@@ -1,0 +1,2351 @@
+{
+  "schema": 1,
+  "archive_kind": "original pre-SD Atopile source; not the active integrated revision",
+  "source_root": "/Users/justinkobely/Downloads/ChryslerCCDSCIScanner_V140",
+  "active_project": "../current/ChryslerScanner_V240_SD.kicad_pro",
+  "original_cad_reference": "../reference/original-source/",
+  "originals_preserved": true,
+  "copy_method": "read_bytes/write_bytes; copied bytes rehashed; original size/mtime checked before and after",
+  "files": {
+    ".gitignore": {
+      "sha256": "af8e10028e2573bdaacbfbd3c6b78488a6c840fee213bf14059a638c7c2b39ed",
+      "size": 82,
+      "source_mtime_ns": 1791858383279272176
+    },
+    "BOM.csv": {
+      "sha256": "f824c53c71d178c6ebcac426d171a75061b3cc5c5486e310c88a8d24e0c89401",
+      "size": 22942,
+      "source_mtime_ns": 1791946937327080642
+    },
+    "LICENSE": {
+      "sha256": "c3bc1fd94148c28485e8bab1d5a28edbc8e3870f2bd9be7127c68c8b7a0ea5df",
+      "size": 35126,
+      "source_mtime_ns": 1791858383331911877
+    },
+    "README!.txt": {
+      "sha256": "717ca9029f186832364e9e9fc24ce5305cea9334a3492a0d193936ae56e34940",
+      "size": 1098,
+      "source_mtime_ns": 1534877490000000000
+    },
+    "README.md": {
+      "sha256": "a1979fb57621ed17e11213039ece6b3c3d4217b44da49eab2b7fc0e7cf634429",
+      "size": 25134,
+      "source_mtime_ns": 1791953053539561252
+    },
+    "ato.yaml": {
+      "sha256": "6c6d9dc6c241e236b8411eab14aa815231fe9267d67009890764ed42101b14dc",
+      "size": 255,
+      "source_mtime_ns": 1792383955584214343
+    },
+    "elec/src/3dmodels/ANT3216LL00R2400A.step": {
+      "sha256": "417dea2854007eb21f7deeed845189106a795336f7c9598e6a35f9838c08ffce",
+      "size": 17868,
+      "source_mtime_ns": 1791867791838356426
+    },
+    "elec/src/3dmodels/ANT3216LL00R2400A.wrl": {
+      "sha256": "3d077e9e7156b8c8a761809ecf8876f2db812a5d499804ac3a08975a12bb8fde",
+      "size": 2018,
+      "source_mtime_ns": 1791867791840841293
+    },
+    "elec/src/3dmodels/ATTEND_226A-1202.step": {
+      "sha256": "b7de878426ff567bcd8548e076be72a7cafc2c1dc643b73f069533428274f87a",
+      "size": 2230404,
+      "source_mtime_ns": 1791946936916543453
+    },
+    "elec/src/3dmodels/CP_Radial_D8.0mm_P3.50mm.step": {
+      "sha256": "abedfe603cd28231e16fb158d7b3f8875be74514f602e356364f48f073d0ef8e",
+      "size": 171217,
+      "source_mtime_ns": 1791867791409907738
+    },
+    "elec/src/3dmodels/C_0603_1608Metric.step": {
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "size": 43450,
+      "source_mtime_ns": 1791867791394504040
+    },
+    "elec/src/3dmodels/C_1206_3216Metric.step": {
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "size": 43450,
+      "source_mtime_ns": 1791867791396754949
+    },
+    "elec/src/3dmodels/D_SMB.step": {
+      "sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4",
+      "size": 70508,
+      "source_mtime_ns": 1791867791397863446
+    },
+    "elec/src/3dmodels/D_SOD-123.step": {
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "size": 52836,
+      "source_mtime_ns": 1791867791399201024
+    },
+    "elec/src/3dmodels/D_SOD-323.step": {
+      "sha256": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d",
+      "size": 52730,
+      "source_mtime_ns": 1791867791400598478
+    },
+    "elec/src/3dmodels/ESP32_PICO_V3_02.step": {
+      "sha256": "66fee34298041ff77ab40d68ab692027795e52219fefadc98d1795dc4ff8c71b",
+      "size": 293952,
+      "source_mtime_ns": 1791867791762956221
+    },
+    "elec/src/3dmodels/ESP32_PICO_V3_02.wrl": {
+      "sha256": "d0f51dc4844c52f3f67c9e0591b296231a55517a8ba54790c6c34f880f8b062a",
+      "size": 46491,
+      "source_mtime_ns": 1791867791807312822
+    },
+    "elec/src/3dmodels/LED_1206_BLUE.step": {
+      "sha256": "e41d3548864b2b49ad3b86dcd9b03bdd97e2088c85dcc592cfc46a3cbcc68753",
+      "size": 28909,
+      "source_mtime_ns": 1791867792129102868
+    },
+    "elec/src/3dmodels/LED_1206_BLUE.wrl": {
+      "sha256": "eb29ab519ec90bc8fa50b3593073e92941470a21e00702abe25406fcc28c8d52",
+      "size": 3255,
+      "source_mtime_ns": 1791867792133939518
+    },
+    "elec/src/3dmodels/LED_1206_GREEN.step": {
+      "sha256": "775ac7b2b15f85b8361a0473a212a693ecc99fd51a4f293a0a1597d4e1450917",
+      "size": 28909,
+      "source_mtime_ns": 1791867792114006502
+    },
+    "elec/src/3dmodels/LED_1206_GREEN.wrl": {
+      "sha256": "6a60d9527a7822d57bd6f01faeb3d65bb6a9eae52b3224d9b869740effd60faf",
+      "size": 3256,
+      "source_mtime_ns": 1791867792119048193
+    },
+    "elec/src/3dmodels/LED_1206_RED.step": {
+      "sha256": "7bf5434403c89b4a3ce05906179af2515fd197b26cf29b22b532d64fd5c6b85e",
+      "size": 28907,
+      "source_mtime_ns": 1791867792083028147
+    },
+    "elec/src/3dmodels/LED_1206_RED.wrl": {
+      "sha256": "fbf6fc233f244f06c5c99ac0b7e5be103ada869e862e5cf571a2c646c97ad137",
+      "size": 3256,
+      "source_mtime_ns": 1791867792088067589
+    },
+    "elec/src/3dmodels/LED_1206_YELLOW.step": {
+      "sha256": "9218afc3e3711109101609470655944816fc509e2da747d827b950ec2b367c33",
+      "size": 28909,
+      "source_mtime_ns": 1791867792098226096
+    },
+    "elec/src/3dmodels/LED_1206_YELLOW.wrl": {
+      "sha256": "e6b90242d9694713187b2b6cd3316c8f6eb3cb53657461ddd166156deab0aeb8",
+      "size": 3255,
+      "source_mtime_ns": 1791867792102659415
+    },
+    "elec/src/3dmodels/LICENSE-ATTEND.md": {
+      "sha256": "99be3390813002fc000d3ef8949f7772add11e583d3823e915f408800b52220e",
+      "size": 616,
+      "source_mtime_ns": 1791947058360456277
+    },
+    "elec/src/3dmodels/LICENSE-KiCad.md": {
+      "sha256": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+      "size": 2101,
+      "source_mtime_ns": 1791867787857209779
+    },
+    "elec/src/3dmodels/L_1206_3216Metric.step": {
+      "sha256": "7a76ea34101f04e5f76cf96aa1ead38be0f0b388f5d21e9dafbb3047c495e5dd",
+      "size": 43450,
+      "source_mtime_ns": 1791867791415034471
+    },
+    "elec/src/3dmodels/L_7.3x7.3_H3.5.step": {
+      "sha256": "44a076c3904305a8db944547c2cbd0f0f1b64b182117aef0d290be26018d7fc8",
+      "size": 19917,
+      "source_mtime_ns": 1791867791848327476
+    },
+    "elec/src/3dmodels/L_7.3x7.3_H3.5.wrl": {
+      "sha256": "e30fa869901c795a5bea58bcb57909f1b54886eae899e5ed10ff7e751c9dede6",
+      "size": 17653,
+      "source_mtime_ns": 1791867791854924788
+    },
+    "elec/src/3dmodels/OBD16_V140_Representative.step": {
+      "sha256": "6360ff4f36ea62ed92a562ed5532e37f57f5de6e85f04d15b8468039832b2893",
+      "size": 299234,
+      "source_mtime_ns": 1791867792007948024
+    },
+    "elec/src/3dmodels/OBD16_V140_Representative.wrl": {
+      "sha256": "6938e3c9618636db80ce6dabb0d59fbff5fef843bb661568e4793c661198c2b8",
+      "size": 30993,
+      "source_mtime_ns": 1791867792048104598
+    },
+    "elec/src/3dmodels/PinHeader_2x03_P2.54mm_Vertical.step": {
+      "sha256": "30c87dd7aa515b02055124826d8c4054084971d49d819c644cd6b21295ac52c8",
+      "size": 185520,
+      "source_mtime_ns": 1791867791407383455
+    },
+    "elec/src/3dmodels/QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step": {
+      "sha256": "f7d256794c4147daf24dcae0554fae18510315e565ad1e239b475be7fef80d8b",
+      "size": 283654,
+      "source_mtime_ns": 1791867791413208519
+    },
+    "elec/src/3dmodels/QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.step": {
+      "sha256": "e9d6d740f505b03e5aa0ac826330f9e269344b84656d051f50eb07ac162749eb",
+      "size": 320760,
+      "source_mtime_ns": 1791867791411271567
+    },
+    "elec/src/3dmodels/R_0603_1608Metric.step": {
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "size": 40618,
+      "source_mtime_ns": 1791867791392604005
+    },
+    "elec/src/3dmodels/R_1206_3216Metric.step": {
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "size": 40414,
+      "source_mtime_ns": 1791867791393725793
+    },
+    "elec/src/3dmodels/SOT-23-5.step": {
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "size": 87532,
+      "source_mtime_ns": 1791867791402021182
+    },
+    "elec/src/3dmodels/SOT-23-6.step": {
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "size": 99639,
+      "source_mtime_ns": 1791867791413951016
+    },
+    "elec/src/3dmodels/SOT-23.step": {
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "size": 60296,
+      "source_mtime_ns": 1791867791401426725
+    },
+    "elec/src/3dmodels/SOT-363_SC-70-6.step": {
+      "sha256": "045cc95e18ee7a13d1623c3ce6604fc833049bdb4f952f68c26e3c5767d122e4",
+      "size": 101545,
+      "source_mtime_ns": 1791867791404691423
+    },
+    "elec/src/3dmodels/SW_SPST_TL3305A.step": {
+      "sha256": "ca1db6ff7a0ad1348e19b4955b6f1db08cdca35b16727d90af7b99b3cdee0b22",
+      "size": 86152,
+      "source_mtime_ns": 1791867791408807492
+    },
+    "elec/src/3dmodels/SY6283_DFN4.step": {
+      "sha256": "014ff197b1eb9e269ad6e820627c760e895b0712b9cbb7253fd5aa5c2ba83052",
+      "size": 31084,
+      "source_mtime_ns": 1791867791824234224
+    },
+    "elec/src/3dmodels/SY6283_DFN4.wrl": {
+      "sha256": "4fb86a678ea60a50826b38890c3ad0b887ae2593527d31ce5fb88f048c64bfac",
+      "size": 13973,
+      "source_mtime_ns": 1791867791831343283
+    },
+    "elec/src/3dmodels/SolderJumper_Bridged.step": {
+      "sha256": "ff742d6137dda5aa5a16553632c24688c270c93ed4fa4a7cc804c23da4537d9d",
+      "size": 18035,
+      "source_mtime_ns": 1791867792058942561
+    },
+    "elec/src/3dmodels/SolderJumper_Bridged.wrl": {
+      "sha256": "0efe69cafe525bda3a880fa604a0c45650c79389470d7ec8a84d7b2e9852c8b4",
+      "size": 2026,
+      "source_mtime_ns": 1791867792062956173
+    },
+    "elec/src/3dmodels/SolderJumper_Open.step": {
+      "sha256": "7217d528efc1af3ac1a097cbb0ae2aba89c914a589938cd231a33db6597aefb9",
+      "size": 12508,
+      "source_mtime_ns": 1791867792069622817
+    },
+    "elec/src/3dmodels/SolderJumper_Open.wrl": {
+      "sha256": "f8f8bffefd1c94f5927896116430119002cc8b62ef3b6694b5eb994bf266f44c",
+      "size": 1392,
+      "source_mtime_ns": 1791867792072024184
+    },
+    "elec/src/3dmodels/USB_B_Lumberg_2411_02.step": {
+      "sha256": "ec1b9c44538c9ba609fb285288efa6decb1fb1112c34cbd548899d9764b6a8fe",
+      "size": 89320,
+      "source_mtime_ns": 1791867791904825287
+    },
+    "elec/src/3dmodels/USB_B_Lumberg_2411_02.wrl": {
+      "sha256": "116ea79dbcda343dfc80492427ef18db7b05991ef5d41e2c9e009c16c8975f86",
+      "size": 9303,
+      "source_mtime_ns": 1791867791916336040
+    },
+    "elec/src/3dmodels/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step": {
+      "sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+      "size": 1059856,
+      "source_mtime_ns": 1791869293164781772
+    },
+    "elec/src/3dmodels/VSSOP-8_2.3x2mm_P0.5mm.step": {
+      "sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+      "size": 124982,
+      "source_mtime_ns": 1791867791405712794
+    },
+    "elec/src/3dmodels/WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.step": {
+      "sha256": "a159a524ab16d3406353a16f8c20b59f5679eea26e2d41174628288b5b9da702",
+      "size": 79956,
+      "source_mtime_ns": 1791867791406550125
+    },
+    "elec/src/footprints/ANT3216LL00R2400A.kicad_mod": {
+      "sha256": "062298a0d08d8ce88ac3075107155e7158b2be8e0aa5222f74bd5191674a063e",
+      "size": 919,
+      "source_mtime_ns": 1791950340139293158
+    },
+    "elec/src/footprints/AW9523B_QFN24.kicad_mod": {
+      "sha256": "8ffac43dcc94dcec5d5005033d9f6ff354ca4780b34346b2ea0fa724d53e2058",
+      "size": 2901,
+      "source_mtime_ns": 1791950340131408180
+    },
+    "elec/src/footprints/CP2102_V140_Reference.kicad_mod": {
+      "sha256": "42656d949129ce08aeb1eb687182155d916d64702859b2dc9bae75d980c63e1a",
+      "size": 3476,
+      "source_mtime_ns": 1791950340120310385
+    },
+    "elec/src/footprints/CP_Radial_D8.0mm_P3.50mm.kicad_mod": {
+      "sha256": "7895685571375be7f04ef989d0aacdd222bd18362ec8378edb420e3bb967de6a",
+      "size": 17583,
+      "source_mtime_ns": 1791950340160119196
+    },
+    "elec/src/footprints/C_0603_1608Metric.kicad_mod": {
+      "sha256": "10037064bae4dcd314b89425d6431a3789eda8bda1aad2ac453d6ac70ab99604",
+      "size": 2032,
+      "source_mtime_ns": 1791950340109636635
+    },
+    "elec/src/footprints/C_0805_2012Metric.kicad_mod": {
+      "sha256": "a7ce32079f4d1fae0b6d55e204ea132753534b81f53dbeb91da8a0f5ffa52c72",
+      "size": 2002,
+      "source_mtime_ns": 1791950340095613026
+    },
+    "elec/src/footprints/C_1206_3216Metric.kicad_mod": {
+      "sha256": "85d2b9b3d9b18e72a9cc28a5a11de3aa7a66789bf38169a3b289df416bd6e249",
+      "size": 2036,
+      "source_mtime_ns": 1791950340129317872
+    },
+    "elec/src/footprints/D_SMB.kicad_mod": {
+      "sha256": "81055204eecf87b8c00ea81e22bcab4a6533b8a28ba4ccf1c88bcd9c4cdefb1e",
+      "size": 2436,
+      "source_mtime_ns": 1791950340133597656
+    },
+    "elec/src/footprints/D_SOD-123.kicad_mod": {
+      "sha256": "11d3b2afea5c2f2580ececbd79fb1a7882262eee583dc83ea5a658f46641ba31",
+      "size": 2415,
+      "source_mtime_ns": 1791950340127748652
+    },
+    "elec/src/footprints/D_SOD-323.kicad_mod": {
+      "sha256": "816e2e6f2da179bcc6252e9833f9546de826bb0cf9c7b2199a0c4d35ff337c69",
+      "size": 2332,
+      "source_mtime_ns": 1791950340146897426
+    },
+    "elec/src/footprints/ESP32_PICO_V3_02.kicad_mod": {
+      "sha256": "5df3f2e34a33cc580345bb350120e5816565cb23b4e14565bf0188ab44a6124d",
+      "size": 5114,
+      "source_mtime_ns": 1791950340163612723
+    },
+    "elec/src/footprints/LED_1206_3216Metric.kicad_mod": {
+      "sha256": "30444e7f2c7b6e99fd148f07db92070a93e9f9ffab817f596a957fd7bea920eb",
+      "size": 2049,
+      "source_mtime_ns": 1791950340100231229
+    },
+    "elec/src/footprints/LED_V140_Reference.kicad_mod": {
+      "sha256": "4563aa2105018de1f0a477a7b751dd61aeeba1446056c673d99f9ddaea633f45",
+      "size": 938,
+      "source_mtime_ns": 1791950340164447105
+    },
+    "elec/src/footprints/L_7.3x7.3_H3.5.kicad_mod": {
+      "sha256": "859d3b366cf2d563b959e0bb40870a5c78b5ff2e8f2f6709835b5b3a8ece8f53",
+      "size": 2584,
+      "source_mtime_ns": 1791950340102937666
+    },
+    "elec/src/footprints/MountingHole_4mm.kicad_mod": {
+      "sha256": "be1a7ce9b3249c8f166100724427b6d1b42d70b6dbf46551e07a3f1b8eb0f8ec",
+      "size": 323,
+      "source_mtime_ns": 1791950340143967653
+    },
+    "elec/src/footprints/OBD16_V140_Reference.kicad_mod": {
+      "sha256": "6358ce67f8519f8db0398b0976112407c1940780e917fc8390affa96c363c6d9",
+      "size": 2406,
+      "source_mtime_ns": 1791950340143290856
+    },
+    "elec/src/footprints/OBDII_ATTEND_226A-1202.kicad_mod": {
+      "sha256": "ca0735088d24f6b2aa2d3456cdce60ee98e5e9d53fc9b2e503f08d6fa901b92f",
+      "size": 2428,
+      "source_mtime_ns": 1791950340166138493
+    },
+    "elec/src/footprints/PinHeader_2x03_P2.54mm_Vertical.kicad_mod": {
+      "sha256": "1bdab2b87cdfe5eb4d45ba127fc7ab5b306979acfa2e2910d6c9b0459867ff3f",
+      "size": 2918,
+      "source_mtime_ns": 1791950340168593387
+    },
+    "elec/src/footprints/QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.6mm.kicad_mod": {
+      "sha256": "5917f141f52f2b54dab093dfabe3ae03c24f333de932ad20141b7a4eb9ec98c2",
+      "size": 5460,
+      "source_mtime_ns": 1791950340176894452
+    },
+    "elec/src/footprints/QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.kicad_mod": {
+      "sha256": "8e6832d5d79579c2339dd05ac3a2d136422d553490ca00395ecf037758b8e5c6",
+      "size": 6305,
+      "source_mtime_ns": 1791950340138344276
+    },
+    "elec/src/footprints/R_0603_1608Metric.kicad_mod": {
+      "sha256": "a066e2153f5de6d1e431113ca452b62d04fa5983ebd0ecdd98116878f244c5a7",
+      "size": 2066,
+      "source_mtime_ns": 1791950340125718177
+    },
+    "elec/src/footprints/R_1206_3216Metric.kicad_mod": {
+      "sha256": "546b5dfd703a79f206b653eaf69778c760bc27e951528477471c283cf3af4c08",
+      "size": 2048,
+      "source_mtime_ns": 1791950340104813514
+    },
+    "elec/src/footprints/SOT-23-5.kicad_mod": {
+      "sha256": "7db9fb4ec9275d900b518a177e9ad4c503a0397f9322e8e1f0e8c5e24d3b20e3",
+      "size": 2538,
+      "source_mtime_ns": 1791950340113807960
+    },
+    "elec/src/footprints/SOT-23-6.kicad_mod": {
+      "sha256": "fc0416d0bdb0c1f668d02b5575edf6587c5a97bf07582317fabd0337cfba87bb",
+      "size": 2652,
+      "source_mtime_ns": 1791950340141453967
+    },
+    "elec/src/footprints/SOT-23.kicad_mod": {
+      "sha256": "9aa655a99e387960b2abdf8f183f443746a0c13863044c5c44c2247aecf14bcd",
+      "size": 2063,
+      "source_mtime_ns": 1791950340122327943
+    },
+    "elec/src/footprints/SOT-363_SC-70-6.kicad_mod": {
+      "sha256": "07a61481b8933ef54bcd58ff6c14336121844ba75cb94bb75ef42cc9a4c4e47b",
+      "size": 2166,
+      "source_mtime_ns": 1791950340097250497
+    },
+    "elec/src/footprints/SW_SPST_TL3305A.kicad_mod": {
+      "sha256": "114ee7026e903e6b0c0784f290d547e09e7fd6dfe4d7099cd5f3236b2dcb6a2f",
+      "size": 4206,
+      "source_mtime_ns": 1791950340107920247
+    },
+    "elec/src/footprints/SY6283_DFN4.kicad_mod": {
+      "sha256": "86ea024d2aa34a4af0b4c465812b04c9fb037021f3d0d67a614240f89b325437",
+      "size": 1071,
+      "source_mtime_ns": 1791950340144924536
+    },
+    "elec/src/footprints/SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm.kicad_mod": {
+      "sha256": "d938272dddd4e43af92d9ed3ad4dd4fef3f1fabc9be5dddcd832633337709af1",
+      "size": 1677,
+      "source_mtime_ns": 1791950340111500900
+    },
+    "elec/src/footprints/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm.kicad_mod": {
+      "sha256": "653e5f50ab2aeb84401d81d65f4eecf7c4e6a34ed55bcf359b77a9e2b0eb8394",
+      "size": 1520,
+      "source_mtime_ns": 1791950340098696133
+    },
+    "elec/src/footprints/TSOT-23-8.kicad_mod": {
+      "sha256": "befcd0ea0a24ec427f2463715f2c3e78f42b5ea07a943a193f3ebae3ab2f5d46",
+      "size": 2790,
+      "source_mtime_ns": 1791950340091725454
+    },
+    "elec/src/footprints/USBLC6_V140_Reference.kicad_mod": {
+      "sha256": "9f3b7c04ea6014ef4dd7f610f1d126ba45713ffb0d695e5537c42e27b878a11d",
+      "size": 1343,
+      "source_mtime_ns": 1791950340169601478
+    },
+    "elec/src/footprints/USB_B_Lumberg_2411_02_Horizontal.kicad_mod": {
+      "sha256": "d2b4569e13ce25bc2b6070bf81b3265e960b1602595d36794cdb291fb570afec",
+      "size": 3195,
+      "source_mtime_ns": 1791950340093975513
+    },
+    "elec/src/footprints/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod": {
+      "sha256": "6fa2e8707d01462fe2608afecafb86f9d75c7a730020f75ae169363c40f3b584",
+      "size": 6634,
+      "source_mtime_ns": 1791950340117156944
+    },
+    "elec/src/footprints/VSSOP-8_2.3x2mm_P0.5mm.kicad_mod": {
+      "sha256": "7f4ac46366ea462c402b2e00a1b236834214a1ed38f7ff93004ece45d1c4f74c",
+      "size": 2392,
+      "source_mtime_ns": 1791950340172662169
+    },
+    "elec/src/footprints/WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.kicad_mod": {
+      "sha256": "a3c89f4d683b703c37dedf50501c73f55939e6bb07252bd98eb703dd015c449a",
+      "size": 2736,
+      "source_mtime_ns": 1791950340124245624
+    },
+    "elec/src/main.ato": {
+      "sha256": "c378daa6137dc3832613720716f9b012b0124b8fd453786965a8b6757ed4680e",
+      "size": 45805,
+      "source_mtime_ns": 1792417552413814983
+    },
+    "elec/src/parts.ato": {
+      "sha256": "b67ff29e36a4c9748b697a8881515606e318c27ebea4972dec57db899a5bf941",
+      "size": 75794,
+      "source_mtime_ns": 1791946937319961321
+    },
+    "elec/src/symbols/AE1.kicad_sym": {
+      "sha256": "2ba4240f16dd0a0229d6ab004d7e93b0f08adc185a65633cbfd5dc4d2ae357d4",
+      "size": 695,
+      "source_mtime_ns": 1791946937273846571
+    },
+    "elec/src/symbols/C1.kicad_sym": {
+      "sha256": "292c3aadbce1977ca8df4636ecc394220bbd9ce1a16bf7fd9dddce6313f486ac",
+      "size": 684,
+      "source_mtime_ns": 1791946937274015277
+    },
+    "elec/src/symbols/C10.kicad_sym": {
+      "sha256": "13b85f747da0d6d2d232283ab2fe10bff353ed827c1f6649444cb362bf0e571a",
+      "size": 686,
+      "source_mtime_ns": 1791946937275225636
+    },
+    "elec/src/symbols/C11.kicad_sym": {
+      "sha256": "e9f64c33a012129750dcd1aa14cdd65921d6fb9c5497abe405dd89ec27a75d2c",
+      "size": 687,
+      "source_mtime_ns": 1791946937275374675
+    },
+    "elec/src/symbols/C12.kicad_sym": {
+      "sha256": "64ac2af6b7aedc897f37ce747106d82a9fb7bf5d82d806606013ef97eca37288",
+      "size": 682,
+      "source_mtime_ns": 1791946937275519298
+    },
+    "elec/src/symbols/C13.kicad_sym": {
+      "sha256": "7d0a0d68fcff56ed99e6eff27ec518c1c5357a672874dd7ec93bee5afade1cf6",
+      "size": 686,
+      "source_mtime_ns": 1791946937275632130
+    },
+    "elec/src/symbols/C14.kicad_sym": {
+      "sha256": "bd3df09d9ac4d50669cb98e4cbb69644d3b9dafb6ab75014f2d69f2ed121a40e",
+      "size": 686,
+      "source_mtime_ns": 1791946937275749879
+    },
+    "elec/src/symbols/C15.kicad_sym": {
+      "sha256": "80d693b2752efc80e1b65c70b4f1d754d1b2584bc01ffc8e3df8082f486a2e1a",
+      "size": 686,
+      "source_mtime_ns": 1791946937276381120
+    },
+    "elec/src/symbols/C16.kicad_sym": {
+      "sha256": "b3b1a2decddd05bad1dd322a5273542562550c18224b49468f2ab4555a905969",
+      "size": 686,
+      "source_mtime_ns": 1791946937276629950
+    },
+    "elec/src/symbols/C17.kicad_sym": {
+      "sha256": "7c0fbbfb6ed7aac9950aa082cb98afafa254a4b4cc344419b9d57687f181e685",
+      "size": 687,
+      "source_mtime_ns": 1791946937276829364
+    },
+    "elec/src/symbols/C18.kicad_sym": {
+      "sha256": "66793b0b1ed853ed71722eb3eb9b153139539c2ff2d15f8d9a14726d0d7093ee",
+      "size": 686,
+      "source_mtime_ns": 1791946937276954487
+    },
+    "elec/src/symbols/C19.kicad_sym": {
+      "sha256": "75b22b47385368d922a9d118ab3e7e7a18ce8161a54fd05d4a35a99ac1978fb1",
+      "size": 686,
+      "source_mtime_ns": 1791946937277086111
+    },
+    "elec/src/symbols/C2.kicad_sym": {
+      "sha256": "9c247c4d06bf6fcbb8ec4da5246656be774e790a6a245bdb8aa3f7d00caaf343",
+      "size": 683,
+      "source_mtime_ns": 1791946937274171775
+    },
+    "elec/src/symbols/C20.kicad_sym": {
+      "sha256": "5de87b89e4ccccc844e3495fe7d64dd6db1a7a619da5bf4a68c02993452a67e4",
+      "size": 686,
+      "source_mtime_ns": 1791946937277201192
+    },
+    "elec/src/symbols/C21.kicad_sym": {
+      "sha256": "06431156738c108d7df46d5391bab543f6a1d684a38baf65f02617721cfeb1ce",
+      "size": 687,
+      "source_mtime_ns": 1791946937277356315
+    },
+    "elec/src/symbols/C22.kicad_sym": {
+      "sha256": "b476c133a45aee3b77bd6c6f9050d21340cb64d7483f781f365a0c13174fd064",
+      "size": 686,
+      "source_mtime_ns": 1791946937277478355
+    },
+    "elec/src/symbols/C23.kicad_sym": {
+      "sha256": "63e4a56827ae65b01d4402cbd8c9cbecfa8633af86571e2a5f368a961a33347a",
+      "size": 686,
+      "source_mtime_ns": 1791946937277621770
+    },
+    "elec/src/symbols/C24.kicad_sym": {
+      "sha256": "da70267650a524e9138d04f4e51cea81f30e9ea11f980e479f5559cba7bc3331",
+      "size": 686,
+      "source_mtime_ns": 1791946937277766310
+    },
+    "elec/src/symbols/C25.kicad_sym": {
+      "sha256": "21f15b4a7563f8dad98bb481744ac99f88b2bcf2fcc24afb205be667a30c6ba4",
+      "size": 682,
+      "source_mtime_ns": 1791946937277895141
+    },
+    "elec/src/symbols/C26.kicad_sym": {
+      "sha256": "f66d23b7011daf3d93214d43d067ac45da795ebe77a9d5f8d35cbe77d3d1fa76",
+      "size": 686,
+      "source_mtime_ns": 1791946937278080805
+    },
+    "elec/src/symbols/C27.kicad_sym": {
+      "sha256": "64b6cc31f51d99a17279ec0d24d03dad3ec8b93b53327ff233757f18cfa2c270",
+      "size": 686,
+      "source_mtime_ns": 1791946937278218762
+    },
+    "elec/src/symbols/C28.kicad_sym": {
+      "sha256": "5a903ab53abe2cc421b1541a563f8b12c7907e2a628b1aeef439ee1648625b6e",
+      "size": 686,
+      "source_mtime_ns": 1791946937278331719
+    },
+    "elec/src/symbols/C29.kicad_sym": {
+      "sha256": "60160e33f066c16c9228fae2a9c3aec98a9e929a06635c9013c688d329874cdd",
+      "size": 687,
+      "source_mtime_ns": 1791946937278456300
+    },
+    "elec/src/symbols/C3.kicad_sym": {
+      "sha256": "c6382339cb46eb7d8d9dc42df618a3b782f12606faa2781b790c4a2d5b900334",
+      "size": 683,
+      "source_mtime_ns": 1791946937274372231
+    },
+    "elec/src/symbols/C30.kicad_sym": {
+      "sha256": "37f8f251b2ab246c2bbb5a1facfd6c830fd5b40296d700577e1c7d66913539bb",
+      "size": 687,
+      "source_mtime_ns": 1791946937278564715
+    },
+    "elec/src/symbols/C31.kicad_sym": {
+      "sha256": "e85ecd69110c4af50cc5531bc550cebdd07762c86ff0f43b3c15e85499a5c3e7",
+      "size": 687,
+      "source_mtime_ns": 1791946937278745963
+    },
+    "elec/src/symbols/C32.kicad_sym": {
+      "sha256": "f5d48590f572095e6c14b2b132d356d70fb97e3bc4d1fc690a5454ee41a8f2e5",
+      "size": 687,
+      "source_mtime_ns": 1791946937278893628
+    },
+    "elec/src/symbols/C33.kicad_sym": {
+      "sha256": "3dc939c44058c4075dc53358029c3f7b4fab7d4cfcd69e255f3e49e50d082e52",
+      "size": 687,
+      "source_mtime_ns": 1791946937279014334
+    },
+    "elec/src/symbols/C34.kicad_sym": {
+      "sha256": "6acd73813225c6574b20f7d6d837249b9202f05893ebec42617f8ef7086a275f",
+      "size": 687,
+      "source_mtime_ns": 1791946937279124041
+    },
+    "elec/src/symbols/C35.kicad_sym": {
+      "sha256": "dd5737ac37d1f7edb8d6a1e77c4fe2c0787043e73895135b426d5d080a0deb5c",
+      "size": 686,
+      "source_mtime_ns": 1791946937279220998
+    },
+    "elec/src/symbols/C36.kicad_sym": {
+      "sha256": "b9992168a77f4eae18ab3c67ed6a26ad818978dde7c0b76538f4919bdcc1e35a",
+      "size": 682,
+      "source_mtime_ns": 1791946937279383579
+    },
+    "elec/src/symbols/C37.kicad_sym": {
+      "sha256": "9420a2ea2cd39fa661bc45665b4ffbd41f8148c0585024ea906e33c90fbe7673",
+      "size": 682,
+      "source_mtime_ns": 1791946937279511286
+    },
+    "elec/src/symbols/C38.kicad_sym": {
+      "sha256": "b509292ef731b5b2a3b09cf1af96a820c96c59561b8e40beb1328884b78aec6b",
+      "size": 687,
+      "source_mtime_ns": 1791946937279623493
+    },
+    "elec/src/symbols/C39.kicad_sym": {
+      "sha256": "7b5e6677e9018c4ec559f3634f0dbd0bfb0db976ce6be39d8e3b8933326a474a",
+      "size": 682,
+      "source_mtime_ns": 1791946937279717075
+    },
+    "elec/src/symbols/C4.kicad_sym": {
+      "sha256": "1f6ab02e16552c6431fb9d0e851f5251824d0752a8ceebb99b8e122d788d7fe9",
+      "size": 683,
+      "source_mtime_ns": 1791946937274495104
+    },
+    "elec/src/symbols/C40.kicad_sym": {
+      "sha256": "23db6e5c2130979ea833f784321ae6f5f539b4cf22485281441699b76bf65f61",
+      "size": 682,
+      "source_mtime_ns": 1791946937279810907
+    },
+    "elec/src/symbols/C41.kicad_sym": {
+      "sha256": "cf391c70007f049a3b1073d14b5f21f140081de3335425189dbd91489ed8cf75",
+      "size": 687,
+      "source_mtime_ns": 1791946937279940488
+    },
+    "elec/src/symbols/C42.kicad_sym": {
+      "sha256": "4fa724cba8e4252a2e7d9d831cf51629574b40196ea2a3ff99d8b05ef6f96c3b",
+      "size": 682,
+      "source_mtime_ns": 1791946937280054070
+    },
+    "elec/src/symbols/C43.kicad_sym": {
+      "sha256": "f19cb6743f50e8171872a1a6ae802e0d3d0c0c35fdf6b17591a07b83af00989d",
+      "size": 687,
+      "source_mtime_ns": 1791946937280154777
+    },
+    "elec/src/symbols/C44.kicad_sym": {
+      "sha256": "f85d2154314368327355593843092459a7e62d7ff901dea97bdd4ad66ecb6c44",
+      "size": 682,
+      "source_mtime_ns": 1791946937280252193
+    },
+    "elec/src/symbols/C45.kicad_sym": {
+      "sha256": "da5f4c664966bd8709aad3ce3c57e81966a55f0c43e336cd1142e0fc4d639420",
+      "size": 685,
+      "source_mtime_ns": 1791946937280352233
+    },
+    "elec/src/symbols/C46.kicad_sym": {
+      "sha256": "bd85a2c8726cebee424646f74c7a5f25496e6260edc2f48369f8e083f6e22240",
+      "size": 687,
+      "source_mtime_ns": 1791946937280483064
+    },
+    "elec/src/symbols/C47.kicad_sym": {
+      "sha256": "c8cd6c866e4feb9b11a80ef9bd6e5d5f9c0640ee4d01e6d5d415c5b16b18eaac",
+      "size": 687,
+      "source_mtime_ns": 1791946937280649687
+    },
+    "elec/src/symbols/C48.kicad_sym": {
+      "sha256": "4e3a75d352b98ec2558f17db855bf9815072e66a8190bf931695be150ca2e667",
+      "size": 687,
+      "source_mtime_ns": 1791946937280773477
+    },
+    "elec/src/symbols/C49.kicad_sym": {
+      "sha256": "ec029038f7be8eb9c998b2270281f0a03997fbc66fe6e6fdf1b2b9861e627239",
+      "size": 687,
+      "source_mtime_ns": 1791946937280877226
+    },
+    "elec/src/symbols/C5.kicad_sym": {
+      "sha256": "f71ef8c09e136f53a9ffb9ae8f86f65552277283128fa83c31dd1405935e731a",
+      "size": 684,
+      "source_mtime_ns": 1791946937274604894
+    },
+    "elec/src/symbols/C50.kicad_sym": {
+      "sha256": "6128302a87a278f748a36ddd4256cc6569f8cce19f29aae8d72963877dedbb01",
+      "size": 682,
+      "source_mtime_ns": 1791946937280978683
+    },
+    "elec/src/symbols/C51.kicad_sym": {
+      "sha256": "44e5c623bf62ff0c3cafe5d6bee26778a85a09d5e8416a89225734a9d394a791",
+      "size": 682,
+      "source_mtime_ns": 1791946937281079723
+    },
+    "elec/src/symbols/C52.kicad_sym": {
+      "sha256": "3ca79955a81a9751271a22df1ee2f23e7ceea5f85729995fe24d394d0db251fa",
+      "size": 687,
+      "source_mtime_ns": 1791946937281175180
+    },
+    "elec/src/symbols/C53.kicad_sym": {
+      "sha256": "3734f9138cfc088a2b422f01e36a5b89ecbbd59e41e040c57af611ebd666d5f2",
+      "size": 682,
+      "source_mtime_ns": 1791946937281268720
+    },
+    "elec/src/symbols/C54.kicad_sym": {
+      "sha256": "b7057a0c9c3b5aa01393b0258e1d9b41cf9ea01cd40dddc5664f92c4fcf75af4",
+      "size": 687,
+      "source_mtime_ns": 1791946937281361178
+    },
+    "elec/src/symbols/C55.kicad_sym": {
+      "sha256": "b660842947de1033da574d8d33c5588bf0f1a8ea504686a85cfcae8016665f96",
+      "size": 687,
+      "source_mtime_ns": 1791946937281456468
+    },
+    "elec/src/symbols/C56.kicad_sym": {
+      "sha256": "f3559a802f4ab492d9f5fc7304af0cdb77627da274598aa22fc18223bb1c4377",
+      "size": 686,
+      "source_mtime_ns": 1791946937281582425
+    },
+    "elec/src/symbols/C57.kicad_sym": {
+      "sha256": "abd59525dd6d3e9edc3394597e3a9766e040cb2761b6effcd2c9be0cedb10b50",
+      "size": 687,
+      "source_mtime_ns": 1791946937281696298
+    },
+    "elec/src/symbols/C6.kicad_sym": {
+      "sha256": "29ee915d01df9bb2f798c4f81462cd21830b1d435cc1bf725035d2b7f9690599",
+      "size": 683,
+      "source_mtime_ns": 1791946937274713143
+    },
+    "elec/src/symbols/C7.kicad_sym": {
+      "sha256": "80b16cca40938863a1f5353a078e1c5a430f946e3ac9ccc51da5dd166ecaea2f",
+      "size": 683,
+      "source_mtime_ns": 1791946937274825100
+    },
+    "elec/src/symbols/C8.kicad_sym": {
+      "sha256": "844908fcd86b70e8ccffd75dceed42a9261f59972a6553f804892d9b924a5a58",
+      "size": 683,
+      "source_mtime_ns": 1791946937274952639
+    },
+    "elec/src/symbols/C9.kicad_sym": {
+      "sha256": "df5e65ab2ca2ebf1b4088b59a40c8ea6a42472dea5586cdc68204904f3dc6871",
+      "size": 683,
+      "source_mtime_ns": 1791946937275076096
+    },
+    "elec/src/symbols/D1.kicad_sym": {
+      "sha256": "626286d10f461314b0fd08457ebdd73c3ff3d04905abd3fb0070606ee6b00375",
+      "size": 682,
+      "source_mtime_ns": 1791946937281790547
+    },
+    "elec/src/symbols/D10.kicad_sym": {
+      "sha256": "42f8602dc817daf2e3d5403ff668a02af5cde39d49cc4067116a61e7f99a27c9",
+      "size": 682,
+      "source_mtime_ns": 1791946937282683576
+    },
+    "elec/src/symbols/D11.kicad_sym": {
+      "sha256": "d237d1da542e62eca778041663ee994d81e466372a856a4df19b62a48ebfcba1",
+      "size": 684,
+      "source_mtime_ns": 1791946937282779992
+    },
+    "elec/src/symbols/D12.kicad_sym": {
+      "sha256": "df0699eff354ed81eca8acb5d25f816ce2359488b18412a67d21017ff27e2290",
+      "size": 685,
+      "source_mtime_ns": 1791946937282867949
+    },
+    "elec/src/symbols/D13.kicad_sym": {
+      "sha256": "133441932ba750bb81dfded8727b13505ff8740ae5d7497a07a42f977129f294",
+      "size": 685,
+      "source_mtime_ns": 1791946937282955989
+    },
+    "elec/src/symbols/D14.kicad_sym": {
+      "sha256": "b70076f69da68b58e3226bef12cef6c09d002ecfe6c4c30132a08ebf8e220a9b",
+      "size": 685,
+      "source_mtime_ns": 1791946937283151862
+    },
+    "elec/src/symbols/D15.kicad_sym": {
+      "sha256": "1f6d21e2db53fdcd67b215a3349606d397a3f03c32258d67aff818842d753ddf",
+      "size": 684,
+      "source_mtime_ns": 1791946937283254277
+    },
+    "elec/src/symbols/D16.kicad_sym": {
+      "sha256": "1c4b5b1645e122ab9daa1ebb70e8501bc7b67303b1ac21d1a95e32aa4fd1b7db",
+      "size": 684,
+      "source_mtime_ns": 1791946937283349567
+    },
+    "elec/src/symbols/D17.kicad_sym": {
+      "sha256": "2c405e8d0d141ea19b21f5edbfb84881400c5fd75109fa04622e9b3104e7478f",
+      "size": 684,
+      "source_mtime_ns": 1791946937283441066
+    },
+    "elec/src/symbols/D18.kicad_sym": {
+      "sha256": "6d847d7aec6850c9740b1c850b96a797ece524844130cef4bdf5e45baa34aab7",
+      "size": 684,
+      "source_mtime_ns": 1791946937283531981
+    },
+    "elec/src/symbols/D19.kicad_sym": {
+      "sha256": "23d8f32cc02353139cc26779e0a38f6c6276141c0b5dcdb26dcb0074249ba3e0",
+      "size": 684,
+      "source_mtime_ns": 1791946937283631480
+    },
+    "elec/src/symbols/D2.kicad_sym": {
+      "sha256": "642b333fe6dbfd7918f43aeacb152ff5a49d83d1861fe25e49730d05e9480a38",
+      "size": 678,
+      "source_mtime_ns": 1791946937281918753
+    },
+    "elec/src/symbols/D20.kicad_sym": {
+      "sha256": "571691598ae955ef532885ae30f3815818a215bf7e5aa672c6678eaec573c5b1",
+      "size": 684,
+      "source_mtime_ns": 1791946937283756187
+    },
+    "elec/src/symbols/D21.kicad_sym": {
+      "sha256": "1cb9a4b2883745ec38c46378b8c726ad762590921f80ad03d54ca298dea9a36d",
+      "size": 684,
+      "source_mtime_ns": 1791946937283863435
+    },
+    "elec/src/symbols/D22.kicad_sym": {
+      "sha256": "93bec00e2116611a5e65ae369589d4ce581fa466b21c4747f10a6717ae28bcb4",
+      "size": 684,
+      "source_mtime_ns": 1791946937283961601
+    },
+    "elec/src/symbols/D23.kicad_sym": {
+      "sha256": "8a6dd0be654f892e86609a79aaa5a4a32bb79e9be729ace6c8956fdd97da7f74",
+      "size": 680,
+      "source_mtime_ns": 1791946937284054016
+    },
+    "elec/src/symbols/D24.kicad_sym": {
+      "sha256": "35b311cb2094e7b5b2ba11cfd335426f2139149b5ceb10c67c3762fad2343723",
+      "size": 683,
+      "source_mtime_ns": 1791946937284149390
+    },
+    "elec/src/symbols/D25.kicad_sym": {
+      "sha256": "bf061d22e5b249dfe20c1748304bda07ec7ceec655c73c8762effc24b0828351",
+      "size": 682,
+      "source_mtime_ns": 1791946937284242597
+    },
+    "elec/src/symbols/D26.kicad_sym": {
+      "sha256": "1d920f13064a5e76969fc3b7d832f971d552c4671d5f6dbee78dbeed24355fdd",
+      "size": 681,
+      "source_mtime_ns": 1791946937284343762
+    },
+    "elec/src/symbols/D27.kicad_sym": {
+      "sha256": "a16bfe93c5379e821734a9fd5593406cc80e706fa59611662b5d9275ff7db4e9",
+      "size": 685,
+      "source_mtime_ns": 1791946937284442511
+    },
+    "elec/src/symbols/D28.kicad_sym": {
+      "sha256": "67278e2e7ed7e52c7e36560578538c4796b673221957ccd40be9c688d6a103f8",
+      "size": 685,
+      "source_mtime_ns": 1791946937284559926
+    },
+    "elec/src/symbols/D29.kicad_sym": {
+      "sha256": "d7434e0c404fcb277ffcbbb3090b5f6aac825136f90baf0ea473ba48a6957367",
+      "size": 685,
+      "source_mtime_ns": 1791946937284654133
+    },
+    "elec/src/symbols/D3.kicad_sym": {
+      "sha256": "922505eb639e7dcaf4da60275181b8e518e01f3d0a077c3f982348b0c17b2767",
+      "size": 684,
+      "source_mtime_ns": 1791946937282017960
+    },
+    "elec/src/symbols/D4.kicad_sym": {
+      "sha256": "72bc552f71307334b40462889b035a2881db974f88f386d286b0ed09bbfd592c",
+      "size": 679,
+      "source_mtime_ns": 1791946937282106751
+    },
+    "elec/src/symbols/D5.kicad_sym": {
+      "sha256": "badd3fcb3ed182901c53dfcb94ac7d182d57004f90da42602fadfcb8685f87b3",
+      "size": 679,
+      "source_mtime_ns": 1791946937282193791
+    },
+    "elec/src/symbols/D6.kicad_sym": {
+      "sha256": "418863bc8905bd44fdc5edcdd56b265e4a27ba0b8f19e2ec4b5214509b336ed6",
+      "size": 679,
+      "source_mtime_ns": 1791946937282285332
+    },
+    "elec/src/symbols/D7.kicad_sym": {
+      "sha256": "920faf2ef2301c67da2369995c134968cc65c3c505de4580f109acc6ddf1fd7e",
+      "size": 679,
+      "source_mtime_ns": 1791946937282383872
+    },
+    "elec/src/symbols/D8.kicad_sym": {
+      "sha256": "023b4d2b0b233a892c0ba869804b38ac950b78c152ba4dec093a6cd0a8db04de",
+      "size": 679,
+      "source_mtime_ns": 1791946937282472454
+    },
+    "elec/src/symbols/D9.kicad_sym": {
+      "sha256": "3eec2a6813e7324746da9c5140eb631504f027331a8337d96cd982f6c070d466",
+      "size": 679,
+      "source_mtime_ns": 1791946937282580536
+    },
+    "elec/src/symbols/H1.kicad_sym": {
+      "sha256": "4a8c115afab8df5dd8af7105443afdd0477e45521ca45f2c5348ef8b13179487",
+      "size": 72,
+      "source_mtime_ns": 1791946937317868433
+    },
+    "elec/src/symbols/H2.kicad_sym": {
+      "sha256": "4a8c115afab8df5dd8af7105443afdd0477e45521ca45f2c5348ef8b13179487",
+      "size": 72,
+      "source_mtime_ns": 1791946937318104055
+    },
+    "elec/src/symbols/H3.kicad_sym": {
+      "sha256": "4a8c115afab8df5dd8af7105443afdd0477e45521ca45f2c5348ef8b13179487",
+      "size": 72,
+      "source_mtime_ns": 1791946937318357593
+    },
+    "elec/src/symbols/H4.kicad_sym": {
+      "sha256": "4a8c115afab8df5dd8af7105443afdd0477e45521ca45f2c5348ef8b13179487",
+      "size": 72,
+      "source_mtime_ns": 1791946937319533577
+    },
+    "elec/src/symbols/J1.kicad_sym": {
+      "sha256": "e9487c7107310e3757252f66f620d238813839587dd4204cee673d4f9909606d",
+      "size": 2668,
+      "source_mtime_ns": 1791946937284945754
+    },
+    "elec/src/symbols/J2.kicad_sym": {
+      "sha256": "3bafecb9650822cd57fec1e8ead3353f3c70af80157e20f939a60f88d97dbe7e",
+      "size": 2829,
+      "source_mtime_ns": 1791946937285294499
+    },
+    "elec/src/symbols/J3.kicad_sym": {
+      "sha256": "87456728abeb8fc044ed5fa053ed7f0935b9ac04a91f7445d6f2ffea5fd5058e",
+      "size": 1240,
+      "source_mtime_ns": 1791946937285448372
+    },
+    "elec/src/symbols/JP1.kicad_sym": {
+      "sha256": "62f851f3af6df5087d08d51d986b5bf8ba3ef4d27a5241ed6076c3edd9d6601b",
+      "size": 682,
+      "source_mtime_ns": 1791946937285667744
+    },
+    "elec/src/symbols/JP2.kicad_sym": {
+      "sha256": "3446384f985f763438a0c7a28f5235b4950ab43a313543adf8fc0cd32e15349b",
+      "size": 687,
+      "source_mtime_ns": 1791946937285798117
+    },
+    "elec/src/symbols/L1.kicad_sym": {
+      "sha256": "96bb899c2640b26dc88b977c0a8226efe98b06ae73bcd75fb05c5398201001fd",
+      "size": 683,
+      "source_mtime_ns": 1791946937285962324
+    },
+    "elec/src/symbols/L2.kicad_sym": {
+      "sha256": "75789376b0adbd69ea2b98f5f6e1b767bdb75814afcb19deb3109a2a1b026ddc",
+      "size": 683,
+      "source_mtime_ns": 1791946937286105697
+    },
+    "elec/src/symbols/L3.kicad_sym": {
+      "sha256": "269f91b6a363acad49961ae370cea16d15e56262626decff1623c80e1ded9d98",
+      "size": 679,
+      "source_mtime_ns": 1791946937286222403
+    },
+    "elec/src/symbols/L4.kicad_sym": {
+      "sha256": "139eb9c57478909ea2f788bad0f50c26a5bc891cd59cb52bb3c96307e4e6db25",
+      "size": 683,
+      "source_mtime_ns": 1791946937286328735
+    },
+    "elec/src/symbols/L5.kicad_sym": {
+      "sha256": "1d1324c683bdff34ef4e7b4760f56e0bfb035e4e0044b72310db4f639efc7cc4",
+      "size": 679,
+      "source_mtime_ns": 1791946937286434401
+    },
+    "elec/src/symbols/L6.kicad_sym": {
+      "sha256": "879e5004096c4e1698899056e1d5b6636017f7d6e519720174b606a6096a13bf",
+      "size": 683,
+      "source_mtime_ns": 1791946937286530608
+    },
+    "elec/src/symbols/Q1.kicad_sym": {
+      "sha256": "d8cfd1e22a11b899fa8df695b0f5688d35da40ac41c62a8f56040238febafc16",
+      "size": 1246,
+      "source_mtime_ns": 1791946937286650064
+    },
+    "elec/src/symbols/Q10.kicad_sym": {
+      "sha256": "b5b4487a937f4514da27f4b7d451b6315536d9915f136f8999a5674e5dfd47f2",
+      "size": 1247,
+      "source_mtime_ns": 1791946937289070490
+    },
+    "elec/src/symbols/Q11.kicad_sym": {
+      "sha256": "152d4f493962e48857e091d8f458694df1223514dd42703c3ee0e2d05e6568e2",
+      "size": 1247,
+      "source_mtime_ns": 1791946937289298070
+    },
+    "elec/src/symbols/Q12.kicad_sym": {
+      "sha256": "54ca3b8e24d3c1e1217d111aeca11870f6cecafaf2852166788365cd26f4e2a4",
+      "size": 1247,
+      "source_mtime_ns": 1791946937289574650
+    },
+    "elec/src/symbols/Q13.kicad_sym": {
+      "sha256": "91be59c388edcbe426da3b50b740f1e3111cc05d15d88c10395049c3770a5136",
+      "size": 1247,
+      "source_mtime_ns": 1791946937290613927
+    },
+    "elec/src/symbols/Q14.kicad_sym": {
+      "sha256": "2e5d408d86623d6de213379b683c140034429ab4432c7d5dd2e3a5375a3bd058",
+      "size": 1247,
+      "source_mtime_ns": 1791946937290821091
+    },
+    "elec/src/symbols/Q15.kicad_sym": {
+      "sha256": "e86dffd390d4bf6f0bc11c5c5203a65fa219e2087e4d82a7209a374b1a1a1cd7",
+      "size": 1247,
+      "source_mtime_ns": 1791946937291034963
+    },
+    "elec/src/symbols/Q16.kicad_sym": {
+      "sha256": "f49436d4897cdb36ae293395e16dc7d10acf1e8b924f9816998391c40e6988da",
+      "size": 1249,
+      "source_mtime_ns": 1791946937291197794
+    },
+    "elec/src/symbols/Q17.kicad_sym": {
+      "sha256": "1807a35ef407462eb987b9a38e49697df23142cd9d8066cdac1dd2e5035b812c",
+      "size": 824,
+      "source_mtime_ns": 1791946937291320459
+    },
+    "elec/src/symbols/Q18.kicad_sym": {
+      "sha256": "0b5821e7d4fd28893980629782895a7291bfd135825d8b8feac32e93519ec80d",
+      "size": 824,
+      "source_mtime_ns": 1791946937291448624
+    },
+    "elec/src/symbols/Q19.kicad_sym": {
+      "sha256": "797da3e4c303043ba28f6931037ce26ac63053f9464c14a798156e127ce5d788",
+      "size": 824,
+      "source_mtime_ns": 1791946937291569206
+    },
+    "elec/src/symbols/Q2.kicad_sym": {
+      "sha256": "b29581b2e4892c40d8e02407548d4e9e4d1c278a8e4c4c2a04297df34ad8e722",
+      "size": 1245,
+      "source_mtime_ns": 1791946937286748188
+    },
+    "elec/src/symbols/Q20.kicad_sym": {
+      "sha256": "6991a8512e28ded9a27845a56020e5aa8589a5a8effe485d9038f6828c1e1a36",
+      "size": 824,
+      "source_mtime_ns": 1791946937291703788
+    },
+    "elec/src/symbols/Q3.kicad_sym": {
+      "sha256": "4776086ff4bb08a7963ff94395c8676896b6955187fbedd4e65b53c13943ace4",
+      "size": 1245,
+      "source_mtime_ns": 1791946937286870561
+    },
+    "elec/src/symbols/Q4.kicad_sym": {
+      "sha256": "01bbad759c2c1c881a930fadca0236012ba42d124e1f4451ba70df97659a53fd",
+      "size": 1245,
+      "source_mtime_ns": 1791946937287011601
+    },
+    "elec/src/symbols/Q5.kicad_sym": {
+      "sha256": "6438098976529cd22807207801e75dd9bd4cb6ad0cecbfae776363210e5b2911",
+      "size": 1242,
+      "source_mtime_ns": 1791946937287229515
+    },
+    "elec/src/symbols/Q6.kicad_sym": {
+      "sha256": "4a9d519bcf9f70a036a9dd1e51d1dbbc00e0b368a11446736fe85a18c9df4d4f",
+      "size": 1246,
+      "source_mtime_ns": 1791946937287477095
+    },
+    "elec/src/symbols/Q7.kicad_sym": {
+      "sha256": "33393a0a56ceb950a104527841b547dd8dc4e217e5ec39185d87ba28de4f9d65",
+      "size": 1245,
+      "source_mtime_ns": 1791946937287640301
+    },
+    "elec/src/symbols/Q8.kicad_sym": {
+      "sha256": "dd693606f25a37cacf04e7305b6ea1064393e229d3252390df903947c48d61d9",
+      "size": 1244,
+      "source_mtime_ns": 1791946937288207043
+    },
+    "elec/src/symbols/Q9.kicad_sym": {
+      "sha256": "1f87f64b9df60cc535e2ce057ab1d5e719fb9fea20bc6b506b78bacb06da6144",
+      "size": 1244,
+      "source_mtime_ns": 1791946937288353291
+    },
+    "elec/src/symbols/R1.kicad_sym": {
+      "sha256": "d0836915e0c8be46cee2bc33af8b5d9b886b07ab9357d9acb8a435f0c35cc49e",
+      "size": 684,
+      "source_mtime_ns": 1791946937291849660
+    },
+    "elec/src/symbols/R10.kicad_sym": {
+      "sha256": "46ec331e998aaa30de252f9617d812de7bc2c01531338003dd7ce2e33bd0867b",
+      "size": 687,
+      "source_mtime_ns": 1791946937293961382
+    },
+    "elec/src/symbols/R100.kicad_sym": {
+      "sha256": "42a64bc876d5af973cb65331a255b0053758d2d7d5f14b89f8a5ec7bc723d54e",
+      "size": 689,
+      "source_mtime_ns": 1791946937312936000
+    },
+    "elec/src/symbols/R101.kicad_sym": {
+      "sha256": "65e264774042cc2c4b5f8f223e03292b7b82f46cfe11dc0efea0b785511b9d4a",
+      "size": 689,
+      "source_mtime_ns": 1791946937313089414
+    },
+    "elec/src/symbols/R102.kicad_sym": {
+      "sha256": "a7399ec666effb57ebdcd1198a032e43d8d0ee1468546cc122bddcfc70a027c0",
+      "size": 690,
+      "source_mtime_ns": 1791946937313207538
+    },
+    "elec/src/symbols/R103.kicad_sym": {
+      "sha256": "9477daac5f1398bd344165c55d64616de957b8f850a8a1133c14d3892289b2bb",
+      "size": 690,
+      "source_mtime_ns": 1791946937313311703
+    },
+    "elec/src/symbols/R11.kicad_sym": {
+      "sha256": "87aac10a4b322bd101a9b7fd0dade1271424cfcca54299f094053331ece8ee5a",
+      "size": 687,
+      "source_mtime_ns": 1791946937294172004
+    },
+    "elec/src/symbols/R12.kicad_sym": {
+      "sha256": "5668b09acab13d99cf4e8c6ee76f109e04ddcb6f1b11a8a38e6072465f671aef",
+      "size": 686,
+      "source_mtime_ns": 1791946937294397459
+    },
+    "elec/src/symbols/R13.kicad_sym": {
+      "sha256": "891f0b41c7788e780bc6f2deb25145eec0f3fb14245794a80913c5fc4ff8bc07",
+      "size": 687,
+      "source_mtime_ns": 1791946937294590165
+    },
+    "elec/src/symbols/R14.kicad_sym": {
+      "sha256": "167bc92e15cc89af4a5b30a583613a95289468446f6d1d0c7c80fc9533782eef",
+      "size": 687,
+      "source_mtime_ns": 1791946937294793954
+    },
+    "elec/src/symbols/R15.kicad_sym": {
+      "sha256": "518c9f48a4fb94408fa2845045fe4803b2da9cdda281a54bd3e02342d78a8942",
+      "size": 686,
+      "source_mtime_ns": 1791946937294985535
+    },
+    "elec/src/symbols/R16.kicad_sym": {
+      "sha256": "3a5a8587a30e572e72edc11a97b1fdfe9a29b5538b5af320c242c022cacf2cbb",
+      "size": 688,
+      "source_mtime_ns": 1791946937295215948
+    },
+    "elec/src/symbols/R17.kicad_sym": {
+      "sha256": "324028b9ecd4a6bfc0bf95d2af88929e7ff01774b7343833ea920be9ad7901c7",
+      "size": 686,
+      "source_mtime_ns": 1791946937295600318
+    },
+    "elec/src/symbols/R18.kicad_sym": {
+      "sha256": "9b5feb8e98230649f8a1fb553a0e0435224a9209331cf7fe93ad1166b42906a9",
+      "size": 686,
+      "source_mtime_ns": 1791946937295774066
+    },
+    "elec/src/symbols/R19.kicad_sym": {
+      "sha256": "f5dcd287a8494ba7cab33abd70d483b37d2c45613de2b2b67ff7ce78ce83cf4b",
+      "size": 686,
+      "source_mtime_ns": 1791946937296101853
+    },
+    "elec/src/symbols/R2.kicad_sym": {
+      "sha256": "48abf7c34509cf3e65041ce63b75ccd8208a4e39fbab531bd218d49c0a75cc53",
+      "size": 683,
+      "source_mtime_ns": 1791946937291986992
+    },
+    "elec/src/symbols/R20.kicad_sym": {
+      "sha256": "e6dd4209edb2de6a030eac59d510ac0053c0004a31cb2e1cfa2546edc06c8ae4",
+      "size": 685,
+      "source_mtime_ns": 1791946937296361391
+    },
+    "elec/src/symbols/R21.kicad_sym": {
+      "sha256": "56434e007e170428a4bf81b4aa22c8667adf673dd4cc288a7b04337d4f1647ad",
+      "size": 686,
+      "source_mtime_ns": 1791946937296541305
+    },
+    "elec/src/symbols/R22.kicad_sym": {
+      "sha256": "a97b2251a5be71c53591752b20caa46464adc7109518af5d349b92dc3ddb3163",
+      "size": 684,
+      "source_mtime_ns": 1791946937296731386
+    },
+    "elec/src/symbols/R23.kicad_sym": {
+      "sha256": "4bf9be764247731dbcd43c72f56f55750a2a0f1d3eb81d4e91a50789c306ce6f",
+      "size": 679,
+      "source_mtime_ns": 1791946937297355586
+    },
+    "elec/src/symbols/R24.kicad_sym": {
+      "sha256": "7f90b8513827461b2f2296bd0773f149d59d0274d6f319a3738338508c39da24",
+      "size": 679,
+      "source_mtime_ns": 1791946937297613541
+    },
+    "elec/src/symbols/R25.kicad_sym": {
+      "sha256": "f382993e1b15a136c4ac828a9f0dc17a56137c23952360882cca637f2311d0e9",
+      "size": 686,
+      "source_mtime_ns": 1791946937297796163
+    },
+    "elec/src/symbols/R26.kicad_sym": {
+      "sha256": "2954068431ccd73c9339303be41956a2408d6405db466bbe19fd23d87c51280a",
+      "size": 686,
+      "source_mtime_ns": 1791946937297982327
+    },
+    "elec/src/symbols/R27.kicad_sym": {
+      "sha256": "517a1691d4bccb76889331befacbed4c19e800a671d592866a4ebb72b34388f3",
+      "size": 686,
+      "source_mtime_ns": 1791946937298183075
+    },
+    "elec/src/symbols/R28.kicad_sym": {
+      "sha256": "09f5fbadd04d130656fe29c498f398b2fa0aa3698a270091a881b7e397a5bd17",
+      "size": 687,
+      "source_mtime_ns": 1791946937298388655
+    },
+    "elec/src/symbols/R29.kicad_sym": {
+      "sha256": "c5512001315683838002f5d675feb323e36d5ef6306593bdddbc1b1c48d35fa6",
+      "size": 687,
+      "source_mtime_ns": 1791946937298557445
+    },
+    "elec/src/symbols/R3.kicad_sym": {
+      "sha256": "e15585d23054f2415d39f0fe0b577263514365e671ed0c64047ad6382b9519f1",
+      "size": 683,
+      "source_mtime_ns": 1791946937292110240
+    },
+    "elec/src/symbols/R30.kicad_sym": {
+      "sha256": "31f1eb81d5ac3fdb97d1854617523da16aab0791e1de6697a32fc823c860479d",
+      "size": 687,
+      "source_mtime_ns": 1791946937298883107
+    },
+    "elec/src/symbols/R31.kicad_sym": {
+      "sha256": "6c383cf464f80334705a77a2e8035886ad9be4475150e852214cef3af074983e",
+      "size": 686,
+      "source_mtime_ns": 1791946937299378642
+    },
+    "elec/src/symbols/R32.kicad_sym": {
+      "sha256": "f61c991b62fa38fb943bfc924385d0665fe0f138773737ca91438b8a63c94abc",
+      "size": 687,
+      "source_mtime_ns": 1791946937299617139
+    },
+    "elec/src/symbols/R33.kicad_sym": {
+      "sha256": "4c3f3f24b52358007dceb5f7958a1a3ee20081bfe27b0852ee41651e99795710",
+      "size": 687,
+      "source_mtime_ns": 1791946937299825594
+    },
+    "elec/src/symbols/R34.kicad_sym": {
+      "sha256": "27ef36fc82c64956ae598cc50cce0f5065ce3475e5970247390b99c325020a8d",
+      "size": 686,
+      "source_mtime_ns": 1791946937300177881
+    },
+    "elec/src/symbols/R36.kicad_sym": {
+      "sha256": "d8798eebffe53d2a251e65ddbf6901da4e2a4df6d18fb7a3381788b434119570",
+      "size": 687,
+      "source_mtime_ns": 1791946937300531960
+    },
+    "elec/src/symbols/R37.kicad_sym": {
+      "sha256": "9b83b0ab1397c19f0c4a73dd50f655337bd42a8b6bbc11d9fdc23a7aecd737d4",
+      "size": 687,
+      "source_mtime_ns": 1791946937300857664
+    },
+    "elec/src/symbols/R38.kicad_sym": {
+      "sha256": "400c37166eab4a36066f28d73ebd4c9a3520b29e5b46bb9c20f89738fca51e55",
+      "size": 686,
+      "source_mtime_ns": 1791946937301034911
+    },
+    "elec/src/symbols/R39.kicad_sym": {
+      "sha256": "a9b90dbbea50f0b9ecbe75abe2e10a5bba03c07df511a7757dcd57a587015028",
+      "size": 687,
+      "source_mtime_ns": 1791946937301158701
+    },
+    "elec/src/symbols/R4.kicad_sym": {
+      "sha256": "452e277edae50a5607ac44c7a43973f6cb30b9d212ef0ddb9f6d91e0b5865b29",
+      "size": 682,
+      "source_mtime_ns": 1791946937292211739
+    },
+    "elec/src/symbols/R40.kicad_sym": {
+      "sha256": "1877c25438b56698bb5ea5ea31d41bc2d27d166d798f8b996ea4612a6988b077",
+      "size": 687,
+      "source_mtime_ns": 1791946937301290866
+    },
+    "elec/src/symbols/R41.kicad_sym": {
+      "sha256": "f9b954d5eac1b99f6ac5b57c521618edbda65f0a772ea8ab2b3d134d4b617c68",
+      "size": 686,
+      "source_mtime_ns": 1791946937301400573
+    },
+    "elec/src/symbols/R42.kicad_sym": {
+      "sha256": "3abe8ad486b834948a05ee5ad72ea7f94ffd61b97f0594236e22cc51847cd320",
+      "size": 685,
+      "source_mtime_ns": 1791946937301803109
+    },
+    "elec/src/symbols/R43.kicad_sym": {
+      "sha256": "a8118d5e5449c6d07ecb3693a7c5282e00a10c0529fca55bf359f734d521b59d",
+      "size": 687,
+      "source_mtime_ns": 1791946937302231228
+    },
+    "elec/src/symbols/R44.kicad_sym": {
+      "sha256": "686f617f269e3a32177648cc7b341aa42d1d33e23df23e67a824c79ac02ba1a9",
+      "size": 686,
+      "source_mtime_ns": 1791946937302402559
+    },
+    "elec/src/symbols/R45.kicad_sym": {
+      "sha256": "f21eccc2d19ab35b9a1a7838b42467974d8b2e247a4c925dc67657b00eeaa9c4",
+      "size": 685,
+      "source_mtime_ns": 1791946937302625556
+    },
+    "elec/src/symbols/R46.kicad_sym": {
+      "sha256": "1fcbab1159b642bfb22bad1f2d26a1a4802af3ad468cf90b4c4817e2ce13e3b6",
+      "size": 687,
+      "source_mtime_ns": 1791946937302764888
+    },
+    "elec/src/symbols/R47.kicad_sym": {
+      "sha256": "668cae9d7b4fe675b998d0973931b9e5f697be17c4cb18a777b0086cf8398ffa",
+      "size": 686,
+      "source_mtime_ns": 1791946937302878344
+    },
+    "elec/src/symbols/R48.kicad_sym": {
+      "sha256": "1eb135d745a56db44f9e2987c04ab58add46540c72c7040372f0fd6640e094e6",
+      "size": 686,
+      "source_mtime_ns": 1791946937303097341
+    },
+    "elec/src/symbols/R49.kicad_sym": {
+      "sha256": "29ff4be33e3a70e06cf1e2578df042f94ee24fc7d93f79a04c81ed182e7fca7e",
+      "size": 688,
+      "source_mtime_ns": 1791946937303349963
+    },
+    "elec/src/symbols/R5.kicad_sym": {
+      "sha256": "624ba124e9743c121e1e17dcddf3079a6a1f21f1ad53bdeab6714b0a70ab6c25",
+      "size": 684,
+      "source_mtime_ns": 1791946937292325904
+    },
+    "elec/src/symbols/R50.kicad_sym": {
+      "sha256": "769ea92684cefe307d1cc104d467e37b2f1c0a4347822fbc1d3c7e85127d08a1",
+      "size": 688,
+      "source_mtime_ns": 1791946937303479253
+    },
+    "elec/src/symbols/R51.kicad_sym": {
+      "sha256": "537e55daa98b3a26bf322023be91ed8000b13541bd7b230e0db55eed80e12aa5",
+      "size": 688,
+      "source_mtime_ns": 1791946937303845290
+    },
+    "elec/src/symbols/R52.kicad_sym": {
+      "sha256": "71141ed0b8dcefa3ee39cf30691b49e072452164e1d34368fd7e9d669402a99b",
+      "size": 688,
+      "source_mtime_ns": 1791946937304123119
+    },
+    "elec/src/symbols/R53.kicad_sym": {
+      "sha256": "825baee783dd766b6bb6c36848e24aed57e19ad0eed4d1cfbb5445c79bb730d1",
+      "size": 688,
+      "source_mtime_ns": 1791946937304340741
+    },
+    "elec/src/symbols/R54.kicad_sym": {
+      "sha256": "75a2b0954d47d16cb0514c6d5a8fde2da4fee50e54dd359579b24de1d91e0d00",
+      "size": 688,
+      "source_mtime_ns": 1791946937304535572
+    },
+    "elec/src/symbols/R55.kicad_sym": {
+      "sha256": "ad0e8b28d60b84cfa2f456ad6c6b4d674d2692b202039ad8c071058ff9c24c31",
+      "size": 686,
+      "source_mtime_ns": 1791946937304706195
+    },
+    "elec/src/symbols/R56.kicad_sym": {
+      "sha256": "a5cc8d9be0d1f9f448fa6ba01d93ef38adee6a7b6b9e63bd2aba9681fec1e47b",
+      "size": 687,
+      "source_mtime_ns": 1791946937304892942
+    },
+    "elec/src/symbols/R57.kicad_sym": {
+      "sha256": "c61407e4cbee262bd8ab67a078b9081ecff55d01ef80d10c3eb842055c504b47",
+      "size": 686,
+      "source_mtime_ns": 1791946937305079648
+    },
+    "elec/src/symbols/R58.kicad_sym": {
+      "sha256": "ea17ceea6351fdd54e3759b0b1c7d1f60c0ca37329a384ae9bdfc702c1c842f8",
+      "size": 687,
+      "source_mtime_ns": 1791946937305397394
+    },
+    "elec/src/symbols/R59.kicad_sym": {
+      "sha256": "3141466e3ef1b900139fcec6464d3225303dc6f558fe243c8e8b8bc1db7790d2",
+      "size": 686,
+      "source_mtime_ns": 1791946937305583850
+    },
+    "elec/src/symbols/R6.kicad_sym": {
+      "sha256": "73bdfcf2e095ed240853fd93a2828fc26df1c2f567b0bb9839b9fb4eab3367ff",
+      "size": 683,
+      "source_mtime_ns": 1791946937292779731
+    },
+    "elec/src/symbols/R60.kicad_sym": {
+      "sha256": "e1511d7baa8b703232f19f093fc9fe9047b67828bdd5384e664da6803b0cd1b1",
+      "size": 687,
+      "source_mtime_ns": 1791946937305726181
+    },
+    "elec/src/symbols/R61.kicad_sym": {
+      "sha256": "90491e77dcf0ba9574e44dc7d378d56bf092dbf266ccb2482e4c27d75f9a19a8",
+      "size": 686,
+      "source_mtime_ns": 1791946937306047968
+    },
+    "elec/src/symbols/R62.kicad_sym": {
+      "sha256": "c9f11fe96a1f07454a1aa5538e5aa8a03ce498de864d72bb00dbe7c0d26e2401",
+      "size": 687,
+      "source_mtime_ns": 1791946937306319423
+    },
+    "elec/src/symbols/R63.kicad_sym": {
+      "sha256": "a3f011fdbdd1d4f89ad53b38ef6cdea2beb86394337e832700e442c27402d6a9",
+      "size": 686,
+      "source_mtime_ns": 1791946937306549461
+    },
+    "elec/src/symbols/R64.kicad_sym": {
+      "sha256": "9be598e0dddd6ab50e3fa366258610dc4f078c8d9762138df2eb207b20ea4570",
+      "size": 687,
+      "source_mtime_ns": 1791946937306824291
+    },
+    "elec/src/symbols/R65.kicad_sym": {
+      "sha256": "51594196b0c0f2a43c42723ef26aa718b1fb2d87df2599b1c10f0eb79747e3c5",
+      "size": 687,
+      "source_mtime_ns": 1791946937307015288
+    },
+    "elec/src/symbols/R66.kicad_sym": {
+      "sha256": "5363df5d824857040de361c09e5b751732c7058c1f19a89e342305736ca2734e",
+      "size": 686,
+      "source_mtime_ns": 1791946937307195203
+    },
+    "elec/src/symbols/R67.kicad_sym": {
+      "sha256": "981cbc5981fc1602a14ef5666f03d3d1321cd4af10fd8c22ff88784517d8c2bf",
+      "size": 687,
+      "source_mtime_ns": 1791946937307302410
+    },
+    "elec/src/symbols/R68.kicad_sym": {
+      "sha256": "9c4a2421298d5bcab98ef19762b092fca8e6cfe7d385c82450c3d46cf16eeb5f",
+      "size": 687,
+      "source_mtime_ns": 1791946937307408658
+    },
+    "elec/src/symbols/R69.kicad_sym": {
+      "sha256": "1b9774d23c17bbfa6225db75f6a17fa2e0c202edfd1f7911b91572b43dcc24e5",
+      "size": 686,
+      "source_mtime_ns": 1791946937307512115
+    },
+    "elec/src/symbols/R7.kicad_sym": {
+      "sha256": "70864c249a37d4d6e3630bbecf2ea7e7af12ef4cb0b7d87964ffac937e9765d4",
+      "size": 684,
+      "source_mtime_ns": 1791946937293323557
+    },
+    "elec/src/symbols/R70.kicad_sym": {
+      "sha256": "43ff6593f732579f23eaa7fb532240626034f809e0f3a8561ca1f3cc5494da34",
+      "size": 687,
+      "source_mtime_ns": 1791946937307610489
+    },
+    "elec/src/symbols/R71.kicad_sym": {
+      "sha256": "09ae3825dd45b62367d42179954fdcec255f4fb064328167441f49fa9538dbe7",
+      "size": 687,
+      "source_mtime_ns": 1791946937307701071
+    },
+    "elec/src/symbols/R72.kicad_sym": {
+      "sha256": "fee61ceca552d427fddc452aa8384011e679cf5ddf55f5e5045bc755e45e92e8",
+      "size": 686,
+      "source_mtime_ns": 1791946937307806403
+    },
+    "elec/src/symbols/R73.kicad_sym": {
+      "sha256": "f46b7f98b8676e8279ebd88100ecb9f82171026a9d6bb9316a5b86956c6b9ce1",
+      "size": 687,
+      "source_mtime_ns": 1791946937307896985
+    },
+    "elec/src/symbols/R74.kicad_sym": {
+      "sha256": "85d103c4c334a32f7caa2e3a14d85e0bfacc99bd648857af8c1956dc6526a3e3",
+      "size": 687,
+      "source_mtime_ns": 1791946937308026650
+    },
+    "elec/src/symbols/R75.kicad_sym": {
+      "sha256": "fdc0510ec8eaf128ebd8bffffa8052e753b16f003e1f41e205696401cc3aaef5",
+      "size": 686,
+      "source_mtime_ns": 1791946937308338521
+    },
+    "elec/src/symbols/R76.kicad_sym": {
+      "sha256": "868c5e41ba7564d872c8192914b43ac8cbbdb70225b656a2c02da1be94cffbb7",
+      "size": 687,
+      "source_mtime_ns": 1791946937308543809
+    },
+    "elec/src/symbols/R77.kicad_sym": {
+      "sha256": "80f7becaf45d0f078a6c0926849dc46c1c41dbdc1930fe6124fd71d08430fc6c",
+      "size": 686,
+      "source_mtime_ns": 1791946937308820056
+    },
+    "elec/src/symbols/R78.kicad_sym": {
+      "sha256": "5f42188bfbe60f16fb0cde580ab24814dce3ccaed993fe31adb96d31f4f71732",
+      "size": 686,
+      "source_mtime_ns": 1791946937309018636
+    },
+    "elec/src/symbols/R79.kicad_sym": {
+      "sha256": "8c0f396e7466fce5c1c86c130f79f4a2996cc174610131af3480b04d30bfe1a0",
+      "size": 686,
+      "source_mtime_ns": 1791946937309157301
+    },
+    "elec/src/symbols/R8.kicad_sym": {
+      "sha256": "af2269c749b4b0b39712183555de8384038ffd58b20bb8f7ab56da8c5867095a",
+      "size": 684,
+      "source_mtime_ns": 1791946937293584054
+    },
+    "elec/src/symbols/R80.kicad_sym": {
+      "sha256": "f5367a71e158f531402a3548803bea1120ef2e6f85fbba3cfc996eadeb635e7d",
+      "size": 686,
+      "source_mtime_ns": 1791946937309278549
+    },
+    "elec/src/symbols/R81.kicad_sym": {
+      "sha256": "1cfb1840e162d390f0602230659fbcb37f18624ae89c28173e927fbe05881cd0",
+      "size": 685,
+      "source_mtime_ns": 1791946937309389798
+    },
+    "elec/src/symbols/R82.kicad_sym": {
+      "sha256": "12ee751c3475860ac88b9309cf8ad01816dd91263bb733c2db524db311a5c84c",
+      "size": 685,
+      "source_mtime_ns": 1791946937309503838
+    },
+    "elec/src/symbols/R83.kicad_sym": {
+      "sha256": "3ecc1b4caf9ca71053d89972c1d504709ba58a26c632091c5d9e7d9f06a5fba6",
+      "size": 686,
+      "source_mtime_ns": 1791946937309604920
+    },
+    "elec/src/symbols/R84.kicad_sym": {
+      "sha256": "71d1c6706cc72c2d5dcebda711d9dd167e1d5342d15957ab5d257b7115278714",
+      "size": 686,
+      "source_mtime_ns": 1791946937309710043
+    },
+    "elec/src/symbols/R85.kicad_sym": {
+      "sha256": "92d59be4c34658add15893140497f8d5490f5314bd6c5a2898f5d60e42f4e43c",
+      "size": 687,
+      "source_mtime_ns": 1791946937310137413
+    },
+    "elec/src/symbols/R86.kicad_sym": {
+      "sha256": "797ffff06b130f9731060c23f9266369ec8a2e87a1ec5b6a042661e08e38f378",
+      "size": 687,
+      "source_mtime_ns": 1791946937310481950
+    },
+    "elec/src/symbols/R87.kicad_sym": {
+      "sha256": "35805b3a3940e83f366567103e1c0b369fe57ff285886d292fe081ea62eca741",
+      "size": 687,
+      "source_mtime_ns": 1791946937310649656
+    },
+    "elec/src/symbols/R88.kicad_sym": {
+      "sha256": "c745cd4df62a8f85b6751d90298f6ed252ea2b802d7880d51c8a365ecbd36bcd",
+      "size": 687,
+      "source_mtime_ns": 1791946937310763863
+    },
+    "elec/src/symbols/R89.kicad_sym": {
+      "sha256": "cb2f54fa2a43ad08195e8ad383265a1ddb1956b0e5730071f0ef111d684e5b6c",
+      "size": 686,
+      "source_mtime_ns": 1791946937311155607
+    },
+    "elec/src/symbols/R9.kicad_sym": {
+      "sha256": "cbd12567bf81e9c7d276bfe38072e4844835abdf5504e5830a433927abebc49c",
+      "size": 684,
+      "source_mtime_ns": 1791946937293771718
+    },
+    "elec/src/symbols/R90.kicad_sym": {
+      "sha256": "28a13505db0bf6db057f1497582dee0aa197dfb0b92ea9c4b5d295910e62cfc5",
+      "size": 686,
+      "source_mtime_ns": 1791946937311366604
+    },
+    "elec/src/symbols/R91.kicad_sym": {
+      "sha256": "4c037f5b03c494f70e39c1f98846eb7fd4d93ebc0bee46e25952496e76e1488b",
+      "size": 686,
+      "source_mtime_ns": 1791946937311472270
+    },
+    "elec/src/symbols/R92.kicad_sym": {
+      "sha256": "60f40ecdcb3f631550da74754cd1f52dab4e51920048f8561b1321f2f1bce20f",
+      "size": 686,
+      "source_mtime_ns": 1791946937311572310
+    },
+    "elec/src/symbols/R93.kicad_sym": {
+      "sha256": "a329ab03ef8b2dd706a5731180573155eabacd04cf4edf6d7bac23ae2c1d56ce",
+      "size": 685,
+      "source_mtime_ns": 1791946937311836015
+    },
+    "elec/src/symbols/R94.kicad_sym": {
+      "sha256": "55a76b3053d5f723584811a716d5c3fda5f366dab40279e715c4447ca3527ccd",
+      "size": 686,
+      "source_mtime_ns": 1791946937311984846
+    },
+    "elec/src/symbols/R95.kicad_sym": {
+      "sha256": "870923c8f93c2687ebd6bb2ba029e693adf12b7c0c00321d336f216fca6a3e61",
+      "size": 686,
+      "source_mtime_ns": 1791946937312100053
+    },
+    "elec/src/symbols/R96.kicad_sym": {
+      "sha256": "0ba9451cc25b00b8bd761b5b5489489bd5c0e367912c0f520ec7f1772354b758",
+      "size": 686,
+      "source_mtime_ns": 1791946937312195927
+    },
+    "elec/src/symbols/R97.kicad_sym": {
+      "sha256": "c100ac0bd03f75075005b44593bf53808df6e19e7eda574f6202b5fa5361dbc9",
+      "size": 687,
+      "source_mtime_ns": 1791946937312297883
+    },
+    "elec/src/symbols/R98.kicad_sym": {
+      "sha256": "9e76876b1ee894b5d6ce9742cf4b84fd7ca44f62cc5350274af927ac4dc6efc4",
+      "size": 686,
+      "source_mtime_ns": 1791946937312417048
+    },
+    "elec/src/symbols/R99.kicad_sym": {
+      "sha256": "88f7aac6cb5c104b7763980e7e93cec4d77846ead4ef8c9fccb0c3e6d21796a4",
+      "size": 686,
+      "source_mtime_ns": 1791946937312789960
+    },
+    "elec/src/symbols/SW1.kicad_sym": {
+      "sha256": "b1ffb3ecbb9deac46f51a77af71bd067d5d7477ac806090581bab47d9ee89c41",
+      "size": 683,
+      "source_mtime_ns": 1791946937313419243
+    },
+    "elec/src/symbols/SW2.kicad_sym": {
+      "sha256": "e0f41a32940433ccd5b3974397cf76a083e50dd3717ad13b81057a8d5fa2dc22",
+      "size": 682,
+      "source_mtime_ns": 1791946937313588783
+    },
+    "elec/src/symbols/U1.kicad_sym": {
+      "sha256": "f79f65b5299ee75dcd215bb44b38cd04ff73b381fbaaf4a869ef68c7278a394b",
+      "size": 961,
+      "source_mtime_ns": 1791946937313728406
+    },
+    "elec/src/symbols/U10.kicad_sym": {
+      "sha256": "1b80f02b065eff1bf8e89f7f5d662cb0ef6c78924fc6524ac9b51a78214fa84b",
+      "size": 7425,
+      "source_mtime_ns": 1791946937315308009
+    },
+    "elec/src/symbols/U11.kicad_sym": {
+      "sha256": "29253135029c1a6bd00f1751094dbf323ef0d6be2364d7ca8187d916bc6a96f4",
+      "size": 1251,
+      "source_mtime_ns": 1791946937315642921
+    },
+    "elec/src/symbols/U12.kicad_sym": {
+      "sha256": "9843074ffc39a89070e62197b6cae4d016fb4863bade2f40b5bd6b864c68a844",
+      "size": 4524,
+      "source_mtime_ns": 1791946937316145915
+    },
+    "elec/src/symbols/U13.kicad_sym": {
+      "sha256": "6a7c34beb494468e981db6fac864fe8daecb6101d5de50c881653e134c950acb",
+      "size": 1531,
+      "source_mtime_ns": 1791946937316273746
+    },
+    "elec/src/symbols/U14.kicad_sym": {
+      "sha256": "ad3f9f27d6499a9d26611f2d84a5f6efea39b1d2651dfedfe3fab42b1f252e30",
+      "size": 1531,
+      "source_mtime_ns": 1791946937316396953
+    },
+    "elec/src/symbols/U15.kicad_sym": {
+      "sha256": "32fc084074023405cab259e61abd627b84529688df29e653ebdba6e4d413a189",
+      "size": 1531,
+      "source_mtime_ns": 1791946937316558284
+    },
+    "elec/src/symbols/U16.kicad_sym": {
+      "sha256": "eacf70992e6ca1663c7a5e00cc03b07a5c5de1698af699046f8ab96997207ff7",
+      "size": 1105,
+      "source_mtime_ns": 1791946937316663866
+    },
+    "elec/src/symbols/U17.kicad_sym": {
+      "sha256": "3f2dd4224b85efe52315e996027ebaf3fdc3bf14039d676c6ee9b5a8075fa8fe",
+      "size": 1108,
+      "source_mtime_ns": 1791946937316766406
+    },
+    "elec/src/symbols/U18.kicad_sym": {
+      "sha256": "c1c2270df309264f06c66d7376c2c2facfb6d4a97d034302bedacf7665050c61",
+      "size": 1108,
+      "source_mtime_ns": 1791946937317275733
+    },
+    "elec/src/symbols/U19.kicad_sym": {
+      "sha256": "c5ec104f3703230416fd0ddae071df2805fd6e40692278b0fb2c7483dc8ea28b",
+      "size": 3954,
+      "source_mtime_ns": 1791946937317622728
+    },
+    "elec/src/symbols/U2.kicad_sym": {
+      "sha256": "cd740a8bea2c5bfb46c8e3b5a734a5b7214a64773423727a9fd84af7ff21da29",
+      "size": 1245,
+      "source_mtime_ns": 1791946937313921737
+    },
+    "elec/src/symbols/U3.kicad_sym": {
+      "sha256": "9e739da9caf963c8f6b2fda17af88ab9e0c1360338f757cc31d41be9b471bdff",
+      "size": 1389,
+      "source_mtime_ns": 1791946937314072360
+    },
+    "elec/src/symbols/U4.kicad_sym": {
+      "sha256": "6f8ddad3c9691381164cab2c11c7cd493393ec627a99c59f1d7bea34de281760",
+      "size": 1389,
+      "source_mtime_ns": 1791946937314221524
+    },
+    "elec/src/symbols/U5.kicad_sym": {
+      "sha256": "27765364ff5f953f5d25f1268c0d06836135de926ce548d7361d056c0d0ba265",
+      "size": 1103,
+      "source_mtime_ns": 1791946937314346606
+    },
+    "elec/src/symbols/U6.kicad_sym": {
+      "sha256": "f4ef31f5703266295c1034a46620a2015340bdf635bbcb6aeede6c4741fdd32c",
+      "size": 1245,
+      "source_mtime_ns": 1791946937314482437
+    },
+    "elec/src/symbols/U7.kicad_sym": {
+      "sha256": "03037bda76ea9b81790e67568854bc34d4c5a1cf8f1c5c4b50373775d979475f",
+      "size": 1245,
+      "source_mtime_ns": 1791946937314605894
+    },
+    "elec/src/symbols/U8.kicad_sym": {
+      "sha256": "373e757ee7f9a7944f8f55db57a1eb94152fd024575931b2b6b674cb22bcc068",
+      "size": 1389,
+      "source_mtime_ns": 1791946937314765975
+    },
+    "elec/src/symbols/U9.kicad_sym": {
+      "sha256": "49f8d59c260727b94cb8d90bb50be13dd3e6e240b0c8042e327bc7062f423ef1",
+      "size": 1102,
+      "source_mtime_ns": 1791946937314896265
+    },
+    "gerbers/ChryslerCCDSCIScanner_V140.boardoutline.ger": {
+      "sha256": "ad3ca29d57f0ac69b27927b18da73e55bf384c278c73f095a3b1c0395c2294cd",
+      "size": 33372,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "gerbers/ChryslerCCDSCIScanner_V140.bottomlayer.ger": {
+      "sha256": "6174f43ff865ff1eccf8886ddbfe0a10fea34f3c35f6b5e14e2946552688309f",
+      "size": 200378,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "gerbers/ChryslerCCDSCIScanner_V140.bottomsilkscreen.ger": {
+      "sha256": "be46be0b1016e7fc971286e445d3cea47d0a51ac8536e838f15e62959b06ca1b",
+      "size": 42203,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "gerbers/ChryslerCCDSCIScanner_V140.bottomsoldermask.ger": {
+      "sha256": "ab2a45c583eaec38c0018319bbbbe4d6a699f3281c57197ab38cb8562a5e1729",
+      "size": 20095,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "gerbers/ChryslerCCDSCIScanner_V140.drills.xln": {
+      "sha256": "ef673d42305eec55f8a868dc47f2ea1965e0d7e5b689cc6f7d0e1a4101823571",
+      "size": 2865,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "gerbers/ChryslerCCDSCIScanner_V140.toplayer.ger": {
+      "sha256": "59571af2bdb8a3d73731f524b0063e3682046178e90291d9742ae0524f356a34",
+      "size": 379463,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "gerbers/ChryslerCCDSCIScanner_V140.topsilkscreen.ger": {
+      "sha256": "bc2b7bd51a78055b5278dd4d5f22fde4c86d413ba8eebe6f7a0ed884f6d69616",
+      "size": 111757,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "gerbers/ChryslerCCDSCIScanner_V140.topsoldermask.ger": {
+      "sha256": "66b435933be7ec449acdc32394ee965420f9aa77cae14b42ca81051d360eadb4",
+      "size": 91449,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "infos/ChryslerCCDSCIScanner_V140.boardoutline.gpi": {
+      "sha256": "203fa96df2fc63b3d43944c929220d9c6b28ef89273ba085124f9e0199baea04",
+      "size": 1066,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "infos/ChryslerCCDSCIScanner_V140.bottomlayer.gpi": {
+      "sha256": "5deccfa953b64305dac3850c4dc466287d4a94251ecb04558270982bd5a937e0",
+      "size": 2024,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "infos/ChryslerCCDSCIScanner_V140.bottomsilkscreen.gpi": {
+      "sha256": "08dee4e14baae23f98239bc53987d33f754ebe8320b32b7f26eb9b730317e5d4",
+      "size": 1218,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "infos/ChryslerCCDSCIScanner_V140.bottomsoldermask.gpi": {
+      "sha256": "da8b8adb017023f8677e7f355cd0418f609424af52ee051352f469d6a3fa3769",
+      "size": 1794,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "infos/ChryslerCCDSCIScanner_V140.drills.dri": {
+      "sha256": "288fb2e22cded0725c6b690f4201f7f0a781c86161353df270615de63e7f4fa1",
+      "size": 1135,
+      "source_mtime_ns": 1534877318000000000
+    },
+    "infos/ChryslerCCDSCIScanner_V140.toplayer.gpi": {
+      "sha256": "1c9bc2f5895839f5d5b427b45aa5c4bb5363af341a598e192c8158af3382038d",
+      "size": 2450,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "infos/ChryslerCCDSCIScanner_V140.topsilkscreen.gpi": {
+      "sha256": "3cf72f38c1d845fd2472e8664505bf88f1260733997687edfc603a2faa3a9010",
+      "size": 1506,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "infos/ChryslerCCDSCIScanner_V140.topsoldermask.gpi": {
+      "sha256": "482f3a3c912d3a7b6b8b5f4b312931cd93106a973211720b7c5f228594cd20ec",
+      "size": 2268,
+      "source_mtime_ns": 1534877086000000000
+    },
+    "migration.csv": {
+      "sha256": "351517dc2d12f47ba1984790482fad13e64e482e0dc4c39934b21a2ee2caf9e0",
+      "size": 36247,
+      "source_mtime_ns": 1791950093245612703
+    },
+    "reference/3d-cad-validation.json": {
+      "sha256": "33afadbab18c7103d798498828d46ca4b57335e843e0a7c5c47d7049b72de6ed",
+      "size": 10786,
+      "source_mtime_ns": 1791951259090340660
+    },
+    "reference/3d-models.json": {
+      "sha256": "989f35e201ad982b0a7bf899fd417378aba911f6c8a95edee8f860eecc26a2e3",
+      "size": 47826,
+      "source_mtime_ns": 1791947623626435136
+    },
+    "reference/3d-portability-check.json": {
+      "sha256": "0236354deb4b07678945a94050f8357f73e6cfa4926d10f99978b9e611cc5d52",
+      "size": 652,
+      "source_mtime_ns": 1791899005759820601
+    },
+    "reference/board-expansion.json": {
+      "sha256": "c09a5bfbcc03f49802b3644302c2e2feed83d208fe8c78854ab6fafa582ef04c",
+      "size": 762,
+      "source_mtime_ns": 1791946936926909355
+    },
+    "reference/board-mechanics.json": {
+      "sha256": "f3efcbd51744976876c40b1494d98c4603cce42c6277fff78547e7cf4a78560a",
+      "size": 956,
+      "source_mtime_ns": 1791946936924925006
+    },
+    "reference/build-verification.json": {
+      "sha256": "1084533abda145aad103b1270439afe34bea42d694e00dbcbe3b6a56fc71c0a6",
+      "size": 2899,
+      "source_mtime_ns": 1791951397474544367
+    },
+    "reference/connector-candidates/ATTEND_226A-1202.step": {
+      "sha256": "b7de878426ff567bcd8548e076be72a7cafc2c1dc643b73f069533428274f87a",
+      "size": 2230404,
+      "source_mtime_ns": 1791901666052439146
+    },
+    "reference/connector-candidates/OBDII_ATTEND_226A-1202.kicad_mod": {
+      "sha256": "b070c4795a68e79763a3cf12e824de3353e97be92c1a50e8155a4238539ce894",
+      "size": 2358,
+      "source_mtime_ns": 1791902062265179525
+    },
+    "reference/expanded-rebuild-check.json": {
+      "sha256": "c619ed8825d480ec1e65b77b75217dcb85ac289566fff4372b878c5d12a8ac54",
+      "size": 346,
+      "source_mtime_ns": 1791946936927554804
+    },
+    "reference/hardware-overrides.json": {
+      "sha256": "fe8ffd12e6fa8f4f186db467938940db898151f86ea0ee264450d5edd4c5173d",
+      "size": 5910,
+      "source_mtime_ns": 1791950093244308526
+    },
+    "reference/kicad-original-footprints/CP_Radial_D8.0mm_P3.50mm.kicad_mod": {
+      "sha256": "a756173d70f267b9d4827fdc4ccb0d2c386e032a39ec7f440c508e5acb75de46",
+      "size": 13692,
+      "source_mtime_ns": 1791858262648708013
+    },
+    "reference/kicad-original-footprints/C_0603_1608Metric.kicad_mod": {
+      "sha256": "341de40ed02527c21b097661d4c2411c604c253ca12041f5eb4521bde00a8db4",
+      "size": 1787,
+      "source_mtime_ns": 1791858534440960229
+    },
+    "reference/kicad-original-footprints/C_0805_2012Metric.kicad_mod": {
+      "sha256": "99fff2e6692af4126feb9f9ebdfd454834bf414b13d04be0d075dffc23cfbd02",
+      "size": 1883,
+      "source_mtime_ns": 1791858534429213870
+    },
+    "reference/kicad-original-footprints/C_1206_3216Metric.kicad_mod": {
+      "sha256": "8a29f23ddad5dc5ce652ed5395fa0113ce11ef55379a4ebe1da5bf4320848c04",
+      "size": 1791,
+      "source_mtime_ns": 1791858262620992274
+    },
+    "reference/kicad-original-footprints/D_SMB.kicad_mod": {
+      "sha256": "01274857b58e3d532f8898cda40fefd5f39fa93c2dd03a54db2230d411f9f402",
+      "size": 2020,
+      "source_mtime_ns": 1791858262628802819
+    },
+    "reference/kicad-original-footprints/D_SOD-123.kicad_mod": {
+      "sha256": "3ee0bc152d3460e3683968eea208534fa5e99b1d2d38a003a05b4b04ccd641af",
+      "size": 1975,
+      "source_mtime_ns": 1791858262618466036
+    },
+    "reference/kicad-original-footprints/D_SOD-323.kicad_mod": {
+      "sha256": "05cc3e8e2f2c007d7142a64a9fb843b116219c4628c4cb3ae2f298ee00adc544",
+      "size": 1916,
+      "source_mtime_ns": 1791858262643047833
+    },
+    "reference/kicad-original-footprints/LED_1206_3216Metric.kicad_mod": {
+      "sha256": "8205baf3de8e96fe364b26e37a405b65dc9227c0f92452acd0aaa4579a1b6138",
+      "size": 1878,
+      "source_mtime_ns": 1791858247733528979
+    },
+    "reference/kicad-original-footprints/L_7.3x7.3_H3.5.kicad_mod": {
+      "sha256": "35024737717bfab878d44fa07484dc5b38555829f54c8c5ff747589e4e507747",
+      "size": 2062,
+      "source_mtime_ns": 1791858247736727881
+    },
+    "reference/kicad-original-footprints/PinHeader_2x03_P2.54mm_Vertical.kicad_mod": {
+      "sha256": "c2e9b7caeed623b65f271f50d2352cfe6ecefb17b1a1a7d24a87c0927422381a",
+      "size": 2504,
+      "source_mtime_ns": 1791858262664214771
+    },
+    "reference/kicad-original-footprints/QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.6mm.kicad_mod": {
+      "sha256": "bea227374d839a8245ebf9f720408eb062b8f760752eae0cf0a1fa266b2e34e9",
+      "size": 5081,
+      "source_mtime_ns": 1791858262679665112
+    },
+    "reference/kicad-original-footprints/QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.kicad_mod": {
+      "sha256": "2fc3126f5e17ed0f11a064f3fa6d200f1fc8b61f0ec53a0d4aba0d801f44cf14",
+      "size": 5904,
+      "source_mtime_ns": 1791858262632476051
+    },
+    "reference/kicad-original-footprints/R_0603_1608Metric.kicad_mod": {
+      "sha256": "effcae403a15810b3a1947b8664576270d6781e7cd525e97c47d48be0fdae8ce",
+      "size": 1820,
+      "source_mtime_ns": 1791858534449016357
+    },
+    "reference/kicad-original-footprints/R_1206_3216Metric.kicad_mod": {
+      "sha256": "a60cd27dd3042c001f09af2189fc2a06b879335e01c59704ab7c67d0387d2c91",
+      "size": 1802,
+      "source_mtime_ns": 1791858262598138635
+    },
+    "reference/kicad-original-footprints/SOT-23-5.kicad_mod": {
+      "sha256": "559f4c60fd9a2f3b575b5c4efb9bcb51863ea2c8e3837c27504059c8fa704827",
+      "size": 2208,
+      "source_mtime_ns": 1791858262608438960
+    },
+    "reference/kicad-original-footprints/SOT-23-6.kicad_mod": {
+      "sha256": "fa43b3b798136815af9733d3fe45e1547111765e49c0274d86c8ea7942f8e63b",
+      "size": 2316,
+      "source_mtime_ns": 1791858262637601526
+    },
+    "reference/kicad-original-footprints/SOT-23.kicad_mod": {
+      "sha256": "db5b998f0d36708205a4b8edc0db1501deb0246a81b52e9cb036cfd58b7570d3",
+      "size": 1746,
+      "source_mtime_ns": 1791858262614273098
+    },
+    "reference/kicad-original-footprints/SOT-363_SC-70-6.kicad_mod": {
+      "sha256": "f21930d6b4038a9eb6c22bcfd39c51415f4cc2deddb0c725b6f6e23280922c59",
+      "size": 1879,
+      "source_mtime_ns": 1791858235318943094
+    },
+    "reference/kicad-original-footprints/SW_SPST_TL3305A.kicad_mod": {
+      "sha256": "d520cbd50337a2d3458309f93af08dd715b1bf05440d1fe18a6ca02c7492c75c",
+      "size": 3402,
+      "source_mtime_ns": 1791858262600426374
+    },
+    "reference/kicad-original-footprints/SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm.kicad_mod": {
+      "sha256": "54e668f88750189bd7a00b17a444a4bd4256c7867a727bdaf9b0aa4ff4e22f84",
+      "size": 1276,
+      "source_mtime_ns": 1791858262604538604
+    },
+    "reference/kicad-original-footprints/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm.kicad_mod": {
+      "sha256": "71b3a4448c88e21c19a9d5c6b9876a733efe3ccf07c00d3f7c88a54044a8b36b",
+      "size": 1146,
+      "source_mtime_ns": 1791858235320483087
+    },
+    "reference/kicad-original-footprints/TSOT-23-8.kicad_mod": {
+      "sha256": "05a2119ad9ad5ff843888326728598dd613e7692fe024385b711192c07a19658",
+      "size": 2560,
+      "source_mtime_ns": 1791858235310602302
+    },
+    "reference/kicad-original-footprints/USB_B_Lumberg_2411_02_Horizontal.kicad_mod": {
+      "sha256": "c5d2aeac5d7383ba6550343e7602217d8b425570c6dd9740d45c7cc1a33a0ca3",
+      "size": 2733,
+      "source_mtime_ns": 1791858235316908229
+    },
+    "reference/kicad-original-footprints/VSSOP-8_2.3x2mm_P0.5mm.kicad_mod": {
+      "sha256": "b82bc33e71b4828242d9ffa303847773586b7eb1d99931ad283a94453b58689f",
+      "size": 2085,
+      "source_mtime_ns": 1791858262670868155
+    },
+    "reference/kicad-original-footprints/WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.kicad_mod": {
+      "sha256": "22282a81185a4b28f3df4cb83cf1bbb214916bdfb375d63bc20d48820c0fc069",
+      "size": 2437,
+      "source_mtime_ns": 1791858262616309380
+    },
+    "reference/layout-plan.json": {
+      "sha256": "196142241c888f94c7bdef534af5cf84b05eeaf89874ac98b47b63146aa75b0c",
+      "size": 29505,
+      "source_mtime_ns": 1791950093243850231
+    },
+    "reference/mechanical-anchors.json": {
+      "sha256": "0e9b8b1a3edb3295bf3f8b8e79d99987730d7845ac0467b743cb9fe7029a4839",
+      "size": 1562,
+      "source_mtime_ns": 1791946938030984605
+    },
+    "reference/native-kicad-verification.json": {
+      "sha256": "3e4a253b9a2aef315b135919bb595be4a0076e451f9ee44b2850fd7be19a47a0",
+      "size": 40637,
+      "source_mtime_ns": 1791951072558706461
+    },
+    "reference/obd-cad-validation.json": {
+      "sha256": "ab51035a48b866b54fe7570e0b1eabea19673ce5f39ddedd6d8a3630c0e1ef2b",
+      "size": 5223,
+      "source_mtime_ns": 1791951240521297529
+    },
+    "reference/obd-connector-selection.json": {
+      "sha256": "8a8ba16093277780f48dbe08342726f97e97f3b9ba90f656c3d5f708d96d92ad",
+      "size": 4130,
+      "source_mtime_ns": 1791947623623677423
+    },
+    "reference/obd-update-verification.json": {
+      "sha256": "a8797eee664a0cb0c57da435ae380d0881e9f86a06ca0db83f3cb0102404df5a",
+      "size": 918,
+      "source_mtime_ns": 1791950296711931704
+    },
+    "reference/placement-improvement.json": {
+      "sha256": "c3e037a34e60b2a85fbe5c08f5ba80a966ea575ac87aa9275cac35acb94b3154",
+      "size": 449,
+      "source_mtime_ns": 1791950296712836127
+    },
+    "reference/placement-pass-1-baseline.json": {
+      "sha256": "2ad721d48e72188f89df6adea2d014389ef4ac2553697a2545d343825afd4cfb",
+      "size": 634978,
+      "source_mtime_ns": 1791949896057529680
+    },
+    "reference/placement-pass-1-before.json": {
+      "sha256": "6c7e49c04b707ad75fe7ddbb10250c3eb2114ba21514e80135e975408e0d430b",
+      "size": 76765,
+      "source_mtime_ns": 1791950028243286645
+    },
+    "reference/placement-pass-1-candidate.json": {
+      "sha256": "a65d39a8af31f3b65ffeae966eee6a28afdb16a1189c4eb6f26a6f9d3daa98a0",
+      "size": 129659,
+      "source_mtime_ns": 1791950028239355531
+    },
+    "reference/placement-pass-1-native-pad-expectations.json": {
+      "sha256": "7d020d9871dd9f54b1285a60c675ca92834c4e3bfc4977a311abb51f26e3c079",
+      "size": 124458,
+      "source_mtime_ns": 1791951044545031373
+    },
+    "reference/placement-pass-1-verification.json": {
+      "sha256": "9ec80c55d6cc3821f3164d76137c078d41b96f8f80369d50150d5f6a240c99f1",
+      "size": 9384,
+      "source_mtime_ns": 1791951397480307105
+    },
+    "reference/provenance.json": {
+      "sha256": "caa19e44cfd2673fc281590d34bc380f4023a004bedf3145e2f6950e21d20ad3",
+      "size": 2909,
+      "source_mtime_ns": 1791946936925853452
+    },
+    "reference/ref-cap-fix.json": {
+      "sha256": "9af1ef4cc927cba7a8855ede4b5239bf1a9adffc1acf70fc02bbad1b2c2b467a",
+      "size": 1005,
+      "source_mtime_ns": 1791866724475037226
+    },
+    "reference/schematic-bundle-erc.json": {
+      "sha256": "693cff873ef9342ce1d7902bf818faaea907bee342783119713b2a13379b0833",
+      "size": 5121,
+      "source_mtime_ns": 1791953011638971008
+    },
+    "reference/schematic-bundle-libraries.json": {
+      "sha256": "6fbf9085851cdfb0144d0a203078d8222c6f2533da76ba7912c6e57911483cfd",
+      "size": 407,
+      "source_mtime_ns": 1791953054239929399
+    },
+    "reference/schematic-bundle-validation.json": {
+      "sha256": "74856f51cb3811c1c4ba54d6ef2899b00f2d72ba322121da1f36a5e294b2aef3",
+      "size": 5587,
+      "source_mtime_ns": 1791953054304855848
+    },
+    "reference/schematic-cleanup.json": {
+      "sha256": "366c16ba5e78d2004e7bb0f7f83a050bdc413c6694d40f7b51a6d8b6822149c7",
+      "size": 8673,
+      "source_mtime_ns": 1791952938724542209
+    },
+    "reference/schematic-erc.json": {
+      "sha256": "307aa626a18812ace321bde411e9858697fba03d8d93c1eba7933b3a73f514a2",
+      "size": 5121,
+      "source_mtime_ns": 1791952941633132133
+    },
+    "reference/schematic-generation.json": {
+      "sha256": "3ec7a02362dae19f9b393828443cfbf41a1741196668d56c5e57b7a4252801c9",
+      "size": 8426,
+      "source_mtime_ns": 1791952938724446543
+    },
+    "reference/schematic-library-preparation.json": {
+      "sha256": "370e2b7ca305ffd883e75cc54e168d079bef0ddfba3a5ad2fdf2015a15e66d4c",
+      "size": 1722,
+      "source_mtime_ns": 1791952938724190418
+    },
+    "reference/schematic-text-metrics.json": {
+      "sha256": "b7693313a07f4ddcb209870f2bb440e99fbffbaf83e7623b794f1f23a469f7e7",
+      "size": 80187,
+      "source_mtime_ns": 1791951803215818503
+    },
+    "reference/schematic-validation.json": {
+      "sha256": "6452c9054b640543d547994364f31c158d50b12033994374641c7a6fddd39f79",
+      "size": 6613,
+      "source_mtime_ns": 1791953008576240795
+    },
+    "reference/silkscreen-labels.json": {
+      "sha256": "a3baa2e78550b31b325f62929b5d8b6f3795981af3b72218323eadd2e13832bf",
+      "size": 187904,
+      "source_mtime_ns": 1792418266444988507
+    },
+    "reference/silkscreen-text-metrics.json": {
+      "sha256": "439c913750c9023e251e41f826447f7d1b5371dc669bbc9e36ccd8729d767158",
+      "size": 51324,
+      "source_mtime_ns": 1792417552867786896
+    },
+    "reference/upstream/ChryslerScanner_V240_schematic.pdf": {
+      "sha256": "334b04164cfa96183cf502f690024a764cc719671f20583043f37604c9ed590d",
+      "size": 570334,
+      "source_mtime_ns": 1791856683270398416
+    },
+    "reference/upstream/KiCad-footprints-LICENSE.md": {
+      "sha256": "285b027a721577d0bc0198f36e948c6c282ddaa4b58fef8ed826749576eb0aef",
+      "size": 2105,
+      "source_mtime_ns": 1791858690871855354
+    },
+    "reference/upstream/LICENSE": {
+      "sha256": "c3bc1fd94148c28485e8bab1d5a28edbc8e3870f2bd9be7127c68c8b7a0ea5df",
+      "size": 35126,
+      "source_mtime_ns": 1791856682150754411
+    },
+    "reference/upstream/README.md": {
+      "sha256": "ae0699383657f1dbcdaab578e7af149ccde02d0337416370e9e71d287c5eff9b",
+      "size": 1034,
+      "source_mtime_ns": 1791856682308274348
+    },
+    "reference/upstream/footprint-provenance.json": {
+      "sha256": "0ed4328a593d390ba11084a69e0c4fb25f43ce544084639f8c28bddb9952108f",
+      "size": 2536,
+      "source_mtime_ns": 1791870874090278210
+    },
+    "reference/upstream/v240-extracted.json": {
+      "sha256": "7db780e570ec9284b3aa616f898359a8c5341b24e757aec77860b02f6db50626",
+      "size": 329182,
+      "source_mtime_ns": 1791858004203464082
+    },
+    "reference/upstream/version.txt": {
+      "sha256": "d802cf3c3971d312b4699f0e563dc00106d20d446ad7396432bcc19ed489f986",
+      "size": 428,
+      "source_mtime_ns": 1791856682518722291
+    },
+    "reference/usb-c-native-pad-check.json": {
+      "sha256": "48017831a21bcbedb1c84ef5675c52c9948a7d3e74412112e178cc74d7e797c9",
+      "size": 5504,
+      "source_mtime_ns": 1791947705519885061
+    },
+    "reference/usb-c-preservation-check.json": {
+      "sha256": "b7c2f3c9dc3a11c5bcb19f897e5f97bf97c7d4fb41fac04737fabdb590aecf91",
+      "size": 434,
+      "source_mtime_ns": 1791899005753774848
+    },
+    "reference/v140-layout-reference.json": {
+      "sha256": "bce50955cf4dafc239483b4c09c420bf201d18edc9afe2b673b1f679ebff19ea",
+      "size": 11340,
+      "source_mtime_ns": 1791857823702509809
+    },
+    "reference/v240-100x50-layout-plan.json": {
+      "sha256": "502cbaedb7dd83032b984b59b612c0f225f4e82d20d5f4faf8d8a29c2f234a45",
+      "size": 23644,
+      "source_mtime_ns": 1791869676205874798
+    },
+    "reference/v240-100x50-placement.json": {
+      "sha256": "578fb42849155735cc71c8404d6497449402f7bfece4852f9687e3ca93d7ba4c",
+      "size": 57963,
+      "source_mtime_ns": 1791898742972947746
+    },
+    "reference/v240-netlist.json": {
+      "sha256": "413c741a9b1a2ec5bf89b9e212ddf13fc4e38899c238599126adcd31803744d2",
+      "size": 306764,
+      "source_mtime_ns": 1792417552412867408
+    },
+    "reference/v240-placement.json": {
+      "sha256": "ea673d2edf38b8b14f7c994bb2a9177d694c3ef24654add0ea8abff794a90c50",
+      "size": 78063,
+      "source_mtime_ns": 1792418314186222552
+    },
+    "reference/v240-usb-b-netlist.json": {
+      "sha256": "11a3706206cb67b99f0b1683b30065013c0e1c3d92bf3c794e597318580ea846",
+      "size": 303584,
+      "source_mtime_ns": 1791869293157952124
+    },
+    "reference/validation.json": {
+      "sha256": "dd6af9817e1b93aa649e0f95c4e65f86ace7428c0186a0b0b862fc700fe7fc6c",
+      "size": 16468,
+      "source_mtime_ns": 1792417364169818429
+    },
+    "requirements.txt": {
+      "sha256": "0de3f79735dad6311eb910c772035f50e8ddb08bba4f993b1e68c466951d7613",
+      "size": 112,
+      "source_mtime_ns": 1791866724475664095
+    },
+    "scripts/apply_obd_layout.py": {
+      "sha256": "a3a1dc3793c9639176743928518797eeacd3b72228957ee73f25f6ba85438116",
+      "size": 2887,
+      "source_mtime_ns": 1791946936750576285
+    },
+    "scripts/apply_usb_c_layout.py": {
+      "sha256": "2f26bd2fa774ffbac2a3ed2cd48caffa61a997052bfe6428a40d7180aea85fd9",
+      "size": 4251,
+      "source_mtime_ns": 1791870454552551561
+    },
+    "scripts/attach_models.py": {
+      "sha256": "4609524ca018d27b4f2fa87c615afe9dd1514a7e3713d9043867f7cc5dca6e19",
+      "size": 2479,
+      "source_mtime_ns": 1791950885636333397
+    },
+    "scripts/clean_schematic_layout.py": {
+      "sha256": "756dedbf40fcce0626e266463fc473ae0ee67cde8743087192299121e3f22d03",
+      "size": 16522,
+      "source_mtime_ns": 1792417898692388405
+    },
+    "scripts/expand_board.py": {
+      "sha256": "530280e911616a17df8c59c694038a5ed0aa7ca4641db647b3cabefd70236c89",
+      "size": 8791,
+      "source_mtime_ns": 1791946985766644157
+    },
+    "scripts/export_native_routing.py": {
+      "sha256": "5f80a93d8f4764fe4863e67e87ee1106fa5725f5cdbf6f6280d5c8ee35ec97a5",
+      "size": 1806,
+      "source_mtime_ns": 1792417995529643582
+    },
+    "scripts/extract_gerber_reference.py": {
+      "sha256": "2d48ab1d9c07a6850ceccec2cf6415bf194582de1e3ae7e948a0848600958d70",
+      "size": 2281,
+      "source_mtime_ns": 1791857823131296352
+    },
+    "scripts/extract_v240.py": {
+      "sha256": "cee948baaf28484d4c7e05d1eea878b654ab7424d84b7f9322d8d125e980dc03",
+      "size": 15041,
+      "source_mtime_ns": 1791857995004539641
+    },
+    "scripts/finish_board.py": {
+      "sha256": "a2fd3a9e95a9f8ad1a6f610dc33a8d188ecde3fe8eaf98391c2d9b72e23b3fe5",
+      "size": 10194,
+      "source_mtime_ns": 1792417696111124415
+    },
+    "scripts/generate_3d_models.py": {
+      "sha256": "5fb6699dd313553bb2d5316a40670a0deca58e46c9a53390f34522f453143062",
+      "size": 13153,
+      "source_mtime_ns": 1791946985733939600
+    },
+    "scripts/generate_atopile.py": {
+      "sha256": "f61774c3be8bfe02950d74a3c6ba8514f320378c65ba20c917d77d2fa4184edb",
+      "size": 13770,
+      "source_mtime_ns": 1792417552040435301
+    },
+    "scripts/generate_kicad_schematic.py": {
+      "sha256": "27188f08edaf0e2f9142b5da0a42a6ae9d6a6e35a41e394ab0a7b27f9add90a2",
+      "size": 22748,
+      "source_mtime_ns": 1792417898833037489
+    },
+    "scripts/install_first_routes.py": {
+      "sha256": "ba8215050d801b4631100a144074b95a405292ecafc26ff0cce6267140ba7aab",
+      "size": 1792,
+      "source_mtime_ns": 1792418344583750359
+    },
+    "scripts/lock_mechanical.py": {
+      "sha256": "cedf3b19cc9a1ccac49c50c0dde5f4e1712c87ba0f37ea0d6ff561a071d8f611",
+      "size": 343,
+      "source_mtime_ns": 1791866282140398705
+    },
+    "scripts/measure_reference_text.py": {
+      "sha256": "a5575c1529e39ec8c59c89ba4259931cd9e5182f2ea199871373dccf491983c9",
+      "size": 2394,
+      "source_mtime_ns": 1791869793884144147
+    },
+    "scripts/measure_schematic_text.py": {
+      "sha256": "edc0c55b8b2fd1635ecec7c2e1d356ebc3b9255beaca1785fcfac3c66e632060",
+      "size": 1229,
+      "source_mtime_ns": 1791952326087544016
+    },
+    "scripts/normalize_footprints.py": {
+      "sha256": "f2e44e52938dd0ae3a183e6ebcc1d126fb7c5be9a93a94b37257fd4b393f7920",
+      "size": 2079,
+      "source_mtime_ns": 1791858262367253973
+    },
+    "scripts/package_project.py": {
+      "sha256": "9a359a41bfd2eca7ab4826b05d456ef294df88687cc99ab7a3e9501d1ba0b670",
+      "size": 4187,
+      "source_mtime_ns": 1791950297978215416
+    },
+    "scripts/package_schematic.py": {
+      "sha256": "9831dbec9c3db4cf6772c09ae907fa713124323179f3787c64399e2f28f1b7eb",
+      "size": 4527,
+      "source_mtime_ns": 1792417898835324304
+    },
+    "scripts/pcb_geometry.py": {
+      "sha256": "b8a935bcd72428c3f1a9287bc8eb95906c6165449f5273c926a9c8d33ccaf0a1",
+      "size": 4067,
+      "source_mtime_ns": 1791898743472858737
+    },
+    "scripts/place_board.py": {
+      "sha256": "caacb7902bf546b25701368bf05e239a3039f2d2a29c70cb016dc0038781c7b7",
+      "size": 13202,
+      "source_mtime_ns": 1791898939104839753
+    },
+    "scripts/refine_placement.py": {
+      "sha256": "2bd170c7c57b1199fd249d540277c02c978e63a2ffc9f29607085e0b22a20ce8",
+      "size": 17715,
+      "source_mtime_ns": 1791949995720908180
+    },
+    "scripts/render_board.py": {
+      "sha256": "29b468fc22be80e28606574ba7e39a9936f5a2d3f3fa3d08c7b424f7784f55e8",
+      "size": 7140,
+      "source_mtime_ns": 1791899216091686931
+    },
+    "scripts/render_placement_review.py": {
+      "sha256": "56b74bd8f50bc3e346b97ab69db40ad09b193e0a5745e8c285059bcb31e094f9",
+      "size": 3348,
+      "source_mtime_ns": 1791951264297146980
+    },
+    "scripts/render_silkscreen.py": {
+      "sha256": "318f56ce7b992da25f0f7241f4fe1dfe711aa5633f790d8f46cec5789b062bdb",
+      "size": 882,
+      "source_mtime_ns": 1791868746387048743
+    },
+    "scripts/start_routing.py": {
+      "sha256": "261e06b2a9ed9fdc6d337ad98973de76a179f3c520688ea6960bfe05cb99d26b",
+      "size": 14443,
+      "source_mtime_ns": 1792418344136253186
+    },
+    "scripts/validate_board.py": {
+      "sha256": "b54a3a265405a4f3498ddbf8ac915617c649e64bcc73e6695e521115409ef14e",
+      "size": 19493,
+      "source_mtime_ns": 1792417898613350829
+    },
+    "scripts/validate_kicad_schematic.py": {
+      "sha256": "da340438009786cd2aa8420dc0a3f28d476d5051ef90a2a90b74f21661c0d548",
+      "size": 4493,
+      "source_mtime_ns": 1791952233638908674
+    },
+    "scripts/verify_native_kicad.py": {
+      "sha256": "c8de0ef80bc678a520bf3d2538a53ca545832bd5a879d6e63dd98408d17d8c86",
+      "size": 6384,
+      "source_mtime_ns": 1791950524782368814
+    },
+    "scripts/verify_obd_cad.py": {
+      "sha256": "0627181d864c59f371f97d191ffdf8a9b994f541a322f01c684f9a6c56bc2852",
+      "size": 3685,
+      "source_mtime_ns": 1791947202733197056
+    },
+    "scripts/verify_placement_pass.py": {
+      "sha256": "11c9ea74851c1885552646887158f08f53008a4e5934c1647dfc5c977819745a",
+      "size": 5128,
+      "source_mtime_ns": 1791950043947399449
+    },
+    "scripts/verify_schematic_bundle.py": {
+      "sha256": "369eee3a0444b13a156e6a3f682c192167e587ccf7f4c4217516fd31333c0ab4",
+      "size": 2065,
+      "source_mtime_ns": 1791953053521398297
+    }
+  },
+  "file_count": 462,
+  "total_bytes": 13538739,
+  "read_failures": [],
+  "excluded": [
+    ".git",
+    ".venv",
+    ".ato",
+    "build",
+    "renders",
+    "__pycache__",
+    ".DS_Store",
+    "*.kicad_prl",
+    "*.lck",
+    "*-backups",
+    "backup files",
+    "local auth/user settings",
+    ".atopile-local.json",
+    "duplicate generated ZIP packages",
+    "old routing-pass-1 copper artifacts"
+  ],
+  "portability_notes": [
+    "ato.yaml is byte-exact and still contains the original absolute Downloads layout path. Retarget it only in a working copy before building.",
+    "Original native CAD files already preserved under ../reference/original-source/ are not duplicated here. Restore the matching elec/layout and elec/schematic trees into a separate legacy working copy if running those scripts.",
+    "This source is pre-SD and must never regenerate or replace ../current/ChryslerScanner_V240_SD.kicad_pcb.",
+    "Legacy helper scripts retain original machine-specific KiCad/Python paths and historical checks. Review paths and inputs before executing; no legacy script was run for this archive.",
+    "Standard KiCad libraries/native Python modules and CADQuery are external tool dependencies; the pinned requirements.txt is original, not proof of installation or reproduction on another OS.",
+    "Optional upstream datasheets, connector candidate fit previews and old routing output files were not copied. They are not needed to compile the preserved .ato source; provenance records retain their original references.",
+    "verify_schematic_bundle.py expects ChryslerScanner_V240_schematic.zip as a generated package. No input source ZIP is required or included.",
+    "Historical reference JSON reports and README files describe the old pre-SD project; their PASS/routing claims do not describe the active integrated board."
+  ]
+}

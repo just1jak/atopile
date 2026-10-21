@@ -1,0 +1,645 @@
+{
+  "engine": "FreeCAD 1.1.1",
+  "model_geometry": [
+    {
+      "model": "ANT3216LL00R2400A.step",
+      "valid_solid_geometry": true,
+      "solids": 3,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.6,
+          1.6
+        ],
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          0.0,
+          1.2
+        ]
+      ]
+    },
+    {
+      "model": "CP_Radial_D8.0mm_P3.50mm.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -2.25,
+          5.75
+        ],
+        [
+          -3.9998,
+          3.9991
+        ],
+        [
+          -2.0,
+          8.0
+        ]
+      ]
+    },
+    {
+      "model": "C_0603_1608Metric.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          -0.4,
+          0.4
+        ],
+        [
+          0.0,
+          0.8
+        ]
+      ]
+    },
+    {
+      "model": "C_1206_3216Metric.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.6,
+          1.6
+        ],
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          0.0,
+          1.6
+        ]
+      ]
+    },
+    {
+      "model": "D_SMB.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -2.65,
+          2.65
+        ],
+        [
+          -1.775,
+          1.775
+        ],
+        [
+          -0.0,
+          2.15
+        ]
+      ]
+    },
+    {
+      "model": "D_SOD-123.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.9,
+          1.9
+        ],
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          -0.0,
+          1.26
+        ]
+      ]
+    },
+    {
+      "model": "D_SOD-323.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -0.625,
+          0.625
+        ],
+        [
+          -0.0,
+          1.11
+        ]
+      ]
+    },
+    {
+      "model": "ESP32_PICO_V3_02.step",
+      "valid_solid_geometry": true,
+      "solids": 51,
+      "tessellated_bounds_3d_mm": [
+        [
+          -3.5,
+          3.5
+        ],
+        [
+          -3.5,
+          3.5
+        ],
+        [
+          0.0,
+          1.118
+        ]
+      ]
+    },
+    {
+      "model": "LED_1206_BLUE.step",
+      "valid_solid_geometry": true,
+      "solids": 5,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.6,
+          1.6
+        ],
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          0.0,
+          1.015
+        ]
+      ]
+    },
+    {
+      "model": "LED_1206_GREEN.step",
+      "valid_solid_geometry": true,
+      "solids": 5,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.6,
+          1.6
+        ],
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          0.0,
+          1.015
+        ]
+      ]
+    },
+    {
+      "model": "LED_1206_RED.step",
+      "valid_solid_geometry": true,
+      "solids": 5,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.6,
+          1.6
+        ],
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          0.0,
+          1.015
+        ]
+      ]
+    },
+    {
+      "model": "LED_1206_YELLOW.step",
+      "valid_solid_geometry": true,
+      "solids": 5,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.6,
+          1.6
+        ],
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          0.0,
+          1.015
+        ]
+      ]
+    },
+    {
+      "model": "L_1206_3216Metric.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.6,
+          1.6
+        ],
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          0.0,
+          1.6
+        ]
+      ]
+    },
+    {
+      "model": "L_7.3x7.3_H3.5.step",
+      "valid_solid_geometry": true,
+      "solids": 4,
+      "tessellated_bounds_3d_mm": [
+        [
+          -3.95,
+          3.95
+        ],
+        [
+          -3.65,
+          3.65
+        ],
+        [
+          0.0,
+          3.5
+        ]
+      ]
+    },
+    {
+      "model": "OBD16_V140_Representative.step",
+      "valid_solid_geometry": true,
+      "solids": 49,
+      "tessellated_bounds_3d_mm": [
+        [
+          -20.0,
+          1.9497
+        ],
+        [
+          -16.0,
+          16.0
+        ],
+        [
+          -3.0,
+          15.5
+        ]
+      ]
+    },
+    {
+      "model": "PinHeader_2x03_P2.54mm_Vertical.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.27,
+          3.81
+        ],
+        [
+          -6.35,
+          1.27
+        ],
+        [
+          -3.0,
+          8.54
+        ]
+      ]
+    },
+    {
+      "model": "QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -2.0,
+          2.0
+        ],
+        [
+          -2.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.77
+        ]
+      ]
+    },
+    {
+      "model": "QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -2.5,
+          2.5
+        ],
+        [
+          -2.5,
+          2.5
+        ],
+        [
+          0.0,
+          0.92
+        ]
+      ]
+    },
+    {
+      "model": "R_0603_1608Metric.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          -0.4,
+          0.4
+        ],
+        [
+          -0.0,
+          0.45
+        ]
+      ]
+    },
+    {
+      "model": "R_1206_3216Metric.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.6,
+          1.6
+        ],
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          0.0,
+          0.55
+        ]
+      ]
+    },
+    {
+      "model": "SOT-23-5.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.4,
+          1.4
+        ],
+        [
+          -1.45,
+          1.45
+        ],
+        [
+          0.0,
+          1.55
+        ]
+      ]
+    },
+    {
+      "model": "SOT-23-6.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.4,
+          1.4
+        ],
+        [
+          -1.45,
+          1.45
+        ],
+        [
+          0.0,
+          1.55
+        ]
+      ]
+    },
+    {
+      "model": "SOT-23.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -1.5,
+          1.5
+        ],
+        [
+          0.0,
+          1.2
+        ]
+      ]
+    },
+    {
+      "model": "SOT-363_SC-70-6.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.05,
+          1.05
+        ],
+        [
+          -1.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.1
+        ]
+      ]
+    },
+    {
+      "model": "SW_SPST_TL3305A.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -3.75,
+          3.75
+        ],
+        [
+          -2.25,
+          2.25
+        ],
+        [
+          -0.05,
+          3.8
+        ]
+      ]
+    },
+    {
+      "model": "SY6283_DFN4.step",
+      "valid_solid_geometry": true,
+      "solids": 6,
+      "tessellated_bounds_3d_mm": [
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          -0.6,
+          0.6
+        ],
+        [
+          0.0,
+          0.556
+        ]
+      ]
+    },
+    {
+      "model": "SolderJumper_Bridged.step",
+      "valid_solid_geometry": true,
+      "solids": 3,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.15,
+          1.15
+        ],
+        [
+          -0.75,
+          0.75
+        ],
+        [
+          0.0,
+          0.15
+        ]
+      ]
+    },
+    {
+      "model": "SolderJumper_Open.step",
+      "valid_solid_geometry": true,
+      "solids": 2,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.15,
+          1.15
+        ],
+        [
+          -0.75,
+          0.75
+        ],
+        [
+          0.0,
+          0.03
+        ]
+      ]
+    },
+    {
+      "model": "USB_B_Lumberg_2411_02.step",
+      "valid_solid_geometry": true,
+      "solids": 13,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.24,
+          15.16
+        ],
+        [
+          -8.0,
+          5.5
+        ],
+        [
+          -3.5,
+          10.75
+        ]
+      ]
+    },
+    {
+      "model": "VSSOP-8_2.3x2mm_P0.5mm.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.55,
+          1.55
+        ],
+        [
+          -1.0,
+          1.0
+        ],
+        [
+          -0.0,
+          0.85
+        ]
+      ]
+    },
+    {
+      "model": "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -1.0,
+          1.0
+        ],
+        [
+          -0.99,
+          0.99
+        ],
+        [
+          0.0,
+          0.82
+        ]
+      ]
+    },
+    {
+      "model": "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+      "valid_solid_geometry": true,
+      "solids": 36,
+      "tessellated_bounds_3d_mm": [
+        [
+          -4.47,
+          4.47
+        ],
+        [
+          -3.675,
+          4.105
+        ],
+        [
+          -0.95,
+          3.31
+        ]
+      ]
+    },
+    {
+      "model": "ATTEND_226A-1202.step",
+      "valid_solid_geometry": true,
+      "solids": 1,
+      "tessellated_bounds_3d_mm": [
+        [
+          -21.800000000000004,
+          2.0500000000000003
+        ],
+        [
+          -20.775,
+          20.775
+        ],
+        [
+          -3.01,
+          16.100000000001
+        ]
+      ]
+    }
+  ],
+  "assembly_file": "renders/V240-assembly.step",
+  "assembly_valid": true,
+  "assembly_solids": 1172,
+  "exact_connector_or_enclosure_fit_verified": false,
+  "hardware_revision": "V240-USB-C-OBD",
+  "assembly_sha256": "93ea9f42ec0f3a2b18a8ab32e2332e9af0e338b346a5b9602a9f991906dc19b4",
+  "pcb_sha256": "06629b279f52798185a8281b6e5d4e574720666cfebad0ee8288ba61cc44d409",
+  "outline_mm": [
+    110,
+    55
+  ],
+  "obd_nominal_pcb_and_mounting_clearance": "PASS",
+  "placement_pass": 1
+}

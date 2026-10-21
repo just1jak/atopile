@@ -1,0 +1,313 @@
+{
+  "status": "PASS",
+  "native_kicad_version": "10.0.7",
+  "connector_rotation_checked": true,
+  "outline_mm": [
+    110,
+    55
+  ],
+  "pcb_sha256": "ae124a36b4bf2eb464037c07c6d1baa42a7c667960e7c0ab253907d2496ad0ae",
+  "pads": [
+    {
+      "ref": "J2",
+      "pad": "A1",
+      "xy_mm": [
+        102.64500000000001,
+        32.19999999999999
+      ],
+      "orientation_deg": 90.0,
+      "net": "GND"
+    },
+    {
+      "ref": "J2",
+      "pad": "A4",
+      "xy_mm": [
+        102.64500000000001,
+        31.400000000000006
+      ],
+      "orientation_deg": 90.0,
+      "net": "VBUS"
+    },
+    {
+      "ref": "J2",
+      "pad": "A5",
+      "xy_mm": [
+        102.64500000000001,
+        30.25
+      ],
+      "orientation_deg": 90.0,
+      "net": "USB_CC1"
+    },
+    {
+      "ref": "J2",
+      "pad": "A6",
+      "xy_mm": [
+        102.64500000000001,
+        29.25
+      ],
+      "orientation_deg": 90.0,
+      "net": "D+"
+    },
+    {
+      "ref": "J2",
+      "pad": "A7",
+      "xy_mm": [
+        102.64500000000001,
+        28.75
+      ],
+      "orientation_deg": 90.0,
+      "net": "D-"
+    },
+    {
+      "ref": "J2",
+      "pad": "A8",
+      "xy_mm": [
+        102.64500000000001,
+        27.75
+      ],
+      "orientation_deg": 90.0,
+      "net": "A8"
+    },
+    {
+      "ref": "J2",
+      "pad": "A9",
+      "xy_mm": [
+        102.64500000000001,
+        26.599999999999994
+      ],
+      "orientation_deg": 90.0,
+      "net": "VBUS"
+    },
+    {
+      "ref": "J2",
+      "pad": "A12",
+      "xy_mm": [
+        102.64500000000001,
+        25.799999999999997
+      ],
+      "orientation_deg": 90.0,
+      "net": "GND"
+    },
+    {
+      "ref": "J2",
+      "pad": "B1",
+      "xy_mm": [
+        102.64500000000001,
+        25.799999999999997
+      ],
+      "orientation_deg": 90.0,
+      "net": "GND"
+    },
+    {
+      "ref": "J2",
+      "pad": "B4",
+      "xy_mm": [
+        102.64500000000001,
+        26.599999999999994
+      ],
+      "orientation_deg": 90.0,
+      "net": "VBUS"
+    },
+    {
+      "ref": "J2",
+      "pad": "B5",
+      "xy_mm": [
+        102.64500000000001,
+        27.25
+      ],
+      "orientation_deg": 90.0,
+      "net": "USB_CC2"
+    },
+    {
+      "ref": "J2",
+      "pad": "B6",
+      "xy_mm": [
+        102.64500000000001,
+        28.25
+      ],
+      "orientation_deg": 90.0,
+      "net": "D+"
+    },
+    {
+      "ref": "J2",
+      "pad": "B7",
+      "xy_mm": [
+        102.64500000000001,
+        29.75
+      ],
+      "orientation_deg": 90.0,
+      "net": "D-"
+    },
+    {
+      "ref": "J2",
+      "pad": "B8",
+      "xy_mm": [
+        102.64500000000001,
+        30.75
+      ],
+      "orientation_deg": 90.0,
+      "net": "B8"
+    },
+    {
+      "ref": "J2",
+      "pad": "B9",
+      "xy_mm": [
+        102.64500000000001,
+        31.400000000000006
+      ],
+      "orientation_deg": 90.0,
+      "net": "VBUS"
+    },
+    {
+      "ref": "J2",
+      "pad": "B12",
+      "xy_mm": [
+        102.64500000000001,
+        32.19999999999999
+      ],
+      "orientation_deg": 90.0,
+      "net": "GND"
+    },
+    {
+      "ref": "J2",
+      "pad": "SH",
+      "xy_mm": [
+        103.22,
+        33.31999999999999
+      ],
+      "orientation_deg": 90.0,
+      "net": "GND"
+    },
+    {
+      "ref": "J2",
+      "pad": "SH",
+      "xy_mm": [
+        107.4,
+        33.31999999999999
+      ],
+      "orientation_deg": 90.0,
+      "net": "GND"
+    },
+    {
+      "ref": "J2",
+      "pad": "SH",
+      "xy_mm": [
+        103.22,
+        24.680000000000007
+      ],
+      "orientation_deg": 90.0,
+      "net": "GND"
+    },
+    {
+      "ref": "J2",
+      "pad": "SH",
+      "xy_mm": [
+        107.4,
+        24.680000000000007
+      ],
+      "orientation_deg": 90.0,
+      "net": "GND"
+    },
+    {
+      "ref": "U11",
+      "pad": "1",
+      "xy_mm": [
+        100.40009900000001,
+        29.699960000000004
+      ],
+      "orientation_deg": 90.0,
+      "net": "D+"
+    },
+    {
+      "ref": "U11",
+      "pad": "2",
+      "xy_mm": [
+        100.40009900000001,
+        28.75
+      ],
+      "orientation_deg": 90.0,
+      "net": "GND"
+    },
+    {
+      "ref": "U11",
+      "pad": "3",
+      "xy_mm": [
+        100.40009900000001,
+        27.800039999999996
+      ],
+      "orientation_deg": 90.0,
+      "net": "D-"
+    },
+    {
+      "ref": "U11",
+      "pad": "4",
+      "xy_mm": [
+        97.799901,
+        27.800039999999996
+      ],
+      "orientation_deg": 90.0,
+      "net": "D-P"
+    },
+    {
+      "ref": "U11",
+      "pad": "5",
+      "xy_mm": [
+        97.799901,
+        28.75
+      ],
+      "orientation_deg": 90.0,
+      "net": "VBUS"
+    },
+    {
+      "ref": "U11",
+      "pad": "6",
+      "xy_mm": [
+        97.799901,
+        29.699960000000004
+      ],
+      "orientation_deg": 90.0,
+      "net": "D+P"
+    },
+    {
+      "ref": "R102",
+      "pad": "1",
+      "xy_mm": [
+        100.57499999999999,
+        31.5
+      ],
+      "orientation_deg": 180.0,
+      "net": "USB_CC1"
+    },
+    {
+      "ref": "R102",
+      "pad": "2",
+      "xy_mm": [
+        98.92500000000001,
+        31.5
+      ],
+      "orientation_deg": 180.0,
+      "net": "GND"
+    },
+    {
+      "ref": "R103",
+      "pad": "1",
+      "xy_mm": [
+        100.57499999999999,
+        26.0
+      ],
+      "orientation_deg": 180.0,
+      "net": "USB_CC2"
+    },
+    {
+      "ref": "R103",
+      "pad": "2",
+      "xy_mm": [
+        98.92500000000001,
+        26.0
+      ],
+      "orientation_deg": 180.0,
+      "net": "GND"
+    }
+  ],
+  "verified_utc": "2026-10-14T03:15:05.519167+00:00"
+}

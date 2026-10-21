@@ -1,0 +1,1715 @@
+{
+  "status": "First placement pass, unrouted",
+  "groups": [
+    {
+      "id": "ccd",
+      "label": "CCD interface",
+      "bounds_mm": [
+        9.9,
+        0.77,
+        30.250000000000004,
+        18.150000000000002
+      ],
+      "members": [
+        "Q7",
+        "Q16",
+        "U16",
+        "U17",
+        "U18",
+        "R77",
+        "R78",
+        "R79",
+        "R80",
+        "R81",
+        "R82",
+        "R83",
+        "R84",
+        "R85",
+        "R97",
+        "R98",
+        "R99",
+        "R100",
+        "R101",
+        "C50",
+        "C51",
+        "C52",
+        "C53",
+        "C54",
+        "C55"
+      ],
+      "anchors": {
+        "Q7": [
+          17.0,
+          9.25,
+          90
+        ],
+        "Q16": [
+          23.75,
+          9.5,
+          180
+        ],
+        "U16": [
+          22.0,
+          3.5,
+          180
+        ],
+        "U17": [
+          16.25,
+          3.5,
+          180
+        ],
+        "U18": [
+          27.25,
+          3.5,
+          180
+        ],
+        "C52": [
+          20.75,
+          7.0,
+          90
+        ]
+      }
+    },
+    {
+      "id": "pci",
+      "label": "PCI / J1850",
+      "bounds_mm": [
+        13.750000000000002,
+        18.700000000000003,
+        30.250000000000004,
+        28.6
+      ],
+      "members": [
+        "Q1",
+        "U9",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R18",
+        "R19",
+        "R20",
+        "R21",
+        "C11",
+        "C12"
+      ],
+      "anchors": {
+        "U9": [
+          16.3875,
+          23.1,
+          270
+        ],
+        "Q1": [
+          26.0,
+          23.75,
+          270
+        ],
+        "R19": [
+          22.75,
+          23.0,
+          270
+        ],
+        "C11": [
+          19.5,
+          23.0,
+          270
+        ],
+        "C12": [
+          17.0,
+          26.75,
+          0
+        ],
+        "R20": [
+          25.5,
+          27.25,
+          0
+        ],
+        "R4": [
+          15.75,
+          19.75,
+          0
+        ],
+        "R5": [
+          19.0,
+          19.75,
+          0
+        ],
+        "R6": [
+          21.0,
+          26.25,
+          180
+        ],
+        "R7": [
+          22.25,
+          19.75,
+          180
+        ],
+        "R18": [
+          25.75,
+          20.75,
+          0
+        ],
+        "R21": [
+          28.75,
+          25.5,
+          90
+        ]
+      }
+    },
+    {
+      "id": "sci-14-9",
+      "label": "SCI TX14 / TX9",
+      "bounds_mm": [
+        13.750000000000002,
+        28.05,
+        30.250000000000004,
+        36.85
+      ],
+      "members": [
+        "Q3",
+        "U14",
+        "R36",
+        "R37",
+        "R38",
+        "R39",
+        "R40",
+        "R41",
+        "C41"
+      ],
+      "anchors": {
+        "Q3": [
+          17.0,
+          32.75,
+          90
+        ],
+        "U14": [
+          24.75,
+          33.25,
+          90
+        ],
+        "R37": [
+          20.25,
+          33.25,
+          270
+        ],
+        "R40": [
+          27.5,
+          33.25,
+          270
+        ],
+        "C41": [
+          22.5,
+          32.5,
+          270
+        ],
+        "R36": [
+          15.25,
+          29.75,
+          0
+        ],
+        "R38": [
+          19.25,
+          29.75,
+          0
+        ],
+        "R41": [
+          22.5,
+          30.0,
+          180
+        ],
+        "R39": [
+          25.75,
+          30.0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "sci-6-12",
+      "label": "SCI TX6 / TX12 + RX bias",
+      "bounds_mm": [
+        13.750000000000002,
+        37.400000000000006,
+        48.95,
+        46.2
+      ],
+      "members": [
+        "Q2",
+        "U13",
+        "Q6",
+        "R29",
+        "R30",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R75",
+        "R76",
+        "C38"
+      ],
+      "anchors": {
+        "Q2": [
+          21.25,
+          40.25,
+          270
+        ],
+        "U13": [
+          25.4125,
+          40.5875,
+          0
+        ],
+        "Q6": [
+          34.25,
+          43.75,
+          0
+        ]
+      }
+    },
+    {
+      "id": "sci-rx",
+      "label": "SCI RX7 / RX15",
+      "bounds_mm": [
+        20.900000000000002,
+        46.75000000000001,
+        48.95,
+        54.230000000000004
+      ],
+      "members": [
+        "Q4",
+        "U15",
+        "R42",
+        "R43",
+        "R44",
+        "R45",
+        "R46",
+        "R47",
+        "C43"
+      ],
+      "anchors": {
+        "Q4": [
+          27.25,
+          49.5,
+          0
+        ],
+        "U15": [
+          35.3125,
+          49.9375,
+          0
+        ]
+      }
+    },
+    {
+      "id": "obd-protection",
+      "label": "OBD line protection",
+      "bounds_mm": [
+        7,
+        0.7,
+        12.3,
+        41.5
+      ],
+      "members": [
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "C25",
+        "C36",
+        "C37",
+        "C39",
+        "C40",
+        "C42",
+        "C44"
+      ],
+      "anchors": {
+        "D11": [
+          8.25,
+          15.0,
+          270
+        ],
+        "D12": [
+          10.75,
+          13.25,
+          90
+        ],
+        "D13": [
+          8.25,
+          20.0,
+          270
+        ],
+        "D14": [
+          10.75,
+          20.75,
+          270
+        ],
+        "C42": [
+          7.75,
+          35.75,
+          270
+        ],
+        "C44": [
+          7.75,
+          39.0,
+          270
+        ],
+        "C25": [
+          7.75,
+          10.75,
+          90
+        ],
+        "C40": [
+          9.0,
+          8.25,
+          180
+        ],
+        "C37": [
+          7.75,
+          24.25,
+          90
+        ],
+        "C36": [
+          7.75,
+          30.25,
+          270
+        ],
+        "C39": [
+          8.5,
+          27.75,
+          180
+        ]
+      }
+    },
+    {
+      "id": "vehicle-input",
+      "label": "Vehicle power input",
+      "bounds_mm": [
+        7.700000000000001,
+        29.700000000000003,
+        23.1,
+        54.230000000000004
+      ],
+      "members": [
+        "C1",
+        "D1",
+        "D2",
+        "JP1"
+      ],
+      "anchors": {
+        "C1": [
+          12.375,
+          49.225,
+          0
+        ],
+        "D1": [
+          13.5,
+          41.0,
+          0
+        ],
+        "D2": [
+          11.25,
+          34.75,
+          270
+        ],
+        "JP1": [
+          15.5,
+          36.25,
+          0
+        ]
+      }
+    },
+    {
+      "id": "power-5v",
+      "label": "5 V / 3.3 V supplies",
+      "bounds_mm": [
+        31.35,
+        0.77,
+        48.95,
+        24.200000000000003
+      ],
+      "members": [
+        "U2",
+        "U3",
+        "U4",
+        "L1",
+        "D4",
+        "D5",
+        "D6",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "C10",
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "anchors": {
+        "U2": [
+          34.27,
+          8.15,
+          0
+        ],
+        "L1": [
+          41.25,
+          7.25,
+          0
+        ],
+        "U3": [
+          39.75,
+          20.75,
+          0
+        ],
+        "U4": [
+          46.75,
+          19.25,
+          90
+        ]
+      }
+    },
+    {
+      "id": "power-vpp",
+      "label": "VPP boost supply",
+      "bounds_mm": [
+        49.50000000000001,
+        0.77,
+        64.9,
+        24.200000000000003
+      ],
+      "members": [
+        "U5",
+        "L2",
+        "L3",
+        "D7",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "R8",
+        "R9"
+      ],
+      "anchors": {
+        "U5": [
+          52.5,
+          8.5,
+          180
+        ],
+        "L2": [
+          59.25,
+          7.25,
+          180
+        ]
+      }
+    },
+    {
+      "id": "power-vbb",
+      "label": "VBB supply",
+      "bounds_mm": [
+        49.50000000000001,
+        25.3,
+        64.9,
+        45.650000000000006
+      ],
+      "members": [
+        "U6",
+        "L4",
+        "L5",
+        "D8",
+        "C17",
+        "C18",
+        "C19",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "anchors": {
+        "U6": [
+          52.95,
+          31.88125,
+          0
+        ],
+        "L4": [
+          59.5,
+          31.25,
+          0
+        ]
+      }
+    },
+    {
+      "id": "power-7v5",
+      "label": "7.5 V supply",
+      "bounds_mm": [
+        81.4,
+        0.77,
+        99.275,
+        22.330000000000002
+      ],
+      "members": [
+        "U7",
+        "U8",
+        "L6",
+        "D9",
+        "D10",
+        "C20",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17"
+      ],
+      "anchors": {
+        "U7": [
+          87.5,
+          12.5,
+          0
+        ],
+        "L6": [
+          91.905,
+          5.96,
+          0
+        ],
+        "U8": [
+          93.75,
+          14.0,
+          180
+        ]
+      }
+    },
+    {
+      "id": "program-6",
+      "label": "SCI TX6 VBB / VPP drivers",
+      "bounds_mm": [
+        31.900000000000002,
+        24.750000000000004,
+        48.95,
+        31.900000000000002
+      ],
+      "members": [
+        "Q8",
+        "Q12",
+        "D15",
+        "D19",
+        "R55",
+        "R56",
+        "R63",
+        "R64",
+        "R65"
+      ],
+      "anchors": {
+        "Q8": [
+          33.75,
+          28.75,
+          90
+        ],
+        "D15": [
+          37.0,
+          29.25,
+          90
+        ],
+        "Q12": [
+          40.7,
+          28.875,
+          90
+        ],
+        "D19": [
+          43.75,
+          29.25,
+          90
+        ],
+        "R65": [
+          46.0,
+          28.5,
+          90
+        ],
+        "R55": [
+          33.75,
+          25.75,
+          0
+        ],
+        "R56": [
+          37.0,
+          25.75,
+          180
+        ],
+        "R63": [
+          40.5,
+          25.75,
+          0
+        ],
+        "R64": [
+          46.75,
+          31.0,
+          180
+        ]
+      }
+    },
+    {
+      "id": "program-9",
+      "label": "SCI TX9 VBB / VPP drivers",
+      "bounds_mm": [
+        31.900000000000002,
+        31.900000000000002,
+        48.95,
+        39.050000000000004
+      ],
+      "members": [
+        "Q9",
+        "Q13",
+        "D16",
+        "D20",
+        "R57",
+        "R58",
+        "R66",
+        "R67",
+        "R68"
+      ],
+      "anchors": {
+        "Q9": [
+          33.75,
+          35.75,
+          90
+        ],
+        "D16": [
+          37.0,
+          36.5,
+          90
+        ],
+        "Q13": [
+          40.7,
+          36.025,
+          90
+        ],
+        "D20": [
+          43.75,
+          36.5,
+          90
+        ],
+        "R68": [
+          46.0,
+          35.75,
+          90
+        ],
+        "R57": [
+          33.55,
+          32.725,
+          0
+        ],
+        "R58": [
+          36.75,
+          32.75,
+          180
+        ],
+        "R66": [
+          40.5,
+          33.0,
+          0
+        ],
+        "R67": [
+          46.75,
+          38.25,
+          180
+        ]
+      }
+    },
+    {
+      "id": "program-12",
+      "label": "SCI TX12 VBB / VPP drivers",
+      "bounds_mm": [
+        49.50000000000001,
+        46.75000000000001,
+        66.275,
+        54.230000000000004
+      ],
+      "members": [
+        "Q10",
+        "Q14",
+        "D17",
+        "D21",
+        "R59",
+        "R60",
+        "R69",
+        "R70",
+        "R71"
+      ],
+      "anchors": {
+        "Q10": [
+          51.25,
+          50.75,
+          90
+        ],
+        "D17": [
+          54.5,
+          51.25,
+          90
+        ],
+        "Q14": [
+          58.25,
+          50.75,
+          90
+        ],
+        "D21": [
+          61.5,
+          51.25,
+          90
+        ],
+        "R71": [
+          63.75,
+          51.0,
+          90
+        ],
+        "R59": [
+          51.25,
+          47.75,
+          0
+        ],
+        "R60": [
+          54.5,
+          47.75,
+          180
+        ],
+        "R69": [
+          58.25,
+          47.75,
+          0
+        ],
+        "R70": [
+          64.5,
+          53.5,
+          180
+        ]
+      }
+    },
+    {
+      "id": "program-14",
+      "label": "SCI TX14 VBB / VPP drivers",
+      "bounds_mm": [
+        66.55000000000001,
+        46.75000000000001,
+        83.60000000000001,
+        54.230000000000004
+      ],
+      "members": [
+        "Q11",
+        "Q15",
+        "D18",
+        "D22",
+        "R61",
+        "R62",
+        "R72",
+        "R73",
+        "R74"
+      ],
+      "anchors": {
+        "Q11": [
+          68.5,
+          50.75,
+          90
+        ],
+        "D18": [
+          71.75,
+          51.25,
+          90
+        ],
+        "Q15": [
+          75.25,
+          50.25,
+          0
+        ],
+        "D22": [
+          78.75,
+          51.25,
+          90
+        ],
+        "R74": [
+          78.25,
+          47.5,
+          0
+        ],
+        "R61": [
+          68.25,
+          47.75,
+          0
+        ],
+        "R62": [
+          71.5,
+          47.75,
+          180
+        ],
+        "R72": [
+          75.0,
+          47.5,
+          0
+        ],
+        "R73": [
+          75.0,
+          53.0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "mcu",
+      "label": "ESP32 + RF",
+      "bounds_mm": [
+        65.45,
+        7.15,
+        84.15,
+        28.05
+      ],
+      "members": [
+        "U10",
+        "AE1",
+        "R22",
+        "R23",
+        "R24",
+        "R48",
+        "C26",
+        "C27",
+        "C28",
+        "C29",
+        "C30",
+        "C31",
+        "C32",
+        "C33",
+        "C45",
+        "C46"
+      ],
+      "anchors": {
+        "U10": [
+          73.6875,
+          15.3625,
+          0
+        ],
+        "AE1": [
+          72.6,
+          1.65,
+          0
+        ],
+        "R22": [
+          71.0,
+          10.25,
+          180
+        ]
+      }
+    },
+    {
+      "id": "adc",
+      "label": "Voltage monitoring",
+      "bounds_mm": [
+        66.0,
+        23.1,
+        83.60000000000001,
+        31.900000000000002
+      ],
+      "members": [
+        "R49",
+        "R50",
+        "R51",
+        "R52",
+        "R53",
+        "R54",
+        "C47",
+        "C48",
+        "C49",
+        "D27",
+        "D28",
+        "D29"
+      ],
+      "anchors": {}
+    },
+    {
+      "id": "control",
+      "label": "I/O expander + I2C",
+      "bounds_mm": [
+        65.45,
+        32.45,
+        73.15,
+        47.300000000000004
+      ],
+      "members": [
+        "U19",
+        "J3",
+        "R86",
+        "R87",
+        "R88",
+        "C56",
+        "C57"
+      ],
+      "anchors": {
+        "U19": [
+          68.0,
+          38.25,
+          0
+        ]
+      }
+    },
+    {
+      "id": "usb",
+      "label": "USB + reset / boot",
+      "bounds_mm": [
+        88,
+        0.7,
+        109.3,
+        54.3
+      ],
+      "members": [
+        "J2",
+        "U12",
+        "U11",
+        "Q5",
+        "U1",
+        "JP2",
+        "R25",
+        "R26",
+        "R27",
+        "R28",
+        "C2",
+        "C3",
+        "C34",
+        "C35",
+        "D3",
+        "SW1",
+        "SW2",
+        "R102",
+        "R103"
+      ],
+      "anchors": {
+        "U11": [
+          99.1,
+          28.75,
+          90
+        ],
+        "SW1": [
+          97,
+          45,
+          0
+        ],
+        "SW2": [
+          93,
+          51,
+          0
+        ],
+        "C2": [
+          99.5,
+          21.25,
+          270
+        ],
+        "C3": [
+          97.0,
+          18.0,
+          270
+        ],
+        "R26": [
+          105.75,
+          9.75,
+          0
+        ],
+        "R27": [
+          108.25,
+          9.0,
+          90
+        ],
+        "R102": [
+          99.75,
+          31.5,
+          180
+        ],
+        "R103": [
+          99.75,
+          26.0,
+          180
+        ]
+      }
+    },
+    {
+      "id": "leds",
+      "label": "Status LED drivers",
+      "bounds_mm": [
+        80.63000000000001,
+        22.0,
+        91.08,
+        48.95
+      ],
+      "members": [
+        "D23",
+        "D24",
+        "D25",
+        "D26",
+        "Q17",
+        "Q18",
+        "Q19",
+        "Q20",
+        "R89",
+        "R90",
+        "R91",
+        "R92",
+        "R93",
+        "R94",
+        "R95",
+        "R96"
+      ],
+      "anchors": {
+        "Q17": [
+          82.5,
+          29.0,
+          270
+        ],
+        "Q18": [
+          83.0,
+          45.0,
+          180
+        ],
+        "Q19": [
+          82.5,
+          25.25,
+          270
+        ],
+        "Q20": [
+          86.25,
+          28.75,
+          180
+        ],
+        "R89": [
+          88.5,
+          32.5,
+          180
+        ],
+        "R91": [
+          88.5,
+          35.5,
+          180
+        ],
+        "R93": [
+          88.5,
+          38.5,
+          180
+        ],
+        "R95": [
+          88.5,
+          41.5,
+          180
+        ],
+        "R90": [
+          86.0,
+          26.0,
+          0
+        ],
+        "R92": [
+          86.5,
+          46.0,
+          0
+        ],
+        "R94": [
+          86.0,
+          24.25,
+          0
+        ],
+        "R96": [
+          89.0,
+          28.75,
+          90
+        ]
+      }
+    },
+    {
+      "id": "obd",
+      "label": "OBD connector",
+      "bounds_mm": [
+        0.2,
+        8.5,
+        6.7,
+        41.5
+      ],
+      "members": [
+        "J1"
+      ],
+      "anchors": {}
+    }
+  ],
+  "links": [
+    {
+      "part": "C29",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "1",
+      "max_distance_mm": 3,
+      "kind": "MCU bypass"
+    },
+    {
+      "part": "C30",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "3",
+      "max_distance_mm": 3,
+      "kind": "MCU bypass"
+    },
+    {
+      "part": "C31",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "19",
+      "max_distance_mm": 3,
+      "kind": "MCU bypass"
+    },
+    {
+      "part": "C32",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "37",
+      "max_distance_mm": 3,
+      "kind": "MCU bypass"
+    },
+    {
+      "part": "C33",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "26",
+      "max_distance_mm": 3,
+      "kind": "MCU internal regulator bypass"
+    },
+    {
+      "part": "C34",
+      "pad": "1",
+      "anchor": "U12",
+      "anchor_pad": "6",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass"
+    },
+    {
+      "part": "C57",
+      "pad": "1",
+      "anchor": "U19",
+      "anchor_pad": "21",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass"
+    },
+    {
+      "part": "C38",
+      "pad": "1",
+      "anchor": "U13",
+      "anchor_pad": "8",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass"
+    },
+    {
+      "part": "C41",
+      "pad": "1",
+      "anchor": "U14",
+      "anchor_pad": "8",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass"
+    },
+    {
+      "part": "C43",
+      "pad": "1",
+      "anchor": "U15",
+      "anchor_pad": "8",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass"
+    },
+    {
+      "part": "C52",
+      "pad": "2",
+      "anchor": "U16",
+      "anchor_pad": "5",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass"
+    },
+    {
+      "part": "C54",
+      "pad": "1",
+      "anchor": "U17",
+      "anchor_pad": "5",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass"
+    },
+    {
+      "part": "C55",
+      "pad": "1",
+      "anchor": "U18",
+      "anchor_pad": "5",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass"
+    },
+    {
+      "part": "C11",
+      "pad": "2",
+      "anchor": "U9",
+      "anchor_pad": "5",
+      "max_distance_mm": 3.5,
+      "kind": "IC bypass"
+    },
+    {
+      "part": "C4",
+      "pad": "1",
+      "anchor": "U2",
+      "anchor_pad": "5",
+      "max_distance_mm": 4.5,
+      "kind": "Buck input capacitor"
+    },
+    {
+      "part": "C20",
+      "pad": "1",
+      "anchor": "U7",
+      "anchor_pad": "5",
+      "max_distance_mm": 4.5,
+      "kind": "Buck input capacitor"
+    },
+    {
+      "part": "C5",
+      "pad": "1",
+      "anchor": "U2",
+      "anchor_pad": "1",
+      "max_distance_mm": 4,
+      "kind": "Bootstrap capacitor"
+    },
+    {
+      "part": "C17",
+      "pad": "1",
+      "anchor": "U6",
+      "anchor_pad": "1",
+      "max_distance_mm": 4,
+      "kind": "Bootstrap capacitor"
+    },
+    {
+      "part": "C21",
+      "pad": "1",
+      "anchor": "U7",
+      "anchor_pad": "1",
+      "max_distance_mm": 4,
+      "kind": "Bootstrap capacitor"
+    },
+    {
+      "part": "D4",
+      "pad": "1",
+      "anchor": "U2",
+      "anchor_pad": "6",
+      "max_distance_mm": 5,
+      "kind": "Buck catch diode"
+    },
+    {
+      "part": "D8",
+      "pad": "1",
+      "anchor": "U6",
+      "anchor_pad": "6",
+      "max_distance_mm": 5,
+      "kind": "Buck catch diode"
+    },
+    {
+      "part": "D9",
+      "pad": "1",
+      "anchor": "U7",
+      "anchor_pad": "6",
+      "max_distance_mm": 5,
+      "kind": "Buck catch diode"
+    },
+    {
+      "part": "L1",
+      "pad": "1",
+      "anchor": "U2",
+      "anchor_pad": "6",
+      "max_distance_mm": 6,
+      "kind": "Switch node to inductor"
+    },
+    {
+      "part": "L4",
+      "pad": "1",
+      "anchor": "U6",
+      "anchor_pad": "6",
+      "max_distance_mm": 6,
+      "kind": "Switch node to inductor"
+    },
+    {
+      "part": "L6",
+      "pad": "1",
+      "anchor": "U7",
+      "anchor_pad": "6",
+      "max_distance_mm": 6,
+      "kind": "Switch node to inductor"
+    },
+    {
+      "part": "L2",
+      "pad": "2",
+      "anchor": "U5",
+      "anchor_pad": "1",
+      "max_distance_mm": 6,
+      "kind": "Switch node to inductor"
+    },
+    {
+      "part": "D11",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "2",
+      "max_distance_mm": 11,
+      "kind": "OBD protection"
+    },
+    {
+      "part": "D12",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "2",
+      "max_distance_mm": 11,
+      "kind": "OBD protection"
+    },
+    {
+      "part": "D13",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "3",
+      "max_distance_mm": 11,
+      "kind": "OBD protection"
+    },
+    {
+      "part": "D14",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "11",
+      "max_distance_mm": 11,
+      "kind": "OBD protection"
+    },
+    {
+      "part": "C25",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "2",
+      "max_distance_mm": 11,
+      "kind": "OBD protection"
+    },
+    {
+      "part": "C36",
+      "pad": "2",
+      "anchor": "J1",
+      "anchor_pad": "6",
+      "max_distance_mm": 11,
+      "kind": "OBD protection"
+    },
+    {
+      "part": "C37",
+      "pad": "2",
+      "anchor": "J1",
+      "anchor_pad": "12",
+      "max_distance_mm": 11,
+      "kind": "OBD protection"
+    },
+    {
+      "part": "C39",
+      "pad": "2",
+      "anchor": "J1",
+      "anchor_pad": "14",
+      "max_distance_mm": 11,
+      "kind": "OBD protection"
+    },
+    {
+      "part": "C40",
+      "pad": "2",
+      "anchor": "J1",
+      "anchor_pad": "9",
+      "max_distance_mm": 11,
+      "kind": "OBD protection"
+    },
+    {
+      "part": "C42",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "7",
+      "max_distance_mm": 11,
+      "kind": "OBD protection"
+    },
+    {
+      "part": "C44",
+      "pad": "1",
+      "anchor": "J1",
+      "anchor_pad": "15",
+      "max_distance_mm": 11,
+      "kind": "OBD protection"
+    },
+    {
+      "part": "R102",
+      "pad": "1",
+      "anchor": "J2",
+      "anchor_pad": "A5",
+      "max_distance_mm": 2.5,
+      "kind": "USB-C CC Rd termination"
+    },
+    {
+      "part": "R103",
+      "pad": "1",
+      "anchor": "J2",
+      "anchor_pad": "B5",
+      "max_distance_mm": 2.5,
+      "kind": "USB-C CC Rd termination"
+    },
+    {
+      "part": "U11",
+      "pad": "1",
+      "anchor": "J2",
+      "anchor_pad": "A6",
+      "max_distance_mm": 2.5,
+      "kind": "USB-C data-line ESD proximity"
+    },
+    {
+      "part": "U11",
+      "pad": "3",
+      "anchor": "J2",
+      "anchor_pad": "A7",
+      "max_distance_mm": 2.5,
+      "kind": "USB-C data-line ESD proximity"
+    },
+    {
+      "part": "R8",
+      "pad": "2",
+      "anchor": "U5",
+      "anchor_pad": "3",
+      "kind": "Regulator feedback",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "R9",
+      "pad": "1",
+      "anchor": "U5",
+      "anchor_pad": "3",
+      "kind": "Regulator feedback",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "R14",
+      "pad": "2",
+      "anchor": "U7",
+      "anchor_pad": "3",
+      "kind": "Regulator feedback",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "R15",
+      "pad": "1",
+      "anchor": "U7",
+      "anchor_pad": "3",
+      "kind": "Regulator feedback",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "C5",
+      "pad": "2",
+      "anchor": "U2",
+      "anchor_pad": "6",
+      "kind": "Bootstrap switch return",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "C21",
+      "pad": "2",
+      "anchor": "U7",
+      "anchor_pad": "6",
+      "kind": "Bootstrap switch return",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "C6",
+      "pad": "1",
+      "anchor": "L1",
+      "anchor_pad": "2",
+      "kind": "Buck output capacitor",
+      "max_distance_mm": 5.1
+    },
+    {
+      "part": "C7",
+      "pad": "1",
+      "anchor": "U3",
+      "anchor_pad": "6",
+      "kind": "LDO input capacitor",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "C8",
+      "pad": "1",
+      "anchor": "U3",
+      "anchor_pad": "1",
+      "kind": "LDO output capacitor",
+      "max_distance_mm": 4.1
+    },
+    {
+      "part": "C9",
+      "pad": "1",
+      "anchor": "U4",
+      "anchor_pad": "6",
+      "kind": "LDO input capacitor",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "C10",
+      "pad": "1",
+      "anchor": "U4",
+      "anchor_pad": "1",
+      "kind": "LDO output capacitor",
+      "max_distance_mm": 4.1
+    },
+    {
+      "part": "D7",
+      "pad": "2",
+      "anchor": "U5",
+      "anchor_pad": "1",
+      "kind": "Boost rectifier to switch",
+      "max_distance_mm": 4.1
+    },
+    {
+      "part": "C14",
+      "pad": "1",
+      "anchor": "D7",
+      "anchor_pad": "1",
+      "kind": "Boost output capacitor",
+      "max_distance_mm": 4.1
+    },
+    {
+      "part": "C19",
+      "pad": "1",
+      "anchor": "L5",
+      "anchor_pad": "2",
+      "kind": "Filtered output capacitor",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "C22",
+      "pad": "1",
+      "anchor": "L6",
+      "anchor_pad": "2",
+      "kind": "Buck output capacitor",
+      "max_distance_mm": 5.1
+    },
+    {
+      "part": "R16",
+      "pad": "2",
+      "anchor": "U8",
+      "anchor_pad": "2",
+      "kind": "LDO feedback",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "R17",
+      "pad": "1",
+      "anchor": "U8",
+      "anchor_pad": "2",
+      "kind": "LDO feedback",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "C2",
+      "pad": "1",
+      "anchor": "U1",
+      "anchor_pad": "2",
+      "kind": "USB switch input capacitor",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "C3",
+      "pad": "1",
+      "anchor": "U1",
+      "anchor_pad": "4",
+      "kind": "USB switch output capacitor",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "C35",
+      "pad": "1",
+      "anchor": "U12",
+      "anchor_pad": "6",
+      "kind": "USB bridge bulk bypass",
+      "max_distance_mm": 5.1
+    },
+    {
+      "part": "C56",
+      "pad": "1",
+      "anchor": "U19",
+      "anchor_pad": "21",
+      "kind": "I/O expander bulk bypass",
+      "max_distance_mm": 5.1
+    },
+    {
+      "part": "R22",
+      "pad": "2",
+      "anchor": "U10",
+      "anchor_pad": "2",
+      "kind": "RF matching proximity",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "R24",
+      "pad": "1",
+      "anchor": "U10",
+      "anchor_pad": "2",
+      "kind": "RF matching proximity",
+      "max_distance_mm": 3.6
+    },
+    {
+      "part": "R23",
+      "pad": "1",
+      "anchor": "R22",
+      "anchor_pad": "1",
+      "kind": "RF matching proximity",
+      "max_distance_mm": 3.1
+    },
+    {
+      "part": "R24",
+      "pad": "1",
+      "anchor": "R22",
+      "anchor_pad": "2",
+      "kind": "RF matching proximity",
+      "max_distance_mm": 3.1
+    },
+    {
+      "part": "C4",
+      "pad": "2",
+      "anchor": "U2",
+      "anchor_pad": "2",
+      "kind": "Local power ground return",
+      "max_distance_mm": 5.1
+    },
+    {
+      "part": "D8",
+      "pad": "2",
+      "anchor": "U6",
+      "anchor_pad": "2",
+      "kind": "Local power ground return",
+      "max_distance_mm": 5.1
+    },
+    {
+      "part": "C2",
+      "pad": "2",
+      "anchor": "U1",
+      "anchor_pad": "1",
+      "kind": "Local power ground return",
+      "max_distance_mm": 5.1
+    },
+    {
+      "part": "C3",
+      "pad": "2",
+      "anchor": "U1",
+      "anchor_pad": "1",
+      "kind": "Local power ground return",
+      "max_distance_mm": 5.1
+    }
+  ],
+  "placement_grid_mm": 0.25,
+  "courtyard_gap_mm": 0.15,
+  "rf_keepout_mm": [
+    66.1,
+    0,
+    79.1,
+    6
+  ],
+  "four_layer_roles": {
+    "F.Cu": "Components, critical signals and local power loops",
+    "In1.Cu": "GND reference plane; no signal routing",
+    "In2.Cu": "Power distribution; reserve GND beneath RF feed",
+    "B.Cu": "Remaining signal routing"
+  },
+  "stackup_status": "Provisional 1.6 mm; dielectric dimensions and impedance need fabrication stackup confirmation",
+  "expanded_inter_cluster_gap_target_mm": 0.3,
+  "placement_pass": "reference/placement-pass-1-candidate.json",
+  "placement_region_overrides": {
+    "C16": "power-vbb"
+  }
+}

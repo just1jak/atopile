@@ -1,0 +1,142 @@
+{
+  "revision": "V240-USB-C-OBD-SD-A",
+  "project": "ChryslerScanner_V240_SD",
+  "integration_manifest_sha256": "e579decad3650faf3f47111c07f53e449433200ac1e215d2e7af1219bc491f3b",
+  "review_scope": "Read-only circuit/architecture review against original reference netlist, installed KiCad libraries, and primary manufacturer documentation",
+  "firmware_status": "deferred_by_user",
+  "embedded_build_performed": false,
+  "hardware_flashed": false,
+  "hardware_bench_tested": false,
+  "architecture": {
+    "single_main_pcb": true,
+    "mcu": "U10 ESP32-PICO-V3-02",
+    "second_mcu": false,
+    "ble_hop": false,
+    "xiao": false,
+    "new_parts": 18,
+    "new_connections": [
+      {
+        "package_pad": "38",
+        "gpio": 19,
+        "net": "MCU_SD_SCK",
+        "function": "SPI clock",
+        "original_net": null,
+        "original_no_connect": true
+      },
+      {
+        "package_pad": "27",
+        "gpio": 20,
+        "net": "MCU_SD_MOSI",
+        "function": "SPI MOSI; ESP32-PICO-V3 package supported by IDF 4.4.7+",
+        "original_net": null,
+        "original_no_connect": true
+      },
+      {
+        "package_pad": "5",
+        "gpio": 36,
+        "net": "SD_MISO",
+        "function": "SPI MISO, input-only GPIO",
+        "original_net": null,
+        "original_no_connect": true
+      },
+      {
+        "package_pad": "21",
+        "gpio": 15,
+        "net": "MCU_SD_CS",
+        "function": "SPI CS active low; pullup preserves high strap",
+        "original_net": null,
+        "original_no_connect": true
+      },
+      {
+        "package_pad": "6",
+        "gpio": 37,
+        "net": "LOG_BUTTON",
+        "function": "Active-low log/stop button, input-only GPIO",
+        "original_net": null,
+        "original_no_connect": true
+      },
+      {
+        "package_pad": "7",
+        "gpio": 38,
+        "net": "SD_DETECT",
+        "function": "Active-low card-detect, input-only GPIO",
+        "original_net": null,
+        "original_no_connect": true
+      }
+    ],
+    "status_indicator": "Existing ACT_LED, GPIO13/U10 pad20; unchanged circuit",
+    "gpio20_support": "Verified Espressif PICO pin table and GPIO mux entries in ESP-IDF v4.4.7 and v5.5.1; not a generic module pinout",
+    "unused_bootstrap_pins_unchanged": [
+      0,
+      2,
+      12
+    ]
+  },
+  "checks": {
+    "six_new_mcu_pads_originally_no_connect": true,
+    "all_new_references_unique_and_absent_from_original": true,
+    "microSD_pad_ids_match_installed_footprint": true,
+    "ldo_input_ground_output_and_tab_map_correct": true,
+    "sd_cmd_and_dat0_to_dat3_have_10k_pullups": true,
+    "input_only_gpio_have_external_pullups": true,
+    "c61_6SVPC100M_5mm_x_5_9mm_matches_footprint": true,
+    "source_original_modified_by_review": false
+  },
+  "power": {
+    "input_net": "+5V",
+    "output_net": "SD_3V3",
+    "part": "MCP1825S-3302E/DB",
+    "regulator_rated_output_ma": 500,
+    "initial_sd_continuous_design_budget_ma": 300,
+    "nominal_input_v": 5.0,
+    "nominal_output_v": 3.3,
+    "calculated_ldo_loss_at_300ma_w": 0.51,
+    "calculated_ldo_loss_at_500ma_w": 0.85,
+    "upstream_vehicle_supply_class_ma": 1000,
+    "additional_spare_capacity_proven": false,
+    "usb_source_current_proven": false,
+    "rail_sequencing_enforced": false,
+    "hold_up_supported": false,
+    "rtc_present": false,
+    "selected_order_code_automotive_qualification_established": false
+  },
+  "resolved_findings": [
+    {
+      "id": "SD_PULLUPS",
+      "original": "R107 and R109 were 47 k\u03a9 while Espressif recommends 10 k\u03a9",
+      "resolution": "Manifest updated R107/R109 to 10 k\u03a9, MPN RC0603FR-0710KL; all CMD/DAT0\u2013DAT3 card-side pullups now 10 k\u03a9"
+    }
+  ],
+  "hard_circuit_blockers_identified": [],
+  "remaining_gates": [
+    "Native schematic/PCB netlist parity, original-interface preservation and DRC/routing verification by integration owner",
+    "Measure selected card initialization/write peaks and main 5 V total load under scanner use",
+    "Verify LDO copper/temperature at 0.51 W  designpoint and upstream U2/U3 thermals",
+    "Verify USB source/cable/protection/diode headroom",
+    "Validate startup/reset with card installed and all relevant supply ramps",
+    "Obtain or identify compatible scanner firmware source before direct capture/storage port",
+    "Implement and test actual SD stop/flush/error/power-loss behavior before treating ACT_LED as safe-stop indicator",
+    "Verify selected metric definitions on actual early-2004 Cummins automatic vehicle; raw capture retained for unsupported/invalid messages"
+  ],
+  "firmware_handoff": {
+    "capture_source": "Existing MCU bus receive pipeline, not BLE client notifications",
+    "target": "Raw frames plus explicitly selected values",
+    "vehicle": "Early-2004 Cummins automatic; decoder compatibility unverified",
+    "standalone_xiao_draft_drop_in": false,
+    "upstream_source_evidence": "Current inspected public PlatformIO directory contains ESP32 binaries/CMakeLists; legacy source/history exists. This is not a claim that compatible current V2 source is available or impossible to obtain.",
+    "default_vehicle_transmit_added": false
+  },
+  "sources": [
+    "https://documentation.espressif.com/esp32-pico_series_datasheet_en.pdf",
+    "https://raw.githubusercontent.com/espressif/esp-idf/v4.4.7/components/soc/esp32/gpio_periph.c",
+    "https://raw.githubusercontent.com/espressif/esp-idf/v5.5.1/components/soc/esp32/gpio_periph.c",
+    "https://www.hirose.com/en/product/p/CL0609-0031-0-00",
+    "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP1825-Family-Data-Sheet-DS20002056.pdf",
+    "https://www.ti.com/product/TLV767",
+    "https://www.ti.com/product/LMR14010A",
+    "https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/sd_pullup_requirements.html",
+    "https://industrial.panasonic.com/cdbs/www-data/pdf/AAB8000/AAB8000COL88.pdf",
+    "https://github.com/laszlodaniel/ChryslerScanner/tree/master/PlatformIO/ChryslerScanner"
+  ],
+  "reference_netlist_sha256": "413c741a9b1a2ec5bf89b9e212ddf13fc4e38899c238599126adcd31803744d2"
+}

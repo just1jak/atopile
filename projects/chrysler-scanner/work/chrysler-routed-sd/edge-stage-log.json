@@ -1,0 +1,19 @@
+{
+  "input_sha256": "b260a0ba4146e57d98317f00db63c77b64d65c32e3895dced6286c34db5a5aad",
+  "output_sha256": "a9055b5a2b889302f6aec2d59ab1ae709a3c11a10355d3c1f53af4f7f02c3d21",
+  "edge_copper_objects_moved": [
+    "876e23d7-30d0-46b3-b1d7-2af715bbcc7f",
+    "dcdef2f5-6034-443e-8dc6-04433f897bef",
+    "108438e9-b4ba-4cf2-88f9-0744d321cffb",
+    "14352a98-4d6b-4bec-afe2-ad2b18300423"
+  ],
+  "redundant_stubs_removed": [
+    "72884e2e-076b-4b0b-a6d1-2e82bf439100",
+    "a0cbd09c-9a0a-45b8-b2b5-b70e9335d6a3",
+    "851634f7-c997-43fc-bb57-93438bbc730b"
+  ],
+  "uncapped_airwire_count_unchanged": 50,
+  "requires_fresh_native_drc": true
+}
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.

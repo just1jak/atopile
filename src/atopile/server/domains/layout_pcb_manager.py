@@ -288,6 +288,7 @@ class PcbManager:
         self._undo_stack: list[Action] = []
         self._redo_stack: list[Action] = []
         self._render_model_cache: RenderModel | None = None
+        self._source_bytes: bytes | None = None
 
     @property
     def pcb(self) -> kicad.pcb.KicadPcb:
@@ -296,14 +297,19 @@ class PcbManager:
 
     def load(self, path: Path) -> None:
         resolved = path.resolve()
-        self.load_text(resolved.read_text(), path=resolved)
+        self.load_text(resolved.read_bytes().decode("utf-8"), path=resolved)
 
     def load_text(self, text: str, *, path: Path | None = None) -> None:
         resolved_path = path.resolve() if path is not None else None
         same_context = resolved_path is not None and resolved_path == self._path
+        source_bytes = text.encode("utf-8")
+        source_changed = (
+            self._source_bytes is not None and source_bytes != self._source_bytes
+        )
         self._path = resolved_path
         self._pcb_file = kicad.loads(kicad.pcb.PcbFile, text)
-        if not same_context:
+        self._source_bytes = source_bytes
+        if not same_context or source_changed:
             self._undo_stack.clear()
             self._redo_stack.clear()
         self._render_model_cache = None
@@ -311,7 +317,13 @@ class PcbManager:
     # --- Action execution ---
 
     def execute_action(self, action: Action) -> None:
-        action.execute(self.pcb)
+        snapshot = kicad.dumps(self._pcb_file)
+        try:
+            action.execute(self.pcb)
+        except BaseException:
+            self._pcb_file = kicad.loads(kicad.pcb.PcbFile, snapshot)
+            self._render_model_cache = None
+            raise
         self._undo_stack.append(action)
         self._redo_stack.clear()
         self._render_model_cache = None
@@ -319,8 +331,15 @@ class PcbManager:
     def undo(self) -> bool:
         if not self._undo_stack:
             return False
-        action = self._undo_stack.pop()
-        action.undo(self.pcb)
+        action = self._undo_stack[-1]
+        snapshot = kicad.dumps(self._pcb_file)
+        try:
+            action.undo(self.pcb)
+        except BaseException:
+            self._pcb_file = kicad.loads(kicad.pcb.PcbFile, snapshot)
+            self._render_model_cache = None
+            raise
+        self._undo_stack.pop()
         self._redo_stack.append(action)
         self._render_model_cache = None
         return True
@@ -328,8 +347,15 @@ class PcbManager:
     def redo(self) -> bool:
         if not self._redo_stack:
             return False
-        action = self._redo_stack.pop()
-        action.execute(self.pcb)
+        action = self._redo_stack[-1]
+        snapshot = kicad.dumps(self._pcb_file)
+        try:
+            action.execute(self.pcb)
+        except BaseException:
+            self._pcb_file = kicad.loads(kicad.pcb.PcbFile, snapshot)
+            self._render_model_cache = None
+            raise
+        self._redo_stack.pop()
         self._undo_stack.append(action)
         self._render_model_cache = None
         return True
@@ -434,8 +460,24 @@ class PcbManager:
         self.dispatch_action(FlipCommand(command="flip", uuids=[uuid]))
 
     def save(self) -> None:
+        from atopile.model.pcb_transaction import commit_pcb_bytes
+
         assert self._path is not None and self._pcb_file is not None
-        kicad.dumps(self._pcb_file, self._path)
+        assert self._source_bytes is not None
+        try:
+            updated = kicad.dumps(self._pcb_file)
+            commit_pcb_bytes(self._path, self._source_bytes, updated)
+        except BaseException:
+            # A stale editor or failed save must not leave unsaved mutations to
+            # leak into a later request. Reload the actual board, never restore
+            # bytes over an external edit. History no longer describes that file.
+            try:
+                self.load(self._path)
+            finally:
+                self._undo_stack.clear()
+                self._redo_stack.clear()
+            raise
+        self._source_bytes = updated.encode("utf-8")
 
     # --- Extraction ---
 

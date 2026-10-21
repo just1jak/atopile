@@ -1,0 +1,110 @@
+{
+  "scope": "Lossless verified gzip archive of superseded temporary boards; current source seeds, approved zones, physical baseline, latest ground/prototype/strong-route states untouched",
+  "boards": [
+    {
+      "file": "work/chrysler-routed-sd/route-pass-1/seed.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/route-pass-1/seed.kicad_pcb.gz",
+      "original_bytes": 1216074,
+      "gzip_bytes": 202220,
+      "sha256_uncompressed": "3a804e1e971d12ac0589e108d061613e86a46a04a37f2ea78f07d41a69296092"
+    },
+    {
+      "file": "work/chrysler-routed-sd/route-pass-2/seed.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/route-pass-2/seed.kicad_pcb.gz",
+      "original_bytes": 1226844,
+      "gzip_bytes": 204543,
+      "sha256_uncompressed": "305c25c4343da4b42a94263ae38396ea80f88e0707c983143691ad1652f639e6"
+    },
+    {
+      "file": "work/chrysler-routed-sd/route-pass-4/seed.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/route-pass-4/seed.kicad_pcb.gz",
+      "original_bytes": 1228390,
+      "gzip_bytes": 204892,
+      "sha256_uncompressed": "885d634678ffe7d6f8eeff15715fc6a4433b2a22a81bfe3fc86fbc6eb20c6f31"
+    },
+    {
+      "file": "work/chrysler-routed-sd/alternate4-native/ChryslerScanner_V240_SD.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/alternate4-native/ChryslerScanner_V240_SD.kicad_pcb.gz",
+      "original_bytes": 1681281,
+      "gzip_bytes": 309561,
+      "sha256_uncompressed": "3a07d9ca619d60bbc6219740cae091e06995e74a5cfdc5a49dc6986511ae30a3"
+    },
+    {
+      "file": "work/chrysler-routed-sd/audit-stage/class-validation.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/audit-stage/class-validation.kicad_pcb.gz",
+      "original_bytes": 1226844,
+      "gzip_bytes": 204543,
+      "sha256_uncompressed": "305c25c4343da4b42a94263ae38396ea80f88e0707c983143691ad1652f639e6"
+    },
+    {
+      "file": "work/chrysler-routed-sd/audit-stage/input-power-preflight.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/audit-stage/input-power-preflight.kicad_pcb.gz",
+      "original_bytes": 1228390,
+      "gzip_bytes": 204892,
+      "sha256_uncompressed": "885d634678ffe7d6f8eeff15715fc6a4433b2a22a81bfe3fc86fbc6eb20c6f31"
+    },
+    {
+      "file": "work/chrysler-routed-sd/routing-review-stage/critical-candidate.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/routing-review-stage/critical-candidate.kicad_pcb.gz",
+      "original_bytes": 1216059,
+      "gzip_bytes": 202219,
+      "sha256_uncompressed": "410f798e39d7afc944ee8c5d471beb819477fa8616d9d40f4cdbdf4a815cdd93"
+    },
+    {
+      "file": "work/chrysler-routed-sd/ground-fanout-stage/U10-thermal-ground.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/ground-fanout-stage/U10-thermal-ground.kicad_pcb.gz",
+      "original_bytes": 1292850,
+      "gzip_bytes": 218754,
+      "sha256_uncompressed": "78d43f6b993212da5eb73e36c0922549d647f886e48fe098a262e90c8b358fdf"
+    },
+    {
+      "file": "work/chrysler-routed-sd/ground-pour-stage/check2/outer-ground-experiment.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/ground-pour-stage/check2/outer-ground-experiment.kicad_pcb.gz",
+      "original_bytes": 2659908,
+      "gzip_bytes": 550474,
+      "sha256_uncompressed": "b5a395c70062726a31c92c50fb116adc19c269f3878ba0d68db5c865eee18217"
+    },
+    {
+      "file": "work/chrysler-routed-sd/ground-pour-stage/outer-ground-experiment.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/ground-pour-stage/outer-ground-experiment.kicad_pcb.gz",
+      "original_bytes": 2649867,
+      "gzip_bytes": 543775,
+      "sha256_uncompressed": "cb7e7523bec05cc1f794e62332f856df212d2944c195159717e32a27eb151ff3"
+    },
+    {
+      "file": "work/chrysler-routed-sd/ground-pour-stage/outer-ground-solid-smd.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/ground-pour-stage/outer-ground-solid-smd.kicad_pcb.gz",
+      "original_bytes": 2528202,
+      "gzip_bytes": 516069,
+      "sha256_uncompressed": "40296d7afff448e9c7b1df1517ecd840baf4db97d5f882104ffea8e248bfa25b"
+    },
+    {
+      "file": "work/chrysler-routed-sd/route-pass-3/native-check1/ChryslerScanner_V240_SD.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/route-pass-3/native-check1/ChryslerScanner_V240_SD.kicad_pcb.gz",
+      "original_bytes": 1758259,
+      "gzip_bytes": 324773,
+      "sha256_uncompressed": "7ac850e68fa0f75b67138c44607d58933559c1aad0aafb2528ab29febec7ba0e"
+    },
+    {
+      "file": "work/chrysler-routed-sd/route-pass-3/native-check2/ChryslerScanner_V240_SD.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/route-pass-3/native-check2/ChryslerScanner_V240_SD.kicad_pcb.gz",
+      "original_bytes": 1866472,
+      "gzip_bytes": 350519,
+      "sha256_uncompressed": "4754aa87c8bdb4de484b8badc8b5a513fb559088a3b3715ea0df13269e9738b1"
+    },
+    {
+      "file": "work/chrysler-routed-sd/edge-stage/ChryslerScanner_V240_SD.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/edge-stage/ChryslerScanner_V240_SD.kicad_pcb.gz",
+      "original_bytes": 2691365,
+      "gzip_bytes": 557657,
+      "sha256_uncompressed": "e6c0f6511a2c850991598809a36a497da0191568e44eb896e286c16bd249a65b"
+    },
+    {
+      "file": "work/chrysler-routed-sd/signal-logic-stage/native3logic/imported-before-pours.kicad_pcb",
+      "gzip": "work/chrysler-routed-sd/signal-logic-stage/native3logic/imported-before-pours.kicad_pcb.gz",
+      "original_bytes": 1609880,
+      "gzip_bytes": 293591,
+      "sha256_uncompressed": "259c625ff6857f25de5a3a791fd4a984d424dff73000a9ba460e5fb5d3896407"
+    }
+  ]
+}

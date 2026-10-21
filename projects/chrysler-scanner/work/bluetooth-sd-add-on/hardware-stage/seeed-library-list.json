@@ -1,0 +1,610 @@
+[
+  {
+    "name": "Seeed_Studio_XIAO_Series.kicad_sym",
+    "path": "Seeed Studio XIAO Series Library/Seeed_Studio_XIAO_Series.kicad_sym",
+    "sha": "624cb9c9fb8b503df6541af81fc8728ddcbc9e59",
+    "size": 173901,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/Seeed_Studio_XIAO_Series.kicad_sym?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/Seeed_Studio_XIAO_Series.kicad_sym",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/624cb9c9fb8b503df6541af81fc8728ddcbc9e59",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/Seeed_Studio_XIAO_Series.kicad_sym",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/Seeed_Studio_XIAO_Series.kicad_sym?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/624cb9c9fb8b503df6541af81fc8728ddcbc9e59",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/Seeed_Studio_XIAO_Series.kicad_sym"
+    }
+  },
+  {
+    "name": "XIAO Landing page.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO Landing page.kicad_mod",
+    "sha": "9c3810a3c69d377a6b10ac4a9ef6b943c9d5f664",
+    "size": 62567,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO%20Landing%20page.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO%20Landing%20page.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/9c3810a3c69d377a6b10ac4a9ef6b943c9d5f664",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO%20Landing%20page.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO%20Landing%20page.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/9c3810a3c69d377a6b10ac4a9ef6b943c9d5f664",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO%20Landing%20page.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-14P-Add-On-PRO.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-14P-Add-On-PRO.kicad_mod",
+    "sha": "83f06c229aa89a40744b5a54814e0c9959f2e7c4",
+    "size": 19947,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-14P-Add-On-PRO.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-14P-Add-On-PRO.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/83f06c229aa89a40744b5a54814e0c9959f2e7c4",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-14P-Add-On-PRO.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-14P-Add-On-PRO.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/83f06c229aa89a40744b5a54814e0c9959f2e7c4",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-14P-Add-On-PRO.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-14P-Add-On.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-14P-Add-On.kicad_mod",
+    "sha": "7a2458de3d420b6d0a68937d82b187fe591c5800",
+    "size": 21220,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-14P-Add-On.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-14P-Add-On.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/7a2458de3d420b6d0a68937d82b187fe591c5800",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-14P-Add-On.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-14P-Add-On.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/7a2458de3d420b6d0a68937d82b187fe591c5800",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-14P-Add-On.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-23P-Add-On-PRO.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-23P-Add-On-PRO.kicad_mod",
+    "sha": "b0a308f5bdde9988c0299942a3b4af32ce74f0fd",
+    "size": 22764,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-23P-Add-On-PRO.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-23P-Add-On-PRO.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/b0a308f5bdde9988c0299942a3b4af32ce74f0fd",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-23P-Add-On-PRO.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-23P-Add-On-PRO.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/b0a308f5bdde9988c0299942a3b4af32ce74f0fd",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-23P-Add-On-PRO.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-23P-Add-On-Plus.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-23P-Add-On-Plus.kicad_mod",
+    "sha": "a48a7c4f1057f7f689396bfbb65e7253a5ada535",
+    "size": 21390,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-23P-Add-On-Plus.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-23P-Add-On-Plus.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/a48a7c4f1057f7f689396bfbb65e7253a5ada535",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-23P-Add-On-Plus.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-23P-Add-On-Plus.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/a48a7c4f1057f7f689396bfbb65e7253a5ada535",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-23P-Add-On-Plus.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-26P-Add-On-PRO.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-26P-Add-On-PRO.kicad_mod",
+    "sha": "f2bbf233fc3c2dc7febfcabc2112ab24b33089ef",
+    "size": 24831,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-26P-Add-On-PRO.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-26P-Add-On-PRO.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/f2bbf233fc3c2dc7febfcabc2112ab24b33089ef",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-26P-Add-On-PRO.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-26P-Add-On-PRO.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/f2bbf233fc3c2dc7febfcabc2112ab24b33089ef",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-26P-Add-On-PRO.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-26P-Add-On-Plus.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-26P-Add-On-Plus.kicad_mod",
+    "sha": "26e467696f315a3d53655b53b6f728bdb60372ff",
+    "size": 47727,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-26P-Add-On-Plus.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-26P-Add-On-Plus.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/26e467696f315a3d53655b53b6f728bdb60372ff",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-26P-Add-On-Plus.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-26P-Add-On-Plus.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/26e467696f315a3d53655b53b6f728bdb60372ff",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-26P-Add-On-Plus.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-Add-On.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-Add-On.kicad_mod",
+    "sha": "61e474677d53b685d83f73e11a709511400a9aba",
+    "size": 21737,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-Add-On.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-Add-On.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/61e474677d53b685d83f73e11a709511400a9aba",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-Add-On.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-Add-On.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/61e474677d53b685d83f73e11a709511400a9aba",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-Add-On.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-ESP32-C3-DIP-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-ESP32-C3-DIP-SMD.kicad_mod",
+    "sha": "dd060be45a6b7b0813c12870796a5576a853aed1",
+    "size": 12956,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-DIP-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-DIP-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/dd060be45a6b7b0813c12870796a5576a853aed1",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-DIP-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-DIP-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/dd060be45a6b7b0813c12870796a5576a853aed1",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-DIP-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-ESP32-C3-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-ESP32-C3-DIP.kicad_mod",
+    "sha": "5625cf23451f2ece36f29dbd5ee29ad1459d91e4",
+    "size": 11402,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/5625cf23451f2ece36f29dbd5ee29ad1459d91e4",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/5625cf23451f2ece36f29dbd5ee29ad1459d91e4",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-ESP32-C3-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-ESP32-C3-SMD.kicad_mod",
+    "sha": "3d830320bd11e8aff2aa2df17d2cc04c252857e8",
+    "size": 9260,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/3d830320bd11e8aff2aa2df17d2cc04c252857e8",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/3d830320bd11e8aff2aa2df17d2cc04c252857e8",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-ESP32-C5-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-ESP32-C5-DIP.kicad_mod",
+    "sha": "bb3d16767d8262e63d6e0ecd4ce5b2832d64a6f4",
+    "size": 11404,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C5-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C5-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/bb3d16767d8262e63d6e0ecd4ce5b2832d64a6f4",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C5-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C5-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/bb3d16767d8262e63d6e0ecd4ce5b2832d64a6f4",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C5-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-ESP32-C5-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-ESP32-C5-SMD.kicad_mod",
+    "sha": "f11969bfbedffae2d81e0fb964931a0f88540a36",
+    "size": 9807,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C5-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C5-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/f11969bfbedffae2d81e0fb964931a0f88540a36",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C5-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C5-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/f11969bfbedffae2d81e0fb964931a0f88540a36",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C5-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-ESP32-C6-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-ESP32-C6-DIP.kicad_mod",
+    "sha": "f950ac2dced8e6ed5a51ad8a42dac9fa72873108",
+    "size": 11550,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C6-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C6-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/f950ac2dced8e6ed5a51ad8a42dac9fa72873108",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C6-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C6-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/f950ac2dced8e6ed5a51ad8a42dac9fa72873108",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C6-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-ESP32-C6-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-ESP32-C6-SMD.kicad_mod",
+    "sha": "d60b8d9a1f7bfbf063e23f5f0d9f233810d44d80",
+    "size": 9591,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C6-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C6-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/d60b8d9a1f7bfbf063e23f5f0d9f233810d44d80",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C6-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C6-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/d60b8d9a1f7bfbf063e23f5f0d9f233810d44d80",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C6-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-ESP32-S3-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-ESP32-S3-DIP.kicad_mod",
+    "sha": "6db486908891c37dfac1a6949f6d770d49757ce1",
+    "size": 11551,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/6db486908891c37dfac1a6949f6d770d49757ce1",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/6db486908891c37dfac1a6949f6d770d49757ce1",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-ESP32-S3-Plus-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-ESP32-S3-Plus-SMD.kicad_mod",
+    "sha": "7b9e7a6d327b235e20f1639ee06423e4839910ef",
+    "size": 182263,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-Plus-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-Plus-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/7b9e7a6d327b235e20f1639ee06423e4839910ef",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-Plus-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-Plus-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/7b9e7a6d327b235e20f1639ee06423e4839910ef",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-Plus-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-ESP32-S3-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-ESP32-S3-SMD.kicad_mod",
+    "sha": "5cd472eae7c7d27364d7f045a046c0d4ff33f2bc",
+    "size": 525579,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/5cd472eae7c7d27364d7f045a046c0d4ff33f2bc",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/5cd472eae7c7d27364d7f045a046c0d4ff33f2bc",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-ESP32-S3-SMD_PAD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-ESP32-S3-SMD_PAD.kicad_mod",
+    "sha": "c25e0e7154f8cf1e4dbf26466b18c2e81d89351d",
+    "size": 499274,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-SMD_PAD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-SMD_PAD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/c25e0e7154f8cf1e4dbf26466b18c2e81d89351d",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-SMD_PAD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-SMD_PAD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/c25e0e7154f8cf1e4dbf26466b18c2e81d89351d",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-SMD_PAD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-MG24-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-MG24-DIP.kicad_mod",
+    "sha": "e8d7ba1b591e10c15bbbd0e0360cc33d3514c1b5",
+    "size": 18883,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-MG24-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-MG24-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/e8d7ba1b591e10c15bbbd0e0360cc33d3514c1b5",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-MG24-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-MG24-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/e8d7ba1b591e10c15bbbd0e0360cc33d3514c1b5",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-MG24-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-MG24-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-MG24-SMD.kicad_mod",
+    "sha": "6430ceee2fb2ce42550a3b38d08242028bfd576d",
+    "size": 11474,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-MG24-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-MG24-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/6430ceee2fb2ce42550a3b38d08242028bfd576d",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-MG24-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-MG24-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/6430ceee2fb2ce42550a3b38d08242028bfd576d",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-MG24-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-R4-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-R4-DIP.kicad_mod",
+    "sha": "eef128379a25eca8ca4177c9c12a640ff3fbadc4",
+    "size": 18875,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-R4-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-R4-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/eef128379a25eca8ca4177c9c12a640ff3fbadc4",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-R4-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-R4-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/eef128379a25eca8ca4177c9c12a640ff3fbadc4",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-R4-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-R4-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-R4-SMD.kicad_mod",
+    "sha": "624dac6835d00c93551cabb515365722be062424",
+    "size": 13402,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-R4-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-R4-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/624dac6835d00c93551cabb515365722be062424",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-R4-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-R4-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/624dac6835d00c93551cabb515365722be062424",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-R4-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-RP2040-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-RP2040-DIP.kicad_mod",
+    "sha": "44e6e3d23024efbd6f2f8194e2c18c3843bd7a47",
+    "size": 11404,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2040-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2040-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/44e6e3d23024efbd6f2f8194e2c18c3843bd7a47",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2040-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2040-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/44e6e3d23024efbd6f2f8194e2c18c3843bd7a47",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2040-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-RP2040-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-RP2040-SMD.kicad_mod",
+    "sha": "469d57c258b70c66d8bb9c42b5d860210d848fa9",
+    "size": 8949,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2040-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2040-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/469d57c258b70c66d8bb9c42b5d860210d848fa9",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2040-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2040-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/469d57c258b70c66d8bb9c42b5d860210d848fa9",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2040-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-RP2350-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-RP2350-DIP.kicad_mod",
+    "sha": "07edd9ea2bf9c8bda2100518a23580fb45ba1f88",
+    "size": 18887,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2350-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2350-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/07edd9ea2bf9c8bda2100518a23580fb45ba1f88",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2350-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2350-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/07edd9ea2bf9c8bda2100518a23580fb45ba1f88",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2350-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-RP2350-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-RP2350-SMD.kicad_mod",
+    "sha": "4f154d4ff6eb4b79056174fef08e8c68d7382710",
+    "size": 11171,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2350-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2350-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/4f154d4ff6eb4b79056174fef08e8c68d7382710",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2350-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2350-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/4f154d4ff6eb4b79056174fef08e8c68d7382710",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-RP2350-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-SAMD21-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-SAMD21-DIP.kicad_mod",
+    "sha": "2f30d2972583ffa44390e4b91175432235ae0614",
+    "size": 11548,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-SAMD21-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-SAMD21-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/2f30d2972583ffa44390e4b91175432235ae0614",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-SAMD21-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-SAMD21-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/2f30d2972583ffa44390e4b91175432235ae0614",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-SAMD21-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-SAMD21-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-SAMD21-SMD.kicad_mod",
+    "sha": "00aa13184f5ca6c683bdeb4dcedb1a09dfa77aeb",
+    "size": 9606,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-SAMD21-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-SAMD21-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/00aa13184f5ca6c683bdeb4dcedb1a09dfa77aeb",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-SAMD21-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-SAMD21-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/00aa13184f5ca6c683bdeb4dcedb1a09dfa77aeb",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-SAMD21-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-STM32C5-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-STM32C5-SMD.kicad_mod",
+    "sha": "6e77b71d680b00e278efd4406d8496bf02140093",
+    "size": 709148,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-STM32C5-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-STM32C5-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/6e77b71d680b00e278efd4406d8496bf02140093",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-STM32C5-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-STM32C5-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/6e77b71d680b00e278efd4406d8496bf02140093",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-STM32C5-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-nRF52840-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-nRF52840-DIP.kicad_mod",
+    "sha": "f6313a3afc8fff4249798c50b6cad573cbda6261",
+    "size": 11551,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/f6313a3afc8fff4249798c50b6cad573cbda6261",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/f6313a3afc8fff4249798c50b6cad573cbda6261",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-nRF52840-Plus-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-nRF52840-Plus-SMD.kicad_mod",
+    "sha": "04c255af2e2d35b045f9ba6285fa4a25cf14e1d5",
+    "size": 19202,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-Plus-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-Plus-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/04c255af2e2d35b045f9ba6285fa4a25cf14e1d5",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-Plus-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-Plus-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/04c255af2e2d35b045f9ba6285fa4a25cf14e1d5",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-Plus-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-nRF52840-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-nRF52840-SMD.kicad_mod",
+    "sha": "381875d0285fa5b9f33b512bf4036b8486be2631",
+    "size": 9404,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/381875d0285fa5b9f33b512bf4036b8486be2631",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/381875d0285fa5b9f33b512bf4036b8486be2631",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF52840-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-nRF54LM20A-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-nRF54LM20A-DIP.kicad_mod",
+    "sha": "1b78ed0e84d0e9e74bf25bf6ecc7aef3cbfaf435",
+    "size": 467489,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54LM20A-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54LM20A-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/1b78ed0e84d0e9e74bf25bf6ecc7aef3cbfaf435",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54LM20A-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54LM20A-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/1b78ed0e84d0e9e74bf25bf6ecc7aef3cbfaf435",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54LM20A-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-nRF54LM20A-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-nRF54LM20A-SMD.kicad_mod",
+    "sha": "396c540d332358504ac49fbc4959668b6573b098",
+    "size": 461317,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54LM20A-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54LM20A-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/396c540d332358504ac49fbc4959668b6573b098",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54LM20A-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54LM20A-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/396c540d332358504ac49fbc4959668b6573b098",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54LM20A-SMD.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-nRF54l15-DIP.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-nRF54l15-DIP.kicad_mod",
+    "sha": "9bc99651611a2effb3dbe327dcd0eef5ac8b5b67",
+    "size": 11404,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54l15-DIP.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54l15-DIP.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/9bc99651611a2effb3dbe327dcd0eef5ac8b5b67",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54l15-DIP.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54l15-DIP.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/9bc99651611a2effb3dbe327dcd0eef5ac8b5b67",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54l15-DIP.kicad_mod"
+    }
+  },
+  {
+    "name": "XIAO-nRF54l15-SMD.kicad_mod",
+    "path": "Seeed Studio XIAO Series Library/XIAO-nRF54l15-SMD.kicad_mod",
+    "sha": "b28b0204aaf2ed45cd245345f7eb61edfc1541b6",
+    "size": 11906,
+    "url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54l15-SMD.kicad_mod?ref=main",
+    "html_url": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54l15-SMD.kicad_mod",
+    "git_url": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/b28b0204aaf2ed45cd245345f7eb61edfc1541b6",
+    "download_url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54l15-SMD.kicad_mod",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/contents/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54l15-SMD.kicad_mod?ref=main",
+      "git": "https://api.github.com/repos/Seeed-Studio/OSHW-XIAO-Series/git/blobs/b28b0204aaf2ed45cd245345f7eb61edfc1541b6",
+      "html": "https://github.com/Seeed-Studio/OSHW-XIAO-Series/blob/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-nRF54l15-SMD.kicad_mod"
+    }
+  }
+]

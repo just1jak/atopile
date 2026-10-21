@@ -1,9 +1,18 @@
-# Atopile Local 0.4.0
+# Atopile Local 0.4.1 source checkpoint
+
+**Moving to another computer? Start with [CONTINUE-HERE.md](CONTINUE-HERE.md).**
+It covers this source checkpoint and the unfinished integrated-SD scanner PCB.
 
 A local VS Code continuation of atopile 0.15.9 with native KiCad schematic
 export, ChatGPT through Codex or your own AI provider, local component imports,
 and net/placement/DRC tools. This is an independent
 fork, not an official atopile release.
+
+This checkpoint preserves the 0.4.1 source and subsequent local KiCad 10
+editing, Codex tool-catalog, and startup fixes. The installed extension on the
+original Mac reports 0.4.1; this newer source checkpoint has not been packaged
+as a new release. Its focused backend checks passed **114 tests**. See
+[extension-handoff.md](extension-handoff.md) for exact recovery and rebuild steps.
 
 ## Start on this Mac
 
@@ -11,9 +20,10 @@ On this Mac, double-click **Open Atopile Local.command** beside the source
 folder. It opens the included circuit in VS Code. Select the build target and
 choose **Inspect → Schematic**. Other inspection views remain available beside it.
 
-For a new installation, install the supplied `atopile-local-0.4.0.vsix` and open the supplied
-`Atopile Local.code-workspace`. The provided installer registers the runtime
-for other VS Code workspaces too. ChatGPT (Codex) is the default AI provider.
+For this checkpoint, rebuild and install from the checked-out source using the
+steps in `extension-handoff.md`. An older downloaded release archive installs
+that release's source rather than these later changes. The installer registers
+the runtime for other VS Code workspaces too. ChatGPT (Codex) is the default AI provider.
 Run **Atopile Local: Connect ChatGPT** to reuse your local Codex sign-in or start
 Codex's browser sign-in. No separate API key is needed. Your ChatGPT plan's
 Codex usage limits apply; this does not grant unlimited usage or add credits.
@@ -74,8 +84,10 @@ git clone --branch feature/atopile-local https://github.com/just1jak/atopile.git
 cd atopile
 ```
 
-For development in a fully local checkout, the original `local/setup_runtime.py`
-and `local/install_extension.py --download` workflow remains available.
+For this source checkpoint, use a fully local checkout, run
+`python3 local/setup_runtime.py`, rebuild with `python3 local/build_extension.py`,
+then install using `python3 local/install_extension.py`. Do not use `--download`
+when you intend to run the checkpoint source and its rebuilt UI.
 
 The native compiler is the pinned atopile 0.15.9 wheel. Modified Python source
 runs over that wheel, avoiding a local Zig rebuild. The wrapper uses safe
@@ -94,7 +106,7 @@ bin/ato-local create part-from-pinout --help
 Open the **Atopile Local** activity-bar view to build, browse components and
 nets, inspect pinouts, and open the PCB/3D viewers. The independent agent can
 edit project files, build and debug circuits, read logical nets, inspect or
-change placements (with backups), and run KiCad DRC.
+change placements (with backups), add or delete copper, and run KiCad DRC.
 
 ## Board access in chat
 
@@ -103,10 +115,20 @@ provider. Before each message, the host checks the session's selected PCB with
 the local inspection tool. **Board last read** reports the checked target,
 part count, and net count. A failed check shows the actual error.
 
-The agent can read placement and logical nets, move components with backups,
-and run KiCad DRC. Placement changes preserve existing tracks but do not reroute
-them. Ask it to inspect the board first, state any fixed connector positions
-and board dimensions, and review DRC after moving parts.
+The agent can read placement and logical nets, move or rotate unlocked
+components, add straight track segments and through-vias, delete copper by
+UUID, and run KiCad DRC. Placement changes preserve existing tracks but do not
+reroute them. Copper tools require explicit net, canonical copper layer, and
+geometry; creating a segment does not prove its clearance or complete routing.
+Ask it to inspect the board first, state any fixed connector positions and
+board dimensions, and review native DRC after edits.
+
+KiCad 10 edits preserve unsupported source fields and unrelated native locks.
+Locked targets and `FBRK:notouch` geometry are protected. The scoped editor
+supports placement and copper changes; settings, net membership, zone changes,
+new footprints, and complex flips remain native KiCad work. Stale external
+changes are rejected instead of overwritten, and successful edits create
+backups. Save edits in KiCad before switching editors.
 
 Version 0.3.1 fixes Codex tool discovery for the full production tool catalog.
 After updating, reload the VS Code window so the backend and tool bridge restart.
@@ -115,7 +137,18 @@ Existing chat history is retained.
 ## Schematics in KiCad
 
 After building, open **Inspect → Schematic** and choose **Open in KiCad**.
-Atopile Local saves a real `.kicad_sch` file, with embedded KiCad symbols and
+If the project has a native schematic, explicitly map it to the build target
+in `.atopile-local.json`:
+
+```json
+{"schematics": {"v240": "elec/schematic/ChryslerScanner_V240.kicad_sch"}}
+```
+
+Normal opening preserves that file and all child sheets. Paths must remain
+inside the selected project; the hierarchy is validated before native KiCad
+reads it. The app does not guess which existing schematic belongs to a target.
+
+For projects without a mapping, Atopile Local saves a real `.kicad_sch` file, with embedded KiCad symbols and
 nets taken from the PCB's actual pad assignments, then opens KiCad's Schematic
 Editor. KiCad must be installed: each new snapshot is checked using its native
 netlist exporter. The saved file remains available if the editor cannot launch.
@@ -150,8 +183,9 @@ online component selection still uses atopile's service and requires sign-in.
 DeepPCB automatic placement/routing remains hosted and is labeled in the UI;
 no general local autorouter is included. Web search uses your own `EXA_API_KEY`.
 Manual local layout and local agent placement/DRC do not use those services.
-Native footprint locks cannot be safely round-tripped by the bundled parser,
-so the placement tool refuses boards containing them.
+The KiCad 10 source-preserving adapter retains native locks and rejects edits
+to locked targets. Unsupported changes stop with an error rather than dropping
+unknown native fields.
 
 ## Rebuild and verify
 
@@ -164,10 +198,15 @@ PYTHONPATH=$PWD/src ATOPILE_LOCAL_DATA_DIR=$PWD/.state FBRK_TELEMETRY=0 \
 python3 local/verify_offline.py
 ```
 
-The verification record is `local/VERIFICATION.json`; demo connectivity and DRC
+The recovered checkpoint passed 114 focused backend tests, including native
+KiCad edit/connectivity checks and mocked Codex protocol checks, on 2026-10-20.
+The full frontend dependency install, TypeScript checks, and VSIX rebuild were
+not repeated for this checkpoint. See `extension-handoff.md` for the exact test
+command and the distinction from older release verification.
+
+The earlier verification record is `local/VERIFICATION.json`; demo connectivity and DRC
 reports are under `examples/offline-indicator/`. No physical hardware test was
-performed. Only the included small example was exercised end
-to end; passing DRC does not verify electrical behavior or supplier suitability.
+performed. Passing DRC does not verify electrical behavior or supplier suitability.
 
 ## Source and licenses
 

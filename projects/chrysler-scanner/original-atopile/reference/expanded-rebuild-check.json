@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "footprints_checked": 245,
+  "checks": {
+    "positions": true,
+    "pad_geometry": true,
+    "layers": true,
+    "mechanical": true
+  },
+  "geometry_comparison_tolerance_mm": 1e-06,
+  "expanded_size_mm": [
+    110,
+    55
+  ],
+  "applies_to": "Board enlargement phase before ATTEND J1 replacement; historical snapshot"
+}

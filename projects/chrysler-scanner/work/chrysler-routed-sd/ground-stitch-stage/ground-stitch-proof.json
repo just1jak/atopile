@@ -1,0 +1,1832 @@
+{
+  "source": "../signal-power-stage/ChryslerScanner_V240_SD.kicad_pcb",
+  "sourceSha256": "16fee28a1ab0dd2f40cf40d11f6cb6adc73fc6342f3349b68dad1fe041192e5c",
+  "candidate": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/ground-stitch-stage/ground-stitched.kicad_pcb",
+  "candidateSha256": "55339b4a5d6240408d49ff4b98d9ed1cb198d10e1070b647b40b80cf96e3584f",
+  "originalCopperPreserved": 2386,
+  "all263FootprintsPadsNetsAndPlanesPreserved": true,
+  "before": {
+    "fullNativeAirwires": 45,
+    "disconnectedNetGroups": {
+      "GND": [
+        {
+          "count": 119,
+          "pads": [
+            "C1.2",
+            "C10.2",
+            "C13.2",
+            "C14.2",
+            "C15.2",
+            "C16.2",
+            "C18.2",
+            "C2.2",
+            "C22.2",
+            "C24.2",
+            "C25.2",
+            "C26.2",
+            "C27.2",
+            "C28.2",
+            "C29.2",
+            "C3.2",
+            "C30.2",
+            "C31.2",
+            "C32.2",
+            "C33.2",
+            "C34.2",
+            "C35.2",
+            "C36.1",
+            "C37.1",
+            "C39.1",
+            "C4.2",
+            "C40.1",
+            "C42.2",
+            "C44.2",
+            "C45.2",
+            "C46.2",
+            "C47.2",
+            "C48.2",
+            "C49.2",
+            "C55.2",
+            "C56.2",
+            "C58.2",
+            "C59.2",
+            "C6.2",
+            "C61.2",
+            "C7.2",
+            "C9.2",
+            "D1.2",
+            "D12.2",
+            "D13.2",
+            "D14.2",
+            "D27.2",
+            "D28.2",
+            "D29.2",
+            "D4.2",
+            "D8.2",
+            "D9.2",
+            "J1.4",
+            "J2.A1",
+            "J2.A12",
+            "J2.B1",
+            "J2.B12",
+            "J2.SH",
+            "J2.SH",
+            "J2.SH",
+            "J2.SH",
+            "J3.2",
+            "J3.4",
+            "J4.10",
+            "J4.6",
+            "J4.SH",
+            "J4.SH",
+            "J4.SH",
+            "Q12.5",
+            "Q15.5",
+            "Q16.1",
+            "Q17.2",
+            "Q18.2",
+            "Q19.2",
+            "Q20.2",
+            "Q8.5",
+            "Q9.5",
+            "R102.2",
+            "R12.2",
+            "R15.2",
+            "R17.2",
+            "R23.2",
+            "R24.2",
+            "R27.2",
+            "R3.2",
+            "R50.2",
+            "R52.2",
+            "R54.2",
+            "R55.2",
+            "R57.2",
+            "R63.2",
+            "R72.2",
+            "R9.2",
+            "R90.2",
+            "R92.2",
+            "R96.2",
+            "SW1.1",
+            "SW2.1",
+            "SW2.1",
+            "SW3.2",
+            "SW3.2",
+            "U1.1",
+            "U18.3",
+            "U2.2",
+            "U20.2",
+            "U20.2",
+            "U3.3",
+            "U3.5",
+            "U3.7",
+            "U4.3",
+            "U4.5",
+            "U4.7",
+            "U5.2",
+            "U6.2",
+            "U7.2",
+            "U8.3",
+            "U8.5",
+            "U8.7",
+            "U9.2"
+          ]
+        },
+        {
+          "count": 5,
+          "pads": [
+            "U19.18",
+            "U19.22",
+            "U19.24",
+            "U19.25",
+            "U19.9"
+          ]
+        },
+        {
+          "count": 5,
+          "pads": [
+            "C51.2",
+            "C52.1",
+            "C54.2",
+            "R77.1",
+            "R80.2"
+          ]
+        },
+        {
+          "count": 4,
+          "pads": [
+            "C8.2",
+            "Q1.1",
+            "R18.2",
+            "R21.2"
+          ]
+        },
+        {
+          "count": 2,
+          "pads": [
+            "Q11.5",
+            "R61.2"
+          ]
+        },
+        {
+          "count": 2,
+          "pads": [
+            "U12.29",
+            "U12.3"
+          ]
+        },
+        {
+          "count": 2,
+          "pads": [
+            "Q14.5",
+            "R69.2"
+          ]
+        },
+        {
+          "count": 2,
+          "pads": [
+            "R38.1",
+            "R41.2"
+          ]
+        },
+        {
+          "count": 2,
+          "pads": [
+            "R44.1",
+            "U15.4"
+          ]
+        },
+        {
+          "count": 2,
+          "pads": [
+            "C41.2",
+            "U14.4"
+          ]
+        },
+        {
+          "count": 2,
+          "pads": [
+            "C11.1",
+            "R5.2"
+          ]
+        },
+        {
+          "count": 2,
+          "pads": [
+            "Q6.1",
+            "R75.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U11.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "R34.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "R66.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U17.3"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "Q10.5"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C19.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C57.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C53.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "Q13.5"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "J4.SH"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C38.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C43.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C23.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "R31.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.49"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "R47.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "SW1.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "R103.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U13.4"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C50.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "JP1.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "R59.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C12.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U16.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C60.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C20.2"
+          ]
+        }
+      ],
+      "PCI_TX": [
+        {
+          "count": 2,
+          "pads": [
+            "R18.1",
+            "R19.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.16"
+          ]
+        }
+      ],
+      "V_PR": [
+        {
+          "count": 4,
+          "pads": [
+            "C49.1",
+            "D29.1",
+            "R53.2",
+            "R54.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.11"
+          ]
+        }
+      ],
+      "RX15_EN": [
+        {
+          "count": 2,
+          "pads": [
+            "R47.2",
+            "U15.3"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U19.15"
+          ]
+        }
+      ],
+      "TX_LED": [
+        {
+          "count": 2,
+          "pads": [
+            "Q18.1",
+            "R92.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.15"
+          ]
+        }
+      ],
+      "ACT_LED": [
+        {
+          "count": 2,
+          "pads": [
+            "Q20.1",
+            "R96.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.20"
+          ]
+        }
+      ],
+      "LOG_BUTTON": [
+        {
+          "count": 3,
+          "pads": [
+            "R113.2",
+            "SW3.1",
+            "SW3.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.6"
+          ]
+        }
+      ],
+      "RX1": [
+        {
+          "count": 3,
+          "pads": [
+            "C53.1",
+            "R85.2",
+            "U16.4"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.33"
+          ]
+        }
+      ],
+      "VBB_TO_TX14": [
+        {
+          "count": 2,
+          "pads": [
+            "Q11.1",
+            "R61.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U19.8"
+          ]
+        }
+      ]
+    },
+    "ground": {
+      "padCount": 175,
+      "connectedGroupCount": 38,
+      "largestConnectedGroupCount": 119,
+      "isolatedFromMainGroup": [
+        "C11.1",
+        "C12.2",
+        "C19.2",
+        "C20.2",
+        "C23.2",
+        "C38.2",
+        "C41.2",
+        "C43.2",
+        "C50.2",
+        "C51.2",
+        "C52.1",
+        "C53.2",
+        "C54.2",
+        "C57.2",
+        "C60.2",
+        "C8.2",
+        "J4.SH",
+        "JP1.2",
+        "Q1.1",
+        "Q10.5",
+        "Q11.5",
+        "Q13.5",
+        "Q14.5",
+        "Q6.1",
+        "R103.2",
+        "R18.2",
+        "R21.2",
+        "R31.1",
+        "R34.2",
+        "R38.1",
+        "R41.2",
+        "R44.1",
+        "R47.1",
+        "R5.2",
+        "R59.2",
+        "R61.2",
+        "R66.2",
+        "R69.2",
+        "R75.2",
+        "R77.1",
+        "R80.2",
+        "SW1.1",
+        "U10.49",
+        "U11.2",
+        "U12.29",
+        "U12.3",
+        "U13.4",
+        "U14.4",
+        "U15.4",
+        "U16.2",
+        "U17.3",
+        "U19.18",
+        "U19.22",
+        "U19.24",
+        "U19.25",
+        "U19.9"
+      ]
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3457.583136,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4970.619724,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5488.964534,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 50.597812
+    }
+  },
+  "after": {
+    "fullNativeAirwires": 12,
+    "disconnectedNetGroups": {
+      "GND": [
+        {
+          "count": 171,
+          "pads": [
+            "C1.2",
+            "C10.2",
+            "C11.1",
+            "C12.2",
+            "C13.2",
+            "C14.2",
+            "C15.2",
+            "C16.2",
+            "C18.2",
+            "C19.2",
+            "C2.2",
+            "C20.2",
+            "C22.2",
+            "C23.2",
+            "C24.2",
+            "C25.2",
+            "C26.2",
+            "C27.2",
+            "C28.2",
+            "C29.2",
+            "C3.2",
+            "C30.2",
+            "C31.2",
+            "C32.2",
+            "C33.2",
+            "C34.2",
+            "C35.2",
+            "C36.1",
+            "C37.1",
+            "C39.1",
+            "C4.2",
+            "C40.1",
+            "C41.2",
+            "C42.2",
+            "C43.2",
+            "C44.2",
+            "C45.2",
+            "C46.2",
+            "C47.2",
+            "C48.2",
+            "C49.2",
+            "C50.2",
+            "C51.2",
+            "C52.1",
+            "C53.2",
+            "C54.2",
+            "C55.2",
+            "C56.2",
+            "C58.2",
+            "C59.2",
+            "C6.2",
+            "C61.2",
+            "C7.2",
+            "C8.2",
+            "C9.2",
+            "D1.2",
+            "D12.2",
+            "D13.2",
+            "D14.2",
+            "D27.2",
+            "D28.2",
+            "D29.2",
+            "D4.2",
+            "D8.2",
+            "D9.2",
+            "J1.4",
+            "J2.A1",
+            "J2.A12",
+            "J2.B1",
+            "J2.B12",
+            "J2.SH",
+            "J2.SH",
+            "J2.SH",
+            "J2.SH",
+            "J3.2",
+            "J3.4",
+            "J4.10",
+            "J4.6",
+            "J4.SH",
+            "J4.SH",
+            "J4.SH",
+            "JP1.2",
+            "Q1.1",
+            "Q10.5",
+            "Q11.5",
+            "Q12.5",
+            "Q13.5",
+            "Q14.5",
+            "Q15.5",
+            "Q16.1",
+            "Q17.2",
+            "Q18.2",
+            "Q19.2",
+            "Q20.2",
+            "Q6.1",
+            "Q8.5",
+            "Q9.5",
+            "R102.2",
+            "R103.2",
+            "R12.2",
+            "R15.2",
+            "R17.2",
+            "R18.2",
+            "R21.2",
+            "R23.2",
+            "R24.2",
+            "R27.2",
+            "R3.2",
+            "R31.1",
+            "R34.2",
+            "R38.1",
+            "R41.2",
+            "R44.1",
+            "R47.1",
+            "R5.2",
+            "R50.2",
+            "R52.2",
+            "R54.2",
+            "R55.2",
+            "R57.2",
+            "R59.2",
+            "R61.2",
+            "R63.2",
+            "R66.2",
+            "R69.2",
+            "R72.2",
+            "R75.2",
+            "R77.1",
+            "R80.2",
+            "R9.2",
+            "R90.2",
+            "R92.2",
+            "R96.2",
+            "SW1.1",
+            "SW1.1",
+            "SW2.1",
+            "SW2.1",
+            "SW3.2",
+            "SW3.2",
+            "U1.1",
+            "U10.49",
+            "U11.2",
+            "U12.29",
+            "U12.3",
+            "U13.4",
+            "U14.4",
+            "U15.4",
+            "U16.2",
+            "U17.3",
+            "U18.3",
+            "U19.18",
+            "U19.22",
+            "U19.24",
+            "U19.25",
+            "U19.9",
+            "U2.2",
+            "U20.2",
+            "U20.2",
+            "U3.3",
+            "U3.5",
+            "U3.7",
+            "U4.3",
+            "U4.5",
+            "U4.7",
+            "U5.2",
+            "U6.2",
+            "U7.2",
+            "U8.3",
+            "U8.5",
+            "U8.7",
+            "U9.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C57.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "J4.SH"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C38.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C60.2"
+          ]
+        }
+      ],
+      "PCI_TX": [
+        {
+          "count": 2,
+          "pads": [
+            "R18.1",
+            "R19.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.16"
+          ]
+        }
+      ],
+      "V_PR": [
+        {
+          "count": 4,
+          "pads": [
+            "C49.1",
+            "D29.1",
+            "R53.2",
+            "R54.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.11"
+          ]
+        }
+      ],
+      "RX15_EN": [
+        {
+          "count": 2,
+          "pads": [
+            "R47.2",
+            "U15.3"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U19.15"
+          ]
+        }
+      ],
+      "TX_LED": [
+        {
+          "count": 2,
+          "pads": [
+            "Q18.1",
+            "R92.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.15"
+          ]
+        }
+      ],
+      "ACT_LED": [
+        {
+          "count": 2,
+          "pads": [
+            "Q20.1",
+            "R96.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.20"
+          ]
+        }
+      ],
+      "LOG_BUTTON": [
+        {
+          "count": 3,
+          "pads": [
+            "R113.2",
+            "SW3.1",
+            "SW3.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.6"
+          ]
+        }
+      ],
+      "RX1": [
+        {
+          "count": 3,
+          "pads": [
+            "C53.1",
+            "R85.2",
+            "U16.4"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.33"
+          ]
+        }
+      ],
+      "VBB_TO_TX14": [
+        {
+          "count": 2,
+          "pads": [
+            "Q11.1",
+            "R61.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U19.8"
+          ]
+        }
+      ]
+    },
+    "ground": {
+      "padCount": 175,
+      "connectedGroupCount": 5,
+      "largestConnectedGroupCount": 171,
+      "isolatedFromMainGroup": [
+        "C38.2",
+        "C57.2",
+        "C60.2",
+        "J4.SH"
+      ]
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3457.583136,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4970.619724,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5488.964534,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 50.597812
+    }
+  },
+  "added": [
+    {
+      "kind": "via",
+      "uuid": "87918af0-1294-525b-97f0-f493c22293c6",
+      "positionMm": [
+        173.6875,
+        115.3625
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": true,
+      "target": "U10.49"
+    },
+    {
+      "kind": "via",
+      "uuid": "3369aeaf-d4a1-5472-b28b-5c869e8d0f87",
+      "positionMm": [
+        172.7875,
+        115.3625
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": true,
+      "target": "U10.49"
+    },
+    {
+      "kind": "via",
+      "uuid": "acb91d58-5ff1-55fc-9627-1e082d19c8f0",
+      "positionMm": [
+        174.5875,
+        115.3625
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": true,
+      "target": "U10.49"
+    },
+    {
+      "kind": "via",
+      "uuid": "4a9a5495-5d97-5cb4-911a-38f85a5cc5d7",
+      "positionMm": [
+        120.5,
+        109.975
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "C51.2,C52.1,C54.2,R77.1,R80.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "8de3c8a4-aa1d-5251-8cfd-efd3de52982f",
+      "positionMm": [
+        133.275,
+        120.0
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "C8.2,Q1.1,R18.2,R21.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "27d19fae-e27d-5f3e-b6c7-5a60cfc230ba",
+      "positionMm": [
+        119.5,
+        118.825
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "C11.1,R5.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "489e8158-7942-5cb1-bcff-7a034b11a427",
+      "positionMm": [
+        123.5,
+        133.275
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "C41.2,U14.4"
+    },
+    {
+      "kind": "via",
+      "uuid": "4c2dfcb7-2f19-5cea-bad9-5372192f34cc",
+      "positionMm": [
+        167.675,
+        150.75
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "Q11.5,R61.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "5f7518cc-968b-51a4-b9a6-30cee6dafdb9",
+      "positionMm": [
+        158.25,
+        148.4125
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "Q14.5,R69.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "8df84a03-d91c-5440-a032-b42866142c21",
+      "positionMm": [
+        131.917312,
+        142.907352
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "Q6.1,R75.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "4343edab-1fc0-5395-be51-be85bfb4725d",
+      "positionMm": [
+        117.225,
+        130.15
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "R38.1,R41.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "b0d4ce11-d917-5866-a471-b5496f10d045",
+      "positionMm": [
+        134.375,
+        152.25
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "R44.1,U15.4"
+    },
+    {
+      "kind": "via",
+      "uuid": "3fcc5b93-f05b-51cd-9892-37083e1f2b69",
+      "positionMm": [
+        117.475,
+        126.75
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "C12.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "90f94731-85d1-570c-8596-1c526b2b6b5d",
+      "positionMm": [
+        160.65,
+        144.925
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "C19.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "d8f5c500-64c5-5d9e-83d0-1379ce236240",
+      "positionMm": [
+        190.905,
+        119.735
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "C20.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "a320d9ff-151b-57d1-bc42-97211523d4cc",
+      "positionMm": [
+        185.975,
+        117.15
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "C23.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "38135987-a080-50b6-8ba2-51050907fc56",
+      "positionMm": [
+        139.525,
+        147.75
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "C43.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "fe026ba2-2911-516a-8e32-47bed69b4213",
+      "positionMm": [
+        123.5,
+        113.975
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "C50.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "20eeed0a-8654-5f12-8cd9-166f6ab3fb17",
+      "positionMm": [
+        113.2,
+        105.95
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "C53.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "c98b9e7a-67d5-5fe9-be61-2b1d36a8889a",
+      "positionMm": [
+        115.95,
+        135.05
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "JP1.2"
+    },
+    {
+      "kind": "track",
+      "uuid": "b1f5221b-6961-5404-9cad-c85c5a686d2f",
+      "target": "Q10.5",
+      "layer": "F.Cu",
+      "startMm": [
+        151.25,
+        149.6125
+      ],
+      "endMm": [
+        151.25,
+        150.2125
+      ],
+      "widthMm": 0.25,
+      "lengthMm": 0.6
+    },
+    {
+      "kind": "track",
+      "uuid": "d9436faf-99ba-525c-8518-934027c007ea",
+      "target": "Q10.5",
+      "layer": "F.Cu",
+      "startMm": [
+        151.25,
+        150.2125
+      ],
+      "endMm": [
+        150.8,
+        150.6625
+      ],
+      "widthMm": 0.25,
+      "lengthMm": 0.6363961030678928
+    },
+    {
+      "kind": "via",
+      "uuid": "db5f6823-c6c3-5460-9dcb-6355115eaa32",
+      "positionMm": [
+        150.8,
+        150.6625
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "Q10.5"
+    },
+    {
+      "kind": "via",
+      "uuid": "276c6d6a-be40-5184-9157-6c557a85e07b",
+      "positionMm": [
+        140.7222,
+        135.9967
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "Q13.5"
+    },
+    {
+      "kind": "via",
+      "uuid": "657cc2fc-e23f-5774-b94e-0cbc0a0b32fc",
+      "positionMm": [
+        198.125,
+        126.0
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "R103.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "aac6a64c-f004-5d45-9b2e-35fe7df1f16a",
+      "positionMm": [
+        132.117893,
+        139.542893
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "R31.1"
+    },
+    {
+      "kind": "via",
+      "uuid": "ce3672fe-4053-5dd5-9b6a-b0fc6765bde5",
+      "positionMm": [
+        120.35,
+        143.625
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "R34.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "43878452-5efb-58c2-b295-35b52b25bc7d",
+      "positionMm": [
+        136.032107,
+        148.457107
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "R47.1"
+    },
+    {
+      "kind": "via",
+      "uuid": "a28bd0be-a708-532d-a15a-1f3f918b7dad",
+      "positionMm": [
+        140.476472,
+        132.151472
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "R66.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "2d2682b1-5269-5e8f-9e67-d10b6f5c6b83",
+      "positionMm": [
+        201.0569,
+        142.390386
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "SW1.1"
+    },
+    {
+      "kind": "via",
+      "uuid": "17c75c5d-f643-5351-996b-57e8355fe261",
+      "positionMm": [
+        124.3375,
+        103.5
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "U16.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "c4c0d9e3-34f1-591b-92a9-f643a16ef499",
+      "positionMm": [
+        118.582688,
+        102.657352
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": false,
+      "target": "U17.3"
+    },
+    {
+      "kind": "via",
+      "uuid": "3f620289-6eae-5796-977d-602df49c9a9f",
+      "positionMm": [
+        168.0,
+        137.85
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": true,
+      "target": "U19.18,U19.22,U19.24,U19.25,U19.9"
+    },
+    {
+      "kind": "via",
+      "uuid": "054fe1b1-22f7-5290-b500-a7f213f7380a",
+      "positionMm": [
+        203.979982,
+        114.440018
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": true,
+      "target": "U12.29,U12.3"
+    },
+    {
+      "kind": "via",
+      "uuid": "0bcb79aa-808e-548b-b188-6a060d332568",
+      "positionMm": [
+        152.075,
+        147.75
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": true,
+      "target": "R59.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "9a887a6b-218d-5083-812e-b6f3faba1440",
+      "positionMm": [
+        200.050099,
+        128.75
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": true,
+      "target": "U11.2"
+    },
+    {
+      "kind": "via",
+      "uuid": "48f683c4-3dd7-526b-8754-f7ab5cfa5510",
+      "positionMm": [
+        123.8125,
+        141.4875
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filledCappedThermal": true,
+      "target": "U13.4"
+    }
+  ],
+  "unresolvedSearchGroups": [
+    "C57.2",
+    "J4.SH",
+    "C38.2",
+    "C60.2"
+  ],
+  "thermalViaManufacturingRequirement": "Every listedfilledCappedThermal via is VIPPO and requires filled/copper-capped/planarized fabrication. U10/U12/U19 exposed-pad vias have bottom tenting; other VIPPO sites have both sides tented to retain the original footprint mask land. Do not substitute ordinary open vias.",
+  "nativeDRCPending": false,
+  "savedViaFabricationFlags": [
+    {
+      "uuid": "87918af0-1294-525b-97f0-f493c22293c6",
+      "target": "U10.49",
+      "xyMm": [
+        173.6875,
+        115.3625
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 2,
+      "backTenting": 1
+    },
+    {
+      "uuid": "3369aeaf-d4a1-5472-b28b-5c869e8d0f87",
+      "target": "U10.49",
+      "xyMm": [
+        172.7875,
+        115.3625
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 2,
+      "backTenting": 1
+    },
+    {
+      "uuid": "acb91d58-5ff1-55fc-9627-1e082d19c8f0",
+      "target": "U10.49",
+      "xyMm": [
+        174.5875,
+        115.3625
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 2,
+      "backTenting": 1
+    },
+    {
+      "uuid": "4a9a5495-5d97-5cb4-911a-38f85a5cc5d7",
+      "target": "C51.2,C52.1,C54.2,R77.1,R80.2",
+      "xyMm": [
+        120.5,
+        109.975
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "8de3c8a4-aa1d-5251-8cfd-efd3de52982f",
+      "target": "C8.2,Q1.1,R18.2,R21.2",
+      "xyMm": [
+        133.275,
+        120.0
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "27d19fae-e27d-5f3e-b6c7-5a60cfc230ba",
+      "target": "C11.1,R5.2",
+      "xyMm": [
+        119.5,
+        118.825
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "489e8158-7942-5cb1-bcff-7a034b11a427",
+      "target": "C41.2,U14.4",
+      "xyMm": [
+        123.5,
+        133.275
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "4c2dfcb7-2f19-5cea-bad9-5372192f34cc",
+      "target": "Q11.5,R61.2",
+      "xyMm": [
+        167.675,
+        150.75
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "5f7518cc-968b-51a4-b9a6-30cee6dafdb9",
+      "target": "Q14.5,R69.2",
+      "xyMm": [
+        158.25,
+        148.4125
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "8df84a03-d91c-5440-a032-b42866142c21",
+      "target": "Q6.1,R75.2",
+      "xyMm": [
+        131.917312,
+        142.907352
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "4343edab-1fc0-5395-be51-be85bfb4725d",
+      "target": "R38.1,R41.2",
+      "xyMm": [
+        117.225,
+        130.15
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "b0d4ce11-d917-5866-a471-b5496f10d045",
+      "target": "R44.1,U15.4",
+      "xyMm": [
+        134.375,
+        152.25
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "3fcc5b93-f05b-51cd-9892-37083e1f2b69",
+      "target": "C12.2",
+      "xyMm": [
+        117.475,
+        126.75
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "90f94731-85d1-570c-8596-1c526b2b6b5d",
+      "target": "C19.2",
+      "xyMm": [
+        160.65,
+        144.925
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "d8f5c500-64c5-5d9e-83d0-1379ce236240",
+      "target": "C20.2",
+      "xyMm": [
+        190.905,
+        119.735
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "a320d9ff-151b-57d1-bc42-97211523d4cc",
+      "target": "C23.2",
+      "xyMm": [
+        185.975,
+        117.15
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "38135987-a080-50b6-8ba2-51050907fc56",
+      "target": "C43.2",
+      "xyMm": [
+        139.525,
+        147.75
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "fe026ba2-2911-516a-8e32-47bed69b4213",
+      "target": "C50.2",
+      "xyMm": [
+        123.5,
+        113.975
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "20eeed0a-8654-5f12-8cd9-166f6ab3fb17",
+      "target": "C53.2",
+      "xyMm": [
+        113.2,
+        105.95
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "c98b9e7a-67d5-5fe9-be61-2b1d36a8889a",
+      "target": "JP1.2",
+      "xyMm": [
+        115.95,
+        135.05
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "db5f6823-c6c3-5460-9dcb-6355115eaa32",
+      "target": "Q10.5",
+      "xyMm": [
+        150.8,
+        150.6625
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "276c6d6a-be40-5184-9157-6c557a85e07b",
+      "target": "Q13.5",
+      "xyMm": [
+        140.7222,
+        135.9967
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "657cc2fc-e23f-5774-b94e-0cbc0a0b32fc",
+      "target": "R103.2",
+      "xyMm": [
+        198.125,
+        126.0
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "aac6a64c-f004-5d45-9b2e-35fe7df1f16a",
+      "target": "R31.1",
+      "xyMm": [
+        132.117893,
+        139.542893
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "ce3672fe-4053-5dd5-9b6a-b0fc6765bde5",
+      "target": "R34.2",
+      "xyMm": [
+        120.35,
+        143.625
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "43878452-5efb-58c2-b295-35b52b25bc7d",
+      "target": "R47.1",
+      "xyMm": [
+        136.032107,
+        148.457107
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "a28bd0be-a708-532d-a15a-1f3f918b7dad",
+      "target": "R66.2",
+      "xyMm": [
+        140.476472,
+        132.151472
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "2d2682b1-5269-5e8f-9e67-d10b6f5c6b83",
+      "target": "SW1.1",
+      "xyMm": [
+        201.0569,
+        142.390386
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "17c75c5d-f643-5351-996b-57e8355fe261",
+      "target": "U16.2",
+      "xyMm": [
+        124.3375,
+        103.5
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "c4c0d9e3-34f1-591b-92a9-f643a16ef499",
+      "target": "U17.3",
+      "xyMm": [
+        118.582688,
+        102.657352
+      ],
+      "filled": false,
+      "capped": false,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "3f620289-6eae-5796-977d-602df49c9a9f",
+      "target": "U19.18,U19.22,U19.24,U19.25,U19.9",
+      "xyMm": [
+        168.0,
+        137.85
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 2,
+      "backTenting": 1
+    },
+    {
+      "uuid": "054fe1b1-22f7-5290-b500-a7f213f7380a",
+      "target": "U12.29,U12.3",
+      "xyMm": [
+        203.979982,
+        114.440018
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 2,
+      "backTenting": 1
+    },
+    {
+      "uuid": "0bcb79aa-808e-548b-b188-6a060d332568",
+      "target": "R59.2",
+      "xyMm": [
+        152.075,
+        147.75
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "9a887a6b-218d-5083-812e-b6f3faba1440",
+      "target": "U11.2",
+      "xyMm": [
+        200.050099,
+        128.75
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "48f683c4-3dd7-526b-8754-f7ab5cfa5510",
+      "target": "U13.4",
+      "xyMm": [
+        123.8125,
+        141.4875
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    }
+  ],
+  "neckdownSegments": [],
+  "nativeSavedViaFlagsVerified": true,
+  "viaFlagVerification": "Native GetPrimaryDrillFilledFlag/GetPrimaryDrillCappedFlag bool getters, afterreload",
+  "nativeDRC": {
+    "errors": 4,
+    "warnings": 3,
+    "categories": {
+      "copper_edge_clearance": 4,
+      "track_dangling": 3
+    },
+    "unconnected": 12,
+    "inheritedFindingsOnly": true,
+    "noNewFindingIdentitiesComparedToInput": true,
+    "inputBaselineReport": "../signal-power-stage/native-drc.json"
+  },
+  "allOriginalFootprintBlocksByteExact": true,
+  "outsidePadSearchUnresolvedBeforeVIPPO": [
+    "U19.18,U19.22,U19.24,U19.25,U19.9",
+    "U12.29,U12.3",
+    "C38.2",
+    "C57.2",
+    "C60.2",
+    "J4.SH",
+    "R59.2",
+    "U11.2",
+    "U13.4"
+  ]
+}

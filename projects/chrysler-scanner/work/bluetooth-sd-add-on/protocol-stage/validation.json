@@ -1,0 +1,16 @@
+{
+  "test": "AppleClang21 C++17; -Wall -Wextra -Wpedantic -Werror; AddressSanitizer+UndefinedBehaviorSanitizer",
+  "result": "passed",
+  "assertions": 50189,
+  "hardware_validated": false,
+  "vehicle_transmissions": false,
+  "files": {
+    "include/chrysler/protocol.hpp": "5e7e7825afd84c6f7d1778d4e5aa580a4797edf1243026c8b144ce72919e1bed",
+    "src/protocol.cpp": "5ff630c88ecb2170532f6563d988f899569f6bfe9f8da34d5d8eb38d676ed8ea",
+    "tests/protocol_test.cpp": "5998687775749ebb7fb9198fad7c9b28b196f29ed35363a8d65b6fce08061af1",
+    "README.md": "e27502278b483c58190db714917be274d0cd7f4dc8e4464364fad24c1ec6de40",
+    "SOURCES.md": "c0d7e884118d04b023f9fea09294b2e813b46f45b81bf014bfba6d65339bb2ff",
+    "LICENSE": "c3bc1fd94148c28485e8bab1d5a28edbc8e3870f2bd9be7127c68c8b7a0ea5df",
+    "CMakeLists.txt": "799fc5ed34dc9bf57d0b1accd12d8090c89c7e6b4c6bc4e5b56274683a10adaf"
+  }
+}

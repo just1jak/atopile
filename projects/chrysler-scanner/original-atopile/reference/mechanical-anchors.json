@@ -1,0 +1,66 @@
+{
+  "J1": {
+    "xy_mm": [
+      3.0,
+      25.0
+    ],
+    "rotation_deg": 0,
+    "reason": "ATTEND 226A-1202 rev 2 tail pattern; 0.15 mm inward offset improves pad-to-edge clearance to 0.325 mm; manufacturer CAD board/hardware clearance checked"
+  },
+  "J2": {
+    "xy_mm": [
+      106.325,
+      29.0
+    ],
+    "rotation_deg": 90,
+    "reason": "Expanded-board spacing; critical pin-distance pairs preserved as rigid clusters"
+  },
+  "J3": {
+    "xy_mm": [
+      75.35,
+      35.75
+    ],
+    "rotation_deg": 0,
+    "reason": "Expanded-board spacing; critical pin-distance pairs preserved as rigid clusters"
+  },
+  "U12": {
+    "xy_mm": [
+      103.979982,
+      14.440018
+    ],
+    "rotation_deg": 90,
+    "reason": "Expanded-board spacing; critical pin-distance pairs preserved as rigid clusters"
+  },
+  "D23": {
+    "xy_mm": [
+      83.81998,
+      32.36862
+    ],
+    "rotation_deg": 0,
+    "reason": "Expanded-board spacing; critical pin-distance pairs preserved as rigid clusters"
+  },
+  "D24": {
+    "xy_mm": [
+      83.81998,
+      35.44202
+    ],
+    "rotation_deg": 0,
+    "reason": "Expanded-board spacing; critical pin-distance pairs preserved as rigid clusters"
+  },
+  "D25": {
+    "xy_mm": [
+      83.81998,
+      38.51542
+    ],
+    "rotation_deg": 0,
+    "reason": "Expanded-board spacing; critical pin-distance pairs preserved as rigid clusters"
+  },
+  "D26": {
+    "xy_mm": [
+      83.81998,
+      41.58882
+    ],
+    "rotation_deg": 0,
+    "reason": "Expanded-board spacing; critical pin-distance pairs preserved as rigid clusters"
+  }
+}

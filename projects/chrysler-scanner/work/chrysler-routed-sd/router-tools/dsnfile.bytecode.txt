@@ -1,0 +1,682 @@
+Compiled from "DsnFile.java"
+public class app.freerouting.designforms.specctra.DsnFile {
+  static final char CLASS_CLEARANCE_SEPARATOR;
+
+  private app.freerouting.designforms.specctra.DsnFile();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static app.freerouting.designforms.specctra.DsnFile$ReadResult read(java.io.InputStream, app.freerouting.interactive.IBoardHandling, app.freerouting.board.BoardObservers, app.freerouting.datastructures.IdNoGenerator, app.freerouting.board.TestLevel);
+    Code:
+       0: new           #7                  // class app/freerouting/designforms/specctra/SpecctraDsnFileReader
+       3: dup
+       4: aload_0
+       5: invokespecial #9                  // Method app/freerouting/designforms/specctra/SpecctraDsnFileReader."<init>":(Ljava/io/InputStream;)V
+       8: astore        5
+      10: iconst_0
+      11: istore        7
+      13: iload         7
+      15: iconst_3
+      16: if_icmpge     119
+      19: aload         5
+      21: invokeinterface #12,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+      26: astore        6
+      28: goto          44
+      31: astore        8
+      33: ldc           #20                 // String DsnFile.read: IO error scanning file
+      35: aload         8
+      37: invokestatic  #22                 // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+      40: getstatic     #28                 // Field app/freerouting/designforms/specctra/DsnFile$ReadResult.ERROR:Lapp/freerouting/designforms/specctra/DsnFile$ReadResult;
+      43: areturn
+      44: iconst_1
+      45: istore        8
+      47: iload         7
+      49: ifne          70
+      52: aload         6
+      54: getstatic     #34                 // Field app/freerouting/designforms/specctra/Keyword.OPEN_BRACKET:Lapp/freerouting/designforms/specctra/Keyword;
+      57: if_acmpne     64
+      60: iconst_1
+      61: goto          65
+      64: iconst_0
+      65: istore        8
+      67: goto          99
+      70: iload         7
+      72: iconst_1
+      73: if_icmpne     99
+      76: aload         6
+      78: getstatic     #40                 // Field app/freerouting/designforms/specctra/Keyword.PCB_SCOPE:Lapp/freerouting/designforms/specctra/ScopeKeyword;
+      81: if_acmpne     88
+      84: iconst_1
+      85: goto          89
+      88: iconst_0
+      89: istore        8
+      91: aload         5
+      93: iconst_3
+      94: invokeinterface #44,  2           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.yybegin:(I)V
+      99: iload         8
+     101: ifne          113
+     104: ldc           #48                 // String DsnFile.read: the input file is not in a Specctra DSN file format. It must be a text file starting with the \'(pcb\' character array.
+     106: invokestatic  #50                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+     109: getstatic     #28                 // Field app/freerouting/designforms/specctra/DsnFile$ReadResult.ERROR:Lapp/freerouting/designforms/specctra/DsnFile$ReadResult;
+     112: areturn
+     113: iinc          7, 1
+     116: goto          13
+     119: new           #54                 // class app/freerouting/designforms/specctra/ReadScopeParameter
+     122: dup
+     123: aload         5
+     125: aload_1
+     126: aload_2
+     127: aload_3
+     128: aload         4
+     130: invokespecial #56                 // Method app/freerouting/designforms/specctra/ReadScopeParameter."<init>":(Lapp/freerouting/designforms/specctra/IJFlexScanner;Lapp/freerouting/interactive/IBoardHandling;Lapp/freerouting/board/BoardObservers;Lapp/freerouting/datastructures/IdNoGenerator;Lapp/freerouting/board/TestLevel;)V
+     133: astore        7
+     135: getstatic     #40                 // Field app/freerouting/designforms/specctra/Keyword.PCB_SCOPE:Lapp/freerouting/designforms/specctra/ScopeKeyword;
+     138: aload         7
+     140: invokevirtual #59                 // Method app/freerouting/designforms/specctra/ScopeKeyword.read_scope:(Lapp/freerouting/designforms/specctra/ReadScopeParameter;)Z
+     143: istore        8
+     145: iload         8
+     147: ifeq          171
+     150: getstatic     #65                 // Field app/freerouting/designforms/specctra/DsnFile$ReadResult.OK:Lapp/freerouting/designforms/specctra/DsnFile$ReadResult;
+     153: astore        9
+     155: aload         7
+     157: getfield      #68                 // Field app/freerouting/designforms/specctra/ReadScopeParameter.autoroute_settings:Lapp/freerouting/interactive/AutorouteSettings;
+     160: ifnonnull     192
+     163: aload_1
+     164: invokestatic  #72                 // Method adjust_plane_autoroute_settings:(Lapp/freerouting/interactive/IBoardHandling;)Z
+     167: pop
+     168: goto          192
+     171: aload         7
+     173: getfield      #78                 // Field app/freerouting/designforms/specctra/ReadScopeParameter.board_outline_ok:Z
+     176: ifne          187
+     179: getstatic     #82                 // Field app/freerouting/designforms/specctra/DsnFile$ReadResult.OUTLINE_MISSING:Lapp/freerouting/designforms/specctra/DsnFile$ReadResult;
+     182: astore        9
+     184: goto          192
+     187: getstatic     #28                 // Field app/freerouting/designforms/specctra/DsnFile$ReadResult.ERROR:Lapp/freerouting/designforms/specctra/DsnFile$ReadResult;
+     190: astore        9
+     192: aload         9
+     194: areturn
+    Exception table:
+       from    to  target type
+          19    28    31   Class java/io/IOException
+
+  private static boolean adjust_plane_autoroute_settings(app.freerouting.interactive.IBoardHandling);
+    Code:
+       0: aload_0
+       1: invokeinterface #85,  1           // InterfaceMethod app/freerouting/interactive/IBoardHandling.get_routing_board:()Lapp/freerouting/board/RoutingBoard;
+       6: astore_1
+       7: aload_1
+       8: getfield      #91                 // Field app/freerouting/board/BasicBoard.layer_structure:Lapp/freerouting/board/LayerStructure;
+      11: astore_2
+      12: aload_2
+      13: getfield      #97                 // Field app/freerouting/board/LayerStructure.arr:[Lapp/freerouting/board/Layer;
+      16: arraylength
+      17: iconst_2
+      18: if_icmpgt     23
+      21: iconst_0
+      22: ireturn
+      23: aload_2
+      24: getfield      #97                 // Field app/freerouting/board/LayerStructure.arr:[Lapp/freerouting/board/Layer;
+      27: astore_3
+      28: aload_3
+      29: arraylength
+      30: istore        4
+      32: iconst_0
+      33: istore        5
+      35: iload         5
+      37: iload         4
+      39: if_icmpge     64
+      42: aload_3
+      43: iload         5
+      45: aaload
+      46: astore        6
+      48: aload         6
+      50: getfield      #103                // Field app/freerouting/board/Layer.is_signal:Z
+      53: ifne          58
+      56: iconst_0
+      57: ireturn
+      58: iinc          5, 1
+      61: goto          35
+      64: aload_2
+      65: getfield      #97                 // Field app/freerouting/board/LayerStructure.arr:[Lapp/freerouting/board/Layer;
+      68: arraylength
+      69: newarray       boolean
+      71: astore_3
+      72: aload_2
+      73: getfield      #97                 // Field app/freerouting/board/LayerStructure.arr:[Lapp/freerouting/board/Layer;
+      76: arraylength
+      77: newarray       boolean
+      79: astore        4
+      81: iconst_0
+      82: istore        5
+      84: iload         5
+      86: aload_3
+      87: arraylength
+      88: if_icmpge     108
+      91: aload_3
+      92: iload         5
+      94: iconst_0
+      95: bastore
+      96: aload         4
+      98: iload         5
+     100: iconst_0
+     101: bastore
+     102: iinc          5, 1
+     105: goto          84
+     108: new           #108                // class java/util/LinkedList
+     111: dup
+     112: invokespecial #110                // Method java/util/LinkedList."<init>":()V
+     115: astore        5
+     117: aload_1
+     118: invokevirtual #111                // Method app/freerouting/board/BasicBoard.get_items:()Ljava/util/Collection;
+     121: astore        6
+     123: aload         6
+     125: invokeinterface #115,  1          // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+     130: astore        7
+     132: aload         7
+     134: invokeinterface #121,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     139: ifeq          204
+     142: aload         7
+     144: invokeinterface #127,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     149: checkcast     #130                // class app/freerouting/board/Item
+     152: astore        8
+     154: aload         8
+     156: instanceof    #132                // class app/freerouting/board/Trace
+     159: ifeq          180
+     162: aload         8
+     164: checkcast     #132                // class app/freerouting/board/Trace
+     167: invokevirtual #134                // Method app/freerouting/board/Trace.get_layer:()I
+     170: istore        9
+     172: aload_3
+     173: iload         9
+     175: iconst_1
+     176: bastore
+     177: goto          201
+     180: aload         8
+     182: instanceof    #138                // class app/freerouting/board/ConductionArea
+     185: ifeq          201
+     188: aload         5
+     190: aload         8
+     192: checkcast     #138                // class app/freerouting/board/ConductionArea
+     195: invokeinterface #140,  2          // InterfaceMethod java/util/Collection.add:(Ljava/lang/Object;)Z
+     200: pop
+     201: goto          132
+     204: iconst_1
+     205: istore        7
+     207: aload_1
+     208: invokevirtual #144                // Method app/freerouting/board/BasicBoard.get_outline:()Lapp/freerouting/board/BoardOutline;
+     211: astore        8
+     213: dconst_0
+     214: dstore        9
+     216: iconst_0
+     217: istore        11
+     219: iload         11
+     221: aload         8
+     223: invokevirtual #148                // Method app/freerouting/board/BoardOutline.shape_count:()I
+     226: if_icmpge     294
+     229: aload         8
+     231: iload         11
+     233: invokevirtual #153                // Method app/freerouting/board/BoardOutline.get_shape:(I)Lapp/freerouting/geometry/planar/PolylineShape;
+     236: invokevirtual #157                // Method app/freerouting/geometry/planar/PolylineShape.split_to_convex:()[Lapp/freerouting/geometry/planar/TileShape;
+     239: astore        12
+     241: aload         12
+     243: ifnull        288
+     246: aload         12
+     248: astore        13
+     250: aload         13
+     252: arraylength
+     253: istore        14
+     255: iconst_0
+     256: istore        15
+     258: iload         15
+     260: iload         14
+     262: if_icmpge     288
+     265: aload         13
+     267: iload         15
+     269: aaload
+     270: astore        16
+     272: dload         9
+     274: aload         16
+     276: invokevirtual #163                // Method app/freerouting/geometry/planar/TileShape.area:()D
+     279: dadd
+     280: dstore        9
+     282: iinc          15, 1
+     285: goto          258
+     288: iinc          11, 1
+     291: goto          219
+     294: aload         5
+     296: invokeinterface #115,  1          // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+     301: astore        11
+     303: aload         11
+     305: invokeinterface #121,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     310: ifeq          535
+     313: aload         11
+     315: invokeinterface #127,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     320: checkcast     #138                // class app/freerouting/board/ConductionArea
+     323: astore        12
+     325: aload         12
+     327: invokevirtual #169                // Method app/freerouting/board/ConductionArea.get_layer:()I
+     330: istore        13
+     332: aload_3
+     333: iload         13
+     335: baload
+     336: ifeq          342
+     339: goto          303
+     342: aload_1
+     343: getfield      #91                 // Field app/freerouting/board/BasicBoard.layer_structure:Lapp/freerouting/board/LayerStructure;
+     346: getfield      #97                 // Field app/freerouting/board/LayerStructure.arr:[Lapp/freerouting/board/Layer;
+     349: iload         13
+     351: aaload
+     352: astore        14
+     354: aload         14
+     356: getfield      #103                // Field app/freerouting/board/Layer.is_signal:Z
+     359: ifeq          303
+     362: iload         13
+     364: ifeq          303
+     367: iload         13
+     369: aload_2
+     370: getfield      #97                 // Field app/freerouting/board/LayerStructure.arr:[Lapp/freerouting/board/Layer;
+     373: arraylength
+     374: iconst_1
+     375: isub
+     376: if_icmpne     382
+     379: goto          303
+     382: aload         12
+     384: invokevirtual #170                // Method app/freerouting/board/ConductionArea.get_area:()Lapp/freerouting/geometry/planar/Area;
+     387: invokeinterface #174,  1          // InterfaceMethod app/freerouting/geometry/planar/Area.split_to_convex:()[Lapp/freerouting/geometry/planar/TileShape;
+     392: astore        15
+     394: dconst_0
+     395: dstore        16
+     397: aload         15
+     399: astore        18
+     401: aload         18
+     403: arraylength
+     404: istore        19
+     406: iconst_0
+     407: istore        20
+     409: iload         20
+     411: iload         19
+     413: if_icmpge     439
+     416: aload         18
+     418: iload         20
+     420: aaload
+     421: astore        21
+     423: dload         16
+     425: aload         21
+     427: invokevirtual #163                // Method app/freerouting/geometry/planar/TileShape.area:()D
+     430: dadd
+     431: dstore        16
+     433: iinc          20, 1
+     436: goto          409
+     439: dload         16
+     441: ldc2_w        #177                // double 0.5d
+     444: dload         9
+     446: dmul
+     447: dcmpg
+     448: ifge          454
+     451: goto          303
+     454: iconst_0
+     455: istore        18
+     457: iload         18
+     459: aload         12
+     461: invokevirtual #179                // Method app/freerouting/board/ConductionArea.net_count:()I
+     464: if_icmpge     501
+     467: aload_1
+     468: getfield      #182                // Field app/freerouting/board/BasicBoard.rules:Lapp/freerouting/rules/BoardRules;
+     471: getfield      #186                // Field app/freerouting/rules/BoardRules.nets:Lapp/freerouting/rules/Nets;
+     474: aload         12
+     476: iload         18
+     478: invokevirtual #192                // Method app/freerouting/board/ConductionArea.get_net_no:(I)I
+     481: invokevirtual #196                // Method app/freerouting/rules/Nets.get:(I)Lapp/freerouting/rules/Net;
+     484: astore        19
+     486: aload         19
+     488: iconst_1
+     489: invokevirtual #202                // Method app/freerouting/rules/Net.set_contains_plane:(Z)V
+     492: iconst_0
+     493: istore        7
+     495: iinc          18, 1
+     498: goto          457
+     501: aload         4
+     503: iload         13
+     505: iconst_1
+     506: bastore
+     507: aload         12
+     509: invokevirtual #208                // Method app/freerouting/board/ConductionArea.get_fixed_state:()Lapp/freerouting/board/FixedState;
+     512: invokevirtual #212                // Method app/freerouting/board/FixedState.ordinal:()I
+     515: getstatic     #217                // Field app/freerouting/board/FixedState.USER_FIXED:Lapp/freerouting/board/FixedState;
+     518: invokevirtual #212                // Method app/freerouting/board/FixedState.ordinal:()I
+     521: if_icmpge     532
+     524: aload         12
+     526: getstatic     #217                // Field app/freerouting/board/FixedState.USER_FIXED:Lapp/freerouting/board/FixedState;
+     529: invokevirtual #221                // Method app/freerouting/board/ConductionArea.set_fixed_state:(Lapp/freerouting/board/FixedState;)V
+     532: goto          303
+     535: iload         7
+     537: ifeq          542
+     540: iconst_0
+     541: ireturn
+     542: aload_0
+     543: invokeinterface #225,  1          // InterfaceMethod app/freerouting/interactive/IBoardHandling.get_settings:()Lapp/freerouting/interactive/Settings;
+     548: getfield      #229                // Field app/freerouting/interactive/Settings.autoroute_settings:Lapp/freerouting/interactive/AutorouteSettings;
+     551: astore        11
+     553: aload_1
+     554: invokevirtual #232                // Method app/freerouting/board/BasicBoard.get_layer_count:()I
+     557: istore        12
+     559: aload         11
+     561: iconst_0
+     562: invokevirtual #235                // Method app/freerouting/interactive/AutorouteSettings.get_preferred_direction_is_horizontal:(I)Z
+     565: istore        13
+     567: iconst_0
+     568: istore        14
+     570: iload         14
+     572: iload         12
+     574: if_icmpge     633
+     577: aload         4
+     579: iload         14
+     581: baload
+     582: ifeq          596
+     585: aload         11
+     587: iload         14
+     589: iconst_0
+     590: invokevirtual #241                // Method app/freerouting/interactive/AutorouteSettings.set_layer_active:(IZ)V
+     593: goto          627
+     596: aload         11
+     598: iload         14
+     600: invokevirtual #245                // Method app/freerouting/interactive/AutorouteSettings.get_layer_active:(I)Z
+     603: ifeq          627
+     606: aload         11
+     608: iload         14
+     610: iload         13
+     612: invokevirtual #248                // Method app/freerouting/interactive/AutorouteSettings.set_preferred_direction_is_horizontal:(IZ)V
+     615: iload         13
+     617: ifne          624
+     620: iconst_1
+     621: goto          625
+     624: iconst_0
+     625: istore        13
+     627: iinc          14, 1
+     630: goto          570
+     633: iconst_1
+     634: ireturn
+
+  public static boolean write(app.freerouting.interactive.BoardHandling, java.io.OutputStream, java.lang.String, boolean);
+    Code:
+       0: new           #251                // class app/freerouting/datastructures/IndentFileWriter
+       3: dup
+       4: aload_1
+       5: invokespecial #253                // Method app/freerouting/datastructures/IndentFileWriter."<init>":(Ljava/io/OutputStream;)V
+       8: astore        4
+      10: aload_0
+      11: aload         4
+      13: aload_2
+      14: iload_3
+      15: invokestatic  #256                // Method write_pcb_scope:(Lapp/freerouting/interactive/BoardHandling;Lapp/freerouting/datastructures/IndentFileWriter;Ljava/lang/String;Z)V
+      18: goto          33
+      21: astore        5
+      23: ldc_w         #260                // String unable to write dsn file
+      26: aload         5
+      28: invokestatic  #22                 // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+      31: iconst_0
+      32: ireturn
+      33: aload         4
+      35: invokevirtual #262                // Method app/freerouting/datastructures/IndentFileWriter.close:()V
+      38: goto          53
+      41: astore        5
+      43: ldc_w         #265                // String unable to close dsn file
+      46: aload         5
+      48: invokestatic  #22                 // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+      51: iconst_0
+      52: ireturn
+      53: iconst_1
+      54: ireturn
+    Exception table:
+       from    to  target type
+          10    18    21   Class java/io/IOException
+          33    38    41   Class java/io/IOException
+
+  private static void write_pcb_scope(app.freerouting.interactive.BoardHandling, app.freerouting.datastructures.IndentFileWriter, java.lang.String, boolean) throws java.io.IOException;
+    Code:
+       0: aload_0
+       1: invokevirtual #267                // Method app/freerouting/interactive/BoardHandling.get_routing_board:()Lapp/freerouting/board/RoutingBoard;
+       4: astore        4
+       6: new           #270                // class app/freerouting/designforms/specctra/WriteScopeParameter
+       9: dup
+      10: aload         4
+      12: aload_0
+      13: getfield      #272                // Field app/freerouting/interactive/BoardHandling.settings:Lapp/freerouting/interactive/Settings;
+      16: getfield      #229                // Field app/freerouting/interactive/Settings.autoroute_settings:Lapp/freerouting/interactive/AutorouteSettings;
+      19: aload_1
+      20: aload         4
+      22: getfield      #276                // Field app/freerouting/board/BasicBoard.communication:Lapp/freerouting/board/Communication;
+      25: getfield      #280                // Field app/freerouting/board/Communication.specctra_parser_info:Lapp/freerouting/board/Communication$SpecctraParserInfo;
+      28: getfield      #286                // Field app/freerouting/board/Communication$SpecctraParserInfo.string_quote:Ljava/lang/String;
+      31: aload         4
+      33: getfield      #276                // Field app/freerouting/board/BasicBoard.communication:Lapp/freerouting/board/Communication;
+      36: getfield      #292                // Field app/freerouting/board/Communication.coordinate_transform:Lapp/freerouting/designforms/specctra/CoordinateTransform;
+      39: iload_3
+      40: invokespecial #296                // Method app/freerouting/designforms/specctra/WriteScopeParameter."<init>":(Lapp/freerouting/board/BasicBoard;Lapp/freerouting/interactive/AutorouteSettings;Lapp/freerouting/datastructures/IndentFileWriter;Ljava/lang/String;Lapp/freerouting/designforms/specctra/CoordinateTransform;Z)V
+      43: astore        5
+      45: aload_1
+      46: iconst_0
+      47: invokevirtual #299                // Method app/freerouting/datastructures/IndentFileWriter.start_scope:(Z)V
+      50: aload_1
+      51: ldc_w         #302                // String pcb
+      54: invokevirtual #304                // Method app/freerouting/datastructures/IndentFileWriter.write:(Ljava/lang/String;)V
+      57: aload         5
+      59: getfield      #307                // Field app/freerouting/designforms/specctra/WriteScopeParameter.identifier_type:Lapp/freerouting/datastructures/IdentifierType;
+      62: aload_2
+      63: aload_1
+      64: invokevirtual #311                // Method app/freerouting/datastructures/IdentifierType.write:(Ljava/lang/String;Ljava/io/OutputStreamWriter;)V
+      67: aload         5
+      69: getfield      #316                // Field app/freerouting/designforms/specctra/WriteScopeParameter.file:Lapp/freerouting/datastructures/IndentFileWriter;
+      72: aload         5
+      74: getfield      #320                // Field app/freerouting/designforms/specctra/WriteScopeParameter.board:Lapp/freerouting/board/BasicBoard;
+      77: getfield      #276                // Field app/freerouting/board/BasicBoard.communication:Lapp/freerouting/board/Communication;
+      80: getfield      #280                // Field app/freerouting/board/Communication.specctra_parser_info:Lapp/freerouting/board/Communication$SpecctraParserInfo;
+      83: aload         5
+      85: getfield      #307                // Field app/freerouting/designforms/specctra/WriteScopeParameter.identifier_type:Lapp/freerouting/datastructures/IdentifierType;
+      88: iconst_0
+      89: invokestatic  #324                // Method app/freerouting/designforms/specctra/Parser.write_scope:(Lapp/freerouting/datastructures/IndentFileWriter;Lapp/freerouting/board/Communication$SpecctraParserInfo;Lapp/freerouting/datastructures/IdentifierType;Z)V
+      92: aload_1
+      93: aload         4
+      95: getfield      #276                // Field app/freerouting/board/BasicBoard.communication:Lapp/freerouting/board/Communication;
+      98: invokestatic  #330                // Method app/freerouting/designforms/specctra/Resolution.write_scope:(Lapp/freerouting/datastructures/IndentFileWriter;Lapp/freerouting/board/Communication;)V
+     101: aload_1
+     102: aload         4
+     104: getfield      #276                // Field app/freerouting/board/BasicBoard.communication:Lapp/freerouting/board/Communication;
+     107: getfield      #335                // Field app/freerouting/board/Communication.unit:Lapp/freerouting/board/Unit;
+     110: invokestatic  #339                // Method app/freerouting/designforms/specctra/Unit.write_scope:(Lapp/freerouting/datastructures/IndentFileWriter;Lapp/freerouting/board/Unit;)V
+     113: aload         5
+     115: invokestatic  #344                // Method app/freerouting/designforms/specctra/Structure.write_scope:(Lapp/freerouting/designforms/specctra/WriteScopeParameter;)V
+     118: aload         5
+     120: invokestatic  #349                // Method app/freerouting/designforms/specctra/Placement.write_scope:(Lapp/freerouting/designforms/specctra/WriteScopeParameter;)V
+     123: aload         5
+     125: invokestatic  #352                // Method app/freerouting/designforms/specctra/Library.write_scope:(Lapp/freerouting/designforms/specctra/WriteScopeParameter;)V
+     128: aload         5
+     130: invokestatic  #355                // Method app/freerouting/designforms/specctra/PartLibrary.write_scope:(Lapp/freerouting/designforms/specctra/WriteScopeParameter;)V
+     133: aload         5
+     135: invokestatic  #358                // Method app/freerouting/designforms/specctra/Network.write_scope:(Lapp/freerouting/designforms/specctra/WriteScopeParameter;)V
+     138: aload         5
+     140: invokestatic  #361                // Method app/freerouting/designforms/specctra/Wiring.write_scope:(Lapp/freerouting/designforms/specctra/WriteScopeParameter;)V
+     143: aload_1
+     144: invokevirtual #364                // Method app/freerouting/datastructures/IndentFileWriter.end_scope:()V
+     147: return
+
+  static boolean read_on_off_scope(app.freerouting.designforms.specctra.IJFlexScanner);
+    Code:
+       0: aload_0
+       1: invokeinterface #12,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+       6: astore_1
+       7: iconst_0
+       8: istore_2
+       9: aload_1
+      10: getstatic     #367                // Field app/freerouting/designforms/specctra/Keyword.ON:Lapp/freerouting/designforms/specctra/Keyword;
+      13: if_acmpne     21
+      16: iconst_1
+      17: istore_2
+      18: goto          42
+      21: aload_1
+      22: getstatic     #370                // Field app/freerouting/designforms/specctra/Keyword.OFF:Lapp/freerouting/designforms/specctra/Keyword;
+      25: if_acmpeq     42
+      28: aload_0
+      29: invokeinterface #373,  1          // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+      34: invokedynamic #377,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      39: invokestatic  #50                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      42: aload_0
+      43: invokestatic  #381                // Method app/freerouting/designforms/specctra/ScopeKeyword.skip_scope:(Lapp/freerouting/designforms/specctra/IJFlexScanner;)Z
+      46: pop
+      47: iload_2
+      48: ireturn
+      49: astore_1
+      50: ldc_w         #385                // String DsnFile.read_boolean: IO error scanning file
+      53: aload_1
+      54: invokestatic  #22                 // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+      57: iconst_0
+      58: ireturn
+    Exception table:
+       from    to  target type
+           0    48    49   Class java/io/IOException
+
+  static int read_integer_scope(app.freerouting.designforms.specctra.IJFlexScanner);
+    Code:
+       0: aload_0
+       1: invokeinterface #12,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+       6: astore_2
+       7: aload_2
+       8: instanceof    #387                // class java/lang/Integer
+      11: ifeq          25
+      14: aload_2
+      15: checkcast     #387                // class java/lang/Integer
+      18: invokevirtual #389                // Method java/lang/Integer.intValue:()I
+      21: istore_1
+      22: goto          41
+      25: aload_0
+      26: invokeinterface #373,  1          // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+      31: invokedynamic #392,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      36: invokestatic  #50                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      39: iconst_0
+      40: ireturn
+      41: aload_0
+      42: invokeinterface #12,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+      47: astore_2
+      48: aload_2
+      49: getstatic     #393                // Field app/freerouting/designforms/specctra/Keyword.CLOSED_BRACKET:Lapp/freerouting/designforms/specctra/Keyword;
+      52: if_acmpeq     71
+      55: aload_0
+      56: invokeinterface #373,  1          // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+      61: invokedynamic #396,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      66: invokestatic  #50                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      69: iconst_0
+      70: ireturn
+      71: iload_1
+      72: ireturn
+      73: astore_1
+      74: ldc_w         #397                // String DsnFile.read_integer_scope: IO error scanning file
+      77: aload_1
+      78: invokestatic  #22                 // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+      81: iconst_0
+      82: ireturn
+    Exception table:
+       from    to  target type
+           0    40    73   Class java/io/IOException
+          41    70    73   Class java/io/IOException
+          71    72    73   Class java/io/IOException
+
+  static double read_float_scope(app.freerouting.designforms.specctra.IJFlexScanner);
+    Code:
+       0: aload_0
+       1: invokeinterface #12,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+       6: astore_3
+       7: aload_3
+       8: instanceof    #399                // class java/lang/Double
+      11: ifeq          25
+      14: aload_3
+      15: checkcast     #399                // class java/lang/Double
+      18: invokevirtual #401                // Method java/lang/Double.doubleValue:()D
+      21: dstore_1
+      22: goto          60
+      25: aload_3
+      26: instanceof    #387                // class java/lang/Integer
+      29: ifeq          44
+      32: aload_3
+      33: checkcast     #387                // class java/lang/Integer
+      36: invokevirtual #389                // Method java/lang/Integer.intValue:()I
+      39: i2d
+      40: dstore_1
+      41: goto          60
+      44: aload_0
+      45: invokeinterface #373,  1          // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+      50: invokedynamic #404,  0            // InvokeDynamic #3:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      55: invokestatic  #50                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      58: dconst_0
+      59: dreturn
+      60: aload_0
+      61: invokeinterface #12,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+      66: astore_3
+      67: aload_3
+      68: getstatic     #393                // Field app/freerouting/designforms/specctra/Keyword.CLOSED_BRACKET:Lapp/freerouting/designforms/specctra/Keyword;
+      71: if_acmpeq     90
+      74: aload_0
+      75: invokeinterface #373,  1          // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+      80: invokedynamic #405,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      85: invokestatic  #50                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      88: dconst_0
+      89: dreturn
+      90: dload_1
+      91: dreturn
+      92: astore_1
+      93: ldc_w         #406                // String DsnFile.read_float_scope: IO error scanning file
+      96: aload_1
+      97: invokestatic  #22                 // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+     100: dconst_0
+     101: dreturn
+    Exception table:
+       from    to  target type
+           0    59    92   Class java/io/IOException
+          60    89    92   Class java/io/IOException
+          90    91    92   Class java/io/IOException
+
+  public static java.lang.String read_string_scope(app.freerouting.designforms.specctra.IJFlexScanner);
+    Code:
+       0: aload_0
+       1: iconst_3
+       2: invokeinterface #44,  2           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.yybegin:(I)V
+       7: aload_0
+       8: invokeinterface #408,  1          // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_string:()Ljava/lang/String;
+      13: astore_1
+      14: aload_0
+      15: invokeinterface #12,  1           // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_token:()Ljava/lang/Object;
+      20: astore_2
+      21: aload_2
+      22: getstatic     #393                // Field app/freerouting/designforms/specctra/Keyword.CLOSED_BRACKET:Lapp/freerouting/designforms/specctra/Keyword;
+      25: if_acmpeq     42
+      28: aload_0
+      29: invokeinterface #373,  1          // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.get_scope_identifier:()Ljava/lang/String;
+      34: invokedynamic #411,  0            // InvokeDynamic #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      39: invokestatic  #50                 // Method app/freerouting/logger/FRLogger.warn:(Ljava/lang/String;)V
+      42: aload_1
+      43: areturn
+      44: astore_1
+      45: ldc_w         #412                // String DsnFile.read_string_scope: IO error scanning file
+      48: aload_1
+      49: invokestatic  #22                 // Method app/freerouting/logger/FRLogger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+      52: aconst_null
+      53: areturn
+    Exception table:
+       from    to  target type
+           0    43    44   Class java/io/IOException
+
+  public static java.lang.String[] read_string_list_scope(app.freerouting.designforms.specctra.IJFlexScanner);
+    Code:
+       0: aload_0
+       1: invokeinterface #414,  1          // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_string_list:()[Ljava/lang/String;
+       6: astore_1
+       7: aload_0
+       8: invokeinterface #418,  1          // InterfaceMethod app/freerouting/designforms/specctra/IJFlexScanner.next_closing_bracket:()Ljava/lang/Boolean;
+      13: invokevirtual #422                // Method java/lang/Boolean.booleanValue:()Z
+      16: ifne          21
+      19: aconst_null
+      20: areturn
+      21: aload_1
+      22: areturn
+}

@@ -1,0 +1,11 @@
+{
+  "checked_final_source_hashes": true,
+  "native_pcb_loaded": true,
+  "reported_erc_violations": 0,
+  "reported_drc_violations": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "independent_critical_pin_checks": 21,
+  "scanner_board_unchanged": true,
+  "physical_bench_tested": false
+}

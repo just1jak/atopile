@@ -1,0 +1,242 @@
+{
+  "seed": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/route-pass-3/seed.kicad_pcb",
+  "candidate": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/ground-detour-stage/final/ChryslerScanner_V240_SD.kicad_pcb",
+  "auditMode": "preservation only",
+  "seedSha256": "885d634678ffe7d6f8eeff15715fc6a4433b2a22a81bfe3fc86fbc6eb20c6f31",
+  "candidateSha256": "5b9224d11b50b84ed8ee71acbdf85836b90db3c1cf71647661e9585013b5814b",
+  "changes": {
+    "footprintBlocks": [],
+    "nativeFootprintsAndPads": [],
+    "protectedCopper": [],
+    "zonesAndAntennaKeepouts": []
+  },
+  "footprintCount": 263,
+  "protectedSeedCopperCount": 122,
+  "protectedSeedLockedCopperCount": 122,
+  "trackSegmentsByCanonicalLayer": {
+    "F.Cu": 1652,
+    "B.Cu": 270,
+    "In2.Cu": 306
+  },
+  "routesOnNonCopper": [],
+  "tracksBelow0p15mm": [],
+  "nonGroundTracksOnGroundReferenceLayer": [],
+  "railLengthByWidthMm": {
+    "J1962-16": {
+      "0.5": 70.25278,
+      "1.0": 12.64828
+    },
+    "+12V": {
+      "0.5": 159.45671
+    },
+    "+3.3V": {
+      "0.2": 6.70523,
+      "0.2498": 1.47968,
+      "0.2998": 0.41238,
+      "0.3756": 0.6644,
+      "0.5": 320.35998
+    },
+    "+5V": {
+      "0.3756": 1.38145,
+      "0.5": 243.3765
+    },
+    "+7.5V": {
+      "0.3756": 0.19542,
+      "0.5": 95.72863
+    },
+    "VBUS": {
+      "0.5": 41.4818
+    },
+    "N_C3_1": {
+      "0.4": 1.8765,
+      "0.5": 19.87688
+    },
+    "VBB": {
+      "0.5": 112.08054,
+      "0.8": 2.1759
+    },
+    "VPP": {
+      "0.2": 2.19076,
+      "0.5": 105.63497,
+      "0.8": 3.00003
+    },
+    "SD_3V3": {
+      "0.5": 33.34755
+    },
+    "N_R2_1": {
+      "0.3756": 0.19033,
+      "0.5": 23.73367,
+      "0.8": 2.55012
+    },
+    "N_R8_1": {
+      "0.5": 17.21771,
+      "0.8": 4.38779
+    },
+    "N_R11_1": {
+      "0.5": 15.31156,
+      "0.8": 8.56228
+    },
+    "N_R14_1": {
+      "0.3756": 1.34413,
+      "0.5": 30.52713,
+      "0.8": 2.39588
+    }
+  },
+  "zoneBoundaryAndSettingsPreservation": true,
+  "nativeProjectDesignSettingsAndExclusionsUnchanged": true,
+  "nativeZoneRefillInMemory": true,
+  "fullNativeAirwires": 8,
+  "disconnectedNetGroups": {
+    "PCI_TX": [
+      {
+        "count": 2,
+        "pads": [
+          "R18.1",
+          "R19.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.16"
+        ]
+      }
+    ],
+    "V_PR": [
+      {
+        "count": 4,
+        "pads": [
+          "C49.1",
+          "D29.1",
+          "R53.2",
+          "R54.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.11"
+        ]
+      }
+    ],
+    "RX15_EN": [
+      {
+        "count": 2,
+        "pads": [
+          "R47.2",
+          "U15.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.15"
+        ]
+      }
+    ],
+    "TX_LED": [
+      {
+        "count": 2,
+        "pads": [
+          "Q18.1",
+          "R92.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.15"
+        ]
+      }
+    ],
+    "ACT_LED": [
+      {
+        "count": 2,
+        "pads": [
+          "Q20.1",
+          "R96.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.20"
+        ]
+      }
+    ],
+    "LOG_BUTTON": [
+      {
+        "count": 3,
+        "pads": [
+          "R113.2",
+          "SW3.1",
+          "SW3.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.6"
+        ]
+      }
+    ],
+    "RX1": [
+      {
+        "count": 3,
+        "pads": [
+          "C53.1",
+          "R85.2",
+          "U16.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.33"
+        ]
+      }
+    ],
+    "VBB_TO_TX14": [
+      {
+        "count": 2,
+        "pads": [
+          "Q11.1",
+          "R61.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.8"
+        ]
+      }
+    ]
+  },
+  "ground": {
+    "padCount": 175,
+    "connectedGroupCount": 1,
+    "largestConnectedGroupCount": 175,
+    "isolatedFromMainGroup": []
+  },
+  "planeFilledAreasMm2": {
+    "6edcc193-bba6-46de-897c-0f1fda6922ed": 3457.488179,
+    "c85111e0-830e-413f-8f53-8f84679f816d": 4967.897314,
+    "809ac7f6-290e-5503-8766-4621c2d3fabe": 5488.964534,
+    "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 50.597812
+  },
+  "approvedZoneBaseline": {
+    "path": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/ground-pour-stage/check3/outer-ground-experiment.kicad_pcb",
+    "sha256": "b260a0ba4146e57d98317f00db63c77b64d65c32e3895dced6286c34db5a5aad",
+    "addedZoneUuids": [
+      "6edcc193-bba6-46de-897c-0f1fda6922ed",
+      "c85111e0-830e-413f-8f53-8f84679f816d",
+      "c8ff6bee-907d-45d0-9fb2-fe0c2f8d5823"
+    ]
+  },
+  "inputFilesBytesAndMtimeUnchanged": true,
+  "preservationAndMinimumGeometryPassed": true,
+  "completeConnectivityPassed": false,
+  "groundReferenceLayerUnbrokenBySignalTracks": true,
+  "auditPassed": true,
+  "freshNativeDrcRunByThisInvocation": false
+}

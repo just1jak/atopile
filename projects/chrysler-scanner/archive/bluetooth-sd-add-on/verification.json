@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-20",
+  "hardware_design": "complete_native_kicad_files",
+  "hardware": {
+    "checked_final_source_hashes": true,
+    "native_pcb_loaded": true,
+    "reported_erc_violations": 0,
+    "reported_drc_violations": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "independent_critical_pin_checks": 21,
+    "scanner_board_unchanged": true,
+    "physical_bench_tested": false
+  },
+  "board_mm": [
+    60,
+    50
+  ],
+  "layers": 2,
+  "footprints": 23,
+  "vehicle_target": "early-2004 Cummins automatic",
+  "vehicle_signal_compatibility": "not verified",
+  "transport": "BLE Nordic UART V2; Classic SPP unsupported",
+  "firmware_embedded_build": "deferred_by_user",
+  "firmware_source": "draft preserved; not a tested embedded binary",
+  "hardware_assembled": false,
+  "hardware_flashed": false,
+  "physical_bench_tested": false,
+  "scanner_project_modified": false,
+  "purchases_or_publication": false,
+  "cleanup": "failed compiler artifacts preserved; removal was not approved",
+  "notes": [
+    "Regulated USB5V only",
+    "Firmware draft SD clock requires 4MHz bring-up adjustment before future testing",
+    "Exact scanner BLE firmware and vehicle decoder compatibility require future verification"
+  ]
+}

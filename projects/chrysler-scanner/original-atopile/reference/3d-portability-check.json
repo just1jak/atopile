@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-10-13T05:55:13.008844+00:00",
+  "hardware_revision": "V240-USB-C",
+  "pcb_sha256": "a4614a955451ec847b497adad7d3808d15dfcf346978dc1d1c5c808b97d764ca",
+  "native_kicad_version": "10.0.7",
+  "archive_extracted_to_new_directory_with_spaces": true,
+  "native_step_export_from_extracted_board": true,
+  "fitted_component_references": 239,
+  "all_expected_fitted_components_present": true,
+  "dnp_references_excluded": [
+    "R23",
+    "R24"
+  ],
+  "external_3d_library_required": false,
+  "applies_to": "Prior 100 x 50 mm USB-C revision before board expansion; original check retained as historical evidence"
+}

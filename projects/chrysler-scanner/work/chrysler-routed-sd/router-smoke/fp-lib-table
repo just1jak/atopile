@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "RouterSmoke") (type "KiCad") (uri "${KIPRJMOD}/RouterSmoke.pretty") (options "") (descr "Local router proof")))

@@ -1,0 +1,71 @@
+(pcb "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/router-smoke/tiny.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.7")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  120000 -112000  100000 -112000  100000 -100000  120000 -100000
+            120000 -112000)
+    )
+    (via "Via[0-1]_600:300_um")
+    (rule
+      (width 200)
+      (clearance 200)
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component RouterSmoke:Pad1
+      (place P2 117000 -106000 front 0 (PN Pad1))
+      (place P1 103000 -106000 front 0 (PN Pad1))
+    )
+  )
+  (library
+    (image RouterSmoke:Pad1
+      (outline (polygon signal 0  1245 -1245  -1245 -1245  -1245 1245  1245 1245))
+      (pin Rect[T]Pad_2000.000000x2000.000000_um 1 0 0)
+    )
+    (padstack Rect[T]Pad_2000.000000x2000.000000_um
+      (shape (rect F.Cu -1000 -1000 1000 1000))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net SMOKE_NET
+      (pins P2-1 P1-1)
+    )
+    (class kicad_default SMOKE_NET
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 200)
+        (clearance 200)
+      )
+    )
+  )
+  (wiring
+  )
+)

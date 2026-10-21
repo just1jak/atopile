@@ -1,0 +1,22 @@
+CHRYSLER BLUETOOTH-TO-SD ADD-ON — HARDWARE REVISION A
+
+Open hardware/chrysler_ble_sd.kicad_pro in KiCad 10.
+The schematic and PCB are editable. The SD socket is J1 on this separate carrier.
+The original Chrysler scanner PCB has not been changed.
+
+Carrier: 60 x 50 mm, two copper layers, socketed XIAO ESP32-S3 base module,
+Hirose microSD socket, SD regulator, recording button, and status LED.
+The board render shows the carrier without the removable XIAO/header sockets.
+
+Read hardware/README.md before assembly. Use regulated USB 5 V only.
+Do not connect vehicle 12 V or vehicle data wires to this add-on.
+
+KiCad electrical, routing, connectivity, and schematic/PCB parity checks passed.
+Physical assembly, current, temperature, radio, and card tests are still needed.
+
+Intended vehicle: early-2004 Cummins automatic.
+This does not establish exact scanner BLE or vehicle-signal compatibility.
+
+Firmware work is deferred at the user's request. Draft source is preserved in
+the project folder, but no ESP32-S3 binary was built and no hardware was flashed.
+The hardware-only ZIP intentionally contains no firmware or personal configuration.

@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-20T14:08:30.242825+00:00",
+  "kicadVersion": "10.0.7",
+  "schematicParts": 23,
+  "physicalFootprints": 23,
+  "functionalNets": 16,
+  "functionalTerminals": 53,
+  "ercViolations": 0,
+  "drcViolations": 0,
+  "unconnectedItems": 0,
+  "schematicParityViolations": 0,
+  "nativeExactPinNetComparison": "passed",
+  "layers": 2,
+  "boardMm": [
+    60,
+    50
+  ],
+  "thermalVias": 8,
+  "sdRegulator": "MCP1825S-3302E/DB",
+  "noDrcExclusionsAdded": true,
+  "physicalBenchValidation": "not performed",
+  "originalScannerProjectModified": false,
+  "transport": "BLE only; ClassicSPP unsupported by ESP32-S3",
+  "sourceHashes": {
+    "chrysler_ble_sd.kicad_sch": "da406cfbdeab841426f7ee4839d264b79f7558fb1f82899b15f6875a0d16584a",
+    "chrysler_ble_sd.kicad_pcb": "6536abd8733a75c2dc17d4930385a1a280a75e47f113c2ed456f461e1946532c",
+    "chrysler_ble_sd.kicad_pro": "86871e600032905d9ed33feb983ea3814769b2cb6ddacb373b25e515fcecfed8",
+    "Carrier.kicad_sym": "84e010a9ed83047c9ede73b7038ffc92257065ffd15bd59142ebe554738cc9a1",
+    "Carrier.pretty/XIAO_ESP32S3_Socket.kicad_mod": "5bb163494dea00c45c562b9d2d119f88d5a3658c7ba01de140fc5dcd1813d8a1"
+  }
+}

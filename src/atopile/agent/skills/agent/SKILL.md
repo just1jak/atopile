@@ -33,10 +33,28 @@ local tools; logical connectivity does not prove that copper routing is complete
 
 Use `layout_get_component_position` before moving a component with
 `layout_set_component_position`. Moves save a backup and preserve existing nets
-and tracks, but do not reroute copper. Run `layout_run_drc` after placement changes
-when KiCad CLI is installed. Never claim a board is routed or DRC-clean without
-checking the returned report. Hosted DeepPCB placement/routing remains optional
-and requires its own service account; it is not the local layout tool.
+and tracks, but do not reroute copper. Inspect nearby routes before moving a
+connected component, since an existing track may no longer reach its pad.
+
+For local routing, use `layout_get_routes` to inspect copper UUIDs, exact net
+names, widths and canonical copper layers. Use `layout_add_track_segment` for
+straight track sections, `layout_add_via` for through vias, and
+`layout_delete_copper` for a specific segment, arc or via UUID. Coordinates and
+dimensions are in millimeters. Choose widths, clearances and layers from the
+board's constraints and the net's requirements. These tools construct copper;
+they do not run an autorouter or certify clearances. Route a short section,
+inspect it, and check the result before continuing.
+
+KiCad 10 placement and supported copper edits preserve the original file's
+unrepresented fields. Unsupported transformations return an error; use native
+KiCad for those operations. Board changes save a backup and refuse to overwrite
+external edits. Respect locked items and the user's fixed-placement constraints.
+
+Run `layout_run_drc` after placement or routing changes when KiCad CLI is
+installed. It refills zones for the check without saving the board. Report
+remaining violations and unconnected items. Never claim a board is routed or
+DRC-clean without checking the returned native report. Hosted DeepPCB remains an
+optional service with its own account; use the local tools for local board work.
 
 ## Finding components — always search first
 
@@ -133,17 +151,23 @@ any build that reported errors, or move on if `overall_status: success`).
 
 ## Layout & export
 
-After a successful build, guide the user toward the physical layout workflow:
+After a successful build, use the local board tools for requested physical
+layout changes and show the corresponding panels for review:
 
 - **Arranging components**: The user can drag and place components in the [[panel:layout]] panel.
   Suggest placing major components first — connectors at edges, MCUs near decoupling, regulators near power entry.
-- **Autolayout**: For detailed AI-assisted placement and routing, open [[panel:autolayout]].
-  Run automatic placement first, review and adjust critical parts manually, then route.
+- **Local routing**: Inspect existing routes, add track sections and vias with
+  the local tools, and verify the board with native KiCad DRC. The
+  [[panel:layout]] panel lets the user review the result.
+- **Hosted autolayout**: [[panel:autolayout]] is the optional hosted placement and
+  routing service. It requires its own account.
 - **Exporting**: The user can always export their design and open it in an external layout
   tool (KiCad, Altium, Cadence) from the [[panel:tools]] tab.
 
-When the user asks about layout, PCB, placement, routing, or manufacturing, point them to
-the relevant panels rather than trying to explain manual steps. The tools are interactive.
+When the user asks you to place or route components, inspect and edit the actual
+selected board with the local tools. Use panel references to make the result
+easy to review. Respect the distinction between saved copper, a proposed route,
+and a board that passes native DRC and connectivity checks.
 
 ## Tracking work
 

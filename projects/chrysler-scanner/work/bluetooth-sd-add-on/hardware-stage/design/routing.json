@@ -1,0 +1,184 @@
+{
+  "routes": [
+    {
+      "net": "SD_3V3",
+      "from_": "U2.3",
+      "to": "R5.1",
+      "steps": 47
+    },
+    {
+      "net": "SD_3V3",
+      "from_": "R5.1",
+      "to": "R4.1",
+      "steps": 9
+    },
+    {
+      "net": "SD_3V3",
+      "from_": "R4.1",
+      "to": "R8.1",
+      "steps": 11
+    },
+    {
+      "net": "SD_3V3",
+      "from_": "R5.1",
+      "to": "R6.1",
+      "steps": 15
+    },
+    {
+      "net": "SD_3V3",
+      "from_": "R6.1",
+      "to": "R7.1",
+      "steps": 9
+    },
+    {
+      "net": "SD_3V3",
+      "from_": "R5.1",
+      "to": "J1.4",
+      "steps": 18
+    },
+    {
+      "net": "SD_3V3",
+      "from_": "R8.1",
+      "to": "C3.1",
+      "steps": 45
+    },
+    {
+      "net": "SD_3V3",
+      "from_": "U2.3",
+      "to": "C2.1",
+      "steps": 53
+    },
+    {
+      "net": "SD_3V3",
+      "from_": "R7.1",
+      "to": "C4.1",
+      "steps": 98
+    },
+    {
+      "net": "USB_5V",
+      "from_": "U1.14",
+      "to": "C1.1",
+      "steps": 109
+    },
+    {
+      "net": "USB_5V",
+      "from_": "C1.1",
+      "to": "U2.1",
+      "steps": 45
+    },
+    {
+      "net": "MCU_3V3",
+      "from_": "U1.12",
+      "to": "R10.1",
+      "steps": 165
+    },
+    {
+      "net": "SD_DAT1",
+      "from_": "J1.8",
+      "to": "R7.2",
+      "steps": 32
+    },
+    {
+      "net": "SD_DAT2",
+      "from_": "J1.1",
+      "to": "R8.2",
+      "steps": 33
+    },
+    {
+      "net": "SD_MISO",
+      "from_": "U1.10",
+      "to": "R6.2",
+      "steps": 113
+    },
+    {
+      "net": "SD_MISO",
+      "from_": "R6.2",
+      "to": "J1.7",
+      "steps": 29
+    },
+    {
+      "net": "SD_CS",
+      "from_": "J1.2",
+      "to": "R4.2",
+      "steps": 29
+    },
+    {
+      "net": "SD_CS",
+      "from_": "R4.2",
+      "to": "R3.2",
+      "steps": 173
+    },
+    {
+      "net": "SD_MOSI",
+      "from_": "J1.3",
+      "to": "R5.2",
+      "steps": 70
+    },
+    {
+      "net": "SD_MOSI",
+      "from_": "R5.2",
+      "to": "R2.2",
+      "steps": 79
+    },
+    {
+      "net": "SD_SCK",
+      "from_": "J1.5",
+      "to": "R1.2",
+      "steps": 120
+    },
+    {
+      "net": "MCU_SCK",
+      "from_": "U1.9",
+      "to": "R1.1",
+      "steps": 29
+    },
+    {
+      "net": "MCU_MOSI",
+      "from_": "U1.11",
+      "to": "R2.1",
+      "steps": 79
+    },
+    {
+      "net": "MCU_CS",
+      "from_": "U1.2",
+      "to": "R3.1",
+      "steps": 105
+    },
+    {
+      "net": "LED_GPIO",
+      "from_": "U1.4",
+      "to": "R9.1",
+      "steps": 116
+    },
+    {
+      "net": "LED_A",
+      "from_": "R9.2",
+      "to": "D1.2",
+      "steps": 25
+    },
+    {
+      "net": "BUTTON",
+      "from_": "U1.1",
+      "to": "R10.2",
+      "steps": 133
+    },
+    {
+      "net": "BUTTON",
+      "from_": "R10.2",
+      "to": "SW1.1",
+      "steps": 71
+    },
+    {
+      "net": "BUTTON",
+      "from_": "SW1.1",
+      "to": "SW1.1",
+      "steps": 27
+    }
+  ],
+  "tracks": 236,
+  "nets": 23,
+  "board_mm": [
+    60.0,
+    50.0
+  ]
+}

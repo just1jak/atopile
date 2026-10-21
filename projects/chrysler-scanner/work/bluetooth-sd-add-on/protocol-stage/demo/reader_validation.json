@@ -1,0 +1,18 @@
+{
+  "format": "CBSDRAW1",
+  "records": 7,
+  "raw_ble_bytes": 33,
+  "max_dropped_chunks": 0,
+  "sequence_discontinuities": 0,
+  "invalid_frame_records": 0,
+  "ble_chunks": 3,
+  "scanner_frames": 2,
+  "parser_errors": 0,
+  "events": 2,
+  "recovery_gaps": [],
+  "complete_records_only": true,
+  "lossless_claim": false,
+  "note": "Zero local drops does not prove zero scanner or BLE transport losses.",
+  "synthetic": true,
+  "selected_rows_verified": 7
+}

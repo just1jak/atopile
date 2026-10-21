@@ -1,0 +1,19 @@
+{
+  "host_acceptance": "passed",
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer"
+  ],
+  "groups": [
+    "strict config and selected metrics",
+    "exhaustive control-route/command/mode allowlist",
+    "raw record endian and CRC",
+    "real file storage/stop/failure markers",
+    "fragmented/corrupt/gapped parser storage integration",
+    "stale connection packet readiness isolation",
+    "in-flight producer stop barrier"
+  ],
+  "embedded_compile": "pending disk-space recovery",
+  "hardware_flashed": false,
+  "bench_tested": false
+}

@@ -1,0 +1,4712 @@
+{
+  "seed": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/route-pass-2/seed.kicad_pcb",
+  "candidate": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/audit-stage/input-power-preflight.kicad_pcb",
+  "seedSha256": "305c25c4343da4b42a94263ae38396ea80f88e0707c983143691ad1652f639e6",
+  "candidateSha256": "885d634678ffe7d6f8eeff15715fc6a4433b2a22a81bfe3fc86fbc6eb20c6f31",
+  "changes": {
+    "footprintBlocks": [],
+    "nativeFootprintsAndPads": [],
+    "protectedCopper": [],
+    "zonesAndAntennaKeepouts": []
+  },
+  "footprintCount": 263,
+  "protectedSeedCopperCount": 113,
+  "protectedSeedLockedCopperCount": 113,
+  "trackSegmentsByCanonicalLayer": {
+    "F.Cu": 93,
+    "B.Cu": 10
+  },
+  "routesOnNonCopper": [],
+  "tracksBelow0p15mm": [],
+  "nonGroundTracksOnGroundReferenceLayer": [],
+  "railLengthByWidthMm": {
+    "J1962-16": {
+      "1.0": 12.64828
+    },
+    "+12V": {},
+    "+3.3V": {},
+    "+5V": {},
+    "+7.5V": {},
+    "VBUS": {
+      "0.5": 3.17916
+    },
+    "N_C3_1": {
+      "0.4": 1.8765
+    },
+    "VBB": {
+      "0.8": 2.1759
+    },
+    "VPP": {
+      "0.8": 3.00003
+    },
+    "SD_3V3": {},
+    "N_R2_1": {
+      "0.8": 2.55012
+    },
+    "N_R8_1": {
+      "0.8": 4.38779
+    },
+    "N_R11_1": {
+      "0.8": 8.56228
+    },
+    "N_R14_1": {
+      "0.8": 2.39588
+    }
+  },
+  "zoneBoundaryAndSettingsPreservation": true,
+  "nativeProjectDesignSettingsAndExclusionsUnchanged": true,
+  "nativeZoneRefillInMemory": true,
+  "fullNativeAirwires": 550,
+  "disconnectedNetGroups": {
+    "J1962-16": [
+      {
+        "count": 3,
+        "pads": [
+          "D1.1",
+          "D2.2",
+          "J1.16"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R49.1"
+        ]
+      }
+    ],
+    "V_BA": [
+      {
+        "count": 1,
+        "pads": [
+          "R50.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.13"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C47.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R49.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D27.1"
+        ]
+      }
+    ],
+    "GND": [
+      {
+        "count": 21,
+        "pads": [
+          "C1.2",
+          "C18.2",
+          "C22.2",
+          "C6.2",
+          "D1.2",
+          "D4.2",
+          "D8.2",
+          "D9.2",
+          "J1.4",
+          "J2.SH",
+          "J2.SH",
+          "J2.SH",
+          "J2.SH",
+          "J3.2",
+          "J3.4",
+          "R23.2",
+          "R24.2",
+          "U2.2",
+          "U5.2",
+          "U6.2",
+          "U7.2"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "J2.A12",
+          "J2.B1"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "J2.A1",
+          "J2.B12"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q12.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U8.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C36.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C46.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.25"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C42.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C16.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U11.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R34.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C28.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C44.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q11.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R66.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R92.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U17.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW1.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C32.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q10.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U8.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C19.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C57.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R12.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C56.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U12.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C24.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C13.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW3.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R15.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C59.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C37.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C53.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C54.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q13.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C39.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C51.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C27.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.SH"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C61.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C25.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U1.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C38.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C47.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U4.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C7.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C43.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R3.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C29.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q9.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q19.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C15.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q17.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C10.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.22"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C23.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R69.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U4.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C55.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R31.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R9.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C2.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R41.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.9"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R44.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R17.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.49"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R57.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R90.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW2.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R80.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW3.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.SH"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R21.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C52.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R102.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R63.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R47.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q1.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C31.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D27.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C4.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U18.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C48.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q8.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C58.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q16.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW1.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R27.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q20.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U9.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C3.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R103.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.24"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D13.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R50.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C35.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C40.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U15.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U13.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q14.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C26.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U3.7"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R61.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R52.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW2.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U3.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R54.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R96.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C50.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C41.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U4.7"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C8.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D12.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R5.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "JP1.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C9.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q15.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U20.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R59.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.10"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R38.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C12.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U16.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U3.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C60.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C14.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C45.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R77.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C34.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D14.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.SH"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q18.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C20.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U20.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R18.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R72.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D28.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C33.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.18"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U8.7"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C49.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R75.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U14.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U12.29"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R55.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C11.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D29.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.SH"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q6.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C30.2"
+        ]
+      }
+    ],
+    "N_R11_2": [
+      {
+        "count": 1,
+        "pads": [
+          "U6.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R11.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R12.1"
+        ]
+      }
+    ],
+    "N_R10_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R10.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U6.4"
+        ]
+      }
+    ],
+    "VPP": [
+      {
+        "count": 2,
+        "pads": [
+          "C15.1",
+          "L3.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R53.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R10.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q14.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R73.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C16.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R64.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R67.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q15.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q12.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q13.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R70.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U6.5"
+        ]
+      }
+    ],
+    "VBUS": [
+      {
+        "count": 3,
+        "pads": [
+          "C2.1",
+          "U1.2",
+          "U1.3"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "J2.A9",
+          "J2.B4"
+        ]
+      },
+      {
+        "count": 2,
+        "pads": [
+          "J2.A4",
+          "J2.B9"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "JP2.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U11.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R26.1"
+        ]
+      }
+    ],
+    "N_C3_1": [
+      {
+        "count": 2,
+        "pads": [
+          "C3.1",
+          "U1.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "JP2.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D3.2"
+        ]
+      }
+    ],
+    "N_R14_1": [
+      {
+        "count": 2,
+        "pads": [
+          "C22.1",
+          "L6.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U8.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U8.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C23.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D10.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R14.1"
+        ]
+      }
+    ],
+    "RTS": [
+      {
+        "count": 1,
+        "pads": [
+          "Q5.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q5.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U12.24"
+        ]
+      }
+    ],
+    "DTR": [
+      {
+        "count": 1,
+        "pads": [
+          "U12.28"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q5.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q5.2"
+        ]
+      }
+    ],
+    "IO0": [
+      {
+        "count": 1,
+        "pads": [
+          "SW2.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q5.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW2.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.23"
+        ]
+      }
+    ],
+    "EN": [
+      {
+        "count": 1,
+        "pads": [
+          "R48.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C46.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q5.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW1.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.9"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C45.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW1.2"
+        ]
+      }
+    ],
+    "VBB_TO_TX9": [
+      {
+        "count": 1,
+        "pads": [
+          "R57.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q9.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.6"
+        ]
+      }
+    ],
+    "VBB": [
+      {
+        "count": 2,
+        "pads": [
+          "C19.1",
+          "L5.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q10.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R56.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R58.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R62.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q11.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R51.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q8.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q9.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R60.1"
+        ]
+      }
+    ],
+    "N_R58_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q9.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q9.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R58.2"
+        ]
+      }
+    ],
+    "N_Q9B_4": [
+      {
+        "count": 1,
+        "pads": [
+          "D16.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q9.4"
+        ]
+      }
+    ],
+    "+3.3V": [
+      {
+        "count": 1,
+        "pads": [
+          "U12.7"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C29.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.46"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R46.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C57.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U14.8"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.19"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U4.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q4.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R33.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C31.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C35.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R97.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R88.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C43.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C10.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R7.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C32.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R87.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C56.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q2.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D6.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C38.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U4.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R48.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.37"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R94.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R30.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R86.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C30.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R28.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q2.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q3.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C41.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R37.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J3.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R43.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R114.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R112.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R40.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U13.8"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U12.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C27.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C28.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U15.8"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q4.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q3.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.21"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R113.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.43"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R85.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C26.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C34.1"
+        ]
+      }
+    ],
+    "TX1": [
+      {
+        "count": 1,
+        "pads": [
+          "U17.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R97.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.32"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U18.2"
+        ]
+      }
+    ],
+    "RX_LED": [
+      {
+        "count": 1,
+        "pads": [
+          "R90.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.14"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q17.1"
+        ]
+      }
+    ],
+    "N_Q17_3": [
+      {
+        "count": 1,
+        "pads": [
+          "Q17.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D23.1"
+        ]
+      }
+    ],
+    "N_R100_1": [
+      {
+        "count": 1,
+        "pads": [
+          "Q16.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R100.1"
+        ]
+      }
+    ],
+    "CCD+": [
+      {
+        "count": 1,
+        "pads": [
+          "C50.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R84.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R81.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R100.2"
+        ]
+      }
+    ],
+    "N_R11_1": [
+      {
+        "count": 3,
+        "pads": [
+          "C18.1",
+          "L4.2",
+          "L5.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R11.1"
+        ]
+      }
+    ],
+    "RX7_BIAS_EN": [
+      {
+        "count": 1,
+        "pads": [
+          "R75.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q6.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.16"
+        ]
+      }
+    ],
+    "RX7_BIAS": [
+      {
+        "count": 1,
+        "pads": [
+          "R42.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q6.3"
+        ]
+      }
+    ],
+    "+5V": [
+      {
+        "count": 1,
+        "pads": [
+          "D3.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q16.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U17.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R32.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U18.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q6.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R89.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C55.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C9.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R91.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R95.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R93.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U3.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D5.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U5.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R39.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C8.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U16.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U20.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J3.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R76.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C58.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R78.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R45.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R36.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D6.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C54.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U4.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U3.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C52.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R4.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R29.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U4.4"
+        ]
+      }
+    ],
+    "N_R76_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q6.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q6.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R76.2"
+        ]
+      }
+    ],
+    "TX2": [
+      {
+        "count": 1,
+        "pads": [
+          "U14.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U14.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U13.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U13.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.24"
+        ]
+      }
+    ],
+    "N_R30_2": [
+      {
+        "count": 1,
+        "pads": [
+          "U13.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R30.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q2.1"
+        ]
+      }
+    ],
+    "TX12_EN": [
+      {
+        "count": 1,
+        "pads": [
+          "U13.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R34.1"
+        ]
+      }
+    ],
+    "N_R33_1": [
+      {
+        "count": 1,
+        "pads": [
+          "R33.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q2.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U13.6"
+        ]
+      }
+    ],
+    "TX6_EN": [
+      {
+        "count": 1,
+        "pads": [
+          "U13.7"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R31.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.1"
+        ]
+      }
+    ],
+    "V_BT": [
+      {
+        "count": 1,
+        "pads": [
+          "D28.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R51.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.10"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C48.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R52.1"
+        ]
+      }
+    ],
+    "+12V": [
+      {
+        "count": 1,
+        "pads": [
+          "C1.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C4.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C20.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C11.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U2.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "L2.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U5.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U9.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C13.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R1.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D2.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R13.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U7.5"
+        ]
+      }
+    ],
+    "N_R78_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q7.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R78.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R79.1"
+        ]
+      }
+    ],
+    "N_R95_2": [
+      {
+        "count": 1,
+        "pads": [
+          "D26.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R95.2"
+        ]
+      }
+    ],
+    "+7.5V": [
+      {
+        "count": 1,
+        "pads": [
+          "R16.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q1.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C24.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R20.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U8.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D10.2"
+        ]
+      }
+    ],
+    "USB_CC2": [
+      {
+        "count": 1,
+        "pads": [
+          "R103.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J2.B5"
+        ]
+      }
+    ],
+    "J1962-9": [
+      {
+        "count": 1,
+        "pads": [
+          "R39.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C40.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J1.9"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D20.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q3.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D16.1"
+        ]
+      }
+    ],
+    "N_R88_2": [
+      {
+        "count": 1,
+        "pads": [
+          "U19.23"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R88.2"
+        ]
+      }
+    ],
+    "N_R2_1": [
+      {
+        "count": 2,
+        "pads": [
+          "C6.1",
+          "L1.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U3.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U3.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D5.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C7.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R2.1"
+        ]
+      }
+    ],
+    "J1962-12": [
+      {
+        "count": 1,
+        "pads": [
+          "R32.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C37.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J1.12"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D21.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q2.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D17.1"
+        ]
+      }
+    ],
+    "N_R70_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q14.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R70.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R71.1"
+        ]
+      }
+    ],
+    "N_R71_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q14.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R71.2"
+        ]
+      }
+    ],
+    "N_R93_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R93.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D25.2"
+        ]
+      }
+    ],
+    "CCD-": [
+      {
+        "count": 1,
+        "pads": [
+          "R82.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R101.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R83.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C51.1"
+        ]
+      }
+    ],
+    "N_R99_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R99.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q16.2"
+        ]
+      }
+    ],
+    "N_R98_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R98.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q16.5"
+        ]
+      }
+    ],
+    "N_R101_1": [
+      {
+        "count": 1,
+        "pads": [
+          "R101.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q16.6"
+        ]
+      }
+    ],
+    "PCI_TX": [
+      {
+        "count": 1,
+        "pads": [
+          "R19.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R18.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.16"
+        ]
+      }
+    ],
+    "N_R99_1": [
+      {
+        "count": 1,
+        "pads": [
+          "U18.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R99.1"
+        ]
+      }
+    ],
+    "V_PR": [
+      {
+        "count": 1,
+        "pads": [
+          "C49.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R53.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R54.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.11"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D29.1"
+        ]
+      }
+    ],
+    "USB_CC1": [
+      {
+        "count": 1,
+        "pads": [
+          "R102.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J2.A5"
+        ]
+      }
+    ],
+    "N_R25_1": [
+      {
+        "count": 1,
+        "pads": [
+          "R25.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.41"
+        ]
+      }
+    ],
+    "TX0": [
+      {
+        "count": 1,
+        "pads": [
+          "R25.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U12.25"
+        ]
+      }
+    ],
+    "N_R8_1": [
+      {
+        "count": 3,
+        "pads": [
+          "C14.1",
+          "D7.1",
+          "L3.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R8.1"
+        ]
+      }
+    ],
+    "N_R19_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q1.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R19.2"
+        ]
+      }
+    ],
+    "N_Q1B_3": [
+      {
+        "count": 1,
+        "pads": [
+          "D11.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q1.3"
+        ]
+      }
+    ],
+    "N_R20_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q1.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q1.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R20.2"
+        ]
+      }
+    ],
+    "N_R8_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R8.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R9.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U5.3"
+        ]
+      }
+    ],
+    "J1962-15": [
+      {
+        "count": 1,
+        "pads": [
+          "R45.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q4.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C44.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J1.15"
+        ]
+      }
+    ],
+    "N_R60_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q10.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q10.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R60.2"
+        ]
+      }
+    ],
+    "N_R91_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R91.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D24.2"
+        ]
+      }
+    ],
+    "J1962-2": [
+      {
+        "count": 1,
+        "pads": [
+          "J1.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R6.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D12.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D11.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C25.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R21.1"
+        ]
+      }
+    ],
+    "N_R6_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R6.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U9.3"
+        ]
+      }
+    ],
+    "VPP_TO_TX6": [
+      {
+        "count": 1,
+        "pads": [
+          "R63.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.10"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q12.1"
+        ]
+      }
+    ],
+    "N_R64_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q12.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R64.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R65.1"
+        ]
+      }
+    ],
+    "N_Q12B_4": [
+      {
+        "count": 1,
+        "pads": [
+          "D19.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q12.4"
+        ]
+      }
+    ],
+    "N_R65_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R65.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q12.6"
+        ]
+      }
+    ],
+    "J1962-7": [
+      {
+        "count": 1,
+        "pads": [
+          "C42.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J1.7"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R42.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q4.6"
+        ]
+      }
+    ],
+    "J1962-3": [
+      {
+        "count": 1,
+        "pads": [
+          "R81.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J1.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q7.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D13.1"
+        ]
+      }
+    ],
+    "VBB_TO_TX6": [
+      {
+        "count": 1,
+        "pads": [
+          "Q8.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R55.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.5"
+        ]
+      }
+    ],
+    "N_R56_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q8.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R56.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q8.6"
+        ]
+      }
+    ],
+    "N_Q8B_4": [
+      {
+        "count": 1,
+        "pads": [
+          "D15.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q8.4"
+        ]
+      }
+    ],
+    "N_R37_2": [
+      {
+        "count": 1,
+        "pads": [
+          "U14.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R37.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q3.1"
+        ]
+      }
+    ],
+    "TX9_EN": [
+      {
+        "count": 1,
+        "pads": [
+          "U14.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R41.1"
+        ]
+      }
+    ],
+    "N_R40_1": [
+      {
+        "count": 1,
+        "pads": [
+          "R40.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U14.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q3.4"
+        ]
+      }
+    ],
+    "TX14_EN": [
+      {
+        "count": 1,
+        "pads": [
+          "R38.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U14.7"
+        ]
+      }
+    ],
+    "J1962-6": [
+      {
+        "count": 1,
+        "pads": [
+          "Q2.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D19.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J1.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R29.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D15.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C36.2"
+        ]
+      }
+    ],
+    "N_R89_2": [
+      {
+        "count": 1,
+        "pads": [
+          "D23.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R89.2"
+        ]
+      }
+    ],
+    "RX2": [
+      {
+        "count": 1,
+        "pads": [
+          "U15.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.34"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U15.1"
+        ]
+      }
+    ],
+    "N_R43_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q4.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R43.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U15.2"
+        ]
+      }
+    ],
+    "RX15_EN": [
+      {
+        "count": 1,
+        "pads": [
+          "R47.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.15"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U15.3"
+        ]
+      }
+    ],
+    "N_R46_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q4.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U15.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R46.2"
+        ]
+      }
+    ],
+    "RX7_EN": [
+      {
+        "count": 1,
+        "pads": [
+          "R44.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.14"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U15.7"
+        ]
+      }
+    ],
+    "N_R98_1": [
+      {
+        "count": 1,
+        "pads": [
+          "R98.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U17.4"
+        ]
+      }
+    ],
+    "N_Q19_3": [
+      {
+        "count": 1,
+        "pads": [
+          "D25.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q19.3"
+        ]
+      }
+    ],
+    "N_R3_1": [
+      {
+        "count": 1,
+        "pads": [
+          "R3.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U2.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R2.2"
+        ]
+      }
+    ],
+    "TX_LED": [
+      {
+        "count": 1,
+        "pads": [
+          "R92.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q18.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.15"
+        ]
+      }
+    ],
+    "N_Q18_3": [
+      {
+        "count": 1,
+        "pads": [
+          "Q18.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D24.1"
+        ]
+      }
+    ],
+    "N_R28_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R28.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U12.9"
+        ]
+      }
+    ],
+    "VBB_TO_TX12": [
+      {
+        "count": 1,
+        "pads": [
+          "Q10.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R59.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.7"
+        ]
+      }
+    ],
+    "N_R67_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q13.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R67.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R68.1"
+        ]
+      }
+    ],
+    "N_Q20_3": [
+      {
+        "count": 1,
+        "pads": [
+          "Q20.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D26.1"
+        ]
+      }
+    ],
+    "N_R79_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q7.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R80.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R79.2"
+        ]
+      }
+    ],
+    "N_R1_2": [
+      {
+        "count": 1,
+        "pads": [
+          "U2.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R1.2"
+        ]
+      }
+    ],
+    "ACT_LED": [
+      {
+        "count": 1,
+        "pads": [
+          "Q20.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R96.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.20"
+        ]
+      }
+    ],
+    "N_R68_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q13.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R68.2"
+        ]
+      }
+    ],
+    "N_R14_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R15.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R14.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U7.3"
+        ]
+      }
+    ],
+    "TBEN": [
+      {
+        "count": 1,
+        "pads": [
+          "Q7.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.17"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q7.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R77.2"
+        ]
+      }
+    ],
+    "J1962-11": [
+      {
+        "count": 1,
+        "pads": [
+          "R82.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J1.11"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q7.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D14.1"
+        ]
+      }
+    ],
+    "N_Q14B_4": [
+      {
+        "count": 1,
+        "pads": [
+          "Q14.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D21.2"
+        ]
+      }
+    ],
+    "N_R13_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R13.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U7.4"
+        ]
+      }
+    ],
+    "N_R62_2": [
+      {
+        "count": 1,
+        "pads": [
+          "Q11.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R62.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q11.6"
+        ]
+      }
+    ],
+    "N_Q10B_4": [
+      {
+        "count": 1,
+        "pads": [
+          "Q10.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D17.2"
+        ]
+      }
+    ],
+    "N_R4_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R5.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R4.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U9.1"
+        ]
+      }
+    ],
+    "VPP_TO_TX9": [
+      {
+        "count": 1,
+        "pads": [
+          "U19.11"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q13.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R66.1"
+        ]
+      }
+    ],
+    "N_Q13B_4": [
+      {
+        "count": 1,
+        "pads": [
+          "D20.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q13.4"
+        ]
+      }
+    ],
+    "N_R16_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R16.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R17.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U8.2"
+        ]
+      }
+    ],
+    "SD_MISO": [
+      {
+        "count": 1,
+        "pads": [
+          "R109.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.7"
+        ]
+      }
+    ],
+    "LOG_BUTTON": [
+      {
+        "count": 1,
+        "pads": [
+          "R113.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW3.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "SW3.1"
+        ]
+      }
+    ],
+    "SD_DETECT": [
+      {
+        "count": 1,
+        "pads": [
+          "U10.7"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.9"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R114.2"
+        ]
+      }
+    ],
+    "PWR_LED": [
+      {
+        "count": 1,
+        "pads": [
+          "Q19.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R94.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.12"
+        ]
+      }
+    ],
+    "PCI_RX": [
+      {
+        "count": 1,
+        "pads": [
+          "U10.17"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R7.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U9.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C12.1"
+        ]
+      }
+    ],
+    "MCU_SD_CS": [
+      {
+        "count": 1,
+        "pads": [
+          "U10.21"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R112.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R106.1"
+        ]
+      }
+    ],
+    "N_C33_1": [
+      {
+        "count": 1,
+        "pads": [
+          "C33.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.26"
+        ]
+      }
+    ],
+    "MCU_SD_MOSI": [
+      {
+        "count": 1,
+        "pads": [
+          "U10.27"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R105.1"
+        ]
+      }
+    ],
+    "RX1": [
+      {
+        "count": 1,
+        "pads": [
+          "U10.33"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U16.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R85.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C53.1"
+        ]
+      }
+    ],
+    "MCU_SD_SCK": [
+      {
+        "count": 1,
+        "pads": [
+          "U10.38"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R104.1"
+        ]
+      }
+    ],
+    "SCL": [
+      {
+        "count": 1,
+        "pads": [
+          "J3.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.19"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R87.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.39"
+        ]
+      }
+    ],
+    "RX0": [
+      {
+        "count": 1,
+        "pads": [
+          "U10.40"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U12.26"
+        ]
+      }
+    ],
+    "SDA": [
+      {
+        "count": 1,
+        "pads": [
+          "J3.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.20"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R86.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U10.42"
+        ]
+      }
+    ],
+    "N_R83_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R83.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U16.3"
+        ]
+      }
+    ],
+    "N_R26_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R26.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U12.8"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R27.1"
+        ]
+      }
+    ],
+    "VPP_TO_TX12": [
+      {
+        "count": 1,
+        "pads": [
+          "U19.12"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q14.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R69.1"
+        ]
+      }
+    ],
+    "N_J1_5": [
+      {
+        "count": 1,
+        "pads": [
+          "J1.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "JP1.1"
+        ]
+      }
+    ],
+    "J1962-14": [
+      {
+        "count": 1,
+        "pads": [
+          "J1.14"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D22.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q3.6"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R36.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D18.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C39.2"
+        ]
+      }
+    ],
+    "N_R73_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R74.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q15.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R73.2"
+        ]
+      }
+    ],
+    "N_R74_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R74.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q15.6"
+        ]
+      }
+    ],
+    "N_R84_2": [
+      {
+        "count": 1,
+        "pads": [
+          "R84.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U16.1"
+        ]
+      }
+    ],
+    "VPP_TO_TX14": [
+      {
+        "count": 1,
+        "pads": [
+          "R72.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.13"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "Q15.1"
+        ]
+      }
+    ],
+    "VBB_TO_TX14": [
+      {
+        "count": 1,
+        "pads": [
+          "Q11.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R61.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U19.8"
+        ]
+      }
+    ],
+    "N_Q11B_4": [
+      {
+        "count": 1,
+        "pads": [
+          "Q11.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D18.2"
+        ]
+      }
+    ],
+    "N_Q15B_4": [
+      {
+        "count": 1,
+        "pads": [
+          "Q15.4"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "D22.2"
+        ]
+      }
+    ],
+    "SD_3V3": [
+      {
+        "count": 1,
+        "pads": [
+          "R109.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R107.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C61.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R111.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R110.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "U20.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C60.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R108.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "C59.1"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.4"
+        ]
+      }
+    ],
+    "SD_DAT1": [
+      {
+        "count": 1,
+        "pads": [
+          "J4.8"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R110.2"
+        ]
+      }
+    ],
+    "SD_DAT2": [
+      {
+        "count": 1,
+        "pads": [
+          "R111.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.1"
+        ]
+      }
+    ],
+    "SD_CS": [
+      {
+        "count": 1,
+        "pads": [
+          "R107.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R106.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.2"
+        ]
+      }
+    ],
+    "SD_MOSI": [
+      {
+        "count": 1,
+        "pads": [
+          "R108.2"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "J4.3"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R105.2"
+        ]
+      }
+    ],
+    "SD_SCK": [
+      {
+        "count": 1,
+        "pads": [
+          "J4.5"
+        ]
+      },
+      {
+        "count": 1,
+        "pads": [
+          "R104.2"
+        ]
+      }
+    ]
+  },
+  "ground": {
+    "padCount": 175,
+    "connectedGroupCount": 153,
+    "largestConnectedGroupCount": 21,
+    "isolatedFromMainGroup": [
+      "C10.2",
+      "C11.1",
+      "C12.2",
+      "C13.2",
+      "C14.2",
+      "C15.2",
+      "C16.2",
+      "C19.2",
+      "C2.2",
+      "C20.2",
+      "C23.2",
+      "C24.2",
+      "C25.2",
+      "C26.2",
+      "C27.2",
+      "C28.2",
+      "C29.2",
+      "C3.2",
+      "C30.2",
+      "C31.2",
+      "C32.2",
+      "C33.2",
+      "C34.2",
+      "C35.2",
+      "C36.1",
+      "C37.1",
+      "C38.2",
+      "C39.1",
+      "C4.2",
+      "C40.1",
+      "C41.2",
+      "C42.2",
+      "C43.2",
+      "C44.2",
+      "C45.2",
+      "C46.2",
+      "C47.2",
+      "C48.2",
+      "C49.2",
+      "C50.2",
+      "C51.2",
+      "C52.1",
+      "C53.2",
+      "C54.2",
+      "C55.2",
+      "C56.2",
+      "C57.2",
+      "C58.2",
+      "C59.2",
+      "C60.2",
+      "C61.2",
+      "C7.2",
+      "C8.2",
+      "C9.2",
+      "D12.2",
+      "D13.2",
+      "D14.2",
+      "D27.2",
+      "D28.2",
+      "D29.2",
+      "J2.A1",
+      "J2.A12",
+      "J2.B1",
+      "J2.B12",
+      "J4.10",
+      "J4.6",
+      "J4.SH",
+      "J4.SH",
+      "J4.SH",
+      "J4.SH",
+      "JP1.2",
+      "Q1.1",
+      "Q10.5",
+      "Q11.5",
+      "Q12.5",
+      "Q13.5",
+      "Q14.5",
+      "Q15.5",
+      "Q16.1",
+      "Q17.2",
+      "Q18.2",
+      "Q19.2",
+      "Q20.2",
+      "Q6.1",
+      "Q8.5",
+      "Q9.5",
+      "R102.2",
+      "R103.2",
+      "R12.2",
+      "R15.2",
+      "R17.2",
+      "R18.2",
+      "R21.2",
+      "R27.2",
+      "R3.2",
+      "R31.1",
+      "R34.2",
+      "R38.1",
+      "R41.2",
+      "R44.1",
+      "R47.1",
+      "R5.2",
+      "R50.2",
+      "R52.2",
+      "R54.2",
+      "R55.2",
+      "R57.2",
+      "R59.2",
+      "R61.2",
+      "R63.2",
+      "R66.2",
+      "R69.2",
+      "R72.2",
+      "R75.2",
+      "R77.1",
+      "R80.2",
+      "R9.2",
+      "R90.2",
+      "R92.2",
+      "R96.2",
+      "SW1.1",
+      "SW1.1",
+      "SW2.1",
+      "SW2.1",
+      "SW3.2",
+      "SW3.2",
+      "U1.1",
+      "U10.49",
+      "U11.2",
+      "U12.29",
+      "U12.3",
+      "U13.4",
+      "U14.4",
+      "U15.4",
+      "U16.2",
+      "U17.3",
+      "U18.3",
+      "U19.18",
+      "U19.22",
+      "U19.24",
+      "U19.25",
+      "U19.9",
+      "U20.2",
+      "U20.2",
+      "U3.3",
+      "U3.5",
+      "U3.7",
+      "U4.3",
+      "U4.5",
+      "U4.7",
+      "U8.3",
+      "U8.5",
+      "U8.7",
+      "U9.2"
+    ]
+  },
+  "planeFilledAreasMm2": {
+    "809ac7f6-290e-5503-8766-4621c2d3fabe": 5665.458992,
+    "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 122.189897
+  },
+  "nativeDrc": {
+    "path": "work/chrysler-routed-sd/audit-stage/fresh-native-drc.json",
+    "errors": 0,
+    "warnings": 0,
+    "reportedUnconnectedListCount": 499,
+    "sourceMatchesCandidate": true,
+    "bothErrorAndWarningChecksIncluded": true
+  },
+  "inputFilesBytesAndMtimeUnchanged": true,
+  "preservationAndMinimumGeometryPassed": true,
+  "completeConnectivityPassed": false,
+  "groundReferenceLayerUnbrokenBySignalTracks": true,
+  "auditPassed": true,
+  "freshNativeDrcRunByThisInvocation": true,
+  "selfTests": {
+    "footprintMoveDetected": true,
+    "padMoveDetected": true,
+    "protectedCopperWidthChangeDetected": true,
+    "keepoutRuleChangeDetected": true
+  }
+}

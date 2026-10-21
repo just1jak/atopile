@@ -1,0 +1,363 @@
+{
+  "source": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/ground-final-stage/island-joined/ChryslerScanner_V240_SD.kicad_pcb",
+  "output": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/ground-final-stage/combined/ChryslerScanner_V240_SD.kicad_pcb",
+  "sourceSha256": "af0031f0110675fbc27565f40fa5a325e384522079eae1ffb1842a3fedaacb05",
+  "candidateSha256": "f5b42ba76001f790c445533dfcd8567136b5b018127ac8982a2b04650661a2d1",
+  "sourceUnchanged": true,
+  "allSourceFootprintsPadsUnchanged": true,
+  "allSourceZonesUnchanged": true,
+  "allUnrelatedCopperUnchanged": true,
+  "matchedRemovedSourceUuids": {
+    "9e03668c-37db-4f39-96a0-2e67489b3e1d": "cefbe6cb-9c75-4e62-9367-578191594b7d",
+    "425d1060-437b-4b8d-ad2c-37c2016c5d7a": "932cf860-47df-48ec-9cf6-542ddc0cea56",
+    "be7ac975-76d3-4f46-922b-61c53886b67c": "71370483-c86b-4634-96b6-7c4fc04e910e"
+  },
+  "addedCopperUuids": [
+    "68ec5b48-b597-5ec5-b705-5eb74073c7f9",
+    "7d5c0199-5627-5888-b109-2cdd12e36f0d",
+    "0d4f40b3-1a3d-5a42-bfcc-4251e87387a8",
+    "1be3c5eb-02ce-5ad1-9b6c-71bb0892adc7",
+    "248d8403-1951-502a-910d-5b1ea20cdc84",
+    "30ae6c3b-8c93-5ee1-bb48-8bebdf8390f4",
+    "33922e1c-cc92-55ce-b342-9ce378131d35",
+    "3c6b2d8f-dfcc-5ec1-99d2-5b002bebbd7d",
+    "3cce3389-4f6f-5b59-86b5-75609cd39872",
+    "82804d13-dd6f-5b84-b4f4-1cce129bf2c7",
+    "88e330a7-78d8-5025-95fa-64ba91b03164",
+    "9b2f0fe0-5fda-5e7d-8d4a-4be98759a231",
+    "9ec49a9c-f7e7-5e77-b15a-eb3f85b0c793",
+    "cdfc45ae-503a-5f53-a5d3-5b97df5c56ae",
+    "ea86b1f4-45ce-51ae-ac82-3ea11b6087bd",
+    "f751d123-2488-5c55-a7ce-c2e06ed8b998",
+    "0181f388-ca74-52e0-9888-3a4068e5bfa2",
+    "16ad605e-e940-5366-a241-b8d89f18ad30",
+    "24d110bf-45bb-5aa0-842b-3511cb64159a",
+    "34d64a7e-5752-564d-afd7-c2140e86a34b",
+    "37eb8a44-7407-5a77-acd5-6883202f3956",
+    "45731709-5a6b-513e-b655-1a068a01a3c2",
+    "513d848f-3706-526b-a5e9-56b63b4b1027",
+    "61f50647-e1a9-59f0-b541-648df6dea5a9",
+    "70016d51-7412-56da-aaa6-ab1850aaf385",
+    "782824d2-c725-52ea-82f1-2b62dd30e2c5",
+    "973f8799-3534-5ba0-a144-40a28ac93e1b",
+    "a06a622a-5704-57e5-9f61-fafc243c43ce",
+    "b513c6fc-886d-5b3f-9cfe-82fd05e64261",
+    "c4f76d09-ffcb-5baf-82a3-d3c28ccdf4cd",
+    "c69764f9-4ebd-554d-a37b-6d8e7c53f7d5",
+    "c88dc34b-72f5-5a17-8770-ca7fd2f7895e",
+    "d63e9071-7c08-5707-bb1a-36db2b4d6bb4",
+    "df74915c-a193-56fb-af07-e5ce302a5092",
+    "eb7b2364-265a-5531-a706-64a680f2bb62",
+    "f492cc47-9673-5bae-a584-0185b7b449ae",
+    "f5d7a560-c9b6-5b0a-95c6-a5d8f9e8e6be",
+    "7da250a5-e1bf-5f06-bbd8-e534a670f37f"
+  ],
+  "before": {
+    "fullNativeAirwires": 4,
+    "disconnectedNetGroups": {
+      "GND": [
+        {
+          "count": 173,
+          "pads": [
+            "C1.2",
+            "C10.2",
+            "C11.1",
+            "C12.2",
+            "C13.2",
+            "C14.2",
+            "C15.2",
+            "C16.2",
+            "C18.2",
+            "C19.2",
+            "C2.2",
+            "C20.2",
+            "C22.2",
+            "C24.2",
+            "C25.2",
+            "C27.2",
+            "C28.2",
+            "C29.2",
+            "C3.2",
+            "C30.2",
+            "C31.2",
+            "C32.2",
+            "C33.2",
+            "C34.2",
+            "C35.2",
+            "C36.1",
+            "C37.1",
+            "C38.2",
+            "C39.1",
+            "C4.2",
+            "C40.1",
+            "C41.2",
+            "C42.2",
+            "C43.2",
+            "C44.2",
+            "C45.2",
+            "C46.2",
+            "C47.2",
+            "C48.2",
+            "C49.2",
+            "C50.2",
+            "C51.2",
+            "C52.1",
+            "C53.2",
+            "C54.2",
+            "C55.2",
+            "C56.2",
+            "C57.2",
+            "C58.2",
+            "C59.2",
+            "C6.2",
+            "C60.2",
+            "C61.2",
+            "C7.2",
+            "C8.2",
+            "C9.2",
+            "D1.2",
+            "D12.2",
+            "D13.2",
+            "D14.2",
+            "D27.2",
+            "D28.2",
+            "D29.2",
+            "D4.2",
+            "D8.2",
+            "D9.2",
+            "J1.4",
+            "J2.A1",
+            "J2.A12",
+            "J2.B1",
+            "J2.B12",
+            "J2.SH",
+            "J2.SH",
+            "J2.SH",
+            "J2.SH",
+            "J3.2",
+            "J3.4",
+            "J4.10",
+            "J4.6",
+            "J4.SH",
+            "J4.SH",
+            "J4.SH",
+            "J4.SH",
+            "JP1.2",
+            "Q1.1",
+            "Q10.5",
+            "Q11.5",
+            "Q12.5",
+            "Q13.5",
+            "Q14.5",
+            "Q15.5",
+            "Q16.1",
+            "Q17.2",
+            "Q18.2",
+            "Q19.2",
+            "Q20.2",
+            "Q6.1",
+            "Q8.5",
+            "Q9.5",
+            "R102.2",
+            "R103.2",
+            "R12.2",
+            "R15.2",
+            "R17.2",
+            "R18.2",
+            "R21.2",
+            "R23.2",
+            "R24.2",
+            "R27.2",
+            "R3.2",
+            "R31.1",
+            "R34.2",
+            "R38.1",
+            "R41.2",
+            "R44.1",
+            "R47.1",
+            "R5.2",
+            "R50.2",
+            "R52.2",
+            "R54.2",
+            "R55.2",
+            "R57.2",
+            "R59.2",
+            "R61.2",
+            "R63.2",
+            "R66.2",
+            "R69.2",
+            "R72.2",
+            "R75.2",
+            "R77.1",
+            "R80.2",
+            "R9.2",
+            "R90.2",
+            "R92.2",
+            "R96.2",
+            "SW1.1",
+            "SW1.1",
+            "SW2.1",
+            "SW2.1",
+            "SW3.2",
+            "SW3.2",
+            "U1.1",
+            "U10.49",
+            "U11.2",
+            "U12.29",
+            "U12.3",
+            "U13.4",
+            "U14.4",
+            "U15.4",
+            "U16.2",
+            "U17.3",
+            "U18.3",
+            "U19.18",
+            "U19.22",
+            "U19.24",
+            "U19.25",
+            "U19.9",
+            "U2.2",
+            "U20.2",
+            "U20.2",
+            "U3.3",
+            "U3.5",
+            "U3.7",
+            "U4.3",
+            "U4.5",
+            "U4.7",
+            "U5.2",
+            "U6.2",
+            "U7.2",
+            "U8.3",
+            "U8.5",
+            "U8.7",
+            "U9.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C23.2"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "C26.2"
+          ]
+        }
+      ],
+      "RX15_EN": [
+        {
+          "count": 2,
+          "pads": [
+            "R47.2",
+            "U15.3"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U19.15"
+          ]
+        }
+      ],
+      "TX_LED": [
+        {
+          "count": 2,
+          "pads": [
+            "Q18.1",
+            "R92.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.15"
+          ]
+        }
+      ]
+    },
+    "ground": {
+      "padCount": 175,
+      "connectedGroupCount": 3,
+      "largestConnectedGroupCount": 173,
+      "isolatedFromMainGroup": [
+        "C23.2",
+        "C26.2"
+      ]
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3387.900504,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4913.063457,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5461.504204,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 37.506408
+    }
+  },
+  "after": {
+    "fullNativeAirwires": 3,
+    "disconnectedNetGroups": {
+      "RX15_EN": [
+        {
+          "count": 2,
+          "pads": [
+            "R47.2",
+            "U15.3"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U19.15"
+          ]
+        }
+      ],
+      "TX_LED": [
+        {
+          "count": 2,
+          "pads": [
+            "Q18.1",
+            "R92.1"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.15"
+          ]
+        }
+      ],
+      "PCI_RX": [
+        {
+          "count": 3,
+          "pads": [
+            "C12.1",
+            "R7.2",
+            "U9.4"
+          ]
+        },
+        {
+          "count": 1,
+          "pads": [
+            "U10.17"
+          ]
+        }
+      ]
+    },
+    "ground": {
+      "padCount": 175,
+      "connectedGroupCount": 1,
+      "largestConnectedGroupCount": 175,
+      "isolatedFromMainGroup": []
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3387.900504,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4914.163139,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5461.504204,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 37.506408
+    }
+  },
+  "requiresFreshNativeDrc": true,
+  "allowsOnlyReviewedPciRxGap": true,
+  "newCopperAndHoleConflictPreflightPassed": true
+}

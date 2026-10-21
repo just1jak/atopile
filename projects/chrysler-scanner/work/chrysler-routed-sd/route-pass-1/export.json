@@ -1,0 +1,17 @@
+{
+  "input": "work/chrysler-routed-sd/routing-review-stage/critical-candidate.kicad_pcb",
+  "input_sha256": "410f798e39d7afc944ee8c5d471beb819477fa8616d9d40f4cdbdf4a815cdd93",
+  "before": {
+    "footprints": 263,
+    "track_segments": 45,
+    "vias": 7,
+    "zones": 6,
+    "airwires_before_zone_refill": 598,
+    "thin_tracks": [],
+    "non_copper_route_layers": []
+  },
+  "seed_board": "work/chrysler-routed-sd/route-pass-1/seed.kicad_pcb",
+  "dsn": "work/chrysler-routed-sd/route-pass-1/native.dsn",
+  "seed_sha256": "3a804e1e971d12ac0589e108d061613e86a46a04a37f2ea78f07d41a69296092",
+  "dsn_sha256": "83c8cf3505fd5ab03806d8143de1d1eefce359ee267357b8429b7f988c87aee3"
+}

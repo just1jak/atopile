@@ -1,0 +1,35 @@
+{
+  "baseline": {
+    "violations": 10,
+    "unconnected": 499,
+    "categories": {
+      "hole_clearance": 4,
+      "clearance": 4,
+      "isolated_copper": 1,
+      "lib_footprint_mismatch": 1
+    }
+  },
+  "final": {
+    "violations": 10,
+    "unconnected": 499,
+    "categories": {
+      "clearance": 4,
+      "hole_clearance": 4,
+      "isolated_copper": 1,
+      "lib_footprint_mismatch": 1
+    }
+  },
+  "introducedViolations": [],
+  "removedViolations": [],
+  "newPhysicalErrors": [],
+  "routingComplete": false,
+  "manifestWiringOnly": true,
+  "originalPcbUnchanged": true,
+  "nativeAirwireCounts": {
+    "baseline": 561,
+    "final": 607,
+    "added": 46,
+    "measurement": "Native connectivity before zone refill"
+  },
+  "cliMissingItemReportingNote": "CLI JSON contains499 missing items; full native API counts are recorded separately"
+}

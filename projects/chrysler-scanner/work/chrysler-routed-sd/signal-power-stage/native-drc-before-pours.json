@@ -1,0 +1,1721 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-20T13:26:22",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "ChryslerScanner_V240_SD.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 2.1567 mm",
+                    "pos": {
+                        "x": 107.75,
+                        "y": 129.475
+                    },
+                    "uuid": "a7a12e55-e48a-4117-ac45-c06798c4f251"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.0505 mm",
+                    "pos": {
+                        "x": 107.75,
+                        "y": 136.525
+                    },
+                    "uuid": "bd6aeb94-98f8-4985-946a-409e80ae8194"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] of C40 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 109.775,
+                        "y": 108.25
+                    },
+                    "uuid": "9ab203de-d59b-45de-ba28-3dc46bb62ce8"
+                },
+                {
+                    "description": "Pad 2 [GND] of C53 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 104.95
+                    },
+                    "uuid": "3a4a2e57-62b1-47b1-8d39-842967dbad00"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 2.0000 mm",
+                    "pos": {
+                        "x": 115.65,
+                        "y": 141.0
+                    },
+                    "uuid": "72ebc50d-1366-48d4-a9cc-7d90745cc2e5"
+                },
+                {
+                    "description": "Pad 2 [GND] of JP1 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 116.15,
+                        "y": 136.25
+                    },
+                    "uuid": "bfc841db-5678-4454-913f-af977ad0a933"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.8057 mm",
+                    "pos": {
+                        "x": 115.8178,
+                        "y": 121.0477
+                    },
+                    "uuid": "9d7bd502-55d6-4efa-b506-33f93cf8155a"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.4500 mm",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 120.075
+                    },
+                    "uuid": "091743c1-c9d9-4674-8b94-1d0cd017f76e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 2.4125 mm",
+                    "pos": {
+                        "x": 119.1625,
+                        "y": 106.1875
+                    },
+                    "uuid": "8bcb2e85-83f3-4aac-a0a5-181a5f3f4409"
+                },
+                {
+                    "description": "Pad 3 [GND] of U17 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 117.3875,
+                        "y": 102.55
+                    },
+                    "uuid": "235b0ad0-c056-4209-a26d-750d5c699d88"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 2.4125 mm",
+                    "pos": {
+                        "x": 119.1625,
+                        "y": 106.1875
+                    },
+                    "uuid": "8bcb2e85-83f3-4aac-a0a5-181a5f3f4409"
+                },
+                {
+                    "description": "Pad 2 [GND] of C53 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 104.95
+                    },
+                    "uuid": "3a4a2e57-62b1-47b1-8d39-842967dbad00"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C12 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 118.475,
+                        "y": 126.75
+                    },
+                    "uuid": "d05a6461-2c6f-4e35-a5bc-21079805e006"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.0798 mm",
+                    "pos": {
+                        "x": 118.425,
+                        "y": 129.75
+                    },
+                    "uuid": "1f823c02-eae6-4ba3-9011-801ef6127248"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.0001 mm",
+                    "pos": {
+                        "x": 120.238,
+                        "y": 107.263
+                    },
+                    "uuid": "4696696a-2d28-4382-b9a9-4ab7e01a2985"
+                },
+                {
+                    "description": "Pad 2 [GND] of U16 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 123.1375,
+                        "y": 103.5
+                    },
+                    "uuid": "d0b8e4fc-54b5-473e-ba8a-731162a6e99d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.7262 mm",
+                    "pos": {
+                        "x": 121.1615,
+                        "y": 130.5135
+                    },
+                    "uuid": "4cc45a19-3b45-4daf-9eee-b13bad0391ed"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 2.1141 mm",
+                    "pos": {
+                        "x": 122.5,
+                        "y": 133.275
+                    },
+                    "uuid": "50e9d51b-7ccf-45a6-8286-334db717b521"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R34 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 121.75,
+                        "y": 144.825
+                    },
+                    "uuid": "1444fd2a-76e1-43f0-b9ad-0d761994236b"
+                },
+                {
+                    "description": "Pad 4 [GND] of U13 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 123.8625,
+                        "y": 141.3375
+                    },
+                    "uuid": "9e34a738-3d57-477a-9687-90ac70d101c2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.5555 mm",
+                    "pos": {
+                        "x": 123.1413,
+                        "y": 136.0304
+                    },
+                    "uuid": "6c4ea4b0-aa57-4cc8-b952-995c7f619393"
+                },
+                {
+                    "description": "Pad 4 [GND] of U13 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 123.8625,
+                        "y": 141.3375
+                    },
+                    "uuid": "9e34a738-3d57-477a-9687-90ac70d101c2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 7.1125 mm",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 110.45
+                    },
+                    "uuid": "3caaaf67-4081-4890-a89f-106abc5ec06d"
+                },
+                {
+                    "description": "Pad 2 [GND] of C50 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 124.5,
+                        "y": 113.975
+                    },
+                    "uuid": "ae978dd9-d09d-4bc9-ba47-596803f024e9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 7.1125 mm",
+                    "pos": {
+                        "x": 132.0,
+                        "y": 110.45
+                    },
+                    "uuid": "3caaaf67-4081-4890-a89f-106abc5ec06d"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 3.2000 mm",
+                    "pos": {
+                        "x": 120.5,
+                        "y": 107.775
+                    },
+                    "uuid": "81a6b614-3879-495b-8962-9cf6609b8536"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.1359 mm",
+                    "pos": {
+                        "x": 124.6968,
+                        "y": 136.0304
+                    },
+                    "uuid": "73bd9196-fedb-4c31-bd39-a7290973de04"
+                },
+                {
+                    "description": "Pad 2 [GND] of C38 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 128.4375,
+                        "y": 138.3375
+                    },
+                    "uuid": "47909c98-ed77-4328-a695-51a6878f8380"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C38 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 128.4375,
+                        "y": 138.3375
+                    },
+                    "uuid": "47909c98-ed77-4328-a695-51a6878f8380"
+                },
+                {
+                    "description": "Pad 1 [GND] of R31 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 132.825,
+                        "y": 140.25
+                    },
+                    "uuid": "652d5c31-5b48-4996-910e-d06cbc5a2d9f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.0368 mm",
+                    "pos": {
+                        "x": 131.25,
+                        "y": 145.325
+                    },
+                    "uuid": "93e36d73-ed4c-4b65-ba9c-a5e9a97368ca"
+                },
+                {
+                    "description": "Pad 1 [GND] of R47 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 135.325,
+                        "y": 147.75
+                    },
+                    "uuid": "8076dc92-b3da-4c3b-b6a4-5ae2017a1f64"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] of R31 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 132.825,
+                        "y": 140.25
+                    },
+                    "uuid": "652d5c31-5b48-4996-910e-d06cbc5a2d9f"
+                },
+                {
+                    "description": "Pad 1 [GND] of Q6 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 133.1125,
+                        "y": 142.8
+                    },
+                    "uuid": "fdb9215f-35fc-4990-9bcc-a5685428c2a4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] of R31 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 132.825,
+                        "y": 140.25
+                    },
+                    "uuid": "652d5c31-5b48-4996-910e-d06cbc5a2d9f"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.8869 mm",
+                    "pos": {
+                        "x": 133.1229,
+                        "y": 135.559
+                    },
+                    "uuid": "7ff2c4c6-63ae-472f-92e9-669561d2860f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.2366 mm",
+                    "pos": {
+                        "x": 133.8852,
+                        "y": 132.725
+                    },
+                    "uuid": "05e6c05c-dd7c-40ff-b931-b6029e925d04"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.0375 mm",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 126.575
+                    },
+                    "uuid": "6b512af7-9374-4489-a35e-08c337d6aa21"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.0607 mm",
+                    "pos": {
+                        "x": 133.525,
+                        "y": 120.75
+                    },
+                    "uuid": "2a8d2d0d-6698-4fb8-b3eb-336ffa0e84cc"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.2639 mm",
+                    "pos": {
+                        "x": 138.8625,
+                        "y": 121.7264
+                    },
+                    "uuid": "690b6583-7da4-4827-ac9b-a73dfbc441de"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.0607 mm",
+                    "pos": {
+                        "x": 133.525,
+                        "y": 120.75
+                    },
+                    "uuid": "2a8d2d0d-6698-4fb8-b3eb-336ffa0e84cc"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.0478 mm",
+                    "pos": {
+                        "x": 132.5091,
+                        "y": 114.3341
+                    },
+                    "uuid": "2d029f09-4ea6-4a14-b543-3c48ea045738"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] of R47 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 135.325,
+                        "y": 147.75
+                    },
+                    "uuid": "8076dc92-b3da-4c3b-b6a4-5ae2017a1f64"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.6517 mm",
+                    "pos": {
+                        "x": 133.7625,
+                        "y": 150.6875
+                    },
+                    "uuid": "de6b1ad3-783b-4c1c-83a6-35eaa7a70d5f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] of R47 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 135.325,
+                        "y": 147.75
+                    },
+                    "uuid": "8076dc92-b3da-4c3b-b6a4-5ae2017a1f64"
+                },
+                {
+                    "description": "Pad 2 [GND] of C43 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 138.525,
+                        "y": 147.75
+                    },
+                    "uuid": "4dc3ea25-0fe1-49aa-aa73-d4c7c8eede63"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R66 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 141.325,
+                        "y": 133.0
+                    },
+                    "uuid": "1d4d7187-766d-4dec-8a7a-808ef650cfce"
+                },
+                {
+                    "description": "Pad 5 [GND] of Q13 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 140.7,
+                        "y": 134.8875
+                    },
+                    "uuid": "3b6e275b-eb47-49f5-973d-93288464a334"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R66 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 141.325,
+                        "y": 133.0
+                    },
+                    "uuid": "1d4d7187-766d-4dec-8a7a-808ef650cfce"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.3625 mm",
+                    "pos": {
+                        "x": 140.7,
+                        "y": 126.375
+                    },
+                    "uuid": "fe5245e9-1c12-49c6-aeee-da1003246eae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.8875 mm",
+                    "pos": {
+                        "x": 146.75,
+                        "y": 118.3625
+                    },
+                    "uuid": "6c870173-994e-426b-9cc7-bbbe9560b949"
+                },
+                {
+                    "description": "Pad 2 [GND] of C9 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 146.5,
+                        "y": 113.775
+                    },
+                    "uuid": "c6affe19-4c7c-48ac-9c30-a12dafe60d2f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Via [GND] on L1 - Components / critical signals - L4 - Signals",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 111.5
+                    },
+                    "uuid": "f2f73189-1b43-41c0-8e0e-b0eb43caa9ca"
+                },
+                {
+                    "description": "Pad 2 [GND] of C9 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 146.5,
+                        "y": 113.775
+                    },
+                    "uuid": "c6affe19-4c7c-48ac-9c30-a12dafe60d2f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [GND] of Q10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 151.25,
+                        "y": 149.6125
+                    },
+                    "uuid": "2b7f6b1a-1563-425b-b1ca-68325afaf962"
+                },
+                {
+                    "description": "Pad 2 [GND] of R59 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 152.075,
+                        "y": 147.75
+                    },
+                    "uuid": "cd0751d7-64b2-4e94-ad89-584daff0e930"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R59 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 152.075,
+                        "y": 147.75
+                    },
+                    "uuid": "cd0751d7-64b2-4e94-ad89-584daff0e930"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.1667 mm",
+                    "pos": {
+                        "x": 159.075,
+                        "y": 147.75
+                    },
+                    "uuid": "6397a2d2-2d22-4917-901c-32062f50e654"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.0625 mm",
+                    "pos": {
+                        "x": 153.6375,
+                        "y": 108.5
+                    },
+                    "uuid": "417a1e94-bf89-4c87-84f2-7862f84dda0f"
+                },
+                {
+                    "description": "Pad 2 [GND] of R9 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 150.175,
+                        "y": 105.75
+                    },
+                    "uuid": "6644e264-25d7-41c1-a69f-46ebbb8629bf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 2.9776 mm",
+                    "pos": {
+                        "x": 158.6055,
+                        "y": 137.1195
+                    },
+                    "uuid": "0d432476-b528-45c0-9994-63d60e7bf2b8"
+                },
+                {
+                    "description": "Pad 2 [GND] of R12 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 152.25,
+                        "y": 138.575
+                    },
+                    "uuid": "3054d91d-78c4-477e-a5a8-8c17a71b687e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 2.9776 mm",
+                    "pos": {
+                        "x": 158.6055,
+                        "y": 137.1195
+                    },
+                    "uuid": "0d432476-b528-45c0-9994-63d60e7bf2b8"
+                },
+                {
+                    "description": "Pad 2 [GND] of C19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 159.25,
+                        "y": 144.725
+                    },
+                    "uuid": "2ecd89ca-84a5-4cbf-bd64-11b006f16917"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R69 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 159.075,
+                        "y": 147.75
+                    },
+                    "uuid": "605f78c9-a854-466b-953a-7f9ec24d4778"
+                },
+                {
+                    "description": "Pad 2 [GND] of C19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 159.25,
+                        "y": 144.725
+                    },
+                    "uuid": "2ecd89ca-84a5-4cbf-bd64-11b006f16917"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 2.3380 mm",
+                    "pos": {
+                        "x": 169.944,
+                        "y": 131.031
+                    },
+                    "uuid": "32a54b9e-4c1e-47dd-b7cf-b83d8e38f834"
+                },
+                {
+                    "description": "Pad 2 [GND] of C56 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 167.25,
+                        "y": 133.225
+                    },
+                    "uuid": "324f4972-676c-41d8-93c5-0983f3c52678"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.5502 mm",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 136.35
+                    },
+                    "uuid": "3bde4bd5-42cc-4f12-af04-8eb28e5e0e05"
+                },
+                {
+                    "description": "Pad 2 [GND] of C56 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 167.25,
+                        "y": 133.225
+                    },
+                    "uuid": "324f4972-676c-41d8-93c5-0983f3c52678"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [GND] of Q11 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 168.5,
+                        "y": 149.6125
+                    },
+                    "uuid": "19b2b87d-80cb-488d-b69b-74918fc4af61"
+                },
+                {
+                    "description": "Track [GND] on L4 - Signals, length 7.2000 mm",
+                    "pos": {
+                        "x": 170.4,
+                        "y": 152.5
+                    },
+                    "uuid": "bb72c8a8-f19e-4a1c-a44c-671ef7ec0054"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.6500 mm",
+                    "pos": {
+                        "x": 169.9,
+                        "y": 137.0
+                    },
+                    "uuid": "fbe3b9aa-5ac6-4bc7-9d12-a5bff9ed540b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C57 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 170.575,
+                        "y": 134.825
+                    },
+                    "uuid": "2fcc60b1-304c-4ecb-9d1d-b02adb7c047c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.4750 mm",
+                    "pos": {
+                        "x": 171.5,
+                        "y": 126.45
+                    },
+                    "uuid": "ba05d602-a309-48dc-aec0-89858b5790d7"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.2383 mm",
+                    "pos": {
+                        "x": 173.7,
+                        "y": 127.0116
+                    },
+                    "uuid": "bceac698-f1d3-4c8a-96f5-3549133f893a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C26 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 172.0,
+                        "y": 121.175
+                    },
+                    "uuid": "a2e7d141-2b94-478a-9493-da80bbea449a"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.7500 mm",
+                    "pos": {
+                        "x": 166.75,
+                        "y": 119.525
+                    },
+                    "uuid": "5bc33893-dd00-4d6b-a468-baef650e8b82"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.0750 mm",
+                    "pos": {
+                        "x": 173.5,
+                        "y": 108.675
+                    },
+                    "uuid": "787e8ff7-0657-49a3-adbe-da1a061f11c9"
+                },
+                {
+                    "description": "Pad 2 [GND] of C32 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 176.5,
+                        "y": 108.725
+                    },
+                    "uuid": "298a5a83-7a39-4757-bddb-6796f9a5022e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C28 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 175.525,
+                        "y": 122.25
+                    },
+                    "uuid": "14f00558-e8e0-487b-90d9-7ea1ee5cebb5"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.9983 mm",
+                    "pos": {
+                        "x": 174.225,
+                        "y": 126.2483
+                    },
+                    "uuid": "8a40e474-f88a-4cb1-832a-5e598cf9603e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.9714 mm",
+                    "pos": {
+                        "x": 175.4119,
+                        "y": 150.9369
+                    },
+                    "uuid": "5651a026-7fdc-42e3-9ebc-3e6e0f94e009"
+                },
+                {
+                    "description": "Pad 2 [GND] of R72 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 175.825,
+                        "y": 147.5
+                    },
+                    "uuid": "e8086fe2-f579-4d1d-bdbd-441c94e8659d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Via [GND] on L1 - Components / critical signals - L4 - Signals",
+                    "pos": {
+                        "x": 177.8638,
+                        "y": 115.3476
+                    },
+                    "uuid": "7bd1d1b3-9df2-4e2a-a127-33c587efd359"
+                },
+                {
+                    "description": "Pad 49 [GND] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 173.6875,
+                        "y": 115.3625
+                    },
+                    "uuid": "70208e54-5f91-4607-9855-6885d0dc380e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Via [GND] on L1 - Components / critical signals - L4 - Signals",
+                    "pos": {
+                        "x": 185.3,
+                        "y": 112.5
+                    },
+                    "uuid": "5965ae29-6b94-422e-876f-d0385b8a0467"
+                },
+                {
+                    "description": "Pad 2 [GND] of R15 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 182.925,
+                        "y": 111.75
+                    },
+                    "uuid": "374cb345-7183-479d-b246-33d2cb590b6d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Via [GND] on L1 - Components / critical signals - L4 - Signals",
+                    "pos": {
+                        "x": 185.3,
+                        "y": 112.5
+                    },
+                    "uuid": "5965ae29-6b94-422e-876f-d0385b8a0467"
+                },
+                {
+                    "description": "Pad 2 [GND] of C23 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 185.775,
+                        "y": 115.75
+                    },
+                    "uuid": "5d991bc6-d667-4e33-a533-80c01f35f846"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad SH [GND] of J4 on L4 - Signals",
+                    "pos": {
+                        "x": 185.675,
+                        "y": 138.275
+                    },
+                    "uuid": "408d8e6c-5702-4067-9d8f-5c4cf212c990"
+                },
+                {
+                    "description": "Pad 2 [GND] of C60 on L4 - Signals",
+                    "pos": {
+                        "x": 189.725,
+                        "y": 135.4
+                    },
+                    "uuid": "d11fdab2-67db-4f0d-8b41-126e45e624d8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C60 on L4 - Signals",
+                    "pos": {
+                        "x": 189.725,
+                        "y": 135.4
+                    },
+                    "uuid": "d11fdab2-67db-4f0d-8b41-126e45e624d8"
+                },
+                {
+                    "description": "Track [GND] on L4 - Signals, length 1.0771 mm",
+                    "pos": {
+                        "x": 192.725,
+                        "y": 138.275
+                    },
+                    "uuid": "f466020c-59e5-45fa-a508-f0031ff6500a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C20 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 190.905,
+                        "y": 116.435
+                    },
+                    "uuid": "e1e740ca-6eb5-4b0e-ac60-00343de97f2f"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.8875 mm",
+                    "pos": {
+                        "x": 192.8625,
+                        "y": 114.0
+                    },
+                    "uuid": "a44a027e-4def-4ecb-bec3-cfe06143982f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C20 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 190.905,
+                        "y": 116.435
+                    },
+                    "uuid": "e1e740ca-6eb5-4b0e-ac60-00343de97f2f"
+                },
+                {
+                    "description": "Pad 2 [GND] of C24 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 191.25,
+                        "y": 121.475
+                    },
+                    "uuid": "329bc049-e04d-4cfa-8ee5-4707a37ef55a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [GND] of U8 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 194.6375,
+                        "y": 113.35
+                    },
+                    "uuid": "2d05dceb-2d21-44b2-a611-2303e2c8d4ef"
+                },
+                {
+                    "description": "Pad 2 [GND] of R17 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 197.575,
+                        "y": 114.75
+                    },
+                    "uuid": "6c1afb3f-bcb2-41e0-9a1f-db0ee69d2aa2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L4 - Signals, length 4.5579 mm",
+                    "pos": {
+                        "x": 192.725,
+                        "y": 139.3521
+                    },
+                    "uuid": "06463a11-1a27-4050-a324-8d9030de42d7"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 3.2041 mm",
+                    "pos": {
+                        "x": 193.4,
+                        "y": 143.5
+                    },
+                    "uuid": "5572d425-0d55-4040-8312-dec8990e7253"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L4 - Signals, length 0.8771 mm",
+                    "pos": {
+                        "x": 195.9479,
+                        "y": 142.575
+                    },
+                    "uuid": "5da2660f-196e-438b-89f6-6eba7e3fde85"
+                },
+                {
+                    "description": "Pad 1 [GND] of SW1 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 200.6,
+                        "y": 143.5
+                    },
+                    "uuid": "8efe48c7-387c-48f2-b572-1b354fe242ea"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.8017 mm",
+                    "pos": {
+                        "x": 198.875,
+                        "y": 117.9
+                    },
+                    "uuid": "454406ff-0f45-4bf7-b9ff-15ef8761ba74"
+                },
+                {
+                    "description": "Pad 2 [GND] of R17 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 197.575,
+                        "y": 114.75
+                    },
+                    "uuid": "6c1afb3f-bcb2-41e0-9a1f-db0ee69d2aa2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R103 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 198.925,
+                        "y": 126.0
+                    },
+                    "uuid": "93f98323-9bef-43dc-9f82-1ae003ebafdb"
+                },
+                {
+                    "description": "Track [GND] on L4 - Signals, length 4.9517 mm",
+                    "pos": {
+                        "x": 201.9737,
+                        "y": 125.9263
+                    },
+                    "uuid": "f4c5cbce-9792-415f-9477-c7811429d72d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R103 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 198.925,
+                        "y": 126.0
+                    },
+                    "uuid": "93f98323-9bef-43dc-9f82-1ae003ebafdb"
+                },
+                {
+                    "description": "Pad 2 [GND] of U11 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 200.400099,
+                        "y": 128.75
+                    },
+                    "uuid": "11f21fd5-ff48-4d8c-8ae2-3b61068e38df"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of U11 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 200.400099,
+                        "y": 128.75
+                    },
+                    "uuid": "11f21fd5-ff48-4d8c-8ae2-3b61068e38df"
+                },
+                {
+                    "description": "Pad 2 [GND] of R102 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 198.925,
+                        "y": 131.5
+                    },
+                    "uuid": "7acb8a1c-4e0a-40fd-928f-2affe2c932d4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [GND] of U12 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 203.479982,
+                        "y": 116.840018
+                    },
+                    "uuid": "3296ba1d-9923-477f-8f8d-c47c027700aa"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 3.1113 mm",
+                    "pos": {
+                        "x": 203.0,
+                        "y": 120.525
+                    },
+                    "uuid": "17bdf08e-9ef1-4eb0-8b1d-acd671a2a235"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 0.7071 mm",
+                    "pos": {
+                        "x": 203.48,
+                        "y": 114.94
+                    },
+                    "uuid": "59c16bbd-c92f-40d7-9f4e-65625c579a13"
+                },
+                {
+                    "description": "Pad 2 [GND] of R27 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 208.25,
+                        "y": 108.175
+                    },
+                    "uuid": "8f25d51b-7c66-4bc4-92a7-ab6a3f863f54"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 1.4118 mm",
+                    "pos": {
+                        "x": 206.2483,
+                        "y": 121.5233
+                    },
+                    "uuid": "819d7503-2aeb-4527-aadf-07c986557810"
+                },
+                {
+                    "description": "Track [GND] on L1 - Components / critical signals, length 3.1113 mm",
+                    "pos": {
+                        "x": 203.0,
+                        "y": 120.525
+                    },
+                    "uuid": "17bdf08e-9ef1-4eb0-8b1d-acd671a2a235"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 16 [PCI_TX] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 172.4375,
+                        "y": 118.7275
+                    },
+                    "uuid": "c57ab322-8843-4a4c-ae5a-6d355ec67488"
+                },
+                {
+                    "description": "Track [PCI_TX] on L1 - Components / critical signals, length 1.1137 mm",
+                    "pos": {
+                        "x": 124.1375,
+                        "y": 121.5375
+                    },
+                    "uuid": "e4738d7a-97a6-4bc6-8803-6d472268fafe"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 11 [V_PR] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 170.3225,
+                        "y": 117.6125
+                    },
+                    "uuid": "9044d4f2-d8a8-478d-b17b-d882104996d4"
+                },
+                {
+                    "description": "Track [V_PR] on L1 - Components / critical signals, length 1.4983 mm",
+                    "pos": {
+                        "x": 170.9983,
+                        "y": 128.525
+                    },
+                    "uuid": "7e7e8d41-0ad6-403e-9402-72890e2115dd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 15 [RX15_EN] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 169.9,
+                        "y": 138.5
+                    },
+                    "uuid": "d7c4fcef-b386-44af-b060-0444675121ab"
+                },
+                {
+                    "description": "Track [RX15_EN] on L1 - Components / critical signals, length 1.6963 mm",
+                    "pos": {
+                        "x": 134.4142,
+                        "y": 148.4912
+                    },
+                    "uuid": "21a4e2e0-0245-4dfc-9f33-aff367405f3e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 15 [TX_LED] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 171.9375,
+                        "y": 118.7275
+                    },
+                    "uuid": "800f7529-f6b6-46a9-921d-67dd7c2899b8"
+                },
+                {
+                    "description": "Track [TX_LED] on L1 - Components / critical signals, length 1.6250 mm",
+                    "pos": {
+                        "x": 185.625,
+                        "y": 145.95
+                    },
+                    "uuid": "011bc60f-599b-4378-bdf2-c941b50a003a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 20 [ACT_LED] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 174.4375,
+                        "y": 118.7275
+                    },
+                    "uuid": "9d75b161-fd24-40df-bba0-47449a423d50"
+                },
+                {
+                    "description": "Track [ACT_LED] on L1 - Components / critical signals, length 1.6250 mm",
+                    "pos": {
+                        "x": 187.25,
+                        "y": 129.7
+                    },
+                    "uuid": "b80d0839-ecca-4f58-aed3-2205264e0741"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [LOG_BUTTON] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 170.3225,
+                        "y": 115.1125
+                    },
+                    "uuid": "8375f969-b6f3-4e82-981b-d2cd8f91ab80"
+                },
+                {
+                    "description": "Track [LOG_BUTTON] on L4 - Signals, length 0.5537 mm",
+                    "pos": {
+                        "x": 168.0,
+                        "y": 113.275
+                    },
+                    "uuid": "f54b753c-47d5-4a04-b0db-d84d62ad4ee5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [RX1] on L1 - Components / critical signals, length 0.8115 mm",
+                    "pos": {
+                        "x": 120.2887,
+                        "y": 101.9762
+                    },
+                    "uuid": "8f7293aa-7910-448d-a063-e84f1fe2c519"
+                },
+                {
+                    "description": "Pad 33 [RX1] of U10 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 177.0525,
+                        "y": 114.1125
+                    },
+                    "uuid": "25cffbb0-efdd-4d49-a9e3-76526b56b963"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VBB_TO_TX14] on L1 - Components / critical signals, length 0.6166 mm",
+                    "pos": {
+                        "x": 166.989,
+                        "y": 148.186
+                    },
+                    "uuid": "8d9da8e1-0b1d-442e-b9de-57ee3d155d2e"
+                },
+                {
+                    "description": "Pad 8 [VBB_TO_TX14] of U19 on L1 - Components / critical signals",
+                    "pos": {
+                        "x": 167.25,
+                        "y": 140.15
+                    },
+                    "uuid": "b63ac0cc-8bbb-4ae0-8a4d-41273968b4fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.2671 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 210.0,
+                        "y": 102.0
+                    },
+                    "uuid": "4277f7d5-b651-584f-9bec-58ca72b646c0"
+                },
+                {
+                    "description": "Track [+3.3V] on L1 - Components / critical signals, length 0.8079 mm",
+                    "pos": {
+                        "x": 209.4829,
+                        "y": 113.85
+                    },
+                    "uuid": "4ea422ab-05af-4a30-93a4-fedbbe6b78a6"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.2171 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 210.0,
+                        "y": 102.0
+                    },
+                    "uuid": "4277f7d5-b651-584f-9bec-58ca72b646c0"
+                },
+                {
+                    "description": "Via [+3.3V] on L1 - Components / critical signals - L4 - Signals",
+                    "pos": {
+                        "x": 209.4829,
+                        "y": 113.85
+                    },
+                    "uuid": "71794784-618a-4594-a517-9b7f325e793b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.2671 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 210.0,
+                        "y": 102.0
+                    },
+                    "uuid": "4277f7d5-b651-584f-9bec-58ca72b646c0"
+                },
+                {
+                    "description": "Track [+3.3V] on L3 - Power, length 3.2166 mm",
+                    "pos": {
+                        "x": 207.2084,
+                        "y": 117.4189
+                    },
+                    "uuid": "20349f2a-2c14-46ea-a614-c9a654597c37"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.2671 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 210.0,
+                        "y": 102.0
+                    },
+                    "uuid": "4277f7d5-b651-584f-9bec-58ca72b646c0"
+                },
+                {
+                    "description": "Track [+3.3V] on L3 - Power, length 1.2944 mm",
+                    "pos": {
+                        "x": 209.4829,
+                        "y": 115.1444
+                    },
+                    "uuid": "67290ee9-ac1a-49b3-89c4-1308e705de16"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VPP] on L1 - Components / critical signals, length 1.4940 mm",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 121.9685
+                    },
+                    "uuid": "6abbcb38-c07b-4b0d-9ecb-5c6a19d3296d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [N_C17_2] on L1 - Components / critical signals, length 0.9472 mm",
+                    "pos": {
+                        "x": 155.194,
+                        "y": 131.0905
+                    },
+                    "uuid": "a641cfd6-363a-48e6-88cf-fc24d7e581f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [N_C5_2] on L1 - Components / critical signals, length 1.2965 mm",
+                    "pos": {
+                        "x": 136.729,
+                        "y": 107.225
+                    },
+                    "uuid": "c4b0ba95-ec66-4919-ba22-70c2900aaf04"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+(fp_lib_table (lib (name "Local")(type "KiCad")(uri "${KIPRJMOD}/Carrier.pretty")(options "")(descr "XIAO socket derived from Seeed geometry")))

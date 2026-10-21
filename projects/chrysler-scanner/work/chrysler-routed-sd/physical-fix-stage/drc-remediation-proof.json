@@ -1,0 +1,267 @@
+{
+  "nativeVersion": "10.0.7",
+  "sourceSha256": "7eb9e1a94a9ad4c71e47d1c7245f232716e6905fbe046c4cd940806cf378af65",
+  "correctedSha256": "f2b5c36611bb8ea9b47a6f21de91bd04ad656ecaa4f75047ede9a9424269604e",
+  "baseline": {
+    "errors": 8,
+    "warnings": 3,
+    "categories": {
+      "hole_clearance": 4,
+      "clearance": 4,
+      "isolated_copper": 1,
+      "lib_footprint_mismatch": 2
+    },
+    "reportedMissingConnections": 499
+  },
+  "corrected": {
+    "errors": 0,
+    "warnings": 0,
+    "categories": {},
+    "reportedMissingConnections": 499
+  },
+  "physicalRulesChanged": false,
+  "ruleExclusionsAdded": false,
+  "missingConnectionsSeverityUnchanged": true,
+  "routingComplete": false,
+  "nativeUnfilledAirwiresBefore": 607,
+  "nativeUnfilledAirwiresAfter": 608,
+  "removedViolations": [
+    {
+      "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)",
+      "items": [
+        {
+          "description": "Pad A1 [GND] of J2 on L1 - Components / critical signals",
+          "pos": {
+            "x": 202.645,
+            "y": 132.2
+          },
+          "uuid": "6e3ebec7-83a3-4d91-8905-4b765cecbe9a"
+        },
+        {
+          "description": "NPTH pad of J2",
+          "pos": {
+            "x": 203.72,
+            "y": 131.89
+          },
+          "uuid": "c2810e37-f823-4d81-8fdd-734b628f9ddd"
+        }
+      ],
+      "severity": "error",
+      "type": "hole_clearance"
+    },
+    {
+      "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)",
+      "items": [
+        {
+          "description": "Pad A12 [GND] of J2 on L1 - Components / critical signals",
+          "pos": {
+            "x": 202.645,
+            "y": 125.8
+          },
+          "uuid": "202e60a7-76af-4458-b990-25ff72340931"
+        },
+        {
+          "description": "NPTH pad of J2",
+          "pos": {
+            "x": 203.72,
+            "y": 126.11
+          },
+          "uuid": "b4a3e62e-4f1b-42b0-a669-310a7a6cc976"
+        }
+      ],
+      "severity": "error",
+      "type": "hole_clearance"
+    },
+    {
+      "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)",
+      "items": [
+        {
+          "description": "Pad B1 [GND] of J2 on L1 - Components / critical signals",
+          "pos": {
+            "x": 202.645,
+            "y": 125.8
+          },
+          "uuid": "9186e189-4f60-4225-9538-5b0db14606e6"
+        },
+        {
+          "description": "NPTH pad of J2",
+          "pos": {
+            "x": 203.72,
+            "y": 126.11
+          },
+          "uuid": "b4a3e62e-4f1b-42b0-a669-310a7a6cc976"
+        }
+      ],
+      "severity": "error",
+      "type": "hole_clearance"
+    },
+    {
+      "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1149 mm)",
+      "items": [
+        {
+          "description": "Pad 7 [+3.3V] of U12 on L1 - Components / critical signals",
+          "pos": {
+            "x": 205.479982,
+            "y": 116.940018
+          },
+          "uuid": "01e58086-0a73-41db-9aac-9b514e48a418"
+        },
+        {
+          "description": "Pad 8 [N_R26_2] of U12 on L1 - Components / critical signals",
+          "pos": {
+            "x": 206.479982,
+            "y": 115.940018
+          },
+          "uuid": "41c7c52f-2e17-428a-b8e6-ae37d789f3b6"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)",
+      "items": [
+        {
+          "description": "Pad B12 [GND] of J2 on L1 - Components / critical signals",
+          "pos": {
+            "x": 202.645,
+            "y": 132.2
+          },
+          "uuid": "4cb58fa9-1918-4541-89bb-74fe8b7edf8b"
+        },
+        {
+          "description": "NPTH pad of J2",
+          "pos": {
+            "x": 203.72,
+            "y": 131.89
+          },
+          "uuid": "c2810e37-f823-4d81-8fdd-734b628f9ddd"
+        }
+      ],
+      "severity": "error",
+      "type": "hole_clearance"
+    },
+    {
+      "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1149 mm)",
+      "items": [
+        {
+          "description": "Pad 14 [unconnected-(U12-Pad14)] of U12 on L1 - Components / critical signals",
+          "pos": {
+            "x": 206.479982,
+            "y": 112.940018
+          },
+          "uuid": "42c2d7d4-7b56-488d-83e4-8d7c45a4d495"
+        },
+        {
+          "description": "Pad 15 [unconnected-(U12-Pad15)] of U12 on L1 - Components / critical signals",
+          "pos": {
+            "x": 205.479982,
+            "y": 111.940018
+          },
+          "uuid": "6cc2a13f-a518-428c-b649-e1e7715baf2d"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1149 mm)",
+      "items": [
+        {
+          "description": "Pad 21 [unconnected-(U12-Pad21)] of U12 on L1 - Components / critical signals",
+          "pos": {
+            "x": 202.479982,
+            "y": 111.940018
+          },
+          "uuid": "b527c49d-723d-49f4-a45d-b1105ff57719"
+        },
+        {
+          "description": "Pad 22 [unconnected-(U12-Pad22)] of U12 on L1 - Components / critical signals",
+          "pos": {
+            "x": 201.479982,
+            "y": 112.940018
+          },
+          "uuid": "c9b77c15-70d1-46ea-b1d0-16a1eba8a1e1"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1149 mm)",
+      "items": [
+        {
+          "description": "Pad 28 [DTR] of U12 on L1 - Components / critical signals",
+          "pos": {
+            "x": 201.479982,
+            "y": 115.940018
+          },
+          "uuid": "175ee8e3-5a40-4f3c-8e5c-98198656e51c"
+        },
+        {
+          "description": "Pad 1 [unconnected-(U12-Pad1)] of U12 on L1 - Components / critical signals",
+          "pos": {
+            "x": 202.479982,
+            "y": 116.940018
+          },
+          "uuid": "8c013526-d606-4597-9ee9-b9bfa2a8cdda"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone 'L3 GND beneath RF feed - provisional' [GND] on L3 - Power, priority 0",
+          "pos": {
+            "x": 166.1,
+            "y": 106.0
+          },
+          "uuid": "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Footprint 'SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm' does not match copy in library 'footprints'",
+      "items": [
+        {
+          "description": "Footprint JP1",
+          "pos": {
+            "x": 115.5,
+            "y": 136.25
+          },
+          "uuid": "9e111645-e497-4961-9916-8e744642524b"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Footprint 'USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal' does not match copy in library 'footprints'",
+      "items": [
+        {
+          "description": "Footprint J2",
+          "pos": {
+            "x": 206.325,
+            "y": 129.0
+          },
+          "uuid": "abb93164-ed05-4f11-b383-dd414642524b"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    }
+  ],
+  "libraryFootprintGeometryAgreement": "Native full DRC reports no lib_footprint_mismatch",
+  "additionalLibraryFix": {
+    "reference": "JP1",
+    "boardChanged": false,
+    "reason": "Local footprint lacked the existing bridged jumper net_tie_pad_groups and F.Fab reference label",
+    "file": "footprints.pretty/SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm.kicad_mod"
+  },
+  "originalInputBytesAndMtimeUnchanged": true
+}
