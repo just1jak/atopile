@@ -28,6 +28,7 @@
     "connectorAndProtectionSameSheet": true,
     "electricalEndpointChanges": false,
     "pcbChange": "J1 hierarchy path metadata only",
-    "validation": "system-diagram-validation.json"
+    "validation": "system-diagram-validation.json",
+    "layout": "Original functional flow restored with hierarchical signals"
   }
 }

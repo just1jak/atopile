@@ -27,10 +27,11 @@
   "hardware_bench_or_vehicle_validation_performed": false,
   "manufacturing_order_or_external_upload_performed": false,
   "systemDiagramFirstPage": true,
-  "root_schematic_sha256": "cb59d13dc42abd1984c2cc4e3fd433e8f35eb677aaf5901e984ca2dd4e6d4307",
-  "full_project_archive_sha256": "f7385ef9cf15dc07539b222267ba7ebd744339a0cb49f0579956f2f3e40de136",
+  "root_schematic_sha256": "894354d0c3b09aed4d908d6519ce9d5e36a7ad5004809c6e589d61435cd0a116",
+  "full_project_archive_sha256": "b828b70b292b7db460fc973f1a0823748ac02e9014efa5c5c3cd1c8911c7fa48",
   "updated_schematic_pdf": "current/ChryslerScanner_V240_SD-Hierarchy.pdf",
   "hierarchical_signal_ports": 177,
   "schematic_pages": 22,
-  "input_connector_and_protection_same_sheet": true
+  "input_connector_and_protection_same_sheet": true,
+  "system_diagram_layout": "Original functional flow layout with native hierarchical signal pins"
 }

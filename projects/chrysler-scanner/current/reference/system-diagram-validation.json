@@ -34,7 +34,7 @@
   "hierarchicalPorts": 177,
   "totalPages": 22,
   "pcbSha256": "85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a",
-  "rootSchematicSha256": "cb59d13dc42abd1984c2cc4e3fd433e8f35eb677aaf5901e984ca2dd4e6d4307",
+  "rootSchematicSha256": "894354d0c3b09aed4d908d6519ce9d5e36a7ad5004809c6e589d61435cd0a116",
   "pcbChange": "J1 sheet path metadata only; geometry and copper unchanged",
   "hierarchyChange": "J1 moved to protection sheet; its symbol UUID preserved"
 }

@@ -4,7 +4,7 @@
   "project": "C:\\Users\\just3\\Documents\\Scanner\\projects\\chrysler-scanner\\current",
   "pcb": "C:\\Users\\just3\\Documents\\Scanner\\projects\\chrysler-scanner\\current\\ChryslerScanner_V240_SD.kicad_pcb",
   "pcbSha256": "85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a",
-  "nativeXmlSha256": "544fe00385edabdd2c33b445b3fa6dc4771df1aa62715168ab0591ff77fdcede",
+  "nativeXmlSha256": "fd95ce2cbc1e46b69b5e9d475608f9f065e754e83a5f55826cd17843722b4dd7",
   "electricalComponents": 259,
   "pcbFootprintsIncluding4MechanicalHoles": 263,
   "connectedNetCount": 154,
@@ -458,7 +458,7 @@
   "routing": {
     "assessed": true,
     "nativeAirwiresAsLoaded": 0,
-    "drcSha256": "34536e073cf2ef47325f7fbdd92787b94a14c6784a9849f388239dd0ce1589d1",
+    "drcSha256": "14d2e3ce65130ac7affa21dcbd95a9c322238012c3fc4c2ca8125adb9ab7b641",
     "drcViolations": 0,
     "drcMissingConnections": 0
   },

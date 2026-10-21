@@ -14,7 +14,9 @@ against the actual connector and capacitor dimensions before manufacturing.
 
 ## System overview
 
-Page 1 is a clickable system diagram with 177 native hierarchical signal ports
+Page 1 restores the original functional block-diagram layout, with vehicle
+interfaces on the left, the controller in the middle, USB/SD on the right, and
+power/programming below. It has 177 native hierarchical signal ports
 across 21 circuit sheets. Named signal stubs connect matching nets across blocks.
 J1 and its line-protection components now share the input sheet. Every original
 net endpoint is preserved; only J1's PCB sheet-path metadata changed.
