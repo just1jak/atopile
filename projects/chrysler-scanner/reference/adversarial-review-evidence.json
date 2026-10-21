@@ -1,0 +1,320 @@
+{
+  "reviewedCommit": "4e8ed294751e0aab9bce02d3bcc720167287f3e6",
+  "pcbSha256": "85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a",
+  "schematicFileHashes": {
+    "01_ccd.kicad_sch": "2f6e75ca35d70c2815428f1464fa054364412fbf5056ce41118571d567439157",
+    "02_pci.kicad_sch": "8937343157122625154ccb0ae836213aeeb4eb1f74a57cc2e8cf23256893aa96",
+    "03_sci-14-9.kicad_sch": "f86f2e47409d4a93680003a0863453c288664a0815d80ce181b35d427994f040",
+    "04_sci-6-12.kicad_sch": "d6f109d05092ffd4e6d9442ac4575a73d99105df3f4bf547941dec164271a0cb",
+    "05_sci-rx.kicad_sch": "0a395fb05714c20faf0dabcc419f9e9e9c076209eee71305f59831323ce0dcf3",
+    "06_obd-protection.kicad_sch": "4b199d2c94802a57d8486f032f18096680f0f082963feae6ac295c7d9aedffa6",
+    "07_vehicle-input.kicad_sch": "18aa8636e435c8d3150ff82d1d4162ddbd5e862d25becf794370dcf0f57791cd",
+    "08_power-5v.kicad_sch": "8b6142be7deacfe1c8257c0d50ef06ec13f1335155a383c5b864a915e593603e",
+    "09_power-vpp.kicad_sch": "b0a38c102eceb22e8830a39c87eeedaf61e5edc5a6d4ff46ead24590b70f26ee",
+    "10_power-vbb.kicad_sch": "600d875e0d2c1e69b4bbadd1a29717e72d03be42838195b4f45a1a8dab30ac81",
+    "11_power-7v5.kicad_sch": "9ebda5d60c63f6b54bd5a68eef09864e755ebd5f10fd14210f279ed74a93329c",
+    "12_program-6.kicad_sch": "42d4b5586b9f9cdb90b5691838ce6b9e657e79553e2cf7b50d629d0e84feff6c",
+    "13_program-9.kicad_sch": "ce0762b9acbd68121d655ae67c835c4f64c7f839ce1c3cde965da7558b5b4873",
+    "14_program-12.kicad_sch": "14959930655238c96e9812d94a8e539772927f0d355c7090f7ea55717ef5c1da",
+    "15_program-14.kicad_sch": "d545b678d71cacb3c1cf4bc4bd3e71bab6ef34b9740beff9684580d916b31dbd",
+    "16_mcu.kicad_sch": "506e909d549189ba48f8ddc824b7355ab435e985c8baf5d25536c734d81a6598",
+    "17_adc.kicad_sch": "6aaec1641f0e8a7e9e9577f6358220da07b7992ef9a5a6b35b2b6c957f447e49",
+    "18_control.kicad_sch": "86b2ed9850722ef2dfea6400202c1e5726b8d7add54ecc6550bf91470b492975",
+    "19_usb.kicad_sch": "dec235e264b1da9139fcefea01979ecf2ae700562a7f0f95d3ae530a3c65e939",
+    "20_leds.kicad_sch": "4b3ee9cf38af9b1ef708e7742af282668029610405091d66cc261f59f584626c",
+    "22_sd-logger.kicad_sch": "0bd0ea6203f34acefa9810434a6d153f6bcd6ca1a6dc2980bd3588d6ce39db87",
+    "ChryslerScanner_V240_SD.kicad_sch": "361be221836ec8b3fa3c332ff0cdd4b08fa1664643b4cf84502c839d3ce75342"
+  },
+  "nativeKiCadVersion": "10.0.5",
+  "freshNativeChecks": {
+    "ercFindings": 0,
+    "drcViolations": 0,
+    "unconnectedItems": 0,
+    "schematicParityFindings": 0
+  },
+  "connectivity": {
+    "fullNativeAirwires": 0,
+    "disconnectedNetGroups": {},
+    "ground": {
+      "padCount": 175,
+      "connectedGroupCount": 1,
+      "largestConnectedGroupCount": 175,
+      "isolatedFromMainGroup": []
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3376.403388,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4863.282438,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5448.044857,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 37.506408
+    }
+  },
+  "nets": {
+    "+12V": [
+      {
+        "reference": "C1",
+        "pin": "1",
+        "value": "100\u03bcF"
+      },
+      {
+        "reference": "C11",
+        "pin": "2",
+        "value": "0.1\u03bcF"
+      },
+      {
+        "reference": "C13",
+        "pin": "1",
+        "value": "10\u03bcF"
+      },
+      {
+        "reference": "C20",
+        "pin": "1",
+        "value": "10\u03bcF"
+      },
+      {
+        "reference": "C4",
+        "pin": "1",
+        "value": "10\u03bcF"
+      },
+      {
+        "reference": "D2",
+        "pin": "1",
+        "value": "SS56"
+      },
+      {
+        "reference": "L2",
+        "pin": "1",
+        "value": "22\u00b5H"
+      },
+      {
+        "reference": "R1",
+        "pin": "1",
+        "value": "100k\u03a9"
+      },
+      {
+        "reference": "R13",
+        "pin": "1",
+        "value": "100k\u03a9"
+      },
+      {
+        "reference": "U2",
+        "pin": "5",
+        "value": "LMR14010"
+      },
+      {
+        "reference": "U5",
+        "pin": "5",
+        "value": "LGS6302"
+      },
+      {
+        "reference": "U7",
+        "pin": "5",
+        "value": "LMR14010"
+      },
+      {
+        "reference": "U9",
+        "pin": "5",
+        "value": "TS391C"
+      }
+    ],
+    "EN": [
+      {
+        "reference": "C45",
+        "pin": "1",
+        "value": "1\u03bcF"
+      },
+      {
+        "reference": "C46",
+        "pin": "1",
+        "value": "0.1\u03bcF"
+      },
+      {
+        "reference": "Q5",
+        "pin": "6",
+        "value": "UMH3N"
+      },
+      {
+        "reference": "R48",
+        "pin": "2",
+        "value": "10k\u03a9"
+      },
+      {
+        "reference": "SW1",
+        "pin": "2",
+        "value": "RESET"
+      },
+      {
+        "reference": "U10",
+        "pin": "9",
+        "value": "ESP32-PICO-V3-02"
+      }
+    ],
+    "J1962-16": [
+      {
+        "reference": "D1",
+        "pin": "1",
+        "value": "SMBJ30CA"
+      },
+      {
+        "reference": "D2",
+        "pin": "2",
+        "value": "SS56"
+      },
+      {
+        "reference": "J1",
+        "pin": "16",
+        "value": "226A-1202"
+      },
+      {
+        "reference": "R49",
+        "pin": "1",
+        "value": "8.66k\u03a9"
+      }
+    ],
+    "N_R88_2": [
+      {
+        "reference": "R88",
+        "pin": "2",
+        "value": "4.7k\u03a9"
+      },
+      {
+        "reference": "U19",
+        "pin": "23",
+        "value": "AW9523B"
+      }
+    ],
+    "VBB_TO_TX6": [
+      {
+        "reference": "Q8",
+        "pin": "1",
+        "value": "HSW4602"
+      },
+      {
+        "reference": "R55",
+        "pin": "1",
+        "value": "10k\u03a9"
+      },
+      {
+        "reference": "U19",
+        "pin": "5",
+        "value": "AW9523B"
+      }
+    ],
+    "VPP_TO_TX6": [
+      {
+        "reference": "Q12",
+        "pin": "1",
+        "value": "HSW4602"
+      },
+      {
+        "reference": "R63",
+        "pin": "1",
+        "value": "10k\u03a9"
+      },
+      {
+        "reference": "U19",
+        "pin": "10",
+        "value": "AW9523B"
+      }
+    ],
+    "V_BA": [
+      {
+        "reference": "C47",
+        "pin": "1",
+        "value": "0.1\u03bcF"
+      },
+      {
+        "reference": "D27",
+        "pin": "1",
+        "value": "ESD5Z3V3"
+      },
+      {
+        "reference": "R49",
+        "pin": "2",
+        "value": "8.66k\u03a9"
+      },
+      {
+        "reference": "R50",
+        "pin": "1",
+        "value": "1.62k\u03a9"
+      },
+      {
+        "reference": "U10",
+        "pin": "13",
+        "value": "ESP32-PICO-V3-02"
+      }
+    ],
+    "V_BT": [
+      {
+        "reference": "C48",
+        "pin": "1",
+        "value": "0.1\u03bcF"
+      },
+      {
+        "reference": "D28",
+        "pin": "1",
+        "value": "ESD5Z3V3"
+      },
+      {
+        "reference": "R51",
+        "pin": "2",
+        "value": "8.66k\u03a9"
+      },
+      {
+        "reference": "R52",
+        "pin": "1",
+        "value": "1.62k\u03a9"
+      },
+      {
+        "reference": "U10",
+        "pin": "10",
+        "value": "ESP32-PICO-V3-02"
+      }
+    ]
+  },
+  "netRouteMetrics": {
+    "SD_SCK": {
+      "totalTrackLengthMm": 32.8489,
+      "viaCount": 2,
+      "note": "Total routed segments, including branches; not a source-to-load delay measurement"
+    },
+    "MCU_SD_SCK": {
+      "totalTrackLengthMm": 6.0138,
+      "viaCount": 1,
+      "note": "Total routed segments, including branches; not a source-to-load delay measurement"
+    },
+    "SD_MISO": {
+      "totalTrackLengthMm": 62.0617,
+      "viaCount": 5,
+      "note": "Total routed segments, including branches; not a source-to-load delay measurement"
+    },
+    "MCU_SD_CS": {
+      "totalTrackLengthMm": 16.7538,
+      "viaCount": 1,
+      "note": "Total routed segments, including branches; not a source-to-load delay measurement"
+    },
+    "SD_CS": {
+      "totalTrackLengthMm": 24.835,
+      "viaCount": 0,
+      "note": "Total routed segments, including branches; not a source-to-load delay measurement"
+    },
+    "+12V": {
+      "totalTrackLengthMm": 159.8442,
+      "viaCount": 5,
+      "note": "Total routed segments, including branches; not a source-to-load delay measurement"
+    },
+    "+5V": {
+      "totalTrackLengthMm": 245.0817,
+      "viaCount": 6,
+      "note": "Total routed segments, including branches; not a source-to-load delay measurement"
+    }
+  },
+  "ignoredDrcChecks": {
+    "footprint_filters_mismatch": "ignore",
+    "missing_courtyard": "ignore",
+    "npth_inside_courtyard": "ignore",
+    "pth_inside_courtyard": "ignore",
+    "track_not_centered_on_via": "ignore",
+    "tuning_profile_track_geometries": "ignore"
+  },
+  "cadModified": false
+}

@@ -40,3 +40,11 @@ replacement for integrated-board firmware.
 The original CAD references and original Atopile sources remain preserved.
 Rebuilding the original Atopile circuit will not regenerate this native layout.
 The circuit is GPL-3.0; bundled assets retain their own notices and licenses.
+
+## Adversarial electrical review
+
+See `reference/adversarial-design-review.md` and its evidence JSON. Native
+connectivity and DRC remain clean, but input-surge coordination, raw-battery ADC
+protection and programming-output fail-safe behavior require resolution before
+vehicle electrical sign-off. The review also records BOM, SD power/thermal and
+signal-integrity qualification gates. No CAD was changed by the review.
