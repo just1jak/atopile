@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "outputSha256": "91b1d556cffcad2a837a34aba8f4eaf758e75242f2ccbf1f96b0f269584da7a0",
+  "checks": {
+    "33Pages": true,
+    "30Pairs": true,
+    "AllCurrentCircuitPagesRepresented": true,
+    "30IndexLinks": true,
+    "SourcesAttachedExactly": true,
+    "OutputHashMatches": true
+  },
+  "pagesRendered": 33
+}

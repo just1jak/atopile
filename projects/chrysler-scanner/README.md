@@ -30,3 +30,7 @@ Firmware remains deferred and MUST be integrated before active operation. GPIO13
 Current evidence is `current/reference/final-drc.json`, `final-erc.json`, `final-netlist.xml`, `p1-contract-audit.json`, `safety-bounds-audit.json` and `rev-c-adversarial-review.json`. `reference/final-status.json` binds the accepted board and ZIP hashes. Regenerate reports, PDF and fabrication files after editing; saved reports apply only to their exact hashes.
 
 Original Atopile sources and the upstream PDF are preserved; rebuilding the old Atopile project does not recreate this native revision. Circuit licensing is GPL-3.0; bundled assets retain their notices. No manufacturing order or external upload has been performed.
+
+## Original/current circuit comparison
+
+`output/pdf/ChryslerScanner_Original-to-Current_Circuit_Comparison.pdf` is a 33-page vector comparison atlas with 30 side-by-side circuit sets, a clickable index, change/addition notes and the full original-sheet appendix. Both exact source PDFs are embedded. The accompanying JSON index binds source hashes and crop/page mappings; validation confirms coverage of current pages 2–24. Rebuild with `documentation/compare_schematics.py` using bundled Python with reportlab and pypdf. This document does not modify or certify CAD.

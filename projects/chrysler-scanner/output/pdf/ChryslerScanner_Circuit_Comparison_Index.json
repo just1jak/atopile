@@ -1,0 +1,1375 @@
+{
+  "title": "Original/current circuit comparison atlas",
+  "date": "2026-10-22",
+  "originalPdf": "original-atopile\\reference\\upstream\\ChryslerScanner_V240_schematic.pdf",
+  "originalSha256": "334b04164cfa96183cf502f690024a764cc719671f20583043f37604c9ed590d",
+  "currentPdf": "current\\ChryslerScanner_V240_SD-Hierarchy.pdf",
+  "currentSha256": "b209a2dea4edfcd1fe95c8cd1ea4ff60a515b47ede9447ec920c46b4098dbf86",
+  "pcbSha256": "68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9",
+  "comparisonSets": 30,
+  "pageCount": 33,
+  "vectorSourcesPreserved": true,
+  "embeddedSourcePdfs": 2,
+  "sections": [
+    {
+      "atlasPage": 3,
+      "title": "Vehicle battery input",
+      "status": "MODIFIED",
+      "originalZone": "A1",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            173.452,
+            39.449,
+            269.44,
+            179.841
+          ],
+          "label": "Battery input protection: D1, D2, C1"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 6,
+          "box": [
+            23.58425196850394,
+            84.78425196850392,
+            309.7700787401575,
+            316.3464566929134
+          ],
+          "label": "07_vehicle-input",
+          "file": "07_vehicle-input.kicad_sch"
+        }
+      ],
+      "notes": [
+        "D1 changes from SMBJ30CA to SMBJ16CA. D2, C1 and the JP1 signal-ground link remain.",
+        "The battery ADC now senses protected +12V after D2, rather than raw J1962-16. This is an intentional safety change."
+      ]
+    },
+    {
+      "atlasPage": 4,
+      "title": "OBD connector and line protection",
+      "status": "REORGANIZED",
+      "originalZone": "A1 / B7-B8 / C-E",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            43.784,
+            39.449,
+            166.716,
+            179.841
+          ],
+          "label": "Original J1962M connector and pin assignments"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            924.5160000000001,
+            179.987,
+            1131.6480000000001,
+            321.57
+          ],
+          "label": "PCI: C25 / D11 / D12 in transmitter block"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            626.448,
+            320.52500000000003,
+            868.9440000000001,
+            514.512
+          ],
+          "label": "SCI TX6 / TX12: C36 / C37"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            868.9440000000001,
+            320.52500000000003,
+            1099.652,
+            514.512
+          ],
+          "label": "SCI TX14 / TX9: C39 / C40"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            626.448,
+            522.995,
+            1099.652,
+            639.567
+          ],
+          "label": "SCI RX7 / RX15: C42 / C44"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            949.776,
+            640.904,
+            1099.652,
+            799.1610000000001
+          ],
+          "label": "CCD: D13 / D14 in original filter/protection block"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 2,
+          "box": [
+            19.84251968503937,
+            70.86614173228347,
+            737.007874015748,
+            701.5464566929134
+          ],
+          "label": "06_obd-protection",
+          "file": "06_obd-protection.kicad_sch"
+        }
+      ],
+      "notes": [
+        "J1 is now an ATTEND 226A-1202; logical vehicle pin assignments are retained.",
+        "Capacitors and protection diodes formerly scattered across bus blocks are grouped by PCI, SCI and CCD on one page. These crops identify their original locations."
+      ]
+    },
+    {
+      "atlasPage": 5,
+      "title": "USB connector and power selection",
+      "status": "MODIFIED",
+      "originalZone": "A2-A3",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            277.86,
+            39.449,
+            471.52000000000004,
+            179.841
+          ],
+          "label": "Original USB-B, U1, JP2, D3 and C2/C3"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 5,
+          "box": [
+            340.15748031496065,
+            87.8740157480315,
+            963.7795275590552,
+            308.9763779527559
+          ],
+          "label": "USB-C connector and USB/vehicle power selection",
+          "file": "19_usb.kicad_sch"
+        }
+      ],
+      "notes": [
+        "USB-B is deliberately replaced by USB-C, with separate CC pull-down resistors R102/R103.",
+        "U1 SY6283 power switching, JP2 bypass, D3 and the input/output capacitor functions remain. See comparison 11 for UART/ESD circuitry."
+      ]
+    },
+    {
+      "atlasPage": 6,
+      "title": "6 V pre-regulator and +5 V output",
+      "status": "RETAINED",
+      "originalZone": "A4-A6",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            478.256,
+            39.449,
+            825.16,
+            179.841
+          ],
+          "label": "U2 buck pre-regulator, U3 +5 V regulator and feedback"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 10,
+          "box": [
+            14.173228346456694,
+            87.8740157480315,
+            697.3228346456693,
+            334.48818897637796
+          ],
+          "label": "U2 / U3 and the +5 V chain",
+          "file": "08_power-5v.kicad_sch"
+        },
+        {
+          "source": "current",
+          "page": 10,
+          "box": [
+            986.4566929133858,
+            102.04724409448819,
+            1133.8582677165355,
+            317.4803149606299
+          ],
+          "label": "Additional displayed U3 package unit",
+          "file": "08_power-5v.kicad_sch"
+        }
+      ],
+      "notes": [
+        "U2, L1, D4/D5, U3 and feedback/output-sense functions correspond to the original block.",
+        "The migrated regulator symbol library exposes electrical units/pins explicitly; compare named IN, OUT, FB, SNS and EN connections rather than symbol appearance."
+      ]
+    },
+    {
+      "atlasPage": 7,
+      "title": "+3.3 V logic supply",
+      "status": "RETAINED",
+      "originalZone": "A6-A7",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            831.896,
+            39.449,
+            978.4039999999999,
+            179.841
+          ],
+          "label": "U4, D6 and C9/C10"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 10,
+          "box": [
+            697.3228346456693,
+            87.8740157480315,
+            983.6220472440946,
+            337.32283464566933
+          ],
+          "label": "U4 +3.3 V regulator",
+          "file": "08_power-5v.kicad_sch"
+        },
+        {
+          "source": "current",
+          "page": 10,
+          "box": [
+            19.84251968503937,
+            337.32283464566933,
+            187.08661417322836,
+            473.38582677165357
+          ],
+          "label": "Additional displayed U4 unit",
+          "file": "08_power-5v.kicad_sch"
+        }
+      ],
+      "notes": [
+        "The original +3.3 V regulation and filtering remain. The additional displayed symbol unit belongs to the same U4 package.",
+        "The separate SD_3V3 regulator is a later addition, not a replacement for this logic supply."
+      ]
+    },
+    {
+      "atlasPage": 8,
+      "title": "VPP programming boost supply",
+      "status": "MODIFIED",
+      "originalZone": "B1-B3",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            43.784,
+            179.987,
+            269.44,
+            321.57
+          ],
+          "label": "U5 boost regulator, L2/L3, D7 and VPP filtering"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 14,
+          "box": [
+            45.18425196850394,
+            88.38425196850395,
+            604.9700787401575,
+            316.3464566929134
+          ],
+          "label": "09_power-vpp",
+          "file": "09_power-vpp.kicad_sch"
+        }
+      ],
+      "notes": [
+        "The original boost topology and programming-rail function remain.",
+        "C14 and C15 now specify at least 50 V, deliberately increased from the original 35 V labels. The bounded prototype still requires protected-input/VPP peaks at or below 28 V."
+      ]
+    },
+    {
+      "atlasPage": 9,
+      "title": "VBB bootstrap supply",
+      "status": "RETAINED",
+      "originalZone": "B3-B5",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            277.86,
+            179.987,
+            537.196,
+            321.57
+          ],
+          "label": "U6, L4/L5, D8 and feedback/filtering"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 18,
+          "box": [
+            19.84251968503937,
+            88.38425196850395,
+            561.7700787401576,
+            327.14645669291343
+          ],
+          "label": "10_power-vbb",
+          "file": "10_power-vbb.kicad_sch"
+        }
+      ],
+      "notes": [
+        "The original VBB rail and feedback/output-filtering blocks correspond directly.",
+        "The page title refers to the rail function; original reference designators and named VBB connections identify the match."
+      ]
+    },
+    {
+      "atlasPage": 10,
+      "title": "PCI +7.5 V supply",
+      "status": "RETAINED",
+      "originalZone": "B5-B7",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            542.248,
+            179.987,
+            917.7800000000001,
+            321.57
+          ],
+          "label": "U7 / U8 power chain and two feedback networks"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 22,
+          "box": [
+            19.84251968503937,
+            102.78425196850394,
+            799.3700787401575,
+            478.3464566929134
+          ],
+          "label": "11_power-7v5",
+          "file": "11_power-7v5.kicad_sch"
+        }
+      ],
+      "notes": [
+        "U7, U8, L6, D9/D10 and their feedback/output filters retain the original PCI supply function.",
+        "This rail is distinct from the new PCI_VCC clamp supplying the comparator. See comparison 29."
+      ]
+    },
+    {
+      "atlasPage": 11,
+      "title": "PCI / J1850 receiver and transmitter",
+      "status": "MODIFIED",
+      "originalZone": "A7-A8 / B7-B8",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            983.4559999999999,
+            39.449,
+            1173.7479999999998,
+            179.841
+          ],
+          "label": "Original U9 receiver"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            924.5160000000001,
+            179.987,
+            1131.6480000000001,
+            321.57
+          ],
+          "label": "Original Q1 transmitter and protection"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 7,
+          "box": [
+            23.58425196850394,
+            88.38425196850395,
+            643.1300787401575,
+            431.5464566929134
+          ],
+          "label": "02_pci",
+          "file": "02_pci.kicad_sch"
+        }
+      ],
+      "notes": [
+        "U9, Q1, R4-R7 and R18-R21 retain the PCI receive/transmit functions.",
+        "U9.5 and C11.2 now use the separately clamped PCI_VCC rail instead of direct +12V. C25 and D11/D12 are displayed on the connector/protection page."
+      ]
+    },
+    {
+      "atlasPage": 12,
+      "title": "ESP32, RF and local decoupling",
+      "status": "MODIFIED",
+      "originalZone": "C1-D3",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            43.784,
+            320.52500000000003,
+            370.48,
+            590.736
+          ],
+          "label": "Original U10 ESP32-PICO-V3-02 and RF network"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 4,
+          "box": [
+            45.18425196850394,
+            88.38425196850395,
+            1188.1700787401576,
+            575.5464566929134
+          ],
+          "label": "16_mcu",
+          "file": "16_mcu.kicad_sch"
+        }
+      ],
+      "notes": [
+        "The original ESP32 package, RF network and existing functional pin assignments remain.",
+        "Previously unused U10 pads 5, 6, 7, 21, 27 and 38 now serve SD and logging functions. ACT_LED is assigned exclusively to the supervised health heartbeat; legacy activity firmware is incompatible."
+      ]
+    },
+    {
+      "atlasPage": 13,
+      "title": "USB / UART bridge and USB ESD",
+      "status": "MODIFIED",
+      "originalZone": "C3-D4",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            377.216,
+            320.52500000000003,
+            619.712,
+            590.736
+          ],
+          "label": "Original CP2102, USBLC6 and VBUS divider"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 5,
+          "box": [
+            127.55905511811024,
+            141.73228346456693,
+            374.1732283464567,
+            544.2519685039371
+          ],
+          "label": "CP2102 serial/control unit",
+          "file": "19_usb.kicad_sch"
+        },
+        {
+          "source": "current",
+          "page": 5,
+          "box": [
+            382.6771653543307,
+            325.98425196850394,
+            912.7559055118111,
+            592.4409448818898
+          ],
+          "label": "USBLC6 ESD and USB-C CC resistors",
+          "file": "19_usb.kicad_sch"
+        },
+        {
+          "source": "current",
+          "page": 5,
+          "box": [
+            924.0944881889765,
+            317.4803149606299,
+            1156.5354330708662,
+            702.992125984252
+          ],
+          "label": "CP2102 supply/ground units",
+          "file": "19_usb.kicad_sch"
+        },
+        {
+          "source": "current",
+          "page": 5,
+          "box": [
+            22.67716535433071,
+            90.70866141732284,
+            107.71653543307087,
+            306.1417322834646
+          ],
+          "label": "VBUS sense divider (continuation at main unit)",
+          "file": "19_usb.kicad_sch"
+        }
+      ],
+      "notes": [
+        "The classic CP2102 is retained; this is not a CP2102N conversion. U11 retains the USBLC6 protection function.",
+        "The current symbol drawing is split into several units belonging to U12. USB-C contact mapping and CC termination are intentional additions."
+      ]
+    },
+    {
+      "atlasPage": 14,
+      "title": "Reset, boot and automatic programming",
+      "status": "REORGANIZED",
+      "originalZone": "E1-E3",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            43.784,
+            590.882,
+            244.17999999999998,
+            738.42
+          ],
+          "label": "SW1 / SW2, R48 and C45/C46"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            250.916,
+            590.882,
+            350.272,
+            738.42
+          ],
+          "label": "Q5 automatic programming"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 5,
+          "box": [
+            595.2755905511812,
+            320.3149606299213,
+            924.0944881889765,
+            413.85826771653547
+          ],
+          "label": "Reset and boot buttons",
+          "file": "19_usb.kicad_sch"
+        },
+        {
+          "source": "current",
+          "page": 5,
+          "box": [
+            969.4488188976378,
+            87.8740157480315,
+            1153.7007874015749,
+            311.8110236220473
+          ],
+          "label": "Q5 automatic programming pair",
+          "file": "19_usb.kicad_sch"
+        },
+        {
+          "source": "current",
+          "page": 4,
+          "box": [
+            28.34645669291339,
+            70.86614173228347,
+            1187.716535433071,
+            581.1023622047244
+          ],
+          "label": "R48 and reset/boot capacitors",
+          "file": "16_mcu.kicad_sch"
+        }
+      ],
+      "notes": [
+        "Buttons and automatic programming are grouped with USB; the reset resistor/capacitors remain on the MCU sheet.",
+        "Q5 multi-unit drawing and named EN / IO0 / RTS / DTR nets correspond to the original automatic programming topology."
+      ]
+    },
+    {
+      "atlasPage": 15,
+      "title": "SCI TX14 and TX9 paths",
+      "status": "REORGANIZED",
+      "originalZone": "C6-D8",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            868.9440000000001,
+            320.52500000000003,
+            1099.652,
+            514.512
+          ],
+          "label": "Original Q3 / U14 SCI TX14 and TX9 paths"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 11,
+          "box": [
+            19.84251968503937,
+            88.38425196850395,
+            619.3700787401575,
+            409.9464566929134
+          ],
+          "label": "03_sci-14-9",
+          "file": "03_sci-14-9.kicad_sch"
+        }
+      ],
+      "notes": [
+        "Q3, U14, R36-R41 and C41 correspond to the original two transmit paths.",
+        "C39 and C40 are now grouped on the connector/protection page. Vehicle pins 14 and 9, enable names and shared TX2 function remain identifiable."
+      ]
+    },
+    {
+      "atlasPage": 16,
+      "title": "SCI TX6 / TX12 and selectable bias",
+      "status": "REORGANIZED",
+      "originalZone": "C4-D6 / E5-E6",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            626.448,
+            320.52500000000003,
+            868.9440000000001,
+            514.512
+          ],
+          "label": "Original Q2 / U13 transmit paths"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            626.448,
+            640.904,
+            799.9,
+            799.1610000000001
+          ],
+          "label": "Original Q6 selectable SCI bias"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 15,
+          "box": [
+            19.84251968503937,
+            88.38425196850395,
+            950.5700787401576,
+            503.54645669291335
+          ],
+          "label": "04_sci-6-12",
+          "file": "04_sci-6-12.kicad_sch"
+        }
+      ],
+      "notes": [
+        "Q2/U13 transmit switching and Q6/R75/R76 selectable bias are grouped on one page.",
+        "C36/C37 are on connector protection. RX7_BIAS_EN, TX6_EN, TX12_EN and the corresponding vehicle pins retain their original roles."
+      ]
+    },
+    {
+      "atlasPage": 17,
+      "title": "SCI RX7 and RX15 paths",
+      "status": "REORGANIZED",
+      "originalZone": "D4-E8",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            626.448,
+            522.995,
+            1099.652,
+            639.567
+          ],
+          "label": "Original Q4 / U15 receive paths"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 19,
+          "box": [
+            19.84251968503937,
+            88.38425196850395,
+            633.7700787401575,
+            409.9464566929134
+          ],
+          "label": "05_sci-rx",
+          "file": "05_sci-rx.kicad_sch"
+        }
+      ],
+      "notes": [
+        "The Q4/U15 sections, R42-R47, C43 and RX2 receive function correspond to the original.",
+        "C42 and C44 have moved to the grouped connector/protection drawing; they are not missing from the receive networks."
+      ]
+    },
+    {
+      "atlasPage": 18,
+      "title": "Battery, VBB and VPP monitoring dividers",
+      "status": "MODIFIED",
+      "originalZone": "E3-E5",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            355.324,
+            590.882,
+            619.712,
+            738.42
+          ],
+          "label": "Original three divider / clamp / filter circuits"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 12,
+          "box": [
+            23.58425196850394,
+            88.38425196850395,
+            532.9700787401575,
+            330.74645669291345
+          ],
+          "label": "17_adc",
+          "file": "17_adc.kicad_sch"
+        }
+      ],
+      "notes": [
+        "R49/R51/R53 are now 22k 1%; R50/R52/R54 are 1.62k 1%. R49 input moves to protected +12V.",
+        "The divider outputs are now V_BA_PRE, V_BT_PRE and V_PR_PRE. U21 isolation on the safety page creates the final ADC nets; calibration must reflect these intentional changes."
+      ]
+    },
+    {
+      "atlasPage": 19,
+      "title": "CCD termination, bias and input filtering",
+      "status": "REORGANIZED",
+      "originalZone": "E6-E8",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            803.2679999999999,
+            640.904,
+            944.724,
+            799.1610000000001
+          ],
+          "label": "Original Q7 termination / bias"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            949.776,
+            640.904,
+            1099.652,
+            799.1610000000001
+          ],
+          "label": "Original R81/R82, C50/C51 and D13/D14"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 3,
+          "box": [
+            28.34645669291339,
+            85.03937007874016,
+            714.3307086614174,
+            342.99212598425197
+          ],
+          "label": "CCD input filtering and Q7 bias",
+          "file": "01_ccd.kicad_sch"
+        }
+      ],
+      "notes": [
+        "Q7, R77-R82 and C50/C51 retain the original termination, bias and filter functions.",
+        "D13/D14 are grouped on the input-protection page. The vehicle input nets and internal CCD+ / CCD- nets remain distinct as drawn."
+      ]
+    },
+    {
+      "atlasPage": 20,
+      "title": "CCD receiver",
+      "status": "RETAINED",
+      "originalZone": "F5-F6",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            626.448,
+            799.307,
+            799.9,
+            940.89
+          ],
+          "label": "Original U16 receiver"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 3,
+          "box": [
+            725.6692913385828,
+            82.20472440944883,
+            972.2834645669292,
+            328.8188976377953
+          ],
+          "label": "U16 / R83-R85 / C52-C53",
+          "file": "01_ccd.kicad_sch"
+        }
+      ],
+      "notes": [
+        "U16 TS391C, R83-R85 and C52/C53 correspond to the original CCD-to-RX1 receiver.",
+        "The receive logic net is RX1; identify the comparator by reference and net labels, independently of the new sheet position."
+      ]
+    },
+    {
+      "atlasPage": 21,
+      "title": "CCD transmitter",
+      "status": "RETAINED",
+      "originalZone": "G5-H6",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            626.448,
+            935.081,
+            799.9,
+            1145.742
+          ],
+          "label": "Original U17/U18 and Q16 drive pair"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 3,
+          "box": [
+            25.511811023622048,
+            340.15748031496065,
+            640.6299212598426,
+            697.3228346456693
+          ],
+          "label": "U17 / U18, Q16 and R97-R101 drive paths",
+          "file": "01_ccd.kicad_sch"
+        }
+      ],
+      "notes": [
+        "U17/U18, both Q16 sections, R97-R101 and C54/C55 correspond to the original TX1 drive circuitry.",
+        "Extra displayed gate units belong to the same existing IC packages and do not add a new transmitter capability."
+      ]
+    },
+    {
+      "atlasPage": 22,
+      "title": "SCI pin 6: VBB / VPP programming switches",
+      "status": "MODIFIED",
+      "originalZone": "F1-G5",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            43.784,
+            743.184,
+            166.71599999999998,
+            893.25
+          ],
+          "label": "Original VBB driver for vehicle pin 6"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            43.784,
+            890.868,
+            166.71599999999998,
+            1052.844
+          ],
+          "label": "Original VPP driver for vehicle pin 6"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 16,
+          "box": [
+            59.58425196850395,
+            88.38425196850395,
+            554.5700787401574,
+            391.94645669291344
+          ],
+          "label": "12_program-6",
+          "file": "12_program-6.kicad_sch"
+        }
+      ],
+      "notes": [
+        "The two rail-switching branches are paired by vehicle pin on a dedicated page.",
+        "Q8-Q11 and Q12-Q15 use revised FET families. The VPP gate-divider values are intentionally revised to 4.7k / 8.2k; compare current labels rather than assuming identical parts."
+      ]
+    },
+    {
+      "atlasPage": 23,
+      "title": "SCI pin 9: VBB / VPP programming switches",
+      "status": "MODIFIED",
+      "originalZone": "F1-G5",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            164.18999999999997,
+            743.184,
+            287.12199999999996,
+            893.25
+          ],
+          "label": "Original VBB driver for vehicle pin 9"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            164.18999999999997,
+            890.868,
+            287.12199999999996,
+            1052.844
+          ],
+          "label": "Original VPP driver for vehicle pin 9"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 17,
+          "box": [
+            59.58425196850395,
+            88.38425196850395,
+            554.5700787401574,
+            391.94645669291344
+          ],
+          "label": "13_program-9",
+          "file": "13_program-9.kicad_sch"
+        }
+      ],
+      "notes": [
+        "The two rail-switching branches are paired by vehicle pin on a dedicated page.",
+        "Q8-Q11 and Q12-Q15 use revised FET families. The VPP gate-divider values are intentionally revised to 4.7k / 8.2k; compare current labels rather than assuming identical parts."
+      ]
+    },
+    {
+      "atlasPage": 24,
+      "title": "SCI pin 12: VBB / VPP programming switches",
+      "status": "MODIFIED",
+      "originalZone": "F1-G5",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            284.59599999999995,
+            743.184,
+            407.52799999999996,
+            893.25
+          ],
+          "label": "Original VBB driver for vehicle pin 12"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            284.59599999999995,
+            890.868,
+            407.52799999999996,
+            1052.844
+          ],
+          "label": "Original VPP driver for vehicle pin 12"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 20,
+          "box": [
+            59.58425196850395,
+            88.38425196850395,
+            561.7700787401576,
+            391.94645669291344
+          ],
+          "label": "14_program-12",
+          "file": "14_program-12.kicad_sch"
+        }
+      ],
+      "notes": [
+        "The two rail-switching branches are paired by vehicle pin on a dedicated page.",
+        "Q8-Q11 and Q12-Q15 use revised FET families. The VPP gate-divider values are intentionally revised to 4.7k / 8.2k; compare current labels rather than assuming identical parts."
+      ]
+    },
+    {
+      "atlasPage": 25,
+      "title": "SCI pin 14: VBB / VPP programming switches",
+      "status": "MODIFIED",
+      "originalZone": "F1-G5",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            405.00199999999995,
+            743.184,
+            527.9339999999999,
+            893.25
+          ],
+          "label": "Original VBB driver for vehicle pin 14"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            405.00199999999995,
+            890.868,
+            527.9339999999999,
+            1052.844
+          ],
+          "label": "Original VPP driver for vehicle pin 14"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 21,
+          "box": [
+            66.78425196850395,
+            88.38425196850395,
+            568.9700787401575,
+            391.94645669291344
+          ],
+          "label": "15_program-14",
+          "file": "15_program-14.kicad_sch"
+        }
+      ],
+      "notes": [
+        "The two rail-switching branches are paired by vehicle pin on a dedicated page.",
+        "Q8-Q11 and Q12-Q15 use revised FET families. The VPP gate-divider values are intentionally revised to 4.7k / 8.2k; compare current labels rather than assuming identical parts."
+      ]
+    },
+    {
+      "atlasPage": 26,
+      "title": "I2C expander and internal connector",
+      "status": "MODIFIED",
+      "originalZone": "F5-G7",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            803.2679999999999,
+            799.307,
+            1067.656,
+            1021.8779999999999
+          ],
+          "label": "Original U19 AW9523B and pull-ups"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            537.196,
+            736.184,
+            619.712,
+            878.958
+          ],
+          "label": "Original internal I2C connector J3"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 8,
+          "box": [
+            23.58425196850394,
+            88.38425196850395,
+            943.3700787401576,
+            481.94645669291344
+          ],
+          "label": "18_control",
+          "file": "18_control.kicad_sch"
+        }
+      ],
+      "notes": [
+        "U19 AW9523B, its 16 output functions, grounded address straps, I2C pull-ups and J3 are retained.",
+        "The reset/permit net N_R88_2 is now driven by the new supervised hardware permit. The original independent reset pull-up is not sufficient by itself to describe the new safety behavior."
+      ]
+    },
+    {
+      "atlasPage": 27,
+      "title": "Status LED drivers",
+      "status": "MODIFIED",
+      "originalZone": "F7-G8",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            1072.708,
+            799.307,
+            1291.628,
+            1021.8779999999999
+          ],
+          "label": "Original four LED / transistor channels"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 13,
+          "box": [
+            19.84251968503937,
+            88.38425196850395,
+            828.1700787401576,
+            291.1464566929134
+          ],
+          "label": "20_leds",
+          "file": "20_leds.kicad_sch"
+        }
+      ],
+      "notes": [
+        "D23-D26 and Q17-Q20 retain the four LED driver channels.",
+        "The ACT_LED channel is now a dedicated health/permit indication. It must not be driven by the old general-purpose activity-blink code."
+      ]
+    },
+    {
+      "atlasPage": 28,
+      "title": "Integrated microSD logger",
+      "status": "NEW",
+      "originalZone": "No original block",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            43.784,
+            320.52500000000003,
+            370.48,
+            590.736
+          ],
+          "label": "Context only: original MCU unused pins; no SD circuit"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 9,
+          "box": [
+            59.58425196850395,
+            124.38425196850395,
+            1130.5700787401574,
+            730.3464566929134
+          ],
+          "label": "22_sd-logger",
+          "file": "22_sd-logger.kicad_sch"
+        }
+      ],
+      "notes": [
+        "There is no corresponding microSD block in the original drawing. U20, J4, C58-C61, R104-R114 and SW3 are later additions.",
+        "SD_3V3 regulation, SPI resistors/pull-ups, card detect and logging control use previously unused MCU pins. C61 is now top-side; that physical move does not change the schematic circuit."
+      ]
+    },
+    {
+      "atlasPage": 29,
+      "title": "Added ADC power-off isolation",
+      "status": "NEW / MODIFIED",
+      "originalZone": "Original ADC: E3-E5",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            355.324,
+            590.882,
+            619.712,
+            738.42
+          ],
+          "label": "Original direct-to-MCU monitor dividers"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 23,
+          "box": [
+            19.84251968503937,
+            124.38425196850395,
+            1159.3700787401576,
+            755.5464566929135
+          ],
+          "label": "Complete safety page; focus: U21 and R120-R122",
+          "file": "23_hardware-safety.kicad_sch"
+        }
+      ],
+      "notes": [
+        "U21 and R120-R122 are new. The original ADC paths now terminate on *_PRE nets before this isolation stage.",
+        "The additions address powered-off MCU injection; they deliberately depart from the original direct ADC connection. See comparison 16 for the changed divider inputs/ratios."
+      ]
+    },
+    {
+      "atlasPage": 30,
+      "title": "Added supervisor, watchdog and hardware permit",
+      "status": "NEW / MODIFIED",
+      "originalZone": "Original expander reset: F6-G7",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            803.2679999999999,
+            799.307,
+            1067.656,
+            1021.8779999999999
+          ],
+          "label": "Original independent expander reset / control"
+        },
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            1072.708,
+            799.307,
+            1291.628,
+            1021.8779999999999
+          ],
+          "label": "Original ACT_LED driver context"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 23,
+          "box": [
+            19.84251968503937,
+            124.38425196850395,
+            1159.3700787401576,
+            755.5464566929135
+          ],
+          "label": "Complete safety page; focus: U22-U24 / R115-R119",
+          "file": "23_hardware-safety.kicad_sch"
+        }
+      ],
+      "notes": [
+        "U22-U24, R115-R119 and associated bypassing implement a new supervised permit, not an original circuit copied to another page.",
+        "Dedicated ACT_LED health pulses and LOGIC_PG / HEARTBEAT_VALID govern N_R88_2. Firmware integration and measured timing remain required; the comparison is not a bench qualification."
+      ]
+    },
+    {
+      "atlasPage": 31,
+      "title": "Added PCI comparator supply clamp",
+      "status": "NEW / MODIFIED",
+      "originalZone": "Original PCI receiver: A7-A8",
+      "original": [
+        {
+          "source": "original",
+          "page": 1,
+          "box": [
+            983.4559999999999,
+            39.449,
+            1173.7479999999998,
+            179.841
+          ],
+          "label": "Original U9/C11 supply taken from +12V"
+        }
+      ],
+      "current": [
+        {
+          "source": "current",
+          "page": 23,
+          "box": [
+            680.3149606299213,
+            510.23622047244095,
+            1097.007874015748,
+            651.9685039370079
+          ],
+          "label": "New R123 / D30 PCI_VCC clamp",
+          "file": "23_hardware-safety.kicad_sch"
+        },
+        {
+          "source": "current",
+          "page": 7,
+          "box": [
+            23.58425196850394,
+            88.38425196850395,
+            643.1300787401575,
+            431.5464566929134
+          ],
+          "label": "PCI page; focus: U9 / C11 PCI_VCC connections",
+          "file": "02_pci.kicad_sch"
+        }
+      ],
+      "notes": [
+        "R123 and D30 are new. U9.5 and C11.2 now use PCI_VCC rather than direct +12V.",
+        "The original receiver function remains, while its supply protection is deliberately changed."
+      ]
+    },
+    {
+      "atlasPage": 32,
+      "title": "Hook test points and SPI probe pads",
+      "status": "NEW",
+      "originalZone": "No original block",
+      "original": [],
+      "current": [
+        {
+          "source": "current",
+          "page": 24,
+          "box": [
+            37.98425196850394,
+            70.86614173228347,
+            986.5700787401576,
+            733.9464566929134
+          ],
+          "label": "24_debug-testpoints",
+          "file": "24_debug-testpoints.kicad_sch"
+        }
+      ],
+      "notes": [
+        "The original PDF has no TP1-TP52 debug-access block. The current design adds 48 Keystone 5015 hook loops and four bare SPI pads, with four local ground clips.",
+        "Page 24 and rev-c-testpoint-map.md identify every net. Existing circuit geometry is retained; new pads require 230 total filled/capped/planarized via sites in the current fabrication package."
+      ]
+    }
+  ],
+  "outputSha256": "91b1d556cffcad2a837a34aba8f4eaf758e75242f2ccbf1f96b0f269584da7a0"
+}

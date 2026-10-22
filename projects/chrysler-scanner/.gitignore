@@ -46,3 +46,6 @@ secrets.hpp
 
 /work/testpoints/
 /outputs/chrysler-integrated-sd-rev-c-testpoints*/
+
+# Local PDF comparison render checks.
+/tmp/pdfs/circuit-comparison/
