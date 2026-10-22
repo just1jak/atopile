@@ -60,6 +60,12 @@ for ref, value, left, right, footprint in [
     NEW[ref] = (value, 'Resistor_SMD:'+footprint, {'1':left, '2':right})
 for ref in ('C62','C63','C64','C65'):
     NEW[ref] = ('100nF 16V X7R','Capacitor_SMD:C_0603_1608Metric', {'1':'+3.3V','2':'GND'})
+# User-authorized debug access: electrical endpoints fixed independently of CAD.
+TP_UID=lambda name:str(uuid.uuid5(uuid.NAMESPACE_URL,'chrysler/testpoints/'+name))
+TP_NETS='J1962-16 +12V VBUS +5V +3.3V SD_3V3 +7.5V VBB VPP PCI_VCC J1962-2 J1962-3 J1962-11 J1962-6 J1962-12 J1962-14 J1962-9 J1962-7 J1962-15 TX0 RX0 EN IO0 SCL SDA PCI_RX PCI_TX RX1 TX1 RX2 TX2 ACT_LED HEARTBEAT_VALID LOGIC_PG N_R88_2 V_BA_PRE V_BA V_BT_PRE V_BT V_PR_PRE V_PR SD_DETECT CCD+ CCD- SD_CS SD_SCK SD_MOSI SD_MISO GND GND GND GND'.split()
+TP_REFS={'TP'+str(i) for i in range(1,53)}
+for i,net in enumerate(TP_NETS,1):
+    NEW['TP'+str(i)]=(net,'footprints:'+('TestPoint_Pad_D1.0mm' if 45<=i<=48 else 'TestPoint_Keystone_5015_Micro_Mini'),{'1':net})
 RATINGS = {ref: rating for rating, refs in [
     ('50V', 'C1 C4 C13 C16 C20 C14 C15'), ('100V','C5 C17 C21'),
     ('25V','C6 C7 C8 C9 C10 C18 C19 C22 C23 C24'), ('10V','C26 C27 C35 C56')]
@@ -168,6 +174,7 @@ target = D/(N+'.kicad_pcb');initial_hash=sha(target)
 base = p.LoadBoard(str(F/(N+'.kicad_pcb')))
 candidate = p.LoadBoard(str(target))
 subprocess.run([sys.executable,str(D/'source/verify_c61_top.py')],check=True)
+subprocess.run([sys.executable,str(D/'source/verify_testpoints.py')],check=True)
 oldcu = {audit.uid(t):t for t in base.GetTracks()}
 newcu = {audit.uid(t):t for t in candidate.GetTracks()}
 adc_cut = {key for key,t in oldcu.items() if t.GetNetname() in ('V_BA','V_BT','V_PR')}
@@ -186,6 +193,11 @@ check('builderRemovalListExactlyMatchesFrozenContract',
       {t['uuid'] for t in manifest['removedTracks']}==adc_cut and
       set(manifest['removedSupplyBranchIds'])==SUPPLY_CUT)
 
+TP_FILL_MANIFEST=D/'reference/rev-c-testpoint-processing-upgrades.json'
+check('testpointProcessingUpgradeManifestFrozen',sha(TP_FILL_MANIFEST)=='0d04ef671bc2f879f0546d53292870b63a8223326edd5052e29732762198e5bc')
+TP_FILL_IDS={v['uuid'] for v in json.loads(TP_FILL_MANIFEST.read_text())['sites']}
+check('only22DeclaredExistingViasUpgradedForNewPads',len(TP_FILL_IDS)==22 and all(k in oldcu and k in newcu and newcu[k].GetClass()=='PCB_VIA' and newcu[k].GetPrimaryDrillFilledFlag() and newcu[k].GetPrimaryDrillCappedFlag() for k in TP_FILL_IDS))
+
 def copper(t):
     result=dict(kind=t.GetClass(),net=t.GetNetname(),start=audit.xy(t.GetStart()),end=audit.xy(t.GetEnd()),
                 width=t.GetWidth(p.F_Cu) if t.GetClass()=='PCB_VIA' else t.GetWidth(),layer=t.GetLayer(),locked=t.IsLocked())
@@ -194,13 +206,14 @@ def copper(t):
                       filled=t.GetPrimaryDrillFilledFlag(),capped=t.GetPrimaryDrillCappedFlag(),
                       frontTenting=int(t.GetFrontTentingMode()),backTenting=int(t.GetBackTentingMode()))
     if t.GetClass()=='PCB_ARC':result['mid']=audit.xy(t.GetArcMid())
+    if audit.uid(t) in TP_FILL_IDS:result.update(filled=True,capped=True)
     return result
 C61_CUT={'b2e77e8c-5db9-4c4b-b5df-6fa86e1b60ba','ba39bf73-e299-4de0-a91a-89bb4415e8a3'}
 check('c61CutsOnlyUnlockedSdSupplyBranch',all(oldcu[k].GetNetname()=='SD_3V3' and not oldcu[k].IsLocked() for k in C61_CUT))
 missing=set(oldcu)-set(newcu)
 check('only55SafetyAndTwoC61ExplicitCopperRemovals',missing==allowed_cut|C61_CUT,sorted(missing^(allowed_cut|C61_CUT)))
 changed_copper=[key for key in oldcu.keys()&newcu.keys() if copper(oldcu[key])!=copper(newcu[key])]
-check('allRetainedOldCopperExact',not changed_copper,changed_copper)
+check('allRetainedOldCopperGeometryExactWith22DeclaredProcessingUpgrades',not changed_copper,changed_copper)
 protected={key for key,t in oldcu.items() if t.IsLocked()}-PROTECTED_ADC_EXCEPTIONS
 check('all380CurrentlyLockedRetainedObjectsExact',len(protected)==380 and all(key in newcu and copper(oldcu[key])==copper(newcu[key]) for key in protected))
 historical=p.LoadBoard(str(F/'historical-routing-seed.kicad_pcb'))
@@ -208,8 +221,8 @@ historical_protected={audit.uid(t) for t in historical.GetTracks() if t.IsLocked
 check('all173HistoricalProtectedObjectsRetainedExactly',len(historical_protected)==173 and
       all(key in newcu and copper(oldcu[key])==copper(newcu[key]) for key in historical_protected))
 added=set(newcu)-set(oldcu)
-check('newCopperOnlyOnExplicitSafetyNets',all(newcu[key].GetNetname() in (ALLOWED_NEW_NETS|{'SD_3V3'}) for key in added),
-      sorted({newcu[key].GetNetname() for key in added}-(ALLOWED_NEW_NETS|{'SD_3V3'})))
+check('newCopperOnlyOnExplicitSafetyNets',all(newcu[key].GetNetname() in (ALLOWED_NEW_NETS|set(TP_NETS)) for key in added),
+      sorted({newcu[key].GetNetname() for key in added}-(ALLOWED_NEW_NETS|set(TP_NETS))))
 check('noSignalsOnInnerGroundReference',all(t.GetNetname()=='GND' or t.GetLayer()!=p.In1_Cu for t in candidate.GetTracks() if t.GetClass()!='PCB_VIA'))
 check('minimumTrackWidth150um',all(t.GetWidth()>=150000 for t in candidate.GetTracks() if t.GetClass()!='PCB_VIA'))
 check('onlyFourValidCopperLayers',all(t.GetLayer() in (p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu) for t in candidate.GetTracks() if t.GetClass()!='PCB_VIA'))
@@ -230,12 +243,12 @@ expected_pins=dict(oldpins)
 for key,(before,after) in CHANGES.items():assert expected_pins[key]==before, ('Frozen old-pin contract mismatch',key);expected_pins[key]=after
 for ref,data in NEW.items():expected_pins.update({(ref,pin):net for pin,net in data[2].items()})
 pin_differences=[dict(reference=ref,pin=pin,expected=expected_pins.get((ref,pin)),actual=newpins.get((ref,pin))) for ref,pin in expected_pins.keys()|newpins.keys() if (ref,pin) not in expected_pins or (ref,pin) not in newpins or expected_pins.get((ref,pin))!=newpins.get((ref,pin))]
-check('exact277ComponentsAndTwentyThreeExistingValueChanges',len(newvalues)==277 and newvalues==expected_values,
+check('exact329ComponentsIncluding52TestPointsAnd23ExistingValueChanges',len(newvalues)==329 and newvalues==expected_values,
       sorted(ref for ref in expected_values.keys()|newvalues.keys() if expected_values.get(ref)!=newvalues.get(ref)))
 check('exact40NoConnectAnd162ConnectedNets',sum(net is None for net in newpins.values())==40 and len({net for net in newpins.values() if net is not None})==162)
 check('exact15ExistingPinChangesAnd18NewPinContracts',not pin_differences,pin_differences)
 check('originalComponentPathsAndSymbolUuidsPreserved',all(newpaths.get(ref)==path for ref,path in oldpaths.items()))
-check('newComponentSymbolsMatchSafetyHierarchy',all(newpaths.get(ref)==('/'+uid('safety-sheet')+'/',uid(ref)) for ref in NEW))
+check('newComponentSymbolsMatchSafetyHierarchy',all(newpaths.get(ref)==(('/'+TP_UID('sheet')+'/',TP_UID(ref+'/symbol')) if ref in TP_REFS else ('/'+uid('safety-sheet')+'/',uid(ref))) for ref in NEW))
 check('all24RecoveredVoltageRatingsWithTwoExplicitUpgrades',all(fields.get(ref,{}).get('Voltage Rating')==rating for ref,rating in RATINGS.items()),
       {ref:fields.get(ref,{}).get('Voltage Rating') for ref,rating in RATINGS.items() if fields.get(ref,{}).get('Voltage Rating')!=rating})
 sd_pins={'5':'SD_MISO','6':'LOG_BUTTON','7':'SD_DETECT','21':'MCU_SD_CS','27':'MCU_SD_MOSI','38':'MCU_SD_SCK','20':'ACT_LED','24':'TX2','23':'IO0'}
@@ -248,13 +261,15 @@ def sheets(root):return {property_value(node,'Sheetfile'):node for node in root.
 before_root=s.parse((F/(N+'-root-before.kicad_sch')).read_text())
 after_root=s.parse((D/(N+'.kicad_sch')).read_text())
 before_sheets=sheets(before_root);after_sheets=sheets(after_root)
-expected_files=set(before_sheets)|{'23_hardware-safety.kicad_sch'}
-check('exact22CircuitSheetsAnd23NativeSchematicFiles',len(after_sheets)==22 and set(after_sheets)==expected_files and len(list(D.glob('*.kicad_sch')))==23)
+expected_files=set(before_sheets)|{'23_hardware-safety.kicad_sch','24_debug-testpoints.kicad_sch'}
+check('exact23ChildSheetsAnd24NativeSchematicFiles',len(after_sheets)==23 and set(after_sheets)==expected_files and len(list(D.glob('*.kicad_sch')))==24)
 check('rootSchematicUuidPreserved',s.atom(s.one(before_root,'uuid'))==s.atom(s.one(after_root,'uuid'))==ROOT_UUID)
 interface_renames={'02_pci.kicad_sch':{'+12V':'PCI_VCC'},
                    '17_adc.kicad_sch':{'V_BA':'V_BA_PRE','V_BT':'V_BT_PRE','V_PR':'V_PR_PRE','J1962-16':'+12V'}}
 expected_interfaces={name:sorted(interface_renames.get(name,{}).get(pin.items[1].value,pin.items[1].value) for pin in sh.children('pin')) for name,sh in before_sheets.items()}
 expected_interfaces['23_hardware-safety.kicad_sch']=sorted(['+3.3V','+12V','PCI_VCC','V_BA_PRE','V_BT_PRE','V_PR_PRE','V_BA','V_BT','V_PR','ACT_LED','EN','N_R88_2'])
+expected_interfaces['24_debug-testpoints.kicad_sch']=[]
+
 def semantic(n):return [semantic(v) if isinstance(v,s.Scope) else v.value for v in n.items]
 def page(sh):return s.atom(s.one(s.one(s.one(s.one(sh,'instances'),'project'),'path'),'page'))
 interfaces_ok=True;old_frames_ok=True;port_count=0
@@ -273,10 +288,10 @@ for filename in expected_files:
             ident=s.atom(s.one(oldpin,'uuid'))
             newpin=next((pin for pin in sh.children('pin') if s.atom(s.one(pin,'uuid'))==ident),None)
             old_frames_ok &= newpin is not None and newpin.items[1].value==interface_renames.get(filename,{}).get(oldpin.items[1].value,oldpin.items[1].value)
-    else:old_frames_ok &= s.atom(s.one(sh,'uuid'))==uid('safety-sheet') and page(sh)=='23'
+    else:old_frames_ok &= (s.atom(s.one(sh,'uuid'))==TP_UID('sheet') and page(sh)=='24') if filename=='24_debug-testpoints.kicad_sch' else (s.atom(s.one(sh,'uuid'))==uid('safety-sheet') and page(sh)=='23')
 check('exact168NativePortsAndMatchingChildLabels',interfaces_ok and port_count==168)
 check('allOriginalSheetFramesPagesAndPortUuidsPreserved',old_frames_ok)
-check('all23PagesNumberedExactlyOnce',sorted(int(page(sh)) for sh in after_sheets.values())==list(range(2,24)) and s.atom(s.one(s.one(after_root,'sheet_instances'),'path'))=='/')
+check('all24PagesNumberedExactlyOnce',sorted(int(page(sh)) for sh in after_sheets.values())==list(range(2,25)) and s.atom(s.one(s.one(after_root,'sheet_instances'),'path'))=='/')
 
 def fpid(f):
     lib=f.GetFPID()
@@ -310,7 +325,7 @@ for key,old in oldfp.items():
     if actual!=expected:fp_differences.append(ref)
 check('all263FootprintsExactWithOnlyDeclaredC61TopTransform',not fp_differences,fp_differences)
 fps={f.GetReference():f for f in candidate.GetFootprints()}
-check('exactly18AddedFootprints',len(newfp)==281 and set(fps)=={f.GetReference() for f in base.GetFootprints()}|set(NEW))
+check('exactly18SafetyAnd52TestpointFootprintsAdded',len(newfp)==333 and set(fps)=={f.GetReference() for f in base.GetFootprints()}|set(NEW))
 # Same-net pads can conceal a physical package collision from electrical DRC.
 # Conservatively test bodies/courtyards (native non-text bounding boxes) only
 # where this revision adds or actually moves a footprint. Original unchanged

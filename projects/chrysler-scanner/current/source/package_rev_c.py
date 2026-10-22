@@ -50,7 +50,7 @@ def main():
     assert bounds['status']=='PASS' and all(bounds['checks'].values())
     assert bounds['contractSha256']==sha(d/'reference/rev-c-safety-contract.md')
     assert all(sha(f)==digest for f,digest in before.items())
-    ordinary_ignore=shutil.ignore_patterns('*.lck','*.kicad_prl','*-backups','__pycache__','_autosave*','.git','SHA256SUMS.txt','*.sha256')
+    ordinary_ignore=shutil.ignore_patterns('*.lck','*.kicad_prl','*-backups','__pycache__','_autosave*','.git','SHA256SUMS.txt','*.sha256','drc-1.json')
     def ignore(folder,names):
         excluded=set(ordinary_ignore(folder,names))
         if Path(folder).resolve()==d:
@@ -93,7 +93,7 @@ def main():
         maker,mpn=exact.get(r,(fields.get('Manufacturer',''),fields.get('MPN',fields.get('Manufacturer Part Number',''))))
         volts=fields.get('Voltage Rating','') or ('16V' if r in ('C62','C63','C64','C65') else '')
         tolerance=fields.get('Tolerance','') or (re.search(r'\b\d+(?:\.\d+)?%',v).group(0) if re.search(r'\b\d+(?:\.\d+)?%',v) else '')
-        status='SPECIFIED — verify procurement/footprint' if mpn else 'UNSELECTED — exact part required before assembly'
+        status=('PCB FEATURE — no component to purchase or place' if mpn=='COPPER_PAD_NO_COMPONENT' else 'SPECIFIED — verify procurement/footprint') if mpn else 'UNSELECTED — exact part required before assembly'
         if not mpn:unselected.append(r)
         rows.append([r,v,c.findtext('footprint') or '',maker,mpn,volts,tolerance,status])
     with (out/'BOM.csv').open('w',newline='',encoding='utf-8-sig') as f:
@@ -107,7 +107,11 @@ def main():
     (ref/'rev-c-filled-capped-via-sites.json').write_text(json.dumps(via,indent=2)+'\n')
     (fab/'MANUFACTURING-NOTES.md').write_text('# Rev C prototype fabrication\n\nFour layers, 110 × 55 mm, nominal 1.6 mm. Confirm actual RF/USB stackup and impedance with fabricator. Use separate PTH/NPTH drill files. Assembly positions are millimetres, both sides, absolute board coordinates. Filled/copper-capped/planarized vias listed in filled-capped-via-sites.json are mandatory; saved drill flags do not themselves specify a fabricator process. Confirm underside microSD/enclosure clearance. This is a local export, not a fabrication order or qualified automotive design.\n')
     with (fab/'MANUFACTURING-NOTES.md').open('a') as notes:
-        notes.write('\nC61 is TOP-side at (193,127) mm; nominal body height 5.9 mm above PCB. Two new vias bring the filled/capped/planarized processing count to 205. Use this package only; earlier Gerbers place C61 underneath.\n')
+        notes.write('\nC61 is TOP-side at (193,127) mm; nominal body height 5.9 mm above PCB. Current testpoint revision requires 230 filled/capped/planarized processing sites. Use this package only; earlier Gerbers place C61 underneath.\n')
+    for name in ['rev-c-testpoint-map.csv','rev-c-testpoint-map.md','rev-c-testpoint-processing-upgrades.json']:
+        shutil.copy2(ref/name,fab/name)
+    with (fab/'MANUFACTURING-NOTES.md').open('a') as notes:
+        notes.write('\nAssemble 48 Keystone 5015 SMT hook loops (both board sides). TP45-TP48 are bare copper SPI probe pads: no components to purchase/place. Read rev-c-testpoint-map.md and the processing-upgrades JSON. This revision has 329 electrical/probe footprints plus four mounting holes, 24 schematic pages and 230 mandatory processing sites.\n')
     mechanical=ref/'rev-c-obd-mechanical-clearance.md'
     if mechanical.exists():
         shutil.copy2(mechanical,fab/mechanical.name)

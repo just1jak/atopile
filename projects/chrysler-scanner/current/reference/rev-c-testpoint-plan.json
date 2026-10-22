@@ -1,0 +1,1158 @@
+{
+  "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+  "testpoints": [
+    {
+      "ref": "TP1",
+      "net": "J1962-16",
+      "hook": true,
+      "xMm": 107.80925,
+      "yMm": 143.59075,
+      "side": "top",
+      "angle": 90,
+      "tapMm": [
+        109.4,
+        142.0
+      ],
+      "routeLengthMm": 2.249660224345011,
+      "symbolUuid": "9ca2f689-a833-5976-89a5-ec79aa3a5e6e",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        106.05925,
+        143.59075,
+        90
+      ]
+    },
+    {
+      "ref": "TP2",
+      "net": "+12V",
+      "hook": true,
+      "xMm": 110.6162,
+      "yMm": 134.9624,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        110.6162,
+        134.9624
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "95984cdc-bdf2-5ea1-9124-75d413b0eda0",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        110.6162,
+        133.2124,
+        0
+      ]
+    },
+    {
+      "ref": "TP3",
+      "net": "VBUS",
+      "hook": true,
+      "xMm": 204.0708,
+      "yMm": 110.5,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        204.0708,
+        109.75
+      ],
+      "routeLengthMm": 0.75,
+      "symbolUuid": "78416719-773d-5379-8bbe-e3841e313ad0",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        204.0708,
+        108.75,
+        0
+      ]
+    },
+    {
+      "ref": "TP4",
+      "net": "+5V",
+      "hook": true,
+      "xMm": 130.0785,
+      "yMm": 117.6373,
+      "side": "top",
+      "angle": 0,
+      "tapMm": [
+        130.0785,
+        117.6373
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "59ffe518-492a-5d10-bd4d-adcc2dcf0842",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        130.0785,
+        115.8873,
+        0
+      ]
+    },
+    {
+      "ref": "TP5",
+      "net": "+3.3V",
+      "hook": true,
+      "xMm": 159.8514,
+      "yMm": 131.9213,
+      "side": "bottom",
+      "angle": 90,
+      "tapMm": [
+        159.8514,
+        131.9213
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "07a4ada1-88b9-5a4c-93c1-bb98e4d824ab",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        158.1014,
+        131.9213,
+        90
+      ]
+    },
+    {
+      "ref": "TP6",
+      "net": "SD_3V3",
+      "hook": true,
+      "xMm": 199.0,
+      "yMm": 134.575,
+      "side": "bottom",
+      "angle": 90,
+      "tapMm": [
+        196.0,
+        134.575
+      ],
+      "routeLengthMm": 3.0,
+      "symbolUuid": "91a7c767-5b92-5f6b-95c8-877a156873b2",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        200.75,
+        134.575,
+        90
+      ]
+    },
+    {
+      "ref": "TP7",
+      "net": "+7.5V",
+      "hook": true,
+      "xMm": 197.2148,
+      "yMm": 112.0641,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        197.2148,
+        112.0641
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "a67dfbd4-5246-5de0-b0b4-071967b373f0",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        197.2148,
+        110.3141,
+        0
+      ]
+    },
+    {
+      "ref": "TP8",
+      "net": "VBB",
+      "hook": true,
+      "xMm": 138.2871,
+      "yMm": 126.6949,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        138.2871,
+        126.6949
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "d38b9cb1-0e80-5b19-97b6-278dc49fd2f7",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        138.2871,
+        124.9449,
+        0
+      ]
+    },
+    {
+      "ref": "TP9",
+      "net": "VPP",
+      "hook": true,
+      "xMm": 149.552,
+      "yMm": 125.9225,
+      "side": "top",
+      "angle": 0,
+      "tapMm": [
+        149.552,
+        125.9225
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "f893af5c-df64-59e0-a6e7-68ba925a5b78",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        149.552,
+        124.1725,
+        0
+      ]
+    },
+    {
+      "ref": "TP10",
+      "net": "PCI_VCC",
+      "hook": true,
+      "xMm": 119.46,
+      "yMm": 126.075,
+      "side": "bottom",
+      "angle": 90,
+      "tapMm": [
+        119.46,
+        126.075
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "16891ec3-9605-5d12-a8e1-d4c51f247685",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        117.71,
+        126.075,
+        90
+      ]
+    },
+    {
+      "ref": "TP11",
+      "net": "J1962-2",
+      "hook": true,
+      "xMm": 114.8049,
+      "yMm": 119.2787,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        114.0549,
+        119.2787
+      ],
+      "routeLengthMm": 0.75,
+      "symbolUuid": "2616e631-ed22-570a-8700-6042601753ad",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        114.8049,
+        121.0287,
+        0
+      ]
+    },
+    {
+      "ref": "TP12",
+      "net": "J1962-3",
+      "hook": true,
+      "xMm": 119.5311,
+      "yMm": 116.2703,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        119.5311,
+        116.2703
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "139e19e7-b98f-51ac-b739-cc78b94de0cc",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        119.5311,
+        114.5203,
+        0
+      ]
+    },
+    {
+      "ref": "TP13",
+      "net": "J1962-11",
+      "hook": true,
+      "xMm": 115.2831,
+      "yMm": 115.2008,
+      "side": "bottom",
+      "angle": 90,
+      "tapMm": [
+        115.2831,
+        115.2008
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "de52cb14-bbfe-5915-b46f-7d745ef559b3",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        113.5331,
+        115.2008,
+        90
+      ]
+    },
+    {
+      "ref": "TP14",
+      "net": "J1962-6",
+      "hook": true,
+      "xMm": 142.684,
+      "yMm": 130.8568,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        142.684,
+        130.8568
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "28965c2c-9031-5808-bc75-79d80dfce806",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        142.684,
+        129.1068,
+        0
+      ]
+    },
+    {
+      "ref": "TP15",
+      "net": "J1962-12",
+      "hook": true,
+      "xMm": 118.4089,
+      "yMm": 138.3123,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        118.4089,
+        138.3123
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "c7e27b04-ba16-5452-876a-0f7badef1523",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        118.4089,
+        136.5623,
+        0
+      ]
+    },
+    {
+      "ref": "TP16",
+      "net": "J1962-14",
+      "hook": true,
+      "xMm": 163.0111,
+      "yMm": 151.9919,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        163.0111,
+        154.2419
+      ],
+      "routeLengthMm": 2.25,
+      "symbolUuid": "7f503a81-e479-5f30-80a2-188b61f0849a",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        163.0111,
+        150.2419,
+        0
+      ]
+    },
+    {
+      "ref": "TP17",
+      "net": "J1962-9",
+      "hook": true,
+      "xMm": 140.36955,
+      "yMm": 142.75345,
+      "side": "top",
+      "angle": 90,
+      "tapMm": [
+        140.8998,
+        142.2232
+      ],
+      "routeLengthMm": 0.7498867414483269,
+      "symbolUuid": "249ff355-1456-568c-b8f9-d63cf0f25227",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        142.11955,
+        141.75345,
+        90
+      ]
+    },
+    {
+      "ref": "TP18",
+      "net": "J1962-7",
+      "hook": true,
+      "xMm": 128.8493,
+      "yMm": 147.5194,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        128.8493,
+        147.5194
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "5bfebf6e-1751-5f08-be3f-58b2823cf612",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        128.8493,
+        145.7694,
+        0
+      ]
+    },
+    {
+      "ref": "TP19",
+      "net": "J1962-15",
+      "hook": true,
+      "xMm": 124.9695,
+      "yMm": 150.45,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        124.9695,
+        150.45
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "782b13f1-bba6-52e4-8386-8e37856894d8",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        124.9695,
+        148.7,
+        0
+      ]
+    },
+    {
+      "ref": "TP20",
+      "net": "TX0",
+      "hook": true,
+      "xMm": 198.55,
+      "yMm": 119.325,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        198.55,
+        114.325
+      ],
+      "routeLengthMm": 5.0,
+      "symbolUuid": "dcfa5157-afa5-56a7-a255-8045aa690a94",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        198.55,
+        117.575,
+        0
+      ]
+    },
+    {
+      "ref": "TP21",
+      "net": "RX0",
+      "hook": true,
+      "xMm": 187.46505,
+      "yMm": 121.13085,
+      "side": "top",
+      "angle": 0,
+      "tapMm": [
+        186.9348,
+        120.6006
+      ],
+      "routeLengthMm": 0.7498867414483269,
+      "symbolUuid": "519b368a-3af9-5410-b480-28175ed8ad99",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        188.21505,
+        119.38085,
+        0
+      ]
+    },
+    {
+      "ref": "TP22",
+      "net": "EN",
+      "hook": true,
+      "xMm": 157.2404,
+      "yMm": 104.8412,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        157.2404,
+        104.8412
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "d62284ae-1e33-553e-a7fe-fbe6061dd66b",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        157.2404,
+        103.0912,
+        0
+      ]
+    },
+    {
+      "ref": "TP23",
+      "net": "IO0",
+      "hook": true,
+      "xMm": 186.572,
+      "yMm": 149.672,
+      "side": "top",
+      "angle": 90,
+      "tapMm": [
+        189.4,
+        152.5
+      ],
+      "routeLengthMm": 3.999395954391117,
+      "symbolUuid": "9880a83c-776c-5e5c-8aa7-25ef3512cdf1",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        184.822,
+        149.672,
+        90
+      ]
+    },
+    {
+      "ref": "TP24",
+      "net": "SCL",
+      "hook": true,
+      "xMm": 175.35,
+      "yMm": 143.83,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        175.35,
+        140.83
+      ],
+      "routeLengthMm": 3.0,
+      "symbolUuid": "4127e7d0-92ba-5136-aabc-9128b86d8b28",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        172.85,
+        143.83,
+        90
+      ]
+    },
+    {
+      "ref": "TP25",
+      "net": "SDA",
+      "hook": true,
+      "xMm": 162.8339,
+      "yMm": 118.639,
+      "side": "top",
+      "angle": 0,
+      "tapMm": [
+        165.0839,
+        118.639
+      ],
+      "routeLengthMm": 2.25,
+      "symbolUuid": "e8b4e35d-bbf0-5cc7-a412-cfb4b11b81be",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        162.8339,
+        116.889,
+        0
+      ]
+    },
+    {
+      "ref": "TP26",
+      "net": "PCI_RX",
+      "hook": true,
+      "xMm": 131.3187,
+      "yMm": 121.0216,
+      "side": "bottom",
+      "angle": 90,
+      "tapMm": [
+        131.3187,
+        121.0216
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "db07de1a-1ed4-5e78-a892-d7b9ff8e7e0a",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        129.5687,
+        121.0216,
+        90
+      ]
+    },
+    {
+      "ref": "TP27",
+      "net": "PCI_TX",
+      "hook": true,
+      "xMm": 161.9033,
+      "yMm": 125.8401,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        162.6533,
+        125.8401
+      ],
+      "routeLengthMm": 0.75,
+      "symbolUuid": "ed77083c-fe41-50a1-b6d4-afdd67e35907",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        161.9033,
+        124.0901,
+        0
+      ]
+    },
+    {
+      "ref": "TP28",
+      "net": "RX1",
+      "hook": true,
+      "xMm": 171.4736,
+      "yMm": 106.574,
+      "side": "bottom",
+      "angle": 90,
+      "tapMm": [
+        171.4736,
+        106.574
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "a5ca10f4-8045-509e-bc3b-8510132a7319",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        169.7236,
+        106.574,
+        90
+      ]
+    },
+    {
+      "ref": "TP29",
+      "net": "TX1",
+      "hook": true,
+      "xMm": 130.9415,
+      "yMm": 104.4049,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        130.9415,
+        104.4049
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "a63567a1-9731-5989-bc1c-b256dbd0c5cd",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        130.9415,
+        106.1549,
+        0
+      ]
+    },
+    {
+      "ref": "TP30",
+      "net": "RX2",
+      "hook": true,
+      "xMm": 136.1446,
+      "yMm": 146.8626,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        136.1446,
+        146.8626
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "3b99d3ed-ad73-5618-96cd-4ecda4348f51",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        136.1446,
+        145.1126,
+        0
+      ]
+    },
+    {
+      "ref": "TP31",
+      "net": "TX2",
+      "hook": true,
+      "xMm": 124.0933,
+      "yMm": 139.1908,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        124.0933,
+        139.1908
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "80dabc2b-0fab-5908-91ef-0aa5427ae5c8",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        124.0933,
+        137.4408,
+        0
+      ]
+    },
+    {
+      "ref": "TP32",
+      "net": "ACT_LED",
+      "hook": true,
+      "xMm": 183.35,
+      "yMm": 122.275,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        183.35,
+        122.275
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "606c8926-429f-5908-a6d0-380978c6b05b",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        183.35,
+        120.525,
+        0
+      ]
+    },
+    {
+      "ref": "TP33",
+      "net": "HEARTBEAT_VALID",
+      "hook": true,
+      "xMm": 161.8125,
+      "yMm": 105.05,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        161.0625,
+        105.05
+      ],
+      "routeLengthMm": 0.75,
+      "symbolUuid": "63cead6c-16f8-5a28-a731-e53d00bc29ff",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        161.8125,
+        103.3,
+        0
+      ]
+    },
+    {
+      "ref": "TP34",
+      "net": "LOGIC_PG",
+      "hook": true,
+      "xMm": 162.5125,
+      "yMm": 145.75,
+      "side": "bottom",
+      "angle": 90,
+      "tapMm": [
+        162.5125,
+        145.75
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "93a4dc61-d3ea-5191-aa6c-dc7508956afc",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        160.7625,
+        145.75,
+        90
+      ]
+    },
+    {
+      "ref": "TP35",
+      "net": "N_R88_2",
+      "hook": true,
+      "xMm": 152.9159,
+      "yMm": 126.725,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        152.9159,
+        126.725
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "990e2172-578f-587b-9ee7-36deddc8622e",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        152.9159,
+        124.975,
+        0
+      ]
+    },
+    {
+      "ref": "TP36",
+      "net": "V_BA_PRE",
+      "hook": true,
+      "xMm": 144.1608,
+      "yMm": 113.176,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        144.1608,
+        113.176
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "0142b6b8-9b09-5a92-83f4-a598a7d828dc",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        144.1608,
+        111.426,
+        0
+      ]
+    },
+    {
+      "ref": "TP37",
+      "net": "V_BA",
+      "hook": true,
+      "xMm": 146.4326,
+      "yMm": 126.7356,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        146.4326,
+        126.7356
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "7f155f15-87a8-59df-a0f3-3ee29739aab5",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        146.4326,
+        124.9856,
+        0
+      ]
+    },
+    {
+      "ref": "TP38",
+      "net": "V_BT_PRE",
+      "hook": true,
+      "xMm": 171.6979,
+      "yMm": 129.0646,
+      "side": "bottom",
+      "angle": 90,
+      "tapMm": [
+        171.6979,
+        129.0646
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "b91618f4-28d8-53c7-b0f0-707cec2c3a19",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        169.9479,
+        129.0646,
+        90
+      ]
+    },
+    {
+      "ref": "TP39",
+      "net": "V_BT",
+      "hook": true,
+      "xMm": 154.2771,
+      "yMm": 150.5854,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        154.2771,
+        150.5854
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "ff2d0419-bba9-55da-89de-beaeedf6d1ed",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        154.2771,
+        148.8354,
+        0
+      ]
+    },
+    {
+      "ref": "TP40",
+      "net": "V_PR_PRE",
+      "hook": true,
+      "xMm": 139.3021,
+      "yMm": 112.8854,
+      "side": "bottom",
+      "angle": 90,
+      "tapMm": [
+        139.3021,
+        107.8854
+      ],
+      "routeLengthMm": 5.0,
+      "symbolUuid": "1717d5ad-66b8-53dd-86bd-aebf9ad0d87d",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        137.5521,
+        112.8854,
+        90
+      ]
+    },
+    {
+      "ref": "TP41",
+      "net": "V_PR",
+      "hook": true,
+      "xMm": 167.0068,
+      "yMm": 130.4955,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        167.0068,
+        130.4955
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "8fa5b3a3-2435-5f15-a379-80f319cfbdc3",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        167.0068,
+        128.7455,
+        0
+      ]
+    },
+    {
+      "ref": "TP42",
+      "net": "SD_DETECT",
+      "hook": true,
+      "xMm": 195.6573,
+      "yMm": 139.3444,
+      "side": "top",
+      "angle": 0,
+      "tapMm": [
+        195.6573,
+        139.3444
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "8e256fbf-48e9-57ce-b749-563ec094661e",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        194.1573,
+        141.0944,
+        0
+      ]
+    },
+    {
+      "ref": "TP43",
+      "net": "CCD+",
+      "hook": true,
+      "xMm": 129.75,
+      "yMm": 112.825,
+      "side": "top",
+      "angle": 90,
+      "tapMm": [
+        126.75,
+        112.825
+      ],
+      "routeLengthMm": 3.0,
+      "symbolUuid": "14e88633-4979-5f53-a7c9-d60b5683e4c8",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        128.0,
+        114.825,
+        90
+      ]
+    },
+    {
+      "ref": "TP44",
+      "net": "CCD-",
+      "hook": true,
+      "xMm": 121.223,
+      "yMm": 111.8084,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        121.223,
+        111.8084
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "60bdfc53-9da1-5416-b502-4938e75ad67a",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        121.223,
+        110.0584,
+        0
+      ]
+    },
+    {
+      "ref": "TP45",
+      "net": "SD_CS",
+      "hook": false,
+      "xMm": 181.5881,
+      "yMm": 133.3053,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        181.5881,
+        133.3053
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "4c968ad2-63e8-59f8-97b3-d84b928fff95",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Pad_D1.0mm",
+      "silkscreenLabel": [
+        181.5881,
+        131.8053,
+        0
+      ]
+    },
+    {
+      "ref": "TP46",
+      "net": "SD_SCK",
+      "hook": false,
+      "xMm": 191.625,
+      "yMm": 139.3487,
+      "side": "top",
+      "angle": 0,
+      "tapMm": [
+        191.625,
+        139.3487
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "28bad707-43ef-58eb-a2f2-eaa6f03651fd",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Pad_D1.0mm",
+      "silkscreenLabel": [
+        191.625,
+        137.8487,
+        0
+      ]
+    },
+    {
+      "ref": "TP47",
+      "net": "SD_MOSI",
+      "hook": false,
+      "xMm": 184.425,
+      "yMm": 130.999,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        188.425,
+        130.999
+      ],
+      "routeLengthMm": 4.0,
+      "symbolUuid": "7b094fa0-8658-501c-b144-fc4ccf575900",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Pad_D1.0mm",
+      "silkscreenLabel": [
+        184.175,
+        129.499,
+        0
+      ]
+    },
+    {
+      "ref": "TP48",
+      "net": "SD_MISO",
+      "hook": false,
+      "xMm": 187.5161,
+      "yMm": 113.3954,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        187.5161,
+        113.3954
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "45a6391c-eb44-5982-9065-1ef195024817",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Pad_D1.0mm",
+      "silkscreenLabel": [
+        187.5161,
+        111.8954,
+        0
+      ]
+    },
+    {
+      "ref": "TP49",
+      "net": "GND",
+      "hook": true,
+      "xMm": 115.25,
+      "yMm": 143.0,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        115.25,
+        143.0
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "1a1a6e12-effa-5d5c-89f1-736a65edd9fe",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        115.25,
+        141.25,
+        0
+      ]
+    },
+    {
+      "ref": "TP50",
+      "net": "GND",
+      "hook": true,
+      "xMm": 134.375,
+      "yMm": 152.25,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        134.375,
+        152.25
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "e03351d1-e7e6-5dbe-8a60-6b897f4c4fd6",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        134.375,
+        150.5,
+        0
+      ]
+    },
+    {
+      "ref": "TP51",
+      "net": "GND",
+      "hook": true,
+      "xMm": 169.275,
+      "yMm": 145.25,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        169.275,
+        145.25
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "45efb0b1-f2a9-5ccd-92b6-b16f9d969efd",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        169.275,
+        143.5,
+        0
+      ]
+    },
+    {
+      "ref": "TP52",
+      "net": "GND",
+      "hook": true,
+      "xMm": 203.98,
+      "yMm": 114.44,
+      "side": "bottom",
+      "angle": 0,
+      "tapMm": [
+        203.98,
+        114.44
+      ],
+      "routeLengthMm": 0,
+      "symbolUuid": "69d3cddd-9ac2-5b8e-91f3-1b24b2dc126f",
+      "sheetUuid": "b5591c24-e488-5b26-83a3-3cd3f007f63a",
+      "footprint": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "silkscreenLabel": [
+        203.98,
+        112.69,
+        0
+      ]
+    }
+  ],
+  "keystoneProduct": "https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353",
+  "omittedHookNets": [
+    "LNA_IN",
+    "D+",
+    "D-",
+    "D+P",
+    "D-P"
+  ],
+  "reason": "Hook loops excluded from RF, USB and SPI. SPI uses bare pads."
+}

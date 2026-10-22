@@ -1,6 +1,6 @@
 # ChryslerScanner V240 integrated SD — revision C prototype
 
-Open `ChryslerScanner_V240_SD.kicad_pro` in KiCad 10 with the entire folder together. Page 1 is the system block diagram with hierarchical signals; the PDF is `ChryslerScanner_V240_SD-Hierarchy.pdf`. Connector and input protection share one circuit sheet. There are 22 child sheets, 23 pages, 277 electrical parts and 281 PCB footprints including four mounting holes.
+Open `ChryslerScanner_V240_SD.kicad_pro` in KiCad 10 with the entire folder together. Page 1 is the system block diagram with hierarchical signals; the PDF is `ChryslerScanner_V240_SD-Hierarchy.pdf`. Connector and input protection share one circuit sheet. There are 23 child sheets, 24 pages, 329 electrical/probe endpoints and 333 PCB footprints including four mounting holes.
 
 Revision C adds ADC power-off isolation, a separately clamped PCI supply, and a supervised firmware-heartbeat permit for the AW9523B. The input TVS and programming switch families/dividers are revised. All original scanner interfaces are retained; the activity LED is intentionally reassigned to dedicated health indication. No CAN transceiver is present. Original-PDF reconciliation, the exact 23 value exceptions, 15 endpoint changes, 24 capacitor ratings and physical preservation exceptions are recorded in the reference evidence. C14/C15 require 50 V minimum rather than the original 35 V.
 
@@ -19,3 +19,5 @@ Final checked PCB SHA-256: `974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d
 Protection caps are grouped by PCI and SCI channel pair. OBD mounting assumes an M3 socket head, no washer, maximum checked envelope 5.5 mm diameter by 3 mm height. H1 has 0.7504 mm centered clearance and 0.2504 mm after nominal screw float; actual tolerance/sample fit remains unqualified. Read reference/rev-c-obd-mechanical-clearance.md before production assembly.
 
 C61 is now on the TOP side at (193,127) mm, next to the SD_3V3 distribution branch. Allow 5.9 mm nominal capacitor height above the PCB. This single authorized placement exception and two extra filled/capped vias (205 processing sites total) are recorded in reference/rev-c-c61-top-audit.json. The accepted PCB SHA is now `a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5`; the preceding PCB hash above is historical.
+
+Current debug-access revision adds 48 hook loops (Keystone 5015) and four bare SPI probe pads; see reference/rev-c-testpoint-map.md and schematic page 24. The current processing total is 230, superseding earlier counts in historical notes. Current PCB SHA-256: `68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9`. Both-side miniature-grabber access and enclosure fit require a sample assembly check. Earlier archives are superseded.

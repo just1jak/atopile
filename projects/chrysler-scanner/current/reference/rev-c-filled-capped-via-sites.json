@@ -1,5 +1,5 @@
 {
-  "pcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
+  "pcbSha256": "68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9",
   "requirements": "Filled, copper capped and planarized; agree fabrication process before order. Ordinary open/tented drills are not equivalent.",
   "sites": [
     {
@@ -62,6 +62,17 @@
       "net": "+12V",
       "x_mm": 126.2168,
       "y_mm": 126.0312,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "a46617cc-0f52-43d1-a436-f7ae525e8a3f",
+      "net": "+12V",
+      "x_mm": 110.6162,
+      "y_mm": 134.9624,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,
@@ -443,6 +454,17 @@
       "planarization_required": true
     },
     {
+      "uuid": "89438c2a-682d-43f2-a6a0-73a92c5eb7ee",
+      "net": "GND",
+      "x_mm": 116.05,
+      "y_mm": 143.0,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
       "uuid": "8db94462-3d3d-5a36-94f3-aec1d3125488",
       "net": "GND",
       "x_mm": 174.5875,
@@ -502,6 +524,17 @@
       "net": "GND",
       "x_mm": 121.075,
       "y_mm": 130.2,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "b0d4ce11-d917-5866-a471-b5496f10d045",
+      "net": "GND",
+      "x_mm": 134.375,
+      "y_mm": 152.25,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,
@@ -630,6 +663,28 @@
       "planarization_required": true
     },
     {
+      "uuid": "f979e873-ca00-47c0-a66c-86fc015f79e8",
+      "net": "GND",
+      "x_mm": 115.25,
+      "y_mm": 143.0,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "808077fd-b165-4b67-87f4-a9a3edfdb76a",
+      "net": "VBUS",
+      "x_mm": 204.0708,
+      "y_mm": 109.75,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
       "uuid": "20d34d28-9a1a-4d0e-a12f-4353e1c8922e",
       "net": "EN",
       "x_mm": 163.940389,
@@ -689,6 +744,17 @@
       "net": "EN",
       "x_mm": 157.940389,
       "y_mm": 108.74119,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "06f98bdf-c2dc-4417-83bc-111b8a8764e0",
+      "net": "VBB",
+      "x_mm": 138.2871,
+      "y_mm": 126.6949,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,
@@ -861,6 +927,17 @@
       "planarization_required": true
     },
     {
+      "uuid": "fde80a78-8f91-4ff2-85a4-8a38c44f4d23",
+      "net": "TX1",
+      "x_mm": 130.9415,
+      "y_mm": 104.4049,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
       "uuid": "7ddf842a-ba60-474b-8b13-336cf6a58587",
       "net": "N_R11_1",
       "x_mm": 161.1735,
@@ -898,6 +975,17 @@
       "net": "RX7_BIAS_EN",
       "x_mm": 172.5,
       "y_mm": 138.0,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "3c86749c-5c5f-4c1c-a36a-1b17c81dd058",
+      "net": "TX2",
+      "x_mm": 124.0933,
+      "y_mm": 139.1908,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,
@@ -1008,6 +1096,17 @@
       "net": "V_BT_PRE",
       "x_mm": 173.197911,
       "y_mm": 128.964573,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "40ba2366-d76f-4f8c-bd00-b85e02ec0d2c",
+      "net": "+7.5V",
+      "x_mm": 197.2148,
+      "y_mm": 112.0641,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,
@@ -1147,6 +1246,39 @@
       "planarization_required": true
     },
     {
+      "uuid": "17600d52-8c49-4972-be18-12b28c88c038",
+      "net": "J1962-12",
+      "x_mm": 118.4089,
+      "y_mm": 138.3123,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "abcff185-0404-47c4-b357-19128b2fc032",
+      "net": "CCD-",
+      "x_mm": 121.223,
+      "y_mm": 111.8084,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "94a7ed34-a812-4743-8900-489b55abb1cc",
+      "net": "PCI_TX",
+      "x_mm": 162.6533,
+      "y_mm": 125.8401,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
       "uuid": "1251fcaa-069f-4bc4-ae2f-dfd4b2f83b74",
       "net": "V_PR_PRE",
       "x_mm": 158.067905,
@@ -1235,6 +1367,127 @@
       "planarization_required": true
     },
     {
+      "uuid": "5aaea479-d9cb-419d-aa27-77bdfb079df8",
+      "net": "TX0",
+      "x_mm": 198.55,
+      "y_mm": 114.325,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "ef71e703-07a6-4337-ae60-18bcd2cfcf8c",
+      "net": "J1962-15",
+      "x_mm": 124.9695,
+      "y_mm": 150.45,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "346a577e-6076-40ed-81ad-97fd687017a4",
+      "net": "J1962-2",
+      "x_mm": 114.0549,
+      "y_mm": 119.2787,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "137d9f61-5487-4f6b-b5fe-53a3392d661e",
+      "net": "SDA",
+      "x_mm": 171.5723,
+      "y_mm": 133.1584,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "408794a8-2311-4911-96fa-4296a80d79fc",
+      "net": "SDA",
+      "x_mm": 165.0839,
+      "y_mm": 123.5498,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "580d523b-68fb-4a45-9dca-eecffe65582f",
+      "net": "SDA",
+      "x_mm": 165.3049,
+      "y_mm": 117.4358,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "86fe6996-f8d8-499b-bd5c-61a795175de5",
+      "net": "J1962-7",
+      "x_mm": 128.8493,
+      "y_mm": 147.5194,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "d1330f07-1144-4f16-a1b7-7cf50fce8439",
+      "net": "J1962-3",
+      "x_mm": 119.5311,
+      "y_mm": 116.2703,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "a6c492f1-38d6-4ec3-9f9b-6d15238a9c80",
+      "net": "J1962-6",
+      "x_mm": 142.684,
+      "y_mm": 130.8568,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "339c0167-7e77-46c7-aa5e-74af92fb3a73",
+      "net": "SD_SCK",
+      "x_mm": 191.625,
+      "y_mm": 139.3487,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "75c5f8f1-f80e-418a-8035-5c66b45edb0c",
+      "net": "RX2",
+      "x_mm": 136.1446,
+      "y_mm": 146.8626,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
       "uuid": "3c1a0180-b98a-4787-9105-2da1707648d9",
       "net": "RX15_EN",
       "x_mm": 173.4,
@@ -1312,10 +1565,32 @@
       "planarization_required": true
     },
     {
+      "uuid": "2a5a0a18-1050-451e-bdab-b631553585d0",
+      "net": "J1962-11",
+      "x_mm": 115.2831,
+      "y_mm": 115.2008,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
       "uuid": "b8efd0b7-52ae-4df6-9678-0065b4bbdc53",
       "net": "PCI_VCC",
       "x_mm": 116.8,
       "y_mm": 125.475,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "066e1d45-991b-486d-b3a1-c55bb365959e",
+      "net": "SD_MISO",
+      "x_mm": 187.5161,
+      "y_mm": 113.3954,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,
@@ -1338,6 +1613,17 @@
       "net": "LOG_BUTTON",
       "x_mm": 174.038,
       "y_mm": 134.993,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "831ac747-e78d-4639-932a-5e71f3d18776",
+      "net": "SD_DETECT",
+      "x_mm": 195.6573,
+      "y_mm": 139.3444,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,
@@ -1972,39 +2258,6 @@
       "planarization_required": true
     },
     {
-      "uuid": "137d9f61-5487-4f6b-b5fe-53a3392d661e",
-      "net": "SDA",
-      "x_mm": 171.5723,
-      "y_mm": 133.1584,
-      "drill_mm": 0.3,
-      "diameter_mm": 0.6,
-      "filled": true,
-      "capped": true,
-      "planarization_required": true
-    },
-    {
-      "uuid": "408794a8-2311-4911-96fa-4296a80d79fc",
-      "net": "SDA",
-      "x_mm": 165.0839,
-      "y_mm": 123.5498,
-      "drill_mm": 0.3,
-      "diameter_mm": 0.6,
-      "filled": true,
-      "capped": true,
-      "planarization_required": true
-    },
-    {
-      "uuid": "580d523b-68fb-4a45-9dca-eecffe65582f",
-      "net": "SDA",
-      "x_mm": 165.3049,
-      "y_mm": 117.4358,
-      "drill_mm": 0.3,
-      "diameter_mm": 0.6,
-      "filled": true,
-      "capped": true,
-      "planarization_required": true
-    },
-    {
       "uuid": "ce800b43-9a3a-4772-8237-839ca61e2e30",
       "net": "SD_3V3",
       "x_mm": 194.0,
@@ -2214,6 +2467,17 @@
       "planarization_required": true
     },
     {
+      "uuid": "41456d40-c1be-48b8-bd67-c140555f3856",
+      "net": "HEARTBEAT_VALID",
+      "x_mm": 161.0625,
+      "y_mm": 105.05,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
       "uuid": "8ce54da2-b2e4-46f4-8d76-685b0796c905",
       "net": "HEARTBEAT_VALID",
       "x_mm": 150.8125,
@@ -2251,6 +2515,17 @@
       "net": "WD_SET",
       "x_mm": 165.075,
       "y_mm": 113.6,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "94dbe072-cf24-42f8-a698-d8f1105d64f1",
+      "net": "SD_MOSI",
+      "x_mm": 188.425,
+      "y_mm": 130.999025,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,

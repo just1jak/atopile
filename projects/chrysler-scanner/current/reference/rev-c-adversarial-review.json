@@ -27,10 +27,11 @@
     "20_leds.kicad_sch": "3f324228b1399a78f41443953c3a6d1044d05c01cc7f61a9befb7d24cb0f98c0",
     "22_sd-logger.kicad_sch": "2660a17c4f3658f6774abe42622978a9918c172104f3344d948dce5380c50222",
     "23_hardware-safety.kicad_sch": "f4fda15905ec180696131f32d638fd790a01956f1bba7eb3b45430a363f4bc2d",
-    "ChryslerScanner_V240_SD.kicad_sch": "cddfe185bae68c4bd6b6148e21289922755a9ef2c169f8ed1c549845624a054a"
+    "24_debug-testpoints.kicad_sch": "57653348138406ada18409b25761ffb907b74d6b3c9eb445d186754fd94154d4",
+    "ChryslerScanner_V240_SD.kicad_sch": "7c15e34193b1047eeb3d43096ad972032ad9ea49570fb20c21b64f45cf1272ac"
   },
-  "finalNetlistSha256": "02e46631e8484cfa7ff6e11476e10d1a6c601630b1a2b617ccd320e2effcfa8f",
-  "finalErcSha256": "f35282eeaba0513c12909c3de217b84a0049cd35b89f43cc8290da40c7e2eb54",
+  "finalNetlistSha256": "c195316413629142d5a4b881fd4a9c23b6fa2f5feaae524db6c1c4c806bdd525",
+  "finalErcSha256": "fc025038bc98e5829ca13264bda03ae54cca9d735e693c166b87c6277f56adc5",
   "safetyContractSha256": "1288851d0f18f0b686caa8d4105eb6a8bf8d2421d54ba535def3febc26da132f",
   "manifestSha256": "c86c6a26b850b34546c67625a4bcc7a0bb72d7147997cb3caf6b2154c013b37e",
   "originalPdfSha256": "334b04164cfa96183cf502f690024a764cc719671f20583043f37604c9ed590d",
@@ -48,7 +49,7 @@
   },
   "pcbReview": {
     "status": "COMPLETE",
-    "pcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
+    "pcbSha256": "68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9",
     "nativeConnectivity": {
       "fullNativeAirwires": 0,
       "disconnectedNetGroups": {},
@@ -89,7 +90,7 @@
       "firmware integration"
     ],
     "previousIndependentPcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
-    "revalidationScope": "C61-only placement/routing delta; see c61TopMoveReview, original independent review remains attributed to its original hash."
+    "revalidationScope": "C61 and testpoint delta reviews supplement historical independent review; see their explicit scopes and hashes."
   },
   "openReleaseGates": [
     "Exact capacitor/ESD/protection ordering codes, capacitance derating and assembly fit including existing J1/H1 envelopes",
@@ -98,7 +99,7 @@
     "Regenerated fabrication exports/notes/checksums carrying all saved filled/capped via processing"
   ],
   "reportSha256": "9e0f514cc35b5d0d2f4469f498cf269b177952ed7c394af4107c34871bba3582",
-  "pcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
+  "pcbSha256": "68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9",
   "layoutReviewComplete": true,
   "remainingP1Findings": [],
   "heartbeatContract": "U10 physical20/GPIO13 ACT_LED is dedicated software health, also LED; legacy firmware is not safe by inference; GPIO2 original NC",
@@ -185,5 +186,26 @@
     "report": "rev-c-c61-top-audit.json",
     "status": "PASS_CAD_DELTA_REVIEW"
   },
-  "priorIndependentPcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e"
+  "priorIndependentPcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+  "testPointReview": {
+    "date": "2026-10-22",
+    "reviewer": "Implementing-agent adversarial delta review; no new independent reviewer claimed.",
+    "previousPcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
+    "pcbSha256": "68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9",
+    "scope": "52 additive probe endpoints, short taps, native clearance/parity/connectivity, original placement/copper preservation and filled/capped manufacturing requirements.",
+    "status": "PASS_CAD_DELTA_REVIEW",
+    "findingsResolved": [
+      "Existing silk collisions resolved by moving only D8/C20/C24 reference text.",
+      "Native parity corrected with exact symbol paths and manufacturer datasheet fields.",
+      "22 open via drills under new pads upgraded to filled/capped processing.",
+      "No hook loops on USB/RF/SPI; four bare SPI pads used.",
+      "Existing mounting-hardware and OBD-tail envelopes excluded."
+    ],
+    "remainingP1Findings": [],
+    "limits": [
+      "No new independent design review.",
+      "Physical grabber/enclosure access and measured signal integrity are bench qualification items."
+    ],
+    "audit": "rev-c-testpoint-audit.json"
+  }
 }

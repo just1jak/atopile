@@ -276,3 +276,55 @@ U21,TMUX1511PWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,Texas Instruments,TMUX1511PW
 U22,LTC6993HS6-2#TRMPBF,Package_TO_SOT_SMD:TSOT-23-6,Analog Devices,LTC6993HS6-2#TRMPBF,,,SPECIFIED — verify procurement/footprint
 U23,SN74LVC1G11DBVR,Package_TO_SOT_SMD:SOT-23-6,Texas Instruments,SN74LVC1G11DBVR,,,SPECIFIED — verify procurement/footprint
 U24,TLV803EA30DBZR,Package_TO_SOT_SMD:SOT-23-3,Texas Instruments,TLV803EA30DBZR,,,SPECIFIED — verify procurement/footprint
+TP1,J1962-16,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP2,+12V,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP3,VBUS,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP4,+5V,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP5,+3.3V,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP6,SD_3V3,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP7,+7.5V,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP8,VBB,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP9,VPP,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP10,PCI_VCC,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP11,J1962-2,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP12,J1962-3,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP13,J1962-11,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP14,J1962-6,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP15,J1962-12,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP16,J1962-14,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP17,J1962-9,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP18,J1962-7,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP19,J1962-15,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP20,TX0,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP21,RX0,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP22,EN,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP23,IO0,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP24,SCL,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP25,SDA,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP26,PCI_RX,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP27,PCI_TX,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP28,RX1,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP29,TX1,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP30,RX2,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP31,TX2,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP32,ACT_LED,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP33,HEARTBEAT_VALID,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP34,LOGIC_PG,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP35,N_R88_2,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP36,V_BA_PRE,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP37,V_BA,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP38,V_BT_PRE,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP39,V_BT,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP40,V_PR_PRE,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP41,V_PR,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP42,SD_DETECT,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP43,CCD+,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP44,CCD-,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP45,SD_CS,footprints:TestPoint_Pad_D1.0mm,PCB feature,COPPER_PAD_NO_COMPONENT,,,PCB FEATURE — no component to purchase or place
+TP46,SD_SCK,footprints:TestPoint_Pad_D1.0mm,PCB feature,COPPER_PAD_NO_COMPONENT,,,PCB FEATURE — no component to purchase or place
+TP47,SD_MOSI,footprints:TestPoint_Pad_D1.0mm,PCB feature,COPPER_PAD_NO_COMPONENT,,,PCB FEATURE — no component to purchase or place
+TP48,SD_MISO,footprints:TestPoint_Pad_D1.0mm,PCB feature,COPPER_PAD_NO_COMPONENT,,,PCB FEATURE — no component to purchase or place
+TP49,GND,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP50,GND,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP51,GND,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint
+TP52,GND,footprints:TestPoint_Keystone_5015_Micro_Mini,Keystone Electronics,5015,,,SPECIFIED — verify procurement/footprint

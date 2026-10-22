@@ -19,3 +19,5 @@ Do not substitute a washer or above-board standoff based on this result: a 7 mm 
 Geometry: bundled manufacturer STEP, FreeCAD 1.0 solid distances/booleans, native KiCad coordinates. [Manufacturer drawing](https://www.attend.com.tw/data/download/file/226A-1202.pdf). Exact PCB/model hashes and raw measurements are in rev-c-obd-mechanical-clearance.json. Older zero-intersection checks alone did not establish an adequate clearance margin.
 
 C61 top-side revision: exact layout delta preserves J1, mounting holes and outline. OBD/screw measurements remain applicable to PCB `a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5`; C61 is outside the connector housing envelope.
+
+Testpoint revision preserves original J1/hole geometry; new sites exclude mounting hardware and connector-tail envelopes. Measurements remain applicable to current PCB `68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9`.

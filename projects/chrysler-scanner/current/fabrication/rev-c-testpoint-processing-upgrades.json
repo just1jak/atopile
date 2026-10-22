@@ -1,0 +1,181 @@
+{
+  "reason": "New SMT hook/probe pads overlap these existing via drills. Fill, copper cap and planarize them to prevent solder wicking; copper geometry, drills, nets and positions are unchanged.",
+  "sites": [
+    {
+      "uuid": "a46617cc-0f52-43d1-a436-f7ae525e8a3f",
+      "pads": [
+        "TP2.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "89438c2a-682d-43f2-a6a0-73a92c5eb7ee",
+      "pads": [
+        "TP49.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "b0d4ce11-d917-5866-a471-b5496f10d045",
+      "pads": [
+        "TP50.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "f979e873-ca00-47c0-a66c-86fc015f79e8",
+      "pads": [
+        "TP49.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "808077fd-b165-4b67-87f4-a9a3edfdb76a",
+      "pads": [
+        "TP3.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "06f98bdf-c2dc-4417-83bc-111b8a8764e0",
+      "pads": [
+        "TP8.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "fde80a78-8f91-4ff2-85a4-8a38c44f4d23",
+      "pads": [
+        "TP29.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "3c86749c-5c5f-4c1c-a36a-1b17c81dd058",
+      "pads": [
+        "TP31.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "40ba2366-d76f-4f8c-bd00-b85e02ec0d2c",
+      "pads": [
+        "TP7.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "17600d52-8c49-4972-be18-12b28c88c038",
+      "pads": [
+        "TP15.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "abcff185-0404-47c4-b357-19128b2fc032",
+      "pads": [
+        "TP44.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "94a7ed34-a812-4743-8900-489b55abb1cc",
+      "pads": [
+        "TP27.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "ef71e703-07a6-4337-ae60-18bcd2cfcf8c",
+      "pads": [
+        "TP19.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "346a577e-6076-40ed-81ad-97fd687017a4",
+      "pads": [
+        "TP11.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "86fe6996-f8d8-499b-bd5c-61a795175de5",
+      "pads": [
+        "TP18.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "d1330f07-1144-4f16-a1b7-7cf50fce8439",
+      "pads": [
+        "TP12.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "a6c492f1-38d6-4ec3-9f9b-6d15238a9c80",
+      "pads": [
+        "TP14.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "339c0167-7e77-46c7-aa5e-74af92fb3a73",
+      "pads": [
+        "TP46.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "75c5f8f1-f80e-418a-8035-5c66b45edb0c",
+      "pads": [
+        "TP30.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "2a5a0a18-1050-451e-bdab-b631553585d0",
+      "pads": [
+        "TP13.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "066e1d45-991b-486d-b3a1-c55bb365959e",
+      "pads": [
+        "TP48.1"
+      ],
+      "filled": false,
+      "capped": false
+    },
+    {
+      "uuid": "831ac747-e78d-4639-932a-5e71f3d18776",
+      "pads": [
+        "TP42.1"
+      ],
+      "filled": false,
+      "capped": false
+    }
+  ]
+}

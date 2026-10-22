@@ -1,0 +1,53 @@
+Reference,Net,Type,Side,X mm,Y mm,Tap length mm,Part
+TP1,J1962-16,Hook loop,top,107.80925,143.59075,2.249660224345011,Keystone 5015
+TP2,+12V,Hook loop,bottom,110.6162,134.9624,0,Keystone 5015
+TP3,VBUS,Hook loop,bottom,204.0708,110.5,0.75,Keystone 5015
+TP4,+5V,Hook loop,top,130.0785,117.6373,0,Keystone 5015
+TP5,+3.3V,Hook loop,bottom,159.8514,131.9213,0,Keystone 5015
+TP6,SD_3V3,Hook loop,bottom,199.0,134.575,3.0,Keystone 5015
+TP7,+7.5V,Hook loop,bottom,197.2148,112.0641,0,Keystone 5015
+TP8,VBB,Hook loop,bottom,138.2871,126.6949,0,Keystone 5015
+TP9,VPP,Hook loop,top,149.552,125.9225,0,Keystone 5015
+TP10,PCI_VCC,Hook loop,bottom,119.46,126.075,0,Keystone 5015
+TP11,J1962-2,Hook loop,bottom,114.8049,119.2787,0.75,Keystone 5015
+TP12,J1962-3,Hook loop,bottom,119.5311,116.2703,0,Keystone 5015
+TP13,J1962-11,Hook loop,bottom,115.2831,115.2008,0,Keystone 5015
+TP14,J1962-6,Hook loop,bottom,142.684,130.8568,0,Keystone 5015
+TP15,J1962-12,Hook loop,bottom,118.4089,138.3123,0,Keystone 5015
+TP16,J1962-14,Hook loop,bottom,163.0111,151.9919,2.25,Keystone 5015
+TP17,J1962-9,Hook loop,top,140.36955,142.75345,0.7498867414483269,Keystone 5015
+TP18,J1962-7,Hook loop,bottom,128.8493,147.5194,0,Keystone 5015
+TP19,J1962-15,Hook loop,bottom,124.9695,150.45,0,Keystone 5015
+TP20,TX0,Hook loop,bottom,198.55,119.325,5.0,Keystone 5015
+TP21,RX0,Hook loop,top,187.46505,121.13085,0.7498867414483269,Keystone 5015
+TP22,EN,Hook loop,bottom,157.2404,104.8412,0,Keystone 5015
+TP23,IO0,Hook loop,top,186.572,149.672,3.999395954391117,Keystone 5015
+TP24,SCL,Hook loop,bottom,175.35,143.83,3.0,Keystone 5015
+TP25,SDA,Hook loop,top,162.8339,118.639,2.25,Keystone 5015
+TP26,PCI_RX,Hook loop,bottom,131.3187,121.0216,0,Keystone 5015
+TP27,PCI_TX,Hook loop,bottom,161.9033,125.8401,0.75,Keystone 5015
+TP28,RX1,Hook loop,bottom,171.4736,106.574,0,Keystone 5015
+TP29,TX1,Hook loop,bottom,130.9415,104.4049,0,Keystone 5015
+TP30,RX2,Hook loop,bottom,136.1446,146.8626,0,Keystone 5015
+TP31,TX2,Hook loop,bottom,124.0933,139.1908,0,Keystone 5015
+TP32,ACT_LED,Hook loop,bottom,183.35,122.275,0,Keystone 5015
+TP33,HEARTBEAT_VALID,Hook loop,bottom,161.8125,105.05,0.75,Keystone 5015
+TP34,LOGIC_PG,Hook loop,bottom,162.5125,145.75,0,Keystone 5015
+TP35,N_R88_2,Hook loop,bottom,152.9159,126.725,0,Keystone 5015
+TP36,V_BA_PRE,Hook loop,bottom,144.1608,113.176,0,Keystone 5015
+TP37,V_BA,Hook loop,bottom,146.4326,126.7356,0,Keystone 5015
+TP38,V_BT_PRE,Hook loop,bottom,171.6979,129.0646,0,Keystone 5015
+TP39,V_BT,Hook loop,bottom,154.2771,150.5854,0,Keystone 5015
+TP40,V_PR_PRE,Hook loop,bottom,139.3021,112.8854,5.0,Keystone 5015
+TP41,V_PR,Hook loop,bottom,167.0068,130.4955,0,Keystone 5015
+TP42,SD_DETECT,Hook loop,top,195.6573,139.3444,0,Keystone 5015
+TP43,CCD+,Hook loop,top,129.75,112.825,3.0,Keystone 5015
+TP44,CCD-,Hook loop,bottom,121.223,111.8084,0,Keystone 5015
+TP45,SD_CS,Bare SPI pad,bottom,181.5881,133.3053,0,PCB copper only
+TP46,SD_SCK,Bare SPI pad,top,191.625,139.3487,0,PCB copper only
+TP47,SD_MOSI,Bare SPI pad,bottom,184.425,130.999,4.0,PCB copper only
+TP48,SD_MISO,Bare SPI pad,bottom,187.5161,113.3954,0,PCB copper only
+TP49,GND,Hook loop,bottom,115.25,143.0,0,Keystone 5015
+TP50,GND,Hook loop,bottom,134.375,152.25,0,Keystone 5015
+TP51,GND,Hook loop,bottom,169.275,145.25,0,Keystone 5015
+TP52,GND,Hook loop,bottom,203.98,114.44,0,Keystone 5015

@@ -119,3 +119,8 @@ Protection caps are grouped by PCI and SCI circuit. All 277 components, values, 
 ## 2026-10-22 C61 top-side relocation
 
 User authorized moving C61 to F.Cu at (193,127) mm, orientation 90 degrees. Pin 1 remains SD_3V3 and pin 2 GND. Exactly two obsolete unlocked SD_3V3 branch segments are removed; four 0.5 mm tracks and two 0.6/0.3 mm filled/capped vias are added. All retained copper and other placements are exact. R96 reference text alone is repositioned. Native all-severity ERC, full refill/track/parity DRC, body-overlap and native connectivity checks pass. See rev-c-c61-top-audit.json and source/verify_c61_top.py. This is an implementing-agent adversarial delta review; the prior independent review retains its original provenance. No new independent reviewer is claimed. C61 requires about 5.9 mm top-side component headroom; verify the actual enclosure.
+
+
+## 2026-10-22 debug access addition
+
+48 hook loops and four SPI probe pads are added on a dedicated page 24. Existing electrical components, pin assignments, placements, retained copper, zones, outline and mounting holes remain exact. 19 tracks and three processed vias are added; 22 existing via processing flags are upgraded for solder-pad overlap. The original 55 safety copper cuts and two earlier C61 cuts remain the only removals. Fresh ERC/DRC/parity, strict contract, native connectivity, body clearance and safety-bounds checks pass. This is an implementing-agent adversarial delta review, not a new independent review. See rev-c-testpoint-audit.json, rev-c-testpoint-map.md and the testPointReview record. Current PCB SHA-256: `68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9`.

@@ -1,0 +1,350 @@
+{
+  "844289da-3817-48ee-884e-0d74c56204a7": {
+    "kind": "PCB_TRACK",
+    "net": "VBUS",
+    "start": [
+      204070800,
+      110500000
+    ],
+    "end": [
+      204070800,
+      109750000
+    ],
+    "width": 200000,
+    "layer": 2,
+    "locked": false
+  },
+  "74d0bc7d-908c-4593-a381-e361a50b3114": {
+    "kind": "PCB_TRACK",
+    "net": "IO0",
+    "start": [
+      186572000,
+      149672000
+    ],
+    "end": [
+      189400000,
+      152500000
+    ],
+    "width": 200000,
+    "layer": 0,
+    "locked": false
+  },
+  "63acc7c9-026f-4f4f-9998-5e76c8267f28": {
+    "kind": "PCB_TRACK",
+    "net": "CCD+",
+    "start": [
+      129750000,
+      112825000
+    ],
+    "end": [
+      126750000,
+      112825000
+    ],
+    "width": 200000,
+    "layer": 0,
+    "locked": false
+  },
+  "065a1915-7843-4cf1-8cc1-ee00f6e72993": {
+    "kind": "PCB_TRACK",
+    "net": "J1962-9",
+    "start": [
+      140369550,
+      142753450
+    ],
+    "end": [
+      140899800,
+      142223200
+    ],
+    "width": 200000,
+    "layer": 0,
+    "locked": false
+  },
+  "cbcae5d3-40f0-4acd-bd89-d08e85b9931d": {
+    "kind": "PCB_TRACK",
+    "net": "PCI_TX",
+    "start": [
+      161903300,
+      125840100
+    ],
+    "end": [
+      162653300,
+      125840100
+    ],
+    "width": 200000,
+    "layer": 2,
+    "locked": false
+  },
+  "ed42a3ee-879b-48e1-88ca-cfc71085c744": {
+    "kind": "PCB_TRACK",
+    "net": "V_PR_PRE",
+    "start": [
+      139302100,
+      112885400
+    ],
+    "end": [
+      139302100,
+      107885400
+    ],
+    "width": 200000,
+    "layer": 2,
+    "locked": false
+  },
+  "75fbe4bc-f7a3-40d7-a791-f8b0a057aa1d": {
+    "kind": "PCB_TRACK",
+    "net": "TX0",
+    "start": [
+      198550000,
+      114325000
+    ],
+    "end": [
+      199250000,
+      114325000
+    ],
+    "width": 200000,
+    "layer": 0,
+    "locked": false
+  },
+  "5aaea479-d9cb-419d-aa27-77bdfb079df8": {
+    "kind": "PCB_VIA",
+    "net": "TX0",
+    "start": [
+      198550000,
+      114325000
+    ],
+    "end": [
+      198550000,
+      114325000
+    ],
+    "width": 600000,
+    "layer": 0,
+    "locked": false,
+    "drill": 300000,
+    "via_type": 4,
+    "top": 0,
+    "bottom": 2,
+    "front_tenting": 0,
+    "back_tenting": 0
+  },
+  "a344f7a9-b7db-4622-9d90-88fed10c74f7": {
+    "kind": "PCB_TRACK",
+    "net": "TX0",
+    "start": [
+      198550000,
+      119325000
+    ],
+    "end": [
+      198550000,
+      114325000
+    ],
+    "width": 200000,
+    "layer": 2,
+    "locked": false
+  },
+  "d91bc8a2-3f97-4741-b122-30d465658a99": {
+    "kind": "PCB_TRACK",
+    "net": "J1962-2",
+    "start": [
+      114804900,
+      119278700
+    ],
+    "end": [
+      114054900,
+      119278700
+    ],
+    "width": 200000,
+    "layer": 2,
+    "locked": false
+  },
+  "aeda15a0-3c73-4c6d-91ed-af75af16e578": {
+    "kind": "PCB_TRACK",
+    "net": "SDA",
+    "start": [
+      162833900,
+      118639000
+    ],
+    "end": [
+      165083900,
+      118639000
+    ],
+    "width": 200000,
+    "layer": 0,
+    "locked": false
+  },
+  "4f3e7e3a-e263-4820-b049-68f92e54502c": {
+    "kind": "PCB_TRACK",
+    "net": "RX0",
+    "start": [
+      187465050,
+      121130850
+    ],
+    "end": [
+      186934800,
+      120600600
+    ],
+    "width": 200000,
+    "layer": 0,
+    "locked": false
+  },
+  "fccb4aa6-f079-48ca-a923-61a77cd0408a": {
+    "kind": "PCB_TRACK",
+    "net": "SCL",
+    "start": [
+      175350000,
+      143830000
+    ],
+    "end": [
+      175350000,
+      140830000
+    ],
+    "width": 200000,
+    "layer": 2,
+    "locked": false
+  },
+  "d989665b-77cc-426c-b2c3-e0a7af3095b0": {
+    "kind": "PCB_TRACK",
+    "net": "J1962-14",
+    "start": [
+      163011100,
+      151991900
+    ],
+    "end": [
+      163011100,
+      154241900
+    ],
+    "width": 200000,
+    "layer": 2,
+    "locked": false
+  },
+  "49b6e52c-5649-49e9-873c-f9207b7fa224": {
+    "kind": "PCB_TRACK",
+    "net": "J1962-16",
+    "start": [
+      107809250,
+      143590750
+    ],
+    "end": [
+      109400000,
+      142000000
+    ],
+    "width": 200000,
+    "layer": 0,
+    "locked": false
+  },
+  "ade70bf6-d0c3-4e43-a1e8-b8e7a9780741": {
+    "kind": "PCB_TRACK",
+    "net": "SD_3V3",
+    "start": [
+      199000000,
+      134575000
+    ],
+    "end": [
+      196000000,
+      134575000
+    ],
+    "width": 200000,
+    "layer": 2,
+    "locked": false
+  },
+  "41456d40-c1be-48b8-bd67-c140555f3856": {
+    "kind": "PCB_VIA",
+    "net": "HEARTBEAT_VALID",
+    "start": [
+      161062500,
+      105050000
+    ],
+    "end": [
+      161062500,
+      105050000
+    ],
+    "width": 600000,
+    "layer": 0,
+    "locked": false,
+    "drill": 300000,
+    "via_type": 4,
+    "top": 0,
+    "bottom": 2,
+    "front_tenting": 0,
+    "back_tenting": 0
+  },
+  "cd991bcd-50ac-4bec-9aa3-34fb57a4efad": {
+    "kind": "PCB_TRACK",
+    "net": "HEARTBEAT_VALID",
+    "start": [
+      161812500,
+      105050000
+    ],
+    "end": [
+      161062500,
+      105050000
+    ],
+    "width": 200000,
+    "layer": 2,
+    "locked": false
+  },
+  "657e4265-52e8-4138-b149-ac4ba393b535": {
+    "kind": "PCB_TRACK",
+    "net": "HEARTBEAT_VALID",
+    "start": [
+      161062500,
+      105050000
+    ],
+    "end": [
+      159062500,
+      109050000
+    ],
+    "width": 200000,
+    "layer": 6,
+    "locked": false
+  },
+  "94dbe072-cf24-42f8-a698-d8f1105d64f1": {
+    "kind": "PCB_VIA",
+    "net": "SD_MOSI",
+    "start": [
+      188425000,
+      130999025
+    ],
+    "end": [
+      188425000,
+      130999025
+    ],
+    "width": 600000,
+    "layer": 0,
+    "locked": false,
+    "drill": 300000,
+    "via_type": 4,
+    "top": 0,
+    "bottom": 2,
+    "front_tenting": 0,
+    "back_tenting": 0
+  },
+  "f3907d97-fb44-4545-8564-99ea750f6404": {
+    "kind": "PCB_TRACK",
+    "net": "SD_MOSI",
+    "start": [
+      184425000,
+      130999000
+    ],
+    "end": [
+      188425000,
+      130999000
+    ],
+    "width": 200000,
+    "layer": 2,
+    "locked": false
+  },
+  "e569b647-bfea-4fef-b022-5cad7bca382b": {
+    "kind": "PCB_TRACK",
+    "net": "SD_MOSI",
+    "start": [
+      188425000,
+      130999025
+    ],
+    "end": [
+      189425000,
+      131999025
+    ],
+    "width": 200000,
+    "layer": 6,
+    "locked": false
+  }
+}

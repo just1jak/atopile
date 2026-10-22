@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\Users\just3\Documents\Scanner\projects\chrysler-scanner\work\c61-top\candidate\ChryslerScanner_V240_SD.kicad_sch</source>
-    <date>2026-10-22T05:41:33</date>
+    <source>C:\Users\just3\Documents\Scanner\projects\chrysler-scanner\work\testpoints\candidate\ChryslerScanner_V240_SD.kicad_sch</source>
+    <date>2026-10-22T06:10:13</date>
     <tool>Eeschema 10.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -407,6 +407,24 @@
         <rev>V240-SD-C</rev>
         <date>2026-10-21</date>
         <source>23_hardware-safety.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="24" name="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/">
+      <title_block>
+        <title>Debug access / hook test points</title>
+        <company/>
+        <rev>V240-SD-C</rev>
+        <date>2026-10-22</date>
+        <source>24_debug-testpoints.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -7588,6 +7606,1462 @@
         </unit>
       </units>
     </comp>
+    <comp ref="TP1">
+      <value>J1962-16</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>9ca2f689-a833-5976-89a5-ec79aa3a5e6e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>+12V</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>95984cdc-bdf2-5ea1-9124-75d413b0eda0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP3">
+      <value>VBUS</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>78416719-773d-5379-8bbe-e3841e313ad0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP4">
+      <value>+5V</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>59ffe518-492a-5d10-bd4d-adcc2dcf0842</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP5">
+      <value>+3.3V</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>07a4ada1-88b9-5a4c-93c1-bb98e4d824ab</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP6">
+      <value>SD_3V3</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>91a7c767-5b92-5f6b-95c8-877a156873b2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP7">
+      <value>+7.5V</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>a67dfbd4-5246-5de0-b0b4-071967b373f0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP8">
+      <value>VBB</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>d38b9cb1-0e80-5b19-97b6-278dc49fd2f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP9">
+      <value>VPP</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>f893af5c-df64-59e0-a6e7-68ba925a5b78</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP10">
+      <value>PCI_VCC</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>16891ec3-9605-5d12-a8e1-d4c51f247685</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP11">
+      <value>J1962-2</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>2616e631-ed22-570a-8700-6042601753ad</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP12">
+      <value>J1962-3</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>139e19e7-b98f-51ac-b739-cc78b94de0cc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP13">
+      <value>J1962-11</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>de52cb14-bbfe-5915-b46f-7d745ef559b3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP14">
+      <value>J1962-6</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>28965c2c-9031-5808-bc75-79d80dfce806</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP15">
+      <value>J1962-12</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>c7e27b04-ba16-5452-876a-0f7badef1523</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP16">
+      <value>J1962-14</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>7f503a81-e479-5f30-80a2-188b61f0849a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP17">
+      <value>J1962-9</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>249ff355-1456-568c-b8f9-d63cf0f25227</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP18">
+      <value>J1962-7</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>5bfebf6e-1751-5f08-be3f-58b2823cf612</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP19">
+      <value>J1962-15</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>782b13f1-bba6-52e4-8386-8e37856894d8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP20">
+      <value>TX0</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>dcfa5157-afa5-56a7-a255-8045aa690a94</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP21">
+      <value>RX0</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>519b368a-3af9-5410-b480-28175ed8ad99</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP22">
+      <value>EN</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>d62284ae-1e33-553e-a7fe-fbe6061dd66b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP23">
+      <value>IO0</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>9880a83c-776c-5e5c-8aa7-25ef3512cdf1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP24">
+      <value>SCL</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>4127e7d0-92ba-5136-aabc-9128b86d8b28</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP25">
+      <value>SDA</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>e8b4e35d-bbf0-5cc7-a412-cfb4b11b81be</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP26">
+      <value>PCI_RX</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>db07de1a-1ed4-5e78-a892-d7b9ff8e7e0a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP27">
+      <value>PCI_TX</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>ed77083c-fe41-50a1-b6d4-afdd67e35907</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP28">
+      <value>RX1</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>a5ca10f4-8045-509e-bc3b-8510132a7319</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP29">
+      <value>TX1</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>a63567a1-9731-5989-bc1c-b256dbd0c5cd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP30">
+      <value>RX2</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>3b99d3ed-ad73-5618-96cd-4ecda4348f51</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP31">
+      <value>TX2</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>80dabc2b-0fab-5908-91ef-0aa5427ae5c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP32">
+      <value>ACT_LED</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>606c8926-429f-5908-a6d0-380978c6b05b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP33">
+      <value>HEARTBEAT_VALID</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>63cead6c-16f8-5a28-a731-e53d00bc29ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP34">
+      <value>LOGIC_PG</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>93a4dc61-d3ea-5191-aa6c-dc7508956afc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP35">
+      <value>N_R88_2</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>990e2172-578f-587b-9ee7-36deddc8622e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP36">
+      <value>V_BA_PRE</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>0142b6b8-9b09-5a92-83f4-a598a7d828dc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP37">
+      <value>V_BA</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>7f155f15-87a8-59df-a0f3-3ee29739aab5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP38">
+      <value>V_BT_PRE</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>b91618f4-28d8-53c7-b0f0-707cec2c3a19</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP39">
+      <value>V_BT</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>ff2d0419-bba9-55da-89de-beaeedf6d1ed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP40">
+      <value>V_PR_PRE</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>1717d5ad-66b8-53dd-86bd-aebf9ad0d87d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP41">
+      <value>V_PR</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>8fa5b3a3-2435-5f15-a379-80f319cfbdc3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP42">
+      <value>SD_DETECT</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>8e256fbf-48e9-57ce-b749-563ec094661e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP43">
+      <value>CCD+</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>14e88633-4979-5f53-a7c9-d60b5683e4c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP44">
+      <value>CCD-</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>60bdfc53-9da1-5416-b502-4938e75ad67a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP45">
+      <value>SD_CS</value>
+      <footprint>footprints:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="Manufacturer">PCB feature</field>
+        <field name="MPN">COPPER_PAD_NO_COMPONENT</field>
+        <field name="Footprint">footprints:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="PCB feature"/>
+      <property name="MPN" value="COPPER_PAD_NO_COMPONENT"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>4c968ad2-63e8-59f8-97b3-d84b928fff95</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP46">
+      <value>SD_SCK</value>
+      <footprint>footprints:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="Manufacturer">PCB feature</field>
+        <field name="MPN">COPPER_PAD_NO_COMPONENT</field>
+        <field name="Footprint">footprints:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="PCB feature"/>
+      <property name="MPN" value="COPPER_PAD_NO_COMPONENT"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>28bad707-43ef-58eb-a2f2-eaa6f03651fd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP47">
+      <value>SD_MOSI</value>
+      <footprint>footprints:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="Manufacturer">PCB feature</field>
+        <field name="MPN">COPPER_PAD_NO_COMPONENT</field>
+        <field name="Footprint">footprints:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="PCB feature"/>
+      <property name="MPN" value="COPPER_PAD_NO_COMPONENT"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>7b094fa0-8658-501c-b144-fc4ccf575900</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP48">
+      <value>SD_MISO</value>
+      <footprint>footprints:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="Manufacturer">PCB feature</field>
+        <field name="MPN">COPPER_PAD_NO_COMPONENT</field>
+        <field name="Footprint">footprints:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="PCB feature"/>
+      <property name="MPN" value="COPPER_PAD_NO_COMPONENT"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>45a6391c-eb44-5982-9065-1ef195024817</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP49">
+      <value>GND</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>1a1a6e12-effa-5d5c-89f1-736a65edd9fe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP50">
+      <value>GND</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>e03351d1-e7e6-5dbe-8a60-6b897f4c4fd6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP51">
+      <value>GND</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>45efb0b1-f2a9-5ccd-92b6-b16f9d969efd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP52">
+      <value>GND</value>
+      <footprint>footprints:TestPoint_Keystone_5015_Micro_Mini</footprint>
+      <datasheet>https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone Electronics</field>
+        <field name="MPN">5015</field>
+        <field name="Footprint">footprints:TestPoint_Keystone_5015_Micro_Mini</field>
+        <field name="Datasheet">https://www.keyelco.com/product.cfm/Micro-Miniature/5015/product_id/1353</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="Keystone Electronics"/>
+      <property name="MPN" value="5015"/>
+      <property name="Sheetname" value="Debug access / test points"/>
+      <property name="Sheetfile" value="24_debug-testpoints.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Debug access / test points/" tstamps="/b5591c24-e488-5b26-83a3-3cd3f007f63a/"/>
+      <tstamps>69d3cddd-9ac2-5b8e-91f3-1b24b2dc126f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
   </components>
   <libparts>
     <libpart lib="ChryslerScanner" part="AE1">
@@ -11228,6 +12702,23 @@
         <pin num="5" name="" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="SDLogger" part="C58">
       <description>10V X7R ceramic</description>
       <footprints>
@@ -11800,6 +13291,9 @@
     <library logical="ChryslerScanner">
       <uri>${KIPRJMOD}/ChryslerScanner.kicad_sym</uri>
     </library>
+    <library logical="Connector">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector.kicad_sym</uri>
+    </library>
     <library logical="SDLogger">
       <uri>${KIPRJMOD}/SDLogger.kicad_sym</uri>
     </library>
@@ -11856,6 +13350,7 @@
       <node ref="R88" pin="1" pintype="passive"/>
       <node ref="R94" pin="2" pintype="passive"/>
       <node ref="R97" pin="1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="1" pintype="passive"/>
       <node ref="U10" pin="19" pintype="passive"/>
       <node ref="U10" pin="3" pintype="passive"/>
@@ -11901,6 +13396,7 @@
       <node ref="R91" pin="1" pintype="passive"/>
       <node ref="R93" pin="1" pintype="passive"/>
       <node ref="R95" pin="1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U16" pin="5" pintype="passive"/>
       <node ref="U17" pin="5" pintype="passive"/>
       <node ref="U18" pin="5" pintype="passive"/>
@@ -11917,6 +13413,7 @@
       <node ref="Q1" pin="4" pintype="passive"/>
       <node ref="R16" pin="1" pintype="passive"/>
       <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="TP7" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U8" pin="1" pintype="passive"/>
     </net>
     <net code="4" name="+12V" class="Power">
@@ -11930,6 +13427,7 @@
       <node ref="R123" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R13" pin="1" pintype="passive"/>
       <node ref="R49" pin="1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U2" pin="5" pintype="passive"/>
       <node ref="U5" pin="5" pintype="passive"/>
       <node ref="U7" pin="5" pintype="passive"/>
@@ -11938,6 +13436,7 @@
       <node ref="Q20" pin="1" pintype="passive"/>
       <node ref="R118" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R96" pin="1" pintype="passive"/>
+      <node ref="TP32" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="20" pintype="passive"/>
       <node ref="U22" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
@@ -11946,12 +13445,14 @@
       <node ref="R100" pin="2" pintype="passive"/>
       <node ref="R81" pin="2" pintype="passive"/>
       <node ref="R84" pin="1" pintype="passive"/>
+      <node ref="TP43" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="7" name="CCD-" class="Default">
       <node ref="C51" pin="1" pintype="passive"/>
       <node ref="R101" pin="2" pintype="passive"/>
       <node ref="R82" pin="2" pintype="passive"/>
       <node ref="R83" pin="1" pintype="passive"/>
+      <node ref="TP44" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="8" name="D+" class="USB">
       <node ref="J2" pin="A6" pintype="passive"/>
@@ -11982,6 +13483,7 @@
       <node ref="Q5" pin="6" pintype="passive"/>
       <node ref="R48" pin="2" pintype="passive"/>
       <node ref="SW1" pin="2" pintype="passive"/>
+      <node ref="TP22" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="9" pintype="passive"/>
       <node ref="U23" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
@@ -12131,6 +13633,10 @@
       <node ref="SW1" pin="1" pintype="passive"/>
       <node ref="SW2" pin="1" pintype="passive"/>
       <node ref="SW3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP49" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP50" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP51" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP52" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="1" pintype="passive"/>
       <node ref="U10" pin="49" pintype="passive"/>
       <node ref="U11" pin="2" pintype="passive"/>
@@ -12171,12 +13677,14 @@
       <node ref="U9" pin="2" pintype="passive"/>
     </net>
     <net code="15" name="HEARTBEAT_VALID" class="Default">
+      <node ref="TP33" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U22" pin="6" pinfunction="6_6" pintype="output"/>
       <node ref="U23" pin="6" pinfunction="6_6" pintype="passive"/>
     </net>
     <net code="16" name="IO0" class="Default">
       <node ref="Q5" pin="3" pintype="passive"/>
       <node ref="SW2" pin="2" pintype="passive"/>
+      <node ref="TP23" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="23" pintype="passive"/>
     </net>
     <net code="17" name="J1962-2" class="Default">
@@ -12186,12 +13694,14 @@
       <node ref="J1" pin="2" pintype="passive"/>
       <node ref="R21" pin="1" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="TP11" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="18" name="J1962-3" class="Default">
       <node ref="D13" pin="1" pintype="passive"/>
       <node ref="J1" pin="3" pintype="passive"/>
       <node ref="Q7" pin="3" pintype="passive"/>
       <node ref="R81" pin="1" pintype="passive"/>
+      <node ref="TP12" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="19" name="J1962-6" class="Default">
       <node ref="C36" pin="2" pintype="passive"/>
@@ -12200,12 +13710,14 @@
       <node ref="J1" pin="6" pintype="passive"/>
       <node ref="Q2" pin="6" pintype="passive"/>
       <node ref="R29" pin="2" pintype="passive"/>
+      <node ref="TP14" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="20" name="J1962-7" class="Default">
       <node ref="C42" pin="1" pintype="passive"/>
       <node ref="J1" pin="7" pintype="passive"/>
       <node ref="Q4" pin="6" pintype="passive"/>
       <node ref="R42" pin="2" pintype="passive"/>
+      <node ref="TP18" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="21" name="J1962-9" class="Default">
       <node ref="C40" pin="2" pintype="passive"/>
@@ -12214,12 +13726,14 @@
       <node ref="J1" pin="9" pintype="passive"/>
       <node ref="Q3" pin="3" pintype="passive"/>
       <node ref="R39" pin="1" pintype="passive"/>
+      <node ref="TP17" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="22" name="J1962-11" class="Default">
       <node ref="D14" pin="1" pintype="passive"/>
       <node ref="J1" pin="11" pintype="passive"/>
       <node ref="Q7" pin="6" pintype="passive"/>
       <node ref="R82" pin="1" pintype="passive"/>
+      <node ref="TP13" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="23" name="J1962-12" class="Default">
       <node ref="C37" pin="2" pintype="passive"/>
@@ -12228,6 +13742,7 @@
       <node ref="J1" pin="12" pintype="passive"/>
       <node ref="Q2" pin="3" pintype="passive"/>
       <node ref="R32" pin="1" pintype="passive"/>
+      <node ref="TP15" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="24" name="J1962-14" class="Default">
       <node ref="C39" pin="2" pintype="passive"/>
@@ -12236,17 +13751,20 @@
       <node ref="J1" pin="14" pintype="passive"/>
       <node ref="Q3" pin="6" pintype="passive"/>
       <node ref="R36" pin="2" pintype="passive"/>
+      <node ref="TP16" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="25" name="J1962-15" class="Default">
       <node ref="C44" pin="1" pintype="passive"/>
       <node ref="J1" pin="15" pintype="passive"/>
       <node ref="Q4" pin="3" pintype="passive"/>
       <node ref="R45" pin="2" pintype="passive"/>
+      <node ref="TP19" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="26" name="J1962-16" class="Power">
       <node ref="D1" pin="1" pintype="passive"/>
       <node ref="D2" pin="2" pintype="passive"/>
       <node ref="J1" pin="16" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="27" name="LNA_IN" class="RF">
       <node ref="R22" pin="2" pintype="passive"/>
@@ -12255,6 +13773,7 @@
     </net>
     <net code="28" name="LOGIC_PG" class="Default">
       <node ref="R119" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP34" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U21" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U21" pin="10" pinfunction="10_10" pintype="passive"/>
       <node ref="U21" pin="4" pinfunction="4_4" pintype="passive"/>
@@ -12594,6 +14113,7 @@
     </net>
     <net code="99" name="N_R88_2" class="Default">
       <node ref="R88" pin="2" pintype="passive"/>
+      <node ref="TP35" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U19" pin="23" pintype="passive"/>
       <node ref="U23" pin="4" pinfunction="4_4" pintype="output"/>
     </net>
@@ -12640,18 +14160,21 @@
     <net code="110" name="PCI_RX" class="Default">
       <node ref="C12" pin="1" pintype="passive"/>
       <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="TP26" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="17" pintype="passive"/>
       <node ref="U9" pin="4" pintype="passive"/>
     </net>
     <net code="111" name="PCI_TX" class="Default">
       <node ref="R18" pin="1" pintype="passive"/>
       <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="TP27" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="16" pintype="passive"/>
     </net>
     <net code="112" name="PCI_VCC" class="Default">
       <node ref="C11" pin="2" pintype="passive"/>
       <node ref="D30" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R123" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP10" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U9" pin="5" pintype="passive"/>
     </net>
     <net code="113" name="PWR_LED" class="Default">
@@ -12665,16 +14188,19 @@
       <node ref="U12" pin="24" pintype="passive"/>
     </net>
     <net code="115" name="RX0" class="Default">
+      <node ref="TP21" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="40" pintype="passive"/>
       <node ref="U12" pin="26" pintype="passive"/>
     </net>
     <net code="116" name="RX1" class="Default">
       <node ref="C53" pin="1" pintype="passive"/>
       <node ref="R85" pin="2" pintype="passive"/>
+      <node ref="TP28" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="33" pintype="passive"/>
       <node ref="U16" pin="4" pintype="passive"/>
     </net>
     <net code="117" name="RX2" class="Default">
+      <node ref="TP30" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="34" pintype="passive"/>
       <node ref="U15" pin="1" pintype="passive"/>
       <node ref="U15" pin="5" pintype="passive"/>
@@ -12706,12 +14232,14 @@
     <net code="123" name="SCL" class="Default">
       <node ref="J3" pin="5" pintype="passive"/>
       <node ref="R87" pin="2" pintype="passive"/>
+      <node ref="TP24" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="39" pintype="passive"/>
       <node ref="U19" pin="19" pintype="passive"/>
     </net>
     <net code="124" name="SDA" class="Default">
       <node ref="J3" pin="6" pintype="passive"/>
       <node ref="R86" pin="2" pintype="passive"/>
+      <node ref="TP25" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="42" pintype="passive"/>
       <node ref="U19" pin="20" pintype="passive"/>
     </net>
@@ -12725,12 +14253,14 @@
       <node ref="R109" pin="1" pintype="passive"/>
       <node ref="R110" pin="1" pintype="passive"/>
       <node ref="R111" pin="1" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U20" pin="3" pinfunction="VO_3" pintype="power_out"/>
     </net>
     <net code="126" name="SD_CS" class="Default">
       <node ref="J4" pin="2" pinfunction="DAT3/CD_2" pintype="bidirectional"/>
       <node ref="R106" pin="2" pintype="passive"/>
       <node ref="R107" pin="2" pintype="passive"/>
+      <node ref="TP45" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="127" name="SD_DAT1" class="Default">
       <node ref="J4" pin="8" pinfunction="DAT1_8" pintype="bidirectional"/>
@@ -12743,21 +14273,25 @@
     <net code="129" name="SD_DETECT" class="Default">
       <node ref="J4" pin="9" pinfunction="DET_B_9" pintype="passive"/>
       <node ref="R114" pin="2" pintype="passive"/>
+      <node ref="TP42" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="7" pintype="passive"/>
     </net>
     <net code="130" name="SD_MISO" class="Default">
       <node ref="J4" pin="7" pinfunction="DAT0_7" pintype="bidirectional"/>
       <node ref="R109" pin="2" pintype="passive"/>
+      <node ref="TP48" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="5" pintype="passive"/>
     </net>
     <net code="131" name="SD_MOSI" class="Default">
       <node ref="J4" pin="3" pinfunction="CMD_3" pintype="input"/>
       <node ref="R105" pin="2" pintype="passive"/>
       <node ref="R108" pin="2" pintype="passive"/>
+      <node ref="TP47" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="132" name="SD_SCK" class="Default">
       <node ref="J4" pin="5" pinfunction="CLK_5" pintype="input"/>
       <node ref="R104" pin="2" pintype="passive"/>
+      <node ref="TP46" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="133" name="TBEN" class="Default">
       <node ref="Q7" pin="2" pintype="passive"/>
@@ -12767,15 +14301,18 @@
     </net>
     <net code="134" name="TX0" class="Default">
       <node ref="R25" pin="2" pintype="passive"/>
+      <node ref="TP20" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U12" pin="25" pintype="passive"/>
     </net>
     <net code="135" name="TX1" class="Default">
       <node ref="R97" pin="2" pintype="passive"/>
+      <node ref="TP29" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="32" pintype="passive"/>
       <node ref="U17" pin="2" pintype="passive"/>
       <node ref="U18" pin="2" pintype="passive"/>
     </net>
     <net code="136" name="TX2" class="Default">
+      <node ref="TP31" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="24" pintype="passive"/>
       <node ref="U13" pin="1" pintype="passive"/>
       <node ref="U13" pin="5" pintype="passive"/>
@@ -12827,6 +14364,7 @@
       <node ref="R58" pin="1" pintype="passive"/>
       <node ref="R60" pin="1" pintype="passive"/>
       <node ref="R62" pin="1" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="145" name="VBB_TO_TX6" class="Default">
       <node ref="Q8" pin="1" pintype="passive"/>
@@ -12856,6 +14394,7 @@
       <node ref="J2" pin="B9" pintype="passive"/>
       <node ref="JP2" pin="1" pintype="passive"/>
       <node ref="R26" pin="1" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="2" pintype="passive"/>
       <node ref="U1" pin="3" pintype="passive"/>
       <node ref="U11" pin="5" pintype="passive"/>
@@ -12874,6 +14413,7 @@
       <node ref="R67" pin="1" pintype="passive"/>
       <node ref="R70" pin="1" pintype="passive"/>
       <node ref="R73" pin="1" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U6" pin="5" pintype="passive"/>
     </net>
     <net code="151" name="VPP_TO_TX6" class="Default">
@@ -12898,6 +14438,7 @@
     </net>
     <net code="155" name="V_BA" class="Default">
       <node ref="R120" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP37" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="13" pintype="passive"/>
       <node ref="U21" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
@@ -12906,10 +14447,12 @@
       <node ref="D27" pin="1" pintype="passive"/>
       <node ref="R49" pin="2" pintype="passive"/>
       <node ref="R50" pin="1" pintype="passive"/>
+      <node ref="TP36" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U21" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
     <net code="157" name="V_BT" class="Default">
       <node ref="R121" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP39" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="10" pintype="passive"/>
       <node ref="U21" pin="6" pinfunction="6_6" pintype="passive"/>
     </net>
@@ -12918,10 +14461,12 @@
       <node ref="D28" pin="1" pintype="passive"/>
       <node ref="R51" pin="2" pintype="passive"/>
       <node ref="R52" pin="1" pintype="passive"/>
+      <node ref="TP38" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U21" pin="5" pinfunction="5_5" pintype="passive"/>
     </net>
     <net code="159" name="V_PR" class="Default">
       <node ref="R122" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP41" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="11" pintype="passive"/>
       <node ref="U21" pin="8" pinfunction="8_8" pintype="passive"/>
     </net>
@@ -12930,6 +14475,7 @@
       <node ref="D29" pin="1" pintype="passive"/>
       <node ref="R53" pin="2" pintype="passive"/>
       <node ref="R54" pin="1" pintype="passive"/>
+      <node ref="TP40" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U21" pin="9" pinfunction="9_9" pintype="passive"/>
     </net>
     <net code="161" name="WD_DIV" class="Default">
