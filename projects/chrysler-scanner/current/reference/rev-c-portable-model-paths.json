@@ -1,0 +1,27 @@
+{
+  "oldPcbSha256": "436cc138a1df381336bc365249ac10d97dbf0734b706b8c131460b1477214668",
+  "pcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+  "newSafetyReferences": [
+    "C62",
+    "C63",
+    "C64",
+    "C65",
+    "D30",
+    "R115",
+    "R116",
+    "R117",
+    "R118",
+    "R119",
+    "R120",
+    "R121",
+    "R122",
+    "R123",
+    "U21",
+    "U22",
+    "U23",
+    "U24"
+  ],
+  "onlyModelPathPrefixChanged": true,
+  "allReferencedFilesBundled": true,
+  "original263FootprintModelsUnchanged": true
+}

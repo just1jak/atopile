@@ -1,0 +1,42 @@
+{
+  "iterations": [
+    {
+      "removedOriginalAdcIds": [
+        "12743494-20dd-494b-b047-1ed8e8ffc4a6"
+      ],
+      "allNativePadsRemainConnected": true,
+      "uncappedNativeAirwires": 0
+    }
+  ],
+  "retainedOriginalAdcIds": [
+    "0501bb2d-e50c-44df-bb67-d96eadb5aa67",
+    "09fa8030-4f87-508a-b7ff-a6f502b02cad",
+    "11a72a34-975a-41c1-8b8a-d8807089d28c",
+    "1557548c-9a5f-4208-91b5-7f98133ef34a",
+    "285f63de-5ebe-4598-a332-dcd97560700a",
+    "29001eb4-ae4a-4a35-95bf-8a3e1edd5108",
+    "3df53947-21e0-4d44-8f45-37993b02e739",
+    "4b21ae8b-3709-443e-934e-57384bc8cbd9",
+    "59b90ad7-0977-4f52-84a0-ecceb2380fa5",
+    "660b46aa-0e74-4971-ab89-bd749bac688c",
+    "6d4bd82f-97c6-4134-9861-42d08b2c27ac",
+    "7369fdce-48b6-43b2-91cc-9accc5e7de18",
+    "913e7d48-6bb1-431c-8e90-23d261ec1722",
+    "9662e04c-6f05-4ed7-b88a-2fb177353bcd",
+    "a2c1bf3e-6c76-4430-9526-ce3b4115aed5",
+    "a3d1298d-3812-40ce-9de4-78ffc906a6c4",
+    "b3c3ad46-20ee-48e7-8992-c4055020cfe6",
+    "b89b0ed6-a763-4e83-9dbd-10ec4f035ae1",
+    "bc12b6c6-6823-4f53-a88c-eb345d042f5f",
+    "cdc7cc2b-aa02-4478-b602-b7c4a086916b",
+    "d2739e92-17fe-4e5a-94f2-50752a63ad9d",
+    "e8b935ce-0e28-45d7-baba-b31dc51fd7d3",
+    "e9544cd2-b889-412b-a5ee-206fab556955",
+    "fb4b5436-0e5c-46ac-8750-f56b3caa8025"
+  ],
+  "retainedOriginalAdcCount": 24,
+  "allowedOldCopperRemovalCount": 55,
+  "pcbSha256": "436cc138a1df381336bc365249ac10d97dbf0734b706b8c131460b1477214668",
+  "allDeletedObjectsWereUnlockedOriginalAdcLeavesOutsideHistoricalSeed": true,
+  "nativeFinalDrcClean": true
+}

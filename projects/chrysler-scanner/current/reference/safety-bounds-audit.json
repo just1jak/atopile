@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checks": {
+    "adcPreAt40VBelow2p80": true,
+    "adcBelowAbsLimitUntilSupervisorAsserts": true,
+    "unpoweredAdcBelow0p3": true,
+    "watchdogWithin70msBudget": true,
+    "programmingGateBelow12V": true,
+    "normalProgrammingGateAbove4p5V": true,
+    "boundedDrainBelow30V": true,
+    "vbbGateBelow20V": true,
+    "allOtherPermitCombinationsHoldReset": true
+  },
+  "nominalLoadedAdcGain": 0.06756644033299411,
+  "worstUnloadedAdcAt40V": 2.794988085171804,
+  "worstSupplyUntilSupervisorAssertion": 2.7684,
+  "unpoweredAdcLeakageBoundV": 0.20199999999999999,
+  "nominalTimeoutMs": 65.536,
+  "boundedTimeoutMs": 68.05913599999998,
+  "worstProgrammingGateV": 10.331597357170619,
+  "minimumNormalProgrammingGateV": 6.780753768844221,
+  "contractSha256": "1288851d0f18f0b686caa8d4105eb6a8bf8d2421d54ba535def3febc26da132f",
+  "limitations": [
+    "Assumes specified exact IC variants and stated resistor tolerances.",
+    "Rail fall rate <=5mV/us and 50us maximum assertion delay are bench requirements.",
+    "TVS/source pulse energy, capacitive gate overshoot and physical timing require measurement.",
+    "The protected rail/VPP <=28V bound must be validated; arithmetic does not establish it.",
+    "Q8-Q11 3.3V drive remains a functional qualification gate."
+  ]
+}

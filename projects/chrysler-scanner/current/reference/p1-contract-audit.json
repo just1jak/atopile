@@ -1,0 +1,522 @@
+{
+  "status": "PASS",
+  "releaseGatePassed": true,
+  "phase": "full_release_gate",
+  "pcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+  "netlistSha256": "249456fcca8f9c3deaea80b8c109878cd1c975821f7d1cf4fe1e64f4a7d967a8",
+  "baselinePcbSha256": "85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a",
+  "baselineProjectSha256": "52183ee48ae18f736465cb24c327b45fca4cb63fdcd560b91ecd7610d4cf692c",
+  "checks": {
+    "frozenHash:ChryslerScanner_V240_SD.kicad_pcb": true,
+    "frozenHash:ChryslerScanner_V240_SD.kicad_pro": true,
+    "frozenHash:final-netlist.xml": true,
+    "frozenHistoricalRoutingSeedHash": true,
+    "frozenRootHierarchyHash": true,
+    "exact24RestoredAdcObjects": true,
+    "exactly62AdcObjectsInFrozenBaseline": true,
+    "supplyCutBelongsToFrozenSupplyNets": true,
+    "onlyOneDeclaredProtectedAdcException": true,
+    "frozenRemovalManifestUnchanged": true,
+    "builderRemovalListExactlyMatchesFrozenContract": true,
+    "only55ExplicitCopperRemovals": true,
+    "allRetainedOldCopperExact": true,
+    "all380CurrentlyLockedRetainedObjectsExact": true,
+    "all173HistoricalProtectedObjectsRetainedExactly": true,
+    "newCopperOnlyOnExplicitSafetyNets": true,
+    "noSignalsOnInnerGroundReference": true,
+    "minimumTrackWidth150um": true,
+    "onlyFourValidCopperLayers": true,
+    "exact277ComponentsAndTwentyThreeExistingValueChanges": true,
+    "exact40NoConnectAnd162ConnectedNets": true,
+    "exact15ExistingPinChangesAnd18NewPinContracts": true,
+    "originalComponentPathsAndSymbolUuidsPreserved": true,
+    "newComponentSymbolsMatchSafetyHierarchy": true,
+    "all24RecoveredVoltageRatingsWithTwoExplicitUpgrades": true,
+    "frozenSdAndBootPinMapping": true,
+    "exact22CircuitSheetsAnd23NativeSchematicFiles": true,
+    "rootSchematicUuidPreserved": true,
+    "exact168NativePortsAndMatchingChildLabels": true,
+    "allOriginalSheetFramesPagesAndPortUuidsPreserved": true,
+    "all23PagesNumberedExactlyOnce": true,
+    "all263OriginalFootprintsPadsPlacementsModelsAndPathsExact": true,
+    "exactly18AddedFootprints": true,
+    "allNewAndMovedBodiesClearOfSameSideParts": true,
+    "allNewFootprintValuesLibrariesAndPinsExact": true,
+    "completeNativeSchematicPcbEndpointParity": true,
+    "pcbVoltageRatingFieldsExact": true,
+    "allNineZoneDefinitionsKeepoutsAndSettingsExact": true,
+    "exactOriginalOutlineAndMountingHoles": true,
+    "preservedBoardOutlineSingleConvexPolygon": true,
+    "allNewBodiesPadsTracksAndViasInsidePreservedOutline": true,
+    "boardSetupAndStackupExact": true,
+    "projectRulesSeveritiesAndMetadataByteIdenticalToAcceptedCurrent": true,
+    "allSmdIntersectingDrillsFilledAndCapped": true,
+    "freshFullNativeDrcClean": true,
+    "freshNativeErcClean": true,
+    "freshNativeXml": true,
+    "allNativePadPartitionsAndUncappedAirwiresConnected": true,
+    "allGroundPadsOneConnectedGroup": true,
+    "auditDidNotModifyBoard": true
+  },
+  "errors": [],
+  "allowedCopperRemovalCount": 55,
+  "protectedCopperRemovalExceptions": [
+    "8cf8242f-4b46-50a7-a351-4b51bd98f7f7"
+  ],
+  "retainedProtectedCopperCount": 380,
+  "retainedHistoricalProtectedCopperCount": 173,
+  "newCopperCount": 1612,
+  "nativeHierarchyPortCount": 168,
+  "newSmdViaProcessing": [
+    {
+      "uuid": "1d41760a-9fe7-4b35-bc85-3ac65361c184",
+      "pads": [
+        "R123.1"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "577d6bb3-8fef-470c-a7bc-cc836f91d33c",
+      "pads": [
+        "R49.1"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "0fc31321-d80a-4a81-8d97-dbec654ebf30",
+      "pads": [
+        "U23.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "35b61ff8-0076-4f67-a3d1-20539441ef44",
+      "pads": [
+        "U4.3"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "468ed4c6-5735-4afa-a2a0-0047001e33f7",
+      "pads": [
+        "U10.49"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "4c4950ba-c576-493c-abfe-cd2463a7fc23",
+      "pads": [
+        "C9.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "51f8669d-dc1e-4b8c-9a60-c08a5a5447bc",
+      "pads": [
+        "C14.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "9af9bf20-76c0-4f39-a86c-a2ba1f2d8a8e",
+      "pads": [
+        "C46.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "e79f6a7b-5995-4b80-9a0d-9cd40ba5005b",
+      "pads": [
+        "R61.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "b44e908d-af0c-42b1-a249-f6044c8a99a8",
+      "pads": [
+        "U22.5"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "d72b0963-7142-4a91-8711-e02ece44b4e9",
+      "pads": [
+        "R119.1"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "e23eee73-3eb8-4c78-bb21-38972192c424",
+      "pads": [
+        "U4.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "4d79028d-bdce-4b15-805e-f7c1882accf2",
+      "pads": [
+        "R53.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "c3fad618-0c72-41d7-b6de-13e8228c69f9",
+      "pads": [
+        "U21.6"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "3a440357-603f-471c-8ebb-28ed99799626",
+      "pads": [
+        "R122.1"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "074d012b-f41a-4daa-8999-9051ed95375a",
+      "pads": [
+        "U21.4"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "ad5d42a9-bf5f-476c-8304-b4b8349a564c",
+      "pads": [
+        "R119.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "c7626931-3436-435d-9710-5d4dd7210cbd",
+      "pads": [
+        "U23.3"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "cad23696-48bb-4c6c-a29e-b6450689c0eb",
+      "pads": [
+        "R119.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "c37aa6f8-86f9-46f2-a2b1-181c06e93fd3",
+      "pads": [
+        "R115.1"
+      ],
+      "filled": true,
+      "capped": true
+    }
+  ],
+  "allSmdViaProcessing": [
+    {
+      "uuid": "1d41760a-9fe7-4b35-bc85-3ac65361c184",
+      "pads": [
+        "R123.1"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "577d6bb3-8fef-470c-a7bc-cc836f91d33c",
+      "pads": [
+        "R49.1"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "054fe1b1-22f7-5290-b500-a7f213f7380a",
+      "pads": [
+        "U12.29"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "0fc31321-d80a-4a81-8d97-dbec654ebf30",
+      "pads": [
+        "U23.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "35b61ff8-0076-4f67-a3d1-20539441ef44",
+      "pads": [
+        "U4.3"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "3d2b97c3-78f3-5237-9c46-18156e7f8795",
+      "pads": [
+        "U19.25"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "468ed4c6-5735-4afa-a2a0-0047001e33f7",
+      "pads": [
+        "U10.49"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "48f683c4-3dd7-526b-8754-f7ab5cfa5510",
+      "pads": [
+        "U13.4"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "4c4950ba-c576-493c-abfe-cd2463a7fc23",
+      "pads": [
+        "C9.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "51f8669d-dc1e-4b8c-9a60-c08a5a5447bc",
+      "pads": [
+        "C14.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "58fa7355-b3ff-5452-8638-c5bbac75cb55",
+      "pads": [
+        "U10.49"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "68ec5b48-b597-5ec5-b705-5eb74073c7f9",
+      "pads": [
+        "C26.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "75781361-256c-4837-88cc-ba6fda185725",
+      "pads": [
+        "C56.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "7cf65e96-662f-5743-9633-c54e27543225",
+      "pads": [
+        "U10.49"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "7d5c0199-5627-5888-b109-2cdd12e36f0d",
+      "pads": [
+        "C23.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "8db94462-3d3d-5a36-94f3-aec1d3125488",
+      "pads": [
+        "U10.49"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "9a887a6b-218d-5083-812e-b6f3faba1440",
+      "pads": [
+        "U11.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "9af9bf20-76c0-4f39-a86c-a2ba1f2d8a8e",
+      "pads": [
+        "C46.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "b4cba1e6-ea24-5a74-bc91-afec95083085",
+      "pads": [
+        "U10.49"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "b7697e04-db47-561f-9a4e-d233a506b8ac",
+      "pads": [
+        "C57.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "e79f6a7b-5995-4b80-9a0d-9cd40ba5005b",
+      "pads": [
+        "R61.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "ea669069-42ed-59b8-8f2b-a6c53cd3d62f",
+      "pads": [
+        "C31.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "b44e908d-af0c-42b1-a249-f6044c8a99a8",
+      "pads": [
+        "U22.5"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "d72b0963-7142-4a91-8711-e02ece44b4e9",
+      "pads": [
+        "R119.1"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "e23eee73-3eb8-4c78-bb21-38972192c424",
+      "pads": [
+        "U4.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "f3ed3169-4f94-4c67-96a3-4055a4a6b525",
+      "pads": [
+        "R87.1"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "4d79028d-bdce-4b15-805e-f7c1882accf2",
+      "pads": [
+        "R53.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "c3fad618-0c72-41d7-b6de-13e8228c69f9",
+      "pads": [
+        "U21.6"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "3a440357-603f-471c-8ebb-28ed99799626",
+      "pads": [
+        "R122.1"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "074d012b-f41a-4daa-8999-9051ed95375a",
+      "pads": [
+        "U21.4"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "ad5d42a9-bf5f-476c-8304-b4b8349a564c",
+      "pads": [
+        "R119.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "c7626931-3436-435d-9710-5d4dd7210cbd",
+      "pads": [
+        "U23.3"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "cad23696-48bb-4c6c-a29e-b6450689c0eb",
+      "pads": [
+        "R119.2"
+      ],
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "c37aa6f8-86f9-46f2-a2b1-181c06e93fd3",
+      "pads": [
+        "R115.1"
+      ],
+      "filled": true,
+      "capped": true
+    }
+  ],
+  "connectivity": {
+    "fullNativeAirwires": 0,
+    "disconnectedNetGroups": {},
+    "ground": {
+      "padCount": 193,
+      "connectedGroupCount": 1,
+      "largestConnectedGroupCount": 193,
+      "isolatedFromMainGroup": []
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3170.147199,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4604.344446,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5325.389784,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 37.506408
+    }
+  }
+}

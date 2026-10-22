@@ -1,50 +1,26 @@
-# Chrysler scanner with integrated microSD
+# Chrysler scanner with integrated microSD — revision C prototype
 
-The native KiCad PCB is fully routed and packaged for prototype fabrication.
-Open `current/ChryslerScanner_V240_SD.kicad_pro` in KiCad 10.
-Page 1 is a clickable system block diagram. The updated PDF is
-`current/ChryslerScanner_V240_SD-Hierarchy.pdf`.
+Open `current/ChryslerScanner_V240_SD.kicad_pro` in KiCad 10. The 23-page schematic PDF is `current/ChryslerScanner_V240_SD-Hierarchy.pdf`; page 1 retains the system block diagram with 168 native hierarchical signal ports. Input connector and protection share a sheet, and native ground symbols sit below the circuits.
 
-Final checks: zero DRC errors, warnings, unconnected items and schematic-parity
-issues; zero ERC findings. Independent native connectivity reports zero uncapped
-airwires and all 175 ground pads connected. All original scanner placements,
-174 accepted protected copper objects, nine zones, outline, mounting holes,
-rules and exclusions are preserved. Only added resistor R112 moved, +0.050 mm X
-and +0.075 mm Y. See `current/reference/placement-exception.json`.
+The three high-priority findings are corrected: coordinated input protection and affected ratings, powered-off ADC isolation, and an external supervised health-heartbeat permit for AW9523B. Final native ERC and complete DRC are clean: zero findings, unrouted connections or schematic-parity errors. Independent native connectivity has zero uncapped airwires and all 193 ground pads in one group. The final adversarial review finds no remaining P1 within the explicit bounded prototype contract.
 
-The board is 110 x 55 mm, four layers, 1.6 mm thick, with microSD socket J4 on
-the underside. Provide card access and at least 7 mm underside enclosure space.
+All 239 original electrical components and functional blocks are accounted for against the original ChryslerScanner PDF. All original placements, retained copper, nine zones, outline, mounting holes and rules remain exact. The 55 explicitly recorded old-copper removals are limited to the corrected ADC/protected-supply branches; 380 retained locked objects and 173 retained historical protected objects are unchanged. No experimental MCU-fanout or capacitor moves were adopted. See `current/reference/original-schematic-comparison.md` and `p1-contract-audit.json` for exact exceptions, values and pin contracts.
 
-## Fabrication files
+The board is 110 × 55 mm, four layers, nominal 1.6 mm, with underside microSD. Provide card access and at least 7 mm underside enclosure space, then check actual housing, screwhead and enclosure fit.
 
-- `outputs/chrysler-integrated-sd-rev-b-fabrication.zip`: Gerbers, separate metric
-  PTH/NPTH drills, Gerber job, drill maps, checksums and manufacturing notes.
-- `outputs/chrysler-integrated-sd-routed-rev-b.zip`: complete portable KiCad project,
-  22 schematic sheets, libraries, models, BOM, renders, reports and fabrication set.
+## Local fabrication files
 
-Filled, capped and planarized via processing is required at the recorded sites.
-Send `current/reference/MANUFACTURING-NOTES.md` with the fabrication files; ordinary
-open vias are not equivalent. Agree the actual RF/USB stackup with the fabricator.
+- `outputs/chrysler-integrated-sd-routed-rev-c-fabrication.zip`: fresh Gerbers/job, separate metric PTH/NPTH drills/maps, positions, checksums and processing notes.
+- `outputs/chrysler-integrated-sd-routed-rev-c.zip`: complete portable KiCad project, libraries/models, schematic PDF, BOM, native previews and review evidence.
 
-Final evidence is in `current/reference/final-drc.json`, `final-erc.json`,
-`final-routing-audit.json` and `native-circuit-audit.json`. The board SHA-256 and
-package status are in `reference/final-status.json`. Earlier checkpoint reports
-and routing trials remain historical; use the final reports for this revision.
+Filled, copper-capped and planarized vias are required at every recorded site. Supply `current/reference/MANUFACTURING-NOTES.md` and its processing-site JSON to the fabricator, and agree the actual RF/USB stackup. Ordinary open or tented vias are not equivalent. Rev B archives and historical reports certify older boards only.
 
-Firmware is still deferred. Bench, thermal, supply, enclosure and vehicle tests
-remain prototype work; no manufacturing order or external upload was made.
-The intended logging target remains raw traffic plus selected values for an
-early-2004 automatic Cummins. The archived Bluetooth/XIAO firmware is not a
-replacement for integrated-board firmware.
+## Operation and qualification
 
-The original CAD references and original Atopile sources remain preserved.
-Rebuilding the original Atopile circuit will not regenerate this native layout.
-The circuit is GPL-3.0; bundled assets retain their own notices and licenses.
+This is a prototype fabrication package, not automotive qualification. Normal input is 9–16 V; no sustained 24 V or jump-start claim. Protected-input/VPP peaks must stay ≤28 V including overshoot within the declared pulse/energy limits. Exact generic BOM part selection, voltage/DC-bias/thermal derating, actual connector/screw fit and hardware measurements remain before assembly or vehicle use. Read `current/reference/rev-c-safety-contract.md` and `rev-c-adversarial-review.md`.
 
-## Adversarial electrical review
+Firmware remains deferred and MUST be integrated before active operation. GPIO13/pad20 ACT_LED now belongs exclusively to the software health task: 10 ms pulses only while required tasks report healthy. The existing LED becomes a health/permit indicator. Remove old activity-LED writers, blink interrupts, PWM and DMA sources. Legacy firmware already drives ACT_LED and may accidentally retrigger the timer; it is not safe to assume it holds the expander in reset. GPIO2/pad22 remains its original no-connect. ADC calibration must include the new divider/loading and measurement point after D2. Do not bypass the hardware permit.
 
-See `reference/adversarial-design-review.md` and its evidence JSON. Native
-connectivity and DRC remain clean, but input-surge coordination, raw-battery ADC
-protection and programming-output fail-safe behavior require resolution before
-vehicle electrical sign-off. The review also records BOM, SD power/thermal and
-signal-integrity qualification gates. No CAD was changed by the review.
+Current evidence is `current/reference/final-drc.json`, `final-erc.json`, `final-netlist.xml`, `p1-contract-audit.json`, `safety-bounds-audit.json` and `rev-c-adversarial-review.json`. `reference/final-status.json` binds the accepted board and ZIP hashes. Regenerate reports, PDF and fabrication files after editing; saved reports apply only to their exact hashes.
+
+Original Atopile sources and the upstream PDF are preserved; rebuilding the old Atopile project does not recreate this native revision. Circuit licensing is GPL-3.0; bundled assets retain their notices. No manufacturing order or external upload has been performed.

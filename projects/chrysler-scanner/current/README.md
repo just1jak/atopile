@@ -1,99 +1,17 @@
-# ChryslerScanner V240 with integrated SD hardware — routed revision
+# ChryslerScanner V240 integrated SD — revision C prototype
 
-Open `ChryslerScanner_V240_SD.kicad_pro` in KiCad 10, then open its PCB or schematic.
-Keep the complete folder together: all 22 schematic sheets, footprints, symbols
-and 3D models are bundled. The microSD socket J4 is on the underside near the
-bottom edge. Flip the board in the 3D viewer to see it.
+Open `ChryslerScanner_V240_SD.kicad_pro` in KiCad 10 with the entire folder together. Page 1 is the system block diagram with hierarchical signals; the PDF is `ChryslerScanner_V240_SD-Hierarchy.pdf`. Connector and input protection share one circuit sheet. There are 22 child sheets, 23 pages, 277 electrical parts and 281 PCB footprints including four mounting holes.
 
-The single main board is 110 × 55 mm, four layers, 1.6 mm thick. It uses the
-existing ESP32-PICO-V3-02 directly for SD storage; no separate Bluetooth carrier
-or second microcontroller is required. The 18 added SD components, LOG button,
-card-detect circuit and regulator remain on this main PCB. Provide a card-access
-opening and at least 7 mm underside clearance. Check the intended enclosure
-against the actual connector and capacitor dimensions before manufacturing.
+Revision C adds ADC power-off isolation, a separately clamped PCI supply, and a supervised firmware-heartbeat permit for the AW9523B. The input TVS and programming switch families/dividers are revised. All original scanner interfaces are retained; the activity LED is intentionally reassigned to dedicated health indication. No CAN transceiver is present. Original-PDF reconciliation, the exact 23 value exceptions, 15 endpoint changes, 24 capacitor ratings and physical preservation exceptions are recorded in the reference evidence. C14/C15 require 50 V minimum rather than the original 35 V.
 
-## System overview
+Current CAD evidence is `reference/p1-contract-audit.json`, `final-drc.json`, `final-erc.json` and `final-netlist.xml`. The strict audit must show `releaseGatePassed: true` and the actual PCB hash. `reference/pre-p1` and `reference/historical-pre-rev-c` are historical evidence, not current validation. Rerun all checks and regenerate all exports after editing. Original Atopile sources do not regenerate this native revision.
 
-Page 1 restores the original functional block-diagram layout, with vehicle
-interfaces on the left, the controller in the middle, USB/SD on the right, and
-power/programming below. It has 156 native hierarchical signal ports
-across 21 circuit sheets. Named signal stubs connect matching nets across blocks.
-J1 and its line-protection components now share the input sheet. GND uses
-native ground power symbols below each circuit, with the common net shared
-globally instead of repeated ground hierarchy ports. Every original
-net endpoint is preserved; only J1's PCB sheet-path metadata changed.
+`fabrication` contains local Gerber, separate PTH/NPTH drill, position and processing exports. The board is 110 × 55 mm, four layers, nominal 1.6 mm. Filled, copper-capped and planarized via processing is mandatory at the recorded sites. Confirm actual fabricator stackup/impedance and enclosure fit, including underside microSD clearance. `BOM.csv` states known manufacturer identities, minimum voltage ratings and tolerances; generic legacy parts are explicitly marked UNSELECTED. Do not interpret a generic value or an empty voltage field as a complete purchasing specification. Finish exact capacitor/DC-bias, inductor/current, resistor/power and footprint selections before assembly.
 
-Use `ChryslerScanner_V240_SD-Hierarchy.pdf` for the updated 22-page PDF.
-Older PDF previews were open in another application and remain unchanged locally.
-The portable ZIP uses the updated PDF under its conventional project filename.
-`source/verify_system_hierarchy.py` checks ports, endpoints and the exact permitted
-PCB metadata change; `reference/system-diagram-validation.json` records the result.
+This is a bounded prototype design, not automotive qualification. Normal vehicle input is 9–16 V; sustained 24 V/jump-start operation is unsupported. The protected input/VPP envelope must remain ≤28 V including overshoot for the specified bounded pulse. Validate TVS/fuse energy and temperature, PCI clamp temperature, divider/supervisor timing, all ADC powered/unpowered fault cases, watchdog release and programming gate drive on hardware. Q8–Q11 N-channel drive at 3.0–3.3 V is a qualification item because their on-resistance guarantee is specified at 4.5 V. See `reference/rev-c-safety-contract.md` for the actual assumptions and test gates.
 
-## Final routing changes
+Firmware integration remains deferred and is required for operation: GPIO13/pad20 ACT_LED is now a dedicated software health heartbeat and LED health indicator. Only the safety control task may pulse it every 10 ms after required tasks report healthy; remove all old activity-LED writers and autonomous blink/PWM/DMA sources. Legacy firmware already drives this pin and may accidentally retrigger the watchdog, so it must not be used for active operation. Missing edges or frozen levels time out, but hardware cannot validate unrelated software pulses. GPIO2/pad22 remains its original no-connect. ADC calibration must include 100 kΩ isolation-side loading, switch effects, resistor tolerance and the battery measurement point after D2. Do not bypass the interlock with autonomous PWM or wiring. SD logging, power-loss file behavior, thermal/supply limits and vehicle protocol behavior still require firmware and bench validation.
 
-RX15_EN, TX_LED and PCI_RX are complete. The four board-edge findings and
-redundant dangling branches are cleared. A filled/capped GND stitch at C56
-keeps all 175 GND pads in one native connected group. Only added resistor
-R112 moved: (172,121) to (172.05,121.075) mm. All original scanner parts,
-all 174 accepted protected copper objects, nine zones and existing rules are
-preserved. The original accepted input and explicit geometry exception are
-retained under `reference`.
+Checksums and ZIP verification establish local artifact integrity. No manufacturing order or external upload is performed. Circuit licensing is GPL-3.0; bundled assets retain their own license notices.
 
-`checkpoint-*` and `pre-route-*` reports are historical. Use `final-drc.json`,
-`final-erc.json`, `final-routing-audit.json` and `native-circuit-audit.json`
-for this PCB. Fabrication requires the filled/capped processing sites listed
-in `reference/MANUFACTURING-NOTES.md`.
-
-## CAD validation
-
-The final native KiCad DRC reports zero violations, zero unconnected items and
-zero schematic-parity issues. Native connectivity is checked independently,
-including every ground pad. The schematic has 259 electrical components and
-154 connected nets; all 40 declared no-connect terminals remain isolated.
-The PCB has 263 footprints including the four mechanical holes. Reports and
-file checksums are under `reference` and `SHA256SUMS.txt`.
-
-The original scanner placements and outline are preserved. CP2102 and USB-C
-land-pattern corrections, protected RF/USB/power routing, ground stitching and
-antenna clearances are recorded in the verification reports. Existing DRC
-minimums and exclusions were not relaxed to achieve the result. Existing
-disabled checks remain documented by the native reports.
-
-Unused outer-layer copper provides ground fills; surface-mount ground pads use
-solid connections and through-hole pads use thermal reliefs. Assembly must use
-an appropriate reflow profile. See the grounding report for any exposed-pad
-via-in-pad locations that require filled and copper-capped/planarized vias;
-ordinary open drilled vias are not an equivalent assembly process.
-
-`previews` contains native KiCad routing plots and any available 3D renders.
-`fabrication` contains the native Gerber and drill exports of this checked CAD
-revision. The schematic PDF and BOM are beside the project. These are local
-review artifacts; no manufacturing order or external upload has been made.
-
-## Firmware and prototype work
-
-Firmware remains deferred at the user's request. Fitting the SD circuitry does
-not make the existing scanner firmware log data. Raw traffic plus selected
-values for the early-2004 automatic Cummins remain the intended firmware target;
-decoder compatibility and vehicle behavior have not been demonstrated.
-
-KiCad checks establish geometry and connectivity, not physical operation.
-Prototype power, SD write-current peaks, USB supply capacity, regulator
-temperature, enclosure fit and signal integrity still need hardware validation.
-The shared upstream supply was not enlarged. There is no RTC, battery, power-fail
-supervisor or shutdown hold-up, so a clean file close after sudden power removal
-is not guaranteed. The RF/USB geometry still needs the chosen fabricator's
-stackup/impedance review. The recovered base schematic uses passive pin types;
-zero ERC is not an independent active-device electrical-design review.
-
-The original Downloads project and Atopile sources are unchanged. Rebuilding
-the original Atopile project will not regenerate this native KiCad revision.
-Make future edits in this project deliberately and rerun native DRC and parity.
-
-## Licensing and provenance
-
-Derived from the user's V240-USB-C-OBD reconstruction and
-https://github.com/laszlodaniel/ChryslerScanner. Circuit licensing is GPL-3.0;
-see `LICENSE`. Bundled library and manufacturer assets retain their respective
-licenses in `licenses` and `3dmodels`. Circuit and source references are under
-`reference/integration.json` and `reference/architecture-review.json`.
+Final checked PCB SHA-256: `974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e`. The final portability correction changes only 18 new safety model path prefixes to bundled project-relative assets; electrical and physical geometry are unchanged. The strict audit and full native DRC were rerun on this hash.

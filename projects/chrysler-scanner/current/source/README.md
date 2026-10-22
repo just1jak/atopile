@@ -1,20 +1,9 @@
-# Native routing and verification helpers
+# Rev C native validation sources
 
-The PCB and schematic are native KiCad files. Open the project in KiCad 10;
-these scripts are not needed to view or edit it. Firmware is deferred.
+`verify_safety_revision.py` is the primary portable release guard. Run it with KiCad 10 Python from any working directory; its default project is this source folder’s parent. It reads only bundled source helpers and reference/pre-p1 baselines. It never saves CAD. A release pass requires fresh complete native DRC/ERC/XML, the current PCB hash, exact endpoint/value/rating/hierarchy contracts, frozen physical preservation and full native connectivity. Structural-only mode cannot authorize release.
 
-The included helpers preserve the routing and verification methods used for
-this revision. Native helpers require KiCad 10's bundled Python and pcbnew.
-The Specctra and independent serialized-board audit helpers require Python and
-sexpdata. They are snapshots of the local work pipeline, not a standalone
-Atopile regeneration system. CLI arguments and original frozen reference paths
-are visible in their source. Some provenance comparisons require the retained
-local seed, reference boards, original source manifest and native XML exports.
-Those large historical inputs are not duplicated into this portable CAD folder.
+After editing, refill/save zones deliberately, export a fresh native XML and all-severity ERC/DRC including track checks and schematic parity, then run the verifier. CAD checks do not establish automotive or thermal qualification. See ../reference/rev-c-safety-contract.md. Historical source scripts and historical-pre-rev-c reports are retained for provenance; their hardcoded older counts and acceptance hashes must not be used to certify Rev C.
 
-The final native DRC, circuit and routing reports in reference identify the
-exact checked PCB by SHA256. Rerun KiCad's native DRC with refill and schematic
-parity after any edit; the supplied reports apply only to the recorded revision.
+`package_rev_c.py --output /absolute/path/to/new-package` regenerates local fabrication/project exports only after those checks and the final adversarial review pass. Run it with KiCad Python. The output directory and ZIP names must be new. It does not upload, order or commit anything.
 
-The router ran locally with networking denied. No board upload, manufacturing
-order, firmware compilation or flashing was performed for this routing task.
+Final accepted contract: 277 electrical parts, 23 old-value changes, 15 original endpoint changes, 162 connected nets, 40 NC pins, 168 hierarchy ports and exactly 55 original copper removals. All original placements remain fixed. GPIO13/pad20 ACT_LED is dedicated software health heartbeat; GPIO2/pad22 is original NC. Speculative C31/R106/IO0/SD routing exceptions were rejected and are not accepted contracts. The final55 removal manifest is reference/pre-p1/allowed-copper-removals-final55.json.

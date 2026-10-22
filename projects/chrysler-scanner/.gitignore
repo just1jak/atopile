@@ -30,3 +30,9 @@ secrets.hpp
 # Ground-symbol edit scratch and rendered review pages.
 /work/ground*
 /work/adversarial-review/
+
+# Revision C implementation trials; final sources/evidence live under current.
+/work/p1-remediation/
+/work/original-comparison/
+/outputs/chrysler-routed-sd-rev-c/
+/outputs/chrysler-integrated-sd-routed-rev-c/

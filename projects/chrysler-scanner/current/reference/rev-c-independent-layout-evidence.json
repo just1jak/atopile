@@ -1,0 +1,2100 @@
+{
+  "status": "PASS",
+  "pcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+  "nativeKiCadVersion": "10.0.5",
+  "checks": {
+    "exact55DeclaredOldCopperCuts": true,
+    "allOtherOriginalCopperExact": true,
+    "allOriginalFootprintAndPadGeometryExact": true,
+    "allNineZonesExact": true,
+    "outlineExact": true,
+    "noSignalTracksOnInnerGround": true,
+    "allTrackWidthsAtLeast150um": true,
+    "projectRulesUnchanged": true,
+    "noNewOrRelevantSameSideBodyandpadOverlap": true,
+    "noNewOrRelevantSameSideCourtyardOverlap": true,
+    "allNewViasFilledAndCapped": true,
+    "j3NewGroundStitchPresentAndProcessed": true,
+    "allNativePadPartitionsConnected": true,
+    "everyGroundPadConnected": true,
+    "freshFullNativeDrcParityClean": true,
+    "boardBytesUnchangedByReadOnlyReview": true,
+    "allReferencedNativeModelsPortableAndBundled": true,
+    "original263FootprintModelsExact": true
+  },
+  "connectivity": {
+    "fullNativeAirwires": 0,
+    "disconnectedNetGroups": {},
+    "ground": {
+      "padCount": 193,
+      "connectedGroupCount": 1,
+      "largestConnectedGroupCount": 193,
+      "isolatedFromMainGroup": []
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3170.147199,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4604.344446,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5325.389784,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 37.506408
+    }
+  },
+  "bodyAndCourtyardOverlapPairs": {
+    "bodyAndPad": [],
+    "courtyard": []
+  },
+  "sameSidePairsChecked": {
+    "bodyAndPad": 754,
+    "courtyard": 750
+  },
+  "newViaCount": 169,
+  "newViaProcessing": [
+    {
+      "uuid": "1d41760a-9fe7-4b35-bc85-3ac65361c184",
+      "net": "+12V",
+      "xyMm": [
+        129.5625,
+        125.75
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "1e784f22-1fc4-413b-ac80-2915f7629e7f",
+      "net": "+12V",
+      "xyMm": [
+        124.2168,
+        124.5312
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "22899de8-d606-4e35-b901-b52a52c2af75",
+      "net": "+12V",
+      "xyMm": [
+        180.0918,
+        124.7087
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "577d6bb3-8fef-470c-a7bc-cc836f91d33c",
+      "net": "+12V",
+      "xyMm": [
+        178.1,
+        128.325
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7102d8a7-399d-4b2b-862c-fd553869ecdc",
+      "net": "+12V",
+      "xyMm": [
+        186.8918,
+        115.5087
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "9e8367e8-7fea-48fc-b18f-c131764ab15e",
+      "net": "+12V",
+      "xyMm": [
+        126.2168,
+        126.0312
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "1a7089f8-76c7-4d43-ba28-022579abb4a8",
+      "net": "V_BA_PRE",
+      "xyMm": [
+        159.260819,
+        123.275975
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "2e1a4de4-466e-40fc-9d36-8101848fe0d6",
+      "net": "V_BA_PRE",
+      "xyMm": [
+        169.960819,
+        124.475975
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "67f384d8-de6b-44ae-85c8-5c8e77396f67",
+      "net": "V_BA_PRE",
+      "xyMm": [
+        145.060819,
+        113.175975
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7919e22c-4a2a-4ade-a34d-c8e390e75e1c",
+      "net": "V_BA_PRE",
+      "xyMm": [
+        140.260819,
+        109.875975
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "811b9d0d-113e-433d-9324-bf9226c5e82c",
+      "net": "V_BA_PRE",
+      "xyMm": [
+        157.460819,
+        117.675975
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "a67eee31-8e6b-45c0-8bad-ccef481d4679",
+      "net": "V_BA_PRE",
+      "xyMm": [
+        154.960819,
+        115.875975
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "cb4dba02-62ba-4d76-bf41-36d6ffd6f5cc",
+      "net": "V_BA_PRE",
+      "xyMm": [
+        142.360819,
+        102.375975
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "ec14ebcd-0516-4fc2-b08c-1f1bfd53db1f",
+      "net": "V_BA_PRE",
+      "xyMm": [
+        151.060819,
+        112.575975
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "f1b58108-db13-47d1-be01-4d9ba1834dc7",
+      "net": "V_BA_PRE",
+      "xyMm": [
+        140.160819,
+        103.475975
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "0d755c01-6391-4d1a-93ad-f962eb108bb5",
+      "net": "GND",
+      "xyMm": [
+        169.175,
+        146.45
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "0fc31321-d80a-4a81-8d97-dbec654ebf30",
+      "net": "GND",
+      "xyMm": [
+        154.6875,
+        105.0
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "116baead-8b80-47ab-8b3f-21e43540c428",
+      "net": "GND",
+      "xyMm": [
+        178.89,
+        134.25
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "236404cc-204d-4dce-8582-4f8d8ef79013",
+      "net": "GND",
+      "xyMm": [
+        157.55,
+        144.525
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "2be1323c-27a5-4051-95fe-3b30f0fc8e5d",
+      "net": "GND",
+      "xyMm": [
+        145.075,
+        134.8
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "2e71eaf9-6ddc-4ebe-a2c6-37db2796d012",
+      "net": "GND",
+      "xyMm": [
+        146.4,
+        111.7
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "35b61ff8-0076-4f67-a3d1-20539441ef44",
+      "net": "GND",
+      "xyMm": [
+        147.5375,
+        120.15
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "468ed4c6-5735-4afa-a2a0-0047001e33f7",
+      "net": "GND",
+      "xyMm": [
+        171.3875,
+        116.5125
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "4c4950ba-c576-493c-abfe-cd2463a7fc23",
+      "net": "GND",
+      "xyMm": [
+        146.5,
+        113.8
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "51f8669d-dc1e-4b8c-9a60-c08a5a5447bc",
+      "net": "GND",
+      "xyMm": [
+        157.175,
+        116.45
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "592a95c7-bcd2-4ec5-b3aa-6c3a63229fd8",
+      "net": "GND",
+      "xyMm": [
+        125.075,
+        128.1
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "631ebbba-0e0f-49b0-9225-9a4758cfe37c",
+      "net": "GND",
+      "xyMm": [
+        131.217893,
+        137.442893
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "6ad4f60d-9f55-4729-b5ee-6b42b54c7fc2",
+      "net": "GND",
+      "xyMm": [
+        147.775,
+        140.1
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7ad20cf4-1f90-4a88-acbb-7a9992d80e5c",
+      "net": "GND",
+      "xyMm": [
+        169.275,
+        145.25
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "80c6f37c-2e21-4a69-a5f7-4b8f3e4f7cba",
+      "net": "GND",
+      "xyMm": [
+        144.5375,
+        115.15
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "84c52f87-2758-4c59-a11a-3b58f27b0fe3",
+      "net": "GND",
+      "xyMm": [
+        132.517893,
+        135.742893
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "9af9bf20-76c0-4f39-a86c-a2ba1f2d8a8e",
+      "net": "GND",
+      "xyMm": [
+        167.0875,
+        119.1125
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "9bd56f0b-0340-49ed-9f3a-a980d01ec0ca",
+      "net": "GND",
+      "xyMm": [
+        160.65,
+        141.925
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "a721889b-ce6e-4718-beba-8cbe4685fe57",
+      "net": "GND",
+      "xyMm": [
+        134.8375,
+        103.425
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "a9acbdfb-1bc6-4c90-80e7-54c1c12d2bde",
+      "net": "GND",
+      "xyMm": [
+        121.075,
+        130.2
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "bfd3b21f-2909-4d4f-8d03-ff8ec2460cb0",
+      "net": "GND",
+      "xyMm": [
+        163.3375,
+        111.0
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "c178042b-fc79-4923-b268-46fb2a1b2c94",
+      "net": "GND",
+      "xyMm": [
+        134.8375,
+        102.775
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "c7b5ac2f-b795-446d-9add-9226629225e3",
+      "net": "GND",
+      "xyMm": [
+        148.275,
+        137.1
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "df6678f8-d17f-4413-bc16-c5df526afb42",
+      "net": "GND",
+      "xyMm": [
+        134.0375,
+        102.45
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "e79f6a7b-5995-4b80-9a0d-9cd40ba5005b",
+      "net": "GND",
+      "xyMm": [
+        169.075,
+        147.85
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "e811fedd-5efe-4ae4-beb0-aa10a0d1e00d",
+      "net": "GND",
+      "xyMm": [
+        157.701426,
+        131.921326
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "f2323472-5fae-4cd5-b621-228be34c45fc",
+      "net": "GND",
+      "xyMm": [
+        144.575,
+        136.0
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "f2bb5e9c-640e-4fa3-990f-f806413ca16d",
+      "net": "GND",
+      "xyMm": [
+        142.1625,
+        106.025
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "20d34d28-9a1a-4d0e-a12f-4353e1c8922e",
+      "net": "EN",
+      "xyMm": [
+        163.940389,
+        122.34119
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "3aaee067-e69b-4185-b071-c6bd74c4f25b",
+      "net": "EN",
+      "xyMm": [
+        155.840389,
+        110.84119
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "41a3bb37-f667-446d-a20c-05db154a81e2",
+      "net": "EN",
+      "xyMm": [
+        157.240389,
+        104.84119
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7f98d611-5ac6-4ae6-9fb6-3397971cf4f5",
+      "net": "EN",
+      "xyMm": [
+        156.8875,
+        104.375
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "9287e3ca-f406-4802-9a3f-fddb7366150d",
+      "net": "EN",
+      "xyMm": [
+        166.740389,
+        122.04119
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "a15910f0-d541-450e-90ab-681bec02c593",
+      "net": "EN",
+      "xyMm": [
+        157.940389,
+        108.74119
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "0c625eab-b2cd-4f7b-bdad-a19487e7e8a6",
+      "net": "+3.3V",
+      "xyMm": [
+        159.851426,
+        131.921326
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "2469cf56-c4eb-4507-b049-00a0d4f062bb",
+      "net": "+3.3V",
+      "xyMm": [
+        153.199561,
+        113.16114
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "25e4839a-4853-481c-a61c-d4e0aa3c4d25",
+      "net": "+3.3V",
+      "xyMm": [
+        151.399561,
+        110.76114
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "31cd8eba-d35d-4324-9c02-197652f3456f",
+      "net": "+3.3V",
+      "xyMm": [
+        151.799561,
+        117.46114
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "3772f4e3-24ca-408f-994e-4968d50b4d77",
+      "net": "+3.3V",
+      "xyMm": [
+        149.9125,
+        132.25
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7ba1c81d-f3b8-4260-93de-67221ba37e7c",
+      "net": "+3.3V",
+      "xyMm": [
+        138.600829,
+        109.474164
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "80440a75-9bbc-41da-9049-ee3da37de744",
+      "net": "+3.3V",
+      "xyMm": [
+        134.8375,
+        100.8
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "8a3f5e45-d7a4-4090-acdc-32256864180c",
+      "net": "+3.3V",
+      "xyMm": [
+        149.499561,
+        107.86114
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "8eb1cdf7-93a4-4662-848a-d3415460ba22",
+      "net": "+3.3V",
+      "xyMm": [
+        142.600829,
+        108.774164
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "9d1751e1-3f8c-4a6f-a339-c1680f512906",
+      "net": "+3.3V",
+      "xyMm": [
+        143.500829,
+        110.774164
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "b44e908d-af0c-42b1-a249-f6044c8a99a8",
+      "net": "+3.3V",
+      "xyMm": [
+        159.0625,
+        111.0
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "c674ab4b-20f4-469d-9a41-6bd0f359da39",
+      "net": "+3.3V",
+      "xyMm": [
+        150.4125,
+        104.675
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "d72b0963-7142-4a91-8711-e02ece44b4e9",
+      "net": "+3.3V",
+      "xyMm": [
+        149.3125,
+        135.45
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "e23eee73-3eb8-4c78-bb21-38972192c424",
+      "net": "+3.3V",
+      "xyMm": [
+        146.688471,
+        120.254554
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "305db917-d457-4942-a743-22a27fa59d63",
+      "net": "V_BT_PRE",
+      "xyMm": [
+        151.197911,
+        115.564573
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "37cea176-cfdc-491c-9056-da77d0ed769e",
+      "net": "V_BT_PRE",
+      "xyMm": [
+        150.797911,
+        115.964573
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "46de2507-8bb5-41df-b417-a466e91d6d34",
+      "net": "V_BT_PRE",
+      "xyMm": [
+        173.467162,
+        129.445847
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "611f3404-88f2-4074-8c11-dec2adc6c4eb",
+      "net": "V_BT_PRE",
+      "xyMm": [
+        143.8625,
+        104.6
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7098e73c-ccd2-4a18-a67d-adfe4871cd6b",
+      "net": "V_BT_PRE",
+      "xyMm": [
+        145.6625,
+        108.2
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "91d751dc-9400-432b-a892-9484437f292f",
+      "net": "V_BT_PRE",
+      "xyMm": [
+        163.897911,
+        120.464573
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "99a45b15-0776-4ff3-8c05-de6db27797bc",
+      "net": "V_BT_PRE",
+      "xyMm": [
+        165.697911,
+        125.864573
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "d29c48c6-b9ee-4c38-9dd0-3a73a8bd4702",
+      "net": "V_BT_PRE",
+      "xyMm": [
+        160.697911,
+        114.664573
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "df510c31-c95f-4424-ad0f-ff0f32a57206",
+      "net": "V_BT_PRE",
+      "xyMm": [
+        164.397911,
+        124.464573
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "f7b0849a-8d4b-457a-8d3a-ba7d75f9ebf9",
+      "net": "V_BT_PRE",
+      "xyMm": [
+        173.197911,
+        128.964573
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "18e4eff6-6e55-4609-833f-8f654611bc88",
+      "net": "N_R88_2",
+      "xyMm": [
+        148.6125,
+        106.6
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "4565d045-f5cc-4e58-9ba1-5ace0a1e0806",
+      "net": "N_R88_2",
+      "xyMm": [
+        152.059611,
+        119.65881
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "512a5f4f-ffe0-42e3-82de-4ef7451b544f",
+      "net": "N_R88_2",
+      "xyMm": [
+        163.7659,
+        133.075
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "639c1607-648e-4c7e-8b46-01d3279cfe46",
+      "net": "N_R88_2",
+      "xyMm": [
+        148.159611,
+        108.15881
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7229d842-1c06-4b00-93df-a939c5513dad",
+      "net": "N_R88_2",
+      "xyMm": [
+        154.9159,
+        119.225
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "86d6acaa-65c7-4c3c-a605-b56d14e66705",
+      "net": "N_R88_2",
+      "xyMm": [
+        165.5659,
+        134.875
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "94384c1d-5ab8-437f-a84e-9d463070dcad",
+      "net": "N_R88_2",
+      "xyMm": [
+        151.759611,
+        114.05881
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "954dfe60-3796-4ec9-b40b-52ff959179a2",
+      "net": "N_R88_2",
+      "xyMm": [
+        144.959611,
+        104.95881
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "aab0e01e-ce2d-49ea-aaff-75e1c2025eea",
+      "net": "N_R88_2",
+      "xyMm": [
+        151.2159,
+        123.225
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "ad319245-6c8e-43ae-bb81-ad6861364253",
+      "net": "N_R88_2",
+      "xyMm": [
+        149.059611,
+        110.75881
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "c09ed6df-9f94-40d4-a58d-1ad25c13b947",
+      "net": "N_R88_2",
+      "xyMm": [
+        152.9159,
+        126.725
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "c6e475ac-d999-4cc7-b06f-cd2a6e1fb56e",
+      "net": "N_R88_2",
+      "xyMm": [
+        147.859611,
+        104.95881
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "1251fcaa-069f-4bc4-ae2f-dfd4b2f83b74",
+      "net": "V_PR_PRE",
+      "xyMm": [
+        158.067905,
+        119.227118
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "25014fe9-bb01-4fd0-a4f2-b1e4ed2178a6",
+      "net": "V_PR_PRE",
+      "xyMm": [
+        143.067905,
+        119.227118
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "4d79028d-bdce-4b15-805e-f7c1882accf2",
+      "net": "V_PR_PRE",
+      "xyMm": [
+        167.767905,
+        128.927118
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "5993c00e-cefc-4ea0-b2be-4ea5f7b841c3",
+      "net": "V_PR_PRE",
+      "xyMm": [
+        139.302089,
+        107.885427
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "6e34212e-6999-4d64-808e-3ccb0379263b",
+      "net": "V_PR_PRE",
+      "xyMm": [
+        154.167905,
+        120.427118
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7a85c077-5f2e-47ec-9701-3ab15ef44935",
+      "net": "V_PR_PRE",
+      "xyMm": [
+        136.802089,
+        105.385427
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "cdac831e-ebff-4e12-8649-73ee6a9a9fc8",
+      "net": "V_PR_PRE",
+      "xyMm": [
+        142.102089,
+        111.385427
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "f1b0dd8d-cc7a-42c3-a7b2-775c81e5664e",
+      "net": "V_PR_PRE",
+      "xyMm": [
+        134.4375,
+        105.05
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "413717b9-0d8c-46f0-bedb-e1949f415680",
+      "net": "ACT_LED",
+      "xyMm": [
+        181.95,
+        118.375
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7fb6c2b6-ec8f-44d4-8157-bdf5a0c584a9",
+      "net": "ACT_LED",
+      "xyMm": [
+        182.85,
+        121.775
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "afdb22ac-763c-41f2-9c02-fec13b0916a3",
+      "net": "ACT_LED",
+      "xyMm": [
+        184.35,
+        123.275
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "b8efd0b7-52ae-4df6-9678-0065b4bbdc53",
+      "net": "PCI_VCC",
+      "xyMm": [
+        116.8,
+        125.475
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "07c3289e-6c8f-44f0-bd48-8a7e51fd5ef1",
+      "net": "V_BT",
+      "xyMm": [
+        151.207683,
+        143.92388
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "1449ad75-21b3-4bb7-8291-39a5ae5a65cb",
+      "net": "V_BT",
+      "xyMm": [
+        141.5625,
+        109.25
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "23c2a8ad-12be-4e59-893a-42561f6e37cf",
+      "net": "V_BT",
+      "xyMm": [
+        176.7566,
+        139.7367
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "31664296-f1e8-4424-9a30-c26a6add08ba",
+      "net": "V_BT",
+      "xyMm": [
+        148.1725,
+        117.5125
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "336f1078-381f-4135-8708-506aeaf12632",
+      "net": "V_BT",
+      "xyMm": [
+        170.9225,
+        117.1125
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "4a1e8b34-ee05-4cf1-8958-596721732d23",
+      "net": "V_BT",
+      "xyMm": [
+        148.3625,
+        119.65
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "523d5737-34ed-4aea-b482-a82fbfcf2ec7",
+      "net": "V_BT",
+      "xyMm": [
+        159.877089,
+        148.385427
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "5e0f22b0-fa80-4299-a893-28a2d68dd95d",
+      "net": "V_BT",
+      "xyMm": [
+        179.2225,
+        118.5625
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "70d80611-011a-4db0-81a3-c1559f9ee415",
+      "net": "V_BT",
+      "xyMm": [
+        150.797911,
+        117.485427
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7c775b3f-049b-477e-a90c-56a0a3423c87",
+      "net": "V_BT",
+      "xyMm": [
+        177.3566,
+        134.4367
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7d23f11a-1fdb-4da0-8861-a1d7842fa235",
+      "net": "V_BT",
+      "xyMm": [
+        177.7566,
+        132.4367
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "b81ce290-13f0-48ad-b5d9-dcd4b3ba5e44",
+      "net": "V_BT",
+      "xyMm": [
+        152.377089,
+        145.385427
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "c3fad618-0c72-41d7-b6de-13e8228c69f9",
+      "net": "V_BT",
+      "xyMm": [
+        142.1625,
+        105.05
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "d3fbb06d-9d5f-46eb-8ae9-5aefb4fb4a0d",
+      "net": "V_BT",
+      "xyMm": [
+        148.7625,
+        117.45
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "d9be8130-65b9-4802-8676-8dd1968331d1",
+      "net": "V_BT",
+      "xyMm": [
+        141.5625,
+        112.45
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "1a67a288-a4dc-446e-9cd9-629caefbaca4",
+      "net": "V_PR",
+      "xyMm": [
+        136.4129,
+        115.8843
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "2466aaa5-e919-4315-bd61-cb8ca84acc8c",
+      "net": "V_PR",
+      "xyMm": [
+        136.2129,
+        121.5843
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "3923724a-30c6-453b-a1ad-e9d4d0d0b6c0",
+      "net": "V_PR",
+      "xyMm": [
+        147.906766,
+        143.895518
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "3a440357-603f-471c-8ebb-28ed99799626",
+      "net": "V_PR",
+      "xyMm": [
+        149.84539,
+        145.304328
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "4cc75bad-6b14-4f7d-97e0-89c035e3e7cc",
+      "net": "V_PR",
+      "xyMm": [
+        149.486529,
+        144.867054
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "4e54e6c5-a830-4f0e-8d42-a821c2452984",
+      "net": "V_PR",
+      "xyMm": [
+        169.8129,
+        129.8843
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "606939ef-8aa5-4964-a0b1-56910305d75e",
+      "net": "V_PR",
+      "xyMm": [
+        163.8129,
+        127.8843
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "60d27008-ab85-42d9-a7d0-10463ae8e2f0",
+      "net": "V_PR",
+      "xyMm": [
+        156.306766,
+        140.395518
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "6dfae234-510b-4e13-b6c0-f03b6cb1b9b1",
+      "net": "V_PR",
+      "xyMm": [
+        134.8375,
+        106.35
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7e525b5b-d6a5-4f92-b82e-5895b2944a6d",
+      "net": "V_PR",
+      "xyMm": [
+        135.4129,
+        109.8843
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "8469317b-77ca-4cce-8d73-f99dcfd72bba",
+      "net": "V_PR",
+      "xyMm": [
+        149.556766,
+        141.995518
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "894eb890-21d9-498e-8b10-5bbbe3a4f113",
+      "net": "V_PR",
+      "xyMm": [
+        153.2129,
+        123.2843
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "9c997aa3-f5b5-4465-b005-a58361bfefc4",
+      "net": "V_PR",
+      "xyMm": [
+        168.806766,
+        129.295518
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "ed2570f6-b891-48b3-a8aa-f26193249b34",
+      "net": "V_PR",
+      "xyMm": [
+        136.2129,
+        123.2843
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "ed2a88d9-2f7c-4bf0-b2e8-21b9ab84de58",
+      "net": "V_PR",
+      "xyMm": [
+        161.806766,
+        134.195518
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "10aead65-53cc-4ac3-b19f-9e43046b47af",
+      "net": "V_BA",
+      "xyMm": [
+        155.0326,
+        120.4356
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "1cc7d6ca-312c-4dd9-9c35-7f58bc5e5a02",
+      "net": "V_BA",
+      "xyMm": [
+        146.4326,
+        126.7356
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "1f93de5d-bf88-4027-802f-74736746b92e",
+      "net": "V_BA",
+      "xyMm": [
+        152.767315,
+        140.798017
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "24dd555d-729c-4dd8-a6a5-4453aa0fc2f9",
+      "net": "V_BA",
+      "xyMm": [
+        147.567315,
+        115.198017
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "2a16a2a4-290d-4d34-a624-f9a615896cdd",
+      "net": "V_BA",
+      "xyMm": [
+        167.6326,
+        123.5356
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "3ae23aed-4594-4c5f-a797-5bd76d13b26f",
+      "net": "V_BA",
+      "xyMm": [
+        144.267315,
+        110.798017
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "4e7f8b8b-da27-4442-8a49-7706e1fb9d5d",
+      "net": "V_BA",
+      "xyMm": [
+        143.167315,
+        104.898017
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "5a2a19ef-7039-476a-86c3-4ae16bec9561",
+      "net": "V_BA",
+      "xyMm": [
+        143.167315,
+        103.298017
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "5bff7f6d-828c-408a-b9a6-9948c7405345",
+      "net": "V_BA",
+      "xyMm": [
+        148.567315,
+        140.098017
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "5c2f0f44-5c9c-40ba-860f-55b57a7c2188",
+      "net": "V_BA",
+      "xyMm": [
+        144.667315,
+        108.898017
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "60a6a68c-be15-41c2-b094-1f4dc6fb593f",
+      "net": "V_BA",
+      "xyMm": [
+        145.367315,
+        117.798017
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "700c037d-0dee-4b02-8ed4-3a242bf2dbcb",
+      "net": "V_BA",
+      "xyMm": [
+        152.260411,
+        140.564573
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "7da84130-d015-4c01-9d52-4e7fbde1743e",
+      "net": "V_BA",
+      "xyMm": [
+        145.067315,
+        136.598017
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "9242d685-cd2a-43c6-a184-5f28b28aa0e8",
+      "net": "V_BA",
+      "xyMm": [
+        169.2326,
+        124.2356
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "931593fd-0f35-4ee8-b99e-827361caf657",
+      "net": "V_BA",
+      "xyMm": [
+        151.425,
+        141.0
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "945c762f-8960-437c-a16b-e5a66976016f",
+      "net": "V_BA",
+      "xyMm": [
+        146.867315,
+        127.098017
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "aa2f7eb0-b3d0-4faf-a122-49b0bf55f92e",
+      "net": "V_BA",
+      "xyMm": [
+        147.2326,
+        124.4356
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "d6904fb5-618b-45c3-8cdf-8752097f0a35",
+      "net": "V_BA",
+      "xyMm": [
+        142.5625,
+        103.1
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "da80e4ec-bc45-4980-a8a7-5ba7a2c83257",
+      "net": "V_BA",
+      "xyMm": [
+        149.3326,
+        120.4356
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "fc68024d-d451-4399-b67a-e8c355634f20",
+      "net": "V_BA",
+      "xyMm": [
+        143.967315,
+        120.398017
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "074d012b-f41a-4daa-8999-9051ed95375a",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        142.1625,
+        103.75
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "202936c8-764b-4956-82bc-8138c45abe37",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        149.9625,
+        113.8
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "22776e28-bcea-46a4-aad7-09542fcad112",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        144.7625,
+        120.4
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "27fc95f2-5f8d-4987-82c3-0b112a2264f5",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        151.420847,
+        140.207838
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "28fa3399-3011-4f2b-aeff-2fc11bfd5a7c",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        149.420847,
+        144.007838
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "33be7b17-85c1-4573-b288-b0ac1f4a1f7b",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        153.220847,
+        145.407838
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "4d90765c-d79a-4f2c-bd5e-aad11f8a52da",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        161.920847,
+        146.007838
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "548af1b4-da49-47d7-bc45-493b25f51b38",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        162.5125,
+        145.75
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "5f8d4ff9-8231-443e-9633-d6a814bdaae5",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        146.7625,
+        130.5
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "61cce8b4-58da-4366-8811-7059872fe30f",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        134.4375,
+        104.075
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "ab2517d7-7a46-42b6-b569-7f0bebb1eff3",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        150.0875,
+        113.25
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "ad5d42a9-bf5f-476c-8304-b4b8349a564c",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        148.720847,
+        133.642162
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "bf238942-4ea5-44d1-be26-736c9a2df0a8",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        148.1625,
+        133.4
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "c7626931-3436-435d-9710-5d4dd7210cbd",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        154.6875,
+        105.95
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "cad23696-48bb-4c6c-a29e-b6450689c0eb",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        148.720847,
+        134.207838
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "dabf1bcb-983d-43cd-abdc-8431144db4db",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        150.0875,
+        109.25
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "f34827a6-249e-47c5-b276-f2b15a876dc2",
+      "net": "LOGIC_PG",
+      "xyMm": [
+        142.1625,
+        100.8
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "1cf56903-d1f1-49dc-943a-f801f0133721",
+      "net": "HEARTBEAT_VALID",
+      "xyMm": [
+        159.0625,
+        109.05
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "8ce54da2-b2e4-46f4-8d76-685b0796c905",
+      "net": "HEARTBEAT_VALID",
+      "xyMm": [
+        150.8125,
+        103.725
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "8e34a049-2369-4987-8dbf-fa79d37170b9",
+      "net": "WD_SET",
+      "xyMm": [
+        165.1375,
+        111.625
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "bbd85cda-24c5-4dec-80c7-f9e8cb4b5781",
+      "net": "WD_SET",
+      "xyMm": [
+        165.675,
+        111.5
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    },
+    {
+      "uuid": "c37aa6f8-86f9-46f2-a2b1-181c06e93fd3",
+      "net": "WD_SET",
+      "xyMm": [
+        165.075,
+        113.6
+      ],
+      "filled": true,
+      "capped": true,
+      "frontTenting": 1,
+      "backTenting": 1
+    }
+  ],
+  "existingFootprintCount": 263,
+  "finalFootprintCount": 281,
+  "declaredOldCopperRemovals": 55,
+  "retainedOriginalCopper": 2804,
+  "finalDrcSha256": "e7fb2492508ad2e82a3a72276bcd15a3920c1fe5ac4d0754b4c987e596fad82c",
+  "modelReferenceCount": 277,
+  "allFootprintCoarseBodyPadIntersections": [
+    {
+      "references": [
+        "J1",
+        "H1"
+      ],
+      "overlapBBoxMm": [
+        2.675,
+        2.85
+      ],
+      "baselineGeometryUnchanged": true,
+      "disposition": "P2 verify actual connector housing/screw/enclosure geometry; coarse2D envelope is not proof of3D collision"
+    }
+  ]
+}

@@ -1,32 +1,18 @@
-# Chrysler scanner: completed routed prototype
+# Chrysler scanner: routed revision C prototype
 
-Read `README.md`, `reference/final-status.json` and `current/reference` final
-validation reports before editing. Firmware remains deferred. The active PCB
-is the single integrated-SD scanner board under `current`.
+Read README.md, reference/final-status.json and current/reference final reports before editing. The active native KiCad project is current/ChryslerScanner_V240_SD.kicad_pro. Firmware remains deferred. Manufacturing orders require their own user request.
 
 Accepted PCB SHA-256:
-`85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a`.
+`974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e`.
 
-Native DRC and ERC are clean; all 175 GND pads and every signal net are connected.
-Preserve all original scanner placements, 174 accepted protected copper objects,
-the outline and mounting holes, all nine zone/keepout definitions and existing
-rules, severities and exclusions. Keep In1 as the GND reference with no signal
-tracks. Minimum track width/clearance remain 0.15 mm.
+Native DRC/ERC/parity are clean; all 193 GND pads and all signal nets are connected. Preserve accepted original placements, retained copper, all nine zone/rule-area definitions, outline/holes, stackup, rules, severities and exclusions. Keep In1 as GND with no signal tracks; minimum width/clearance remain 0.15 mm. Work on a copy. Never run old setup_design.py or overwrite this native project with original Atopile output.
 
-The sole added-part placement adjustment is R112, from (172,121) to
-(172.05,121.075) mm. Its exact recorded exception and original accepted input
-are under `current/reference`. Do not treat historical incomplete routing
-prototypes as accepted boards. Work on a copy and rerun complete native DRC with
-zone refill, all severities, track checks and schematic parity, plus independent
-uncapped connectivity and preservation checks after any edit.
+The exact historical baseline, 55 permitted ADC/protected-supply copper removals and 24 restored ADC objects are frozen under current/reference/pre-p1. All 380 retained locked objects and 173 retained historical protected objects are exact. All original component placements and frozen six SD assignments are preserved; no experimental C31/IO0/power/SD fanout exceptions were adopted. R112's prior accepted (172.05,121.075) mm placement remains unchanged. These are provenance exceptions, not permission to expand future changes silently.
 
-Filled/capped/planarized via-in-pad processing and saved tenting flags are part
-of this board's manufacturing requirements. See MANUFACTURING-NOTES.md.
-Never run old setup_design.py over this project or overwrite it with the
-original Atopile layout. Manufacturing orders and firmware work require their
-own user request. No order or external upload has been performed.
+After any edit, export fresh native XML and all-severity ERC, then full DRC with --all-track-errors --schematic-parity --severity-all --refill-zones. Run current/source/verify_safety_revision.py using KiCad 10 Python (full mode, not structural-only) and verify_safety_bounds.py. The primary audit checks 277 components, 23 value exceptions, 15 original endpoint changes, all new pin contracts, 24 recovered capacitor ratings, 23 sheets/pages, 168 hierarchy ports, complete uncapped native connectivity, body overlap, outline and preservation. Old verification scripts/reports have superseded counts and cannot certify Rev C.
 
-J1 and protection now share `06_obd-protection.kicad_sch`. The PCB hash above
-includes the J1 sheet-path metadata correction only; physical routing is unchanged.
-Run `current/source/verify_system_hierarchy.py` after new native ERC/netlist/DRC
-exports to check the 156 ports and all 194 original named net endpoint sets.
+GPIO13/pad20 ACT_LED is now a DEDICATED software health heartbeat and LED health indication. Only the safety task may pulse it every 10 ms after required tasks vote healthy; remove legacy activity writers, autonomous PWM/DMA and blink interrupts. Legacy firmware may accidentally retrigger the watchdog and must not be used for active operation. GPIO2/pad22 remains NC. Firmware and ADC calibration work require their own user request. Follow the safety startup/recovery contract before commands.
+
+The declared prototype envelope is normal 9–16 V and bounded protected-input/VPP ≤28 V including overshoot. No sustained 24 V/jump-start, automotive qualification or vehicle validation is claimed. Exact generic procurement parts and bench/thermal/mechanical qualification remain. Do not weaken those limits without a new engineering review.
+
+Filled/copper-capped/planarized processing at the recorded vias is mandatory. Preserve saved processing flags; tenting is not filling. See current/reference/MANUFACTURING-NOTES.md. After clean checks and final adversarial review, regenerate local fabrication/PDF/BOM/project archives with current/source/package_rev_c.py; it gates final hashes and never orders/uploads.

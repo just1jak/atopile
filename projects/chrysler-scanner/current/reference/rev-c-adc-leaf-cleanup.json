@@ -1,0 +1,10 @@
+{
+  "removedOriginalAdcLeafIds": [
+    "f9d08713-eb2c-4a6a-a279-0a5f9b11b49a",
+    "137ad3f5-fe8b-4de7-b272-aa0b762350b8"
+  ],
+  "reason": "Native DRC confirmed redundant dangling V_BA leaves after ADC isolation reroute; independently verified unlocked original ADC scope, not historical protected copper",
+  "remainingRestoredOriginalAdcCount": 25,
+  "allowedOriginalCopperRemovals": 54,
+  "pcbSha256": "c8966651f01369b3388993531d9c9b4594f6e459a2cfe3dfaaebb69343a588c4"
+}

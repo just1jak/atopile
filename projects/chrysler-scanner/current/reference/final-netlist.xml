@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\Users\just3\Documents\Scanner\projects\chrysler-scanner\current\ChryslerScanner_V240_SD.kicad_sch</source>
-    <date>2026-10-21T13:10:30</date>
+    <source>C:\Users\just3\Documents\Scanner\projects\chrysler-scanner\work\p1-remediation\candidate\ChryslerScanner_V240_SD.kicad_sch</source>
+    <date>2026-10-21T23:23:15</date>
     <tool>Eeschema 10.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>ChryslerScanner V240 - system block diagram</title>
         <company>ChryslerScanner / atopile</company>
-        <rev>V240-SD</rev>
+        <rev>V240-SD-C</rev>
         <date>2026-10-21</date>
         <source>ChryslerScanner_V240_SD.kicad_sch</source>
         <comment number="1" value=""/>
@@ -389,6 +389,24 @@
         <rev>V240-C/OBD</rev>
         <date>2026-10-13</date>
         <source>11_power-7v5.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="23" name="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/">
+      <title_block>
+        <title>Hardware safety / ADC isolation</title>
+        <company/>
+        <rev>V240-SD-C</rev>
+        <date>2026-10-21</date>
+        <source>23_hardware-safety.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -1366,12 +1384,14 @@
       <footprint>footprints:C_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">c26</field>
+        <field name="Voltage Rating">10V</field>
         <field name="Footprint">footprints:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C26" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c26"/>
+      <property name="Voltage Rating" value="10V"/>
       <property name="Sheetname" value="ESP32 + RF"/>
       <property name="Sheetfile" value="16_mcu.kicad_sch"/>
       <sheetpath names="/ESP32 + RF/" tstamps="/dafba844-e0ed-5189-9d62-63659a892123/"/>
@@ -1390,12 +1410,14 @@
       <footprint>footprints:C_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">c27</field>
+        <field name="Voltage Rating">10V</field>
         <field name="Footprint">footprints:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C27" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c27"/>
+      <property name="Voltage Rating" value="10V"/>
       <property name="Sheetname" value="ESP32 + RF"/>
       <property name="Sheetfile" value="16_mcu.kicad_sch"/>
       <sheetpath names="/ESP32 + RF/" tstamps="/dafba844-e0ed-5189-9d62-63659a892123/"/>
@@ -1851,12 +1873,14 @@
       <footprint>footprints:C_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">c35</field>
+        <field name="Voltage Rating">10V</field>
         <field name="Footprint">footprints:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C35" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c35"/>
+      <property name="Voltage Rating" value="10V"/>
       <property name="Sheetname" value="USB + reset / boot"/>
       <property name="Sheetfile" value="19_usb.kicad_sch"/>
       <sheetpath names="/USB + reset / boot/" tstamps="/1a324728-1d33-5386-99ad-5d39e8f946d4/"/>
@@ -2296,12 +2320,14 @@
       <footprint>footprints:CP_Radial_D8.0mm_P3.50mm</footprint>
       <fields>
         <field name="atopile_address">c1</field>
+        <field name="Voltage Rating">50V</field>
         <field name="Footprint">footprints:CP_Radial_D8.0mm_P3.50mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C1" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c1"/>
+      <property name="Voltage Rating" value="50V"/>
       <property name="Sheetname" value="Vehicle power input"/>
       <property name="Sheetfile" value="07_vehicle-input.kicad_sch"/>
       <sheetpath names="/Vehicle power input/" tstamps="/0fa4b058-4feb-583b-8296-ab82d4297b8b/"/>
@@ -2316,7 +2342,7 @@
       </units>
     </comp>
     <comp ref="D1">
-      <value>SMBJ30CA</value>
+      <value>SMBJ16CA</value>
       <footprint>footprints:D_SMB</footprint>
       <fields>
         <field name="atopile_address">d1</field>
@@ -2692,12 +2718,14 @@
       <footprint>footprints:C_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">c56</field>
+        <field name="Voltage Rating">10V</field>
         <field name="Footprint">footprints:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C56" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c56"/>
+      <property name="Voltage Rating" value="10V"/>
       <property name="Sheetname" value="I/O expander + I2C"/>
       <property name="Sheetfile" value="18_control.kicad_sch"/>
       <sheetpath names="/I/O expander + I2C/" tstamps="/28c29c45-2882-5ba2-8271-25819e81bba6/"/>
@@ -3417,12 +3445,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c4</field>
+        <field name="Voltage Rating">50V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C4" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c4"/>
+      <property name="Voltage Rating" value="50V"/>
       <property name="Sheetname" value="5 V / 3.3 V supplies"/>
       <property name="Sheetfile" value="08_power-5v.kicad_sch"/>
       <sheetpath names="/5 V / 3.3 V supplies/" tstamps="/8b2918f6-133a-526b-9e0d-76336bfda048/"/>
@@ -3441,12 +3471,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c5</field>
+        <field name="Voltage Rating">100V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C5" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c5"/>
+      <property name="Voltage Rating" value="100V"/>
       <property name="Sheetname" value="5 V / 3.3 V supplies"/>
       <property name="Sheetfile" value="08_power-5v.kicad_sch"/>
       <sheetpath names="/5 V / 3.3 V supplies/" tstamps="/8b2918f6-133a-526b-9e0d-76336bfda048/"/>
@@ -3465,12 +3497,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c6</field>
+        <field name="Voltage Rating">25V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C6" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c6"/>
+      <property name="Voltage Rating" value="25V"/>
       <property name="Sheetname" value="5 V / 3.3 V supplies"/>
       <property name="Sheetfile" value="08_power-5v.kicad_sch"/>
       <sheetpath names="/5 V / 3.3 V supplies/" tstamps="/8b2918f6-133a-526b-9e0d-76336bfda048/"/>
@@ -3489,12 +3523,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c7</field>
+        <field name="Voltage Rating">25V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C7" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c7"/>
+      <property name="Voltage Rating" value="25V"/>
       <property name="Sheetname" value="5 V / 3.3 V supplies"/>
       <property name="Sheetfile" value="08_power-5v.kicad_sch"/>
       <sheetpath names="/5 V / 3.3 V supplies/" tstamps="/8b2918f6-133a-526b-9e0d-76336bfda048/"/>
@@ -3513,12 +3549,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c8</field>
+        <field name="Voltage Rating">25V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C8" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c8"/>
+      <property name="Voltage Rating" value="25V"/>
       <property name="Sheetname" value="5 V / 3.3 V supplies"/>
       <property name="Sheetfile" value="08_power-5v.kicad_sch"/>
       <sheetpath names="/5 V / 3.3 V supplies/" tstamps="/8b2918f6-133a-526b-9e0d-76336bfda048/"/>
@@ -3537,12 +3575,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c9</field>
+        <field name="Voltage Rating">25V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C9" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c9"/>
+      <property name="Voltage Rating" value="25V"/>
       <property name="Sheetname" value="5 V / 3.3 V supplies"/>
       <property name="Sheetfile" value="08_power-5v.kicad_sch"/>
       <sheetpath names="/5 V / 3.3 V supplies/" tstamps="/8b2918f6-133a-526b-9e0d-76336bfda048/"/>
@@ -3561,12 +3601,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c10</field>
+        <field name="Voltage Rating">25V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C10" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c10"/>
+      <property name="Voltage Rating" value="25V"/>
       <property name="Sheetname" value="5 V / 3.3 V supplies"/>
       <property name="Sheetfile" value="08_power-5v.kicad_sch"/>
       <sheetpath names="/5 V / 3.3 V supplies/" tstamps="/8b2918f6-133a-526b-9e0d-76336bfda048/"/>
@@ -4225,7 +4267,7 @@
       </units>
     </comp>
     <comp ref="R49">
-      <value>8.66kΩ</value>
+      <value>22k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r49</field>
@@ -4249,7 +4291,7 @@
       </units>
     </comp>
     <comp ref="R50">
-      <value>1.62kΩ</value>
+      <value>1.62k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r50</field>
@@ -4273,7 +4315,7 @@
       </units>
     </comp>
     <comp ref="R51">
-      <value>8.66kΩ</value>
+      <value>22k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r51</field>
@@ -4297,7 +4339,7 @@
       </units>
     </comp>
     <comp ref="R52">
-      <value>1.62kΩ</value>
+      <value>1.62k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r52</field>
@@ -4321,7 +4363,7 @@
       </units>
     </comp>
     <comp ref="R53">
-      <value>18.2kΩ</value>
+      <value>22k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r53</field>
@@ -4345,7 +4387,7 @@
       </units>
     </comp>
     <comp ref="R54">
-      <value>1.62kΩ</value>
+      <value>1.62k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r54</field>
@@ -4761,12 +4803,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c13</field>
+        <field name="Voltage Rating">50V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C13" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c13"/>
+      <property name="Voltage Rating" value="50V"/>
       <property name="Sheetname" value="VPP boost supply"/>
       <property name="Sheetfile" value="09_power-vpp.kicad_sch"/>
       <sheetpath names="/VPP boost supply/" tstamps="/fae9fc47-44e4-56d1-add1-102db9cad16d/"/>
@@ -4785,12 +4829,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c14</field>
+        <field name="Voltage Rating">50V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C14" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c14"/>
+      <property name="Voltage Rating" value="50V"/>
       <property name="Sheetname" value="VPP boost supply"/>
       <property name="Sheetfile" value="09_power-vpp.kicad_sch"/>
       <sheetpath names="/VPP boost supply/" tstamps="/fae9fc47-44e4-56d1-add1-102db9cad16d/"/>
@@ -4809,12 +4855,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c15</field>
+        <field name="Voltage Rating">50V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C15" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c15"/>
+      <property name="Voltage Rating" value="50V"/>
       <property name="Sheetname" value="VPP boost supply"/>
       <property name="Sheetfile" value="09_power-vpp.kicad_sch"/>
       <sheetpath names="/VPP boost supply/" tstamps="/fae9fc47-44e4-56d1-add1-102db9cad16d/"/>
@@ -4833,12 +4881,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c16</field>
+        <field name="Voltage Rating">50V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C16" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c16"/>
+      <property name="Voltage Rating" value="50V"/>
       <property name="Sheetname" value="VPP boost supply"/>
       <property name="Sheetfile" value="09_power-vpp.kicad_sch"/>
       <sheetpath names="/VPP boost supply/" tstamps="/fae9fc47-44e4-56d1-add1-102db9cad16d/"/>
@@ -5366,7 +5416,7 @@
       </units>
     </comp>
     <comp ref="Q8">
-      <value>HSW4602</value>
+      <value>DMC3071LVT-7</value>
       <footprint>footprints:SOT-23-6</footprint>
       <fields>
         <field name="atopile_address">q8</field>
@@ -5398,7 +5448,7 @@
       </units>
     </comp>
     <comp ref="Q12">
-      <value>HSW4602</value>
+      <value>DMG6601LVT-7</value>
       <footprint>footprints:SOT-23-6</footprint>
       <fields>
         <field name="atopile_address">q12</field>
@@ -5502,7 +5552,7 @@
       </units>
     </comp>
     <comp ref="R64">
-      <value>4.7kΩ</value>
+      <value>4.7k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r64</field>
@@ -5526,7 +5576,7 @@
       </units>
     </comp>
     <comp ref="R65">
-      <value>1.1kΩ</value>
+      <value>8.2k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r65</field>
@@ -5598,7 +5648,7 @@
       </units>
     </comp>
     <comp ref="Q9">
-      <value>HSW4602</value>
+      <value>DMC3071LVT-7</value>
       <footprint>footprints:SOT-23-6</footprint>
       <fields>
         <field name="atopile_address">q9</field>
@@ -5630,7 +5680,7 @@
       </units>
     </comp>
     <comp ref="Q13">
-      <value>HSW4602</value>
+      <value>DMG6601LVT-7</value>
       <footprint>footprints:SOT-23-6</footprint>
       <fields>
         <field name="atopile_address">q13</field>
@@ -5734,7 +5784,7 @@
       </units>
     </comp>
     <comp ref="R67">
-      <value>4.7kΩ</value>
+      <value>4.7k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r67</field>
@@ -5758,7 +5808,7 @@
       </units>
     </comp>
     <comp ref="R68">
-      <value>1.1kΩ</value>
+      <value>8.2k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r68</field>
@@ -5786,12 +5836,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c17</field>
+        <field name="Voltage Rating">100V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C17" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c17"/>
+      <property name="Voltage Rating" value="100V"/>
       <property name="Sheetname" value="VBB supply"/>
       <property name="Sheetfile" value="10_power-vbb.kicad_sch"/>
       <sheetpath names="/VBB supply/" tstamps="/b691e5db-65dd-5bde-b591-124c57215619/"/>
@@ -5810,12 +5862,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c18</field>
+        <field name="Voltage Rating">25V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C18" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c18"/>
+      <property name="Voltage Rating" value="25V"/>
       <property name="Sheetname" value="VBB supply"/>
       <property name="Sheetfile" value="10_power-vbb.kicad_sch"/>
       <sheetpath names="/VBB supply/" tstamps="/b691e5db-65dd-5bde-b591-124c57215619/"/>
@@ -5834,12 +5888,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c19</field>
+        <field name="Voltage Rating">25V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C19" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c19"/>
+      <property name="Voltage Rating" value="25V"/>
       <property name="Sheetname" value="VBB supply"/>
       <property name="Sheetfile" value="10_power-vbb.kicad_sch"/>
       <sheetpath names="/VBB supply/" tstamps="/b691e5db-65dd-5bde-b591-124c57215619/"/>
@@ -6312,7 +6368,7 @@
       </units>
     </comp>
     <comp ref="Q10">
-      <value>HSW4602</value>
+      <value>DMC3071LVT-7</value>
       <footprint>footprints:SOT-23-6</footprint>
       <fields>
         <field name="atopile_address">q10</field>
@@ -6344,7 +6400,7 @@
       </units>
     </comp>
     <comp ref="Q14">
-      <value>HSW4602</value>
+      <value>DMG6601LVT-7</value>
       <footprint>footprints:SOT-23-6</footprint>
       <fields>
         <field name="atopile_address">q14</field>
@@ -6448,7 +6504,7 @@
       </units>
     </comp>
     <comp ref="R70">
-      <value>4.7kΩ</value>
+      <value>4.7k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r70</field>
@@ -6472,7 +6528,7 @@
       </units>
     </comp>
     <comp ref="R71">
-      <value>1.1kΩ</value>
+      <value>8.2k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r71</field>
@@ -6544,7 +6600,7 @@
       </units>
     </comp>
     <comp ref="Q11">
-      <value>HSW4602</value>
+      <value>DMC3071LVT-7</value>
       <footprint>footprints:SOT-23-6</footprint>
       <fields>
         <field name="atopile_address">q11</field>
@@ -6576,7 +6632,7 @@
       </units>
     </comp>
     <comp ref="Q15">
-      <value>HSW4602</value>
+      <value>DMG6601LVT-7</value>
       <footprint>footprints:SOT-23-6</footprint>
       <fields>
         <field name="atopile_address">q15</field>
@@ -6680,7 +6736,7 @@
       </units>
     </comp>
     <comp ref="R73">
-      <value>4.7kΩ</value>
+      <value>4.7k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r73</field>
@@ -6704,7 +6760,7 @@
       </units>
     </comp>
     <comp ref="R74">
-      <value>1.1kΩ</value>
+      <value>8.2k 1%</value>
       <footprint>footprints:R_0603_1608Metric</footprint>
       <fields>
         <field name="atopile_address">r74</field>
@@ -6732,12 +6788,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c20</field>
+        <field name="Voltage Rating">50V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C20" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c20"/>
+      <property name="Voltage Rating" value="50V"/>
       <property name="Sheetname" value="7.5 V supply"/>
       <property name="Sheetfile" value="11_power-7v5.kicad_sch"/>
       <sheetpath names="/7.5 V supply/" tstamps="/c458c47b-e020-51c7-843f-83257f39000b/"/>
@@ -6756,12 +6814,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c21</field>
+        <field name="Voltage Rating">100V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C21" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c21"/>
+      <property name="Voltage Rating" value="100V"/>
       <property name="Sheetname" value="7.5 V supply"/>
       <property name="Sheetfile" value="11_power-7v5.kicad_sch"/>
       <sheetpath names="/7.5 V supply/" tstamps="/c458c47b-e020-51c7-843f-83257f39000b/"/>
@@ -6780,12 +6840,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c22</field>
+        <field name="Voltage Rating">25V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C22" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c22"/>
+      <property name="Voltage Rating" value="25V"/>
       <property name="Sheetname" value="7.5 V supply"/>
       <property name="Sheetfile" value="11_power-7v5.kicad_sch"/>
       <sheetpath names="/7.5 V supply/" tstamps="/c458c47b-e020-51c7-843f-83257f39000b/"/>
@@ -6804,12 +6866,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c23</field>
+        <field name="Voltage Rating">25V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C23" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c23"/>
+      <property name="Voltage Rating" value="25V"/>
       <property name="Sheetname" value="7.5 V supply"/>
       <property name="Sheetfile" value="11_power-7v5.kicad_sch"/>
       <sheetpath names="/7.5 V supply/" tstamps="/c458c47b-e020-51c7-843f-83257f39000b/"/>
@@ -6828,12 +6892,14 @@
       <footprint>footprints:C_1206_3216Metric</footprint>
       <fields>
         <field name="atopile_address">c24</field>
+        <field name="Voltage Rating">25V</field>
         <field name="Footprint">footprints:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C24" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c24"/>
+      <property name="Voltage Rating" value="25V"/>
       <property name="Sheetname" value="7.5 V supply"/>
       <property name="Sheetfile" value="11_power-7v5.kicad_sch"/>
       <sheetpath names="/7.5 V supply/" tstamps="/c458c47b-e020-51c7-843f-83257f39000b/"/>
@@ -7096,6 +7162,428 @@
         <unit name="B">
           <pins>
             <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C62">
+      <value>100nF 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="C62" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>c24dbfe2-bec3-5a8c-b877-eab65a3cb14f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C63">
+      <value>100nF 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="C63" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>cf599c0d-2bb7-572b-885b-35f692630125</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C64">
+      <value>100nF 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="C64" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>2d4455e5-65ef-5427-aa38-31c754184e02</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C65">
+      <value>100nF 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="C65" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>aa9184f2-b2b0-5723-b9ce-f6568f7d9d6b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D30">
+      <value>BZT52H-B15</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BZT52H_SER.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123F</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BZT52H_SER.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="D30" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>ad09bf3a-7b89-51d5-b214-7d808dc1a867</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R115">
+      <value>100k 0.1% 25ppm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="R115" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>4cb68076-37a2-5f43-9c2c-90383ac0dceb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R116">
+      <value>191k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="R116" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>1400a7b6-786d-51ee-8ba5-30830af7f535</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R117">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="R117" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>06269549-0938-5b07-9aea-31a76a0930b2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R118">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="R118" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>3a8a0eea-fee7-5288-a91f-4c871d643ff3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R119">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="R119" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>d16e1983-941e-5c86-9f49-1180802db57b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R120">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="R120" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>492bc3f4-9556-57ef-b7bc-9be205bae29d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R121">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="R121" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>c274d99f-c36d-5d95-9d50-4344a233b04f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R122">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="R122" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>b118df2c-b682-5b5a-b901-15f8cde45c89</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R123">
+      <value>1k 1W 1%</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_2512_6332Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="R123" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>fbee7f4a-e705-5a2d-ab39-987ca9035cda</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U21">
+      <value>TMUX1511PWR</value>
+      <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tmux1511.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_SO:TSSOP-14_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tmux1511.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="U21" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>a0d4a280-3e1f-5a02-baf4-612e106f0b0b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U22">
+      <value>LTC6993HS6-2#TRMPBF</value>
+      <footprint>Package_TO_SOT_SMD:TSOT-23-6</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6993-6993-1-6993-2-6993-3-6993-4.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-6</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6993-6993-1-6993-2-6993-3-6993-4.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="U22" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>8e1616be-7175-5c5b-8215-1bbf2b2341b5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U23">
+      <value>SN74LVC1G11DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="U23" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>c338cd61-ed49-5ef4-939d-0e2e749578e7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U24">
+      <value>TLV803EA30DBZR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-3</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tlv803e.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-3</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv803e.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Safety" part="U24" description=""/>
+      <property name="Sheetname" value="Hardware safety + ADC isolation"/>
+      <property name="Sheetfile" value="23_hardware-safety.kicad_sch"/>
+      <sheetpath names="/Hardware safety + ADC isolation/" tstamps="/395d158b-6871-5c52-858c-0e836c236f32/"/>
+      <tstamps>47651158-9962-5597-a4f4-dd014b57134d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
           </pins>
         </unit>
       </units>
@@ -11052,6 +11540,261 @@
         <pin num="3" name="VO" type="power_out"/>
       </pins>
     </libpart>
+    <libpart lib="Safety" part="C62">
+      <fields>
+        <field name="Reference">C62</field>
+        <field name="Value">100nF 16V X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="C63">
+      <fields>
+        <field name="Reference">C63</field>
+        <field name="Value">100nF 16V X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="C64">
+      <fields>
+        <field name="Reference">C64</field>
+        <field name="Value">100nF 16V X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="C65">
+      <fields>
+        <field name="Reference">C65</field>
+        <field name="Value">100nF 16V X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="D30">
+      <fields>
+        <field name="Reference">D30</field>
+        <field name="Value">BZT52H-B15</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="R115">
+      <fields>
+        <field name="Reference">R115</field>
+        <field name="Value">100k 0.1% 25ppm</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="R116">
+      <fields>
+        <field name="Reference">R116</field>
+        <field name="Value">191k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="R117">
+      <fields>
+        <field name="Reference">R117</field>
+        <field name="Value">100k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="R118">
+      <fields>
+        <field name="Reference">R118</field>
+        <field name="Value">10k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="R119">
+      <fields>
+        <field name="Reference">R119</field>
+        <field name="Value">10k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="R120">
+      <fields>
+        <field name="Reference">R120</field>
+        <field name="Value">100k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="R121">
+      <fields>
+        <field name="Reference">R121</field>
+        <field name="Value">100k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="R122">
+      <fields>
+        <field name="Reference">R122</field>
+        <field name="Value">100k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="R123">
+      <fields>
+        <field name="Reference">R123</field>
+        <field name="Value">1k 1W 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="U21">
+      <fields>
+        <field name="Reference">U21</field>
+        <field name="Value">TMUX1511PWR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="power_in"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="11" name="11" type="passive"/>
+        <pin num="12" name="12" type="passive"/>
+        <pin num="13" name="13" type="passive"/>
+        <pin num="14" name="14" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="U22">
+      <fields>
+        <field name="Reference">U22</field>
+        <field name="Value">LTC6993HS6-2#TRMPBF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="power_in"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="power_in"/>
+        <pin num="6" name="6" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="U23">
+      <fields>
+        <field name="Reference">U23</field>
+        <field name="Value">SN74LVC1G11DBVR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="power_in"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="output"/>
+        <pin num="5" name="5" type="power_in"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Safety" part="U24">
+      <fields>
+        <field name="Reference">U24</field>
+        <field name="Value">TLV803EA30DBZR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="power_in"/>
+        <pin num="2" name="2" type="open_collector"/>
+        <pin num="3" name="3" type="power_in"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="ChryslerScanner">
@@ -11059,6 +11802,9 @@
     </library>
     <library logical="SDLogger">
       <uri>${KIPRJMOD}/SDLogger.kicad_sym</uri>
+    </library>
+    <library logical="Safety">
+      <uri>${KIPRJMOD}/Safety.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
@@ -11078,6 +11824,10 @@
       <node ref="C43" pin="1" pintype="passive"/>
       <node ref="C56" pin="1" pintype="passive"/>
       <node ref="C57" pin="1" pintype="passive"/>
+      <node ref="C62" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C63" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C64" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C65" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="D6" pin="2" pintype="passive"/>
       <node ref="J3" pin="3" pintype="passive"/>
       <node ref="Q2" pin="2" pintype="passive"/>
@@ -11089,6 +11839,8 @@
       <node ref="R112" pin="1" pintype="passive"/>
       <node ref="R113" pin="1" pintype="passive"/>
       <node ref="R114" pin="1" pintype="passive"/>
+      <node ref="R116" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R119" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R28" pin="1" pintype="passive"/>
       <node ref="R30" pin="1" pintype="passive"/>
       <node ref="R33" pin="2" pintype="passive"/>
@@ -11117,6 +11869,10 @@
       <node ref="U14" pin="8" pintype="passive"/>
       <node ref="U15" pin="8" pintype="passive"/>
       <node ref="U19" pin="21" pintype="passive"/>
+      <node ref="U21" pin="14" pinfunction="14_14" pintype="power_in"/>
+      <node ref="U22" pin="5" pinfunction="5_5" pintype="power_in"/>
+      <node ref="U23" pin="5" pinfunction="5_5" pintype="power_in"/>
+      <node ref="U24" pin="3" pinfunction="3_3" pintype="power_in"/>
       <node ref="U4" pin="1" pintype="passive"/>
       <node ref="U4" pin="2" pintype="passive"/>
     </net>
@@ -11165,23 +11921,25 @@
     </net>
     <net code="4" name="+12V" class="Power">
       <node ref="C1" pin="1" pintype="passive"/>
-      <node ref="C11" pin="2" pintype="passive"/>
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="C20" pin="1" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="D2" pin="1" pintype="passive"/>
       <node ref="L2" pin="1" pintype="passive"/>
       <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R123" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R49" pin="1" pintype="passive"/>
       <node ref="U2" pin="5" pintype="passive"/>
       <node ref="U5" pin="5" pintype="passive"/>
       <node ref="U7" pin="5" pintype="passive"/>
-      <node ref="U9" pin="5" pintype="passive"/>
     </net>
     <net code="5" name="ACT_LED" class="Default">
       <node ref="Q20" pin="1" pintype="passive"/>
+      <node ref="R118" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R96" pin="1" pintype="passive"/>
       <node ref="U10" pin="20" pintype="passive"/>
+      <node ref="U22" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="6" name="CCD+" class="Default">
       <node ref="C50" pin="1" pintype="passive"/>
@@ -11225,6 +11983,7 @@
       <node ref="R48" pin="2" pintype="passive"/>
       <node ref="SW1" pin="2" pintype="passive"/>
       <node ref="U10" pin="9" pintype="passive"/>
+      <node ref="U23" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="14" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
@@ -11282,6 +12041,10 @@
       <node ref="C6" pin="2" pintype="passive"/>
       <node ref="C60" pin="2" pintype="passive"/>
       <node ref="C61" pin="2" pintype="passive"/>
+      <node ref="C62" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C63" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C64" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C65" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C7" pin="2" pintype="passive"/>
       <node ref="C8" pin="2" pintype="passive"/>
       <node ref="C9" pin="2" pintype="passive"/>
@@ -11292,6 +12055,7 @@
       <node ref="D27" pin="2" pintype="passive"/>
       <node ref="D28" pin="2" pintype="passive"/>
       <node ref="D29" pin="2" pintype="passive"/>
+      <node ref="D30" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="D4" pin="2" pintype="passive"/>
       <node ref="D8" pin="2" pintype="passive"/>
       <node ref="D9" pin="2" pintype="passive"/>
@@ -11324,7 +12088,13 @@
       <node ref="Q9" pin="5" pintype="passive"/>
       <node ref="R102" pin="2" pintype="passive"/>
       <node ref="R103" pin="2" pintype="passive"/>
+      <node ref="R115" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R117" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R118" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R120" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R121" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R122" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R15" pin="2" pintype="passive"/>
       <node ref="R17" pin="2" pintype="passive"/>
       <node ref="R18" pin="2" pintype="passive"/>
@@ -11379,6 +12149,13 @@
       <node ref="U19" pin="9" pintype="passive"/>
       <node ref="U2" pin="2" pintype="passive"/>
       <node ref="U20" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U21" pin="11" pinfunction="11_11" pintype="passive"/>
+      <node ref="U21" pin="12" pinfunction="12_12" pintype="passive"/>
+      <node ref="U21" pin="13" pinfunction="13_13" pintype="passive"/>
+      <node ref="U21" pin="7" pinfunction="7_7" pintype="power_in"/>
+      <node ref="U22" pin="2" pinfunction="2_2" pintype="power_in"/>
+      <node ref="U23" pin="2" pinfunction="2_2" pintype="power_in"/>
+      <node ref="U24" pin="1" pinfunction="1_1" pintype="power_in"/>
       <node ref="U3" pin="3" pintype="passive"/>
       <node ref="U3" pin="5" pintype="passive"/>
       <node ref="U3" pin="7" pintype="passive"/>
@@ -11393,12 +12170,16 @@
       <node ref="U8" pin="7" pintype="passive"/>
       <node ref="U9" pin="2" pintype="passive"/>
     </net>
-    <net code="15" name="IO0" class="Default">
+    <net code="15" name="HEARTBEAT_VALID" class="Default">
+      <node ref="U22" pin="6" pinfunction="6_6" pintype="output"/>
+      <node ref="U23" pin="6" pinfunction="6_6" pintype="passive"/>
+    </net>
+    <net code="16" name="IO0" class="Default">
       <node ref="Q5" pin="3" pintype="passive"/>
       <node ref="SW2" pin="2" pintype="passive"/>
       <node ref="U10" pin="23" pintype="passive"/>
     </net>
-    <net code="16" name="J1962-2" class="Default">
+    <net code="17" name="J1962-2" class="Default">
       <node ref="C25" pin="1" pintype="passive"/>
       <node ref="D11" pin="1" pintype="passive"/>
       <node ref="D12" pin="1" pintype="passive"/>
@@ -11406,13 +12187,13 @@
       <node ref="R21" pin="1" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
     </net>
-    <net code="17" name="J1962-3" class="Default">
+    <net code="18" name="J1962-3" class="Default">
       <node ref="D13" pin="1" pintype="passive"/>
       <node ref="J1" pin="3" pintype="passive"/>
       <node ref="Q7" pin="3" pintype="passive"/>
       <node ref="R81" pin="1" pintype="passive"/>
     </net>
-    <net code="18" name="J1962-6" class="Default">
+    <net code="19" name="J1962-6" class="Default">
       <node ref="C36" pin="2" pintype="passive"/>
       <node ref="D15" pin="1" pintype="passive"/>
       <node ref="D19" pin="1" pintype="passive"/>
@@ -11420,13 +12201,13 @@
       <node ref="Q2" pin="6" pintype="passive"/>
       <node ref="R29" pin="2" pintype="passive"/>
     </net>
-    <net code="19" name="J1962-7" class="Default">
+    <net code="20" name="J1962-7" class="Default">
       <node ref="C42" pin="1" pintype="passive"/>
       <node ref="J1" pin="7" pintype="passive"/>
       <node ref="Q4" pin="6" pintype="passive"/>
       <node ref="R42" pin="2" pintype="passive"/>
     </net>
-    <net code="20" name="J1962-9" class="Default">
+    <net code="21" name="J1962-9" class="Default">
       <node ref="C40" pin="2" pintype="passive"/>
       <node ref="D16" pin="1" pintype="passive"/>
       <node ref="D20" pin="1" pintype="passive"/>
@@ -11434,13 +12215,13 @@
       <node ref="Q3" pin="3" pintype="passive"/>
       <node ref="R39" pin="1" pintype="passive"/>
     </net>
-    <net code="21" name="J1962-11" class="Default">
+    <net code="22" name="J1962-11" class="Default">
       <node ref="D14" pin="1" pintype="passive"/>
       <node ref="J1" pin="11" pintype="passive"/>
       <node ref="Q7" pin="6" pintype="passive"/>
       <node ref="R82" pin="1" pintype="passive"/>
     </net>
-    <net code="22" name="J1962-12" class="Default">
+    <net code="23" name="J1962-12" class="Default">
       <node ref="C37" pin="2" pintype="passive"/>
       <node ref="D17" pin="1" pintype="passive"/>
       <node ref="D21" pin="1" pintype="passive"/>
@@ -11448,7 +12229,7 @@
       <node ref="Q2" pin="3" pintype="passive"/>
       <node ref="R32" pin="1" pintype="passive"/>
     </net>
-    <net code="23" name="J1962-14" class="Default">
+    <net code="24" name="J1962-14" class="Default">
       <node ref="C39" pin="2" pintype="passive"/>
       <node ref="D18" pin="1" pintype="passive"/>
       <node ref="D22" pin="1" pintype="passive"/>
@@ -11456,147 +12237,154 @@
       <node ref="Q3" pin="6" pintype="passive"/>
       <node ref="R36" pin="2" pintype="passive"/>
     </net>
-    <net code="24" name="J1962-15" class="Default">
+    <net code="25" name="J1962-15" class="Default">
       <node ref="C44" pin="1" pintype="passive"/>
       <node ref="J1" pin="15" pintype="passive"/>
       <node ref="Q4" pin="3" pintype="passive"/>
       <node ref="R45" pin="2" pintype="passive"/>
     </net>
-    <net code="25" name="J1962-16" class="Power">
+    <net code="26" name="J1962-16" class="Power">
       <node ref="D1" pin="1" pintype="passive"/>
       <node ref="D2" pin="2" pintype="passive"/>
       <node ref="J1" pin="16" pintype="passive"/>
-      <node ref="R49" pin="1" pintype="passive"/>
     </net>
-    <net code="26" name="LNA_IN" class="RF">
+    <net code="27" name="LNA_IN" class="RF">
       <node ref="R22" pin="2" pintype="passive"/>
       <node ref="R24" pin="1" pintype="passive"/>
       <node ref="U10" pin="2" pintype="passive"/>
     </net>
-    <net code="27" name="LOG_BUTTON" class="Default">
+    <net code="28" name="LOGIC_PG" class="Default">
+      <node ref="R119" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U21" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U21" pin="10" pinfunction="10_10" pintype="passive"/>
+      <node ref="U21" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="U23" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="U24" pin="2" pinfunction="2_2" pintype="open_collector"/>
+    </net>
+    <net code="29" name="LOG_BUTTON" class="Default">
       <node ref="R113" pin="2" pintype="passive"/>
       <node ref="SW3" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U10" pin="6" pintype="passive"/>
     </net>
-    <net code="28" name="MCU_SD_CS" class="Default">
+    <net code="30" name="MCU_SD_CS" class="Default">
       <node ref="R106" pin="1" pintype="passive"/>
       <node ref="R112" pin="2" pintype="passive"/>
       <node ref="U10" pin="21" pintype="passive"/>
     </net>
-    <net code="29" name="MCU_SD_MOSI" class="Default">
+    <net code="31" name="MCU_SD_MOSI" class="Default">
       <node ref="R105" pin="1" pintype="passive"/>
       <node ref="U10" pin="27" pintype="passive"/>
     </net>
-    <net code="30" name="MCU_SD_SCK" class="Default">
+    <net code="32" name="MCU_SD_SCK" class="Default">
       <node ref="R104" pin="1" pintype="passive"/>
       <node ref="U10" pin="38" pintype="passive"/>
     </net>
-    <net code="31" name="N_C3_1" class="Power">
+    <net code="33" name="N_C3_1" class="Power">
       <node ref="C3" pin="1" pintype="passive"/>
       <node ref="D3" pin="2" pintype="passive"/>
       <node ref="JP2" pin="2" pintype="passive"/>
       <node ref="U1" pin="4" pintype="passive"/>
     </net>
-    <net code="32" name="N_C5_1" class="Default">
+    <net code="34" name="N_C5_1" class="Default">
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="U2" pin="1" pintype="passive"/>
     </net>
-    <net code="33" name="N_C5_2" class="Power">
+    <net code="35" name="N_C5_2" class="Power">
       <node ref="C5" pin="2" pintype="passive"/>
       <node ref="D4" pin="1" pintype="passive"/>
       <node ref="L1" pin="1" pintype="passive"/>
       <node ref="U2" pin="6" pintype="passive"/>
     </net>
-    <net code="34" name="N_C17_1" class="Power">
+    <net code="36" name="N_C17_1" class="Power">
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="U6" pin="1" pintype="passive"/>
     </net>
-    <net code="35" name="N_C17_2" class="Power">
+    <net code="37" name="N_C17_2" class="Power">
       <node ref="C17" pin="2" pintype="passive"/>
       <node ref="D8" pin="1" pintype="passive"/>
       <node ref="L4" pin="1" pintype="passive"/>
       <node ref="U6" pin="6" pintype="passive"/>
     </net>
-    <net code="36" name="N_C21_1" class="Power">
+    <net code="38" name="N_C21_1" class="Power">
       <node ref="C21" pin="1" pintype="passive"/>
       <node ref="U7" pin="1" pintype="passive"/>
     </net>
-    <net code="37" name="N_C21_2" class="Power">
+    <net code="39" name="N_C21_2" class="Power">
       <node ref="C21" pin="2" pintype="passive"/>
       <node ref="D9" pin="1" pintype="passive"/>
       <node ref="L6" pin="1" pintype="passive"/>
       <node ref="U7" pin="6" pintype="passive"/>
     </net>
-    <net code="38" name="N_C33_1" class="Default">
+    <net code="40" name="N_C33_1" class="Default">
       <node ref="C33" pin="1" pintype="passive"/>
       <node ref="U10" pin="26" pintype="passive"/>
     </net>
-    <net code="39" name="N_D7_2" class="Power">
+    <net code="41" name="N_D7_2" class="Power">
       <node ref="D7" pin="2" pintype="passive"/>
       <node ref="L2" pin="2" pintype="passive"/>
       <node ref="U5" pin="1" pintype="passive"/>
     </net>
-    <net code="40" name="N_J1_5" class="Default">
+    <net code="42" name="N_J1_5" class="Default">
       <node ref="J1" pin="5" pintype="passive"/>
       <node ref="JP1" pin="1" pintype="passive"/>
     </net>
-    <net code="41" name="N_Q1B_3" class="Default">
+    <net code="43" name="N_Q1B_3" class="Default">
       <node ref="D11" pin="2" pintype="passive"/>
       <node ref="Q1" pin="3" pintype="passive"/>
     </net>
-    <net code="42" name="N_Q8B_4" class="Default">
+    <net code="44" name="N_Q8B_4" class="Default">
       <node ref="D15" pin="2" pintype="passive"/>
       <node ref="Q8" pin="4" pintype="passive"/>
     </net>
-    <net code="43" name="N_Q9B_4" class="Default">
+    <net code="45" name="N_Q9B_4" class="Default">
       <node ref="D16" pin="2" pintype="passive"/>
       <node ref="Q9" pin="4" pintype="passive"/>
     </net>
-    <net code="44" name="N_Q10B_4" class="Default">
+    <net code="46" name="N_Q10B_4" class="Default">
       <node ref="D17" pin="2" pintype="passive"/>
       <node ref="Q10" pin="4" pintype="passive"/>
     </net>
-    <net code="45" name="N_Q11B_4" class="Default">
+    <net code="47" name="N_Q11B_4" class="Default">
       <node ref="D18" pin="2" pintype="passive"/>
       <node ref="Q11" pin="4" pintype="passive"/>
     </net>
-    <net code="46" name="N_Q12B_4" class="Default">
+    <net code="48" name="N_Q12B_4" class="Default">
       <node ref="D19" pin="2" pintype="passive"/>
       <node ref="Q12" pin="4" pintype="passive"/>
     </net>
-    <net code="47" name="N_Q13B_4" class="Default">
+    <net code="49" name="N_Q13B_4" class="Default">
       <node ref="D20" pin="2" pintype="passive"/>
       <node ref="Q13" pin="4" pintype="passive"/>
     </net>
-    <net code="48" name="N_Q14B_4" class="Default">
+    <net code="50" name="N_Q14B_4" class="Default">
       <node ref="D21" pin="2" pintype="passive"/>
       <node ref="Q14" pin="4" pintype="passive"/>
     </net>
-    <net code="49" name="N_Q15B_4" class="Default">
+    <net code="51" name="N_Q15B_4" class="Default">
       <node ref="D22" pin="2" pintype="passive"/>
       <node ref="Q15" pin="4" pintype="passive"/>
     </net>
-    <net code="50" name="N_Q17_3" class="Default">
+    <net code="52" name="N_Q17_3" class="Default">
       <node ref="D23" pin="1" pintype="passive"/>
       <node ref="Q17" pin="3" pintype="passive"/>
     </net>
-    <net code="51" name="N_Q18_3" class="Default">
+    <net code="53" name="N_Q18_3" class="Default">
       <node ref="D24" pin="1" pintype="passive"/>
       <node ref="Q18" pin="3" pintype="passive"/>
     </net>
-    <net code="52" name="N_Q19_3" class="Default">
+    <net code="54" name="N_Q19_3" class="Default">
       <node ref="D25" pin="1" pintype="passive"/>
       <node ref="Q19" pin="3" pintype="passive"/>
     </net>
-    <net code="53" name="N_Q20_3" class="Default">
+    <net code="55" name="N_Q20_3" class="Default">
       <node ref="D26" pin="1" pintype="passive"/>
       <node ref="Q20" pin="3" pintype="passive"/>
     </net>
-    <net code="54" name="N_R1_2" class="Default">
+    <net code="56" name="N_R1_2" class="Default">
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="U2" pin="4" pintype="passive"/>
     </net>
-    <net code="55" name="N_R2_1" class="Power">
+    <net code="57" name="N_R2_1" class="Power">
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="D5" pin="1" pintype="passive"/>
@@ -11605,51 +12393,51 @@
       <node ref="U3" pin="4" pintype="passive"/>
       <node ref="U3" pin="6" pintype="passive"/>
     </net>
-    <net code="56" name="N_R3_1" class="Default">
+    <net code="58" name="N_R3_1" class="Default">
       <node ref="R2" pin="2" pintype="passive"/>
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U2" pin="3" pintype="passive"/>
     </net>
-    <net code="57" name="N_R4_2" class="Default">
+    <net code="59" name="N_R4_2" class="Default">
       <node ref="R4" pin="2" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="U9" pin="1" pintype="passive"/>
     </net>
-    <net code="58" name="N_R6_2" class="Default">
+    <net code="60" name="N_R6_2" class="Default">
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="U9" pin="3" pintype="passive"/>
     </net>
-    <net code="59" name="N_R8_1" class="Power">
+    <net code="61" name="N_R8_1" class="Power">
       <node ref="C14" pin="1" pintype="passive"/>
       <node ref="D7" pin="1" pintype="passive"/>
       <node ref="L3" pin="1" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
     </net>
-    <net code="60" name="N_R8_2" class="Default">
+    <net code="62" name="N_R8_2" class="Default">
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="R9" pin="1" pintype="passive"/>
       <node ref="U5" pin="3" pintype="passive"/>
     </net>
-    <net code="61" name="N_R10_2" class="Default">
+    <net code="63" name="N_R10_2" class="Default">
       <node ref="R10" pin="2" pintype="passive"/>
       <node ref="U6" pin="4" pintype="passive"/>
     </net>
-    <net code="62" name="N_R11_1" class="Power">
+    <net code="64" name="N_R11_1" class="Power">
       <node ref="C18" pin="1" pintype="passive"/>
       <node ref="L4" pin="2" pintype="passive"/>
       <node ref="L5" pin="1" pintype="passive"/>
       <node ref="R11" pin="1" pintype="passive"/>
     </net>
-    <net code="63" name="N_R11_2" class="Default">
+    <net code="65" name="N_R11_2" class="Default">
       <node ref="R11" pin="2" pintype="passive"/>
       <node ref="R12" pin="1" pintype="passive"/>
       <node ref="U6" pin="3" pintype="passive"/>
     </net>
-    <net code="64" name="N_R13_2" class="Default">
+    <net code="66" name="N_R13_2" class="Default">
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="U7" pin="4" pintype="passive"/>
     </net>
-    <net code="65" name="N_R14_1" class="Power">
+    <net code="67" name="N_R14_1" class="Power">
       <node ref="C22" pin="1" pintype="passive"/>
       <node ref="C23" pin="1" pintype="passive"/>
       <node ref="D10" pin="1" pintype="passive"/>
@@ -11658,269 +12446,276 @@
       <node ref="U8" pin="4" pintype="passive"/>
       <node ref="U8" pin="6" pintype="passive"/>
     </net>
-    <net code="66" name="N_R14_2" class="Default">
+    <net code="68" name="N_R14_2" class="Default">
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="R15" pin="1" pintype="passive"/>
       <node ref="U7" pin="3" pintype="passive"/>
     </net>
-    <net code="67" name="N_R16_2" class="Default">
+    <net code="69" name="N_R16_2" class="Default">
       <node ref="R16" pin="2" pintype="passive"/>
       <node ref="R17" pin="1" pintype="passive"/>
       <node ref="U8" pin="2" pintype="passive"/>
     </net>
-    <net code="68" name="N_R19_2" class="Default">
+    <net code="70" name="N_R19_2" class="Default">
       <node ref="Q1" pin="2" pintype="passive"/>
       <node ref="R19" pin="2" pintype="passive"/>
     </net>
-    <net code="69" name="N_R20_2" class="Default">
+    <net code="71" name="N_R20_2" class="Default">
       <node ref="Q1" pin="5" pintype="passive"/>
       <node ref="Q1" pin="6" pintype="passive"/>
       <node ref="R20" pin="2" pintype="passive"/>
     </net>
-    <net code="70" name="N_R23_1" class="RF">
+    <net code="72" name="N_R23_1" class="RF">
       <node ref="AE1" pin="1" pintype="passive"/>
       <node ref="R22" pin="1" pintype="passive"/>
       <node ref="R23" pin="1" pintype="passive"/>
     </net>
-    <net code="71" name="N_R25_1" class="Default">
+    <net code="73" name="N_R25_1" class="Default">
       <node ref="R25" pin="1" pintype="passive"/>
       <node ref="U10" pin="41" pintype="passive"/>
     </net>
-    <net code="72" name="N_R26_2" class="Default">
+    <net code="74" name="N_R26_2" class="Default">
       <node ref="R26" pin="2" pintype="passive"/>
       <node ref="R27" pin="1" pintype="passive"/>
       <node ref="U12" pin="8" pintype="passive"/>
     </net>
-    <net code="73" name="N_R28_2" class="Default">
+    <net code="75" name="N_R28_2" class="Default">
       <node ref="R28" pin="2" pintype="passive"/>
       <node ref="U12" pin="9" pintype="passive"/>
     </net>
-    <net code="74" name="N_R30_2" class="Default">
+    <net code="76" name="N_R30_2" class="Default">
       <node ref="Q2" pin="1" pintype="passive"/>
       <node ref="R30" pin="2" pintype="passive"/>
       <node ref="U13" pin="2" pintype="passive"/>
     </net>
-    <net code="75" name="N_R33_1" class="Default">
+    <net code="77" name="N_R33_1" class="Default">
       <node ref="Q2" pin="4" pintype="passive"/>
       <node ref="R33" pin="1" pintype="passive"/>
       <node ref="U13" pin="6" pintype="passive"/>
     </net>
-    <net code="76" name="N_R37_2" class="Default">
+    <net code="78" name="N_R37_2" class="Default">
       <node ref="Q3" pin="1" pintype="passive"/>
       <node ref="R37" pin="2" pintype="passive"/>
       <node ref="U14" pin="2" pintype="passive"/>
     </net>
-    <net code="77" name="N_R40_1" class="Default">
+    <net code="79" name="N_R40_1" class="Default">
       <node ref="Q3" pin="4" pintype="passive"/>
       <node ref="R40" pin="1" pintype="passive"/>
       <node ref="U14" pin="6" pintype="passive"/>
     </net>
-    <net code="78" name="N_R43_2" class="Default">
+    <net code="80" name="N_R43_2" class="Default">
       <node ref="Q4" pin="1" pintype="passive"/>
       <node ref="R43" pin="2" pintype="passive"/>
       <node ref="U15" pin="2" pintype="passive"/>
     </net>
-    <net code="79" name="N_R46_2" class="Default">
+    <net code="81" name="N_R46_2" class="Default">
       <node ref="Q4" pin="4" pintype="passive"/>
       <node ref="R46" pin="2" pintype="passive"/>
       <node ref="U15" pin="6" pintype="passive"/>
     </net>
-    <net code="80" name="N_R56_2" class="Default">
+    <net code="82" name="N_R56_2" class="Default">
       <node ref="Q8" pin="3" pintype="passive"/>
       <node ref="Q8" pin="6" pintype="passive"/>
       <node ref="R56" pin="2" pintype="passive"/>
     </net>
-    <net code="81" name="N_R58_2" class="Default">
+    <net code="83" name="N_R58_2" class="Default">
       <node ref="Q9" pin="3" pintype="passive"/>
       <node ref="Q9" pin="6" pintype="passive"/>
       <node ref="R58" pin="2" pintype="passive"/>
     </net>
-    <net code="82" name="N_R60_2" class="Default">
+    <net code="84" name="N_R60_2" class="Default">
       <node ref="Q10" pin="3" pintype="passive"/>
       <node ref="Q10" pin="6" pintype="passive"/>
       <node ref="R60" pin="2" pintype="passive"/>
     </net>
-    <net code="83" name="N_R62_2" class="Default">
+    <net code="85" name="N_R62_2" class="Default">
       <node ref="Q11" pin="3" pintype="passive"/>
       <node ref="Q11" pin="6" pintype="passive"/>
       <node ref="R62" pin="2" pintype="passive"/>
     </net>
-    <net code="84" name="N_R64_2" class="Default">
+    <net code="86" name="N_R64_2" class="Default">
       <node ref="Q12" pin="3" pintype="passive"/>
       <node ref="R64" pin="2" pintype="passive"/>
       <node ref="R65" pin="1" pintype="passive"/>
     </net>
-    <net code="85" name="N_R65_2" class="Default">
+    <net code="87" name="N_R65_2" class="Default">
       <node ref="Q12" pin="6" pintype="passive"/>
       <node ref="R65" pin="2" pintype="passive"/>
     </net>
-    <net code="86" name="N_R67_2" class="Default">
+    <net code="88" name="N_R67_2" class="Default">
       <node ref="Q13" pin="3" pintype="passive"/>
       <node ref="R67" pin="2" pintype="passive"/>
       <node ref="R68" pin="1" pintype="passive"/>
     </net>
-    <net code="87" name="N_R68_2" class="Default">
+    <net code="89" name="N_R68_2" class="Default">
       <node ref="Q13" pin="6" pintype="passive"/>
       <node ref="R68" pin="2" pintype="passive"/>
     </net>
-    <net code="88" name="N_R70_2" class="Default">
+    <net code="90" name="N_R70_2" class="Default">
       <node ref="Q14" pin="3" pintype="passive"/>
       <node ref="R70" pin="2" pintype="passive"/>
       <node ref="R71" pin="1" pintype="passive"/>
     </net>
-    <net code="89" name="N_R71_2" class="Default">
+    <net code="91" name="N_R71_2" class="Default">
       <node ref="Q14" pin="6" pintype="passive"/>
       <node ref="R71" pin="2" pintype="passive"/>
     </net>
-    <net code="90" name="N_R73_2" class="Default">
+    <net code="92" name="N_R73_2" class="Default">
       <node ref="Q15" pin="3" pintype="passive"/>
       <node ref="R73" pin="2" pintype="passive"/>
       <node ref="R74" pin="1" pintype="passive"/>
     </net>
-    <net code="91" name="N_R74_2" class="Default">
+    <net code="93" name="N_R74_2" class="Default">
       <node ref="Q15" pin="6" pintype="passive"/>
       <node ref="R74" pin="2" pintype="passive"/>
     </net>
-    <net code="92" name="N_R76_2" class="Default">
+    <net code="94" name="N_R76_2" class="Default">
       <node ref="Q6" pin="5" pintype="passive"/>
       <node ref="Q6" pin="6" pintype="passive"/>
       <node ref="R76" pin="2" pintype="passive"/>
     </net>
-    <net code="93" name="N_R78_2" class="Default">
+    <net code="95" name="N_R78_2" class="Default">
       <node ref="Q7" pin="1" pintype="passive"/>
       <node ref="R78" pin="2" pintype="passive"/>
       <node ref="R79" pin="1" pintype="passive"/>
     </net>
-    <net code="94" name="N_R79_2" class="Default">
+    <net code="96" name="N_R79_2" class="Default">
       <node ref="Q7" pin="4" pintype="passive"/>
       <node ref="R79" pin="2" pintype="passive"/>
       <node ref="R80" pin="1" pintype="passive"/>
     </net>
-    <net code="95" name="N_R83_2" class="Default">
+    <net code="97" name="N_R83_2" class="Default">
       <node ref="R83" pin="2" pintype="passive"/>
       <node ref="U16" pin="3" pintype="passive"/>
     </net>
-    <net code="96" name="N_R84_2" class="Default">
+    <net code="98" name="N_R84_2" class="Default">
       <node ref="R84" pin="2" pintype="passive"/>
       <node ref="U16" pin="1" pintype="passive"/>
     </net>
-    <net code="97" name="N_R88_2" class="Default">
+    <net code="99" name="N_R88_2" class="Default">
       <node ref="R88" pin="2" pintype="passive"/>
       <node ref="U19" pin="23" pintype="passive"/>
+      <node ref="U23" pin="4" pinfunction="4_4" pintype="output"/>
     </net>
-    <net code="98" name="N_R89_2" class="Default">
+    <net code="100" name="N_R89_2" class="Default">
       <node ref="D23" pin="2" pintype="passive"/>
       <node ref="R89" pin="2" pintype="passive"/>
     </net>
-    <net code="99" name="N_R91_2" class="Default">
+    <net code="101" name="N_R91_2" class="Default">
       <node ref="D24" pin="2" pintype="passive"/>
       <node ref="R91" pin="2" pintype="passive"/>
     </net>
-    <net code="100" name="N_R93_2" class="Default">
+    <net code="102" name="N_R93_2" class="Default">
       <node ref="D25" pin="2" pintype="passive"/>
       <node ref="R93" pin="2" pintype="passive"/>
     </net>
-    <net code="101" name="N_R95_2" class="Default">
+    <net code="103" name="N_R95_2" class="Default">
       <node ref="D26" pin="2" pintype="passive"/>
       <node ref="R95" pin="2" pintype="passive"/>
     </net>
-    <net code="102" name="N_R98_1" class="Default">
+    <net code="104" name="N_R98_1" class="Default">
       <node ref="R98" pin="1" pintype="passive"/>
       <node ref="U17" pin="4" pintype="passive"/>
     </net>
-    <net code="103" name="N_R98_2" class="Default">
+    <net code="105" name="N_R98_2" class="Default">
       <node ref="Q16" pin="5" pintype="passive"/>
       <node ref="R98" pin="2" pintype="passive"/>
     </net>
-    <net code="104" name="N_R99_1" class="Default">
+    <net code="106" name="N_R99_1" class="Default">
       <node ref="R99" pin="1" pintype="passive"/>
       <node ref="U18" pin="4" pintype="passive"/>
     </net>
-    <net code="105" name="N_R99_2" class="Default">
+    <net code="107" name="N_R99_2" class="Default">
       <node ref="Q16" pin="2" pintype="passive"/>
       <node ref="R99" pin="2" pintype="passive"/>
     </net>
-    <net code="106" name="N_R100_1" class="Default">
+    <net code="108" name="N_R100_1" class="Default">
       <node ref="Q16" pin="3" pintype="passive"/>
       <node ref="R100" pin="1" pintype="passive"/>
     </net>
-    <net code="107" name="N_R101_1" class="Default">
+    <net code="109" name="N_R101_1" class="Default">
       <node ref="Q16" pin="6" pintype="passive"/>
       <node ref="R101" pin="1" pintype="passive"/>
     </net>
-    <net code="108" name="PCI_RX" class="Default">
+    <net code="110" name="PCI_RX" class="Default">
       <node ref="C12" pin="1" pintype="passive"/>
       <node ref="R7" pin="2" pintype="passive"/>
       <node ref="U10" pin="17" pintype="passive"/>
       <node ref="U9" pin="4" pintype="passive"/>
     </net>
-    <net code="109" name="PCI_TX" class="Default">
+    <net code="111" name="PCI_TX" class="Default">
       <node ref="R18" pin="1" pintype="passive"/>
       <node ref="R19" pin="1" pintype="passive"/>
       <node ref="U10" pin="16" pintype="passive"/>
     </net>
-    <net code="110" name="PWR_LED" class="Default">
+    <net code="112" name="PCI_VCC" class="Default">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="D30" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R123" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U9" pin="5" pintype="passive"/>
+    </net>
+    <net code="113" name="PWR_LED" class="Default">
       <node ref="Q19" pin="1" pintype="passive"/>
       <node ref="R94" pin="1" pintype="passive"/>
       <node ref="U10" pin="12" pintype="passive"/>
     </net>
-    <net code="111" name="RTS" class="Default">
+    <net code="114" name="RTS" class="Default">
       <node ref="Q5" pin="1" pintype="passive"/>
       <node ref="Q5" pin="5" pintype="passive"/>
       <node ref="U12" pin="24" pintype="passive"/>
     </net>
-    <net code="112" name="RX0" class="Default">
+    <net code="115" name="RX0" class="Default">
       <node ref="U10" pin="40" pintype="passive"/>
       <node ref="U12" pin="26" pintype="passive"/>
     </net>
-    <net code="113" name="RX1" class="Default">
+    <net code="116" name="RX1" class="Default">
       <node ref="C53" pin="1" pintype="passive"/>
       <node ref="R85" pin="2" pintype="passive"/>
       <node ref="U10" pin="33" pintype="passive"/>
       <node ref="U16" pin="4" pintype="passive"/>
     </net>
-    <net code="114" name="RX2" class="Default">
+    <net code="117" name="RX2" class="Default">
       <node ref="U10" pin="34" pintype="passive"/>
       <node ref="U15" pin="1" pintype="passive"/>
       <node ref="U15" pin="5" pintype="passive"/>
     </net>
-    <net code="115" name="RX7_BIAS" class="Default">
+    <net code="118" name="RX7_BIAS" class="Default">
       <node ref="Q6" pin="3" pintype="passive"/>
       <node ref="R42" pin="1" pintype="passive"/>
     </net>
-    <net code="116" name="RX7_BIAS_EN" class="Default">
+    <net code="119" name="RX7_BIAS_EN" class="Default">
       <node ref="Q6" pin="2" pintype="passive"/>
       <node ref="R75" pin="1" pintype="passive"/>
       <node ref="U19" pin="16" pintype="passive"/>
     </net>
-    <net code="117" name="RX7_EN" class="Default">
+    <net code="120" name="RX7_EN" class="Default">
       <node ref="R44" pin="2" pintype="passive"/>
       <node ref="U15" pin="7" pintype="passive"/>
       <node ref="U19" pin="14" pintype="passive"/>
     </net>
-    <net code="118" name="RX15_EN" class="Default">
+    <net code="121" name="RX15_EN" class="Default">
       <node ref="R47" pin="2" pintype="passive"/>
       <node ref="U15" pin="3" pintype="passive"/>
       <node ref="U19" pin="15" pintype="passive"/>
     </net>
-    <net code="119" name="RX_LED" class="Default">
+    <net code="122" name="RX_LED" class="Default">
       <node ref="Q17" pin="1" pintype="passive"/>
       <node ref="R90" pin="1" pintype="passive"/>
       <node ref="U10" pin="14" pintype="passive"/>
     </net>
-    <net code="120" name="SCL" class="Default">
+    <net code="123" name="SCL" class="Default">
       <node ref="J3" pin="5" pintype="passive"/>
       <node ref="R87" pin="2" pintype="passive"/>
       <node ref="U10" pin="39" pintype="passive"/>
       <node ref="U19" pin="19" pintype="passive"/>
     </net>
-    <net code="121" name="SDA" class="Default">
+    <net code="124" name="SDA" class="Default">
       <node ref="J3" pin="6" pintype="passive"/>
       <node ref="R86" pin="2" pintype="passive"/>
       <node ref="U10" pin="42" pintype="passive"/>
       <node ref="U19" pin="20" pintype="passive"/>
     </net>
-    <net code="122" name="SD_3V3" class="Power">
+    <net code="125" name="SD_3V3" class="Power">
       <node ref="C59" pin="1" pintype="passive"/>
       <node ref="C60" pin="1" pintype="passive"/>
       <node ref="C61" pin="1" pintype="passive"/>
@@ -11932,95 +12727,95 @@
       <node ref="R111" pin="1" pintype="passive"/>
       <node ref="U20" pin="3" pinfunction="VO_3" pintype="power_out"/>
     </net>
-    <net code="123" name="SD_CS" class="Default">
+    <net code="126" name="SD_CS" class="Default">
       <node ref="J4" pin="2" pinfunction="DAT3/CD_2" pintype="bidirectional"/>
       <node ref="R106" pin="2" pintype="passive"/>
       <node ref="R107" pin="2" pintype="passive"/>
     </net>
-    <net code="124" name="SD_DAT1" class="Default">
+    <net code="127" name="SD_DAT1" class="Default">
       <node ref="J4" pin="8" pinfunction="DAT1_8" pintype="bidirectional"/>
       <node ref="R110" pin="2" pintype="passive"/>
     </net>
-    <net code="125" name="SD_DAT2" class="Default">
+    <net code="128" name="SD_DAT2" class="Default">
       <node ref="J4" pin="1" pinfunction="DAT2_1" pintype="bidirectional"/>
       <node ref="R111" pin="2" pintype="passive"/>
     </net>
-    <net code="126" name="SD_DETECT" class="Default">
+    <net code="129" name="SD_DETECT" class="Default">
       <node ref="J4" pin="9" pinfunction="DET_B_9" pintype="passive"/>
       <node ref="R114" pin="2" pintype="passive"/>
       <node ref="U10" pin="7" pintype="passive"/>
     </net>
-    <net code="127" name="SD_MISO" class="Default">
+    <net code="130" name="SD_MISO" class="Default">
       <node ref="J4" pin="7" pinfunction="DAT0_7" pintype="bidirectional"/>
       <node ref="R109" pin="2" pintype="passive"/>
       <node ref="U10" pin="5" pintype="passive"/>
     </net>
-    <net code="128" name="SD_MOSI" class="Default">
+    <net code="131" name="SD_MOSI" class="Default">
       <node ref="J4" pin="3" pinfunction="CMD_3" pintype="input"/>
       <node ref="R105" pin="2" pintype="passive"/>
       <node ref="R108" pin="2" pintype="passive"/>
     </net>
-    <net code="129" name="SD_SCK" class="Default">
+    <net code="132" name="SD_SCK" class="Default">
       <node ref="J4" pin="5" pinfunction="CLK_5" pintype="input"/>
       <node ref="R104" pin="2" pintype="passive"/>
     </net>
-    <net code="130" name="TBEN" class="Default">
+    <net code="133" name="TBEN" class="Default">
       <node ref="Q7" pin="2" pintype="passive"/>
       <node ref="Q7" pin="5" pintype="passive"/>
       <node ref="R77" pin="2" pintype="passive"/>
       <node ref="U19" pin="17" pintype="passive"/>
     </net>
-    <net code="131" name="TX0" class="Default">
+    <net code="134" name="TX0" class="Default">
       <node ref="R25" pin="2" pintype="passive"/>
       <node ref="U12" pin="25" pintype="passive"/>
     </net>
-    <net code="132" name="TX1" class="Default">
+    <net code="135" name="TX1" class="Default">
       <node ref="R97" pin="2" pintype="passive"/>
       <node ref="U10" pin="32" pintype="passive"/>
       <node ref="U17" pin="2" pintype="passive"/>
       <node ref="U18" pin="2" pintype="passive"/>
     </net>
-    <net code="133" name="TX2" class="Default">
+    <net code="136" name="TX2" class="Default">
       <node ref="U10" pin="24" pintype="passive"/>
       <node ref="U13" pin="1" pintype="passive"/>
       <node ref="U13" pin="5" pintype="passive"/>
       <node ref="U14" pin="1" pintype="passive"/>
       <node ref="U14" pin="5" pintype="passive"/>
     </net>
-    <net code="134" name="TX6_EN" class="Default">
+    <net code="137" name="TX6_EN" class="Default">
       <node ref="R31" pin="2" pintype="passive"/>
       <node ref="U13" pin="7" pintype="passive"/>
       <node ref="U19" pin="1" pintype="passive"/>
     </net>
-    <net code="135" name="TX9_EN" class="Default">
+    <net code="138" name="TX9_EN" class="Default">
       <node ref="R41" pin="1" pintype="passive"/>
       <node ref="U14" pin="3" pintype="passive"/>
       <node ref="U19" pin="2" pintype="passive"/>
     </net>
-    <net code="136" name="TX12_EN" class="Default">
+    <net code="139" name="TX12_EN" class="Default">
       <node ref="R34" pin="1" pintype="passive"/>
       <node ref="U13" pin="3" pintype="passive"/>
       <node ref="U19" pin="3" pintype="passive"/>
     </net>
-    <net code="137" name="TX14_EN" class="Default">
+    <net code="140" name="TX14_EN" class="Default">
       <node ref="R38" pin="2" pintype="passive"/>
       <node ref="U14" pin="7" pintype="passive"/>
       <node ref="U19" pin="4" pintype="passive"/>
     </net>
-    <net code="138" name="TX_LED" class="Default">
+    <net code="141" name="TX_LED" class="Default">
       <node ref="Q18" pin="1" pintype="passive"/>
       <node ref="R92" pin="1" pintype="passive"/>
       <node ref="U10" pin="15" pintype="passive"/>
     </net>
-    <net code="139" name="USB_CC1" class="Default">
+    <net code="142" name="USB_CC1" class="Default">
       <node ref="J2" pin="A5" pintype="passive"/>
       <node ref="R102" pin="1" pintype="passive"/>
     </net>
-    <net code="140" name="USB_CC2" class="Default">
+    <net code="143" name="USB_CC2" class="Default">
       <node ref="J2" pin="B5" pintype="passive"/>
       <node ref="R103" pin="1" pintype="passive"/>
     </net>
-    <net code="141" name="VBB" class="Power">
+    <net code="144" name="VBB" class="Power">
       <node ref="C19" pin="1" pintype="passive"/>
       <node ref="L5" pin="2" pintype="passive"/>
       <node ref="Q10" pin="2" pintype="passive"/>
@@ -12033,27 +12828,27 @@
       <node ref="R60" pin="1" pintype="passive"/>
       <node ref="R62" pin="1" pintype="passive"/>
     </net>
-    <net code="142" name="VBB_TO_TX6" class="Default">
+    <net code="145" name="VBB_TO_TX6" class="Default">
       <node ref="Q8" pin="1" pintype="passive"/>
       <node ref="R55" pin="1" pintype="passive"/>
       <node ref="U19" pin="5" pintype="passive"/>
     </net>
-    <net code="143" name="VBB_TO_TX9" class="Default">
+    <net code="146" name="VBB_TO_TX9" class="Default">
       <node ref="Q9" pin="1" pintype="passive"/>
       <node ref="R57" pin="1" pintype="passive"/>
       <node ref="U19" pin="6" pintype="passive"/>
     </net>
-    <net code="144" name="VBB_TO_TX12" class="Default">
+    <net code="147" name="VBB_TO_TX12" class="Default">
       <node ref="Q10" pin="1" pintype="passive"/>
       <node ref="R59" pin="1" pintype="passive"/>
       <node ref="U19" pin="7" pintype="passive"/>
     </net>
-    <net code="145" name="VBB_TO_TX14" class="Default">
+    <net code="148" name="VBB_TO_TX14" class="Default">
       <node ref="Q11" pin="1" pintype="passive"/>
       <node ref="R61" pin="1" pintype="passive"/>
       <node ref="U19" pin="8" pintype="passive"/>
     </net>
-    <net code="146" name="VBUS" class="Power">
+    <net code="149" name="VBUS" class="Power">
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="J2" pin="A4" pintype="passive"/>
       <node ref="J2" pin="A9" pintype="passive"/>
@@ -12065,7 +12860,7 @@
       <node ref="U1" pin="3" pintype="passive"/>
       <node ref="U11" pin="5" pintype="passive"/>
     </net>
-    <net code="147" name="VPP" class="Power">
+    <net code="150" name="VPP" class="Power">
       <node ref="C15" pin="1" pintype="passive"/>
       <node ref="C16" pin="1" pintype="passive"/>
       <node ref="L3" pin="2" pintype="passive"/>
@@ -12081,165 +12876,189 @@
       <node ref="R73" pin="1" pintype="passive"/>
       <node ref="U6" pin="5" pintype="passive"/>
     </net>
-    <net code="148" name="VPP_TO_TX6" class="Default">
+    <net code="151" name="VPP_TO_TX6" class="Default">
       <node ref="Q12" pin="1" pintype="passive"/>
       <node ref="R63" pin="1" pintype="passive"/>
       <node ref="U19" pin="10" pintype="passive"/>
     </net>
-    <net code="149" name="VPP_TO_TX9" class="Default">
+    <net code="152" name="VPP_TO_TX9" class="Default">
       <node ref="Q13" pin="1" pintype="passive"/>
       <node ref="R66" pin="1" pintype="passive"/>
       <node ref="U19" pin="11" pintype="passive"/>
     </net>
-    <net code="150" name="VPP_TO_TX12" class="Default">
+    <net code="153" name="VPP_TO_TX12" class="Default">
       <node ref="Q14" pin="1" pintype="passive"/>
       <node ref="R69" pin="1" pintype="passive"/>
       <node ref="U19" pin="12" pintype="passive"/>
     </net>
-    <net code="151" name="VPP_TO_TX14" class="Default">
+    <net code="154" name="VPP_TO_TX14" class="Default">
       <node ref="Q15" pin="1" pintype="passive"/>
       <node ref="R72" pin="1" pintype="passive"/>
       <node ref="U19" pin="13" pintype="passive"/>
     </net>
-    <net code="152" name="V_BA" class="Default">
+    <net code="155" name="V_BA" class="Default">
+      <node ref="R120" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U10" pin="13" pintype="passive"/>
+      <node ref="U21" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="156" name="V_BA_PRE" class="Default">
       <node ref="C47" pin="1" pintype="passive"/>
       <node ref="D27" pin="1" pintype="passive"/>
       <node ref="R49" pin="2" pintype="passive"/>
       <node ref="R50" pin="1" pintype="passive"/>
-      <node ref="U10" pin="13" pintype="passive"/>
+      <node ref="U21" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="153" name="V_BT" class="Default">
+    <net code="157" name="V_BT" class="Default">
+      <node ref="R121" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U10" pin="10" pintype="passive"/>
+      <node ref="U21" pin="6" pinfunction="6_6" pintype="passive"/>
+    </net>
+    <net code="158" name="V_BT_PRE" class="Default">
       <node ref="C48" pin="1" pintype="passive"/>
       <node ref="D28" pin="1" pintype="passive"/>
       <node ref="R51" pin="2" pintype="passive"/>
       <node ref="R52" pin="1" pintype="passive"/>
-      <node ref="U10" pin="10" pintype="passive"/>
+      <node ref="U21" pin="5" pinfunction="5_5" pintype="passive"/>
     </net>
-    <net code="154" name="V_PR" class="Default">
+    <net code="159" name="V_PR" class="Default">
+      <node ref="R122" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U10" pin="11" pintype="passive"/>
+      <node ref="U21" pin="8" pinfunction="8_8" pintype="passive"/>
+    </net>
+    <net code="160" name="V_PR_PRE" class="Default">
       <node ref="C49" pin="1" pintype="passive"/>
       <node ref="D29" pin="1" pintype="passive"/>
       <node ref="R53" pin="2" pintype="passive"/>
       <node ref="R54" pin="1" pintype="passive"/>
-      <node ref="U10" pin="11" pintype="passive"/>
+      <node ref="U21" pin="9" pinfunction="9_9" pintype="passive"/>
     </net>
-    <net code="155" name="unconnected-(AE1-Pad2)" class="Default">
+    <net code="161" name="WD_DIV" class="Default">
+      <node ref="R116" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R117" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U22" pin="4" pinfunction="4_4" pintype="passive"/>
+    </net>
+    <net code="162" name="WD_SET" class="Default">
+      <node ref="R115" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U22" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="163" name="unconnected-(AE1-Pad2)" class="Default">
       <node ref="AE1" pin="2" pintype="passive+no_connect"/>
     </net>
-    <net code="156" name="unconnected-(J1-Pad1)" class="Default">
+    <net code="164" name="unconnected-(J1-Pad1)" class="Default">
       <node ref="J1" pin="1" pintype="passive+no_connect"/>
     </net>
-    <net code="157" name="unconnected-(J1-Pad8)" class="Default">
+    <net code="165" name="unconnected-(J1-Pad8)" class="Default">
       <node ref="J1" pin="8" pintype="passive+no_connect"/>
     </net>
-    <net code="158" name="unconnected-(J1-Pad10)" class="Default">
+    <net code="166" name="unconnected-(J1-Pad10)" class="Default">
       <node ref="J1" pin="10" pintype="passive+no_connect"/>
     </net>
-    <net code="159" name="unconnected-(J1-Pad13)" class="Default">
+    <net code="167" name="unconnected-(J1-Pad13)" class="Default">
       <node ref="J1" pin="13" pintype="passive+no_connect"/>
     </net>
-    <net code="160" name="unconnected-(J2-PadA8)" class="Default">
+    <net code="168" name="unconnected-(J2-PadA8)" class="Default">
       <node ref="J2" pin="A8" pintype="passive+no_connect"/>
     </net>
-    <net code="161" name="unconnected-(J2-PadB8)" class="Default">
+    <net code="169" name="unconnected-(J2-PadB8)" class="Default">
       <node ref="J2" pin="B8" pintype="passive+no_connect"/>
     </net>
-    <net code="162" name="unconnected-(U10-Pad8)" class="Default">
+    <net code="170" name="unconnected-(U10-Pad8)" class="Default">
       <node ref="U10" pin="8" pintype="passive+no_connect"/>
     </net>
-    <net code="163" name="unconnected-(U10-Pad18)" class="Default">
+    <net code="171" name="unconnected-(U10-Pad18)" class="Default">
       <node ref="U10" pin="18" pintype="passive+no_connect"/>
     </net>
-    <net code="164" name="unconnected-(U10-Pad22)" class="Default">
+    <net code="172" name="unconnected-(U10-Pad22)" class="Default">
       <node ref="U10" pin="22" pintype="passive+no_connect"/>
     </net>
-    <net code="165" name="unconnected-(U10-Pad25)" class="Default">
+    <net code="173" name="unconnected-(U10-Pad25)" class="Default">
       <node ref="U10" pin="25" pintype="passive+no_connect"/>
     </net>
-    <net code="166" name="unconnected-(U10-Pad28)" class="Default">
+    <net code="174" name="unconnected-(U10-Pad28)" class="Default">
       <node ref="U10" pin="28" pintype="passive+no_connect"/>
     </net>
-    <net code="167" name="unconnected-(U10-Pad29)" class="Default">
+    <net code="175" name="unconnected-(U10-Pad29)" class="Default">
       <node ref="U10" pin="29" pintype="passive+no_connect"/>
     </net>
-    <net code="168" name="unconnected-(U10-Pad30)" class="Default">
+    <net code="176" name="unconnected-(U10-Pad30)" class="Default">
       <node ref="U10" pin="30" pintype="passive+no_connect"/>
     </net>
-    <net code="169" name="unconnected-(U10-Pad31)" class="Default">
+    <net code="177" name="unconnected-(U10-Pad31)" class="Default">
       <node ref="U10" pin="31" pintype="passive+no_connect"/>
     </net>
-    <net code="170" name="unconnected-(U10-Pad35)" class="Default">
+    <net code="178" name="unconnected-(U10-Pad35)" class="Default">
       <node ref="U10" pin="35" pintype="passive+no_connect"/>
     </net>
-    <net code="171" name="unconnected-(U10-Pad36)" class="Default">
+    <net code="179" name="unconnected-(U10-Pad36)" class="Default">
       <node ref="U10" pin="36" pintype="passive+no_connect"/>
     </net>
-    <net code="172" name="unconnected-(U10-Pad44)" class="Default">
+    <net code="180" name="unconnected-(U10-Pad44)" class="Default">
       <node ref="U10" pin="44" pintype="passive+no_connect"/>
     </net>
-    <net code="173" name="unconnected-(U10-Pad45)" class="Default">
+    <net code="181" name="unconnected-(U10-Pad45)" class="Default">
       <node ref="U10" pin="45" pintype="passive+no_connect"/>
     </net>
-    <net code="174" name="unconnected-(U10-Pad47)" class="Default">
+    <net code="182" name="unconnected-(U10-Pad47)" class="Default">
       <node ref="U10" pin="47" pintype="passive+no_connect"/>
     </net>
-    <net code="175" name="unconnected-(U10-Pad48)" class="Default">
+    <net code="183" name="unconnected-(U10-Pad48)" class="Default">
       <node ref="U10" pin="48" pintype="passive+no_connect"/>
     </net>
-    <net code="176" name="unconnected-(U12-Pad1)" class="Default">
+    <net code="184" name="unconnected-(U12-Pad1)" class="Default">
       <node ref="U12" pin="1" pintype="passive+no_connect"/>
     </net>
-    <net code="177" name="unconnected-(U12-Pad2)" class="Default">
+    <net code="185" name="unconnected-(U12-Pad2)" class="Default">
       <node ref="U12" pin="2" pintype="passive+no_connect"/>
     </net>
-    <net code="178" name="unconnected-(U12-Pad10)" class="Default">
+    <net code="186" name="unconnected-(U12-Pad10)" class="Default">
       <node ref="U12" pin="10" pintype="passive+no_connect"/>
     </net>
-    <net code="179" name="unconnected-(U12-Pad11)" class="Default">
+    <net code="187" name="unconnected-(U12-Pad11)" class="Default">
       <node ref="U12" pin="11" pintype="passive+no_connect"/>
     </net>
-    <net code="180" name="unconnected-(U12-Pad12)" class="Default">
+    <net code="188" name="unconnected-(U12-Pad12)" class="Default">
       <node ref="U12" pin="12" pintype="passive+no_connect"/>
     </net>
-    <net code="181" name="unconnected-(U12-Pad13)" class="Default">
+    <net code="189" name="unconnected-(U12-Pad13)" class="Default">
       <node ref="U12" pin="13" pintype="passive+no_connect"/>
     </net>
-    <net code="182" name="unconnected-(U12-Pad14)" class="Default">
+    <net code="190" name="unconnected-(U12-Pad14)" class="Default">
       <node ref="U12" pin="14" pintype="passive+no_connect"/>
     </net>
-    <net code="183" name="unconnected-(U12-Pad15)" class="Default">
+    <net code="191" name="unconnected-(U12-Pad15)" class="Default">
       <node ref="U12" pin="15" pintype="passive+no_connect"/>
     </net>
-    <net code="184" name="unconnected-(U12-Pad16)" class="Default">
+    <net code="192" name="unconnected-(U12-Pad16)" class="Default">
       <node ref="U12" pin="16" pintype="passive+no_connect"/>
     </net>
-    <net code="185" name="unconnected-(U12-Pad17)" class="Default">
+    <net code="193" name="unconnected-(U12-Pad17)" class="Default">
       <node ref="U12" pin="17" pintype="passive+no_connect"/>
     </net>
-    <net code="186" name="unconnected-(U12-Pad18)" class="Default">
+    <net code="194" name="unconnected-(U12-Pad18)" class="Default">
       <node ref="U12" pin="18" pintype="passive+no_connect"/>
     </net>
-    <net code="187" name="unconnected-(U12-Pad19)" class="Default">
+    <net code="195" name="unconnected-(U12-Pad19)" class="Default">
       <node ref="U12" pin="19" pintype="passive+no_connect"/>
     </net>
-    <net code="188" name="unconnected-(U12-Pad20)" class="Default">
+    <net code="196" name="unconnected-(U12-Pad20)" class="Default">
       <node ref="U12" pin="20" pintype="passive+no_connect"/>
     </net>
-    <net code="189" name="unconnected-(U12-Pad21)" class="Default">
+    <net code="197" name="unconnected-(U12-Pad21)" class="Default">
       <node ref="U12" pin="21" pintype="passive+no_connect"/>
     </net>
-    <net code="190" name="unconnected-(U12-Pad22)" class="Default">
+    <net code="198" name="unconnected-(U12-Pad22)" class="Default">
       <node ref="U12" pin="22" pintype="passive+no_connect"/>
     </net>
-    <net code="191" name="unconnected-(U12-Pad23)" class="Default">
+    <net code="199" name="unconnected-(U12-Pad23)" class="Default">
       <node ref="U12" pin="23" pintype="passive+no_connect"/>
     </net>
-    <net code="192" name="unconnected-(U12-Pad27)" class="Default">
+    <net code="200" name="unconnected-(U12-Pad27)" class="Default">
       <node ref="U12" pin="27" pintype="passive+no_connect"/>
     </net>
-    <net code="193" name="unconnected-(U17-Pad1)" class="Default">
+    <net code="201" name="unconnected-(U17-Pad1)" class="Default">
       <node ref="U17" pin="1" pintype="passive+no_connect"/>
     </net>
-    <net code="194" name="unconnected-(U18-Pad1)" class="Default">
+    <net code="202" name="unconnected-(U18-Pad1)" class="Default">
       <node ref="U18" pin="1" pintype="passive+no_connect"/>
     </net>
   </nets>

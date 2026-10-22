@@ -1,90 +1,278 @@
-"References","Value","Footprint","Quantity","DNP","Datasheet","Description"
-"AE1","ANT3216LL00R2400A","footprints:ANT3216LL00R2400A","1","","",""
-"C1","100μF","footprints:CP_Radial_D8.0mm_P3.50mm","1","","",""
-"C2-C4,C7,C9,C13,C15,C16,C19,C20,C23","10μF","footprints:C_1206_3216Metric","11","","",""
-"C5,C11,C17,C21","0.1μF","footprints:C_1206_3216Metric","4","","",""
-"C6,C8,C10,C14,C18,C22,C24","22μF","footprints:C_1206_3216Metric","7","","",""
-"C12","220pF","footprints:C_1206_3216Metric","1","","",""
-"C25,C36,C37,C39,C40,C42,C44,C50,C51,C53","220pF","footprints:C_0603_1608Metric","10","","",""
-"C26-C28,C35,C56","10μF","footprints:C_0603_1608Metric","5","","",""
-"C29-C34,C38,C41,C43,C46-C49,C52,C54,C55,C57","0.1μF","footprints:C_0603_1608Metric","17","","",""
-"C45","1μF","footprints:C_0603_1608Metric","1","","",""
-"C58,C59","10uF","Capacitor_SMD:C_0805_2012Metric","2","","","10V X7R ceramic"
-"C60","100nF","Capacitor_SMD:C_0603_1608Metric","1","","","10V X7R ceramic"
-"C61","100uF","Capacitor_SMD:CP_Elec_5x5.9","1","","","Bulk capacitor does not provide safe power-off hold-up"
-"D1","SMBJ30CA","footprints:D_SMB","1","","",""
-"D2","SS56","footprints:D_SMB","1","","",""
-"D3","LMBR130T1G","footprints:D_SOD-123","1","","",""
-"D4-D10","DSK34","footprints:D_SOD-123","7","","",""
-"D11,D15-D22","MSK4005","footprints:D_SOD-123","9","","",""
-"D12-D14","ESD5Z12V","footprints:D_SOD-123","3","","",""
-"D23","RED","footprints:LED_V140_Reference","1","","",""
-"D24","YELLOW","footprints:LED_V140_Reference","1","","",""
-"D25","GREEN","footprints:LED_V140_Reference","1","","",""
-"D26","BLUE","footprints:LED_V140_Reference","1","","",""
-"D27-D29","ESD5Z3V3","footprints:D_SOD-323","3","","",""
-"J1","226A-1202","footprints:OBDII_ATTEND_226A-1202","1","","",""
-"J2","USB-C","footprints:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal","1","","",""
-"J3","I2C","footprints:PinHeader_2x03_P2.54mm_Vertical","1","","",""
-"J4","microSD / DM3AT-SF-PEJM5","Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5","1","","","On-board push-push microSD socket, rear edge access"
-"L1,L2,L4,L6","22µH","footprints:L_7.3x7.3_H3.5","4","","",""
-"L3","240nH","footprints:R_1206_3216Metric","1","","",""
-"L5","470nH","footprints:R_1206_3216Metric","1","","",""
-"Q1,Q6,Q16","CJ3439KDW","footprints:SOT-23-6","3","","",""
-"Q2-Q4","2N7002DW","footprints:SOT-23-6","3","","",""
-"Q5","UMH3N","footprints:SOT-363_SC-70-6","1","","",""
-"Q7","HSSK8811","footprints:SOT-23-6","1","","",""
-"Q8-Q15","HSW4602","footprints:SOT-23-6","8","","",""
-"Q17-Q20","AO3400","footprints:SOT-23","4","","",""
-"R1,R10,R13,R14","100kΩ","footprints:R_0603_1608Metric","4","","",""
-"R2","68kΩ","footprints:R_0603_1608Metric","1","","",""
-"R3,R6,R12,R15,R17,R18,R21,R31,R34,R38,R41,R44,R47,R48,R55,R57,R59,R61,R63,R66,R69,R72,R75,R77,R83,R84,R90,R92,R94,R96","10kΩ","footprints:R_0603_1608Metric","30","","",""
-"R4","2kΩ","footprints:R_0603_1608Metric","1","","",""
-"R5,R7,R28,R32,R36,R39,R56,R58,R60,R62,R64,R67,R70,R73,R76,R85-R88,R97","4.7kΩ","footprints:R_0603_1608Metric","20","","",""
-"R8","110kΩ","footprints:R_0603_1608Metric","1","","",""
-"R9","6.8kΩ","footprints:R_0603_1608Metric","1","","",""
-"R11","158kΩ","footprints:R_0603_1608Metric","1","","",""
-"R16","82.5kΩ","footprints:R_0603_1608Metric","1","","",""
-"R19","360Ω","footprints:R_1206_3216Metric","1","","",""
-"R20","1kΩ","footprints:R_1206_3216Metric","1","","",""
-"R22","0Ω","footprints:R_0603_1608Metric","1","","",""
-"R23,R24","nc","footprints:R_0603_1608Metric","2","DNP","",""
-"R25","499Ω","footprints:R_0603_1608Metric","1","","",""
-"R26","22kΩ","footprints:R_0603_1608Metric","1","","",""
-"R27","47kΩ","footprints:R_0603_1608Metric","1","","",""
-"R29,R30,R33,R37,R40,R43,R46","4.7kΩ","footprints:R_1206_3216Metric","7","","",""
-"R42,R45,R93","1kΩ","footprints:R_0603_1608Metric","3","","",""
-"R49,R51","8.66kΩ","footprints:R_0603_1608Metric","2","","",""
-"R50,R52,R54","1.62kΩ","footprints:R_0603_1608Metric","3","","",""
-"R53","18.2kΩ","footprints:R_0603_1608Metric","1","","",""
-"R65,R68,R71,R74","1.1kΩ","footprints:R_0603_1608Metric","4","","",""
-"R78,R80","13kΩ","footprints:R_0603_1608Metric","2","","",""
-"R79","120Ω","footprints:R_0603_1608Metric","1","","",""
-"R81,R82","10Ω","footprints:R_0603_1608Metric","2","","",""
-"R89,R95","470Ω","footprints:R_0603_1608Metric","2","","",""
-"R91","300Ω","footprints:R_0603_1608Metric","1","","",""
-"R98,R99","100Ω","footprints:R_0603_1608Metric","2","","",""
-"R100,R101","360Ω","footprints:R_0603_1608Metric","2","","",""
-"R102,R103","5.1kΩ","footprints:R_0603_1608Metric","2","","",""
-"R104-R106","33R","Resistor_SMD:R_0603_1608Metric","3","","","SPI series resistor; place close to U10 source pin"
-"R107-R111","10k","Resistor_SMD:R_0603_1608Metric","5","","",""
-"R112","47k","Resistor_SMD:R_0603_1608Metric","1","","","GPIO15 strap and inactive CS; supply referenced to MCU rail"
-"R113,R114","10k","Resistor_SMD:R_0603_1608Metric","2","","","External pullup required for ESP32 input-only GPIO"
-"SW1","RESET","footprints:SW_SPST_TL3305A","1","","",""
-"SW2","BOOT","footprints:SW_SPST_TL3305A","1","","",""
-"SW3","LOG / SAFE STOP","footprints:SW_SPST_TL3305A","1","","","Debounced firmware-controlled logging toggle, GPIO37"
-"U1","SY6283","footprints:SY6283_DFN4","1","","",""
-"U2,U6,U7","LMR14010","footprints:SOT-23-6","3","","",""
-"U3","TLV76750DRV","footprints:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm","1","","",""
-"U4","TLV76733DRV","footprints:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm","1","","",""
-"U5","LGS6302","footprints:SOT-23-5","1","","",""
-"U8","TLV76701DRV","footprints:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm","1","","",""
-"U9,U16","TS391C","footprints:SOT-23-5","2","","",""
-"U10","ESP32-PICO-V3-02","footprints:ESP32_PICO_V3_02","1","","",""
-"U11","USBLC6-2SC6","footprints:USBLC6_V140_Reference","1","","",""
-"U12","CP2102","footprints:CP2102_V140_Reference","1","","",""
-"U13-U15","74LVC2G66","footprints:VSSOP-8_2.3x2mm_P0.5mm","3","","",""
-"U17","74LVC1G17","footprints:SOT-23-5","1","","",""
-"U18","74LVC1G14","footprints:SOT-23-5","1","","",""
-"U19","AW9523B","footprints:AW9523B_QFN24","1","","",""
-"U20","MCP1825S-3302E/DB","Package_TO_SOT_SMD:SOT-223-3_TabPin2","1","","","Dedicated 500mA SD rail; main +5V total budget still applies"
+﻿Reference,Value,Footprint,Manufacturer,MPN,Minimum voltage rating,Tolerance,Procurement status
+C25,220pF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C36,220pF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C37,220pF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C39,220pF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C40,220pF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C42,220pF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C44,220pF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+D11,MSK4005,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+D12,ESD5Z12V,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+D13,ESD5Z12V,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+D14,ESD5Z12V,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+J1,226A-1202,footprints:OBDII_ATTEND_226A-1202,,,,,UNSELECTED — exact part required before assembly
+C50,220pF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C51,220pF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C52,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C53,220pF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C54,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C55,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+Q7,HSSK8811,footprints:SOT-23-6,,,,,UNSELECTED — exact part required before assembly
+Q16,CJ3439KDW,footprints:SOT-23-6,,,,,UNSELECTED — exact part required before assembly
+R77,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R78,13kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R79,120Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R80,13kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R81,10Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R82,10Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R83,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R84,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R85,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R97,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R98,100Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R99,100Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R100,360Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R101,360Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+U16,TS391C,footprints:SOT-23-5,,,,,UNSELECTED — exact part required before assembly
+U17,74LVC1G17,footprints:SOT-23-5,,,,,UNSELECTED — exact part required before assembly
+U18,74LVC1G14,footprints:SOT-23-5,,,,,UNSELECTED — exact part required before assembly
+AE1,ANT3216LL00R2400A,footprints:ANT3216LL00R2400A,,,,,UNSELECTED — exact part required before assembly
+C26,10μF,footprints:C_0603_1608Metric,,,10V,,UNSELECTED — exact part required before assembly
+C27,10μF,footprints:C_0603_1608Metric,,,10V,,UNSELECTED — exact part required before assembly
+C28,10μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C29,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C30,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C31,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C32,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C33,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C45,1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C46,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R22,0Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R23,nc,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R24,nc,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R48,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+U10,ESP32-PICO-V3-02,footprints:ESP32_PICO_V3_02,,,,,UNSELECTED — exact part required before assembly
+C2,10μF,footprints:C_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+C3,10μF,footprints:C_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+C34,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C35,10μF,footprints:C_0603_1608Metric,,,10V,,UNSELECTED — exact part required before assembly
+D3,LMBR130T1G,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+J2,USB-C,footprints:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,,,,,UNSELECTED — exact part required before assembly
+JP2,USBPWRBYP,footprints:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm,,,,,UNSELECTED — exact part required before assembly
+Q5,UMH3N,footprints:SOT-363_SC-70-6,,,,,UNSELECTED — exact part required before assembly
+R25,499Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R26,22kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R27,47kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R28,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R102,5.1kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R103,5.1kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+SW1,RESET,footprints:SW_SPST_TL3305A,,,,,UNSELECTED — exact part required before assembly
+SW2,BOOT,footprints:SW_SPST_TL3305A,,,,,UNSELECTED — exact part required before assembly
+U1,SY6283,footprints:SY6283_DFN4,,,,,UNSELECTED — exact part required before assembly
+U11,USBLC6-2SC6,footprints:USBLC6_V140_Reference,,,,,UNSELECTED — exact part required before assembly
+U12,CP2102,footprints:CP2102_V140_Reference,,,,,UNSELECTED — exact part required before assembly
+C1,100μF,footprints:CP_Radial_D8.0mm_P3.50mm,,,50V,,UNSELECTED — exact part required before assembly
+D1,SMBJ16CA,footprints:D_SMB,Littelfuse,SMBJ16CA,,,SPECIFIED — verify procurement/footprint
+D2,SS56,footprints:D_SMB,,,,,UNSELECTED — exact part required before assembly
+JP1,SGND,footprints:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm,,,,,UNSELECTED — exact part required before assembly
+C11,0.1μF,footprints:C_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+C12,220pF,footprints:C_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+Q1,CJ3439KDW,footprints:SOT-23-6,,,,,UNSELECTED — exact part required before assembly
+R4,2kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R5,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R6,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R7,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R18,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R19,360Ω,footprints:R_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+R20,1kΩ,footprints:R_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+R21,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+U9,TS391C,footprints:SOT-23-5,,,,,UNSELECTED — exact part required before assembly
+C56,10μF,footprints:C_0603_1608Metric,,,10V,,UNSELECTED — exact part required before assembly
+C57,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+J3,I2C,footprints:PinHeader_2x03_P2.54mm_Vertical,,,,,UNSELECTED — exact part required before assembly
+R86,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R87,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R88,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+U19,AW9523B,footprints:AW9523B_QFN24,,,,,UNSELECTED — exact part required before assembly
+C58,10uF,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71A106KE51L,,,SPECIFIED — verify procurement/footprint
+C59,10uF,Capacitor_SMD:C_0805_2012Metric,Murata,GRM21BR71A106KE51L,,,SPECIFIED — verify procurement/footprint
+C60,100nF,Capacitor_SMD:C_0603_1608Metric,Murata,GRM188R71A104KA01D,,,SPECIFIED — verify procurement/footprint
+C61,100uF,Capacitor_SMD:CP_Elec_5x5.9,Panasonic,6SVPC100M,,,SPECIFIED — verify procurement/footprint
+J4,microSD / DM3AT-SF-PEJM5,Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5,Hirose,DM3AT-SF-PEJM5,,,SPECIFIED — verify procurement/footprint
+R104,33R,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0733RL,,,SPECIFIED — verify procurement/footprint
+R105,33R,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0733RL,,,SPECIFIED — verify procurement/footprint
+R106,33R,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0733RL,,,SPECIFIED — verify procurement/footprint
+R107,10k,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0710KL,,,SPECIFIED — verify procurement/footprint
+R108,10k,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0710KL,,,SPECIFIED — verify procurement/footprint
+R109,10k,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0710KL,,,SPECIFIED — verify procurement/footprint
+R110,10k,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0710KL,,,SPECIFIED — verify procurement/footprint
+R111,10k,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0710KL,,,SPECIFIED — verify procurement/footprint
+R112,47k,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0747KL,,,SPECIFIED — verify procurement/footprint
+R113,10k,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0710KL,,,SPECIFIED — verify procurement/footprint
+R114,10k,Resistor_SMD:R_0603_1608Metric,Yageo,RC0603FR-0710KL,,,SPECIFIED — verify procurement/footprint
+SW3,LOG / SAFE STOP,footprints:SW_SPST_TL3305A,E-Switch,TL3305AF160QG,,,SPECIFIED — verify procurement/footprint
+U20,MCP1825S-3302E/DB,Package_TO_SOT_SMD:SOT-223-3_TabPin2,Microchip,MCP1825S-3302E/DB,,,SPECIFIED — verify procurement/footprint
+C4,10μF,footprints:C_1206_3216Metric,,,50V,,UNSELECTED — exact part required before assembly
+C5,0.1μF,footprints:C_1206_3216Metric,,,100V,,UNSELECTED — exact part required before assembly
+C6,22μF,footprints:C_1206_3216Metric,,,25V,,UNSELECTED — exact part required before assembly
+C7,10μF,footprints:C_1206_3216Metric,,,25V,,UNSELECTED — exact part required before assembly
+C8,22μF,footprints:C_1206_3216Metric,,,25V,,UNSELECTED — exact part required before assembly
+C9,10μF,footprints:C_1206_3216Metric,,,25V,,UNSELECTED — exact part required before assembly
+C10,22μF,footprints:C_1206_3216Metric,,,25V,,UNSELECTED — exact part required before assembly
+D4,DSK34,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+D5,DSK34,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+D6,DSK34,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+L1,22µH,footprints:L_7.3x7.3_H3.5,,,,,UNSELECTED — exact part required before assembly
+R1,100kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R2,68kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R3,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+U2,LMR14010,footprints:SOT-23-6,,,,,UNSELECTED — exact part required before assembly
+U3,TLV76750DRV,footprints:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm,,,,,UNSELECTED — exact part required before assembly
+U4,TLV76733DRV,footprints:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm,,,,,UNSELECTED — exact part required before assembly
+C41,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+Q3,2N7002DW,footprints:SOT-23-6,,,,,UNSELECTED — exact part required before assembly
+R36,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R37,4.7kΩ,footprints:R_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+R38,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R39,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R40,4.7kΩ,footprints:R_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+R41,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+U14,74LVC2G66,footprints:VSSOP-8_2.3x2mm_P0.5mm,,,,,UNSELECTED — exact part required before assembly
+C47,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C48,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C49,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+D27,ESD5Z3V3,footprints:D_SOD-323,,,,,UNSELECTED — exact part required before assembly
+D28,ESD5Z3V3,footprints:D_SOD-323,,,,,UNSELECTED — exact part required before assembly
+D29,ESD5Z3V3,footprints:D_SOD-323,,,,,UNSELECTED — exact part required before assembly
+R49,22k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R50,1.62k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R51,22k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R52,1.62k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R53,22k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R54,1.62k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+D23,RED,footprints:LED_V140_Reference,,,,,UNSELECTED — exact part required before assembly
+D24,YELLOW,footprints:LED_V140_Reference,,,,,UNSELECTED — exact part required before assembly
+D25,GREEN,footprints:LED_V140_Reference,,,,,UNSELECTED — exact part required before assembly
+D26,BLUE,footprints:LED_V140_Reference,,,,,UNSELECTED — exact part required before assembly
+Q17,AO3400,footprints:SOT-23,,,,,UNSELECTED — exact part required before assembly
+Q18,AO3400,footprints:SOT-23,,,,,UNSELECTED — exact part required before assembly
+Q19,AO3400,footprints:SOT-23,,,,,UNSELECTED — exact part required before assembly
+Q20,AO3400,footprints:SOT-23,,,,,UNSELECTED — exact part required before assembly
+R89,470Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R90,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R91,300Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R92,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R93,1kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R94,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R95,470Ω,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R96,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+C13,10μF,footprints:C_1206_3216Metric,,,50V,,UNSELECTED — exact part required before assembly
+C14,22μF,footprints:C_1206_3216Metric,,,50V,,UNSELECTED — exact part required before assembly
+C15,10μF,footprints:C_1206_3216Metric,,,50V,,UNSELECTED — exact part required before assembly
+C16,10μF,footprints:C_1206_3216Metric,,,50V,,UNSELECTED — exact part required before assembly
+D7,DSK34,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+L2,22µH,footprints:L_7.3x7.3_H3.5,,,,,UNSELECTED — exact part required before assembly
+L3,240nH,footprints:R_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+R8,110kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R9,6.8kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+U5,LGS6302,footprints:SOT-23-5,,,,,UNSELECTED — exact part required before assembly
+C38,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+Q2,2N7002DW,footprints:SOT-23-6,,,,,UNSELECTED — exact part required before assembly
+Q6,CJ3439KDW,footprints:SOT-23-6,,,,,UNSELECTED — exact part required before assembly
+R29,4.7kΩ,footprints:R_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+R30,4.7kΩ,footprints:R_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+R31,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R32,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R33,4.7kΩ,footprints:R_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+R34,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R75,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R76,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+U13,74LVC2G66,footprints:VSSOP-8_2.3x2mm_P0.5mm,,,,,UNSELECTED — exact part required before assembly
+D15,MSK4005,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+D19,MSK4005,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+Q8,DMC3071LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMC3071LVT-7,,,SPECIFIED — verify procurement/footprint
+Q12,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,SPECIFIED — verify procurement/footprint
+R55,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R56,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R63,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R64,4.7k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R65,8.2k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+D16,MSK4005,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+D20,MSK4005,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+Q9,DMC3071LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMC3071LVT-7,,,SPECIFIED — verify procurement/footprint
+Q13,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,SPECIFIED — verify procurement/footprint
+R57,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R58,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R66,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R67,4.7k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R68,8.2k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+C17,0.1μF,footprints:C_1206_3216Metric,,,100V,,UNSELECTED — exact part required before assembly
+C18,22μF,footprints:C_1206_3216Metric,,,25V,,UNSELECTED — exact part required before assembly
+C19,10μF,footprints:C_1206_3216Metric,,,25V,,UNSELECTED — exact part required before assembly
+D8,DSK34,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+L4,22µH,footprints:L_7.3x7.3_H3.5,,,,,UNSELECTED — exact part required before assembly
+L5,470nH,footprints:R_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+R10,100kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R11,158kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R12,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+U6,LMR14010,footprints:SOT-23-6,,,,,UNSELECTED — exact part required before assembly
+C43,0.1μF,footprints:C_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+Q4,2N7002DW,footprints:SOT-23-6,,,,,UNSELECTED — exact part required before assembly
+R42,1kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R43,4.7kΩ,footprints:R_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+R44,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R45,1kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R46,4.7kΩ,footprints:R_1206_3216Metric,,,,,UNSELECTED — exact part required before assembly
+R47,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+U15,74LVC2G66,footprints:VSSOP-8_2.3x2mm_P0.5mm,,,,,UNSELECTED — exact part required before assembly
+D17,MSK4005,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+D21,MSK4005,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+Q10,DMC3071LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMC3071LVT-7,,,SPECIFIED — verify procurement/footprint
+Q14,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,SPECIFIED — verify procurement/footprint
+R59,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R60,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R69,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R70,4.7k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R71,8.2k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+D18,MSK4005,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+D22,MSK4005,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+Q11,DMC3071LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMC3071LVT-7,,,SPECIFIED — verify procurement/footprint
+Q15,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,SPECIFIED — verify procurement/footprint
+R61,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R62,4.7kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R72,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R73,4.7k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R74,8.2k 1%,footprints:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+C20,10μF,footprints:C_1206_3216Metric,,,50V,,UNSELECTED — exact part required before assembly
+C21,0.1μF,footprints:C_1206_3216Metric,,,100V,,UNSELECTED — exact part required before assembly
+C22,22μF,footprints:C_1206_3216Metric,,,25V,,UNSELECTED — exact part required before assembly
+C23,10μF,footprints:C_1206_3216Metric,,,25V,,UNSELECTED — exact part required before assembly
+C24,22μF,footprints:C_1206_3216Metric,,,25V,,UNSELECTED — exact part required before assembly
+D9,DSK34,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+D10,DSK34,footprints:D_SOD-123,,,,,UNSELECTED — exact part required before assembly
+L6,22µH,footprints:L_7.3x7.3_H3.5,,,,,UNSELECTED — exact part required before assembly
+R13,100kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R14,100kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R15,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R16,82.5kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+R17,10kΩ,footprints:R_0603_1608Metric,,,,,UNSELECTED — exact part required before assembly
+U7,LMR14010,footprints:SOT-23-6,,,,,UNSELECTED — exact part required before assembly
+U8,TLV76701DRV,footprints:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm,,,,,UNSELECTED — exact part required before assembly
+C62,100nF 16V X7R,Capacitor_SMD:C_0603_1608Metric,,,16V,,UNSELECTED — exact part required before assembly
+C63,100nF 16V X7R,Capacitor_SMD:C_0603_1608Metric,,,16V,,UNSELECTED — exact part required before assembly
+C64,100nF 16V X7R,Capacitor_SMD:C_0603_1608Metric,,,16V,,UNSELECTED — exact part required before assembly
+C65,100nF 16V X7R,Capacitor_SMD:C_0603_1608Metric,,,16V,,UNSELECTED — exact part required before assembly
+D30,BZT52H-B15,Diode_SMD:D_SOD-123F,Nexperia,"BZT52H-B15,115",,,SPECIFIED — verify procurement/footprint
+R115,100k 0.1% 25ppm,Resistor_SMD:R_0603_1608Metric,,,,0.1%,UNSELECTED — exact part required before assembly
+R116,191k 1%,Resistor_SMD:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R117,100k 1%,Resistor_SMD:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R118,10k 1%,Resistor_SMD:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R119,10k 1%,Resistor_SMD:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R120,100k 1%,Resistor_SMD:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R121,100k 1%,Resistor_SMD:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R122,100k 1%,Resistor_SMD:R_0603_1608Metric,,,,1%,UNSELECTED — exact part required before assembly
+R123,1k 1W 1%,Resistor_SMD:R_2512_6332Metric,,,,1%,UNSELECTED — exact part required before assembly
+U21,TMUX1511PWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,Texas Instruments,TMUX1511PWR,,,SPECIFIED — verify procurement/footprint
+U22,LTC6993HS6-2#TRMPBF,Package_TO_SOT_SMD:TSOT-23-6,Analog Devices,LTC6993HS6-2#TRMPBF,,,SPECIFIED — verify procurement/footprint
+U23,SN74LVC1G11DBVR,Package_TO_SOT_SMD:SOT-23-6,Texas Instruments,SN74LVC1G11DBVR,,,SPECIFIED — verify procurement/footprint
+U24,TLV803EA30DBZR,Package_TO_SOT_SMD:SOT-23-3,Texas Instruments,TLV803EA30DBZR,,,SPECIFIED — verify procurement/footprint
