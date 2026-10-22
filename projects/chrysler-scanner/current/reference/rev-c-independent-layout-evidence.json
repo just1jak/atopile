@@ -2096,5 +2096,6 @@
       "baselineGeometryUnchanged": true,
       "disposition": "P2 verify actual connector housing/screw/enclosure geometry; coarse2D envelope is not proof of3D collision"
     }
-  ]
+  ],
+  "scopeNote": "Historical independent layout evidence for its recorded PCB hash. For the C61-only current delta, use rev-c-c61-top-audit.json and rev-c-c61-top-review.md."
 }

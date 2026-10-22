@@ -3,8 +3,8 @@
   "revision": "C",
   "state": "cad_checked_bounded_prototype_fabrication_package_ready",
   "routing_complete": true,
-  "pcb_sha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
-  "previous_accepted_pcb_sha256": "85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a",
+  "pcb_sha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
+  "previous_accepted_pcb_sha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
   "native_drc": {
     "errors": 0,
     "warnings": 0,
@@ -14,7 +14,7 @@
   "native_erc_findings": 0,
   "uncapped_native_airwires": 0,
   "ground_pads_connected": 193,
-  "original_scanner_placements_preserved": true,
+  "original_scanner_placements_preserved": false,
   "all_retained_old_copper_exact": true,
   "explicit_original_adc_supply_copper_removals": 55,
   "retained_locked_copper_objects_preserved": 380,
@@ -45,12 +45,12 @@
   "updated_schematic_pdf": "current/ChryslerScanner_V240_SD-Hierarchy.pdf",
   "adversarial_review_status": "CONDITIONAL_BOUNDED_PROTOTYPE_DESIGN_ACCEPTANCE",
   "remaining_P1_findings": [],
-  "fabrication_package": "outputs/chrysler-integrated-sd-rev-c-20261022-checked-fabrication.zip",
-  "fabrication_package_sha256": "a629a0e46e9fa4e2c79da1a9765fc3598f0e68af2cf8319416ed5e8ef5293d35",
-  "full_project_archive": "outputs/chrysler-integrated-sd-rev-c-20261022-checked.zip",
-  "full_project_archive_sha256": "9b19d12fd78b493fad996e4ab9f291aedd3f57f9cf1486c5a1ecb7f8c2b9c1d2",
+  "fabrication_package": "outputs/chrysler-integrated-sd-rev-c-c61-top-fabrication.zip",
+  "fabrication_package_sha256": "bfe013a23237548fe1c450f5557038b65400ab5bb9fd702c61bbd5d9d4b82581",
+  "full_project_archive": "outputs/chrysler-integrated-sd-rev-c-c61-top.zip",
+  "full_project_archive_sha256": "426bb858d3153cb52160ed8ecdc9304d6eeef77c2f3431095ed6f31c65cdfdd2",
   "requires_filled_capped_planarized_vias": true,
-  "filled_capped_processing_site_count": 203,
+  "filled_capped_processing_site_count": 205,
   "assembly_bom_complete": false,
   "unselected_exact_bom_parts": 245,
   "normal_input_V": [
@@ -69,5 +69,16 @@
   "selected_mounting_hardware": "M3 socket head no washer, checked head envelope D5.5 x H3 mm",
   "h1_nominal_clearance_mm": 0.7504,
   "h1_clearance_after_nominal_screw_float_mm": 0.2504,
-  "mechanical_nominal_cad_fit_pass": true
+  "mechanical_nominal_cad_fit_pass": true,
+  "all_original_placements_except_declared_c61_move_preserved": true,
+  "c61_top_side": true,
+  "c61_position_mm": [
+    193,
+    127
+  ],
+  "c61_orientation_degrees": 90,
+  "c61_additional_original_copper_removals": 2,
+  "c61_added_tracks": 4,
+  "c61_added_filled_capped_vias": 2,
+  "c61_exact_delta_audit": "current/reference/rev-c-c61-top-audit.json"
 }

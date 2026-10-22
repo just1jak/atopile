@@ -2,8 +2,8 @@
   "status": "PASS",
   "releaseGatePassed": true,
   "phase": "full_release_gate",
-  "pcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
-  "netlistSha256": "5f85cce75c464298ad5b482e1b51bf24356d38a2ffc3fd16dc32cd016a9b5d84",
+  "pcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
+  "netlistSha256": "02e46631e8484cfa7ff6e11476e10d1a6c601630b1a2b617ccd320e2effcfa8f",
   "baselinePcbSha256": "85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a",
   "baselineProjectSha256": "52183ee48ae18f736465cb24c327b45fca4cb63fdcd560b91ecd7610d4cf692c",
   "checks": {
@@ -18,7 +18,8 @@
     "onlyOneDeclaredProtectedAdcException": true,
     "frozenRemovalManifestUnchanged": true,
     "builderRemovalListExactlyMatchesFrozenContract": true,
-    "only55ExplicitCopperRemovals": true,
+    "c61CutsOnlyUnlockedSdSupplyBranch": true,
+    "only55SafetyAndTwoC61ExplicitCopperRemovals": true,
     "allRetainedOldCopperExact": true,
     "all380CurrentlyLockedRetainedObjectsExact": true,
     "all173HistoricalProtectedObjectsRetainedExactly": true,
@@ -38,7 +39,7 @@
     "exact168NativePortsAndMatchingChildLabels": true,
     "allOriginalSheetFramesPagesAndPortUuidsPreserved": true,
     "all23PagesNumberedExactlyOnce": true,
-    "all263OriginalFootprintsPadsPlacementsModelsAndPathsExact": true,
+    "all263FootprintsExactWithOnlyDeclaredC61TopTransform": true,
     "exactly18AddedFootprints": true,
     "allNewAndMovedBodiesClearOfSameSideParts": true,
     "allNewFootprintValuesLibrariesAndPinsExact": true,
@@ -60,12 +61,13 @@
   },
   "errors": [],
   "allowedCopperRemovalCount": 55,
+  "c61AdditionalCopperRemovalCount": 2,
   "protectedCopperRemovalExceptions": [
     "8cf8242f-4b46-50a7-a351-4b51bd98f7f7"
   ],
   "retainedProtectedCopperCount": 380,
   "retainedHistoricalProtectedCopperCount": 173,
-  "newCopperCount": 1612,
+  "newCopperCount": 1618,
   "nativeHierarchyPortCount": 168,
   "newSmdViaProcessing": [
     {
@@ -513,9 +515,9 @@
       "isolatedFromMainGroup": []
     },
     "planeFilledAreasMm2": {
-      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3170.147199,
-      "c85111e0-830e-413f-8f53-8f84679f816d": 4604.344446,
-      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5325.389784,
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3163.112706,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4616.273633,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5324.432248,
       "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 37.506408
     }
   }

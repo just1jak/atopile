@@ -1,5 +1,5 @@
 Drill report for ChryslerScanner_V240_SD.kicad_pcb
-Created on 2026-10-22T05:26:09
+Created on 2026-10-22T05:47:14
 
 Copper Layer Stackup:
     =============================================================
@@ -12,13 +12,13 @@ Copper Layer Stackup:
 Drill file 'ChryslerScanner_V240_SD-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.300mm  0.0118"  (468 holes))
+    T1  0.300mm  0.0118"  (470 holes))
     T2  0.600mm  0.0236"  (4 holes)  (with 4 slots)
     T3  0.800mm  0.0315"  (2 holes))
     T4  1.000mm  0.0394"  (6 holes))
     T5  1.350mm  0.0531"  (16 holes))
 
-    Total plated holes count 496
+    Total plated holes count 498
 
 
 Drill file 'ChryslerScanner_V240_SD-NPTH.drl' contains

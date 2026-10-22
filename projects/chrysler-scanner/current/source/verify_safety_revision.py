@@ -167,6 +167,7 @@ check('frozenRootHierarchyHash',sha(F/(N+'-root-before.kicad_sch'))==BASE_ROOT_S
 target = D/(N+'.kicad_pcb');initial_hash=sha(target)
 base = p.LoadBoard(str(F/(N+'.kicad_pcb')))
 candidate = p.LoadBoard(str(target))
+subprocess.run([sys.executable,str(D/'source/verify_c61_top.py')],check=True)
 oldcu = {audit.uid(t):t for t in base.GetTracks()}
 newcu = {audit.uid(t):t for t in candidate.GetTracks()}
 adc_cut = {key for key,t in oldcu.items() if t.GetNetname() in ('V_BA','V_BT','V_PR')}
@@ -194,8 +195,10 @@ def copper(t):
                       frontTenting=int(t.GetFrontTentingMode()),backTenting=int(t.GetBackTentingMode()))
     if t.GetClass()=='PCB_ARC':result['mid']=audit.xy(t.GetArcMid())
     return result
+C61_CUT={'b2e77e8c-5db9-4c4b-b5df-6fa86e1b60ba','ba39bf73-e299-4de0-a91a-89bb4415e8a3'}
+check('c61CutsOnlyUnlockedSdSupplyBranch',all(oldcu[k].GetNetname()=='SD_3V3' and not oldcu[k].IsLocked() for k in C61_CUT))
 missing=set(oldcu)-set(newcu)
-check('only55ExplicitCopperRemovals',missing==allowed_cut,sorted(missing^allowed_cut))
+check('only55SafetyAndTwoC61ExplicitCopperRemovals',missing==allowed_cut|C61_CUT,sorted(missing^(allowed_cut|C61_CUT)))
 changed_copper=[key for key in oldcu.keys()&newcu.keys() if copper(oldcu[key])!=copper(newcu[key])]
 check('allRetainedOldCopperExact',not changed_copper,changed_copper)
 protected={key for key,t in oldcu.items() if t.IsLocked()}-PROTECTED_ADC_EXCEPTIONS
@@ -205,8 +208,8 @@ historical_protected={audit.uid(t) for t in historical.GetTracks() if t.IsLocked
 check('all173HistoricalProtectedObjectsRetainedExactly',len(historical_protected)==173 and
       all(key in newcu and copper(oldcu[key])==copper(newcu[key]) for key in historical_protected))
 added=set(newcu)-set(oldcu)
-check('newCopperOnlyOnExplicitSafetyNets',all(newcu[key].GetNetname() in ALLOWED_NEW_NETS for key in added),
-      sorted({newcu[key].GetNetname() for key in added}-ALLOWED_NEW_NETS))
+check('newCopperOnlyOnExplicitSafetyNets',all(newcu[key].GetNetname() in (ALLOWED_NEW_NETS|{'SD_3V3'}) for key in added),
+      sorted({newcu[key].GetNetname() for key in added}-(ALLOWED_NEW_NETS|{'SD_3V3'})))
 check('noSignalsOnInnerGroundReference',all(t.GetNetname()=='GND' or t.GetLayer()!=p.In1_Cu for t in candidate.GetTracks() if t.GetClass()!='PCB_VIA'))
 check('minimumTrackWidth150um',all(t.GetWidth()>=150000 for t in candidate.GetTracks() if t.GetClass()!='PCB_VIA'))
 check('onlyFourValidCopperLayers',all(t.GetLayer() in (p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu) for t in candidate.GetTracks() if t.GetClass()!='PCB_VIA'))
@@ -287,16 +290,25 @@ def footprints(board):
         for pad in f.Pads():
             item['pads'][audit.uid(pad)].update(roundRectRatio=pad.GetRoundRectRadiusRatio(),maskMargin=str(pad.GetLocalSolderMaskMargin()))
     return native
-oldfp=footprints(base);newfp=footprints(candidate)
+oldfp=footprints(base)
+# User-authorized single placement exception; expected geometry is derived from
+# the unchanged frozen footprint using this exact transform, never the candidate.
+c61base=base.FindFootprintByReference('C61')
+c61base.Flip(c61base.GetPosition(),False)
+c61base.SetOrientationDegrees(90)
+c61base.SetPosition(p.VECTOR2I(193000000,127000000))
+c61expected=footprints(base)[audit.uid(c61base)]
+newfp=footprints(candidate)
 fp_differences=[]
 for key,old in oldfp.items():
     expected=json.loads(json.dumps(old));ref=old['reference']
+    if ref=='C61':expected=json.loads(json.dumps(c61expected))
     expected['value']=VALUES.get(ref,old['value'])
     for pad in expected['pads'].values():
         if (ref,pad['number']) in CHANGES:pad['net']=CHANGES[ref,pad['number']][1]
     actual=json.loads(json.dumps(newfp.get(key)))
     if actual!=expected:fp_differences.append(ref)
-check('all263OriginalFootprintsPadsPlacementsModelsAndPathsExact',not fp_differences,fp_differences)
+check('all263FootprintsExactWithOnlyDeclaredC61TopTransform',not fp_differences,fp_differences)
 fps={f.GetReference():f for f in candidate.GetFootprints()}
 check('exactly18AddedFootprints',len(newfp)==281 and set(fps)=={f.GetReference() for f in base.GetFootprints()}|set(NEW))
 # Same-net pads can conceal a physical package collision from electrical DRC.
@@ -405,7 +417,7 @@ report=dict(status='PASS' if all(checks.values()) else 'FAIL',releaseGatePassed=
             phase='structural_contract_only' if args.structural_only else 'full_release_gate',
             pcbSha256=initial_hash,netlistSha256=sha(xml),baselinePcbSha256=BASE_PCB_SHA,
             baselineProjectSha256=BASE_PRO_SHA,checks=checks,errors=errors,
-            allowedCopperRemovalCount=len(allowed_cut),protectedCopperRemovalExceptions=sorted(PROTECTED_ADC_EXCEPTIONS),
+            allowedCopperRemovalCount=len(allowed_cut),c61AdditionalCopperRemovalCount=len(C61_CUT),protectedCopperRemovalExceptions=sorted(PROTECTED_ADC_EXCEPTIONS),
             retainedProtectedCopperCount=len(protected),retainedHistoricalProtectedCopperCount=len(historical_protected),
             newCopperCount=len(added),nativeHierarchyPortCount=port_count,newSmdViaProcessing=smdups,allSmdViaProcessing=all_smd_vias,connectivity=connection)
 out=args.report or D/'reference/p1-contract-audit.json';out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(report,indent=2),newline='\n')

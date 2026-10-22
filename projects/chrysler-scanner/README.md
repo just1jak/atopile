@@ -4,16 +4,18 @@ Open `current/ChryslerScanner_V240_SD.kicad_pro` in KiCad 10. The 23-page schema
 
 The three high-priority findings are corrected: coordinated input protection and affected ratings, powered-off ADC isolation, and an external supervised health-heartbeat permit for AW9523B. Final native ERC and complete DRC are clean: zero findings, unrouted connections or schematic-parity errors. Independent native connectivity has zero uncapped airwires and all 193 ground pads in one group. The final adversarial review finds no remaining P1 within the explicit bounded prototype contract.
 
-All 239 original electrical components and functional blocks are accounted for against the original ChryslerScanner PDF. All original placements, retained copper, nine zones, outline, mounting holes and rules remain exact. The 55 explicitly recorded old-copper removals are limited to the corrected ADC/protected-supply branches; 380 retained locked objects and 173 retained historical protected objects are unchanged. No experimental MCU-fanout or capacitor moves were adopted. See `current/reference/original-schematic-comparison.md` and `p1-contract-audit.json` for exact exceptions, values and pin contracts.
+All 239 original electrical components and functional blocks are accounted for against the original ChryslerScanner PDF. All original placements except the user-authorized C61 top-side move, retained copper, nine zones, outline, mounting holes and rules remain exact. The 55 safety copper removals are limited to the corrected ADC/protected-supply branches; two additional unlocked C61 supply-branch segments are removed for its relocation; 380 retained locked objects and 173 retained historical protected objects are unchanged. C61 is the only accepted capacitor placement change; no experimental MCU-fanout moves were adopted. See `current/reference/original-schematic-comparison.md` and `p1-contract-audit.json` for exact exceptions, values and pin contracts.
 
 Protection caps on page 2 are grouped and labeled by PCI and SCI channel pair. With the selected M3 socket head and no washer (checked head envelope 5.5 mm diameter × 3 mm high), H1 has 0.7504 mm centered connector clearance and 0.2504 mm after nominal screw float. The housing clears the PCB and all 16 pins align. This nominal model check leaves a small tolerance budget; verify actual screw and sample fit before production assembly. See `current/reference/rev-c-obd-mechanical-clearance.md`.
+
+C61 (100 µF microSD supply bulk capacitor) is on the TOP side at (193,127) mm, 90 degrees, with a short 0.5 mm power route to the SD_3V3 distribution branch. Allow approximately 5.9 mm top-side component headroom. `current/reference/rev-c-c61-top-audit.json` binds this exact placement and routing exception to the frozen pre-move board. There are now 205 filled/capped/planarized processing sites. Earlier archives place C61 underneath and are superseded.
 
 The board is 110 × 55 mm, four layers, nominal 1.6 mm, with underside microSD. Provide card access and at least 7 mm underside enclosure space, then check actual housing, screwhead and enclosure fit.
 
 ## Local fabrication files
 
-- `outputs/chrysler-integrated-sd-rev-c-20261022-checked-fabrication.zip`: fresh Gerbers/job, separate metric PTH/NPTH drills/maps, positions, checksums and processing notes.
-- `outputs/chrysler-integrated-sd-rev-c-20261022-checked.zip`: complete portable KiCad project, libraries/models, schematic PDF, BOM, native previews and review evidence.
+- `outputs/chrysler-integrated-sd-rev-c-c61-top-fabrication.zip`: fresh Gerbers/job, separate metric PTH/NPTH drills/maps, positions, checksums and processing notes.
+- `outputs/chrysler-integrated-sd-rev-c-c61-top.zip`: complete portable KiCad project, libraries/models, schematic PDF, BOM, native previews and review evidence.
 
 Filled, copper-capped and planarized vias are required at every recorded site. Supply `current/reference/MANUFACTURING-NOTES.md` and its processing-site JSON to the fabricator, and agree the actual RF/USB stackup. Ordinary open or tented vias are not equivalent. Rev B archives and historical reports certify older boards only.
 

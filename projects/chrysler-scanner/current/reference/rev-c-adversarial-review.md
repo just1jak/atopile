@@ -69,3 +69,8 @@ The mandatory tests above measure declared assumptions; they are not evidence th
 ## 2026-10-22 presentation-only revalidation
 
 Protection caps are grouped by PCI and SCI circuit. All 277 components, values, fields, footprints, sheet paths and named net endpoint sets are unchanged; see rev-c-protection-cap-grouping-audit.json. The PCB hash is unchanged. Fresh native ERC/DRC and full contract audit pass. Prior independent electrical review is retained; this is not a new independent review. Current XML SHA-256: `5f85cce75c464298ad5b482e1b51bf24356d38a2ffc3fd16dc32cd016a9b5d84`. Selected M3 socket-head/no-washer nominal fit and H1 tolerance limits are documented in rev-c-obd-mechanical-clearance.md.
+
+
+## 2026-10-22 C61 top-side relocation
+
+User authorized moving C61 to F.Cu at (193,127) mm, orientation 90 degrees. Pin 1 remains SD_3V3 and pin 2 GND. Exactly two obsolete unlocked SD_3V3 branch segments are removed; four 0.5 mm tracks and two 0.6/0.3 mm filled/capped vias are added. All retained copper and other placements are exact. R96 reference text alone is repositioned. Native all-severity ERC, full refill/track/parity DRC, body-overlap and native connectivity checks pass. See rev-c-c61-top-audit.json and source/verify_c61_top.py. This is an implementing-agent adversarial delta review; the prior independent review retains its original provenance. No new independent reviewer is claimed. C61 requires about 5.9 mm top-side component headroom; verify the actual enclosure.

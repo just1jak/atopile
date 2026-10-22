@@ -1,5 +1,5 @@
 {
-  "pcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+  "pcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
   "requirements": "Filled, copper capped and planarized; agree fabrication process before order. Ordinary open/tented drills are not equivalent.",
   "sites": [
     {
@@ -183,6 +183,17 @@
       "net": "GND",
       "x_mm": 169.175,
       "y_mm": 146.45,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "0d84c9e3-089a-481a-9a6c-08a004530ba8",
+      "net": "GND",
+      "x_mm": 191.5,
+      "y_mm": 124.8,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,
@@ -1987,6 +1998,17 @@
       "net": "SDA",
       "x_mm": 165.3049,
       "y_mm": 117.4358,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
+      "uuid": "ce800b43-9a3a-4772-8237-839ca61e2e30",
+      "net": "SD_3V3",
+      "x_mm": 194.0,
+      "y_mm": 129.199999,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,

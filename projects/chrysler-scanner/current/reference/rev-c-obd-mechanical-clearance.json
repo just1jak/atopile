@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "pcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+  "pcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
   "modelSha256": "b7de878426ff567bcd8548e076be72a7cafc2c1dc643b73f069533428274f87a",
   "engine": "FreeCAD 1.0.0",
   "manufacturerDrawing": "https://www.attend.com.tw/data/download/file/226A-1202.pdf",
@@ -337,5 +337,7 @@
   "housingOverhangFromLeftBoardEdgeMm": 18.8,
   "nearestObdPadCopperToEdgeMm": 0.325,
   "nominalCadFitPass": true,
-  "toleranceQualified": false
+  "toleranceQualified": false,
+  "previousMeasuredPcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+  "unchangedGeometryRevalidation": "Exact C61-only delta proves J1, all mounting holes and outline unchanged. C61 is far outside the OBD housing envelope; earlier connector/screw distances remain applicable."
 }

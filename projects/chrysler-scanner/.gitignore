@@ -40,3 +40,6 @@ secrets.hpp
 # Protection grouping and nominal mechanical-check scratch.
 /work/protection-mechanical/
 /outputs/chrysler-integrated-sd-rev-c-20261022*/
+
+/work/c61-top/
+/outputs/chrysler-integrated-sd-rev-c-c61-top*/

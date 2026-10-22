@@ -17,3 +17,5 @@ All four mounting holes are 4 mm diameter. A nominal 3 mm screw can move 0.5 mm 
 Do not substitute a washer or above-board standoff based on this result: a 7 mm tall envelope has only 0.0004 mm nominal H1 clearance, and an 8 mm above-board envelope intersects the housing. Enclosure fit and support for connector insertion loads remain separate mechanical checks. PCB placements, holes, copper and outline are unchanged.
 
 Geometry: bundled manufacturer STEP, FreeCAD 1.0 solid distances/booleans, native KiCad coordinates. [Manufacturer drawing](https://www.attend.com.tw/data/download/file/226A-1202.pdf). Exact PCB/model hashes and raw measurements are in rev-c-obd-mechanical-clearance.json. Older zero-intersection checks alone did not establish an adequate clearance margin.
+
+C61 top-side revision: exact layout delta preserves J1, mounting holes and outline. OBD/screw measurements remain applicable to PCB `a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5`; C61 is outside the connector housing envelope.

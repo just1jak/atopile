@@ -106,6 +106,8 @@ def main():
     (fab/'filled-capped-via-sites.json').write_text(json.dumps(via,indent=2)+'\n')
     (ref/'rev-c-filled-capped-via-sites.json').write_text(json.dumps(via,indent=2)+'\n')
     (fab/'MANUFACTURING-NOTES.md').write_text('# Rev C prototype fabrication\n\nFour layers, 110 × 55 mm, nominal 1.6 mm. Confirm actual RF/USB stackup and impedance with fabricator. Use separate PTH/NPTH drill files. Assembly positions are millimetres, both sides, absolute board coordinates. Filled/copper-capped/planarized vias listed in filled-capped-via-sites.json are mandatory; saved drill flags do not themselves specify a fabricator process. Confirm underside microSD/enclosure clearance. This is a local export, not a fabrication order or qualified automotive design.\n')
+    with (fab/'MANUFACTURING-NOTES.md').open('a') as notes:
+        notes.write('\nC61 is TOP-side at (193,127) mm; nominal body height 5.9 mm above PCB. Two new vias bring the filled/capped/planarized processing count to 205. Use this package only; earlier Gerbers place C61 underneath.\n')
     mechanical=ref/'rev-c-obd-mechanical-clearance.md'
     if mechanical.exists():
         shutil.copy2(mechanical,fab/mechanical.name)

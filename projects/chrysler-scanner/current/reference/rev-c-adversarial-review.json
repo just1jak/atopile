@@ -29,8 +29,8 @@
     "23_hardware-safety.kicad_sch": "f4fda15905ec180696131f32d638fd790a01956f1bba7eb3b45430a363f4bc2d",
     "ChryslerScanner_V240_SD.kicad_sch": "cddfe185bae68c4bd6b6148e21289922755a9ef2c169f8ed1c549845624a054a"
   },
-  "finalNetlistSha256": "5f85cce75c464298ad5b482e1b51bf24356d38a2ffc3fd16dc32cd016a9b5d84",
-  "finalErcSha256": "f22239dafa9ffdaf5a541627ac6f71abf8bcbd75b5b6988a8b7e5a9f60e762d2",
+  "finalNetlistSha256": "02e46631e8484cfa7ff6e11476e10d1a6c601630b1a2b617ccd320e2effcfa8f",
+  "finalErcSha256": "f35282eeaba0513c12909c3de217b84a0049cd35b89f43cc8290da40c7e2eb54",
   "safetyContractSha256": "1288851d0f18f0b686caa8d4105eb6a8bf8d2421d54ba535def3febc26da132f",
   "manifestSha256": "c86c6a26b850b34546c67625a4bcc7a0bb72d7147997cb3caf6b2154c013b37e",
   "originalPdfSha256": "334b04164cfa96183cf502f690024a764cc719671f20583043f37604c9ed590d",
@@ -48,7 +48,7 @@
   },
   "pcbReview": {
     "status": "COMPLETE",
-    "pcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+    "pcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
     "nativeConnectivity": {
       "fullNativeAirwires": 0,
       "disconnectedNetGroups": {},
@@ -87,7 +87,9 @@
       "programming output waveforms",
       "production assembly or enclosure fit",
       "firmware integration"
-    ]
+    ],
+    "previousIndependentPcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+    "revalidationScope": "C61-only placement/routing delta; see c61TopMoveReview, original independent review remains attributed to its original hash."
   },
   "openReleaseGates": [
     "Exact capacitor/ESD/protection ordering codes, capacitance derating and assembly fit including existing J1/H1 envelopes",
@@ -96,7 +98,7 @@
     "Regenerated fabrication exports/notes/checksums carrying all saved filled/capped via processing"
   ],
   "reportSha256": "9e0f514cc35b5d0d2f4469f498cf269b177952ed7c394af4107c34871bba3582",
-  "pcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+  "pcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
   "layoutReviewComplete": true,
   "remainingP1Findings": [],
   "heartbeatContract": "U10 physical20/GPIO13 ACT_LED is dedicated software health, also LED; legacy firmware is not safe by inference; GPIO2 original NC",
@@ -164,5 +166,24 @@
     },
     "equivalenceReport": "rev-c-protection-cap-grouping-audit.json",
     "mechanicalCheck": "rev-c-obd-mechanical-clearance.json"
-  }
+  },
+  "c61TopMoveReview": {
+    "date": "2026-10-22",
+    "reviewer": "Implementing agent, bounded adversarial delta review; prior independent review is historical evidence, no new independent reviewer claimed.",
+    "previousPcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+    "pcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
+    "checks": [
+      "C61 pin 1 remains SD_3V3 and pin 2 GND after flip; exact transformed pad geometry checked.",
+      "No new same-side body overlaps; native courtyard and clearance DRC clean.",
+      "Power connection uses 0.5 mm tracks and through via to existing SD_3V3 distribution node.",
+      "Ground through via reaches unbroken In1 GND; no signal tracks added on In1.",
+      "Both new vias filled/capped; fabrication processing list must include them.",
+      "All other footprint placements, retained copper, nine zones, rules, board outline and holes remain exact.",
+      "Fresh ERC, complete DRC/parity, native connectivity and strict audit pass.",
+      "Top-side 5.9 mm component height requires enclosure headroom; physical fit remains a sample qualification."
+    ],
+    "report": "rev-c-c61-top-audit.json",
+    "status": "PASS_CAD_DELTA_REVIEW"
+  },
+  "priorIndependentPcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e"
 }
