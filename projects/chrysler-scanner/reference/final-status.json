@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "revision": "C",
   "state": "cad_checked_bounded_prototype_fabrication_package_ready",
   "routing_complete": true,
@@ -45,10 +45,10 @@
   "updated_schematic_pdf": "current/ChryslerScanner_V240_SD-Hierarchy.pdf",
   "adversarial_review_status": "CONDITIONAL_BOUNDED_PROTOTYPE_DESIGN_ACCEPTANCE",
   "remaining_P1_findings": [],
-  "fabrication_package": "outputs/chrysler-integrated-sd-routed-rev-c-fabrication.zip",
-  "fabrication_package_sha256": "52de850ea6ab069947337dc7f98647df17bcbe2f7738c3bae448aeb7b9d3d3ca",
-  "full_project_archive": "outputs/chrysler-integrated-sd-routed-rev-c.zip",
-  "full_project_archive_sha256": "833f3328ec42b67a8493519ef705cb8ffa7cd8dbb5661b2b8334a90dc772061c",
+  "fabrication_package": "outputs/chrysler-integrated-sd-rev-c-20261022-checked-fabrication.zip",
+  "fabrication_package_sha256": "a629a0e46e9fa4e2c79da1a9765fc3598f0e68af2cf8319416ed5e8ef5293d35",
+  "full_project_archive": "outputs/chrysler-integrated-sd-rev-c-20261022-checked.zip",
+  "full_project_archive_sha256": "9b19d12fd78b493fad996e4ab9f291aedd3f57f9cf1486c5a1ecb7f8c2b9c1d2",
   "requires_filled_capped_planarized_vias": true,
   "filled_capped_processing_site_count": 203,
   "assembly_bom_complete": false,
@@ -63,5 +63,11 @@
   "legacy_firmware_may_accidentally_retrigger_timer": true,
   "hardware_bench_or_vehicle_validation_performed": false,
   "mechanical_assembly_fit_qualified": false,
-  "manufacturing_order_or_external_upload_performed": false
+  "manufacturing_order_or_external_upload_performed": false,
+  "protection_caps_grouped_by_bus": true,
+  "mechanical_check": "current/reference/rev-c-obd-mechanical-clearance.json",
+  "selected_mounting_hardware": "M3 socket head no washer, checked head envelope D5.5 x H3 mm",
+  "h1_nominal_clearance_mm": 0.7504,
+  "h1_clearance_after_nominal_screw_float_mm": 0.2504,
+  "mechanical_nominal_cad_fit_pass": true
 }

@@ -59,7 +59,7 @@ def main():
     shutil.copytree(d,out,symlinks=False,ignore=ignore)
     # Old final-* reports are evidence of older boards, never current evidence.
     ref=out/'reference';history=ref/'historical-pre-rev-c';history.mkdir(exist_ok=True)
-    keep={'final-drc.json','final-erc.json','final-netlist.xml','p1-contract-audit.json',
+    keep={'MANUFACTURING-NOTES.md','final-drc.json','final-erc.json','final-netlist.xml','p1-contract-audit.json',
           'p1-remediation-manifest.json','rev-c-safety-contract.md','pre-p1',
           'rev-c-adversarial-review.md','rev-c-adversarial-review.json',
           'original-schematic-comparison.md'}
@@ -106,6 +106,12 @@ def main():
     (fab/'filled-capped-via-sites.json').write_text(json.dumps(via,indent=2)+'\n')
     (ref/'rev-c-filled-capped-via-sites.json').write_text(json.dumps(via,indent=2)+'\n')
     (fab/'MANUFACTURING-NOTES.md').write_text('# Rev C prototype fabrication\n\nFour layers, 110 × 55 mm, nominal 1.6 mm. Confirm actual RF/USB stackup and impedance with fabricator. Use separate PTH/NPTH drill files. Assembly positions are millimetres, both sides, absolute board coordinates. Filled/copper-capped/planarized vias listed in filled-capped-via-sites.json are mandatory; saved drill flags do not themselves specify a fabricator process. Confirm underside microSD/enclosure clearance. This is a local export, not a fabrication order or qualified automotive design.\n')
+    mechanical=ref/'rev-c-obd-mechanical-clearance.md'
+    if mechanical.exists():
+        shutil.copy2(mechanical,fab/mechanical.name)
+        shutil.copy2(ref/'rev-c-obd-mechanical-clearance.json',fab/'rev-c-obd-mechanical-clearance.json')
+        with (fab/'MANUFACTURING-NOTES.md').open('a') as notes:
+            notes.write('\nMounting: M3 socket head, NO washer; checked envelope 5.5 mm diameter by 3 mm high. H1 clearance is 0.7504 mm centered, 0.2504 mm after nominal screw float. Actual tolerance/sample fit remains to be qualified before production assembly. See rev-c-obd-mechanical-clearance.md.\n')
     (ref/'MANUFACTURING-NOTES.md').write_text((fab/'MANUFACTURING-NOTES.md').read_text()+'\nChecked PCB SHA-256: `'+sha(copied)+'`. Processing-site count: '+str(len(sites))+'. See rev-c-filled-capped-via-sites.json for exact coordinates, UUIDs, drill sizes and saved flags.\n')
     (out/'README.md').write_text((HERE/'REV-C-DELIVERY.md').read_text())
     (ref/'rev-c-package-status.json').write_text(json.dumps(dict(revision='C',cad_validation='PASS',pcbSha256=sha(copied),prototype_only=True,automotive_qualified=False,firmware_integration_complete=False,assembly_bom_complete=not unselected,unselected_exact_parts=unselected,external_upload_performed=False),indent=2)+'\n')
@@ -115,6 +121,9 @@ def main():
     run(sys.executable,out/'source/verify_safety_revision.py')
     copied_audit=json.loads((ref/'p1-contract-audit.json').read_text())
     assert copied_audit['releaseGatePassed'] and copied_audit['pcbSha256']==sha(copied)
+    # The portable audit creates interpreter caches; omit those from deliverables.
+    for cache in out.rglob('__pycache__'):
+        shutil.rmtree(cache)
     patterns=[rb'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',
               rb'sk-(?:proj-|svcacct-)?[A-Za-z0-9_-]{30,}',
               rb'gh[pousr]_[A-Za-z0-9]{30,}',rb'github_pat_[A-Za-z0-9_]{40,}',rb'AKIA[A-Z0-9]{16}']

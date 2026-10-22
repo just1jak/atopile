@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "electricalComponents": 277,
+  "allValuesFootprintsFieldsRatingsAndSheetPathsUnchanged": true,
+  "allNetEndpointSetsUnchanged": true,
+  "oldNetlistSha256": "249456fcca8f9c3deaea80b8c109878cd1c975821f7d1cf4fe1e64f4a7d967a8",
+  "newNetlistSha256": "5f85cce75c464298ad5b482e1b51bf24356d38a2ffc3fd16dc32cd016a9b5d84",
+  "pcbBytesUnchanged": true
+}

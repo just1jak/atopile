@@ -64,3 +64,8 @@ Detailed checks and via flags are in `rev-c-independent-layout-evidence.json`. T
 - **Prototype limitations:** safe-stop/card power-loss behavior, firmware calibration, RF/USB/SD behavior and existing thermal/VIPPO requirements remain. No arbitrary automotive transient, ECU programming, vehicle validation or production qualification claim follows from this schematic review.
 
 The mandatory tests above measure declared assumptions; they are not evidence that another P1 failure has already been found. If any measured waveform violates the bounds, the conditional disposition expires and a new protection/drive design is required before vehicle use.
+
+
+## 2026-10-22 presentation-only revalidation
+
+Protection caps are grouped by PCI and SCI circuit. All 277 components, values, fields, footprints, sheet paths and named net endpoint sets are unchanged; see rev-c-protection-cap-grouping-audit.json. The PCB hash is unchanged. Fresh native ERC/DRC and full contract audit pass. Prior independent electrical review is retained; this is not a new independent review. Current XML SHA-256: `5f85cce75c464298ad5b482e1b51bf24356d38a2ffc3fd16dc32cd016a9b5d84`. Selected M3 socket-head/no-washer nominal fit and H1 tolerance limits are documented in rev-c-obd-mechanical-clearance.md.

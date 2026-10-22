@@ -36,3 +36,7 @@ secrets.hpp
 /work/original-comparison/
 /outputs/chrysler-routed-sd-rev-c/
 /outputs/chrysler-integrated-sd-routed-rev-c/
+
+# Protection grouping and nominal mechanical-check scratch.
+/work/protection-mechanical/
+/outputs/chrysler-integrated-sd-rev-c-20261022*/

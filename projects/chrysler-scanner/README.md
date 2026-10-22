@@ -6,12 +6,14 @@ The three high-priority findings are corrected: coordinated input protection and
 
 All 239 original electrical components and functional blocks are accounted for against the original ChryslerScanner PDF. All original placements, retained copper, nine zones, outline, mounting holes and rules remain exact. The 55 explicitly recorded old-copper removals are limited to the corrected ADC/protected-supply branches; 380 retained locked objects and 173 retained historical protected objects are unchanged. No experimental MCU-fanout or capacitor moves were adopted. See `current/reference/original-schematic-comparison.md` and `p1-contract-audit.json` for exact exceptions, values and pin contracts.
 
+Protection caps on page 2 are grouped and labeled by PCI and SCI channel pair. With the selected M3 socket head and no washer (checked head envelope 5.5 mm diameter × 3 mm high), H1 has 0.7504 mm centered connector clearance and 0.2504 mm after nominal screw float. The housing clears the PCB and all 16 pins align. This nominal model check leaves a small tolerance budget; verify actual screw and sample fit before production assembly. See `current/reference/rev-c-obd-mechanical-clearance.md`.
+
 The board is 110 × 55 mm, four layers, nominal 1.6 mm, with underside microSD. Provide card access and at least 7 mm underside enclosure space, then check actual housing, screwhead and enclosure fit.
 
 ## Local fabrication files
 
-- `outputs/chrysler-integrated-sd-routed-rev-c-fabrication.zip`: fresh Gerbers/job, separate metric PTH/NPTH drills/maps, positions, checksums and processing notes.
-- `outputs/chrysler-integrated-sd-routed-rev-c.zip`: complete portable KiCad project, libraries/models, schematic PDF, BOM, native previews and review evidence.
+- `outputs/chrysler-integrated-sd-rev-c-20261022-checked-fabrication.zip`: fresh Gerbers/job, separate metric PTH/NPTH drills/maps, positions, checksums and processing notes.
+- `outputs/chrysler-integrated-sd-rev-c-20261022-checked.zip`: complete portable KiCad project, libraries/models, schematic PDF, BOM, native previews and review evidence.
 
 Filled, copper-capped and planarized vias are required at every recorded site. Supply `current/reference/MANUFACTURING-NOTES.md` and its processing-site JSON to the fabricator, and agree the actual RF/USB stackup. Ordinary open or tented vias are not equivalent. Rev B archives and historical reports certify older boards only.
 

@@ -15,3 +15,5 @@ Firmware integration remains deferred and is required for operation: GPIO13/pad2
 Checksums and ZIP verification establish local artifact integrity. No manufacturing order or external upload is performed. Circuit licensing is GPL-3.0; bundled assets retain their own license notices.
 
 Final checked PCB SHA-256: `974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e`. The final portability correction changes only 18 new safety model path prefixes to bundled project-relative assets; electrical and physical geometry are unchanged. The strict audit and full native DRC were rerun on this hash.
+
+Protection caps are grouped by PCI and SCI channel pair. OBD mounting assumes an M3 socket head, no washer, maximum checked envelope 5.5 mm diameter by 3 mm height. H1 has 0.7504 mm centered clearance and 0.2504 mm after nominal screw float; actual tolerance/sample fit remains unqualified. Read reference/rev-c-obd-mechanical-clearance.md before production assembly.

@@ -1,0 +1,341 @@
+{
+  "date": "2026-10-22",
+  "pcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+  "modelSha256": "b7de878426ff567bcd8548e076be72a7cafc2c1dc643b73f069533428274f87a",
+  "engine": "FreeCAD 1.0.0",
+  "manufacturerDrawing": "https://www.attend.com.tw/data/download/file/226A-1202.pdf",
+  "nominalManufacturerModelValid": true,
+  "modelBoundsGlobalCadMm": {
+    "x": [
+      81.19999999999999,
+      105.05
+    ],
+    "y": [
+      -145.775,
+      -104.225
+    ],
+    "z": [
+      -3.01,
+      16.100000000001
+    ]
+  },
+  "boardIntersectionVolumeMm3": 0.0,
+  "allSixteenTailsEnterCorrectDrills": true,
+  "tailChecks": [
+    {
+      "pin": "1",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0240000000006573
+    },
+    {
+      "pin": "2",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0240000000017198
+    },
+    {
+      "pin": "3",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0239999999978724
+    },
+    {
+      "pin": "4",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0239999999936114
+    },
+    {
+      "pin": "5",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0239999999936114
+    },
+    {
+      "pin": "6",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0239999999978866
+    },
+    {
+      "pin": "7",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0239999999965992
+    },
+    {
+      "pin": "8",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0240000000000198
+    },
+    {
+      "pin": "9",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.024000000000657
+    },
+    {
+      "pin": "10",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0240000000025704
+    },
+    {
+      "pin": "11",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0239999999989395
+    },
+    {
+      "pin": "12",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.02399999999894
+    },
+    {
+      "pin": "13",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0239999999989398
+    },
+    {
+      "pin": "14",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.023999999998947
+    },
+    {
+      "pin": "15",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0239999999963965
+    },
+    {
+      "pin": "16",
+      "drillDiameterMm": 1.35,
+      "tailInsideHoleVolumeMm3": 1.0240000000000196
+    }
+  ],
+  "mountingHardware": [
+    {
+      "hole": "H2",
+      "centerMm": [
+        105.00048,
+        149.99952
+      ],
+      "envelopes": [
+        {
+          "diameterMm": 5.5,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 4.322495490334354,
+          "intersectionVolumeMm3": 0.0
+        },
+        {
+          "diameterMm": 7.0,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 3.5724954903343593,
+          "intersectionVolumeMm3": 0.0
+        },
+        {
+          "diameterMm": 8.0,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 3.0724954903343593,
+          "intersectionVolumeMm3": 0.0
+        }
+      ]
+    },
+    {
+      "hole": "H4",
+      "centerMm": [
+        205.0003,
+        104.9996
+      ],
+      "envelopes": [
+        {
+          "diameterMm": 5.5,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 97.26157568126803,
+          "intersectionVolumeMm3": 0.0
+        },
+        {
+          "diameterMm": 7.0,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 96.51157568126804,
+          "intersectionVolumeMm3": 0.0
+        },
+        {
+          "diameterMm": 8.0,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 96.01157568126801,
+          "intersectionVolumeMm3": 0.0
+        }
+      ]
+    },
+    {
+      "hole": "H1",
+      "centerMm": [
+        105.00048,
+        104.9996
+      ],
+      "envelopes": [
+        {
+          "diameterMm": 5.5,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 0.7503999999999991,
+          "intersectionVolumeMm3": 0.0
+        },
+        {
+          "diameterMm": 7.0,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 0.00039999999999906777,
+          "intersectionVolumeMm3": 0.0
+        },
+        {
+          "diameterMm": 8.0,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 0.0,
+          "intersectionVolumeMm3": 7.417932130872771
+        }
+      ]
+    },
+    {
+      "hole": "H3",
+      "centerMm": [
+        205.0003,
+        149.99952
+      ],
+      "envelopes": [
+        {
+          "diameterMm": 5.5,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 97.56103782894684,
+          "intersectionVolumeMm3": 0.0
+        },
+        {
+          "diameterMm": 7.0,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 96.81103782894684,
+          "intersectionVolumeMm3": 0.0
+        },
+        {
+          "diameterMm": 8.0,
+          "zRangeMm": [
+            -2,
+            12
+          ],
+          "minimumNominalClearanceMm": 96.31103782894682,
+          "intersectionVolumeMm3": 0.0
+        }
+      ]
+    }
+  ],
+  "edge": {
+    "nearestTailCenterToEdgeMm": 1.5,
+    "padCopperToEdgeMm": 0.325,
+    "manufacturerRecommendedTailCenterToEdgeMm": 1.35,
+    "placementInwardOffsetFromRecommendationMm": 0.15,
+    "housingOverhangMm": 18.80000000000001
+  },
+  "limitations": [
+    "Manufacturer STEP is nominal geometry; part, board, hole, fastener and assembly tolerances are not included.",
+    "H1 remaining 0.2504 mm after nominal M3 float is a small tolerance budget. Verify actual selected screw envelope and physical sample fit before production assembly.",
+    "No washer or above-board standoff is approved by this check. Enclosure and connector insertion-load support are not modeled."
+  ],
+  "status": "NOMINAL_CAD_FIT_WITH_TOLERANCE_LIMITS",
+  "selectedHardware": "M3 socket head, no washer; assumed maximum head envelope diameter 5.5 mm, height 3 mm",
+  "selectedHardwareResults": [
+    {
+      "hole": "H2",
+      "case": "centered",
+      "headDiameterMm": 5.5,
+      "headHeightMm": 3,
+      "zRangeMm": [
+        0,
+        3
+      ],
+      "offsetYMm": 0,
+      "clearanceMm": 4.322495490334354,
+      "intersectionVolumeMm3": 0.0
+    },
+    {
+      "hole": "H4",
+      "case": "centered",
+      "headDiameterMm": 5.5,
+      "headHeightMm": 3,
+      "zRangeMm": [
+        0,
+        3
+      ],
+      "offsetYMm": 0,
+      "clearanceMm": 97.26157568126803,
+      "intersectionVolumeMm3": 0.0
+    },
+    {
+      "hole": "H1",
+      "case": "centered",
+      "headDiameterMm": 5.5,
+      "headHeightMm": 3,
+      "zRangeMm": [
+        0,
+        3
+      ],
+      "offsetYMm": 0,
+      "clearanceMm": 0.7503999999999991,
+      "intersectionVolumeMm3": 0.0
+    },
+    {
+      "hole": "H1",
+      "case": "toward_connector_0p5mm",
+      "headDiameterMm": 5.5,
+      "headHeightMm": 3,
+      "zRangeMm": [
+        0,
+        3
+      ],
+      "offsetYMm": 0.5,
+      "clearanceMm": 0.25039999999999907,
+      "intersectionVolumeMm3": 0.0
+    },
+    {
+      "hole": "H3",
+      "case": "centered",
+      "headDiameterMm": 5.5,
+      "headHeightMm": 3,
+      "zRangeMm": [
+        0,
+        3
+      ],
+      "offsetYMm": 0,
+      "clearanceMm": 97.56103782894684,
+      "intersectionVolumeMm3": 0.0
+    }
+  ],
+  "mountingHoleDiameterMm": 4.0,
+  "nominalM3RadialFloatMm": 0.5,
+  "h1CenteredClearanceMm": 0.7504,
+  "h1ClearanceAfterNominalRadialFloatMm": 0.2504,
+  "housingOverhangFromLeftBoardEdgeMm": 18.8,
+  "nearestObdPadCopperToEdgeMm": 0.325,
+  "nominalCadFitPass": true,
+  "toleranceQualified": false
+}

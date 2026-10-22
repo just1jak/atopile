@@ -2477,13 +2477,13 @@
 		(uuid "da2ed3a4-a52a-5a57-98fc-e0c610e3c099")
 	)
 	(junction
-		(at 40.64 60.96)
+		(at 45.72000 60.96000)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16104d79-884e-575c-9f00-4f1e6de53706")
 	)
 	(junction
-		(at 60.96 60.96)
+		(at 66.04000 60.96000)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "568f4906-82cb-5820-a263-17f60b758dac")
@@ -2506,7 +2506,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 78.74) (xy 60.96 81.28)
+			(xy 66.04000 78.74000) (xy 66.04000 81.28000)
 		)
 		(stroke
 			(width 0)
@@ -2526,7 +2526,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 60.96) (xy 60.96 60.96)
+			(xy 45.72000 60.96000) (xy 66.04000 60.96000)
 		)
 		(stroke
 			(width 0)
@@ -2536,7 +2536,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 119.38) (xy 35.56 116.84)
+			(xy 35.56000 127.00000) (xy 35.56000 124.46000)
 		)
 		(stroke
 			(width 0)
@@ -2546,7 +2546,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 96.52) (xy 78.74 101.6)
+			(xy 78.74000 104.14000) (xy 78.74000 109.22000)
 		)
 		(stroke
 			(width 0)
@@ -2556,7 +2556,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 96.52) (xy 124.46 101.6)
+			(xy 132.08000 104.14000) (xy 132.08000 109.22000)
 		)
 		(stroke
 			(width 0)
@@ -2586,7 +2586,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 96.52) (xy 35.56 96.52)
+			(xy 30.48000 104.14000) (xy 35.56000 104.14000)
 		)
 		(stroke
 			(width 0)
@@ -2606,7 +2606,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 60.96) (xy 137.16 71.12)
+			(xy 177.80000 60.96000) (xy 177.80000 71.12000)
 		)
 		(stroke
 			(width 0)
@@ -2616,7 +2616,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 60.96) (xy 40.64 60.96)
+			(xy 25.40000 60.96000) (xy 45.72000 60.96000)
 		)
 		(stroke
 			(width 0)
@@ -2646,7 +2646,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 96.52) (xy 172.72 101.6)
+			(xy 180.34000 104.14000) (xy 180.34000 109.22000)
 		)
 		(stroke
 			(width 0)
@@ -2656,7 +2656,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 96.52) (xy 124.46 96.52)
+			(xy 124.46000 104.14000) (xy 132.08000 104.14000)
 		)
 		(stroke
 			(width 0)
@@ -2676,7 +2676,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 119.38) (xy 78.74 116.84)
+			(xy 78.74000 127.00000) (xy 78.74000 124.46000)
 		)
 		(stroke
 			(width 0)
@@ -2686,7 +2686,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 40.64) (xy 109.22 46.99)
+			(xy 109.22000 39.37000) (xy 109.22000 45.72000)
 		)
 		(stroke
 			(width 0)
@@ -2696,7 +2696,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 40.64) (xy 109.22 40.64)
+			(xy 111.76000 39.37000) (xy 109.22000 39.37000)
 		)
 		(stroke
 			(width 0)
@@ -2706,7 +2706,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 60.96) (xy 40.64 63.5)
+			(xy 45.72000 60.96000) (xy 45.72000 63.50000)
 		)
 		(stroke
 			(width 0)
@@ -2726,7 +2726,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 40.64) (xy 137.16 40.64)
+			(xy 181.61000 40.64000) (xy 177.80000 40.64000)
 		)
 		(stroke
 			(width 0)
@@ -2756,7 +2756,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 55.88) (xy 60.96 60.96)
+			(xy 66.04000 55.88000) (xy 66.04000 60.96000)
 		)
 		(stroke
 			(width 0)
@@ -2766,7 +2766,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 62.23) (xy 109.22 72.39)
+			(xy 109.22000 60.96000) (xy 109.22000 71.12000)
 		)
 		(stroke
 			(width 0)
@@ -2786,7 +2786,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 60.96) (xy 60.96 63.5)
+			(xy 66.04000 60.96000) (xy 66.04000 63.50000)
 		)
 		(stroke
 			(width 0)
@@ -2796,7 +2796,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 45.72) (xy 193.04 40.64)
+			(xy 205.74000 45.72) (xy 205.74000 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2806,7 +2806,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 96.52) (xy 35.56 101.6)
+			(xy 35.56000 104.14000) (xy 35.56000 109.22000)
 		)
 		(stroke
 			(width 0)
@@ -2816,7 +2816,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 45.72) (xy 165.1 40.64)
+			(xy 137.16000 45.72000) (xy 137.16000 40.64000)
 		)
 		(stroke
 			(width 0)
@@ -2826,7 +2826,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 40.64) (xy 137.16 45.72)
+			(xy 177.80000 40.64000) (xy 177.80000 45.72000)
 		)
 		(stroke
 			(width 0)
@@ -2836,7 +2836,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 96.52) (xy 172.72 96.52)
+			(xy 172.72000 104.14000) (xy 180.34000 104.14000)
 		)
 		(stroke
 			(width 0)
@@ -2846,7 +2846,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 40.64) (xy 165.1 40.64)
+			(xy 142.24000 40.64000) (xy 137.16000 40.64000)
 		)
 		(stroke
 			(width 0)
@@ -2856,7 +2856,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 60.96) (xy 165.1 71.12)
+			(xy 137.16000 60.96000) (xy 137.16000 71.12000)
 		)
 		(stroke
 			(width 0)
@@ -2866,7 +2866,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 96.52) (xy 78.74 96.52)
+			(xy 73.66000 104.14000) (xy 78.74000 104.14000)
 		)
 		(stroke
 			(width 0)
@@ -2876,7 +2876,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 58.42) (xy 20.32 60.96)
+			(xy 25.40000 58.42000) (xy 25.40000 60.96000)
 		)
 		(stroke
 			(width 0)
@@ -2896,7 +2896,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 60.96) (xy 193.04 71.12)
+			(xy 205.74000 60.96) (xy 205.74000 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2906,7 +2906,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 40.64) (xy 20.32 43.18)
+			(xy 25.40000 40.64000) (xy 25.40000 43.18000)
 		)
 		(stroke
 			(width 0)
@@ -2926,7 +2926,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 81.28) (xy 40.64 78.74)
+			(xy 45.72000 81.28000) (xy 45.72000 78.74000)
 		)
 		(stroke
 			(width 0)
@@ -2936,7 +2936,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 40.64) (xy 193.04 40.64)
+			(xy 210.82000 40.64) (xy 205.74000 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3144,7 +3144,7 @@
 	)
 	(hierarchical_label "J1962-15"
 		(shape bidirectional)
-		(at 73.66 96.52 180)
+		(at 73.66000 104.14000 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3155,7 +3155,7 @@
 	)
 	(hierarchical_label "J1962-3"
 		(shape bidirectional)
-		(at 116.84 96.52 180)
+		(at 124.46000 104.14000 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3166,7 +3166,7 @@
 	)
 	(hierarchical_label "N_Q1B_3"
 		(shape bidirectional)
-		(at 20.32 40.64 0)
+		(at 25.40000 40.64000 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3177,7 +3177,7 @@
 	)
 	(hierarchical_label "J1962-12"
 		(shape bidirectional)
-		(at 170.18 40.64 0)
+		(at 142.24000 40.64000 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3188,7 +3188,7 @@
 	)
 	(hierarchical_label "J1962-6"
 		(shape bidirectional)
-		(at 111.76 40.64 0)
+		(at 111.76000 39.37000 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3210,7 +3210,7 @@
 	)
 	(hierarchical_label "J1962-2"
 		(shape bidirectional)
-		(at 60.96 55.88 0)
+		(at 66.04000 55.88000 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3221,7 +3221,7 @@
 	)
 	(hierarchical_label "J1962-11"
 		(shape bidirectional)
-		(at 165.1 96.52 180)
+		(at 172.72000 104.14000 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3243,7 +3243,7 @@
 	)
 	(hierarchical_label "J1962-14"
 		(shape bidirectional)
-		(at 140.97 40.64 0)
+		(at 181.61000 40.64000 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3254,7 +3254,7 @@
 	)
 	(hierarchical_label "J1962-7"
 		(shape bidirectional)
-		(at 30.48 96.52 180)
+		(at 30.48000 104.14000 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3265,7 +3265,7 @@
 	)
 	(hierarchical_label "J1962-9"
 		(shape bidirectional)
-		(at 198.12 40.64 0)
+		(at 210.82000 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3276,7 +3276,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 109.22 72.39 0)
+		(at 109.22000 71.12000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3286,7 +3286,7 @@
 		(dnp no)
 		(uuid "26c18a3f-0950-56a3-918b-c68c92bf9947")
 		(property "Reference" "#PWR0039"
-			(at 109.22 67.31 0)
+			(at 109.22000 66.04000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3297,7 +3297,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 109.22 76.2 0)
+			(at 109.22000 74.93000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3307,7 +3307,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 72.39 0)
+			(at 109.22000 71.12000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3318,7 +3318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 72.39 0)
+			(at 109.22000 71.12000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3328,7 +3328,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 109.22 72.39 0)
+			(at 109.22000 71.12000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3351,7 +3351,7 @@
 	)
 	(symbol
 		(lib_id "ChryslerScanner:C37")
-		(at 165.1 53.34 90)
+		(at 137.16000 53.34000 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3361,7 +3361,7 @@
 		(dnp no)
 		(uuid "291f9005-b44b-5c4f-a547-583a05453865")
 		(property "Reference" "C37"
-			(at 158.87 47.2054 0)
+			(at 130.93000 47.20540 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3371,7 +3371,7 @@
 			)
 		)
 		(property "Value" "220pF"
-			(at 160.97 47.2054 0)
+			(at 133.03000 47.20540 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3381,7 +3381,7 @@
 			)
 		)
 		(property "Footprint" "footprints:C_0603_1608Metric"
-			(at 165.1 53.34 0)
+			(at 137.16000 53.34000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3392,7 +3392,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 53.34 0)
+			(at 137.16000 53.34000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3403,7 +3403,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 165.1 53.34 0)
+			(at 137.16000 53.34000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3413,7 +3413,7 @@
 			)
 		)
 		(property "atopile_address" "c37"
-			(at 165.1 53.34 0)
+			(at 137.16000 53.34000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3440,7 +3440,7 @@
 	)
 	(symbol
 		(lib_id "ChryslerScanner:D11")
-		(at 20.32 50.8 0)
+		(at 25.40000 50.80000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3450,7 +3450,7 @@
 		(dnp no)
 		(uuid "2bed7ea9-08f1-5038-b681-459efef868c4")
 		(property "Reference" "D11"
-			(at 28.9674 49.65 0)
+			(at 34.04740 49.65000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3460,7 +3460,7 @@
 			)
 		)
 		(property "Value" "MSK4005"
-			(at 28.9674 51.75 0)
+			(at 34.04740 51.75000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3470,7 +3470,7 @@
 			)
 		)
 		(property "Footprint" "footprints:D_SOD-123"
-			(at 20.32 50.8 0)
+			(at 25.40000 50.80000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3481,7 +3481,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 20.32 50.8 0)
+			(at 25.40000 50.80000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3492,7 +3492,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 20.32 50.8 0)
+			(at 25.40000 50.80000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3502,7 +3502,7 @@
 			)
 		)
 		(property "atopile_address" "d11"
-			(at 20.32 50.8 0)
+			(at 25.40000 50.80000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3529,7 +3529,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 60.96 81.28 0)
+		(at 66.04000 81.28000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3539,7 +3539,7 @@
 		(dnp no)
 		(uuid "2da2ff42-d8d6-5fb1-b20a-4f663be6d22c")
 		(property "Reference" "#PWR0037"
-			(at 60.96 76.2 0)
+			(at 66.04000 76.20000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3550,7 +3550,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.96 85.09 0)
+			(at 66.04000 85.09000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3560,7 +3560,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 81.28 0)
+			(at 66.04000 81.28000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3571,7 +3571,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 81.28 0)
+			(at 66.04000 81.28000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3581,7 +3581,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 81.28 0)
+			(at 66.04000 81.28000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3604,7 +3604,7 @@
 	)
 	(symbol
 		(lib_id "ChryslerScanner:D12")
-		(at 60.96 71.12 0)
+		(at 66.04000 71.12000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3614,7 +3614,7 @@
 		(dnp no)
 		(uuid "321c3f36-36f3-5ba9-adc9-33c3b4fc4895")
 		(property "Reference" "D12"
-			(at 70.1063 69.97 0)
+			(at 75.18630 69.97000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3624,7 +3624,7 @@
 			)
 		)
 		(property "Value" "ESD5Z12V"
-			(at 70.1063 72.07 0)
+			(at 75.18630 72.07000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3634,7 +3634,7 @@
 			)
 		)
 		(property "Footprint" "footprints:D_SOD-123"
-			(at 60.96 71.12 0)
+			(at 66.04000 71.12000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3645,7 +3645,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 71.12 0)
+			(at 66.04000 71.12000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3656,7 +3656,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 71.12 0)
+			(at 66.04000 71.12000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3666,7 +3666,7 @@
 			)
 		)
 		(property "atopile_address" "d12"
-			(at 60.96 71.12 0)
+			(at 66.04000 71.12000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3693,7 +3693,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 71.12 0)
+		(at 137.16000 71.12000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3703,7 +3703,7 @@
 		(dnp no)
 		(uuid "33064165-c3de-5fc1-bacf-2de6a982b6c1")
 		(property "Reference" "#PWR0043"
-			(at 165.1 66.04 0)
+			(at 137.16000 66.04000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3714,7 +3714,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.1 74.93 0)
+			(at 137.16000 74.93000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3724,7 +3724,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 71.12 0)
+			(at 137.16000 71.12000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3735,7 +3735,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 71.12 0)
+			(at 137.16000 71.12000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3745,7 +3745,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 165.1 71.12 0)
+			(at 137.16000 71.12000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3768,7 +3768,7 @@
 	)
 	(symbol
 		(lib_id "ChryslerScanner:C40")
-		(at 193.04 53.34 90)
+		(at 205.74000 53.34 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3778,7 +3778,7 @@
 		(dnp no)
 		(uuid "4ca81ed5-5b9a-5019-9224-21324e3bcd32")
 		(property "Reference" "C40"
-			(at 186.81 47.2053 0)
+			(at 199.51000 47.2053 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3788,7 +3788,7 @@
 			)
 		)
 		(property "Value" "220pF"
-			(at 188.91 47.2053 0)
+			(at 201.61000 47.2053 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3798,7 +3798,7 @@
 			)
 		)
 		(property "Footprint" "footprints:C_0603_1608Metric"
-			(at 193.04 53.34 0)
+			(at 205.74000 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3809,7 +3809,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.04 53.34 0)
+			(at 205.74000 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3820,7 +3820,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 193.04 53.34 0)
+			(at 205.74000 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3830,7 +3830,7 @@
 			)
 		)
 		(property "atopile_address" "c40"
-			(at 193.04 53.34 0)
+			(at 205.74000 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3857,7 +3857,7 @@
 	)
 	(symbol
 		(lib_id "ChryslerScanner:C36")
-		(at 109.22 54.61 90)
+		(at 109.22000 53.34000 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3867,7 +3867,7 @@
 		(dnp no)
 		(uuid "582499a8-8400-5e18-bc77-3d077c9c9d54")
 		(property "Reference" "C36"
-			(at 102.99 48.4754 0)
+			(at 102.99000 47.20540 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3877,7 +3877,7 @@
 			)
 		)
 		(property "Value" "220pF"
-			(at 105.09 48.4754 0)
+			(at 105.09000 47.20540 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3887,7 +3887,7 @@
 			)
 		)
 		(property "Footprint" "footprints:C_0603_1608Metric"
-			(at 109.22 54.61 0)
+			(at 109.22000 53.34000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3898,7 +3898,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 54.61 0)
+			(at 109.22000 53.34000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3909,7 +3909,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 109.22 54.61 0)
+			(at 109.22000 53.34000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3919,7 +3919,7 @@
 			)
 		)
 		(property "atopile_address" "c36"
-			(at 109.22 54.61 0)
+			(at 109.22000 53.34000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3946,7 +3946,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 172.72 116.84 0)
+		(at 180.34000 124.46000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3956,7 +3956,7 @@
 		(dnp no)
 		(uuid "5bd50d49-92d0-5afc-b317-a07effd1f2e7")
 		(property "Reference" "#PWR0042"
-			(at 172.72 111.76 0)
+			(at 180.34000 119.38000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3967,7 +3967,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 172.72 120.65 0)
+			(at 180.34000 128.27000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3977,7 +3977,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 116.84 0)
+			(at 180.34000 124.46000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3988,7 +3988,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 116.84 0)
+			(at 180.34000 124.46000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3998,7 +3998,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 172.72 116.84 0)
+			(at 180.34000 124.46000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4021,7 +4021,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 119.38 0)
+		(at 35.56000 127.00000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4031,7 +4031,7 @@
 		(dnp no)
 		(uuid "6dc04935-1700-587b-b7c0-9328ffa735a6")
 		(property "Reference" "#PWR0035"
-			(at 35.56 114.3 0)
+			(at 35.56000 121.92000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4042,7 +4042,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 35.56 123.19 0)
+			(at 35.56000 130.81000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4052,7 +4052,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 119.38 0)
+			(at 35.56000 127.00000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4063,7 +4063,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 119.38 0)
+			(at 35.56000 127.00000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4073,7 +4073,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 119.38 0)
+			(at 35.56000 127.00000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4096,7 +4096,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 40.64 81.28 0)
+		(at 45.72000 81.28000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4106,7 +4106,7 @@
 		(dnp no)
 		(uuid "73cf84a5-5d43-5cc3-b0ea-5f84fb6e8081")
 		(property "Reference" "#PWR0036"
-			(at 40.64 76.2 0)
+			(at 45.72000 76.20000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4117,7 +4117,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.64 85.09 0)
+			(at 45.72000 85.09000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4127,7 +4127,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 81.28 0)
+			(at 45.72000 81.28000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4138,7 +4138,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 81.28 0)
+			(at 45.72000 81.28000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4148,7 +4148,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 40.64 81.28 0)
+			(at 45.72000 81.28000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4302,7 +4302,7 @@
 	)
 	(symbol
 		(lib_id "ChryslerScanner:C39")
-		(at 137.16 53.34 90)
+		(at 177.80000 53.34000 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4312,7 +4312,7 @@
 		(dnp no)
 		(uuid "958c11c8-92cc-5426-b455-a0c6cbbc11fc")
 		(property "Reference" "C39"
-			(at 130.93 47.2053 0)
+			(at 171.57000 47.20530 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4322,7 +4322,7 @@
 			)
 		)
 		(property "Value" "220pF"
-			(at 133.03 47.2053 0)
+			(at 173.67000 47.20530 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4332,7 +4332,7 @@
 			)
 		)
 		(property "Footprint" "footprints:C_0603_1608Metric"
-			(at 137.16 53.34 0)
+			(at 177.80000 53.34000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4343,7 +4343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 53.34 0)
+			(at 177.80000 53.34000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4354,7 +4354,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.16 53.34 0)
+			(at 177.80000 53.34000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4364,7 +4364,7 @@
 			)
 		)
 		(property "atopile_address" "c39"
-			(at 137.16 53.34 0)
+			(at 177.80000 53.34000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4391,7 +4391,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 78.74 119.38 0)
+		(at 78.74000 127.00000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4401,7 +4401,7 @@
 		(dnp no)
 		(uuid "a9255996-2240-5e41-a084-57d97ea5430c")
 		(property "Reference" "#PWR0038"
-			(at 78.74 114.3 0)
+			(at 78.74000 121.92000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4412,7 +4412,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 78.74 123.19 0)
+			(at 78.74000 130.81000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4422,7 +4422,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 119.38 0)
+			(at 78.74000 127.00000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4433,7 +4433,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 119.38 0)
+			(at 78.74000 127.00000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4443,7 +4443,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 119.38 0)
+			(at 78.74000 127.00000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4466,7 +4466,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 71.12 0)
+		(at 177.80000 71.12000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4476,7 +4476,7 @@
 		(dnp no)
 		(uuid "b98a6654-b515-5096-b343-f195a0403355")
 		(property "Reference" "#PWR0041"
-			(at 137.16 66.04 0)
+			(at 177.80000 66.04000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4487,7 +4487,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 74.93 0)
+			(at 177.80000 74.93000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4497,7 +4497,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 71.12 0)
+			(at 177.80000 71.12000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4508,7 +4508,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 71.12 0)
+			(at 177.80000 71.12000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4518,7 +4518,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.16 71.12 0)
+			(at 177.80000 71.12000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4541,7 +4541,7 @@
 	)
 	(symbol
 		(lib_id "ChryslerScanner:C42")
-		(at 35.56 109.22 0)
+		(at 35.56000 116.84000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4551,7 +4551,7 @@
 		(dnp no)
 		(uuid "ba8d6cf8-dc36-596f-a263-6751ed31925c")
 		(property "Reference" "C42"
-			(at 44.2347 108.07 0)
+			(at 44.23470 115.69000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4561,7 +4561,7 @@
 			)
 		)
 		(property "Value" "220pF"
-			(at 44.2347 110.17 0)
+			(at 44.23470 117.79000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4571,7 +4571,7 @@
 			)
 		)
 		(property "Footprint" "footprints:C_0603_1608Metric"
-			(at 35.56 109.22 0)
+			(at 35.56000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4582,7 +4582,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 109.22 0)
+			(at 35.56000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4593,7 +4593,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 109.22 0)
+			(at 35.56000 116.84000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4603,7 +4603,7 @@
 			)
 		)
 		(property "atopile_address" "c42"
-			(at 35.56 109.22 0)
+			(at 35.56000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4630,7 +4630,7 @@
 	)
 	(symbol
 		(lib_id "ChryslerScanner:D14")
-		(at 172.72 109.22 0)
+		(at 180.34000 116.84000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4640,7 +4640,7 @@
 		(dnp no)
 		(uuid "bc49aa7a-7893-5740-909b-c37a919c219f")
 		(property "Reference" "D14"
-			(at 181.8663 108.07 0)
+			(at 189.48630 115.69000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4650,7 +4650,7 @@
 			)
 		)
 		(property "Value" "ESD5Z12V"
-			(at 181.8663 110.17 0)
+			(at 189.48630 117.79000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4660,7 +4660,7 @@
 			)
 		)
 		(property "Footprint" "footprints:D_SOD-123"
-			(at 172.72 109.22 0)
+			(at 180.34000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4671,7 +4671,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 109.22 0)
+			(at 180.34000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4682,7 +4682,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 172.72 109.22 0)
+			(at 180.34000 116.84000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4692,7 +4692,7 @@
 			)
 		)
 		(property "atopile_address" "d14"
-			(at 172.72 109.22 0)
+			(at 180.34000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4719,7 +4719,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 193.04 71.12 0)
+		(at 205.74000 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4729,7 +4729,7 @@
 		(dnp no)
 		(uuid "be2d5ead-1264-5408-956f-71e7d4b97242")
 		(property "Reference" "#PWR0044"
-			(at 193.04 66.04 0)
+			(at 205.74000 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4740,7 +4740,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 193.04 74.93 0)
+			(at 205.74000 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4750,7 +4750,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 193.04 71.12 0)
+			(at 205.74000 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4761,7 +4761,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.04 71.12 0)
+			(at 205.74000 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4771,7 +4771,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 193.04 71.12 0)
+			(at 205.74000 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4794,7 +4794,7 @@
 	)
 	(symbol
 		(lib_id "ChryslerScanner:C25")
-		(at 40.64 71.12 0)
+		(at 45.72000 71.12000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4804,7 +4804,7 @@
 		(dnp no)
 		(uuid "c16fdcd7-25e9-5e8d-86a4-b7edca948d7c")
 		(property "Reference" "C25"
-			(at 49.3147 69.97 0)
+			(at 54.39470 69.97000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4814,7 +4814,7 @@
 			)
 		)
 		(property "Value" "220pF"
-			(at 49.3147 72.07 0)
+			(at 54.39470 72.07000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4824,7 +4824,7 @@
 			)
 		)
 		(property "Footprint" "footprints:C_0603_1608Metric"
-			(at 40.64 71.12 0)
+			(at 45.72000 71.12000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4835,7 +4835,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 71.12 0)
+			(at 45.72000 71.12000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4846,7 +4846,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 40.64 71.12 0)
+			(at 45.72000 71.12000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4856,7 +4856,7 @@
 			)
 		)
 		(property "atopile_address" "c25"
-			(at 40.64 71.12 0)
+			(at 45.72000 71.12000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4883,7 +4883,7 @@
 	)
 	(symbol
 		(lib_id "ChryslerScanner:C44")
-		(at 78.74 109.22 0)
+		(at 78.74000 116.84000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4893,7 +4893,7 @@
 		(dnp no)
 		(uuid "ce3f1075-e20d-5c88-ae22-6f84271b56ca")
 		(property "Reference" "C44"
-			(at 87.4146 108.07 0)
+			(at 87.41460 115.69000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4903,7 +4903,7 @@
 			)
 		)
 		(property "Value" "220pF"
-			(at 87.4146 110.17 0)
+			(at 87.41460 117.79000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4913,7 +4913,7 @@
 			)
 		)
 		(property "Footprint" "footprints:C_0603_1608Metric"
-			(at 78.74 109.22 0)
+			(at 78.74000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4924,7 +4924,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 109.22 0)
+			(at 78.74000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4935,7 +4935,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 109.22 0)
+			(at 78.74000 116.84000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4945,7 +4945,7 @@
 			)
 		)
 		(property "atopile_address" "c44"
-			(at 78.74 109.22 0)
+			(at 78.74000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4972,7 +4972,7 @@
 	)
 	(symbol
 		(lib_id "ChryslerScanner:D13")
-		(at 124.46 109.22 0)
+		(at 132.08000 116.84000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4982,7 +4982,7 @@
 		(dnp no)
 		(uuid "d9082153-0131-5f89-a70e-6f69a7244dd7")
 		(property "Reference" "D13"
-			(at 133.6063 108.07 0)
+			(at 141.22630 115.69000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4992,7 +4992,7 @@
 			)
 		)
 		(property "Value" "ESD5Z12V"
-			(at 133.6063 110.17 0)
+			(at 141.22630 117.79000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5002,7 +5002,7 @@
 			)
 		)
 		(property "Footprint" "footprints:D_SOD-123"
-			(at 124.46 109.22 0)
+			(at 132.08000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5013,7 +5013,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 109.22 0)
+			(at 132.08000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5024,7 +5024,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 109.22 0)
+			(at 132.08000 116.84000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5034,7 +5034,7 @@
 			)
 		)
 		(property "atopile_address" "d13"
-			(at 124.46 109.22 0)
+			(at 132.08000 116.84000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5136,7 +5136,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 116.84 0)
+		(at 132.08000 124.46000 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5146,7 +5146,7 @@
 		(dnp no)
 		(uuid "f73c3047-8861-541e-984d-391a001df050")
 		(property "Reference" "#PWR0040"
-			(at 124.46 111.76 0)
+			(at 132.08000 119.38000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5157,7 +5157,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 120.65 0)
+			(at 132.08000 128.27000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5167,7 +5167,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 116.84 0)
+			(at 132.08000 124.46000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5178,7 +5178,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 116.84 0)
+			(at 132.08000 124.46000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5188,7 +5188,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 116.84 0)
+			(at 132.08000 124.46000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5209,4 +5209,5 @@
 			)
 		)
 	)
-)
+
+(polyline (pts (xy 15 32) (xy 93 32) (xy 93 90) (xy 15 90) (xy 15 32)) (stroke (width 0.18) (type dash)) (fill (type none)) (uuid "68b5c84e-2631-55fd-81ec-215ba4242fac"))(text "PCI / J1850" (at 17 36 0) (effects (font (size 1.5 1.5) (bold yes)) (justify left)) (uuid "9852575c-f403-5590-950d-2e8155a4b0e9"))(text "C25 - OBD pin 2" (at 17 87 0) (effects (font (size 1 1)) (justify left)) (uuid "0ffe5409-3f04-52cc-a8b2-ca1b1d29e720"))(polyline (pts (xy 98 32) (xy 157 32) (xy 157 90) (xy 98 90) (xy 98 32)) (stroke (width 0.18) (type dash)) (fill (type none)) (uuid "bfbf63a0-382c-5d86-8010-5a2a426b13b4"))(text "SCI TX6 / TX12" (at 100 36 0) (effects (font (size 1.5 1.5) (bold yes)) (justify left)) (uuid "0504758a-a768-5087-a0f0-ae569db973e9"))(text "C36: pin 6   C37: pin 12" (at 100 87 0) (effects (font (size 1 1)) (justify left)) (uuid "d409d1fb-557d-58e2-8e1e-9cddbedc155f"))(polyline (pts (xy 168 32) (xy 232 32) (xy 232 90) (xy 168 90) (xy 168 32)) (stroke (width 0.18) (type dash)) (fill (type none)) (uuid "5b3a5287-57ff-59d0-a1e5-ff351e2560fc"))(text "SCI TX14 / TX9" (at 170 36 0) (effects (font (size 1.5 1.5) (bold yes)) (justify left)) (uuid "589986c2-7e4c-5936-95cf-a980135eb24d"))(text "C39: pin 14   C40: pin 9" (at 170 87 0) (effects (font (size 1 1)) (justify left)) (uuid "db929730-5c6c-5698-bb65-9037d3e038d2"))(polyline (pts (xy 15 94) (xy 99 94) (xy 99 137) (xy 15 137) (xy 15 94)) (stroke (width 0.18) (type dash)) (fill (type none)) (uuid "5c079577-5a55-5056-9d6c-508867d6b6b0"))(text "SCI RX7 / RX15" (at 17 98 0) (effects (font (size 1.5 1.5) (bold yes)) (justify left)) (uuid "0cfdc6bb-3e1c-52d7-99ca-f2093d353575"))(text "C42: pin 7   C44: pin 15" (at 17 134 0) (effects (font (size 1 1)) (justify left)) (uuid "1aa76a5d-2fe8-52ce-aa84-49ae7d29ee75"))(polyline (pts (xy 109 94) (xy 216 94) (xy 216 137) (xy 109 137) (xy 109 94)) (stroke (width 0.18) (type dash)) (fill (type none)) (uuid "f958dcb6-cd73-50ef-b351-2abb1d658b91"))(text "CCD bus protection" (at 111 98 0) (effects (font (size 1.5 1.5) (bold yes)) (justify left)) (uuid "aa68cc78-fae0-565e-b249-6f297fa67008"))(text "D13: pin 3   D14: pin 11" (at 111 134 0) (effects (font (size 1 1)) (justify left)) (uuid "0ad286b8-1382-5ac8-a47d-f495fb7bbd98")))

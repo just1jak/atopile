@@ -10,7 +10,7 @@
     "03_sci-14-9.kicad_sch": "c360c794bb5de85863d6096a186bdd35e0852337f72f6dadb63d29e11718081b",
     "04_sci-6-12.kicad_sch": "7ec203f938d610bf192aaa5179e704cd071ba570fd964129fd1c9a2a50c0924b",
     "05_sci-rx.kicad_sch": "8acf26a6952e1dee5c430b14afe91c3ffbc00d711c906ac48cc86b55008e52c5",
-    "06_obd-protection.kicad_sch": "8a271f56ada4112bb0761b0fc464c78183af4c4a65607fbffee47fbf2bedb837",
+    "06_obd-protection.kicad_sch": "292c82b9970de40343e7be2c4cbe15bc0881e7dae60ce4b37d4b81937a74fd82",
     "07_vehicle-input.kicad_sch": "e0f1d5f8d899a944eadc609a2376755221fe2cbbdf425d647d001c8ac3fed19c",
     "08_power-5v.kicad_sch": "d42e3782f27362c1605cf2cbbac43a69d213af8351a37a8f0c0e229403e2cf77",
     "09_power-vpp.kicad_sch": "79d5089162410f1d0972295c9ebb8c1c848b3b4b8a1f311d69ff68cdbcb60b0d",
@@ -29,8 +29,8 @@
     "23_hardware-safety.kicad_sch": "f4fda15905ec180696131f32d638fd790a01956f1bba7eb3b45430a363f4bc2d",
     "ChryslerScanner_V240_SD.kicad_sch": "cddfe185bae68c4bd6b6148e21289922755a9ef2c169f8ed1c549845624a054a"
   },
-  "finalNetlistSha256": "249456fcca8f9c3deaea80b8c109878cd1c975821f7d1cf4fe1e64f4a7d967a8",
-  "finalErcSha256": "690d8f011fca179edc15b05b3ffd198eb81a849d1a1126602eb06885000ba19b",
+  "finalNetlistSha256": "5f85cce75c464298ad5b482e1b51bf24356d38a2ffc3fd16dc32cd016a9b5d84",
+  "finalErcSha256": "f22239dafa9ffdaf5a541627ac6f71abf8bcbd75b5b6988a8b7e5a9f60e762d2",
   "safetyContractSha256": "1288851d0f18f0b686caa8d4105eb6a8bf8d2421d54ba535def3febc26da132f",
   "manifestSha256": "c86c6a26b850b34546c67625a4bcc7a0bb72d7147997cb3caf6b2154c013b37e",
   "originalPdfSha256": "334b04164cfa96183cf502f690024a764cc719671f20583043f37604c9ed590d",
@@ -129,5 +129,40 @@
     "Q8-Q11 low-drive functionality, input/VPP/VBB and gate stress measurements",
     "ADC power sequencing, timing and reset output behavior",
     "Existing power/SD/RF/USB and VIPPO qualification"
-  ]
+  ],
+  "presentationOnlyRevalidation": {
+    "date": "2026-10-22",
+    "scope": "Protection page grouping and labels only; no new independent adversarial review claimed. Original electrical review retained through exact component/net equivalence and unchanged PCB.",
+    "priorEvidence": {
+      "schematicSha256": {
+        "01_ccd.kicad_sch": "c4f666de321bb599dd48b078d07c6dbee77ee57b65a6e2fca05b8f8c9ac1ea5a",
+        "02_pci.kicad_sch": "088f8d7822f1c76df0d49f24196d4864298c17d3cb7c9a3ff2a418318967edf6",
+        "03_sci-14-9.kicad_sch": "c360c794bb5de85863d6096a186bdd35e0852337f72f6dadb63d29e11718081b",
+        "04_sci-6-12.kicad_sch": "7ec203f938d610bf192aaa5179e704cd071ba570fd964129fd1c9a2a50c0924b",
+        "05_sci-rx.kicad_sch": "8acf26a6952e1dee5c430b14afe91c3ffbc00d711c906ac48cc86b55008e52c5",
+        "06_obd-protection.kicad_sch": "8a271f56ada4112bb0761b0fc464c78183af4c4a65607fbffee47fbf2bedb837",
+        "07_vehicle-input.kicad_sch": "e0f1d5f8d899a944eadc609a2376755221fe2cbbdf425d647d001c8ac3fed19c",
+        "08_power-5v.kicad_sch": "d42e3782f27362c1605cf2cbbac43a69d213af8351a37a8f0c0e229403e2cf77",
+        "09_power-vpp.kicad_sch": "79d5089162410f1d0972295c9ebb8c1c848b3b4b8a1f311d69ff68cdbcb60b0d",
+        "10_power-vbb.kicad_sch": "37d03732800cf270ddb07187782915769e8d2a8f3d41b12ff27d0c45ceea6d80",
+        "11_power-7v5.kicad_sch": "9d3721b3d6c823bf882e080559d36aa6180109ab500b43a57ff204f73d1c806c",
+        "12_program-6.kicad_sch": "a5f1c1648e314de1a897cdb624364fa2e471fced07ebdd1e8b7036a4c89c01a1",
+        "13_program-9.kicad_sch": "5f7262b0ec36d250b557da187b94b04d1e08caf64e907a482bc11a81447ba92f",
+        "14_program-12.kicad_sch": "55497ccaafc6da54159f07c87f727cee9071fd5189c3e6d06e8995350a423bd0",
+        "15_program-14.kicad_sch": "5b31fa59d3cfd5add45fac3d5c84076568348d63abb3b703c528a1af2431871d",
+        "16_mcu.kicad_sch": "6ee5cff18bde91e56ad2bfa4151d6ea85310c953b6ffd3f42861ae9668f0089b",
+        "17_adc.kicad_sch": "5048551b19746a247a720b79e7510a68e975ddbc8d95eafc7f55d7fa09c038e4",
+        "18_control.kicad_sch": "d66a792fbb1f5f65b5200c90cd235f1402707c6a5f6db919b7cca4a42b410a7d",
+        "19_usb.kicad_sch": "4e2bf499cc5f476a9ea97f509ffe1520805798c917a4397e6fddf7083e78f8da",
+        "20_leds.kicad_sch": "3f324228b1399a78f41443953c3a6d1044d05c01cc7f61a9befb7d24cb0f98c0",
+        "22_sd-logger.kicad_sch": "2660a17c4f3658f6774abe42622978a9918c172104f3344d948dce5380c50222",
+        "23_hardware-safety.kicad_sch": "f4fda15905ec180696131f32d638fd790a01956f1bba7eb3b45430a363f4bc2d",
+        "ChryslerScanner_V240_SD.kicad_sch": "cddfe185bae68c4bd6b6148e21289922755a9ef2c169f8ed1c549845624a054a"
+      },
+      "finalNetlistSha256": "249456fcca8f9c3deaea80b8c109878cd1c975821f7d1cf4fe1e64f4a7d967a8",
+      "finalErcSha256": "690d8f011fca179edc15b05b3ffd198eb81a849d1a1126602eb06885000ba19b"
+    },
+    "equivalenceReport": "rev-c-protection-cap-grouping-audit.json",
+    "mechanicalCheck": "rev-c-obd-mechanical-clearance.json"
+  }
 }
