@@ -3,7 +3,7 @@
   "releaseGatePassed": true,
   "phase": "full_release_gate",
   "pcbSha256": "68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9",
-  "netlistSha256": "c195316413629142d5a4b881fd4a9c23b6fa2f5feaae524db6c1c4c806bdd525",
+  "netlistSha256": "5eddd2ff754eb0d834187aa0faca1ab1464862a94ba36c5ac0bc1f89bee1b404",
   "baselinePcbSha256": "85011cefd33c4d6a623440d91eeb9876282d39dc7fc6a37eb90d50e2a278c36a",
   "baselineProjectSha256": "52183ee48ae18f736465cb24c327b45fca4cb63fdcd560b91ecd7610d4cf692c",
   "checks": {

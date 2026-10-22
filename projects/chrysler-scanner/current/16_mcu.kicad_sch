@@ -8066,7 +8066,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "10V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "10V" (at 19.8641 74.17 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:C31")
 		(at 363.22 111.76 0)
@@ -8572,7 +8572,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "10V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "10V" (at 51.2559 79.25 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:C29")
 		(at 73.66 71.12 0)

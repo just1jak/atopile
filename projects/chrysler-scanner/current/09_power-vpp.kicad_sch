@@ -5868,7 +5868,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "50V" (at 19.8641 84.33 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "power:GND")
 		(at 40.64 101.6 0)
@@ -6182,7 +6182,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "50V" (at 114.789 84.33 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:C16")
 		(at 185.42 83.82 0)
@@ -6271,7 +6271,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "50V" (at 193.496 86.87 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:D7")
 		(at 93.98 50.8 0)
@@ -7053,7 +7053,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "50V" (at 165.556 84.33 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "power:GND")
 		(at 132.08 101.6 0)

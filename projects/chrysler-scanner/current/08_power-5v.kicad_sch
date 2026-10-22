@@ -6470,7 +6470,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "100V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "100V" (at 89.6885 56.39 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "power:GND")
 		(at 233.68 109.22 0)
@@ -6824,7 +6824,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "25V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "25V" (at 241.789 94.49 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "power:GND")
 		(at 121.92 109.22 0)
@@ -7541,7 +7541,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "25V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "25V" (at 340.849 94.49 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:U4")
 		(at 297.18 78.74 0)
@@ -7734,7 +7734,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "25V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "25V" (at 170.636 94.49 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:R3")
 		(at 142.24 101.6 0)
@@ -7987,7 +7987,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "25V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "25V" (at 269.696 94.49 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "power:GND")
 		(at 40.64 109.22 0)
@@ -8866,7 +8866,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "50V" (at 28.3959 94.49 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "power:GND")
 		(at 317.5 109.22 0)
@@ -9119,5 +9119,5 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "25V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "25V" (at 130.029 97.03 0) (effects (font (size 1 1)))))
 )

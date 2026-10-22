@@ -138,7 +138,10 @@
 						)
 					)
 				)
-			)
+			
+(polyline (pts (xy -3.6 3.2) (xy -1.8 3.2)) (stroke (width 0.254) (type default)) (fill (type none)))
+(polyline (pts (xy -2.7 2.3) (xy -2.7 4.1)) (stroke (width 0.254) (type default)) (fill (type none)))
+)
 			(embedded_fonts no)
 		)
 		(symbol "ChryslerScanner:D1"
@@ -1897,7 +1900,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "50V" (at 65.0445 86.87 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:D2")
 		(at 38.1 60.96 0)

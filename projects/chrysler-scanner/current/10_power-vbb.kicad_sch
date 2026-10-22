@@ -6200,7 +6200,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "100V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "100V" (at 87.1485 48.77 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:R10")
 		(at 30.48 60.96 0)
@@ -6556,7 +6556,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "25V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "25V" (at 127.489 86.87 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:L5")
 		(at 157.48 60.96 0)
@@ -6734,7 +6734,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "25V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "25V" (at 178.256 86.87 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:R12")
 		(at 144.78 93.98 0)

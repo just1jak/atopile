@@ -4191,4 +4191,6 @@
 			)
 		)
 	)
+
+(text "Rev C: 22k / (1.62k || 100k), nominal ADC/input gain = 0.06757.\nCalibrate switch leakage/resistance, tolerances and ADC response.\nV_BA senses protected +12V after D2; connector voltage needs diode-drop correction.\nOriginal 8.66k divider conversion constants do not apply." (at 16 172 0) (effects (font (size 1.15 1.15)) (justify left)) (uuid "a96d7561-5010-5bd2-a663-4e15b3877ae9"))
 )

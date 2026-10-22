@@ -49,3 +49,7 @@ secrets.hpp
 
 # Local PDF comparison render checks.
 /tmp/pdfs/circuit-comparison/
+
+/work/comparison-annotation-baseline/
+/outputs/chrysler-integrated-sd-rev-c-annotations*/
+/outputs/chrysler-integrated-sd-rev-c-annotations*.zip*

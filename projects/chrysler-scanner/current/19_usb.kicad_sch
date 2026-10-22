@@ -10855,7 +10855,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "10V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "10V" (at 376.376 132.59 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:Q5")
 		(at 373.38 88.9 0)

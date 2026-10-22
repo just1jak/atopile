@@ -124,3 +124,7 @@ User authorized moving C61 to F.Cu at (193,127) mm, orientation 90 degrees. Pin 
 ## 2026-10-22 debug access addition
 
 48 hook loops and four SPI probe pads are added on a dedicated page 24. Existing electrical components, pin assignments, placements, retained copper, zones, outline and mounting holes remain exact. 19 tracks and three processed vias are added; 22 existing via processing flags are upgraded for solder-pad overlap. The original 55 safety copper cuts and two earlier C61 cuts remain the only removals. Fresh ERC/DRC/parity, strict contract, native connectivity, body clearance and safety-bounds checks pass. This is an implementing-agent adversarial delta review, not a new independent review. See rev-c-testpoint-audit.json, rev-c-testpoint-map.md and the testPointReview record. Current PCB SHA-256: `68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9`.
+
+## 2026-10-22 visible original/current reconciliation
+
+C1 polarity and all 24 recovered capacitor voltage ratings are visible again. The ADC sheet documents the revised loaded gain and protected measurement point. These are presentation corrections only: electrical fields and named net endpoints match f7593592, and the accepted PCB bytes are unchanged. See rev-c-comparison-annotation-audit.json for verification. The original divider constants and activity-LED firmware behavior remain intentionally superseded.

@@ -16,8 +16,8 @@ The debug-access revision adds 48 Keystone 5015 micro-miniature hook loops and f
 
 ## Local fabrication files
 
-- `outputs/chrysler-integrated-sd-rev-c-testpoints-fabrication.zip`: fresh Gerbers/job, separate metric PTH/NPTH drills/maps, positions, checksums and processing notes.
-- `outputs/chrysler-integrated-sd-rev-c-testpoints.zip`: complete portable KiCad project, libraries/models, schematic PDF, BOM, native previews and review evidence.
+- `outputs/chrysler-integrated-sd-rev-c-annotations-final-20261022-fabrication.zip`: fresh Gerbers/job, separate metric PTH/NPTH drills/maps, positions, checksums and processing notes.
+- `outputs/chrysler-integrated-sd-rev-c-annotations-final-20261022.zip`: complete portable KiCad project, libraries/models, schematic PDF, BOM, native previews and review evidence.
 
 Filled, copper-capped and planarized vias are required at every recorded site. Supply `current/reference/MANUFACTURING-NOTES.md` and its processing-site JSON to the fabricator, and agree the actual RF/USB stackup. Ordinary open or tented vias are not equivalent. Rev B archives and historical reports certify older boards only.
 
@@ -34,3 +34,5 @@ Original Atopile sources and the upstream PDF are preserved; rebuilding the old 
 ## Original/current circuit comparison
 
 `output/pdf/ChryslerScanner_Original-to-Current_Circuit_Comparison.pdf` is a 33-page vector comparison atlas with 30 side-by-side circuit sets, a clickable index, change/addition notes and the full original-sheet appendix. Both exact source PDFs are embedded. The accompanying JSON index binds source hashes and crop/page mappings; validation confirms coverage of current pages 2–24. Rebuild with `documentation/compare_schematics.py` using bundled Python with reportlab and pypdf. This document does not modify or certify CAD.
+
+C1 polarity and all 24 recovered capacitor voltage ratings are visible on the current drawings. The ADC sheet states the revised nominal loaded gain and post-D2 battery measurement point. These presentation repairs preserve every electrical field, named net endpoint and PCB byte; see current/reference/rev-c-comparison-annotation-audit.json.

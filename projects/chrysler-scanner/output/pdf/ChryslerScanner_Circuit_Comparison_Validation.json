@@ -1,13 +1,12 @@
 {
   "status": "PASS",
-  "outputSha256": "91b1d556cffcad2a837a34aba8f4eaf758e75242f2ccbf1f96b0f269584da7a0",
+  "outputSha256": "decb1f3fd07c7f191da06e0b42dc5ea3c5382d31500437536a1af1d3725930f5",
   "checks": {
     "33Pages": true,
-    "30Pairs": true,
-    "AllCurrentCircuitPagesRepresented": true,
     "30IndexLinks": true,
     "SourcesAttachedExactly": true,
-    "OutputHashMatches": true
+    "30Pairs": true
   },
-  "pagesRendered": 33
+  "pagesRendered": 33,
+  "visualReview": "Changed sheets and comparison page inspected; source page mappings retained."
 }

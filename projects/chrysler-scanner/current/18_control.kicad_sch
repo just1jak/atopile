@@ -4219,7 +4219,7 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "10V" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+	(property "Voltage Rating" "10V" (at 28.3959 91.95 0) (effects (font (size 1 1)))))
 	(symbol
 		(lib_id "ChryslerScanner:R87")
 		(at 63.5 73.66 0)

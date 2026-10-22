@@ -45,10 +45,10 @@
   "updated_schematic_pdf": "current/ChryslerScanner_V240_SD-Hierarchy.pdf",
   "adversarial_review_status": "CONDITIONAL_BOUNDED_PROTOTYPE_DESIGN_ACCEPTANCE",
   "remaining_P1_findings": [],
-  "fabrication_package": "outputs/chrysler-integrated-sd-rev-c-testpoints-fabrication.zip",
-  "fabrication_package_sha256": "db34c1dafd0749479476ce0e15fd74ddac33a1f2ca887611d5942a8e8e04d374",
-  "full_project_archive": "outputs/chrysler-integrated-sd-rev-c-testpoints.zip",
-  "full_project_archive_sha256": "481b3f9c795bd0e1d93f514ed8eb6860d539cee3258f5db5e97ff4ab03c3860d",
+  "fabrication_package": "outputs/chrysler-integrated-sd-rev-c-annotations-final-20261022-fabrication.zip",
+  "fabrication_package_sha256": "fe6e130b7e57818c4a702b8de3b2b10bd07b054cd13960ccb43dd16a2f445db6",
+  "full_project_archive": "outputs/chrysler-integrated-sd-rev-c-annotations-final-20261022.zip",
+  "full_project_archive_sha256": "4f7a88f10f597a6a72e9bfe37ceea9fce181bd34c8a100407a4e9f6c6f09f913",
   "requires_filled_capped_planarized_vias": true,
   "filled_capped_processing_site_count": 230,
   "assembly_bom_complete": false,
@@ -90,5 +90,8 @@
   "testpoint_added_tracks": 19,
   "testpoint_added_vias": 3,
   "testpoint_existing_via_processing_upgrades": 22,
-  "testpoint_addition_removed_copper_count": 0
+  "testpoint_addition_removed_copper_count": 0,
+  "comparison_annotation_audit": "current/reference/rev-c-comparison-annotation-audit.json",
+  "c1_positive_polarity_visible": true,
+  "visible_recovered_capacitor_voltage_ratings": 24
 }

@@ -4,7 +4,7 @@
   "originalPdf": "original-atopile\\reference\\upstream\\ChryslerScanner_V240_schematic.pdf",
   "originalSha256": "334b04164cfa96183cf502f690024a764cc719671f20583043f37604c9ed590d",
   "currentPdf": "current\\ChryslerScanner_V240_SD-Hierarchy.pdf",
-  "currentSha256": "b209a2dea4edfcd1fe95c8cd1ea4ff60a515b47ede9447ec920c46b4098dbf86",
+  "currentSha256": "9608e5e5260462a203b92573b180850445996fbac1ae81c905e62d32d3abec3a",
   "pcbSha256": "68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9",
   "comparisonSets": 30,
   "pageCount": 33,
@@ -1371,5 +1371,5 @@
       ]
     }
   ],
-  "outputSha256": "91b1d556cffcad2a837a34aba8f4eaf758e75242f2ccbf1f96b0f269584da7a0"
+  "outputSha256": "decb1f3fd07c7f191da06e0b42dc5ea3c5382d31500437536a1af1d3725930f5"
 }
