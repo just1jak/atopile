@@ -1,9 +1,9 @@
 {
   "status": "PASS",
-  "pcbSha256": "68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9",
+  "pcbSha256": "6875b7628b2ace4bbad731ba96508a1c3dd032dab3aefff2669a66251b7410a1",
   "baselinePcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
   "checks": {
-    "all277PreviousPartsAndFourHolesExact": true,
+    "all277PreviousPartsAndFourHolesExactExceptTwoDeclaredCcdValues": true,
     "exact52AdditionalFootprints": true,
     "everyPreviousCopperObjectRetainedExactly": true,
     "exact19TracksAnd3ViasAdded": true,

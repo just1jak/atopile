@@ -4221,7 +4221,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf"
 			(at 168.402 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -4279,7 +4279,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Diodes Incorporated" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DMG6601LVT-7" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R59")
 		(at 33.02 101.6 0)
@@ -4322,7 +4327,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 33.02 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -4368,7 +4373,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW060310K0FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R60")
 		(at 50.8 60.96 0)
@@ -4411,7 +4423,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 50.8 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -4457,7 +4469,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW06034K70FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:Q10")
 		(at 49.022 88.9 0)
@@ -4500,7 +4519,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf"
 			(at 49.022 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4558,7 +4577,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Diodes Incorporated" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DMC3071LVT-7" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R71")
 		(at 142.24 86.36 0)
@@ -4601,7 +4625,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 142.24 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -4647,7 +4671,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW06038K20FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R70")
 		(at 142.24 60.96 0)
@@ -4690,7 +4721,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 142.24 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -4736,7 +4767,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW06034K70FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:Q10")
 		(at 76.962 73.66 0)
@@ -4779,7 +4817,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf"
 			(at 76.962 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -4837,7 +4875,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Diodes Incorporated" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DMC3071LVT-7" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 142.24 128.27 0)
@@ -5009,7 +5052,7 @@
 				)
 			)
 		)
-		(property "Value" "MSK4005"
+		(property "Value" "PMEG4005"
 			(at 178.8274 92.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5030,7 +5073,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf"
 			(at 170.18 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5076,7 +5119,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Nexperia" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "PMEG4005EGWX" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:D17")
 		(at 78.74 91.44 0)
@@ -5098,7 +5146,7 @@
 				)
 			)
 		)
-		(property "Value" "MSK4005"
+		(property "Value" "PMEG4005"
 			(at 87.3874 92.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5119,7 +5167,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf"
 			(at 78.74 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5165,7 +5213,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Nexperia" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "PMEG4005EGWX" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R69")
 		(at 124.46 116.84 0)
@@ -5208,7 +5261,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 124.46 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -5254,7 +5307,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW060310K0FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:Q14")
 		(at 140.462 104.14 0)
@@ -5297,7 +5357,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf"
 			(at 140.462 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5355,7 +5415,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Diodes Incorporated" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DMG6601LVT-7" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 33.02 113.03 0)

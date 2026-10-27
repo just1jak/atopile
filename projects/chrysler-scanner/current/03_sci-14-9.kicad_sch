@@ -3580,7 +3580,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 66.04 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -3626,7 +3626,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW12064K70FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.25W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:U14")
 		(at 86.36 104.14 0)
@@ -3669,7 +3676,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf"
 			(at 86.36 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -3733,7 +3740,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "SN74LVC2G66DCTR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R36")
 		(at 78.74 60.96 0)
@@ -3776,7 +3788,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 78.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3822,7 +3834,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW06034K70FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R41")
 		(at 124.46 109.22 0)
@@ -3865,7 +3884,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 124.46 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -3911,7 +3930,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW060310K0FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R39")
 		(at 35.56 116.84 0)
@@ -3954,7 +3980,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 35.56 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4000,7 +4026,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW06034K70FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R37")
 		(at 109.22 60.96 0)
@@ -4043,7 +4076,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 109.22 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -4089,7 +4122,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW12064K70FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.25W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:U14")
 		(at 129.54 73.66 0)
@@ -4132,7 +4172,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf"
 			(at 129.54 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -4196,7 +4236,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "SN74LVC2G66DCTR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:U14")
 		(at 190.5 111.76 0)
@@ -4239,7 +4284,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf"
 			(at 190.5 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4303,7 +4348,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "SN74LVC2G66DCTR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:Q3")
 		(at 93.98 71.882 0)
@@ -4325,7 +4375,7 @@
 				)
 			)
 		)
-		(property "Value" "2N7002DW"
+		(property "Value" "DMN62D2UDM"
 			(at 93.98 81.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4346,7 +4396,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMN62D2UDM.pdf"
 			(at 93.98 71.882 0)
 			(hide yes)
 			(show_name no)
@@ -4404,7 +4454,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Diodes Incorporated" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DMN62D2UDM-7" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.diodes.com/datasheet/download/DMN62D2UDM.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 124.46 120.65 0)
@@ -4501,7 +4556,7 @@
 				)
 			)
 		)
-		(property "Value" "2N7002DW"
+		(property "Value" "DMN62D2UDM"
 			(at 50.8 98.4801 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4522,7 +4577,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMN62D2UDM.pdf"
 			(at 50.8 105.918 0)
 			(hide yes)
 			(show_name no)
@@ -4580,7 +4635,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Diodes Incorporated" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DMN62D2UDM-7" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.diodes.com/datasheet/download/DMN62D2UDM.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R38")
 		(at 167.64 68.58 0)
@@ -4623,7 +4683,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 167.64 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -4669,7 +4729,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW060310K0FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 162.56 80.01 0)
@@ -4937,7 +5004,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU"
 			(at 30.48 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -4983,5 +5050,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 )

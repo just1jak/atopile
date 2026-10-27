@@ -50,7 +50,7 @@ def main():
     assert bounds['status']=='PASS' and all(bounds['checks'].values())
     assert bounds['contractSha256']==sha(d/'reference/rev-c-safety-contract.md')
     assert all(sha(f)==digest for f,digest in before.items())
-    ordinary_ignore=shutil.ignore_patterns('*.lck','*.kicad_prl','*-backups','__pycache__','_autosave*','.git','SHA256SUMS.txt','*.sha256','drc-1.json')
+    ordinary_ignore=shutil.ignore_patterns('*.lck','*.kicad_prl','*-backups','__pycache__','_autosave*','.git','SHA256SUMS.txt','*.sha256','drc-1.json','visual-review','parts','procurement-front.pdf','procurement-back.pdf','procurement-*-reroute.json','procurement-*-route.json','procurement-filter-routing.json')
     def ignore(folder,names):
         excluded=set(ordinary_ignore(folder,names))
         if Path(folder).resolve()==d:
@@ -82,22 +82,31 @@ def main():
     assert len(list(fab.glob('*.drl')))>=2, 'Separate PTH/NPTH drills missing'
     assert (fab/'assembly-positions.csv').stat().st_size>0
     assert (out/(NAME+'-Hierarchy.pdf')).read_bytes().startswith(b'%PDF-')
-    # Do not invent purchasing identities for generic legacy parts.
-    xml=ET.parse(d/'reference/final-netlist.xml');rows=[];unselected=[]
-    exact={'D1':('Littelfuse','SMBJ16CA'),'D30':('Nexperia','BZT52H-B15,115'),
-           'U21':('Texas Instruments','TMUX1511PWR'),'U22':('Analog Devices','LTC6993HS6-2#TRMPBF'),
-           'U23':('Texas Instruments','SN74LVC1G11DBVR'),'U24':('Texas Instruments','TLV803EA30DBZR')}
-    exact.update({f'Q{i}':('Diodes Incorporated','DMC3071LVT-7' if i<12 else 'DMG6601LVT-7') for i in range(8,16)})
+    # Use only the reviewed ledger already hash-checked against native CAD.
+    catalog=json.loads((d/'reference/rev-c-procurement-selections.json').read_text())
+    assert catalog['status']=='REVIEWED_BOUNDED_PROTOTYPE_SELECTION'
+    selected=catalog['parts'];xml=ET.parse(d/'reference/final-netlist.xml');rows=[];unselected=[];groups={}
     for c in xml.findall('.//components/comp'):
         r=c.attrib['ref'];v=c.findtext('value') or '';fields={f.attrib['name']:f.text or '' for f in c.findall('fields/field')}
-        maker,mpn=exact.get(r,(fields.get('Manufacturer',''),fields.get('MPN',fields.get('Manufacturer Part Number',''))))
+        part=selected[r];maker=fields.get('Manufacturer','');mpn=fields.get('MPN','')
+        assert (maker,mpn)==(part['manufacturer'],part['mpn'])
         volts=fields.get('Voltage Rating','') or ('16V' if r in ('C62','C63','C64','C65') else '')
         tolerance=fields.get('Tolerance','') or (re.search(r'\b\d+(?:\.\d+)?%',v).group(0) if re.search(r'\b\d+(?:\.\d+)?%',v) else '')
-        status=('PCB FEATURE — no component to purchase or place' if mpn=='COPPER_PAD_NO_COMPONENT' else 'SPECIFIED — verify procurement/footprint') if mpn else 'UNSELECTED — exact part required before assembly'
+        assembly=part['assembly'];status='REVIEWED bounded-prototype selection' if assembly=='PLACE' else 'DO NOT PURCHASE OR PLACE: '+assembly
         if not mpn:unselected.append(r)
-        rows.append([r,v,c.findtext('footprint') or '',maker,mpn,volts,tolerance,status])
+        rows.append([r,v,c.findtext('footprint') or '',maker,mpn,volts,fields.get('Selected Voltage Rating',''),tolerance,assembly,status,part['source']])
+        if assembly=='PLACE':
+            key=(maker,mpn,c.findtext('footprint') or '');groups.setdefault(key,[]).append(r)
     with (out/'BOM.csv').open('w',newline='',encoding='utf-8-sig') as f:
-        w=csv.writer(f);w.writerow(['Reference','Value','Footprint','Manufacturer','MPN','Minimum voltage rating','Tolerance','Procurement status']);w.writerows(rows)
+        w=csv.writer(f);w.writerow(['Reference','Value','Footprint','Manufacturer','MPN','Minimum voltage rating','Selected voltage rating','Tolerance','Assembly','Procurement status','Source']);w.writerows(rows)
+    with (out/'assembly-BOM.csv').open('w',newline='',encoding='utf-8-sig') as f:
+        w=csv.writer(f);w.writerow(['Quantity','References','Manufacturer','MPN','Footprint'])
+        for (maker,mpn,footprint),refs in sorted(groups.items()):w.writerow([len(refs),', '.join(sorted(refs)),maker,mpn,footprint])
+    with (fab/'assembly-positions.csv').open(encoding='utf-8-sig',newline='') as f:placed={v['Ref'] for v in csv.DictReader(f)}
+    expected_placed={ref for ref,part in selected.items() if part['assembly']=='PLACE'}
+    assert placed==expected_placed,('Assembly placement/BOM disagreement',sorted(placed^expected_placed))
+    assert len(expected_placed)==321 and not unselected
+    shutil.copy2(out/'BOM.csv',fab/'BOM.csv');shutil.copy2(out/'assembly-BOM.csv',fab/'assembly-BOM.csv')
     board=p.LoadBoard(str(copied));sites=[]
     for t in board.GetTracks():
         if t.GetClass()=='PCB_VIA' and (t.GetPrimaryDrillFilledFlag() or t.GetPrimaryDrillCappedFlag()):
@@ -120,7 +129,7 @@ def main():
             notes.write('\nMounting: M3 socket head, NO washer; checked envelope 5.5 mm diameter by 3 mm high. H1 clearance is 0.7504 mm centered, 0.2504 mm after nominal screw float. Actual tolerance/sample fit remains to be qualified before production assembly. See rev-c-obd-mechanical-clearance.md.\n')
     (ref/'MANUFACTURING-NOTES.md').write_text((fab/'MANUFACTURING-NOTES.md').read_text()+'\nChecked PCB SHA-256: `'+sha(copied)+'`. Processing-site count: '+str(len(sites))+'. See rev-c-filled-capped-via-sites.json for exact coordinates, UUIDs, drill sizes and saved flags.\n')
     (out/'README.md').write_text((HERE/'REV-C-DELIVERY.md').read_text())
-    (ref/'rev-c-package-status.json').write_text(json.dumps(dict(revision='C',cad_validation='PASS',pcbSha256=sha(copied),prototype_only=True,automotive_qualified=False,firmware_integration_complete=False,assembly_bom_complete=not unselected,unselected_exact_parts=unselected,external_upload_performed=False),indent=2)+'\n')
+    (ref/'rev-c-package-status.json').write_text(json.dumps(dict(revision='C',cad_validation='PASS',pcbSha256=sha(copied),prototype_only=True,automotive_qualified=False,firmware_integration_complete=False,assembly_bom_complete=not unselected,unselected_exact_parts=unselected,purchasable_assembly_parts=len(expected_placed),unique_purchasing_lines=len(groups),dnp_references=['R23','R24'],pcb_features=['JP1','JP2','TP45','TP46','TP47','TP48'],external_upload_performed=False),indent=2)+'\n')
     assert all(sha(f)==digest for f,digest in before.items()), 'Source CAD changed during packaging'
     assert all(sha(out/f.name)==digest for f,digest in before.items()), 'Export changed copied CAD'
     # Exercise the delivered portable default in its actual new location.

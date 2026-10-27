@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,10.0.5*%
-%TF.CreationDate,2026-10-22T06:12:22-07:00*%
+%TF.CreationDate,2026-10-27T15:11:53-07:00*%
 %TF.ProjectId,ChryslerScanner_V240_SD,43687279-736c-4657-9253-63616e6e6572,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L3,Inr*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 10.0.5) date 2026-10-22 06:12:22*
+G04 Created by KiCad (PCBNEW 10.0.5) date 2026-10-27 15:11:53*
 %MOMM*%
 %LPD*%
 G01*

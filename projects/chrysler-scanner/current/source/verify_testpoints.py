@@ -12,8 +12,13 @@ assert sha(planpath)=='05c3880f299f439f8e773cccb1c1cfe6db9bf3c29d8160cd6d36419dd
 assert sha(copperpath)=='d5a71569a4fe24dc82291152b71206450167e068d413b1a6f539bc33c3b2a836'
 plan=json.loads(planpath.read_text())['testpoints'];contract=json.loads(copperpath.read_text())
 old=p.LoadBoard(str(oldpath));b=p.LoadBoard(str(D/N));original=a.native_footprints(old);now=a.native_footprints(b)
+# Two explicit later value exceptions; every pad, placement and copper object
+# remains subject to the original exact additive testpoint contract.
+for item in original.values():
+    if item['reference'] in ('U17','U18'):
+        item['value']={'U17':'74AHCT1G17GV','U18':'SN74AHCT1G14'}[item['reference']]
 refs={'TP'+str(i) for i in range(1,53)};fps={f.GetReference():f for f in b.GetFootprints()}
-checks={'all277PreviousPartsAndFourHolesExact':all(now.get(k)==v for k,v in original.items()),'exact52AdditionalFootprints':len(now)==len(original)+52 and {f['reference'] for k,f in now.items() if k not in original}==refs}
+checks={'all277PreviousPartsAndFourHolesExactExceptTwoDeclaredCcdValues':all(now.get(k)==v for k,v in original.items()),'exact52AdditionalFootprints':len(now)==len(original)+52 and {f['reference'] for k,f in now.items() if k not in original}==refs}
 o={a.uid(t):a.copper(t) for t in old.GetTracks()};n={a.uid(t):a.copper(t) for t in b.GetTracks()}
 checks['everyPreviousCopperObjectRetainedExactly']=all(n.get(k)==v for k,v in o.items())
 checks['exact19TracksAnd3ViasAdded']={k:v for k,v in n.items() if k not in o}==contract and len(contract)==22 and sum(v['kind']=='PCB_VIA' for v in contract.values())==3

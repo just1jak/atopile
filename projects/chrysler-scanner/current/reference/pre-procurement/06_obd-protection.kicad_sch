@@ -1,0 +1,5213 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "2b7322d4-b293-5e04-aed8-12afd5c8581a")
+	(paper "A3")
+	(title_block
+		(title "OBD connector and line protection")
+		(date "2026-10-13")
+		(rev "V240-C/OBD")
+		(company "ChryslerScanner / atopile")
+	)
+	(lib_symbols
+		(symbol "ChryslerScanner:C25"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C25"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "220pF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "C25_1_1"
+				(polyline
+					(pts
+						(xy 4.064 1.524) (xy -4.064 1.524)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 -1.524) (xy -4.064 -1.524)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ChryslerScanner:C36"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C36"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "220pF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "C36_1_1"
+				(polyline
+					(pts
+						(xy -1.524 4.064) (xy -1.524 -4.064)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 4.064) (xy 1.524 -4.064)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ChryslerScanner:C37"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C37"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "220pF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "C37_1_1"
+				(polyline
+					(pts
+						(xy -1.524 4.064) (xy -1.524 -4.064)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 4.064) (xy 1.524 -4.064)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ChryslerScanner:C39"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C39"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "220pF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "C39_1_1"
+				(polyline
+					(pts
+						(xy -1.524 4.064) (xy -1.524 -4.064)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 4.064) (xy 1.524 -4.064)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ChryslerScanner:C40"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C40"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "220pF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "C40_1_1"
+				(polyline
+					(pts
+						(xy -1.524 4.064) (xy -1.524 -4.064)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 4.064) (xy 1.524 -4.064)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ChryslerScanner:C42"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C42"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "220pF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "C42_1_1"
+				(polyline
+					(pts
+						(xy 4.064 1.524) (xy -4.064 1.524)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 -1.524) (xy -4.064 -1.524)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ChryslerScanner:C44"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C44"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "220pF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:C_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "C44_1_1"
+				(polyline
+					(pts
+						(xy 4.064 1.524) (xy -4.064 1.524)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.064 -1.524) (xy -4.064 -1.524)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 6.096)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ChryslerScanner:D11"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D11"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "MSK4005"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:D_SOD-123"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "D11_1_1"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -1.2701 -1.27)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 2.9633)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 2.9633)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -2.9633)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -2.9633)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.9633) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ChryslerScanner:D12"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D12"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "ESD5Z12V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:D_SOD-123"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "D12_1_1"
+				(polyline
+					(pts
+						(xy -2.9633 1.6086) (xy -2.032 2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.5399 -2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 2.54) (xy 2.032 2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.9633)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.9633)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 2.54) (xy 2.4553 2.9633)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.5399 -2.54) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ChryslerScanner:D13"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D13"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "ESD5Z12V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:D_SOD-123"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "D13_1_1"
+				(polyline
+					(pts
+						(xy -2.9633 1.6087) (xy -2.032 2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 2.54) (xy 2.032 2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.9633)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.9633)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 2.54) (xy 2.4553 2.9633)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ChryslerScanner:D14"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D14"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "ESD5Z12V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:D_SOD-123"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "D14_1_1"
+				(polyline
+					(pts
+						(xy -2.9633 1.6087) (xy -2.032 2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 2.54) (xy 2.032 2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.9633)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.9633)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 2.54) (xy 2.4553 2.9633)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.5)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ChryslerScanner:J1"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Value" "226A-1202"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Footprint" "footprints:OBDII_ATTEND_226A-1202"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(property "Description" "Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 2.54 2.54)
+					)
+				)
+			)
+			(symbol "J1_1_1"
+				(rectangle
+					(start -20.32 40.64)
+					(end 20.32 -40.64)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -18.98 36.76)
+					(end -16.58 34.36)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -18.98 26.6)
+					(end -16.58 24.2)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -18.98 16.44)
+					(end -16.58 14.04)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -18.98 6.28)
+					(end -16.58 3.88)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -18.98 -3.88)
+					(end -16.58 -6.28)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -18.98 -14.04)
+					(end -16.58 -16.44)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -18.98 -24.2)
+					(end -16.58 -26.6)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -18.98 -34.36)
+					(end -16.58 -36.76)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.58 36.76)
+					(end 18.98 34.36)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.58 26.6)
+					(end 18.98 24.2)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.58 16.44)
+					(end 18.98 14.04)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.58 6.28)
+					(end 18.98 3.88)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.58 -3.88)
+					(end 18.98 -6.28)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.58 -14.04)
+					(end 18.98 -16.44)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.58 -24.2)
+					(end 18.98 -26.6)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 16.58 -34.36)
+					(end 18.98 -36.76)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "J1962 Type A"
+					(at 0 0 90)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(pin passive line
+					(at -25.4 35.56 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -25.4 25.4 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -25.4 15.24 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -25.4 5.08 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -25.4 -5.08 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -25.4 -15.24 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -25.4 -25.4 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -25.4 -35.56 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 35.56 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 25.4 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 15.24 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 5.08 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -5.08 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -15.24 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -25.4 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -35.56 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.1 1.1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "J1 - VEHICLE INPUT CONNECTOR"
+		(exclude_from_sim no)
+		(at 16 145 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "4a73347d-ca39-57e0-9e4f-64dff4d9527c")
+	)
+	(text "Matching signal names connect between sheets. Values and package pins follow the atopile netlist."
+		(exclude_from_sim no)
+		(at 16 27 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "9d24bc20-3665-52c2-bc97-49077645fa36")
+	)
+	(text "OBD connector and line protection"
+		(exclude_from_sim no)
+		(at 16 18 0)
+		(effects
+			(font
+				(size 2.6 2.6)
+			)
+			(justify left)
+		)
+		(uuid "da2ed3a4-a52a-5a57-98fc-e0c610e3c099")
+	)
+	(junction
+		(at 45.72000 60.96000)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16104d79-884e-575c-9f00-4f1e6de53706")
+	)
+	(junction
+		(at 66.04000 60.96000)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "568f4906-82cb-5820-a263-17f60b758dac")
+	)
+	(no_connect
+		(at 40.64 227.33)
+		(uuid "0c57d957-19be-588b-bfde-ebed5f968c33")
+	)
+	(no_connect
+		(at 40.64 156.21)
+		(uuid "116d5d21-9684-555f-b339-8d8f90707188")
+	)
+	(no_connect
+		(at 91.44 196.85)
+		(uuid "c3f90663-4857-5a2f-ad35-b75bd9fad77e")
+	)
+	(no_connect
+		(at 91.44 166.37)
+		(uuid "f86bc867-35a0-59ce-8fc0-e26228c5b7fc")
+	)
+	(wire
+		(pts
+			(xy 66.04000 78.74000) (xy 66.04000 81.28000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09e6ba9f-6788-5cdb-8e55-1c5b5639a99b")
+	)
+	(wire
+		(pts
+			(xy 91.44 186.69) (xy 101.6 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "133766cf-3207-566f-8447-e7b4000d989f")
+	)
+	(wire
+		(pts
+			(xy 45.72000 60.96000) (xy 66.04000 60.96000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13f80592-b4e9-5f67-bb01-d4ca06745bf5")
+	)
+	(wire
+		(pts
+			(xy 35.56000 127.00000) (xy 35.56000 124.46000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1420dac0-1b30-5092-a9cd-880794396d8e")
+	)
+	(wire
+		(pts
+			(xy 78.74000 104.14000) (xy 78.74000 109.22000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b52b0bb-45db-54cf-a98a-3f3bb9ffa0d3")
+	)
+	(wire
+		(pts
+			(xy 132.08000 104.14000) (xy 132.08000 109.22000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "227896b3-608b-572c-aa7a-ae9b2c46cdb3")
+	)
+	(wire
+		(pts
+			(xy 40.64 217.17) (xy 30.48 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28e39fec-9e4f-53eb-9d06-759375d564d0")
+	)
+	(wire
+		(pts
+			(xy 91.44 207.01) (xy 101.6 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ebeab5c-4ac6-5da6-9b07-096f9b5e3488")
+	)
+	(wire
+		(pts
+			(xy 30.48000 104.14000) (xy 35.56000 104.14000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f75096d-b965-5ad5-8a16-2a2816f6b111")
+	)
+	(wire
+		(pts
+			(xy 91.44 156.21) (xy 101.6 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36bf4c0f-a271-59b9-8e82-072fc19a712a")
+	)
+	(wire
+		(pts
+			(xy 177.80000 60.96000) (xy 177.80000 71.12000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ae2dc60-11a1-586c-ad04-8c3c10ef8a25")
+	)
+	(wire
+		(pts
+			(xy 25.40000 60.96000) (xy 45.72000 60.96000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dadbefe-4a27-5223-ae69-c817fdcdffc3")
+	)
+	(wire
+		(pts
+			(xy 25.4 186.69) (xy 25.4 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f581adf-c72c-5aed-9172-4d0236ee5ad1")
+	)
+	(wire
+		(pts
+			(xy 91.44 227.33) (xy 101.6 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f67a28b-810f-5b16-8edb-6504d29793b0")
+	)
+	(wire
+		(pts
+			(xy 180.34000 104.14000) (xy 180.34000 109.22000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51e959b9-a6fd-5c1b-a779-c9c28ad11d31")
+	)
+	(wire
+		(pts
+			(xy 124.46000 104.14000) (xy 132.08000 104.14000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6543c49b-4fba-5a69-bea5-2435ef548e7d")
+	)
+	(wire
+		(pts
+			(xy 91.44 217.17) (xy 101.6 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "665f63d0-5702-53b3-9c3e-3dd3ff01a02a")
+	)
+	(wire
+		(pts
+			(xy 78.74000 127.00000) (xy 78.74000 124.46000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67a17977-213a-53f4-902c-5c56a8787389")
+	)
+	(wire
+		(pts
+			(xy 109.22000 39.37000) (xy 109.22000 45.72000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e02736-6fa7-4dfa-916a-87bed36613d6")
+	)
+	(wire
+		(pts
+			(xy 111.76000 39.37000) (xy 109.22000 39.37000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "812c0597-48d1-4823-9996-b73a0a69d642")
+	)
+	(wire
+		(pts
+			(xy 45.72000 60.96000) (xy 45.72000 63.50000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "837f44bd-4e28-5468-82f7-99bbff073e99")
+	)
+	(wire
+		(pts
+			(xy 40.64 207.01) (xy 30.48 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83bd5946-752e-5539-880a-2539eccbc1ce")
+	)
+	(wire
+		(pts
+			(xy 181.61000 40.64000) (xy 177.80000 40.64000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fcded3d-5779-5234-9828-e57236a0ed05")
+	)
+	(wire
+		(pts
+			(xy 91.44 176.53) (xy 101.6 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95c23a7c-3ee0-502d-ac59-a66b1c2954cd")
+	)
+	(wire
+		(pts
+			(xy 40.64 166.37) (xy 30.48 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a06ee3e7-65e1-52ed-b0d4-4e81a7241fb7")
+	)
+	(wire
+		(pts
+			(xy 66.04000 55.88000) (xy 66.04000 60.96000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5cb909e-0675-5fca-83e4-e6ed328d4bba")
+	)
+	(wire
+		(pts
+			(xy 109.22000 60.96000) (xy 109.22000 71.12000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa151199-7bcd-5e0d-8dcf-2409c34cb837")
+	)
+	(wire
+		(pts
+			(xy 40.64 176.53) (xy 30.48 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adc9239d-0bb8-5c89-9f18-5464c3455f55")
+	)
+	(wire
+		(pts
+			(xy 66.04000 60.96000) (xy 66.04000 63.50000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0ae1852-7317-5a78-aa0c-f8b80d4834be")
+	)
+	(wire
+		(pts
+			(xy 205.74000 45.72) (xy 205.74000 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b18a25a9-083e-59e4-a348-496e3a760b23")
+	)
+	(wire
+		(pts
+			(xy 35.56000 104.14000) (xy 35.56000 109.22000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b387a9b1-1184-5667-8790-3a8c1ce6a90d")
+	)
+	(wire
+		(pts
+			(xy 137.16000 45.72000) (xy 137.16000 40.64000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b68883b1-7041-5407-9811-efac631ceaf6")
+	)
+	(wire
+		(pts
+			(xy 177.80000 40.64000) (xy 177.80000 45.72000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6a1b096-0b56-455a-bc18-19e69959c28d")
+	)
+	(wire
+		(pts
+			(xy 172.72000 104.14000) (xy 180.34000 104.14000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bae62e04-7399-5fc1-95f7-3f60f3225ec2")
+	)
+	(wire
+		(pts
+			(xy 142.24000 40.64000) (xy 137.16000 40.64000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c687204e-1da2-57c1-ab86-3e17e83dedaa")
+	)
+	(wire
+		(pts
+			(xy 137.16000 60.96000) (xy 137.16000 71.12000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfcd29c2-bbc4-5e1b-8882-537a67b09336")
+	)
+	(wire
+		(pts
+			(xy 73.66000 104.14000) (xy 78.74000 104.14000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d24b4606-4736-5f3b-bd1e-44afd478b860")
+	)
+	(wire
+		(pts
+			(xy 25.40000 58.42000) (xy 25.40000 60.96000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc087719-b2c4-5759-99d1-eacd97e9dfe5")
+	)
+	(wire
+		(pts
+			(xy 25.4 186.69) (xy 40.64 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3ccdf46-5ec0-574e-9621-45937222967d")
+	)
+	(wire
+		(pts
+			(xy 205.74000 60.96) (xy 205.74000 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efd81682-49f1-53e5-99c8-4e0c750c1999")
+	)
+	(wire
+		(pts
+			(xy 25.40000 40.64000) (xy 25.40000 43.18000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f17595bf-7e16-4cc2-a9a9-f61580e4f6b5")
+	)
+	(wire
+		(pts
+			(xy 40.64 196.85) (xy 30.48 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7bacc8d-b83c-5710-ba99-77adc63de8ce")
+	)
+	(wire
+		(pts
+			(xy 45.72000 81.28000) (xy 45.72000 78.74000)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7f3c5a1-e484-5a33-a7ff-eb69ee89ac06")
+	)
+	(wire
+		(pts
+			(xy 210.82000 40.64) (xy 205.74000 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcfa3235-ff83-5663-a32f-20bcc6d46b6c")
+	)
+	(global_label "J1962-15"
+		(shape input)
+		(at 101.6 217.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "01e04cd1-36d4-5763-b026-99f77e640d2f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.9 1.9)
+				)
+			)
+		)
+	)
+	(global_label "J1962-11"
+		(shape input)
+		(at 101.6 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "17ae4cf1-e119-5e3f-af47-bf0c45121b7b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.9 1.9)
+				)
+			)
+		)
+	)
+	(global_label "J1962-2"
+		(shape input)
+		(at 30.48 166.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "47d852c0-9cd4-5e84-baea-733c9cb37555")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.9 1.9)
+				)
+			)
+		)
+	)
+	(global_label "J1962-9"
+		(shape input)
+		(at 101.6 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "555b0644-5727-50fd-a29d-0bdf5ca99f28")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.9 1.9)
+				)
+			)
+		)
+	)
+	(global_label "J1962-12"
+		(shape input)
+		(at 101.6 186.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "67745b77-9e14-5643-ac08-11e94c72c872")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.9 1.9)
+				)
+			)
+		)
+	)
+	(global_label "J1962-7"
+		(shape input)
+		(at 30.48 217.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "816e66b9-25fe-51b2-999a-7178ac5aad50")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.9 1.9)
+				)
+			)
+		)
+	)
+	(global_label "J1962-3"
+		(shape input)
+		(at 30.48 176.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9d97b06b-0f03-525f-a3dc-e7abefc8e083")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.9 1.9)
+				)
+			)
+		)
+	)
+	(global_label "J1962-6"
+		(shape input)
+		(at 30.48 207.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c352e8de-8083-5295-ad72-ad2e8fe8c38d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.9 1.9)
+				)
+			)
+		)
+	)
+	(global_label "J1962-14"
+		(shape input)
+		(at 101.6 207.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d67a964a-3002-5200-947b-0618d38d07f3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.9 1.9)
+				)
+			)
+		)
+	)
+	(hierarchical_label "J1962-15"
+		(shape bidirectional)
+		(at 73.66000 104.14000 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "078e8bb0-aeb1-5421-8d58-569e65c8c9b6")
+	)
+	(hierarchical_label "J1962-3"
+		(shape bidirectional)
+		(at 124.46000 104.14000 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "32c348c6-4a34-5629-bf1d-d4e567487f62")
+	)
+	(hierarchical_label "N_Q1B_3"
+		(shape bidirectional)
+		(at 25.40000 40.64000 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "422d9dae-6a50-5ac5-9c63-039fddca698e")
+	)
+	(hierarchical_label "J1962-12"
+		(shape bidirectional)
+		(at 142.24000 40.64000 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "834f66b0-5098-5af2-ad4b-74d258d51dbf")
+	)
+	(hierarchical_label "J1962-6"
+		(shape bidirectional)
+		(at 111.76000 39.37000 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8c35fa0a-5eb8-54ea-be9e-d4d8ab0e2d84")
+	)
+	(hierarchical_label "J1962-16"
+		(shape bidirectional)
+		(at 101.6 227.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "900824d9-f7a6-53d3-ae9f-eec62c9859a3")
+	)
+	(hierarchical_label "J1962-2"
+		(shape bidirectional)
+		(at 66.04000 55.88000 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "90108e91-e28e-5a61-96b4-18c7948cfa54")
+	)
+	(hierarchical_label "J1962-11"
+		(shape bidirectional)
+		(at 172.72000 104.14000 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9d6bec2e-63ea-572e-8d9b-685468c10519")
+	)
+	(hierarchical_label "N_J1_5"
+		(shape bidirectional)
+		(at 30.48 196.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b08eb1bf-30bb-5720-a8fa-0f6b0c45eac6")
+	)
+	(hierarchical_label "J1962-14"
+		(shape bidirectional)
+		(at 181.61000 40.64000 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1d5f564-d6ca-5699-92f0-47ed9768fe08")
+	)
+	(hierarchical_label "J1962-7"
+		(shape bidirectional)
+		(at 30.48000 104.14000 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fc9f8d80-9ed6-5876-9dc6-4e28221ebc44")
+	)
+	(hierarchical_label "J1962-9"
+		(shape bidirectional)
+		(at 210.82000 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ff03f31b-9a10-5e3b-b7ed-60671a8c2cb1")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22000 71.12000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "26c18a3f-0950-56a3-918b-c68c92bf9947")
+		(property "Reference" "#PWR0039"
+			(at 109.22000 66.04000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22000 74.93000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22000 71.12000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22000 71.12000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 109.22000 71.12000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7aadcff4-de5b-50c7-aeb7-4c4b265aaeb4")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "#PWR0039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:C37")
+		(at 137.16000 53.34000 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "291f9005-b44b-5c4f-a547-583a05453865")
+		(property "Reference" "C37"
+			(at 130.93000 47.20540 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220pF"
+			(at 133.03000 47.20540 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 137.16000 53.34000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16000 53.34000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 137.16000 53.34000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "c37"
+			(at 137.16000 53.34000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab0e7d3a-1372-56b6-abee-9037e798fd5d")
+		)
+		(pin "2"
+			(uuid "b69b5dbd-caf6-50b1-bd25-55dbbf85274a")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:D11")
+		(at 25.40000 50.80000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2bed7ea9-08f1-5038-b681-459efef868c4")
+		(property "Reference" "D11"
+			(at 34.04740 49.65000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MSK4005"
+			(at 34.04740 51.75000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:D_SOD-123"
+			(at 25.40000 50.80000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.40000 50.80000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 25.40000 50.80000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "d11"
+			(at 25.40000 50.80000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8cb06837-f88c-5b25-8f2a-df548dfff1e8")
+		)
+		(pin "2"
+			(uuid "224efe2d-1f7f-59c8-abee-38e0d02c1b3b")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04000 81.28000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2da2ff42-d8d6-5fb1-b20a-4f663be6d22c")
+		(property "Reference" "#PWR0037"
+			(at 66.04000 76.20000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04000 85.09000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04000 81.28000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04000 81.28000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 66.04000 81.28000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d7605c00-1d0a-5c07-9394-e32f3705b47a")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "#PWR0037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:D12")
+		(at 66.04000 71.12000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "321c3f36-36f3-5ba9-adc9-33c3b4fc4895")
+		(property "Reference" "D12"
+			(at 75.18630 69.97000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESD5Z12V"
+			(at 75.18630 72.07000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:D_SOD-123"
+			(at 66.04000 71.12000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04000 71.12000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 66.04000 71.12000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "d12"
+			(at 66.04000 71.12000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "472e6e9e-9fd6-5c1b-abe2-fe0d0acde4f2")
+		)
+		(pin "2"
+			(uuid "5476d8e3-939d-541e-80d5-cf68e36f9a16")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 137.16000 71.12000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "33064165-c3de-5fc1-bacf-2de6a982b6c1")
+		(property "Reference" "#PWR0043"
+			(at 137.16000 66.04000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 137.16000 74.93000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16000 71.12000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16000 71.12000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 137.16000 71.12000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cceee716-ab0f-5233-a2a2-146868affce8")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "#PWR0043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:C40")
+		(at 205.74000 53.34 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4ca81ed5-5b9a-5019-9224-21324e3bcd32")
+		(property "Reference" "C40"
+			(at 199.51000 47.2053 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220pF"
+			(at 201.61000 47.2053 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 205.74000 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74000 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205.74000 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "c40"
+			(at 205.74000 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86349d49-6680-57a1-a36a-510978241e51")
+		)
+		(pin "2"
+			(uuid "5d8e59e5-ac84-5a77-b4e1-3da2b2da876b")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:C36")
+		(at 109.22000 53.34000 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "582499a8-8400-5e18-bc77-3d077c9c9d54")
+		(property "Reference" "C36"
+			(at 102.99000 47.20540 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220pF"
+			(at 105.09000 47.20540 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 109.22000 53.34000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22000 53.34000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 109.22000 53.34000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "c36"
+			(at 109.22000 53.34000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c99c393a-4ac7-552d-8386-634d68e3d6c9")
+		)
+		(pin "2"
+			(uuid "b9ef7026-60a7-53cb-ae58-584724c79e6b")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 180.34000 124.46000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5bd50d49-92d0-5afc-b317-a07effd1f2e7")
+		(property "Reference" "#PWR0042"
+			(at 180.34000 119.38000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 180.34000 128.27000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34000 124.46000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34000 124.46000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 180.34000 124.46000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d67d1ceb-e83b-5c2d-9e8a-c202535170dd")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "#PWR0042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 35.56000 127.00000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6dc04935-1700-587b-b7c0-9328ffa735a6")
+		(property "Reference" "#PWR0035"
+			(at 35.56000 121.92000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 35.56000 130.81000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56000 127.00000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56000 127.00000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 35.56000 127.00000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56d0ca0f-cd8d-53b2-bb21-9557da5e32da")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "#PWR0035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72000 81.28000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "73cf84a5-5d43-5cc3-b0ea-5f84fb6e8081")
+		(property "Reference" "#PWR0036"
+			(at 45.72000 76.20000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72000 85.09000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72000 81.28000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72000 81.28000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 45.72000 81.28000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a68a94b-6c61-569a-ac46-b5cdc455778e")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "#PWR0036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:J1")
+		(at 66.04 191.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9124bce6-8f13-5b5d-a8e4-1150ff37de35")
+		(property "Reference" "J1"
+			(at 66.04 147.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "226A-1202"
+			(at 66.04 149.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:OBDII_ATTEND_226A-1202"
+			(at 66.04 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "j1"
+			(at 66.04 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb7b4367-1bcf-5b62-a0ee-ad70b73baeca")
+		)
+		(pin "2"
+			(uuid "17826430-76b4-5447-91c0-e8b51472ea45")
+		)
+		(pin "3"
+			(uuid "87d555fe-368a-5bcd-8d61-f9b6475aa742")
+		)
+		(pin "4"
+			(uuid "7d1df510-40f2-5f1a-8d49-a46089fec792")
+		)
+		(pin "5"
+			(uuid "8c51c0ff-ea3f-5f6a-b653-260c083c0082")
+		)
+		(pin "6"
+			(uuid "8ff3965f-bc05-5f60-975d-05ced9e66421")
+		)
+		(pin "7"
+			(uuid "74b3273c-24f4-541e-a911-435bbe678766")
+		)
+		(pin "8"
+			(uuid "490b2acd-dde6-5268-926a-bcc24c74a840")
+		)
+		(pin "9"
+			(uuid "f89c9dc4-4409-5826-9420-3685bbbee4e1")
+		)
+		(pin "10"
+			(uuid "8e772cba-e975-5a84-afa4-38cde9dde1d4")
+		)
+		(pin "11"
+			(uuid "f167ac58-5232-5bde-bdd3-9da7a8149d57")
+		)
+		(pin "12"
+			(uuid "9bef2c39-9a35-53e5-a63d-2507a8cee755")
+		)
+		(pin "13"
+			(uuid "8807956a-fdff-5db3-a890-eb84a58bb056")
+		)
+		(pin "14"
+			(uuid "208e29e0-e798-5de4-9d63-7c93925cdbcd")
+		)
+		(pin "15"
+			(uuid "d2193390-f135-5226-9c32-c47e199b8b29")
+		)
+		(pin "16"
+			(uuid "f9bada4f-25bb-5652-bd3a-5e23137e9020")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:C39")
+		(at 177.80000 53.34000 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "958c11c8-92cc-5426-b455-a0c6cbbc11fc")
+		(property "Reference" "C39"
+			(at 171.57000 47.20530 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220pF"
+			(at 173.67000 47.20530 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 177.80000 53.34000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.80000 53.34000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 177.80000 53.34000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "c39"
+			(at 177.80000 53.34000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fcca59b6-a6c9-5a81-a242-06df23eed678")
+		)
+		(pin "2"
+			(uuid "75ef5b3d-5c79-5341-999f-ee87879cfc08")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "C39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 78.74000 127.00000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a9255996-2240-5e41-a084-57d97ea5430c")
+		(property "Reference" "#PWR0038"
+			(at 78.74000 121.92000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74000 130.81000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74000 127.00000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74000 127.00000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 78.74000 127.00000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94de7813-8e5b-56bb-a40c-b4f837b9c375")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "#PWR0038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.80000 71.12000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b98a6654-b515-5096-b343-f195a0403355")
+		(property "Reference" "#PWR0041"
+			(at 177.80000 66.04000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.80000 74.93000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.80000 71.12000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.80000 71.12000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 177.80000 71.12000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3a0d346e-fae1-5b12-8f65-95a434760bed")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "#PWR0041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:C42")
+		(at 35.56000 116.84000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ba8d6cf8-dc36-596f-a263-6751ed31925c")
+		(property "Reference" "C42"
+			(at 44.23470 115.69000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220pF"
+			(at 44.23470 117.79000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 35.56000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 35.56000 116.84000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "c42"
+			(at 35.56000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a5d247c7-af63-5186-bc8a-7259a4e0b1c2")
+		)
+		(pin "2"
+			(uuid "960da882-5f13-514c-bfa9-c03bd30bbc7a")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:D14")
+		(at 180.34000 116.84000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bc49aa7a-7893-5740-909b-c37a919c219f")
+		(property "Reference" "D14"
+			(at 189.48630 115.69000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESD5Z12V"
+			(at 189.48630 117.79000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:D_SOD-123"
+			(at 180.34000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 180.34000 116.84000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "d14"
+			(at 180.34000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ff2b4e1d-27c7-5ab0-a6af-6ff9bcdbe503")
+		)
+		(pin "2"
+			(uuid "0349294c-a69e-5b5e-a6dd-abd3a4f4b278")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74000 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "be2d5ead-1264-5408-956f-71e7d4b97242")
+		(property "Reference" "#PWR0044"
+			(at 205.74000 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 205.74000 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74000 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74000 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205.74000 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe764b0c-74b5-5264-bc1d-86198466504c")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "#PWR0044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:C25")
+		(at 45.72000 71.12000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c16fdcd7-25e9-5e8d-86a4-b7edca948d7c")
+		(property "Reference" "C25"
+			(at 54.39470 69.97000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220pF"
+			(at 54.39470 72.07000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 45.72000 71.12000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72000 71.12000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 45.72000 71.12000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "c25"
+			(at 45.72000 71.12000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5de0be1f-b2f7-56f2-a1d8-ce07a9dfffeb")
+		)
+		(pin "2"
+			(uuid "254ff3ee-35dc-5eab-aa0f-ea382e17373c")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:C44")
+		(at 78.74000 116.84000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ce3f1075-e20d-5c88-ae22-6f84271b56ca")
+		(property "Reference" "C44"
+			(at 87.41460 115.69000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220pF"
+			(at 87.41460 117.79000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:C_0603_1608Metric"
+			(at 78.74000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 78.74000 116.84000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "c44"
+			(at 78.74000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e3a781e1-900a-5b28-ab1b-4d7324696fd6")
+		)
+		(pin "2"
+			(uuid "8a2f524f-cace-59c4-b603-b87c1bcacfd7")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "C44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ChryslerScanner:D13")
+		(at 132.08000 116.84000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d9082153-0131-5f89-a70e-6f69a7244dd7")
+		(property "Reference" "D13"
+			(at 141.22630 115.69000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESD5Z12V"
+			(at 141.22630 117.79000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:D_SOD-123"
+			(at 132.08000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 132.08000 116.84000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "atopile_address" "d13"
+			(at 132.08000 116.84000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bc5f807a-1172-5315-8451-2f8f0fe66e8b")
+		)
+		(pin "2"
+			(uuid "3546dbd6-feb8-53d9-8b91-200708014613")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 25.4 237.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e2644739-ab82-5d7a-86a1-548e08a49778")
+		(property "Reference" "#PWR0034"
+			(at 25.4 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 25.4 241.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 25.4 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "68ebbd7e-53e3-507c-bda6-ecd92148a88d")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "#PWR0034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08000 124.46000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f73c3047-8861-541e-984d-391a001df050")
+		(property "Reference" "#PWR0040"
+			(at 132.08000 119.38000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08000 128.27000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08000 124.46000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08000 124.46000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 132.08000 124.46000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "647a72b6-39a7-5118-a161-b1118334a947")
+		)
+		(instances
+			(project "ChryslerScanner_V240_SD"
+				(path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/2b7322d4-b293-5e04-aed8-12afd5c8581a"
+					(reference "#PWR0040")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+(polyline (pts (xy 15 32) (xy 93 32) (xy 93 90) (xy 15 90) (xy 15 32)) (stroke (width 0.18) (type dash)) (fill (type none)) (uuid "68b5c84e-2631-55fd-81ec-215ba4242fac"))(text "PCI / J1850" (at 17 36 0) (effects (font (size 1.5 1.5) (bold yes)) (justify left)) (uuid "9852575c-f403-5590-950d-2e8155a4b0e9"))(text "C25 - OBD pin 2" (at 17 87 0) (effects (font (size 1 1)) (justify left)) (uuid "0ffe5409-3f04-52cc-a8b2-ca1b1d29e720"))(polyline (pts (xy 98 32) (xy 157 32) (xy 157 90) (xy 98 90) (xy 98 32)) (stroke (width 0.18) (type dash)) (fill (type none)) (uuid "bfbf63a0-382c-5d86-8010-5a2a426b13b4"))(text "SCI TX6 / TX12" (at 100 36 0) (effects (font (size 1.5 1.5) (bold yes)) (justify left)) (uuid "0504758a-a768-5087-a0f0-ae569db973e9"))(text "C36: pin 6   C37: pin 12" (at 100 87 0) (effects (font (size 1 1)) (justify left)) (uuid "d409d1fb-557d-58e2-8e1e-9cddbedc155f"))(polyline (pts (xy 168 32) (xy 232 32) (xy 232 90) (xy 168 90) (xy 168 32)) (stroke (width 0.18) (type dash)) (fill (type none)) (uuid "5b3a5287-57ff-59d0-a1e5-ff351e2560fc"))(text "SCI TX14 / TX9" (at 170 36 0) (effects (font (size 1.5 1.5) (bold yes)) (justify left)) (uuid "589986c2-7e4c-5936-95cf-a980135eb24d"))(text "C39: pin 14   C40: pin 9" (at 170 87 0) (effects (font (size 1 1)) (justify left)) (uuid "db929730-5c6c-5698-bb65-9037d3e038d2"))(polyline (pts (xy 15 94) (xy 99 94) (xy 99 137) (xy 15 137) (xy 15 94)) (stroke (width 0.18) (type dash)) (fill (type none)) (uuid "5c079577-5a55-5056-9d6c-508867d6b6b0"))(text "SCI RX7 / RX15" (at 17 98 0) (effects (font (size 1.5 1.5) (bold yes)) (justify left)) (uuid "0cfdc6bb-3e1c-52d7-99ca-f2093d353575"))(text "C42: pin 7   C44: pin 15" (at 17 134 0) (effects (font (size 1 1)) (justify left)) (uuid "1aa76a5d-2fe8-52ce-aa84-49ae7d29ee75"))(polyline (pts (xy 109 94) (xy 216 94) (xy 216 137) (xy 109 137) (xy 109 94)) (stroke (width 0.18) (type dash)) (fill (type none)) (uuid "f958dcb6-cd73-50ef-b351-2abb1d658b91"))(text "CCD bus protection" (at 111 98 0) (effects (font (size 1.5 1.5) (bold yes)) (justify left)) (uuid "aa68cc78-fae0-565e-b249-6f297fa67008"))(text "D13: pin 3   D14: pin 11" (at 111 134 0) (effects (font (size 1 1)) (justify left)) (uuid "0ad286b8-1382-5ac8-a47d-f495fb7bbd98")))

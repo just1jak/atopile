@@ -1647,7 +1647,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "PCB feature" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "SOLDER_BRIDGE_NO_COMPONENT" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "KiCad native solder jumper" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PCB_FEATURE_CLOSED" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 76.2 55.88 0)
@@ -1765,7 +1770,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.littelfuse.com/products/overvoltage-protection/tvs-diodes/smbj/smbj16ca"
 			(at 20.32 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -1811,7 +1816,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Littelfuse" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "SMBJ16CA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.littelfuse.com/products/overvoltage-protection/tvs-diodes/smbj/smbj16ca" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:C1")
 		(at 55.88 83.82 0)
@@ -1854,7 +1864,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-upw.pdf"
 			(at 55.88 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -1900,7 +1910,15 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 65.0445 86.87 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "50V" (at 65.0445 86.87 0) (effects (font (size 1 1))))
+(property "Manufacturer" "Nichicon" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "UPW1H101MPD" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-upw.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "20%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Height" "11.5mm" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:D2")
 		(at 38.1 60.96 0)
@@ -1943,7 +1961,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/88714/ss52.pdf"
 			(at 38.1 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -1989,5 +2007,10 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "SS56-E3/57T" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/88714/ss52.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 )

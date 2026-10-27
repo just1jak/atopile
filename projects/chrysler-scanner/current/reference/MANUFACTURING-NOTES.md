@@ -8,4 +8,4 @@ Assemble 48 Keystone 5015 SMT hook loops (both board sides). TP45-TP48 are bare 
 
 Mounting: M3 socket head, NO washer; checked envelope 5.5 mm diameter by 3 mm high. H1 clearance is 0.7504 mm centered, 0.2504 mm after nominal screw float. Actual tolerance/sample fit remains to be qualified before production assembly. See rev-c-obd-mechanical-clearance.md.
 
-Checked PCB SHA-256: `68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9`. Processing-site count: 230. See rev-c-filled-capped-via-sites.json for exact coordinates, UUIDs, drill sizes and saved flags.
+Checked PCB SHA-256: `83ac625f2283aa789455802fa4367dbc786c7a2f0ae6c87ffc91c8959a40ac15`. Processing-site count: 230. See rev-c-filled-capped-via-sites.json for exact coordinates, UUIDs, drill sizes and saved flags.

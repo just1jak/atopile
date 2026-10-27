@@ -3448,7 +3448,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 88.9 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -3494,7 +3494,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW06034K70FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 304.8 81.28 0)
@@ -3612,7 +3619,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 55.88 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -3658,7 +3665,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW06034K70FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 38.1 101.6 0)
@@ -3851,7 +3865,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.awinic.com/en/productDetail/AW9523BTQR"
 			(at 119.38 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -3966,7 +3980,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "AWINIC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "AW9523BTQR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.awinic.com/en/productDetail/AW9523BTQR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:C57")
 		(at 38.1 88.9 0)
@@ -4009,7 +4028,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU"
 			(at 38.1 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4055,7 +4074,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 91.44 160.02 0)
@@ -4173,7 +4199,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1A106K080AC"
 			(at 20.32 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4219,7 +4245,14 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "10V" (at 28.3959 91.95 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "10V" (at 28.3959 91.95 0) (effects (font (size 1 1))))
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C1608X5R1A106K080AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1A106K080AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "10V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R87")
 		(at 63.5 73.66 0)
@@ -4262,7 +4295,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 63.5 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -4308,7 +4341,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW06034K70FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 304.8 81.28 0)
@@ -4426,7 +4466,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.samtec.com/products/tsw-103-07-g-d"
 			(at 271.78 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -4484,7 +4524,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Samtec" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "TSW-103-07-G-D" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.samtec.com/products/tsw-103-07-g-d" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 20.32 101.6 0)
@@ -4602,7 +4647,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.awinic.com/en/productDetail/AW9523BTQR"
 			(at 208.28 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -4717,6 +4762,11 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "AWINIC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "AW9523BTQR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.awinic.com/en/productDetail/AW9523BTQR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 (junction (at 304.8 60.96) (diameter 0) (color 0 0 0 0) (uuid "831ff40a-d5d5-5d7a-9ce9-44b5c240361c"))
 )

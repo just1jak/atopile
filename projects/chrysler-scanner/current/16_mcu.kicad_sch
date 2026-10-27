@@ -4929,7 +4929,7 @@
 		(at 99.06 129.54)
 		(uuid "9716e112-a410-5f1a-bdc3-dc96c2ba62ca")
 	)
-	
+
 	(no_connect
 		(at 279.4 81.28)
 		(uuid "b7b19676-87b3-5d35-b24a-dde9233ca6a3")
@@ -6187,7 +6187,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-pico-v3-02_datasheet_en.pdf"
 			(at 297.18 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6374,7 +6374,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Espressif" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "ESP32-PICO-V3-02" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.espressif.com/sites/default/files/documentation/esp32-pico-v3-02_datasheet_en.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 27.94 83.82 0)
@@ -6492,7 +6497,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.passivecomponent.com/antenna/"
 			(at 325.12 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -6538,7 +6543,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Walsin" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "ANT3216LL00R2400A" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.passivecomponent.com/antenna/" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 365.76 83.82 0)
@@ -6656,7 +6666,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 215.9 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -6702,7 +6712,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW060310K0FKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 335.28 124.46 0)
@@ -6820,7 +6837,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1A106K080AC"
 			(at 58.42 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -6866,7 +6883,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C1608X5R1A106K080AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1A106K080AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "10V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 73.66 83.82 0)
@@ -6984,7 +7008,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU"
 			(at 335.28 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -7030,7 +7054,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 215.9 106.68 0)
@@ -7148,7 +7179,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C105K4RACTU"
 			(at 215.9 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7194,7 +7225,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C105K4RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C105K4RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "16V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 88.9 147.32 0)
@@ -7312,7 +7350,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU"
 			(at 391.16 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -7358,7 +7396,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:U10")
 		(at 142.24 116.84 0)
@@ -7401,7 +7446,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-pico-v3-02_datasheet_en.pdf"
 			(at 142.24 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -7588,7 +7633,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Espressif" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "ESP32-PICO-V3-02" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.espressif.com/sites/default/files/documentation/esp32-pico-v3-02_datasheet_en.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 93.98 193.04 0)
@@ -7856,7 +7906,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU"
 			(at 88.9 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -7902,7 +7952,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 340.36 83.82 0)
@@ -8020,7 +8077,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1A106K080AC"
 			(at 27.94 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -8066,7 +8123,14 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "10V" (at 19.8641 74.17 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "10V" (at 19.8641 74.17 0) (effects (font (size 1 1))))
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C1608X5R1A106K080AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1A106K080AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "10V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:C31")
 		(at 363.22 111.76 0)
@@ -8109,7 +8173,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU"
 			(at 363.22 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -8155,7 +8219,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 58.42 83.82 0)
@@ -8348,7 +8419,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU"
 			(at 231.14 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -8394,7 +8465,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R22")
 		(at 353.06 60.96 0)
@@ -8437,7 +8515,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 353.06 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8483,7 +8561,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW06030000Z0EA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "jumper" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:C27")
 		(at 43.18 71.12 0)
@@ -8526,7 +8611,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1A106K080AC"
 			(at 43.18 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -8572,7 +8657,14 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "10V" (at 51.2559 79.25 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "10V" (at 51.2559 79.25 0) (effects (font (size 1 1))))
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C1608X5R1A106K080AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1A106K080AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "10V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:C29")
 		(at 73.66 71.12 0)
@@ -8615,7 +8707,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU"
 			(at 73.66 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -8661,7 +8753,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R23")
 		(at 340.36 73.66 0)
@@ -8750,7 +8849,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Not fitted" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DNP_RF_TUNING" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "RF tuning pads intentionally unpopulated" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "DNP" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R24")
 		(at 365.76 73.66 0)
@@ -8839,7 +8943,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Not fitted" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DNP_RF_TUNING" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "RF tuning pads intentionally unpopulated" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "DNP" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 
 (no_connect
 		(at 185.42 68.58)

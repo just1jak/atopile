@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-27",
   "revision": "C",
-  "state": "cad_checked_bounded_prototype_fabrication_package_ready",
+  "state": "bounded_prototype_cad_and_fabrication_package_checks_pass",
   "routing_complete": true,
-  "pcb_sha256": "68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9",
-  "previous_accepted_pcb_sha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
+  "pcb_sha256": "83ac625f2283aa789455802fa4367dbc786c7a2f0ae6c87ffc91c8959a40ac15",
+  "previous_accepted_pcb_sha256": "6875b7628b2ace4bbad731ba96508a1c3dd032dab3aefff2669a66251b7410a1",
   "native_drc": {
     "errors": 0,
     "warnings": 0,
@@ -24,9 +24,8 @@
   "ground_reference_without_signal_tracks": true,
   "original_electrical_components_retained": 239,
   "missing_original_components_or_functional_blocks": [],
-  "total_electrical_components": 277,
-  "pcb_footprints_including_four_holes": 281,
-  "existing_value_exceptions": 23,
+  "total_electrical_components": 329,
+  "pcb_footprints_including_four_holes": 333,
   "existing_pin_net_changes": 15,
   "recovered_capacitor_voltage_fields": 24,
   "intentional_capacitor_voltage_upgrades": [
@@ -45,14 +44,14 @@
   "updated_schematic_pdf": "current/ChryslerScanner_V240_SD-Hierarchy.pdf",
   "adversarial_review_status": "CONDITIONAL_BOUNDED_PROTOTYPE_DESIGN_ACCEPTANCE",
   "remaining_P1_findings": [],
-  "fabrication_package": "outputs/chrysler-integrated-sd-rev-c-annotations-final-20261022-fabrication.zip",
-  "fabrication_package_sha256": "fe6e130b7e57818c4a702b8de3b2b10bd07b054cd13960ccb43dd16a2f445db6",
-  "full_project_archive": "outputs/chrysler-integrated-sd-rev-c-annotations-final-20261022.zip",
-  "full_project_archive_sha256": "4f7a88f10f597a6a72e9bfe37ceea9fce181bd34c8a100407a4e9f6c6f09f913",
+  "fabrication_package": "outputs/chrysler-integrated-sd-rev-c-procurement-20261027-fabrication.zip",
+  "fabrication_package_sha256": "cf85550578d64127faa4318b4f51fa29177a5d0605411d7dd8ddd66bd4787050",
+  "full_project_archive": "outputs/chrysler-integrated-sd-rev-c-procurement-20261027.zip",
+  "full_project_archive_sha256": "264fa9a9e5acf271e2782e607a2b6b4b760358d39ac92d73421bcdfa4452b625",
   "requires_filled_capped_planarized_vias": true,
   "filled_capped_processing_site_count": 230,
-  "assembly_bom_complete": false,
-  "unselected_exact_bom_parts": 245,
+  "assembly_bom_complete": true,
+  "unselected_exact_bom_parts": 0,
   "normal_input_V": [
     9,
     16
@@ -70,7 +69,7 @@
   "h1_nominal_clearance_mm": 0.7504,
   "h1_clearance_after_nominal_screw_float_mm": 0.2504,
   "mechanical_nominal_cad_fit_pass": true,
-  "all_original_placements_except_declared_c61_move_preserved": true,
+  "all_original_placements_except_declared_c61_move_preserved": false,
   "c61_top_side": true,
   "c61_position_mm": [
     193,
@@ -93,5 +92,40 @@
   "testpoint_addition_removed_copper_count": 0,
   "comparison_annotation_audit": "current/reference/rev-c-comparison-annotation-audit.json",
   "c1_positive_polarity_visible": true,
-  "visible_recovered_capacitor_voltage_ratings": 24
+  "visible_recovered_capacitor_voltage_ratings": 24,
+  "historical_pre_ccd_delivery": {
+    "fabrication_package": "outputs/chrysler-integrated-sd-rev-c-annotations-final-20261022-fabrication.zip",
+    "fabrication_package_sha256": "fe6e130b7e57818c4a702b8de3b2b10bd07b054cd13960ccb43dd16a2f445db6",
+    "full_project_archive": "outputs/chrysler-integrated-sd-rev-c-annotations-final-20261022.zip",
+    "full_project_archive_sha256": "4f7a88f10f597a6a72e9bfe37ceea9fce181bd34c8a100407a4e9f6c6f09f913"
+  },
+  "fabrication_release_approved": true,
+  "can_scope": "Deferred hardware; documented upgrade only",
+  "procurement_review": "current/reference/rev-c-procurement-review.md",
+  "procurement_selections": "current/reference/rev-c-procurement-selections.json",
+  "commit_push": "See Git history for final committed delivery",
+  "schematic_pdf_sha256": "37d1caacb41b605342bcf59e1f727940fcdceffb36f9dcd57797a57649e1cb7b",
+  "purchasable_assembly_parts": 321,
+  "dnp_references": [
+    "R23",
+    "R24"
+  ],
+  "pcb_features": [
+    "JP1",
+    "JP2",
+    "TP45",
+    "TP46",
+    "TP47",
+    "TP48"
+  ],
+  "procurement_physical_footprint_changes": 11,
+  "procurement_placement_changes": [
+    "C14",
+    "L3",
+    "L5"
+  ],
+  "procurement_removed_unlocked_tracks": 9,
+  "procurement_added_tracks": 46,
+  "procurement_added_vias": 0,
+  "fabrication_release_scope": "Local bounded prototype CAD/package acceptance; fabricator stackup/processing agreement and documented bench, firmware, assembly and fit qualification remain."
 }

@@ -5822,7 +5822,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf"
 			(at 27.94 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -5868,7 +5868,14 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 19.8641 84.33 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "50V" (at 19.8641 84.33 0) (effects (font (size 1 1))))
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CGA5L1X7R1H106K160AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 40.64 101.6 0)
@@ -6125,7 +6132,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:C_1206_3216Metric"
+		(property "Footprint" "footprints:C_1210_3225_TDK_22u50V"
 			(at 106.68 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6136,7 +6143,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1H226M250AC"
 			(at 106.68 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6182,7 +6189,16 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 114.789 84.33 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "50V" (at 114.789 84.33 0) (effects (font (size 1 1))))
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C3225X7R1H226M250AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1H226M250AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "20%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Height" "2.8mm max" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Model Representation" "Representative maximum overall envelope; Fab/courtyard and selected dimensions govern fit." (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:C16")
 		(at 185.42 83.82 0)
@@ -6225,7 +6241,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf"
 			(at 185.42 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -6271,7 +6287,14 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 193.496 86.87 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "50V" (at 193.496 86.87 0) (effects (font (size 1 1))))
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CGA5L1X7R1H106K160AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:D7")
 		(at 93.98 50.8 0)
@@ -6314,7 +6337,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf"
 			(at 93.98 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6360,7 +6383,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "MDD (Microdiode Electronics)" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DSK34" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:L3")
 		(at 144.78 50.8 0)
@@ -6392,7 +6420,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:R_1206_3216Metric"
+		(property "Footprint" "footprints:L_Bourns_SRN2012"
 			(at 144.78 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6403,7 +6431,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/srn2012.pdf"
 			(at 144.78 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6449,7 +6477,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Bourns" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "SRN2012-R24M" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.bourns.com/docs/product-datasheets/srn2012.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Height" "1.2mm max" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Model Representation" "Representative maximum overall envelope; Fab/courtyard and selected dimensions govern fit." (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 185.42 101.6 0)
@@ -6567,7 +6602,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
 			(at 132.08 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6613,7 +6648,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "TNPW06036K80BEEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "0.1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R8")
 		(at 132.08 71.12 0)
@@ -6656,7 +6698,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
 			(at 132.08 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -6702,7 +6744,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "TNPW0603110KBEEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "0.1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 106.68 101.6 0)
@@ -6820,7 +6869,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.legend-si.com/productinfo/1318196.html"
 			(at 60.96 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6875,7 +6924,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Legend-Si" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "LGS6302B5" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.legend-si.com/productinfo/1318196.html" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:L2")
 		(at 60.96 50.8 0)
@@ -6907,7 +6961,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:L_7.3x7.3_H3.5"
+		(property "Footprint" "footprints:L_Eaton_DR74_220_R"
 			(at 60.96 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6918,7 +6972,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html"
 			(at 60.96 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6964,7 +7018,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Eaton" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DR74-220-R" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Height" "4.35mm max" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Model Representation" "Representative maximum overall envelope; Fab/courtyard and selected dimensions govern fit." (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:C15")
 		(at 157.48 81.28 0)
@@ -7007,7 +7068,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf"
 			(at 157.48 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -7053,7 +7114,14 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 165.556 84.33 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "50V" (at 165.556 84.33 0) (effects (font (size 1 1))))
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CGA5L1X7R1H106K160AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 132.08 101.6 0)

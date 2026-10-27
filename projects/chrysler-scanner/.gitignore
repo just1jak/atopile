@@ -53,3 +53,16 @@ secrets.hpp
 /work/comparison-annotation-baseline/
 /outputs/chrysler-integrated-sd-rev-c-annotations*/
 /outputs/chrysler-integrated-sd-rev-c-annotations*.zip*
+
+# Isolated procurement trial and temporary promotion scripts.
+/work/bom-release/
+/work/finish_ccd_checkpoint.py
+/work/promote_ccd_checkpoint.py
+/work/record_ccd_status.py
+
+# Procurement research/trials; final reproducible sources are in current/source.
+/work/*.py
+/work/*.md
+/work/final-page-*.png
+/work/bom-fit/
+/outputs/chrysler-integrated-sd-rev-c-procurement-20261027/

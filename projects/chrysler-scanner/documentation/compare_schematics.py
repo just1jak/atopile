@@ -152,7 +152,7 @@ def paragraph(text,x,y,width,size=12,leading=None,color=ink):
     for line in simpleSplit(text,'Helvetica',size,width):txt(x,y,line,size,color);y-=leading
     return y
 def footer(number):
-    cv.setStrokeColor(rule);cv.line(42,37,W-42,37);txt(42,20,'ChryslerScanner | Original V240 rev 2.4.0-1 -> current Rev C debug-access checkpoint | 2026-10-22',9,muted);cv.setFont('Helvetica',10);cv.drawRightString(W-42,20,str(number))
+    cv.setStrokeColor(rule);cv.line(42,37,W-42,37);txt(42,20,'ChryslerScanner | Original V240 rev 2.4.0-1 -> current Rev C procurement prototype | 2026-10-27',9,muted);cv.setFont('Helvetica',10);cv.drawRightString(W-42,20,str(number))
 def overlay(page,card,rect):draws.append(dict(reportPage=page,card=card,rect=list(rect)))
 def draw_card(page,card,rect):
     x,y,w,h=rect;cv.setFillColor(white);cv.setStrokeColor(rule);cv.rect(x,y,w,h,fill=1,stroke=1)
@@ -253,6 +253,6 @@ writer.add_attachment('Original_ChryslerScanner_V240_schematic.pdf',ORIGINAL.rea
 writer.add_metadata({'/Title':'ChryslerScanner - original/current circuit comparison','/Author':'ChryslerScanner project; original circuit drawing by Daniel Laszlo','/Subject':'30 vector comparison sets, source hashes, mapping index and complete original appendix','/Keywords':'ChryslerScanner KiCad original current circuit cross-reference'})
 OUT.parent.mkdir(parents=True,exist_ok=True)
 with OUT.open('wb') as f:writer.write(f)
-manifest=dict(title='Original/current circuit comparison atlas',date='2026-10-22',originalPdf=str(ORIGINAL.relative_to(P)),originalSha256=sha(ORIGINAL),currentPdf=str(CURRENT.relative_to(P)),currentSha256=sha(CURRENT),pcbSha256=json.loads((P/'reference/final-status.json').read_text())['pcb_sha256'],comparisonSets=len(sections),pageCount=len(writer.pages),vectorSourcesPreserved=True,embeddedSourcePdfs=2,sections=[dict(atlasPage=i+3,**v) for i,v in enumerate(sections)],outputSha256=sha(OUT))
+manifest=dict(title='Original/current circuit comparison atlas',date='2026-10-27',originalPdf=str(ORIGINAL.relative_to(P)),originalSha256=sha(ORIGINAL),currentPdf=str(CURRENT.relative_to(P)),currentSha256=sha(CURRENT),pcbSha256=json.loads((P/'reference/final-status.json').read_text())['pcb_sha256'],comparisonSets=len(sections),pageCount=len(writer.pages),vectorSourcesPreserved=True,embeddedSourcePdfs=2,sections=[dict(atlasPage=i+3,**v) for i,v in enumerate(sections)],outputSha256=sha(OUT))
 (OUT.parent/'ChryslerScanner_Circuit_Comparison_Index.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print(json.dumps(dict(pdf=str(OUT),pages=len(writer.pages),sets=len(sections),bytes=OUT.stat().st_size),indent=2))

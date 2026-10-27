@@ -1,11 +1,11 @@
 {
   "title": "Original/current circuit comparison atlas",
-  "date": "2026-10-22",
+  "date": "2026-10-27",
   "originalPdf": "original-atopile\\reference\\upstream\\ChryslerScanner_V240_schematic.pdf",
   "originalSha256": "334b04164cfa96183cf502f690024a764cc719671f20583043f37604c9ed590d",
   "currentPdf": "current\\ChryslerScanner_V240_SD-Hierarchy.pdf",
-  "currentSha256": "9608e5e5260462a203b92573b180850445996fbac1ae81c905e62d32d3abec3a",
-  "pcbSha256": "68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9",
+  "currentSha256": "37d1caacb41b605342bcf59e1f727940fcdceffb36f9dcd57797a57649e1cb7b",
+  "pcbSha256": "83ac625f2283aa789455802fa4367dbc786c7a2f0ae6c87ffc91c8959a40ac15",
   "comparisonSets": 30,
   "pageCount": 33,
   "vectorSourcesPreserved": true,
@@ -1371,5 +1371,5 @@
       ]
     }
   ],
-  "outputSha256": "decb1f3fd07c7f191da06e0b42dc5ea3c5382d31500437536a1af1d3725930f5"
+  "outputSha256": "038a7ccce1f0f62b5ada96266297e68e7db2caac233700e87d384998cab8b91f"
 }

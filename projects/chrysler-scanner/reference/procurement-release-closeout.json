@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-27",
+  "status": "PASS",
+  "owner": "Primary release/package validation",
+  "pcbSha256": "83ac625f2283aa789455802fa4367dbc786c7a2f0ae6c87ffc91c8959a40ac15",
+  "portableCombinedAuditChecks": 91,
+  "currentChecksums": true,
+  "archivesRoundTripAndChecksums": true,
+  "comparisonAtlasCurrent": true,
+  "independentReviewBinding": true,
+  "remainingP1Findings": [],
+  "independentReviewCloseout": "The independent delta report retained in the archives predates final package validation. Its pending primary-wrapper/export observations are closed by the successful package exporter and this primary-owned delivery verification; independent CAD findings remain empty.",
+  "qualification": "Bounded prototype only. Fabricator stackup and 230 filled/capped/planarized sites must be agreed. Firmware, electrical/thermal/fault/ESD, assembly and actual mechanical fit qualification remain; no vehicle or automotive qualification claimed."
+}

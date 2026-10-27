@@ -3391,7 +3391,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU"
 			(at 137.16000 53.34000 0)
 			(hide yes)
 			(show_name no)
@@ -3437,7 +3437,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "100V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "5%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:D11")
 		(at 25.40000 50.80000 0)
@@ -3459,7 +3466,7 @@
 				)
 			)
 		)
-		(property "Value" "MSK4005"
+		(property "Value" "PMEG4005"
 			(at 34.04740 51.75000 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3480,7 +3487,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf"
 			(at 25.40000 50.80000 0)
 			(hide yes)
 			(show_name no)
@@ -3526,7 +3533,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Nexperia" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "PMEG4005EGWX" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 66.04000 81.28000 0)
@@ -3623,7 +3635,7 @@
 				)
 			)
 		)
-		(property "Value" "ESD5Z12V"
+		(property "Value" "SMF12A"
 			(at 75.18630 72.07000 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3644,7 +3656,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://diotec.com/en/product/SMF12A.html"
 			(at 66.04000 71.12000 0)
 			(hide yes)
 			(show_name no)
@@ -3690,7 +3702,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Diotec Semiconductor" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "SMF12A" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://diotec.com/en/product/SMF12A.html" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 137.16000 71.12000 0)
@@ -3808,7 +3825,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU"
 			(at 205.74000 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3854,7 +3871,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "100V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "5%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:C36")
 		(at 109.22000 53.34000 90)
@@ -3897,7 +3921,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU"
 			(at 109.22000 53.34000 0)
 			(hide yes)
 			(show_name no)
@@ -3943,7 +3967,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "100V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "5%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 180.34000 124.46000 0)
@@ -4211,7 +4242,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.attend.com.tw/data/download/file/226A-1202.pdf"
 			(at 66.04 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -4299,7 +4330,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "ATTEND" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "226A-1202" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.attend.com.tw/data/download/file/226A-1202.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:C39")
 		(at 177.80000 53.34000 90)
@@ -4342,7 +4378,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU"
 			(at 177.80000 53.34000 0)
 			(hide yes)
 			(show_name no)
@@ -4388,7 +4424,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "100V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "5%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 78.74000 127.00000 0)
@@ -4581,7 +4624,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU"
 			(at 35.56000 116.84000 0)
 			(hide yes)
 			(show_name no)
@@ -4627,7 +4670,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "100V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "5%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:D14")
 		(at 180.34000 116.84000 0)
@@ -4649,7 +4699,7 @@
 				)
 			)
 		)
-		(property "Value" "ESD5Z12V"
+		(property "Value" "SMF12A"
 			(at 189.48630 117.79000 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4670,7 +4720,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://diotec.com/en/product/SMF12A.html"
 			(at 180.34000 116.84000 0)
 			(hide yes)
 			(show_name no)
@@ -4716,7 +4766,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Diotec Semiconductor" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "SMF12A" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://diotec.com/en/product/SMF12A.html" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 205.74000 71.12 0)
@@ -4834,7 +4889,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU"
 			(at 45.72000 71.12000 0)
 			(hide yes)
 			(show_name no)
@@ -4880,7 +4935,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "100V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "5%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:C44")
 		(at 78.74000 116.84000 0)
@@ -4923,7 +4985,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU"
 			(at 78.74000 116.84000 0)
 			(hide yes)
 			(show_name no)
@@ -4969,7 +5031,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C0603C221J1GACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "100V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "5%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:D13")
 		(at 132.08000 116.84000 0)
@@ -4991,7 +5060,7 @@
 				)
 			)
 		)
-		(property "Value" "ESD5Z12V"
+		(property "Value" "SMF12A"
 			(at 141.22630 117.79000 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5012,7 +5081,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://diotec.com/en/product/SMF12A.html"
 			(at 132.08000 116.84000 0)
 			(hide yes)
 			(show_name no)
@@ -5058,7 +5127,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Diotec Semiconductor" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "SMF12A" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://diotec.com/en/product/SMF12A.html" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 25.4 237.49 0)

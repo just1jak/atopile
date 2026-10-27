@@ -5583,7 +5583,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 33.02 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -5629,7 +5629,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CRCW0603100KFKEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R15")
 		(at 142.24 101.6 0)
@@ -5672,7 +5679,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
 			(at 142.24 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -5718,7 +5725,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "TNPW060310K0BEEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "0.1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:C20")
 		(at 20.32 91.44 0)
@@ -5761,7 +5775,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf"
 			(at 20.32 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5807,7 +5821,14 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "50V" (at 28.3959 94.49 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "50V" (at 28.3959 94.49 0) (effects (font (size 1 1))))
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CGA5L1X7R1H106K160AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 20.32 158.75 0)
@@ -5925,7 +5946,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1E226M160AB"
 			(at 121.92 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5971,7 +5992,14 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "25V" (at 130.029 97.03 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "25V" (at 130.029 97.03 0) (effects (font (size 1 1))))
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C3216X5R1E226M160AB" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1E226M160AB" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "25V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "20%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 162.56 109.22 0)
@@ -6164,7 +6192,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf"
 			(at 198.12 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -6210,7 +6238,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "MDD (Microdiode Electronics)" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DSK34" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 233.68 113.03 0)
@@ -6328,7 +6361,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf"
 			(at 96.52 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6374,7 +6407,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "MDD (Microdiode Electronics)" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DSK34" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 40.64 109.22 0)
@@ -6481,7 +6519,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:L_7.3x7.3_H3.5"
+		(property "Footprint" "footprints:L_Eaton_DR74_220_R"
 			(at 109.22 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -6492,7 +6530,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html"
 			(at 109.22 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -6538,7 +6576,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Eaton" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DR74-220-R" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Height" "4.35mm max" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Model Representation" "Representative maximum overall envelope; Fab/courtyard and selected dimensions govern fit." (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R17")
 		(at 233.68 101.6 0)
@@ -6581,7 +6626,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
 			(at 233.68 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -6627,7 +6672,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "TNPW060310K0BEEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "0.1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 254 109.22 0)
@@ -6745,7 +6797,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/component-documentation/download/specsheet/C1206C104K1RACTU"
 			(at 83.82 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -6791,7 +6843,14 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "100V" (at 89.6886 56.39 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "100V" (at 89.6886 56.39 0) (effects (font (size 1 1))))
+(property "Manufacturer" "KEMET" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C1206C104K1RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://search.kemet.com/component-documentation/download/specsheet/C1206C104K1RACTU" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "100V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:R16")
 		(at 233.68 81.28 0)
@@ -6834,7 +6893,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
 			(at 233.68 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6880,7 +6939,14 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "TNPW060382K5BEEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "0.1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:U8")
 		(at 198.12 78.74 0)
@@ -6923,7 +6989,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv767.pdf"
 			(at 198.12 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6984,7 +7050,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "TLV76701DRVR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.ti.com/lit/ds/symlink/tlv767.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "ChryslerScanner:U7")
 		(at 60.96 68.58 0)
@@ -7027,7 +7098,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr14010a.pdf"
 			(at 60.96 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -7085,7 +7156,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "LMR14010ADDCR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.ti.com/lit/ds/symlink/lmr14010a.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 96.52 109.22 0)
@@ -7278,7 +7354,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1E226M160AB"
 			(at 254 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7324,7 +7400,14 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "25V" (at 262.109 94.49 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "25V" (at 262.109 94.49 0) (effects (font (size 1 1))))
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "C3216X5R1E226M160AB" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1E226M160AB" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "25V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "20%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 121.92 109.22 0)
@@ -7442,7 +7525,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv767.pdf"
 			(at 35.56 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -7503,7 +7586,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "TLV76701DRVR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.ti.com/lit/ds/symlink/tlv767.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 142.24 113.03 0)
@@ -7621,7 +7709,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf"
 			(at 162.56 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7667,7 +7755,14 @@
 				)
 			)
 		)
-	(property "Voltage Rating" "25V" (at 170.636 94.49 0) (effects (font (size 1 1)))))
+	(property "Voltage Rating" "25V" (at 170.636 94.49 0) (effects (font (size 1 1))))
+(property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CGA5L1X7R1H106K160AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "10%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 177.8 109.22 0)
@@ -7785,7 +7880,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
 			(at 142.24 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -7831,5 +7926,12 @@
 				)
 			)
 		)
-	)
+
+(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "TNPW0603100KBEEA" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Tolerance" "0.1%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Selected Power Rating" "0.1W" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 )
