@@ -1,0 +1,25 @@
+{
+  "revision": "C",
+  "cad_validation": "PASS",
+  "pcbSha256": "83ac625f2283aa789455802fa4367dbc786c7a2f0ae6c87ffc91c8959a40ac15",
+  "prototype_only": true,
+  "automotive_qualified": false,
+  "firmware_integration_complete": false,
+  "assembly_bom_complete": true,
+  "unselected_exact_parts": [],
+  "purchasable_assembly_parts": 321,
+  "unique_purchasing_lines": 97,
+  "dnp_references": [
+    "R23",
+    "R24"
+  ],
+  "pcb_features": [
+    "JP1",
+    "JP2",
+    "TP45",
+    "TP46",
+    "TP47",
+    "TP48"
+  ],
+  "external_upload_performed": false
+}

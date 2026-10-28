@@ -261,7 +261,7 @@
     "H1 remaining 0.2504 mm after nominal M3 float is a small tolerance budget. Verify actual selected screw envelope and physical sample fit before production assembly.",
     "No washer or above-board standoff is approved by this check. Enclosure and connector insertion-load support are not modeled."
   ],
-  "status": "NOMINAL_CAD_FIT_WITH_TOLERANCE_LIMITS",
+  "status": "HISTORICAL_SUPERSEDED_BY_rev-c-refinement-mechanical.json",
   "selectedHardware": "M3 socket head, no washer; assumed maximum head envelope diameter 5.5 mm, height 3 mm",
   "selectedHardwareResults": [
     {

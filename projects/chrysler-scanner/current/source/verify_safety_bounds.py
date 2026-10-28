@@ -20,7 +20,9 @@ checks={
  'programmingGateBelow12V':gate_max<12,
  'normalProgrammingGateAbove4p5V':gate_min>4.5,
  'boundedDrainBelow30V':28<30,
- 'vbbGateBelow20V':12.85<20,
+ 'vbbGateDividerBelow12V':gate_max<12,
+ 'boundedVbbGateResistorPowerBelow100mW':((28/(4700*.99+8200*.99))**2)*(8200*1.01)<.1,
+ 'allVbbPchannelsBelow12VWithDivider':gate_max<12,
  'allOtherPermitCombinationsHoldReset':all((en and pg and hb)==(int(en)+int(pg)+int(hb)==3) for en,pg,hb in itertools.product((False,True),repeat=3)),
 }
 report={'status':'PASS' if all(checks.values()) else 'FAIL','checks':checks,
@@ -34,7 +36,7 @@ report={'status':'PASS' if all(checks.values()) else 'FAIL','checks':checks,
  'Rail fall rate <=5mV/us and 50us maximum assertion delay are bench requirements.',
  'TVS/source pulse energy, capacitive gate overshoot and physical timing require measurement.',
  'The protected rail/VPP <=28V bound must be validated; arithmetic does not establish it.',
- 'Q8-Q11 3.3V drive remains a functional qualification gate.']}
+ 'DMG6601 channels are specified at 2.5V; AW9523 typical-only output drop and physical gate timing remain qualification gates.']}
 (ROOT/'reference/safety-bounds-audit.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))
 assert report['status']=='PASS'

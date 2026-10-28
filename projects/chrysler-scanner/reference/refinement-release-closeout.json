@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-28",
+  "status": "PASS",
+  "owner": "Primary delivered-package verification",
+  "pcbSha256": "800c05930a0ca24fe280d5f3aace70974889129942a1b5602ce2eabfea026301",
+  "combinedAuditChecks": 130,
+  "currentChecksums": true,
+  "archivesByteRoundTripAndChecksums": true,
+  "comparisonAtlasCurrent": true,
+  "independentReviewBinding": true,
+  "placedParts": 325,
+  "requiredProcessingSites": 246,
+  "remainingP1Findings": [],
+  "primaryCloseout": "The independent report records its earlier primary-gate/package closeout as pending. Current sealed combined verification, exporter portable validation, placement reconciliation, archive integrity and this delivered-file check close those primary-owned observations.",
+  "qualificationsRemaining": "Bounded prototype only: fabricator stackup and 246 filled/capped/planarized sites, firmware/P0 push-pull and dedicated health integration, physical gate/stability/thermal/fault/ESD and actual sample/enclosure fit qualification. No manufacturing order or vehicle-use qualification."
+}

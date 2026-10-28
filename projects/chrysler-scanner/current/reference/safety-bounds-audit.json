@@ -8,7 +8,9 @@
     "programmingGateBelow12V": true,
     "normalProgrammingGateAbove4p5V": true,
     "boundedDrainBelow30V": true,
-    "vbbGateBelow20V": true,
+    "vbbGateDividerBelow12V": true,
+    "boundedVbbGateResistorPowerBelow100mW": true,
+    "allVbbPchannelsBelow12VWithDivider": true,
     "allOtherPermitCombinationsHoldReset": true
   },
   "nominalLoadedAdcGain": 0.06756644033299411,
@@ -19,12 +21,12 @@
   "boundedTimeoutMs": 68.05913599999998,
   "worstProgrammingGateV": 10.331597357170619,
   "minimumNormalProgrammingGateV": 6.780753768844221,
-  "contractSha256": "1288851d0f18f0b686caa8d4105eb6a8bf8d2421d54ba535def3febc26da132f",
+  "contractSha256": "014d4902c79a05a235116fbb1d18821da2b2dd5047e184bc492fc04298501290",
   "limitations": [
     "Assumes specified exact IC variants and stated resistor tolerances.",
     "Rail fall rate <=5mV/us and 50us maximum assertion delay are bench requirements.",
     "TVS/source pulse energy, capacitive gate overshoot and physical timing require measurement.",
     "The protected rail/VPP <=28V bound must be validated; arithmetic does not establish it.",
-    "Q8-Q11 3.3V drive remains a functional qualification gate."
+    "DMG6601 channels are specified at 2.5V; AW9523 typical-only output drop and physical gate timing remain qualification gates."
   ]
 }

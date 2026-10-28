@@ -1,0 +1,222 @@
+{
+  "0474a0d2-dd26-4257-b0aa-a6d52ca734ce": {
+    "net": "V_BA",
+    "locked": false
+  },
+  "0b444175-e675-468c-91ec-b4d5e210f2f5": {
+    "net": "+12V",
+    "locked": false
+  },
+  "0fa7261d-bb81-4400-83e2-b5909f3f15fc": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "10cec695-bbfa-4974-b5da-a7d60d9ca124": {
+    "net": "+12V",
+    "locked": false
+  },
+  "11fcd8e8-be33-48b8-b0f1-ac7c2506b2c2": {
+    "net": "V_BA",
+    "locked": false
+  },
+  "12743494-20dd-494b-b047-1ed8e8ffc4a6": {
+    "net": "V_BA",
+    "locked": false
+  },
+  "137ad3f5-fe8b-4de7-b272-aa0b762350b8": {
+    "net": "V_BA",
+    "locked": false
+  },
+  "2352aa0e-7ee1-497b-9a11-bf5103725cf1": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "24e9d401-dc65-4ebe-8565-46284b7ba91e": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "2a5e3246-130d-4462-ae2d-4d2b8280614a": {
+    "net": "V_PR",
+    "locked": false
+  },
+  "2bf621f2-682b-4ac9-a720-42f6809d6966": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "305858b2-cf89-400b-958c-3e7d96c5ec94": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "368bd4f4-d732-4165-b6f5-d000881d3f7e": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "3dca995c-7616-4b68-9d72-46e813b6fa1a": {
+    "net": "V_PR",
+    "locked": false
+  },
+  "43891651-4ba6-47c3-b6d4-d363d1909082": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "453979fa-7516-4842-9410-ad0e54551876": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "4a22868d-ffa8-475c-9bc9-4c4b1cbfc201": {
+    "net": "V_PR",
+    "locked": false
+  },
+  "54980615-1669-4431-82f7-9ecb9cc262a4": {
+    "net": "V_BA",
+    "locked": false
+  },
+  "559423b2-f474-4749-b112-a839672a8795": {
+    "net": "V_PR",
+    "locked": false
+  },
+  "5efca5e4-24b0-476d-a054-d68feae4bd38": {
+    "net": "V_PR",
+    "locked": false
+  },
+  "6af2e815-7211-4809-8b81-33e476fc9b63": {
+    "net": "V_BA",
+    "locked": false
+  },
+  "6edd2c1b-4f7d-44f8-8976-b468c7427af4": {
+    "net": "V_PR",
+    "locked": false
+  },
+  "74117d98-783a-4d45-8455-848ffac9b24d": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "77b6ca39-ae65-4776-9d63-187412fd2f03": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "8ca16d9b-3138-43c8-9cda-550abdec7b1d": {
+    "net": "+12V",
+    "locked": false
+  },
+  "8cf8242f-4b46-50a7-a351-4b51bd98f7f7": {
+    "net": "V_BT",
+    "locked": true
+  },
+  "945c249a-b050-40a0-ab6a-64f2aeaf2d0c": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "945ff337-b67a-443a-9c10-d4d81da41d01": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "94c99082-bcf7-4e23-8eb8-393e7d932c86": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "96d27932-176c-4b5f-8cc6-fcd1092c859f": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "98e4dd49-d735-44e4-94bd-288808bc04d8": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "9b32d5ce-b90f-4ccf-bc74-2791f5905102": {
+    "net": "V_BA",
+    "locked": false
+  },
+  "9b4a945a-f62a-4775-8d6e-6b012098fdec": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "a23a8118-e502-4d6b-8448-4ec2729be158": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "ad10c36f-12bc-409d-b406-69f0ac9066c2": {
+    "net": "V_BA",
+    "locked": false
+  },
+  "af1994af-1f83-4a34-8dff-e019ff0f5478": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "b0b9617f-4027-4bff-bff2-daa56bead099": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "b15dfa49-5dd0-44b3-937c-fb5947d15b83": {
+    "net": "V_PR",
+    "locked": false
+  },
+  "b5701d16-8373-4839-9418-f3d4914b7fe7": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "b8c1d949-9a02-4883-8226-0a1f802265f3": {
+    "net": "V_PR",
+    "locked": false
+  },
+  "bf0501c1-c907-42af-865f-ddc03f54cc14": {
+    "net": "V_BA",
+    "locked": false
+  },
+  "c03162ad-af1c-444f-bb27-cab92048193b": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "c3205ba9-63e1-48ab-85f4-f85b793ad405": {
+    "net": "V_PR",
+    "locked": false
+  },
+  "c506f1e3-0d11-4599-bb1d-e78fac6e4e33": {
+    "net": "V_PR",
+    "locked": false
+  },
+  "c5cf788e-813a-430a-8800-9eddb12360d5": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "d8c9cdd0-43e9-4379-bb9a-72ecad4cdc20": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "da700b36-a66c-425b-8fc8-ae149ad738d8": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "e1bb0c1f-c116-4640-ab03-ae0d9bec0ae2": {
+    "net": "V_BA",
+    "locked": false
+  },
+  "e42ce9b7-4236-483b-b215-0bddd9894c06": {
+    "net": "V_PR",
+    "locked": false
+  },
+  "ebe8e42d-8a41-4f7b-9f4f-4efc2ffb12de": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "ee75f4d9-edf8-4b78-8fa2-b70e72b03823": {
+    "net": "V_BA",
+    "locked": false
+  },
+  "f1ac5acb-77c1-44d8-92af-52d898102281": {
+    "net": "+12V",
+    "locked": false
+  },
+  "f3720fc7-b848-493e-9e7b-a489b134dce4": {
+    "net": "V_BT",
+    "locked": false
+  },
+  "f5571307-79d8-4743-93d4-89493606e456": {
+    "net": "J1962-16",
+    "locked": false
+  },
+  "f9d08713-eb2c-4a6a-a279-0a5f9b11b49a": {
+    "net": "V_BA",
+    "locked": false
+  }
+}

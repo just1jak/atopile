@@ -10,9 +10,11 @@ U9 supply is separately limited by R123 (1 kΩ, 1 W, 1%) and D30 (Nexperia BZT52
 
 C14/C15 require at least 50 V ratings, upgraded from the original PDF's 35 V. Select exact capacitor parts with effective capacitance at operating bias and physical fit confirmed.
 
-Q8–Q11 use Diodes DMC3071LVT-7 (30 V drains, ±20 V gates). Their N channel only has an on-resistance guarantee at 4.5 V; test the approximately 2.73 mA gate-pull load at 3.0–3.3 V drive across temperature before enabling programming in a vehicle. Do not claim guaranteed 3.3 V on-resistance. An inadequate pull-down is a functional qualification risk.
+Q8-Q11 now use Diodes DMG6601LVT-7, matching Q12-Q15: 30 V drains and +/-12 V gates, with N-channel on-resistance specified at 2.5 V gate drive. R124-R127 (8.2 kohm, 1%) separate each N drain from its P gate; R56/R58/R60/R62 remain 4.7 kohm, 1% from VBB to P gate. This divider limits worst-case P gate stress to 10.332 V at the bounded 28 V rail. No enabling pullups were added to the N gates; original 10 kohm pulldowns remain. Both N/P channels have specified 2.5 V drive points. The original 4.5 V-only N-channel selection is superseded.
 
-Q12–Q15 use Diodes DMG6601LVT-7 (30 V drains, ±12 V gates), with R65/R68/R71/R74 changed to 8.2 kΩ, 1%. Upper R64/R67/R70/R73 are explicitly 4.7 kΩ, 1% and produce at most about 10.33 V gate stress at the 28 V envelope with 1% tolerances; the nominal programming rail provides sufficient P-channel gate drive. Both device families retain physical pin mapping 1=N gate, 2=P source, 3=P gate, 4=P drain, 5=N source, 6=N drain. Verify exact ordering codes and footprint land patterns in procurement.
+AW9523 P0_0-P0_3 default to open-drain. Firmware must explicitly select push-pull mode while output latches remain low before accepting programming commands. The AW9523 datasheet gives typical output drops, without a guaranteed worst-case VOH table entry; validate gate voltage and startup/shutdown timing across temperature. This is an expander/physical qualification limit, not a claim that the whole drive chain has a guaranteed 2.5 V minimum under every brownout. The supply fall-rate and supervision assumptions below remain controlling.
+
+Q12–Q15 use Diodes DMG6601LVT-7 (30 V drains, ±12 V gates), with R65/R68/R71/R74 changed to 8.2 kΩ, 1%. Upper R64/R67/R70/R73 are explicitly 4.7 kΩ, 1% and produce at most about 10.33 V gate stress at the 28 V envelope with 1% tolerances; the nominal programming rail provides sufficient P-channel gate drive. All eight devices retain physical pin mapping 1=N gate, 2=P source, 3=P gate, 4=P drain, 5=N source, 6=N drain. Verify exact ordering codes and footprint land patterns in procurement.
 
 ## ADC isolation and calibration
 

@@ -5,12 +5,11 @@
 1,U22,Analog Devices,LTC6993HS6-2#TRMPBF,Package_TO_SOT_SMD:TSOT-23-6
 1,L3,Bourns,SRN2012-R24M,footprints:L_Bourns_SRN2012
 1,L5,Bourns,SRN2012-R47M,footprints:L_Bourns_SRN2012
-4,"Q10, Q11, Q8, Q9",Diodes Incorporated,DMC3071LVT-7,footprints:SOT-23-6
-4,"Q12, Q13, Q14, Q15",Diodes Incorporated,DMG6601LVT-7,footprints:SOT-23-6
+8,"Q10, Q11, Q12, Q13, Q14, Q15, Q8, Q9",Diodes Incorporated,DMG6601LVT-7,footprints:SOT-23-6
 3,"Q2, Q3, Q4",Diodes Incorporated,DMN62D2UDM-7,footprints:SOT-23-6
 3,"D12, D13, D14",Diotec Semiconductor,SMF12A,footprints:D_SOD-123
 3,"SW1, SW2, SW3",E-Switch,TL3305AF160QG,footprints:SW_SPST_TL3305A
-4,"L1, L2, L4, L6",Eaton,DR74-220-R,footprints:L_Eaton_DR74_220_R
+4,"L1, L2, L4, L6",Eaton,DR74-220-R,footprints:L_Eaton_DR74_Recommended
 1,U10,Espressif,ESP32-PICO-V3-02,footprints:ESP32_PICO_V3_02
 1,J2,GCT,USB4105-GF-A,footprints:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal
 1,Q7,HUASHUO Semiconductor,HSSK8811,footprints:SOT-363_SC-70-6_RR
@@ -80,7 +79,7 @@
 1,R25,Vishay,CRCW0603499RFKEA,footprints:R_0603_1608Metric
 20,"R28, R32, R36, R39, R5, R56, R58, R60, R62, R64, R67, R7, R70, R73, R76, R85, R86, R87, R88, R97",Vishay,CRCW06034K70FKEA,footprints:R_0603_1608Metric
 2,"R102, R103",Vishay,CRCW06035K10FKEA,footprints:R_0603_1608Metric
-4,"R65, R68, R71, R74",Vishay,CRCW06038K20FKEA,footprints:R_0603_1608Metric
+8,"R124, R125, R126, R127, R65, R68, R71, R74",Vishay,CRCW06038K20FKEA,footprints:R_0603_1608Metric
 1,R20,Vishay,CRCW12061K00FKEA,footprints:R_1206_3216Metric
 1,R19,Vishay,CRCW1206360RFKEA,footprints:R_1206_3216Metric
 7,"R29, R30, R33, R37, R40, R43, R46",Vishay,CRCW12064K70FKEA,footprints:R_1206_3216Metric

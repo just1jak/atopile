@@ -66,3 +66,6 @@ secrets.hpp
 /work/final-page-*.png
 /work/bom-fit/
 /outputs/chrysler-integrated-sd-rev-c-procurement-20261027/
+
+# Unpacked current refinement package; commit the checked archives.
+/outputs/chrysler-integrated-sd-rev-c-drive-lands-mounting-20261028/

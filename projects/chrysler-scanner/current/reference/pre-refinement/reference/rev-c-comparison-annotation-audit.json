@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "baselineCommit": "f7593592",
+  "checks": {
+    "allComponentsValuesFootprintsFieldsPathsExact": true,
+    "allNamedNetEndpointsExact": true,
+    "all24RatingsVisible": true,
+    "pcbBytesUnchanged": true
+  },
+  "visibleRatings": [
+    "C1",
+    "C10",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C26",
+    "C27",
+    "C35",
+    "C4",
+    "C5",
+    "C56",
+    "C6",
+    "C7",
+    "C8",
+    "C9"
+  ],
+  "pcbSha256": "68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9",
+  "netlistSha256": "5eddd2ff754eb0d834187aa0faca1ab1464862a94ba36c5ac0bc1f89bee1b404"
+}

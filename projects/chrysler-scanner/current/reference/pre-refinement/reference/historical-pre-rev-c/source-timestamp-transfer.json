@@ -1,0 +1,31 @@
+{
+  "verifiedOriginalFiles": 25,
+  "ntfsResolutionNs": 100,
+  "restoredTimestampDeltaNs": {
+    "elec/layout/v240/v240.kicad_pcb": -51,
+    "elec/layout/v240/v240.kicad_pro": -14,
+    "reference/v240-netlist.json": -8,
+    "elec/schematic/01_ccd.kicad_sch": -5,
+    "elec/schematic/02_pci.kicad_sch": -79,
+    "elec/schematic/03_sci-14-9.kicad_sch": -66,
+    "elec/schematic/04_sci-6-12.kicad_sch": -3,
+    "elec/schematic/05_sci-rx.kicad_sch": -55,
+    "elec/schematic/06_obd-protection.kicad_sch": -56,
+    "elec/schematic/07_vehicle-input.kicad_sch": -31,
+    "elec/schematic/08_power-5v.kicad_sch": -55,
+    "elec/schematic/09_power-vpp.kicad_sch": -80,
+    "elec/schematic/10_power-vbb.kicad_sch": -82,
+    "elec/schematic/11_power-7v5.kicad_sch": -13,
+    "elec/schematic/12_program-6.kicad_sch": -25,
+    "elec/schematic/13_program-9.kicad_sch": -44,
+    "elec/schematic/14_program-12.kicad_sch": -13,
+    "elec/schematic/15_program-14.kicad_sch": -74,
+    "elec/schematic/16_mcu.kicad_sch": -70,
+    "elec/schematic/17_adc.kicad_sch": -14,
+    "elec/schematic/18_control.kicad_sch": -43,
+    "elec/schematic/19_usb.kicad_sch": -81,
+    "elec/schematic/20_leds.kicad_sch": -23,
+    "elec/schematic/21_obd.kicad_sch": -93,
+    "elec/schematic/ChryslerScanner_V240.kicad_sch": -42
+  }
+}

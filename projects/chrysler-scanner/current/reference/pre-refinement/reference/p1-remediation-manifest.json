@@ -1,0 +1,975 @@
+{
+  "parts": {
+    "U21": {
+      "value": "TMUX1511PWR",
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "pins": {
+        "1": "LOGIC_PG",
+        "2": "V_BA_PRE",
+        "3": "V_BA",
+        "4": "LOGIC_PG",
+        "5": "V_BT_PRE",
+        "6": "V_BT",
+        "7": "GND",
+        "8": "V_PR",
+        "9": "V_PR_PRE",
+        "10": "LOGIC_PG",
+        "11": "GND",
+        "12": "GND",
+        "13": "GND",
+        "14": "+3.3V"
+      },
+      "position": [
+        155,
+        143,
+        0
+      ],
+      "schematic": [
+        76.2,
+        71.12
+      ],
+      "types": {
+        "7": "power_in",
+        "14": "power_in"
+      },
+      "manufacturer": "Texas Instruments",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf",
+      "symbolUuid": "a0d4a280-3e1f-5a02-baf4-612e106f0b0b"
+    },
+    "U22": {
+      "value": "LTC6993HS6-2#TRMPBF",
+      "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+      "pins": {
+        "1": "ACT_LED",
+        "2": "GND",
+        "3": "WD_SET",
+        "4": "WD_DIV",
+        "5": "+3.3V",
+        "6": "HEARTBEAT_VALID"
+      },
+      "position": [
+        161,
+        145,
+        0
+      ],
+      "schematic": [
+        203.2,
+        66.04
+      ],
+      "types": {
+        "2": "power_in",
+        "5": "power_in",
+        "6": "output"
+      },
+      "manufacturer": "Analog Devices",
+      "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6993-6993-1-6993-2-6993-3-6993-4.pdf",
+      "symbolUuid": "8e1616be-7175-5c5b-8215-1bbf2b2341b5"
+    },
+    "U23": {
+      "value": "SN74LVC1G11DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "pins": {
+        "1": "EN",
+        "2": "GND",
+        "3": "LOGIC_PG",
+        "4": "N_R88_2",
+        "5": "+3.3V",
+        "6": "HEARTBEAT_VALID"
+      },
+      "position": [
+        161,
+        137,
+        0
+      ],
+      "schematic": [
+        330.2,
+        66.04
+      ],
+      "types": {
+        "2": "power_in",
+        "5": "power_in",
+        "4": "output"
+      },
+      "manufacturer": "Texas Instruments",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "symbolUuid": "c338cd61-ed49-5ef4-939d-0e2e749578e7"
+    },
+    "U24": {
+      "value": "TLV803EA30DBZR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-3",
+      "pins": {
+        "1": "GND",
+        "2": "LOGIC_PG",
+        "3": "+3.3V"
+      },
+      "position": [
+        153,
+        135,
+        0
+      ],
+      "schematic": [
+        76.2,
+        142.24
+      ],
+      "types": {
+        "1": "power_in",
+        "3": "power_in",
+        "2": "open_collector"
+      },
+      "manufacturer": "Texas Instruments",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf",
+      "symbolUuid": "47651158-9962-5597-a4f4-dd014b57134d"
+    },
+    "R115": {
+      "value": "100k 0.1% 25ppm",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pins": {
+        "1": "WD_SET",
+        "2": "GND"
+      },
+      "position": [
+        164,
+        149,
+        0
+      ],
+      "schematic": [
+        177.8,
+        142.24
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "4cb68076-37a2-5f43-9c2c-90383ac0dceb"
+    },
+    "R116": {
+      "value": "191k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pins": {
+        "1": "+3.3V",
+        "2": "WD_DIV"
+      },
+      "position": [
+        158,
+        150,
+        90
+      ],
+      "schematic": [
+        228.6,
+        142.24
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "1400a7b6-786d-51ee-8ba5-30830af7f535"
+    },
+    "R117": {
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pins": {
+        "1": "WD_DIV",
+        "2": "GND"
+      },
+      "position": [
+        158,
+        152,
+        90
+      ],
+      "schematic": [
+        279.4,
+        142.24
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "06269549-0938-5b07-9aea-31a76a0930b2"
+    },
+    "R118": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pins": {
+        "1": "ACT_LED",
+        "2": "GND"
+      },
+      "position": [
+        164,
+        141,
+        90
+      ],
+      "schematic": [
+        330.2,
+        142.24
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "3a8a0eea-fee7-5288-a91f-4c871d643ff3"
+    },
+    "R119": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pins": {
+        "1": "+3.3V",
+        "2": "LOGIC_PG"
+      },
+      "position": [
+        150,
+        135,
+        90
+      ],
+      "schematic": [
+        25.4,
+        208.28
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "d16e1983-941e-5c86-9f49-1180802db57b"
+    },
+    "R120": {
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pins": {
+        "1": "V_BA",
+        "2": "GND"
+      },
+      "position": [
+        150,
+        141,
+        0
+      ],
+      "schematic": [
+        76.2,
+        208.28
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "492bc3f4-9556-57ef-b7bc-9be205bae29d"
+    },
+    "R121": {
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pins": {
+        "1": "V_BT",
+        "2": "GND"
+      },
+      "position": [
+        150,
+        143,
+        0
+      ],
+      "schematic": [
+        127,
+        208.28
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "c274d99f-c36d-5d95-9d50-4344a233b04f"
+    },
+    "R122": {
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pins": {
+        "1": "V_PR",
+        "2": "GND"
+      },
+      "position": [
+        150,
+        145,
+        0
+      ],
+      "schematic": [
+        177.8,
+        208.28
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "b118df2c-b682-5b5a-b901-15f8cde45c89"
+    },
+    "R123": {
+      "value": "1k 1W 1%",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "pins": {
+        "1": "+12V",
+        "2": "PCI_VCC"
+      },
+      "position": [
+        124,
+        125,
+        0
+      ],
+      "schematic": [
+        279.4,
+        208.28
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "fbee7f4a-e705-5a2d-ab39-987ca9035cda"
+    },
+    "C62": {
+      "value": "100nF 16V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "pins": {
+        "1": "+3.3V",
+        "2": "GND"
+      },
+      "position": [
+        157.5,
+        140,
+        0
+      ],
+      "schematic": [
+        25.4,
+        248.92
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "c24dbfe2-bec3-5a8c-b877-eab65a3cb14f"
+    },
+    "C63": {
+      "value": "100nF 16V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "pins": {
+        "1": "+3.3V",
+        "2": "GND"
+      },
+      "position": [
+        161,
+        142,
+        0
+      ],
+      "schematic": [
+        76.2,
+        248.92
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "cf599c0d-2bb7-572b-885b-35f692630125"
+    },
+    "C64": {
+      "value": "100nF 16V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "pins": {
+        "1": "+3.3V",
+        "2": "GND"
+      },
+      "position": [
+        161,
+        134,
+        0
+      ],
+      "schematic": [
+        127,
+        248.92
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "2d4455e5-65ef-5427-aa38-31c754184e02"
+    },
+    "C65": {
+      "value": "100nF 16V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "pins": {
+        "1": "+3.3V",
+        "2": "GND"
+      },
+      "position": [
+        153,
+        132,
+        0
+      ],
+      "schematic": [
+        177.8,
+        248.92
+      ],
+      "types": {},
+      "manufacturer": "",
+      "datasheet": "",
+      "symbolUuid": "aa9184f2-b2b0-5723-b9ce-f6568f7d9d6b"
+    },
+    "D30": {
+      "value": "BZT52H-B15",
+      "footprint": "Diode_SMD:D_SOD-123F",
+      "pins": {
+        "1": "PCI_VCC",
+        "2": "GND"
+      },
+      "position": [
+        126,
+        130,
+        90
+      ],
+      "schematic": [
+        355.6,
+        208.28
+      ],
+      "types": {},
+      "manufacturer": "Nexperia",
+      "datasheet": "https://assets.nexperia.com/documents/data-sheet/BZT52H_SER.pdf",
+      "symbolUuid": "ad09bf3a-7b89-51d5-b214-7d808dc1a867"
+    }
+  },
+  "updatedValues": {
+    "D1": "SMBJ16CA",
+    "R49": "22k 1%",
+    "R51": "22k 1%",
+    "R53": "22k 1%",
+    "R65": "8.2k 1%",
+    "R68": "8.2k 1%",
+    "R71": "8.2k 1%",
+    "R74": "8.2k 1%",
+    "Q8": "DMC3071LVT-7",
+    "Q9": "DMC3071LVT-7",
+    "Q10": "DMC3071LVT-7",
+    "Q11": "DMC3071LVT-7",
+    "Q12": "DMG6601LVT-7",
+    "Q13": "DMG6601LVT-7",
+    "Q14": "DMG6601LVT-7",
+    "Q15": "DMG6601LVT-7",
+    "R64": "4.7k 1%",
+    "R67": "4.7k 1%",
+    "R70": "4.7k 1%",
+    "R73": "4.7k 1%",
+    "R50": "1.62k 1%",
+    "R52": "1.62k 1%",
+    "R54": "1.62k 1%"
+  },
+  "padChanges": [
+    {
+      "reference": "U9",
+      "pin": "5",
+      "net": "PCI_VCC"
+    },
+    {
+      "reference": "C11",
+      "pin": "2",
+      "net": "PCI_VCC"
+    },
+    {
+      "reference": "R49",
+      "pin": "1",
+      "net": "+12V"
+    },
+    {
+      "reference": "R49",
+      "pin": "2",
+      "net": "V_BA_PRE"
+    },
+    {
+      "reference": "R50",
+      "pin": "1",
+      "net": "V_BA_PRE"
+    },
+    {
+      "reference": "C47",
+      "pin": "1",
+      "net": "V_BA_PRE"
+    },
+    {
+      "reference": "D27",
+      "pin": "1",
+      "net": "V_BA_PRE"
+    },
+    {
+      "reference": "R51",
+      "pin": "2",
+      "net": "V_BT_PRE"
+    },
+    {
+      "reference": "R52",
+      "pin": "1",
+      "net": "V_BT_PRE"
+    },
+    {
+      "reference": "C48",
+      "pin": "1",
+      "net": "V_BT_PRE"
+    },
+    {
+      "reference": "D28",
+      "pin": "1",
+      "net": "V_BT_PRE"
+    },
+    {
+      "reference": "R53",
+      "pin": "2",
+      "net": "V_PR_PRE"
+    },
+    {
+      "reference": "R54",
+      "pin": "1",
+      "net": "V_PR_PRE"
+    },
+    {
+      "reference": "C49",
+      "pin": "1",
+      "net": "V_PR_PRE"
+    },
+    {
+      "reference": "D29",
+      "pin": "1",
+      "net": "V_PR_PRE"
+    }
+  ],
+  "removedTracks": [
+    {
+      "uuid": "0474a0d2-dd26-4257-b0aa-a6d52ca734ce",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "11fcd8e8-be33-48b8-b0f1-ac7c2506b2c2",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "12743494-20dd-494b-b047-1ed8e8ffc4a6",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "137ad3f5-fe8b-4de7-b272-aa0b762350b8",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "1557548c-9a5f-4208-91b5-7f98133ef34a",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "54980615-1669-4431-82f7-9ecb9cc262a4",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "59b90ad7-0977-4f52-84a0-ecceb2380fa5",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "6af2e815-7211-4809-8b81-33e476fc9b63",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "9b32d5ce-b90f-4ccf-bc74-2791f5905102",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "ad10c36f-12bc-409d-b406-69f0ac9066c2",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "b3c3ad46-20ee-48e7-8992-c4055020cfe6",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "bf0501c1-c907-42af-865f-ddc03f54cc14",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "e1bb0c1f-c116-4640-ab03-ae0d9bec0ae2",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "ee75f4d9-edf8-4b78-8fa2-b70e72b03823",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "f9d08713-eb2c-4a6a-a279-0a5f9b11b49a",
+      "net": "V_BA",
+      "locked": false
+    },
+    {
+      "uuid": "09fa8030-4f87-508a-b7ff-a6f502b02cad",
+      "net": "V_BT",
+      "locked": true
+    },
+    {
+      "uuid": "0fa7261d-bb81-4400-83e2-b5909f3f15fc",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "24e9d401-dc65-4ebe-8565-46284b7ba91e",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "368bd4f4-d732-4165-b6f5-d000881d3f7e",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "43891651-4ba6-47c3-b6d4-d363d1909082",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "945c249a-b050-40a0-ab6a-64f2aeaf2d0c",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "945ff337-b67a-443a-9c10-d4d81da41d01",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "9b4a945a-f62a-4775-8d6e-6b012098fdec",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "c03162ad-af1c-444f-bb27-cab92048193b",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "da700b36-a66c-425b-8fc8-ae149ad738d8",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "ebe8e42d-8a41-4f7b-9f4f-4efc2ffb12de",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "f3720fc7-b848-493e-9e7b-a489b134dce4",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "4b21ae8b-3709-443e-934e-57384bc8cbd9",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "6d4bd82f-97c6-4134-9861-42d08b2c27ac",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "8cf8242f-4b46-50a7-a351-4b51bd98f7f7",
+      "net": "V_BT",
+      "locked": true
+    },
+    {
+      "uuid": "af1994af-1f83-4a34-8dff-e019ff0f5478",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "3df53947-21e0-4d44-8f45-37993b02e739",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "660b46aa-0e74-4971-ab89-bd749bac688c",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "285f63de-5ebe-4598-a332-dcd97560700a",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "29001eb4-ae4a-4a35-95bf-8a3e1edd5108",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "913e7d48-6bb1-431c-8e90-23d261ec1722",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "9662e04c-6f05-4ed7-b88a-2fb177353bcd",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "b0b9617f-4027-4bff-bff2-daa56bead099",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "d8c9cdd0-43e9-4379-bb9a-72ecad4cdc20",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "e9544cd2-b889-412b-a5ee-206fab556955",
+      "net": "V_BT",
+      "locked": false
+    },
+    {
+      "uuid": "0501bb2d-e50c-44df-bb67-d96eadb5aa67",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "2a5e3246-130d-4462-ae2d-4d2b8280614a",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "3dca995c-7616-4b68-9d72-46e813b6fa1a",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "4a22868d-ffa8-475c-9bc9-4c4b1cbfc201",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "559423b2-f474-4749-b112-a839672a8795",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "5efca5e4-24b0-476d-a054-d68feae4bd38",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "6edd2c1b-4f7d-44f8-8976-b468c7427af4",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "7369fdce-48b6-43b2-91cc-9accc5e7de18",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "a2c1bf3e-6c76-4430-9526-ce3b4115aed5",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "a3d1298d-3812-40ce-9de4-78ffc906a6c4",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "b15dfa49-5dd0-44b3-937c-fb5947d15b83",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "b89b0ed6-a763-4e83-9dbd-10ec4f035ae1",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "b8c1d949-9a02-4883-8226-0a1f802265f3",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "c3205ba9-63e1-48ab-85f4-f85b793ad405",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "c506f1e3-0d11-4599-bb1d-e78fac6e4e33",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "cdc7cc2b-aa02-4478-b602-b7c4a086916b",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "e42ce9b7-4236-483b-b215-0bddd9894c06",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "e8b935ce-0e28-45d7-baba-b31dc51fd7d3",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "d2739e92-17fe-4e5a-94f2-50752a63ad9d",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "fb4b5436-0e5c-46ac-8750-f56b3caa8025",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "11a72a34-975a-41c1-8b8a-d8807089d28c",
+      "net": "V_PR",
+      "locked": false
+    },
+    {
+      "uuid": "bc12b6c6-6823-4f53-a88c-eb345d042f5f",
+      "net": "V_PR",
+      "locked": false
+    }
+  ],
+  "originalCapacitorVoltageRatings": {
+    "C6": "25V",
+    "C10": "25V",
+    "C24": "25V",
+    "C5": "100V",
+    "C7": "25V",
+    "C8": "25V",
+    "C9": "25V",
+    "C4": "50V",
+    "C21": "100V",
+    "C56": "10V",
+    "C13": "50V",
+    "C16": "50V",
+    "C35": "10V",
+    "C26": "10V",
+    "C27": "10V",
+    "C17": "100V",
+    "C18": "25V",
+    "C1": "50V",
+    "C15": "50V",
+    "C14": "50V",
+    "C19": "25V",
+    "C20": "50V",
+    "C22": "25V",
+    "C23": "25V"
+  },
+  "rootUuid": "b35850f9-3522-5e00-90df-092fcfbfe6bd",
+  "safetySheetUuid": "395d158b-6871-5c52-858c-0e836c236f32",
+  "removedSupplyBranchIds": [
+    "0b444175-e675-468c-91ec-b4d5e210f2f5",
+    "10cec695-bbfa-4974-b5da-a7d60d9ca124",
+    "2352aa0e-7ee1-497b-9a11-bf5103725cf1",
+    "2bf621f2-682b-4ac9-a720-42f6809d6966",
+    "305858b2-cf89-400b-958c-3e7d96c5ec94",
+    "453979fa-7516-4842-9410-ad0e54551876",
+    "74117d98-783a-4d45-8455-848ffac9b24d",
+    "77b6ca39-ae65-4776-9d63-187412fd2f03",
+    "8ca16d9b-3138-43c8-9cda-550abdec7b1d",
+    "94c99082-bcf7-4e23-8eb8-393e7d932c86",
+    "96d27932-176c-4b5f-8cc6-fcd1092c859f",
+    "98e4dd49-d735-44e4-94bd-288808bc04d8",
+    "a23a8118-e502-4d6b-8448-4ec2729be158",
+    "b5701d16-8373-4839-9418-f3d4914b7fe7",
+    "c5cf788e-813a-430a-8800-9eddb12360d5",
+    "f1ac5acb-77c1-44d8-92af-52d898102281",
+    "f5571307-79d8-4743-93d4-89493606e456"
+  ],
+  "actualNewPlacements": {
+    "U21": [
+      138.5,
+      103.75
+    ],
+    "U22": [
+      161.0,
+      111.0
+    ],
+    "U23": [
+      152.75,
+      105.0
+    ],
+    "U24": [
+      153.25,
+      133.25
+    ],
+    "R123": [
+      126.0,
+      125.75
+    ],
+    "D30": [
+      126.0,
+      130.25
+    ],
+    "C62": [
+      133.0,
+      101.5
+    ],
+    "C63": [
+      159.8625,
+      108.0
+    ],
+    "C64": [
+      151.6125,
+      102.25
+    ],
+    "C65": [
+      151.3375,
+      130.75
+    ],
+    "R115": [
+      164.25,
+      114.0
+    ],
+    "R116": [
+      158.0,
+      113.5
+    ],
+    "R117": [
+      156.0,
+      113.25
+    ],
+    "R118": [
+      164.75,
+      109.75
+    ],
+    "R119": [
+      149.25,
+      134.75
+    ],
+    "R120": [
+      150.0,
+      141.0
+    ],
+    "R121": [
+      150.0,
+      143.0
+    ],
+    "R122": [
+      149.25,
+      144.75
+    ]
+  },
+  "intentionalRatingUpgrades": {
+    "C14": {
+      "original": "35V",
+      "required": "50V"
+    },
+    "C15": {
+      "original": "35V",
+      "required": "50V"
+    }
+  },
+  "heartbeatArchitecture": {
+    "signal": "ACT_LED",
+    "mcuPhysicalPad": "20",
+    "gpio": "GPIO13",
+    "role": "Dedicated software health heartbeat, also the existing LED health indicator",
+    "softwarePeriodMs": 10,
+    "autonomousPwmDmaForbidden": true,
+    "legacyFirmwareMayRetriggerTimer": true,
+    "compatibleFirmwareRequiredBeforeOperation": true,
+    "GPIO2PhysicalPad22": "Original no-connect restored; no bootstrap change"
+  },
+  "placementMetadataNote": "parts.position records the initial build seed; actualNewPlacements records the final new-part positions."
+}

@@ -1,5 +1,5 @@
 {
-  "baselineCommit": "5c540f3f",
+  "baselineCommit": "e8bad617",
   "status": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
   "parts": {
     "C25": {
@@ -108,7 +108,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -130,7 +130,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -141,7 +141,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -152,7 +152,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -163,7 +163,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "13kΩ",
+      "displayValue": "13k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -174,7 +174,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "120Ω",
+      "displayValue": "120\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -185,7 +185,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "13kΩ",
+      "displayValue": "13k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -196,7 +196,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10Ω",
+      "displayValue": "10\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -207,7 +207,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10Ω",
+      "displayValue": "10\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -218,7 +218,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -229,7 +229,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -240,7 +240,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -251,7 +251,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -259,7 +259,7 @@
       "manufacturer": "Vishay",
       "mpn": "CRCW0603330RFKEA",
       "source": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
-      "displayValue": "330Ω",
+      "displayValue": "330\u03a9",
       "tolerance": "1%",
       "power": "0.1W",
       "review": "Bounds ideal5.5V gate-charge step to16.84mA at-1%; robustness improvement, not a claim that original100ohm fails.",
@@ -271,7 +271,7 @@
       "manufacturer": "Vishay",
       "mpn": "CRCW0603330RFKEA",
       "source": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
-      "displayValue": "330Ω",
+      "displayValue": "330\u03a9",
       "tolerance": "1%",
       "power": "0.1W",
       "review": "Bounds ideal5.5V gate-charge step to16.84mA at-1%; robustness improvement, not a claim that original100ohm fails.",
@@ -286,7 +286,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "360Ω",
+      "displayValue": "360\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -297,7 +297,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "360Ω",
+      "displayValue": "360\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -308,7 +308,7 @@
       "voltage": "10V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -319,7 +319,7 @@
       "voltage": "10V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -330,7 +330,7 @@
       "voltage": "10V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -341,7 +341,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -352,7 +352,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -363,7 +363,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -374,7 +374,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -385,7 +385,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -396,7 +396,7 @@
       "voltage": "16V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "1μF",
+      "displayValue": "1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -407,7 +407,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -418,7 +418,7 @@
       "tolerance": "jumper",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0Ω",
+      "displayValue": "0\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -447,7 +447,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -458,7 +458,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -469,7 +469,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -480,7 +480,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -491,7 +491,7 @@
       "voltage": "10V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -511,7 +511,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "499Ω",
+      "displayValue": "499\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -522,7 +522,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "22kΩ",
+      "displayValue": "22k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -533,7 +533,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "47kΩ",
+      "displayValue": "47k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -544,7 +544,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -555,7 +555,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "5.1kΩ",
+      "displayValue": "5.1k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -566,7 +566,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "5.1kΩ",
+      "displayValue": "5.1k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -597,7 +597,7 @@
       "height": "11.5mm",
       "leadPitch": "3.5mm",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "100μF",
+      "displayValue": "100\u03bcF",
       "footprint": "footprints:CP_Radial_D8.0mm_P3.50mm",
       "assembly": "PLACE"
     },
@@ -617,7 +617,7 @@
       "voltage": "100V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -639,7 +639,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "2kΩ",
+      "displayValue": "2k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -650,7 +650,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -661,7 +661,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -672,7 +672,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -683,7 +683,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -694,7 +694,7 @@
       "tolerance": "1%",
       "power": "0.25W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "360Ω",
+      "displayValue": "360\u03a9",
       "footprint": "footprints:R_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -705,7 +705,7 @@
       "tolerance": "1%",
       "power": "0.25W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "1kΩ",
+      "displayValue": "1k\u03a9",
       "footprint": "footprints:R_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -716,7 +716,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -727,7 +727,7 @@
       "voltage": "10V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -738,7 +738,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -749,7 +749,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -760,7 +760,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -771,7 +771,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -956,7 +956,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -967,7 +967,7 @@
       "voltage": "100V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -978,7 +978,7 @@
       "voltage": "25V",
       "tolerance": "20%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "22μF",
+      "displayValue": "22\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -989,7 +989,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1000,7 +1000,7 @@
       "voltage": "25V",
       "tolerance": "20%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "22μF",
+      "displayValue": "22\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1011,7 +1011,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1022,7 +1022,7 @@
       "voltage": "25V",
       "tolerance": "20%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "22μF",
+      "displayValue": "22\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1033,8 +1033,8 @@
       "height": "4.35mm max",
       "current": "1.75Arms;2.13A at30%inductance drop",
       "review": "Actual rectangular feet fully covered by retained original lands; maximum body7.6x7.6mm. Existing qualified-current/fault measurements remain required.",
-      "displayValue": "22µH",
-      "footprint": "footprints:L_Eaton_DR74_220_R",
+      "displayValue": "22\u00b5H",
+      "footprint": "footprints:L_Eaton_DR74_Recommended",
       "assembly": "PLACE",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION"
     },
@@ -1045,7 +1045,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "100kΩ",
+      "displayValue": "100k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1057,7 +1057,7 @@
       "temperatureCoefficient": "25ppm/K",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "68kΩ",
+      "displayValue": "68k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1069,7 +1069,7 @@
       "temperatureCoefficient": "25ppm/K",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1080,7 +1080,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1091,7 +1091,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1102,7 +1102,7 @@
       "tolerance": "1%",
       "power": "0.25W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1113,7 +1113,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1124,7 +1124,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1135,7 +1135,7 @@
       "tolerance": "1%",
       "power": "0.25W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1146,7 +1146,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1157,7 +1157,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1168,7 +1168,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1179,7 +1179,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1256,7 +1256,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "470Ω",
+      "displayValue": "470\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1267,7 +1267,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1278,7 +1278,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "300Ω",
+      "displayValue": "300\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1289,7 +1289,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1300,7 +1300,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "1kΩ",
+      "displayValue": "1k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1311,7 +1311,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1322,7 +1322,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "470Ω",
+      "displayValue": "470\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1333,7 +1333,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1344,7 +1344,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1358,7 +1358,7 @@
       "review": "TDK recommended land gap2.2mm, pads1.2x2.5mm; maximum body3.6x2.8x2.8. Reference bias curve about8uF at nominal20.61V, not a guaranteed bias minimum; actual regulator stability/ripple is a bench gate.",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
       "height": "2.8mm max",
-      "displayValue": "22μF",
+      "displayValue": "22\u03bcF",
       "assembly": "PLACE"
     },
     "C15": {
@@ -1368,7 +1368,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1379,7 +1379,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1390,8 +1390,8 @@
       "height": "4.35mm max",
       "current": "1.75Arms;2.13A at30%inductance drop",
       "review": "Actual rectangular feet fully covered by retained original lands; maximum body7.6x7.6mm. Existing qualified-current/fault measurements remain required.",
-      "displayValue": "22µH",
-      "footprint": "footprints:L_Eaton_DR74_220_R",
+      "displayValue": "22\u00b5H",
+      "footprint": "footprints:L_Eaton_DR74_Recommended",
       "assembly": "PLACE",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION"
     },
@@ -1414,7 +1414,7 @@
       "temperatureCoefficient": "25ppm/K",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "110kΩ",
+      "displayValue": "110k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1426,7 +1426,7 @@
       "temperatureCoefficient": "25ppm/K",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "6.8kΩ",
+      "displayValue": "6.8k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1437,7 +1437,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1448,7 +1448,7 @@
       "tolerance": "1%",
       "power": "0.25W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1459,7 +1459,7 @@
       "tolerance": "1%",
       "power": "0.25W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1470,7 +1470,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1481,7 +1481,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1492,7 +1492,7 @@
       "tolerance": "1%",
       "power": "0.25W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1503,7 +1503,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1514,7 +1514,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1525,7 +1525,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1536,7 +1536,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1547,7 +1547,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1558,7 +1558,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1591,7 +1591,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1602,7 +1602,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1613,7 +1613,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1646,7 +1646,7 @@
       "voltage": "100V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1657,7 +1657,7 @@
       "voltage": "25V",
       "tolerance": "20%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "22μF",
+      "displayValue": "22\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1668,7 +1668,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1679,8 +1679,8 @@
       "height": "4.35mm max",
       "current": "1.75Arms;2.13A at30%inductance drop",
       "review": "Actual rectangular feet fully covered by retained original lands; maximum body7.6x7.6mm. Existing qualified-current/fault measurements remain required.",
-      "displayValue": "22µH",
-      "footprint": "footprints:L_Eaton_DR74_220_R",
+      "displayValue": "22\u00b5H",
+      "footprint": "footprints:L_Eaton_DR74_Recommended",
       "assembly": "PLACE",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION"
     },
@@ -1702,7 +1702,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "100kΩ",
+      "displayValue": "100k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1714,7 +1714,7 @@
       "temperatureCoefficient": "25ppm/K",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "158kΩ",
+      "displayValue": "158k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1726,7 +1726,7 @@
       "temperatureCoefficient": "25ppm/K",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1737,7 +1737,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1748,7 +1748,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "1kΩ",
+      "displayValue": "1k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1759,7 +1759,7 @@
       "tolerance": "1%",
       "power": "0.25W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1770,7 +1770,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1781,7 +1781,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "1kΩ",
+      "displayValue": "1k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1792,7 +1792,7 @@
       "tolerance": "1%",
       "power": "0.25W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1803,7 +1803,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1814,7 +1814,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1825,7 +1825,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1836,7 +1836,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1869,7 +1869,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1880,7 +1880,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "4.7kΩ",
+      "displayValue": "4.7k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1891,7 +1891,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -1924,7 +1924,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1935,7 +1935,7 @@
       "voltage": "100V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "0.1μF",
+      "displayValue": "0.1\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1946,7 +1946,7 @@
       "voltage": "25V",
       "tolerance": "20%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "22μF",
+      "displayValue": "22\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1957,7 +1957,7 @@
       "voltage": "50V",
       "tolerance": "10%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10μF",
+      "displayValue": "10\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1968,7 +1968,7 @@
       "voltage": "25V",
       "tolerance": "20%",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "22μF",
+      "displayValue": "22\u03bcF",
       "footprint": "footprints:C_1206_3216Metric",
       "assembly": "PLACE"
     },
@@ -1979,8 +1979,8 @@
       "height": "4.35mm max",
       "current": "1.75Arms;2.13A at30%inductance drop",
       "review": "Actual rectangular feet fully covered by retained original lands; maximum body7.6x7.6mm. Existing qualified-current/fault measurements remain required.",
-      "displayValue": "22µH",
-      "footprint": "footprints:L_Eaton_DR74_220_R",
+      "displayValue": "22\u00b5H",
+      "footprint": "footprints:L_Eaton_DR74_Recommended",
       "assembly": "PLACE",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION"
     },
@@ -1991,7 +1991,7 @@
       "tolerance": "1%",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "100kΩ",
+      "displayValue": "100k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -2003,7 +2003,7 @@
       "temperatureCoefficient": "25ppm/K",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "100kΩ",
+      "displayValue": "100k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -2015,7 +2015,7 @@
       "temperatureCoefficient": "25ppm/K",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -2027,7 +2027,7 @@
       "temperatureCoefficient": "25ppm/K",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "82.5kΩ",
+      "displayValue": "82.5k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -2039,7 +2039,7 @@
       "temperatureCoefficient": "25ppm/K",
       "power": "0.1W",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "10kΩ",
+      "displayValue": "10k\u03a9",
       "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     },
@@ -3033,37 +3033,37 @@
     },
     "Q8": {
       "manufacturer": "Diodes Incorporated",
-      "mpn": "DMC3071LVT-7",
-      "source": "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf",
+      "mpn": "DMG6601LVT-7",
+      "source": "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "DMC3071LVT-7",
+      "displayValue": "DMG6601LVT-7",
       "footprint": "footprints:SOT-23-6",
       "assembly": "PLACE"
     },
     "Q9": {
       "manufacturer": "Diodes Incorporated",
-      "mpn": "DMC3071LVT-7",
-      "source": "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf",
+      "mpn": "DMG6601LVT-7",
+      "source": "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "DMC3071LVT-7",
+      "displayValue": "DMG6601LVT-7",
       "footprint": "footprints:SOT-23-6",
       "assembly": "PLACE"
     },
     "Q10": {
       "manufacturer": "Diodes Incorporated",
-      "mpn": "DMC3071LVT-7",
-      "source": "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf",
+      "mpn": "DMG6601LVT-7",
+      "source": "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "DMC3071LVT-7",
+      "displayValue": "DMG6601LVT-7",
       "footprint": "footprints:SOT-23-6",
       "assembly": "PLACE"
     },
     "Q11": {
       "manufacturer": "Diodes Incorporated",
-      "mpn": "DMC3071LVT-7",
-      "source": "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf",
+      "mpn": "DMG6601LVT-7",
+      "source": "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf",
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
-      "displayValue": "DMC3071LVT-7",
+      "displayValue": "DMG6601LVT-7",
       "footprint": "footprints:SOT-23-6",
       "assembly": "PLACE"
     },
@@ -3394,6 +3394,50 @@
       "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
       "displayValue": "DSK34",
       "footprint": "footprints:D_SOD-123",
+      "assembly": "PLACE"
+    },
+    "R124": {
+      "manufacturer": "Vishay",
+      "mpn": "CRCW06038K20FKEA",
+      "source": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "tolerance": "1%",
+      "power": "0.1W",
+      "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
+      "displayValue": "8.2k 1%",
+      "footprint": "footprints:R_0603_1608Metric",
+      "assembly": "PLACE"
+    },
+    "R125": {
+      "manufacturer": "Vishay",
+      "mpn": "CRCW06038K20FKEA",
+      "source": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "tolerance": "1%",
+      "power": "0.1W",
+      "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
+      "displayValue": "8.2k 1%",
+      "footprint": "footprints:R_0603_1608Metric",
+      "assembly": "PLACE"
+    },
+    "R126": {
+      "manufacturer": "Vishay",
+      "mpn": "CRCW06038K20FKEA",
+      "source": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "tolerance": "1%",
+      "power": "0.1W",
+      "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
+      "displayValue": "8.2k 1%",
+      "footprint": "footprints:R_0603_1608Metric",
+      "assembly": "PLACE"
+    },
+    "R127": {
+      "manufacturer": "Vishay",
+      "mpn": "CRCW06038K20FKEA",
+      "source": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "tolerance": "1%",
+      "power": "0.1W",
+      "selectionStatus": "REVIEWED_BOUNDED_PROTOTYPE_SELECTION",
+      "displayValue": "8.2k 1%",
+      "footprint": "footprints:R_0603_1608Metric",
       "assembly": "PLACE"
     }
   },
@@ -3729,5 +3773,6 @@
     "U8",
     "U9"
   ],
-  "reviewEvidence": "rev-c-procurement-independent-review.json"
+  "reviewEvidence": "rev-c-refinement-independent-review.json",
+  "refinementNote": "Q8-Q11 use DMG6601LVT-7; four 8.2k series resistors R124-R127 added; four Eaton recommended land patterns. 325 PLACE, two DNP, six PCB features."
 }

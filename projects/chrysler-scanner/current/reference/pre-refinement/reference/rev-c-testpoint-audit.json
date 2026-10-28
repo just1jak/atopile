@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "pcbSha256": "6875b7628b2ace4bbad731ba96508a1c3dd032dab3aefff2669a66251b7410a1",
+  "baselinePcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
+  "checks": {
+    "all277PreviousPartsAndFourHolesExactExceptTwoDeclaredCcdValues": true,
+    "exact52AdditionalFootprints": true,
+    "everyPreviousCopperObjectRetainedExactly": true,
+    "exact19TracksAnd3ViasAdded": true,
+    "noRfOrUsbTestBranches": true,
+    "all3NewViasFilledCapped": true,
+    "exactPointPositionsNetsAndStyles": true,
+    "only22ExistingViaProcessingUpgrades": true,
+    "exactNineZoneDefinitions": true
+  },
+  "hookLoops": 48,
+  "bareSpiPads": 4,
+  "addedTracks": 19,
+  "addedFilledCappedVias": 3,
+  "originalCopperRemovals": 0,
+  "planSha256": "05c3880f299f439f8e773cccb1c1cfe6db9bf3c29d8160cd6d36419ddaa613f5",
+  "copperContractSha256": "d5a71569a4fe24dc82291152b71206450167e068d413b1a6f539bc33c3b2a836"
+}

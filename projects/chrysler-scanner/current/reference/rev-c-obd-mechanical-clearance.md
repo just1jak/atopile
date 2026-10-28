@@ -1,23 +1,7 @@
-# OBD connector and M3 screw clearance — 2026-10-22
+# OBD connector and M3 screw clearance - 2026-10-28
 
-Selected hardware: **M3 socket head, no washer**. Checked a conservative cylindrical head envelope **5.5 mm diameter × 3 mm high**, seated directly on the PCB top. Confirm the actual screw does not exceed that envelope.
+H1 is now (105.00048,104.0) mm, moved 0.9996 mm toward the top edge. H2/H3/H4, J1, all 16 connector tail holes and the board outline are unchanged. The selected hardware remains M3 socket head, no washer, bounded by a 5.5 mm diameter x 3 mm high cylinder seated on top of the PCB.
 
-| Check | Result |
-|---|---|
-| ATTEND 226A-1202 housing vs PCB with its 16 drilled holes | No solid intersection; all 16 solder tails enter their correct holes |
-| Housing overhang past left PCB edge | 18.8 mm, intentional connector mating overhang |
-| Nearest connector pad copper to board edge | 0.325 mm; native 0.30 mm rule passes |
-| H1 centered screw-head to connector | 0.7504 mm |
-| H1 screw shifted 0.5 mm toward connector | 0.2504 mm, no intersection |
-| H2 centered screw-head to connector | 4.3225 mm |
-| H3 / H4 centered screw-head to connector | More than 97 mm |
+FreeCAD 1.0 manufacturer-STEP distance checks give H1 connector clearance **1.75 mm centered / at least 1.25 mm after any nominal 0.5 mm radial screw float**. This improves the previous 0.2504 mm worst-float result by about 1 mm. There is no nominal head/housing intersection. The centered head-to-board-edge margin is 1.25 mm, or at least 0.75 mm after float; the 4 mm hole leaves a 2 mm fixed edge web. The other holes have larger connector clearances.
 
-All four mounting holes are 4 mm diameter. A nominal 3 mm screw can move 0.5 mm radially. By the distance bound, any such translation leaves at least 0.2504 mm at H1; the worst-direction translated solid was also checked directly. The washer-free head fits nominal CAD. **This is not a full tolerance qualification:** 0.25 mm is the remaining budget before connector/PCB/hole/fastener tolerances. Verify the actual screw and sample assembly before production assembly. If their combined adverse tolerance exceeds that budget, locate the screw positively or revise the mechanical clearance before ordering production quantities.
-
-Do not substitute a washer or above-board standoff based on this result: a 7 mm tall envelope has only 0.0004 mm nominal H1 clearance, and an 8 mm above-board envelope intersects the housing. Enclosure fit and support for connector insertion loads remain separate mechanical checks. PCB placements, holes, copper and outline are unchanged.
-
-Geometry: bundled manufacturer STEP, FreeCAD 1.0 solid distances/booleans, native KiCad coordinates. [Manufacturer drawing](https://www.attend.com.tw/data/download/file/226A-1202.pdf). Exact PCB/model hashes and raw measurements are in rev-c-obd-mechanical-clearance.json. Older zero-intersection checks alone did not establish an adequate clearance margin.
-
-C61 top-side revision: exact layout delta preserves J1, mounting holes and outline. OBD/screw measurements remain applicable to PCB `a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5`; C61 is outside the connector housing envelope.
-
-Testpoint revision preserves original J1/hole geometry; new sites exclude mounting hardware and connector-tail envelopes. Measurements remain applicable to current PCB `68d206c7f3794b39c32291e626993844f60c12ea20ad78d16e5127c4ccebafd9`.
+Exact CAD/model evidence is in `rev-c-refinement-mechanical.json`. The original nominal housing/tail alignment check remains applicable because J1/outline/tail drills are unchanged. Actual screw, molding, drilling and board-edge tolerances, insertion loads, tool/enclosure fit and sample assembly remain to be qualified. Any pre-existing enclosure mounting pattern must be updated for H1. No washer or above-board standoff is included in this acceptance.

@@ -1,0 +1,197 @@
+{
+  "applied": true,
+  "before_sha256": "19a79898a741de0d39de0849bcd958cbd2fc3eb943d100a71b50c39aa4d712f7",
+  "after_sha256": "2f01d7290eee711325113864a7f6f4107bf60727fdfbbc7b5e1b94bdaba9818a",
+  "board_rules_and_severities_unchanged": true,
+  "settings": {
+    "classes": [
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.15,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.15,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.15,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "RF",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.15,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.22,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.22,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      }
+    ],
+    "meta": {
+      "version": 5
+    },
+    "net_colors": {},
+    "netclass_assignments": {},
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "N_C17_1"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VPP"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "N_C17_2"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "N_C3_1"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "N_R14_1"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "N_C21_2"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VBB"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "N_R11_1"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+12V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+7.5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "N_R2_1"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "N_R8_1"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "N_D7_2"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "N_C21_1"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "N_C5_2"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "SD_3V3"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "LNA_IN"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "N_R23_1"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "D+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "D-"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "D-P"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "D+P"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "J1962-16"
+      }
+    ]
+  }
+}

@@ -1,14 +1,14 @@
 {
   "revision": "C",
   "cad_validation": "PASS",
-  "pcbSha256": "83ac625f2283aa789455802fa4367dbc786c7a2f0ae6c87ffc91c8959a40ac15",
+  "pcbSha256": "800c05930a0ca24fe280d5f3aace70974889129942a1b5602ce2eabfea026301",
   "prototype_only": true,
   "automotive_qualified": false,
   "firmware_integration_complete": false,
   "assembly_bom_complete": true,
   "unselected_exact_parts": [],
-  "purchasable_assembly_parts": 321,
-  "unique_purchasing_lines": 97,
+  "purchasable_assembly_parts": 325,
+  "unique_purchasing_lines": 96,
   "dnp_references": [
     "R23",
     "R24"

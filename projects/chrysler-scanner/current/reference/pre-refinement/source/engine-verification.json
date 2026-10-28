@@ -1,0 +1,90 @@
+{
+  "engine": "freerouting",
+  "version": "1.9.0",
+  "java": "/opt/homebrew/opt/openjdk@17/bin/java",
+  "java_version_verified": "17.0.19",
+  "jar": "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/router-tools/freerouting-1.9.0.jar",
+  "jar_bytes": 5044336,
+  "jar_sha256": "9084a4888937a7f31f857ecc12aa7a37407f51160e4d2892dff9c9bb47ae3102",
+  "download_url": "https://github.com/freerouting/freerouting/releases/download/v1.9.0/freerouting-1.9.0.jar",
+  "license": "GPL-3.0",
+  "help_smoke_exit": 0,
+  "help_with_network_denied_exit": 0,
+  "macos_display_required": true,
+  "requires_escalated_for_appkit": true,
+  "native_api": {
+    "version": "KiCad10.0.7",
+    "export": "pcbnew.ExportSpecctraDSN(board, output_dsn_path)",
+    "import": "pcbnew.ImportSpecctraSES(board, input_ses_path)",
+    "save": "pcbnew.SaveBoard(new_output_path, board)"
+  },
+  "limitations": [
+    "Routing completion not proven by help smoke test; native KiCad DRC/connectivity must be checked after import.",
+    "1.9.0 requires desktop AWT even with CLI arguments; do not set java.awt.headless=true.",
+    "-da disables analytics, but this version always checks GitHub for updates. Use offline.sb with sandbox-exec to deny all network.",
+    "Native DSN has four physical copper layers but two are type power, so only outer layers auto-route by default.",
+    "Existing antenna rule area forbids vias but not tracks; add track keepout before routing to protect antenna.",
+    "Native DSN smd_smd clearance37.5um is weaker than150um board clearance; normalize before routing.",
+    "No automatic differential-pair or RF impedance validation is established; lock reviewed critical routes before autorouting."
+  ],
+  "primary_sources": [
+    "https://github.com/freerouting/freerouting/tree/v1.9.0",
+    "https://github.com/freerouting/freerouting/blob/v1.9.0/README.md",
+    "https://github.com/freerouting/freerouting/blob/v1.9.0/src/main/java/app/freerouting/designforms/specctra/NetClass.java",
+    "https://github.com/freerouting/freerouting/blob/v1.9.0/src/main/java/app/freerouting/interactive/AutorouteSettings.java",
+    "https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html#importing_specctra_session_files"
+  ],
+  "actual_native_dsn_import": {
+    "result": "OK",
+    "file": "../format-audit.dsn",
+    "components": 263,
+    "nets": 194,
+    "connected_nets": 154,
+    "explicit_nc_singletons": 40,
+    "pins": 805,
+    "layers": 4,
+    "airwires": 601,
+    "existing_traces": 0,
+    "existing_vias": 0
+  },
+  "network_deny_probe": {
+    "loopback_connect_errno": 1,
+    "message": "Operation not permitted"
+  },
+  "configuration_smoke": {
+    "host_tests_passed": 10,
+    "engine_parse_passed": true,
+    "default_width_um": 200,
+    "rail_width_um": 500,
+    "usb_width_um": 250,
+    "all_clearance_classes_at_least_um": 150,
+    "usb_front_active": true,
+    "usb_back_active": false,
+    "power_layers_active": false,
+    "minimum_pin_neckdown_um_on_audit_dsn": 249.8
+  },
+  "routing_command_template": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/router-tools/offline.sb",
+    "/opt/homebrew/opt/openjdk@17/bin/java",
+    "-Xmx2048m",
+    "-Djava.io.tmpdir=/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/router-tools/runtime",
+    "-jar",
+    "/Users/justinkobely/Documents/Codex/2026-10-13/a/work/chrysler-routed-sd/router-tools/freerouting-1.9.0.jar",
+    "-da",
+    "-dl",
+    "-de",
+    "INPUT.dsn",
+    "-do",
+    "OUTPUT.ses",
+    "-dct",
+    "0",
+    "-mp",
+    "100",
+    "-mt",
+    "4"
+  ],
+  "session_sanitizer": "specctra_tools.py sanitize-ses INPUT.ses SANITIZED.ses",
+  "session_import_safety": "Sanitize SES placement scope; load SAME native PCB with locked critical copper; assert exact footprint/pad geometry after import and before SaveBoard. Native import deletes unlocked old tracks, retains locked old tracks, and otherwise can apply SES placements."
+}

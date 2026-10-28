@@ -3682,7 +3682,12 @@
 			)
 			(embedded_fonts no)
 		)
-	)
+	(symbol "ChryslerScanner:R127" (pin_names (offset 0) (hide yes)) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (at 0 3 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "8.2k 1%" (at 0 -3 0) (effects (font (size 1.27 1.27))))
+      (symbol "R127_0_1" (rectangle (start -2.54 -1.016) (end 2.54 1.016) (stroke (width 0.254) (type default)) (fill (type none))))
+      (symbol "R127_1_1" (pin passive line (at -3.81 0 0) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 3.81 0 180) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
 	(text "SCI TX14 VBB / VPP drivers"
 		(exclude_from_sim no)
 		(at 16 18 0)
@@ -3782,16 +3787,7 @@
 		)
 		(uuid "18a0bc3d-79ce-516f-9f08-02535ce552fa")
 	)
-	(wire
-		(pts
-			(xy 53.34 73.66) (xy 68.58 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2261e455-7e2d-506c-a30c-5ccbc3aa6d51")
-	)
+	
 	(wire
 		(pts
 			(xy 127 104.14) (xy 127 109.22)
@@ -3982,17 +3978,8 @@
 		)
 		(uuid "e72cf767-dda4-5ee9-bebe-31b095612d75")
 	)
-	(wire
-		(pts
-			(xy 53.34 68.58) (xy 53.34 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea1a887b-3824-522d-b4a7-0ef2e146bb4b")
-	)
-	(global_label "N_R62_2"
+	
+	(global_label "N_R127_1"
 		(shape input)
 		(at 53.34 78.74 0)
 		(effects
@@ -4294,7 +4281,7 @@
 				)
 			)
 		)
-		(property "Value" "DMC3071LVT-7"
+		(property "Value" "DMG6601LVT-7"
 			(at 91.2306 74.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4315,7 +4302,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf"
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf"
 			(at 79.502 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -4375,8 +4362,8 @@
 		)
 
 (property "Manufacturer" "Diodes Incorporated" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-(property "MPN" "DMC3071LVT-7" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-(property "Procurement Source" "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DMG6601LVT-7" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
 (property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
 )
 	(symbol
@@ -4750,7 +4737,7 @@
 				)
 			)
 		)
-		(property "Value" "DMC3071LVT-7"
+		(property "Value" "DMG6601LVT-7"
 			(at 63.2906 89.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4771,7 +4758,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf"
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf"
 			(at 51.562 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4831,8 +4818,8 @@
 		)
 
 (property "Manufacturer" "Diodes Incorporated" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-(property "MPN" "DMC3071LVT-7" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-(property "Procurement Source" "https://www.diodes.com/datasheet/download/DMC3071LVT.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "DMG6601LVT-7" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
 (property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
 )
 	(symbol
@@ -5571,4 +5558,25 @@
 			)
 		)
 	)
-)
+(symbol (lib_id "ChryslerScanner:R127") (at 60.96 73.66 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "09ea39c5-5e40-53fc-8ff2-60e70e423bf6")(property "Reference" "R127" (at 60.96 70.6 0) (effects (font (size 1 1))))(property "Value" "8.2k 1%" (at 60.96 76.7 0) (effects (font (size 1 1))))(property "Footprint" "footprints:R_0603_1608Metric" (at 60.96 73.66 0) (effects (font (size 1 1))(hide yes)))(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 60.96 73.66 0) (effects (font (size 1 1))(hide yes)))(property "Manufacturer" "Vishay" (at 60.96 73.66 0) (effects (font (size 1 1))(hide yes)))(property "MPN" "CRCW06038K20FKEA" (at 60.96 73.66 0) (effects (font (size 1 1))(hide yes)))(property "Procurement Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf" (at 60.96 73.66 0) (effects (font (size 1 1))(hide yes)))(property "Assembly" "PLACE" (at 60.96 73.66 0) (effects (font (size 1 1))(hide yes)))(property "Tolerance" "1%" (at 60.96 73.66 0) (effects (font (size 1 1))(hide yes)))(property "Selected Power Rating" "0.1W" (at 60.96 73.66 0) (effects (font (size 1 1))(hide yes)))(pin "1" (uuid "01822767-6395-54a6-98f5-a0884f33b4dc")) (pin "2" (uuid "500fc7cb-272a-5498-ae3c-87f3080768b4")) (instances (project "ChryslerScanner_V240_SD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/60c5bdd2-75d0-5b7e-aaeb-53c59cf219af" (reference "R127") (unit 1)))))(wire (pts (xy 53.34 73.66) (xy 57.15 73.66)) (stroke (width 0) (type default)) (uuid "7053dd57-8d42-57a2-a78e-be96bbea56d2"))(wire (pts (xy 64.77 73.66) (xy 68.58 73.66)) (stroke (width 0) (type default)) (uuid "c229e7f4-c14a-5ca8-abd6-6191f94dc6f8"))(wire (pts (xy 53.34 68.58) (xy 68.58 68.58)) (stroke (width 0) (type default)) (uuid "ee6f0075-4aec-5237-bd49-1c8fe1e4e543"))(wire (pts (xy 68.58 68.58) (xy 68.58 73.66)) (stroke (width 0) (type default)) (uuid "cffc2f4b-afaf-5f12-8832-52d8d0263a12"))(global_label "N_R62_2"
+		(shape input)
+		(at 53.34 68.58 0)
+		(effects
+			(font
+				(size 0.95 0.95)
+			)
+			(justify left)
+		)
+		(uuid "f9ace874-2689-42bf-9a12-82c3a1dc80f2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.34 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+	)(text "VBB gate divider: 4.7k / 8.2k limits |Vgs| to 10.34V at the bounded 28V peak.\nAW9523 P0 must be configured push-pull; startup/default controls stay low." (at 25.4 153 0) (effects (font (size 1 1)) (justify left)) (uuid "140a22e2-ec17-4d57-bdce-2934488d4e23")))

@@ -122,7 +122,7 @@ for i,(pin,file) in enumerate([(6,'12_program-6'),(9,'13_program-9'),(12,'14_pro
     x0=.026+i*.0715;x1=x0+.073
     cards=[dict(source='original',page=1,box=[x0*OW,.624*OH,x1*OW,.750*OH],label=f'Original VBB driver for vehicle pin {pin}'),dict(source='original',page=1,box=[x0*OW,.748*OH,x1*OW,.884*OH],label=f'Original VPP driver for vehicle pin {pin}')]
     section(f'SCI pin {pin}: VBB / VPP programming switches','MODIFIED','F1-G5',cards,[now(file)],
-     ['The two rail-switching branches are paired by vehicle pin on a dedicated page.', 'Q8-Q11 and Q12-Q15 use revised FET families. The VPP gate-divider values are intentionally revised to 4.7k / 8.2k; compare current labels rather than assuming identical parts.'])
+     ['The two rail-switching branches are paired by vehicle pin on a dedicated page.', 'Q8-Q15 now use DMG6601LVT-7, with 2.5 V drive specifications. New R124-R127 give the VBB branches the same 4.7k / 8.2k gate-divider arrangement as VPP; the original direct gate/drain links are intentionally split.'])
 section('I2C expander and internal connector','MODIFIED','F5-G7',[old('expander','Original U19 AW9523B and pull-ups'),old('connector','Original internal I2C connector J3')],[now('18_control')],
  ['U19 AW9523B, its 16 output functions, grounded address straps, I2C pull-ups and J3 are retained.', 'The reset/permit net N_R88_2 is now driven by the new supervised hardware permit. The original independent reset pull-up is not sufficient by itself to describe the new safety behavior.'])
 section('Status LED drivers','MODIFIED','F7-G8',[old('leds','Original four LED / transistor channels')],[now('20_leds')],
@@ -152,7 +152,7 @@ def paragraph(text,x,y,width,size=12,leading=None,color=ink):
     for line in simpleSplit(text,'Helvetica',size,width):txt(x,y,line,size,color);y-=leading
     return y
 def footer(number):
-    cv.setStrokeColor(rule);cv.line(42,37,W-42,37);txt(42,20,'ChryslerScanner | Original V240 rev 2.4.0-1 -> current Rev C procurement prototype | 2026-10-27',9,muted);cv.setFont('Helvetica',10);cv.drawRightString(W-42,20,str(number))
+    cv.setStrokeColor(rule);cv.line(42,37,W-42,37);txt(42,20,'ChryslerScanner | Original V240 rev 2.4.0-1 -> current Rev C drive/lands/mounting prototype | 2026-10-28',9,muted);cv.setFont('Helvetica',10);cv.drawRightString(W-42,20,str(number))
 def overlay(page,card,rect):draws.append(dict(reportPage=page,card=card,rect=list(rect)))
 def draw_card(page,card,rect):
     x,y,w,h=rect;cv.setFillColor(white);cv.setStrokeColor(rule);cv.rect(x,y,w,h,fill=1,stroke=1)
@@ -253,6 +253,6 @@ writer.add_attachment('Original_ChryslerScanner_V240_schematic.pdf',ORIGINAL.rea
 writer.add_metadata({'/Title':'ChryslerScanner - original/current circuit comparison','/Author':'ChryslerScanner project; original circuit drawing by Daniel Laszlo','/Subject':'30 vector comparison sets, source hashes, mapping index and complete original appendix','/Keywords':'ChryslerScanner KiCad original current circuit cross-reference'})
 OUT.parent.mkdir(parents=True,exist_ok=True)
 with OUT.open('wb') as f:writer.write(f)
-manifest=dict(title='Original/current circuit comparison atlas',date='2026-10-27',originalPdf=str(ORIGINAL.relative_to(P)),originalSha256=sha(ORIGINAL),currentPdf=str(CURRENT.relative_to(P)),currentSha256=sha(CURRENT),pcbSha256=json.loads((P/'reference/final-status.json').read_text())['pcb_sha256'],comparisonSets=len(sections),pageCount=len(writer.pages),vectorSourcesPreserved=True,embeddedSourcePdfs=2,sections=[dict(atlasPage=i+3,**v) for i,v in enumerate(sections)],outputSha256=sha(OUT))
+manifest=dict(title='Original/current circuit comparison atlas',date='2026-10-28',originalPdf=str(ORIGINAL.relative_to(P)),originalSha256=sha(ORIGINAL),currentPdf=str(CURRENT.relative_to(P)),currentSha256=sha(CURRENT),pcbSha256=json.loads((P/'reference/final-status.json').read_text())['pcb_sha256'],comparisonSets=len(sections),pageCount=len(writer.pages),vectorSourcesPreserved=True,embeddedSourcePdfs=2,sections=[dict(atlasPage=i+3,**v) for i,v in enumerate(sections)],outputSha256=sha(OUT))
 (OUT.parent/'ChryslerScanner_Circuit_Comparison_Index.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print(json.dumps(dict(pdf=str(OUT),pages=len(writer.pages),sets=len(sections),bytes=OUT.stat().st_size),indent=2))

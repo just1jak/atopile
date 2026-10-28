@@ -1,3 +1,5 @@
+> Historical 2026-10-27 procurement review. The gate-drive, inductor-land and H1-clearance portions are superseded by [the 2026-10-28 refinement review](rev-c-refinement-review.md). Use the current combined audit and fabrication files.
+
 # Revision C procurement closeout
 
 Exact parts and the associated native CAD changes are reviewed for the bounded prototype. All purchasing identities are explicit; the former unselected BOM and package mismatches are superseded. This is fabrication/assembly preparation, not a claim of tested hardware, guaranteed stock, production yield or automotive qualification.

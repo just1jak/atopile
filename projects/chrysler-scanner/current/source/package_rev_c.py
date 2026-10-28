@@ -62,12 +62,17 @@ def main():
     keep={'MANUFACTURING-NOTES.md','final-drc.json','final-erc.json','final-netlist.xml','p1-contract-audit.json',
           'p1-remediation-manifest.json','rev-c-safety-contract.md','pre-p1',
           'rev-c-adversarial-review.md','rev-c-adversarial-review.json',
-          'original-schematic-comparison.md'}
+          'original-schematic-comparison.md','can-upgrade.md'}
     for f in list(ref.iterdir()):
         current_evidence=f.name.startswith(('rev-c-','p1-','safety-')) or 'exception' in f.name
         if f.name not in keep and not current_evidence and f!=history and f.is_file():
             target=history/f.name
-            assert not target.exists(), ('Historical filename collision; resolve explicitly',target)
+            if target.exists():
+                if sha(target)==sha(f):
+                    f.unlink()  # identical historical copy already retained
+                    continue
+                target=history/(f.stem+'-'+sha(f)[:12]+f.suffix)
+                assert not target.exists(), ('Historical content already present',target)
             shutil.move(str(f),str(target))
     (history/'README.md').write_text('Historical evidence only. These files do not certify Rev C. Use ../p1-contract-audit.json and ../final-drc.json / final-erc.json for this package.\n')
     copied=out/pcb.name;fab=out/'fabrication';fab.mkdir()
@@ -105,7 +110,7 @@ def main():
     with (fab/'assembly-positions.csv').open(encoding='utf-8-sig',newline='') as f:placed={v['Ref'] for v in csv.DictReader(f)}
     expected_placed={ref for ref,part in selected.items() if part['assembly']=='PLACE'}
     assert placed==expected_placed,('Assembly placement/BOM disagreement',sorted(placed^expected_placed))
-    assert len(expected_placed)==321 and not unselected
+    assert len(expected_placed)==325 and not unselected
     shutil.copy2(out/'BOM.csv',fab/'BOM.csv');shutil.copy2(out/'assembly-BOM.csv',fab/'assembly-BOM.csv')
     board=p.LoadBoard(str(copied));sites=[]
     for t in board.GetTracks():
@@ -116,17 +121,18 @@ def main():
     (ref/'rev-c-filled-capped-via-sites.json').write_text(json.dumps(via,indent=2)+'\n')
     (fab/'MANUFACTURING-NOTES.md').write_text('# Rev C prototype fabrication\n\nFour layers, 110 × 55 mm, nominal 1.6 mm. Confirm actual RF/USB stackup and impedance with fabricator. Use separate PTH/NPTH drill files. Assembly positions are millimetres, both sides, absolute board coordinates. Filled/copper-capped/planarized vias listed in filled-capped-via-sites.json are mandatory; saved drill flags do not themselves specify a fabricator process. Confirm underside microSD/enclosure clearance. This is a local export, not a fabrication order or qualified automotive design.\n')
     with (fab/'MANUFACTURING-NOTES.md').open('a') as notes:
-        notes.write('\nC61 is TOP-side at (193,127) mm; nominal body height 5.9 mm above PCB. Current testpoint revision requires 230 filled/capped/planarized processing sites. Use this package only; earlier Gerbers place C61 underneath.\n')
+        notes.write('\nC61 is TOP-side at (193,127) mm; nominal body height 5.9 mm above PCB. Current testpoint revision requires 246 filled/capped/planarized processing sites. Use this package only; earlier Gerbers place C61 underneath.\n')
     for name in ['rev-c-testpoint-map.csv','rev-c-testpoint-map.md','rev-c-testpoint-processing-upgrades.json']:
         shutil.copy2(ref/name,fab/name)
     with (fab/'MANUFACTURING-NOTES.md').open('a') as notes:
-        notes.write('\nAssemble 48 Keystone 5015 SMT hook loops (both board sides). TP45-TP48 are bare copper SPI probe pads: no components to purchase/place. Read rev-c-testpoint-map.md and the processing-upgrades JSON. This revision has 329 electrical/probe footprints plus four mounting holes, 24 schematic pages and 230 mandatory processing sites.\n')
+        notes.write('\nAssemble 48 Keystone 5015 SMT hook loops (both board sides). TP45-TP48 are bare copper SPI probe pads: no components to purchase/place. Read rev-c-testpoint-map.md and the processing-upgrades JSON. This revision has 333 electrical/probe footprints plus four mounting holes, 24 schematic pages and 246 mandatory processing sites.\n')
     mechanical=ref/'rev-c-obd-mechanical-clearance.md'
     if mechanical.exists():
         shutil.copy2(mechanical,fab/mechanical.name)
         shutil.copy2(ref/'rev-c-obd-mechanical-clearance.json',fab/'rev-c-obd-mechanical-clearance.json')
+        shutil.copy2(ref/'rev-c-refinement-mechanical.json',fab/'rev-c-refinement-mechanical.json')
         with (fab/'MANUFACTURING-NOTES.md').open('a') as notes:
-            notes.write('\nMounting: M3 socket head, NO washer; checked envelope 5.5 mm diameter by 3 mm high. H1 clearance is 0.7504 mm centered, 0.2504 mm after nominal screw float. Actual tolerance/sample fit remains to be qualified before production assembly. See rev-c-obd-mechanical-clearance.md.\n')
+            notes.write('\nMounting: M3 socket head, NO washer; checked envelope 5.5 mm diameter by 3 mm high. H1 is at (105.00048,104.0) mm. Connector clearance is 1.75 mm centered, at least 1.25 mm after nominal screw float; the head-to-board-edge margin is at least 0.75 mm after float. Update enclosure mounting pattern for H1. Actual tolerance/sample fit remains to be qualified before production assembly. See rev-c-obd-mechanical-clearance.md.\n')
     (ref/'MANUFACTURING-NOTES.md').write_text((fab/'MANUFACTURING-NOTES.md').read_text()+'\nChecked PCB SHA-256: `'+sha(copied)+'`. Processing-site count: '+str(len(sites))+'. See rev-c-filled-capped-via-sites.json for exact coordinates, UUIDs, drill sizes and saved flags.\n')
     (out/'README.md').write_text((HERE/'REV-C-DELIVERY.md').read_text())
     (ref/'rev-c-package-status.json').write_text(json.dumps(dict(revision='C',cad_validation='PASS',pcbSha256=sha(copied),prototype_only=True,automotive_qualified=False,firmware_integration_complete=False,assembly_bom_complete=not unselected,unselected_exact_parts=unselected,purchasable_assembly_parts=len(expected_placed),unique_purchasing_lines=len(groups),dnp_references=['R23','R24'],pcb_features=['JP1','JP2','TP45','TP46','TP47','TP48'],external_upload_performed=False),indent=2)+'\n')

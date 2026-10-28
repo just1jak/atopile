@@ -1,3 +1,5 @@
+> Current 2026-10-28 refinement: testpoint identities and geometry are unchanged, and the overall board now requires 246 filled/capped/planarized sites. The 230-site count below records the historical debug-addition checkpoint. Use the current fabrication processing-site JSON and layered verifier.
+
 # Debug access / test points
 
 48 Keystone 5015 micro-miniature SMT loops accept miniature grabbers; four bare 1 mm SPI probe pads avoid a hook on the SPI lines. They are distributed across both board sides to preserve all existing placements. Silkscreen TP numbers match this table and schematic page 24. Use board spacers for underside access. The footprint uses the manufacturer-recommended 3.4 × 1.8 mm solder pad; the optional outline silk is omitted to retain readable labels in dense areas. These are small SMT loops: use lightweight miniature grabbers and avoid pulling on them.

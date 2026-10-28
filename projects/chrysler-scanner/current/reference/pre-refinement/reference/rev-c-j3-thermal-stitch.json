@@ -1,0 +1,11 @@
+{
+  "beforeSha256": "c8966651f01369b3388993531d9c9b4594f6e459a2cfe3dfaaebb69343a588c4",
+  "afterSha256": "e7d1fd11d8cc8d1676988743e8b595612538e130e0cbda8532bbb4ffa16151ac",
+  "allNineZoneDefinitionsExact": true,
+  "newIds": [
+    "116baead-8b80-47ab-8b3f-21e43540c428",
+    "78e94373-7b48-43bb-98a9-6d92f6e2435b"
+  ],
+  "geometry": "GND F.Cu 0.30mm (177.89,135.75)\u2192(178.89,134.25); GND throughvia 0.6/0.3mm at end, filled/capped/tented",
+  "nativeFinalDrcStillRequired": true
+}

@@ -1,0 +1,112 @@
+{
+  "status": "REVIEWED_BOUNDED_PROTOTYPE_DELTA",
+  "accepted": true,
+  "cadDeltaReviewAccepted": true,
+  "layoutReviewComplete": true,
+  "remainingP1Findings": [],
+  "remainingP1SchematicFindings": [],
+  "releaseReady": false,
+  "releaseReadyScope": "Independent engineering delta accepted; primary sealed combined verifier and regenerated/exported package gates remain primary-owned closeout. No manufacturing order authorized.",
+  "scope": "Independent adversarial review of programming-drive, Eaton lands/routing and H1 clearance refinements, layered over prior independent schematic/layout and procurement reviews.",
+  "pcbSha256": "800c05930a0ca24fe280d5f3aace70974889129942a1b5602ce2eabfea026301",
+  "schematicSha256": {
+    "01_ccd.kicad_sch": "d787977327104e66aa4b48a5c838865b4ac6dd117d11f695b72f39c95e41f663",
+    "02_pci.kicad_sch": "9aad268904d4776394416e5b806a6e9cfcdba22089b89a352e3ea391933d08be",
+    "03_sci-14-9.kicad_sch": "31e4467933deb45bc1d08caa1ae8c8eb146c56854ac50be89443c4b9d4a04356",
+    "04_sci-6-12.kicad_sch": "3278bf66833b1123754c90a9fea45325d98025816615a87ef263d28f7dcb43dc",
+    "05_sci-rx.kicad_sch": "d4f8e54bf51bde7ae976ecb6c75d5689f5f15fada221578e30980df758073ae6",
+    "06_obd-protection.kicad_sch": "9fcbaf2fc63f41af49eea0aca353a445ffbe79f25fec2f88864f5256134dd9c8",
+    "07_vehicle-input.kicad_sch": "ef5a18f0484276ca27fa6d012aae8e72126508830782552d221c0d6a64739bfa",
+    "08_power-5v.kicad_sch": "ba2fb3f911972cecf5f81c0e76ad38a2716b1224edd5d0a9211136a6f65fadbe",
+    "09_power-vpp.kicad_sch": "ae05fbec33b02cb9f94e3cda5113b5cf677ada314431a6eeb5492517a30980d4",
+    "10_power-vbb.kicad_sch": "a49de7a51eca79de8dfd1cfadc9b40cd69cc0c355bba381476230ac8aafc7018",
+    "11_power-7v5.kicad_sch": "1fbbbb19dbe40acef668d3e4b6d34dee7bde1859f11fe83a768f5ab6b642207a",
+    "12_program-6.kicad_sch": "b41f78679450835252ead39f2e36846543a6b7e03bf027375b25ddd8e40a0b72",
+    "13_program-9.kicad_sch": "4ce78c10dfd5a40ad582a5c4c87fff640302f5cf2d653c240532c57ad56c0b18",
+    "14_program-12.kicad_sch": "d29ab5b55e4df5d61354894472aa1b9e17ccf9fe770df988754856f9db8c8df9",
+    "15_program-14.kicad_sch": "8122699d80a337b43554906c43254e2f682b912c0d573235adef2b47c886536d",
+    "16_mcu.kicad_sch": "8c686ec92dbcfdbbf292ab14fff0244d44f3589119d837b44d3ac8e4b4da7b2a",
+    "17_adc.kicad_sch": "1a7f18e6e60265873b87faeffc49bb708e7a8accad0a4421e90fd7dd94486c43",
+    "18_control.kicad_sch": "074e9cd187a142041eaa8161cc0c4342fa21b4e8003c68d7ff0f4c20aed85b6e",
+    "19_usb.kicad_sch": "de78a2fe97727f93a6ab9f572a594ccd13970d9ddca7705ea20165a9838e494f",
+    "20_leds.kicad_sch": "b04a51e07fbfdd347ec10160f9502be8f743f02977cf44073eaf5e8c237efba7",
+    "22_sd-logger.kicad_sch": "d80434fc3ba1cf1f319376d470a44078db013f89ae00d2f6a3d7cb65414e2e4e",
+    "23_hardware-safety.kicad_sch": "b8876b6a470b4e06833cac665e08abaecb462500b52d99feb2c20d4a8ea793c2",
+    "24_debug-testpoints.kicad_sch": "f47764d129360c28258037c4ab0c48c9f461094cde1cdeb30df481ed31ab0b7e",
+    "ChryslerScanner_V240_SD.kicad_sch": "7c15e34193b1047eeb3d43096ad972032ad9ea49570fb20c21b64f45cf1272ac"
+  },
+  "schematicCount": 24,
+  "checksObserved": {
+    "freshNativeReports": true,
+    "allSeverityDrcParityViolations": 0,
+    "allSeverityErcViolations": 0,
+    "independentlyMeasuredFullNativeAirwires": 0,
+    "independentlyMeasuredDisconnectedNetGroups": {},
+    "groundPadsInOneGroup": 197,
+    "retainedCopperAndViaPropertiesIndependentlyComparedExact": true,
+    "retainedLockedCopperCount": 380,
+    "lockedCuts": 0,
+    "removedCopperCount": 78,
+    "addedCopperCount": 411,
+    "newVias": 21,
+    "removedVias": 8,
+    "processingSites": 246,
+    "fourGateNetSplitsReviewed": true,
+    "eatonRecommendedPads2p5x3p25At6mmSpan": true,
+    "H1NativeY104mm": true,
+    "independentTechnicalRefinementVerifierChecksPass": true,
+    "independentVerifierPendingCheckOnly": "independentReviewAccepted (contract status intentionally pending primary binding)"
+  },
+  "primaryCloseout": [
+    "Seal refinement baseline/geometry/catalog hashes and finish combined wrapper",
+    "Complete primary exported CAD/PDF/BOM/positions/drill-processing/archive reconciliation"
+  ],
+  "findings": [],
+  "nonBlockingObservations": [
+    "Mechanical report now correctly distinguishes connector clearance1.25mm after float from board-edge head clearance0.75mm after float; clarification resolved.",
+    "Stroke bounding boxes of L1/C6 and L6/C21/C22 courtyards touch by~0.025\u20130.03mm because of line width; enclosure centerlines remain separated and actual bodies do not collide. Not a physical interference."
+  ],
+  "qualificationGates": [
+    "AW9523B VOH/VOL are typical-only: DMG6601 2.5V RDS specification removes old4.5V MOSFET mismatch, but does not establish a whole-chain guaranteed minimum gate drive. Validate min rail/temperature/output load and shutdown waveform.",
+    "AW9523 P0 must be configured push-pull before programming; startup/default controls remain low. Do not add reset-enabling pullups. GPIO13 remains dedicated health heartbeat.",
+    "4.7k/8.2k divider gives worst P gate10.331V at28V with1%resistors, below12V absolute gate rating. Drain overshoot must remain <=28V under existing prototype contract.",
+    "Recommended Eaton lands improve assembly coverage; verify solder joints, via filling/capping, switching-node ringing, ground return behavior, thermal rise and regulator stability on hardware.",
+    "246 filled/capped/planarized processing sites, specified stackup and accepted rules must be preserved.",
+    "M3 socket head maximum5.5mm diameter/3mm height, no washer: actual connector/screw/board/enclosure tolerance and sample fit remain unqualified.",
+    "Existing C14 DC-bias/stability, total load, transient/ESD, firmware and vehicle-use restrictions remain. CAN remains deferred."
+  ],
+  "limitations": [
+    "Review covers requested changes and their interactions; it is not a fresh certification of every passive suffix or original-PDF block comparison.",
+    "Native ERC uses recovered passive symbol pin types and cannot alone establish electrical correctness.",
+    "No bench, mechanical sample, automotive, regulatory or production qualification was performed.",
+    "Read-only verifier re-executed after drawing-signature repair, with current-file hashes substituted in memory while source constants remain UNBOUND. All technical checks pass; only the intentionally pending independentReviewAccepted contract flag fails. This is not a claim of final sealed-wrapper/package PASS."
+  ],
+  "visualEvidence": [
+    "ChryslerScanner_V240_SD-Hierarchy.pdf pages16,17,20,21",
+    "reference/visual-review/board-front-cropped.png",
+    "reference/visual-review/board-back-cropped.png",
+    "reference/visual-review/board-front-detail-1.png",
+    "reference/visual-review/board-front-detail-2.png",
+    "reference/visual-review/board-front-detail-3.png",
+    "reference/visual-review/board-front-detail-4.png",
+    "reference/visual-review/board-back-detail-1.png",
+    "reference/visual-review/board-back-detail-2.png",
+    "reference/visual-review/board-back-detail-3.png",
+    "reference/visual-review/board-back-detail-4.png"
+  ],
+  "sources": [
+    "https://www.diodes.com/datasheet/download/DMG6601LVT.pdf",
+    "https://www.diodes.com/part/view/DMG6601LVT",
+    "https://doc.awinic.com/doc/202403/deffbf3b-7e7b-4ff6-8e91-fd85e2d845d5.pdf",
+    "https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html",
+    "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-dr-high-power-density-high-efficiency-shielded-drum-core-power-inductors-data-sheet.pdf"
+  ],
+  "evidenceHashes": {
+    "final-drc.json": "19f907d6f79c426679e7c73372556de7bbe62c17011f8da632bc153b18a19a0f",
+    "final-erc.json": "45b497aebe3ae9df84159577b2c94b41a8290b6a5bd10d54964fd4096c3394df",
+    "final-netlist.xml": "a6deb59586c70aff03812f92763fa451ecd10cd82ea1c537f16d0ef87c285914",
+    "rev-c-refinement-geometry-contract.json": "83ea0deb15b05c43e6ec34d6d2be08f9aa3338639892a6a9f77c03dfe9ebd097",
+    "rev-c-refinement-mechanical.json": "8f083c3c61a6bc7f9fed6812c9733cc25f03f1e45b01f37a6aac77f151210d0e",
+    "verify_refinement_delta.py": "fb84020e96a5f6a466ec162f6156edc35133136fc2ed708d7b062837be84baac"
+  }
+}

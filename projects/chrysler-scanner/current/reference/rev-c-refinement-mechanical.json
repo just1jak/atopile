@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-28",
+  "pcbSha256": "800c05930a0ca24fe280d5f3aace70974889129942a1b5602ce2eabfea026301",
+  "engine": "FreeCAD 1.0.0",
+  "selectedHardware": "M3 socket head D5.5mm x H3mm, no washer; 4mm PCB holes",
+  "j1Unchanged": true,
+  "checks": [
+    {
+      "reference": "H2",
+      "centerMm": [
+        105.00048,
+        149.99952
+      ],
+      "centeredClearanceMm": 4.322495490334354,
+      "minimumClearanceWith0p5mmRadialFloat": 3.8224954903343544,
+      "intersectionVolumeMm3": 0.0,
+      "centeredHeadToBoardEdgeMm": 2.250479999999996,
+      "minimumHeadToBoardEdgeAfter0p5mmFloatMm": 1.750479999999996
+    },
+    {
+      "reference": "H4",
+      "centerMm": [
+        205.0003,
+        104.9996
+      ],
+      "centeredClearanceMm": 97.26157568126803,
+      "minimumClearanceWith0p5mmRadialFloat": 96.76157568126803,
+      "intersectionVolumeMm3": 0.0,
+      "centeredHeadToBoardEdgeMm": 2.249600000000001,
+      "minimumHeadToBoardEdgeAfter0p5mmFloatMm": 1.749600000000001
+    },
+    {
+      "reference": "H1",
+      "centerMm": [
+        105.00048,
+        104
+      ],
+      "centeredClearanceMm": 1.75,
+      "minimumClearanceWith0p5mmRadialFloat": 1.25,
+      "intersectionVolumeMm3": 0.0,
+      "centeredHeadToBoardEdgeMm": 1.25,
+      "minimumHeadToBoardEdgeAfter0p5mmFloatMm": 0.75
+    },
+    {
+      "reference": "H3",
+      "centerMm": [
+        205.0003,
+        149.99952
+      ],
+      "centeredClearanceMm": 97.56103782894684,
+      "minimumClearanceWith0p5mmRadialFloat": 97.06103782894684,
+      "intersectionVolumeMm3": 0.0,
+      "centeredHeadToBoardEdgeMm": 2.24969999999999,
+      "minimumHeadToBoardEdgeAfter0p5mmFloatMm": 1.74969999999999
+    }
+  ],
+  "limitations": [
+    "Nominal manufacturer STEP; actual manufacturing tolerances and enclosure fit still require samples.",
+    "H1 moved 0.9996mm toward top board edge; other holes and connector remain unchanged."
+  ],
+  "minimumConnectorClearanceAfterFloatMm": 1.25
+}

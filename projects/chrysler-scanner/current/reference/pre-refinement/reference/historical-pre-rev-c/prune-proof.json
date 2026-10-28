@@ -1,0 +1,59 @@
+{
+  "source": "projects\\chrysler-scanner\\work\\fabrication-candidate\\release-candidate\\ChryslerScanner_V240_SD.kicad_pcb",
+  "output": "projects\\chrysler-scanner\\work\\fabrication-candidate\\pruned.kicad_pcb",
+  "sourceSha256": "4d8bf84538ecf6ac8d4e7709481513fd8b39bdbc083c8ff0fa0b121e74120edc",
+  "outputSha256": "0db0a5990c09bef432df9d2a4767a9534089c1f3a0dbc46a022edd12e9d12f4e",
+  "removedCopper": {
+    "e1d28056-f63a-42e0-b951-861b64323546": {
+      "kind": "PCB_TRACK",
+      "net": "LOG_BUTTON",
+      "start": [
+        173298600,
+        141960200
+      ],
+      "end": [
+        172109500,
+        140771100
+      ],
+      "width": 200000,
+      "layer": 6,
+      "locked": false
+    },
+    "f5b19600-ef9b-4d26-9400-bad869d97974": {
+      "kind": "PCB_TRACK",
+      "net": "PCI_RX",
+      "start": [
+        170050000,
+        121021600
+      ],
+      "end": [
+        168717600,
+        121021600
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "458b9be8-7614-4697-874f-7059f2c62f8e": {
+      "kind": "PCB_TRACK",
+      "net": "SCL",
+      "start": [
+        175350000,
+        139728300
+      ],
+      "end": [
+        175218600,
+        139728300
+      ],
+      "width": 200000,
+      "layer": 6,
+      "locked": false
+    }
+  },
+  "everyNativePadPartitionUnchanged": true,
+  "fullNativeAirwires": 0,
+  "allUnrelatedCopperUnchanged": true,
+  "footprintBlocksUnchanged": true,
+  "sourceBytesAndMtimeUnchanged": true,
+  "requiresFreshNativeDrc": true
+}

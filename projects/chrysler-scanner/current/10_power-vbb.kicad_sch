@@ -6429,7 +6429,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:L_Eaton_DR74_220_R"
+		(property "Footprint" "footprints:L_Eaton_DR74_Recommended"
 			(at 106.68 60.96 0)
 			(hide yes)
 			(show_name no)

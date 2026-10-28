@@ -122,7 +122,7 @@ C10,22μF,footprints:C_1206_3216Metric,TDK,C3216X5R1E226M160AB,25V,25V,20%,PLACE
 D4,DSK34,footprints:D_SOD-123,MDD (Microdiode Electronics),DSK34,,,,PLACE,REVIEWED bounded-prototype selection,https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf
 D5,DSK34,footprints:D_SOD-123,MDD (Microdiode Electronics),DSK34,,,,PLACE,REVIEWED bounded-prototype selection,https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf
 D6,DSK34,footprints:D_SOD-123,MDD (Microdiode Electronics),DSK34,,,,PLACE,REVIEWED bounded-prototype selection,https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf
-L1,22µH,footprints:L_Eaton_DR74_220_R,Eaton,DR74-220-R,,,,PLACE,REVIEWED bounded-prototype selection,https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html
+L1,22µH,footprints:L_Eaton_DR74_Recommended,Eaton,DR74-220-R,,,,PLACE,REVIEWED bounded-prototype selection,https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html
 R1,100kΩ,footprints:R_0603_1608Metric,Vishay,CRCW0603100KFKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R2,68kΩ,footprints:R_0603_1608Metric,Vishay,TNPW060368K0BEEA,,,0.1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/28758/tnpw_e3.pdf
 R3,10kΩ,footprints:R_0603_1608Metric,Vishay,TNPW060310K0BEEA,,,0.1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/28758/tnpw_e3.pdf
@@ -171,7 +171,7 @@ C14,22μF,footprints:C_1210_3225_TDK_22u50V,TDK,C3225X7R1H226M250AC,50V,50V,20%,
 C15,10μF,footprints:C_1206_3216Metric,TDK,CGA5L1X7R1H106K160AC,50V,50V,10%,PLACE,REVIEWED bounded-prototype selection,https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf
 C16,10μF,footprints:C_1206_3216Metric,TDK,CGA5L1X7R1H106K160AC,50V,50V,10%,PLACE,REVIEWED bounded-prototype selection,https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf
 D7,DSK34,footprints:D_SOD-123,MDD (Microdiode Electronics),DSK34,,,,PLACE,REVIEWED bounded-prototype selection,https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf
-L2,22µH,footprints:L_Eaton_DR74_220_R,Eaton,DR74-220-R,,,,PLACE,REVIEWED bounded-prototype selection,https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html
+L2,22µH,footprints:L_Eaton_DR74_Recommended,Eaton,DR74-220-R,,,,PLACE,REVIEWED bounded-prototype selection,https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html
 L3,240nH,footprints:L_Bourns_SRN2012,Bourns,SRN2012-R24M,,,,PLACE,REVIEWED bounded-prototype selection,https://www.bourns.com/docs/product-datasheets/srn2012.pdf
 R8,110kΩ,footprints:R_0603_1608Metric,Vishay,TNPW0603110KBEEA,,,0.1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/28758/tnpw_e3.pdf
 R9,6.8kΩ,footprints:R_0603_1608Metric,Vishay,TNPW06036K80BEEA,,,0.1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/28758/tnpw_e3.pdf
@@ -190,27 +190,29 @@ R76,4.7kΩ,footprints:R_0603_1608Metric,Vishay,CRCW06034K70FKEA,,,1%,PLACE,REVIE
 U13,74LVC2G66,footprints:VSSOP-8_2.3x2mm_P0.5mm,Texas Instruments,SN74LVC2G66DCTR,,,,PLACE,REVIEWED bounded-prototype selection,https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf
 D15,PMEG4005,footprints:D_SOD-123,Nexperia,PMEG4005EGWX,,,,PLACE,REVIEWED bounded-prototype selection,https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf
 D19,PMEG4005,footprints:D_SOD-123,Nexperia,PMEG4005EGWX,,,,PLACE,REVIEWED bounded-prototype selection,https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf
-Q8,DMC3071LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMC3071LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMC3071LVT.pdf
+Q8,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMG6601LVT.pdf
 Q12,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMG6601LVT.pdf
 R55,10kΩ,footprints:R_0603_1608Metric,Vishay,CRCW060310K0FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R56,4.7kΩ,footprints:R_0603_1608Metric,Vishay,CRCW06034K70FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R63,10kΩ,footprints:R_0603_1608Metric,Vishay,CRCW060310K0FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R64,4.7k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06034K70FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R65,8.2k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06038K20FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
+R124,8.2k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06038K20FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 D16,PMEG4005,footprints:D_SOD-123,Nexperia,PMEG4005EGWX,,,,PLACE,REVIEWED bounded-prototype selection,https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf
 D20,PMEG4005,footprints:D_SOD-123,Nexperia,PMEG4005EGWX,,,,PLACE,REVIEWED bounded-prototype selection,https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf
-Q9,DMC3071LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMC3071LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMC3071LVT.pdf
+Q9,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMG6601LVT.pdf
 Q13,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMG6601LVT.pdf
 R57,10kΩ,footprints:R_0603_1608Metric,Vishay,CRCW060310K0FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R58,4.7kΩ,footprints:R_0603_1608Metric,Vishay,CRCW06034K70FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R66,10kΩ,footprints:R_0603_1608Metric,Vishay,CRCW060310K0FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R67,4.7k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06034K70FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R68,8.2k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06038K20FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
+R125,8.2k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06038K20FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 C17,0.1μF,footprints:C_1206_3216Metric,KEMET,C1206C104K1RACTU,100V,100V,10%,PLACE,REVIEWED bounded-prototype selection,https://search.kemet.com/component-documentation/download/specsheet/C1206C104K1RACTU
 C18,22μF,footprints:C_1206_3216Metric,TDK,C3216X5R1E226M160AB,25V,25V,20%,PLACE,REVIEWED bounded-prototype selection,https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1E226M160AB
 C19,10μF,footprints:C_1206_3216Metric,TDK,CGA5L1X7R1H106K160AC,25V,50V,10%,PLACE,REVIEWED bounded-prototype selection,https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf
 D8,DSK34,footprints:D_SOD-123,MDD (Microdiode Electronics),DSK34,,,,PLACE,REVIEWED bounded-prototype selection,https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf
-L4,22µH,footprints:L_Eaton_DR74_220_R,Eaton,DR74-220-R,,,,PLACE,REVIEWED bounded-prototype selection,https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html
+L4,22µH,footprints:L_Eaton_DR74_Recommended,Eaton,DR74-220-R,,,,PLACE,REVIEWED bounded-prototype selection,https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html
 L5,470nH,footprints:L_Bourns_SRN2012,Bourns,SRN2012-R47M,,,,PLACE,REVIEWED bounded-prototype selection,https://www.bourns.com/docs/product-datasheets/srn2012.pdf
 R10,100kΩ,footprints:R_0603_1608Metric,Vishay,CRCW0603100KFKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R11,158kΩ,footprints:R_0603_1608Metric,Vishay,TNPW0603158KBEEA,,,0.1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/28758/tnpw_e3.pdf
@@ -227,22 +229,24 @@ R47,10kΩ,footprints:R_0603_1608Metric,Vishay,CRCW060310K0FKEA,,,1%,PLACE,REVIEW
 U15,74LVC2G66,footprints:VSSOP-8_2.3x2mm_P0.5mm,Texas Instruments,SN74LVC2G66DCTR,,,,PLACE,REVIEWED bounded-prototype selection,https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf
 D17,PMEG4005,footprints:D_SOD-123,Nexperia,PMEG4005EGWX,,,,PLACE,REVIEWED bounded-prototype selection,https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf
 D21,PMEG4005,footprints:D_SOD-123,Nexperia,PMEG4005EGWX,,,,PLACE,REVIEWED bounded-prototype selection,https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf
-Q10,DMC3071LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMC3071LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMC3071LVT.pdf
+Q10,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMG6601LVT.pdf
 Q14,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMG6601LVT.pdf
 R59,10kΩ,footprints:R_0603_1608Metric,Vishay,CRCW060310K0FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R60,4.7kΩ,footprints:R_0603_1608Metric,Vishay,CRCW06034K70FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R69,10kΩ,footprints:R_0603_1608Metric,Vishay,CRCW060310K0FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R70,4.7k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06034K70FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R71,8.2k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06038K20FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
+R126,8.2k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06038K20FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 D18,PMEG4005,footprints:D_SOD-123,Nexperia,PMEG4005EGWX,,,,PLACE,REVIEWED bounded-prototype selection,https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf
 D22,PMEG4005,footprints:D_SOD-123,Nexperia,PMEG4005EGWX,,,,PLACE,REVIEWED bounded-prototype selection,https://assets.nexperia.com/documents/data-sheet/PMEG4005EGW.pdf
-Q11,DMC3071LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMC3071LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMC3071LVT.pdf
+Q11,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMG6601LVT.pdf
 Q15,DMG6601LVT-7,footprints:SOT-23-6,Diodes Incorporated,DMG6601LVT-7,,,,PLACE,REVIEWED bounded-prototype selection,https://www.diodes.com/datasheet/download/DMG6601LVT.pdf
 R61,10kΩ,footprints:R_0603_1608Metric,Vishay,CRCW060310K0FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R62,4.7kΩ,footprints:R_0603_1608Metric,Vishay,CRCW06034K70FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R72,10kΩ,footprints:R_0603_1608Metric,Vishay,CRCW060310K0FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R73,4.7k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06034K70FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R74,8.2k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06038K20FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
+R127,8.2k 1%,footprints:R_0603_1608Metric,Vishay,CRCW06038K20FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 C20,10μF,footprints:C_1206_3216Metric,TDK,CGA5L1X7R1H106K160AC,50V,50V,10%,PLACE,REVIEWED bounded-prototype selection,https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf
 C21,0.1μF,footprints:C_1206_3216Metric,KEMET,C1206C104K1RACTU,100V,100V,10%,PLACE,REVIEWED bounded-prototype selection,https://search.kemet.com/component-documentation/download/specsheet/C1206C104K1RACTU
 C22,22μF,footprints:C_1206_3216Metric,TDK,C3216X5R1E226M160AB,25V,25V,20%,PLACE,REVIEWED bounded-prototype selection,https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1E226M160AB
@@ -250,7 +254,7 @@ C23,10μF,footprints:C_1206_3216Metric,TDK,CGA5L1X7R1H106K160AC,25V,50V,10%,PLAC
 C24,22μF,footprints:C_1206_3216Metric,TDK,C3216X5R1E226M160AB,25V,25V,20%,PLACE,REVIEWED bounded-prototype selection,https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1E226M160AB
 D9,DSK34,footprints:D_SOD-123,MDD (Microdiode Electronics),DSK34,,,,PLACE,REVIEWED bounded-prototype selection,https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf
 D10,DSK34,footprints:D_SOD-123,MDD (Microdiode Electronics),DSK34,,,,PLACE,REVIEWED bounded-prototype selection,https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf
-L6,22µH,footprints:L_Eaton_DR74_220_R,Eaton,DR74-220-R,,,,PLACE,REVIEWED bounded-prototype selection,https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html
+L6,22µH,footprints:L_Eaton_DR74_Recommended,Eaton,DR74-220-R,,,,PLACE,REVIEWED bounded-prototype selection,https://www.eaton.com/us/en-us/skuPage.DR74-220-R.html
 R13,100kΩ,footprints:R_0603_1608Metric,Vishay,CRCW0603100KFKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R14,100kΩ,footprints:R_0603_1608Metric,Vishay,TNPW0603100KBEEA,,,0.1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/28758/tnpw_e3.pdf
 R15,10kΩ,footprints:R_0603_1608Metric,Vishay,TNPW060310K0BEEA,,,0.1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/28758/tnpw_e3.pdf

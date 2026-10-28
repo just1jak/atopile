@@ -1,0 +1,569 @@
+{
+  "pcbSha256": "f4a5945538dd61389ef7a3937fe1406f76e9dfba2382e11e35fac4b787a8e12a",
+  "process": "Nonconductive resin filled, copper capped and planarized through vias (VIPPO)",
+  "sites": [
+    {
+      "uuid": "48f683c4-3dd7-526b-8754-f7ab5cfa5510",
+      "net": "GND",
+      "positionMm": [
+        123.8125,
+        141.4875
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "U13.4"
+      ],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "7ddf842a-ba60-474b-8b13-336cf6a58587",
+      "net": "N_R11_1",
+      "positionMm": [
+        161.1735,
+        139.0089
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "1b841adb-6b3a-49bc-9897-d601d8baf368",
+      "net": "RX7_BIAS_EN",
+      "positionMm": [
+        164.8196,
+        141.2098
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "03df75de-2a49-4b09-8039-39ac565edcfd",
+      "net": "RX7_BIAS_EN",
+      "positionMm": [
+        165.0808,
+        142.3133
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "408794a8-2311-4911-96fa-4296a80d79fc",
+      "net": "SDA",
+      "positionMm": [
+        165.0839,
+        123.5498
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "580d523b-68fb-4a45-9dca-eecffe65582f",
+      "net": "SDA",
+      "positionMm": [
+        165.3049,
+        117.4358
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "75781361-256c-4837-88cc-ba6fda185725",
+      "net": "GND",
+      "positionMm": [
+        167.0,
+        133.475
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "C56.2"
+      ],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "3d2b97c3-78f3-5237-9c46-18156e7f8795",
+      "net": "GND",
+      "positionMm": [
+        168.0,
+        138.25
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "U19.25"
+      ],
+      "frontTented": false,
+      "backTented": true
+    },
+    {
+      "uuid": "8734c258-e496-4cfc-81fb-21ce9f52b344",
+      "net": "PCI_RX",
+      "positionMm": [
+        168.7176,
+        121.0216
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "2ff00f93-8846-42df-b197-9ada7017060c",
+      "net": "PWR_LED",
+      "positionMm": [
+        168.8832,
+        122.0168
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "3fa55b73-e865-4651-ad92-b3a8fac24abe",
+      "net": "PWR_LED",
+      "positionMm": [
+        169.8854,
+        119.0448
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "b7697e04-db47-561f-9a4e-d233a506b8ac",
+      "net": "GND",
+      "positionMm": [
+        170.625,
+        134.725
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "C57.2"
+      ],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "8cf8242f-4b46-50a7-a351-4b51bd98f7f7",
+      "net": "V_BT",
+      "positionMm": [
+        170.9425,
+        117.1125
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "6cdc3d29-ecd2-4b3a-aebc-db851e5df992",
+      "net": "LOG_BUTTON",
+      "positionMm": [
+        170.9562,
+        132.5135
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "68ec5b48-b597-5ec5-b705-5eb74073c7f9",
+      "net": "GND",
+      "positionMm": [
+        171.45,
+        121.025
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "C26.2"
+      ],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "f3ed3169-4f94-4c67-96a3-4055a4a6b525",
+      "net": "+3.3V",
+      "positionMm": [
+        171.5,
+        139.075
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "R87.1"
+      ],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "137d9f61-5487-4f6b-b5fe-53a3392d661e",
+      "net": "SDA",
+      "positionMm": [
+        171.5723,
+        133.1584
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "e5be0212-82b3-4107-b93e-da42f058e245",
+      "net": "TX_LED",
+      "positionMm": [
+        171.9,
+        119.375
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "3c79c845-4b6d-4c46-8c8a-8b603738c973",
+      "net": "RX7_BIAS_EN",
+      "positionMm": [
+        172.5,
+        138.0
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "58fa7355-b3ff-5452-8638-c5bbac75cb55",
+      "net": "GND",
+      "positionMm": [
+        172.7875,
+        114.7125
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "U10.49"
+      ],
+      "frontTented": false,
+      "backTented": true
+    },
+    {
+      "uuid": "7cf65e96-662f-5743-9633-c54e27543225",
+      "net": "GND",
+      "positionMm": [
+        172.7875,
+        116.5125
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "U10.49"
+      ],
+      "frontTented": false,
+      "backTented": true
+    },
+    {
+      "uuid": "a20c6ad3-184a-49cf-9e2b-4ffcd9145520",
+      "net": "PWR_LED",
+      "positionMm": [
+        173.0768,
+        123.9919
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "3c1a0180-b98a-4787-9105-2da1707648d9",
+      "net": "RX15_EN",
+      "positionMm": [
+        173.4,
+        138.425
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "b993e142-812a-4612-8dc5-b1e112396a78",
+      "net": "LOG_BUTTON",
+      "positionMm": [
+        174.038,
+        134.993
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "b4cba1e6-ea24-5a74-bc91-afec95083085",
+      "net": "GND",
+      "positionMm": [
+        174.5875,
+        114.7125
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "U10.49"
+      ],
+      "frontTented": false,
+      "backTented": true
+    },
+    {
+      "uuid": "8db94462-3d3d-5a36-94f3-aec1d3125488",
+      "net": "GND",
+      "positionMm": [
+        174.5875,
+        116.5125
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "U10.49"
+      ],
+      "frontTented": false,
+      "backTented": true
+    },
+    {
+      "uuid": "de55ceba-41f5-4d3a-bc99-1e36713f60c5",
+      "net": "TX_LED",
+      "positionMm": [
+        175.1,
+        130.275
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "ea669069-42ed-59b8-8f2b-a6c53cd3d62f",
+      "net": "GND",
+      "positionMm": [
+        175.775,
+        120.75
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "C31.2"
+      ],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "9efcfa21-2d0c-4845-a5c2-a9b68fd1e39d",
+      "net": "SCL",
+      "positionMm": [
+        175.7975,
+        134.2442
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "a8805c5c-c73f-4d21-a8b7-6d61ae7c2945",
+      "net": "TX_LED",
+      "positionMm": [
+        179.6,
+        140.875
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "bb810104-d0c2-455d-b8cc-282b90f75d9e",
+      "net": "PWR_LED",
+      "positionMm": [
+        179.6742,
+        124.0345
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "40325167-1d86-45a3-836c-c0bfca3ded20",
+      "net": "PWR_LED",
+      "positionMm": [
+        182.5334,
+        123.8111
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "7d5c0199-5627-5888-b109-2cdd12e36f0d",
+      "net": "GND",
+      "positionMm": [
+        185.775,
+        115.75
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "C23.2"
+      ],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "9a887a6b-218d-5083-812e-b6f3faba1440",
+      "net": "GND",
+      "positionMm": [
+        200.050099,
+        128.75
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "U11.2"
+      ],
+      "frontTented": true,
+      "backTented": true
+    },
+    {
+      "uuid": "054fe1b1-22f7-5290-b500-a7f213f7380a",
+      "net": "GND",
+      "positionMm": [
+        203.979982,
+        114.440018
+      ],
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "filled": true,
+      "copperCapped": true,
+      "overlappingSmdPadApertures": [
+        "U12.29"
+      ],
+      "frontTented": false,
+      "backTented": true
+    }
+  ],
+  "missingFilledCappedFlagsForSmdApertureOverlap": [],
+  "originalBoardUnchanged": true,
+  "nativeReloadFlagsVerified": true,
+  "boardSizeMm": [
+    110,
+    55
+  ],
+  "copperLayers": 4,
+  "firmwareStatus": "deferred_by_user",
+  "manufacturingOrderPlaced": false
+}

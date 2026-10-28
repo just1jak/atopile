@@ -1,11 +1,11 @@
 {
   "title": "Original/current circuit comparison atlas",
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "originalPdf": "original-atopile\\reference\\upstream\\ChryslerScanner_V240_schematic.pdf",
   "originalSha256": "334b04164cfa96183cf502f690024a764cc719671f20583043f37604c9ed590d",
   "currentPdf": "current\\ChryslerScanner_V240_SD-Hierarchy.pdf",
-  "currentSha256": "37d1caacb41b605342bcf59e1f727940fcdceffb36f9dcd57797a57649e1cb7b",
-  "pcbSha256": "83ac625f2283aa789455802fa4367dbc786c7a2f0ae6c87ffc91c8959a40ac15",
+  "currentSha256": "360f1f24f24e2f70823a58a7a44bbd4679d428a5f27a1032c83e215295d3abb6",
+  "pcbSha256": "800c05930a0ca24fe280d5f3aace70974889129942a1b5602ce2eabfea026301",
   "comparisonSets": 30,
   "pageCount": 33,
   "vectorSourcesPreserved": true,
@@ -942,7 +942,7 @@
       ],
       "notes": [
         "The two rail-switching branches are paired by vehicle pin on a dedicated page.",
-        "Q8-Q11 and Q12-Q15 use revised FET families. The VPP gate-divider values are intentionally revised to 4.7k / 8.2k; compare current labels rather than assuming identical parts."
+        "Q8-Q15 now use DMG6601LVT-7, with 2.5 V drive specifications. New R124-R127 give the VBB branches the same 4.7k / 8.2k gate-divider arrangement as VPP; the original direct gate/drain links are intentionally split."
       ]
     },
     {
@@ -990,7 +990,7 @@
       ],
       "notes": [
         "The two rail-switching branches are paired by vehicle pin on a dedicated page.",
-        "Q8-Q11 and Q12-Q15 use revised FET families. The VPP gate-divider values are intentionally revised to 4.7k / 8.2k; compare current labels rather than assuming identical parts."
+        "Q8-Q15 now use DMG6601LVT-7, with 2.5 V drive specifications. New R124-R127 give the VBB branches the same 4.7k / 8.2k gate-divider arrangement as VPP; the original direct gate/drain links are intentionally split."
       ]
     },
     {
@@ -1038,7 +1038,7 @@
       ],
       "notes": [
         "The two rail-switching branches are paired by vehicle pin on a dedicated page.",
-        "Q8-Q11 and Q12-Q15 use revised FET families. The VPP gate-divider values are intentionally revised to 4.7k / 8.2k; compare current labels rather than assuming identical parts."
+        "Q8-Q15 now use DMG6601LVT-7, with 2.5 V drive specifications. New R124-R127 give the VBB branches the same 4.7k / 8.2k gate-divider arrangement as VPP; the original direct gate/drain links are intentionally split."
       ]
     },
     {
@@ -1086,7 +1086,7 @@
       ],
       "notes": [
         "The two rail-switching branches are paired by vehicle pin on a dedicated page.",
-        "Q8-Q11 and Q12-Q15 use revised FET families. The VPP gate-divider values are intentionally revised to 4.7k / 8.2k; compare current labels rather than assuming identical parts."
+        "Q8-Q15 now use DMG6601LVT-7, with 2.5 V drive specifications. New R124-R127 give the VBB branches the same 4.7k / 8.2k gate-divider arrangement as VPP; the original direct gate/drain links are intentionally split."
       ]
     },
     {
@@ -1371,5 +1371,5 @@
       ]
     }
   ],
-  "outputSha256": "038a7ccce1f0f62b5ada96266297e68e7db2caac233700e87d384998cab8b91f"
+  "outputSha256": "4404db86a090f49a47594a9ba0bec869a171ebf6120aec482f9a36fcb9d37957"
 }

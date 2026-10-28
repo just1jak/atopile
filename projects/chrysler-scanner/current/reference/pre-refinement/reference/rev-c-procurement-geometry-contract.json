@@ -1,0 +1,2409 @@
+{
+  "status": "REVIEWED_BOUNDED_PROTOTYPE_DELTA",
+  "expectedSignatureSource": "Candidate manufacturer-land implementations, independently reviewed before release; integrity fixture, not device qualification.",
+  "footprints": {
+    "L5": {
+      "reference": "L5",
+      "value": "470nH",
+      "position": [
+        162975000,
+        139200000
+      ],
+      "orientation": 0.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "ae074ece-1f70-4776-ad33-e29ede598009": {
+          "number": "1",
+          "net": "N_R11_1",
+          "position": [
+            162175000,
+            139200000
+          ],
+          "size": [
+            800000,
+            1800000
+          ],
+          "orientation": 0.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.2,
+          "maskMargin": "None"
+        },
+        "5592d976-13d5-417b-96dd-e50202b585d3": {
+          "number": "2",
+          "net": "VBB",
+          "position": [
+            163775000,
+            139200000
+          ],
+          "size": [
+            800000,
+            1800000
+          ],
+          "orientation": 0.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.2,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:L_Bourns_SRN2012",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/74c97939-0c36-5b08-860a-1860503275bb",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/L_1206_3216Metric.step",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.6875,
+            1.125,
+            0.75
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "Q6": {
+      "reference": "Q6",
+      "value": "CJ3439KDW",
+      "position": [
+        134250000,
+        143750000
+      ],
+      "orientation": 0.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "fdb9215f-35fc-4990-9bcc-a5685428c2a4": {
+          "number": "1",
+          "net": "GND",
+          "position": [
+            133300000,
+            143100000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 0.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "71de0f5d-61f0-4d7c-b9f7-0be645b413cb": {
+          "number": "2",
+          "net": "RX7_BIAS_EN",
+          "position": [
+            133300000,
+            143750000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 0.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "b46a7423-2946-402e-8d79-7e103b79d0b7": {
+          "number": "3",
+          "net": "RX7_BIAS",
+          "position": [
+            133300000,
+            144400000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 0.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "42fcf643-67a1-4652-867e-d6af8ca40f3a": {
+          "number": "4",
+          "net": "+5V",
+          "position": [
+            135200000,
+            144400000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 0.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "303d6e3a-3a0c-4f70-ac1b-e83998511879": {
+          "number": "5",
+          "net": "N_R76_2",
+          "position": [
+            135200000,
+            143750000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 0.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "08ec1751-44d3-4475-a7c3-1ed2fab29c0b": {
+          "number": "6",
+          "net": "N_R76_2",
+          "position": [
+            135200000,
+            143100000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 0.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:SOT-363_SC-70-6_RR",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8cfc078e-df8f-5d8a-9fcf-fab212477e42/3eec2b7d-6ca5-5615-9146-d57e7745aba7",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/SOT-363_SC-70-6.step",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "Q16": {
+      "reference": "Q16",
+      "value": "CJ3439KDW",
+      "position": [
+        123750000,
+        109500000
+      ],
+      "orientation": 180.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "8cefeee3-f747-4ebd-a3d2-328533f1bf41": {
+          "number": "1",
+          "net": "GND",
+          "position": [
+            124700000,
+            110150000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 180.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "c650f85e-ebb1-4093-9cb0-5b09dafac55e": {
+          "number": "2",
+          "net": "N_R99_2",
+          "position": [
+            124700000,
+            109500000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 180.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "0efcfaaa-7122-4fdb-9042-f550367e4cc2": {
+          "number": "3",
+          "net": "N_R100_1",
+          "position": [
+            124700000,
+            108850000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 180.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "09492a97-cc6d-4c7c-b0b5-d97d224f5b7d": {
+          "number": "4",
+          "net": "+5V",
+          "position": [
+            122800000,
+            108850000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 180.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "b62ad47d-c292-4051-ba49-559bf6b70388": {
+          "number": "5",
+          "net": "N_R98_2",
+          "position": [
+            122800000,
+            109500000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 180.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "84c44a35-3a09-4a7d-ba6c-350610244e4f": {
+          "number": "6",
+          "net": "N_R101_1",
+          "position": [
+            122800000,
+            110150000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 180.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:SOT-363_SC-70-6_RR",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/96d357b6-a085-5b11-9cfd-e690177422b8",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/SOT-363_SC-70-6.step",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "Q1": {
+      "reference": "Q1",
+      "value": "CJ3439KDW",
+      "position": [
+        126000000,
+        123750000
+      ],
+      "orientation": -90.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "81fc537b-4f31-452e-a4d6-1a37dadb832c": {
+          "number": "1",
+          "net": "GND",
+          "position": [
+            126650000,
+            122800000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "0166a1e1-00b0-4104-bc6f-bf43997309ab": {
+          "number": "2",
+          "net": "N_R19_2",
+          "position": [
+            126000000,
+            122800000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "8ba9db2c-9e67-49e8-8140-cf9a5adf1281": {
+          "number": "3",
+          "net": "N_Q1B_3",
+          "position": [
+            125350000,
+            122800000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "173ea9f1-61a9-4ea9-b22a-f05455070759": {
+          "number": "4",
+          "net": "+7.5V",
+          "position": [
+            125350000,
+            124700000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "35828a24-8fd4-43cd-b191-5b8a358c6fd3": {
+          "number": "5",
+          "net": "N_R20_2",
+          "position": [
+            126000000,
+            124700000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "918aca52-ed9a-47e6-9c70-86da5020a80d": {
+          "number": "6",
+          "net": "N_R20_2",
+          "position": [
+            126650000,
+            124700000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:SOT-363_SC-70-6_RR",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/467c33fc-7b6d-5be4-8240-0d2755a5f561/078e26ec-ec5c-5004-868a-144a1fbe09a4",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/SOT-363_SC-70-6.step",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "L3": {
+      "reference": "L3",
+      "value": "240nH",
+      "position": [
+        150900000,
+        121200000
+      ],
+      "orientation": -90.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "c9e541de-b45f-4b00-8c88-0767c8ca2681": {
+          "number": "1",
+          "net": "N_R8_1",
+          "position": [
+            150900000,
+            120400000
+          ],
+          "size": [
+            800000,
+            1800000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.2,
+          "maskMargin": "None"
+        },
+        "7917384f-64db-4ba9-b1b1-0960c154a3c6": {
+          "number": "2",
+          "net": "VPP",
+          "position": [
+            150900000,
+            122000000
+          ],
+          "size": [
+            800000,
+            1800000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.2,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:L_Bourns_SRN2012",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/b373c216-9fa5-5a1e-a6d5-cfa6d1282a18",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/L_1206_3216Metric.step",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.6875,
+            1.125,
+            0.75
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "L4": {
+      "reference": "L4",
+      "value": "22\u00b5H",
+      "position": [
+        159500000,
+        131250000
+      ],
+      "orientation": 0.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "c4edc2a2-3660-40ce-ae4c-4a1265eba201": {
+          "number": "1",
+          "net": "N_C17_2",
+          "position": [
+            156300000,
+            131250000
+          ],
+          "size": [
+            1500000,
+            2200000
+          ],
+          "orientation": 0.0,
+          "shape": 1,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "6517c1be-46df-486e-bd6d-8157b58deec4": {
+          "number": "2",
+          "net": "N_R11_1",
+          "position": [
+            162700000,
+            131250000
+          ],
+          "size": [
+            1500000,
+            2200000
+          ],
+          "orientation": 0.0,
+          "shape": 1,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:L_Eaton_DR74_220_R",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b691e5db-65dd-5bde-b591-124c57215619/63750584-321b-588a-94bc-7345cbb3b0ef",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/L_7.3x7.3_H3.5.wrl",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.9620253165,
+            1.0410958904,
+            1.2428571429
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "L2": {
+      "reference": "L2",
+      "value": "22\u00b5H",
+      "position": [
+        159250000,
+        107250000
+      ],
+      "orientation": 180.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "6710cd94-5f94-485e-9b69-afcae69927af": {
+          "number": "1",
+          "net": "+12V",
+          "position": [
+            162450000,
+            107250000
+          ],
+          "size": [
+            1500000,
+            2200000
+          ],
+          "orientation": 180.0,
+          "shape": 1,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "06f8c1ba-caff-4c4a-9890-e896aa287871": {
+          "number": "2",
+          "net": "N_D7_2",
+          "position": [
+            156050000,
+            107250000
+          ],
+          "size": [
+            1500000,
+            2200000
+          ],
+          "orientation": 180.0,
+          "shape": 1,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:L_Eaton_DR74_220_R",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/e996c3d4-bb07-5a24-ace7-6bc885147ef4",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/L_7.3x7.3_H3.5.wrl",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.9620253165,
+            1.0410958904,
+            1.2428571429
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "Q7": {
+      "reference": "Q7",
+      "value": "HSSK8811",
+      "position": [
+        117000000,
+        109250000
+      ],
+      "orientation": 90.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "a3b0ca78-3b3d-4021-a378-83689d2bdba0": {
+          "number": "1",
+          "net": "N_R78_2",
+          "position": [
+            116350000,
+            110200000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 90.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "8c03b166-07b8-44b6-b94c-5a1e6a149f02": {
+          "number": "2",
+          "net": "TBEN",
+          "position": [
+            117000000,
+            110200000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 90.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "bef5744b-9ce5-4224-a51c-b80fa7157d56": {
+          "number": "3",
+          "net": "J1962-3",
+          "position": [
+            117650000,
+            110200000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 90.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "2631d4e4-8b55-4724-8a58-71c39be55a0f": {
+          "number": "4",
+          "net": "N_R79_2",
+          "position": [
+            117650000,
+            108300000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 90.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "0a374a97-26b1-4ea7-85f0-1696d61f87fc": {
+          "number": "5",
+          "net": "TBEN",
+          "position": [
+            117000000,
+            108300000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 90.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "bdec340d-73d9-419b-9c7e-df03f408d074": {
+          "number": "6",
+          "net": "J1962-11",
+          "position": [
+            116350000,
+            108300000
+          ],
+          "size": [
+            650000,
+            400000
+          ],
+          "orientation": 90.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:SOT-363_SC-70-6_RR",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/96a36b63-7424-5dd9-b98a-aa56a834b9c4/bfad871f-16e9-5e4d-9f09-9408125923b8",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/SOT-363_SC-70-6.step",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "L1": {
+      "reference": "L1",
+      "value": "22\u00b5H",
+      "position": [
+        141250000,
+        107250000
+      ],
+      "orientation": 0.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "1e002f24-635b-4fa6-9330-6874dbb61c2e": {
+          "number": "1",
+          "net": "N_C5_2",
+          "position": [
+            138050000,
+            107250000
+          ],
+          "size": [
+            1500000,
+            2200000
+          ],
+          "orientation": 0.0,
+          "shape": 1,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "af668ed0-6923-46de-b9f7-16fa28a62652": {
+          "number": "2",
+          "net": "N_R2_1",
+          "position": [
+            144450000,
+            107250000
+          ],
+          "size": [
+            1500000,
+            2200000
+          ],
+          "orientation": 0.0,
+          "shape": 1,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:L_Eaton_DR74_220_R",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/8b2918f6-133a-526b-9e0d-76336bfda048/ddf8f5b8-9150-5a48-bbb7-bd105fbd5384",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/L_7.3x7.3_H3.5.wrl",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.9620253165,
+            1.0410958904,
+            1.2428571429
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "L6": {
+      "reference": "L6",
+      "value": "22\u00b5H",
+      "position": [
+        191905000,
+        105960000
+      ],
+      "orientation": 0.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "3e91fac5-9a6f-4969-8327-a46db4eeef6f": {
+          "number": "1",
+          "net": "N_C21_2",
+          "position": [
+            188705000,
+            105960000
+          ],
+          "size": [
+            1500000,
+            2200000
+          ],
+          "orientation": 0.0,
+          "shape": 1,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        },
+        "342ac0ab-e0c7-4f19-a2dc-4a11ea1a2f5d": {
+          "number": "2",
+          "net": "N_R14_1",
+          "position": [
+            195105000,
+            105960000
+          ],
+          "size": [
+            1500000,
+            2200000
+          ],
+          "orientation": 0.0,
+          "shape": 1,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.25,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:L_Eaton_DR74_220_R",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/c458c47b-e020-51c7-843f-83257f39000b/70a0d55f-e92f-5513-a5c5-de1e432810e2",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/L_7.3x7.3_H3.5.wrl",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.9620253165,
+            1.0410958904,
+            1.2428571429
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "C14": {
+      "reference": "C14",
+      "value": "22\u03bcF",
+      "position": [
+        157750000,
+        116500000
+      ],
+      "orientation": 0.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "523ed1a0-2fa8-4cf1-9632-3e334dfda75e": {
+          "number": "1",
+          "net": "N_R8_1",
+          "position": [
+            156050000,
+            116500000
+          ],
+          "size": [
+            1200000,
+            2500000
+          ],
+          "orientation": 0.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.2,
+          "maskMargin": "None"
+        },
+        "d18ced44-cf86-4078-8ec0-249127b8256e": {
+          "number": "2",
+          "net": "GND",
+          "position": [
+            159450000,
+            116500000
+          ],
+          "size": [
+            1200000,
+            2500000
+          ],
+          "orientation": 0.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.2,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:C_1210_3225_TDK_22u50V",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/a397eed8-ac42-58b2-b1c0-47d356686cf5",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/C_1210_3225Metric.step",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.125,
+            1.12,
+            1.12
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  "attributes": {},
+  "referenceTextPositions": {
+    "L5": [
+      325950000,
+      276400000,
+      0.0
+    ],
+    "L3": [
+      31700000,
+      272100000,
+      0.0
+    ],
+    "C15": [
+      276750000,
+      -37750000,
+      90.0
+    ],
+    "C14": [
+      317500000,
+      230500000,
+      0.0
+    ]
+  },
+  "removedCopper": {
+    "04918ff8-3af3-456d-8544-ad9bd1b401f3": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        158000000,
+        115225000
+      ],
+      "end": [
+        156475000,
+        116750000
+      ],
+      "width": 200000,
+      "layer": 0,
+      "locked": false
+    },
+    "2d740e8e-92cd-43e6-8a4b-36dbca194000": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        156475000,
+        116750000
+      ],
+      "end": [
+        156875000,
+        116750000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "a4d17a5e-8259-4e63-b35f-ae36bef85853": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        156875000,
+        116750000
+      ],
+      "end": [
+        157175000,
+        116450000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "d405e849-3b1c-4cbc-855a-22b9e12801f0": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        156475000,
+        119000000
+      ],
+      "end": [
+        156475000,
+        116750000
+      ],
+      "width": 200000,
+      "layer": 0,
+      "locked": false
+    },
+    "a5ddcd48-b54f-49c3-b3d2-9fc9464abe3b": {
+      "kind": "PCB_TRACK",
+      "net": "VBB",
+      "start": [
+        159281000,
+        140687500
+      ],
+      "end": [
+        159281300,
+        140687200
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "7dc53d2c-f9a2-41a5-928d-c56a6b749a2a": {
+      "kind": "PCB_TRACK",
+      "net": "RX7_BIAS_EN",
+      "start": [
+        133463900,
+        143712500
+      ],
+      "end": [
+        134250000,
+        142926400
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "8c4d73ec-3007-4ba7-aeb9-8640b5c1d3a7": {
+      "kind": "PCB_TRACK",
+      "net": "RX7_BIAS_EN",
+      "start": [
+        133112500,
+        143712500
+      ],
+      "end": [
+        133112500,
+        143750000
+      ],
+      "width": 200000,
+      "layer": 0,
+      "locked": false
+    },
+    "033895af-94b5-4106-b3ce-737391dfe257": {
+      "kind": "PCB_TRACK",
+      "net": "N_R8_1",
+      "start": [
+        153512500,
+        117894000
+      ],
+      "end": [
+        153500000,
+        117906500
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "a89618be-e445-4b3f-9625-b1234c5c9647": {
+      "kind": "PCB_TRACK",
+      "net": "N_R8_1",
+      "start": [
+        153500000,
+        117906500
+      ],
+      "end": [
+        153500000,
+        119037500
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    }
+  },
+  "addedCopper": {
+    "11c8e9b2-1a35-5d25-961d-d3b9410bd650": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        126950000,
+        122612500
+      ],
+      "end": [
+        126650000,
+        122800000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "daacaee9-9238-5883-912b-8aceb8758275": {
+      "kind": "PCB_TRACK",
+      "net": "N_R19_2",
+      "start": [
+        126000000,
+        122612500
+      ],
+      "end": [
+        126000000,
+        122800000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "cd96c428-41b1-5cda-af67-62215ca28963": {
+      "kind": "PCB_TRACK",
+      "net": "N_Q1B_3",
+      "start": [
+        125050000,
+        122612500
+      ],
+      "end": [
+        125350000,
+        122800000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "3409430a-70e1-525c-875f-cc3c23475cda": {
+      "kind": "PCB_TRACK",
+      "net": "+7.5V",
+      "start": [
+        125050000,
+        124887500
+      ],
+      "end": [
+        125350000,
+        124700000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "c5c7efb3-8381-5ce0-be28-4d92a8f6475c": {
+      "kind": "PCB_TRACK",
+      "net": "N_R20_2",
+      "start": [
+        126000000,
+        124887500
+      ],
+      "end": [
+        126000000,
+        124700000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "efbf47d1-10cd-59ab-8231-a5ca8016b44b": {
+      "kind": "PCB_TRACK",
+      "net": "N_R20_2",
+      "start": [
+        126950000,
+        124887500
+      ],
+      "end": [
+        126650000,
+        124700000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "d6e0a6a2-dedf-5bc5-8bbd-a32aab15b213": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        124887500,
+        110450000
+      ],
+      "end": [
+        124700000,
+        110150000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "b4787c90-765d-5b63-9ca3-c0faeba2d396": {
+      "kind": "PCB_TRACK",
+      "net": "N_R99_2",
+      "start": [
+        124887500,
+        109500000
+      ],
+      "end": [
+        124700000,
+        109500000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "4fe28d85-6b93-5b37-bbf6-59b82c504dd9": {
+      "kind": "PCB_TRACK",
+      "net": "N_R100_1",
+      "start": [
+        124887500,
+        108550000
+      ],
+      "end": [
+        124700000,
+        108850000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "31f6b92f-e877-5215-9353-9d585c4ccc0e": {
+      "kind": "PCB_TRACK",
+      "net": "+5V",
+      "start": [
+        122612500,
+        108550000
+      ],
+      "end": [
+        122800000,
+        108850000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "400c3e9f-73ae-5210-a070-3d8a98f55289": {
+      "kind": "PCB_TRACK",
+      "net": "N_R98_2",
+      "start": [
+        122612500,
+        109500000
+      ],
+      "end": [
+        122800000,
+        109500000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "810163f8-a8ad-5d7f-9ad9-4668e4d785ec": {
+      "kind": "PCB_TRACK",
+      "net": "N_R101_1",
+      "start": [
+        122612500,
+        110450000
+      ],
+      "end": [
+        122800000,
+        110150000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "5904d4ab-19e1-5616-9085-35c7ae7a82ef": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        133112500,
+        142800000
+      ],
+      "end": [
+        133300000,
+        143100000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "90b4ad3f-93ea-5a64-8d69-b9b0bf22791a": {
+      "kind": "PCB_TRACK",
+      "net": "RX7_BIAS_EN",
+      "start": [
+        133112500,
+        143750000
+      ],
+      "end": [
+        133300000,
+        143750000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "92495d02-fba8-5f3e-a045-f38a45a1b095": {
+      "kind": "PCB_TRACK",
+      "net": "RX7_BIAS",
+      "start": [
+        133112500,
+        144700000
+      ],
+      "end": [
+        133300000,
+        144400000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "e9ffbd7f-6331-557e-aaad-f55305a99323": {
+      "kind": "PCB_TRACK",
+      "net": "+5V",
+      "start": [
+        135387500,
+        144700000
+      ],
+      "end": [
+        135200000,
+        144400000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "12c99293-adeb-5b34-b82b-0b1e924b5e58": {
+      "kind": "PCB_TRACK",
+      "net": "N_R76_2",
+      "start": [
+        135387500,
+        143750000
+      ],
+      "end": [
+        135200000,
+        143750000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "4382be80-64f4-56b4-93ec-d5784ca47170": {
+      "kind": "PCB_TRACK",
+      "net": "N_R76_2",
+      "start": [
+        135387500,
+        142800000
+      ],
+      "end": [
+        135200000,
+        143100000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "79f1ef51-754c-5ccc-a798-7c0efc6befed": {
+      "kind": "PCB_TRACK",
+      "net": "N_R78_2",
+      "start": [
+        116050000,
+        110387500
+      ],
+      "end": [
+        116350000,
+        110200000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "ed5c07f8-f77f-54c5-80a7-f9f8b43e4e9d": {
+      "kind": "PCB_TRACK",
+      "net": "TBEN",
+      "start": [
+        117000000,
+        110387500
+      ],
+      "end": [
+        117000000,
+        110200000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "36780ab7-6ffe-521d-9781-85d112ff8c4c": {
+      "kind": "PCB_TRACK",
+      "net": "J1962-3",
+      "start": [
+        117950000,
+        110387500
+      ],
+      "end": [
+        117650000,
+        110200000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "da980b08-e8f1-5a3f-b1bb-9c4323ef0286": {
+      "kind": "PCB_TRACK",
+      "net": "N_R79_2",
+      "start": [
+        117950000,
+        108112500
+      ],
+      "end": [
+        117650000,
+        108300000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "1611386a-204c-5acb-b470-cc7ef81f4d5c": {
+      "kind": "PCB_TRACK",
+      "net": "TBEN",
+      "start": [
+        117000000,
+        108112500
+      ],
+      "end": [
+        117000000,
+        108300000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "ed161549-db77-5dae-a77d-24bdcd8a4c08": {
+      "kind": "PCB_TRACK",
+      "net": "J1962-11",
+      "start": [
+        116050000,
+        108112500
+      ],
+      "end": [
+        116350000,
+        108300000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "f6fe0c72-fc48-5797-ac42-445df9c15bc3": {
+      "kind": "PCB_TRACK",
+      "net": "RX7_BIAS_EN",
+      "start": [
+        133112500,
+        143750000
+      ],
+      "end": [
+        134250000,
+        143750000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "44ee2fe5-4933-5d38-a29b-865c7bf3b44e": {
+      "kind": "PCB_TRACK",
+      "net": "RX7_BIAS_EN",
+      "start": [
+        134250000,
+        143750000
+      ],
+      "end": [
+        134250000,
+        142926400
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "b6609939-2175-53b0-bb1c-9753e4ad6ece": {
+      "kind": "PCB_TRACK",
+      "net": "N_R8_1",
+      "start": [
+        153525000,
+        116750000
+      ],
+      "end": [
+        156050000,
+        116500000
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "49877d43-152e-5462-94e1-67ac1f53d6be": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        159450000,
+        116500000
+      ],
+      "end": [
+        158000000,
+        115225000
+      ],
+      "width": 200000,
+      "layer": 0,
+      "locked": false
+    },
+    "4d6badba-16ee-5e55-8d9f-9fe30dcb55f9": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        157175000,
+        116450000
+      ],
+      "end": [
+        159450000,
+        116500000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "375af946-ccfe-55e7-8a07-e925d4b43bb2": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        156475000,
+        119000000
+      ],
+      "end": [
+        156900000,
+        117650000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "618d0659-3b7d-5397-9c96-4730fea8c581": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        156900000,
+        117650000
+      ],
+      "end": [
+        157175000,
+        116450000
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "cb8009ef-e8ae-5393-9494-b52d008ff62b": {
+      "kind": "PCB_TRACK",
+      "net": "N_R8_1",
+      "start": [
+        153500000,
+        119037500
+      ],
+      "end": [
+        152500000,
+        120237500
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "69e47657-806b-5b83-8135-69d4ab4465c4": {
+      "kind": "PCB_TRACK",
+      "net": "N_R8_1",
+      "start": [
+        152500000,
+        120237500
+      ],
+      "end": [
+        152150000,
+        120387500
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "b968ce2d-65bd-550e-9d8c-31a4f5351cc5": {
+      "kind": "PCB_TRACK",
+      "net": "N_R8_1",
+      "start": [
+        152150000,
+        120387500
+      ],
+      "end": [
+        150900000,
+        120400000
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "65a8d8c5-d59a-5897-9f5c-0f0f68c89376": {
+      "kind": "PCB_TRACK",
+      "net": "VPP",
+      "start": [
+        153500000,
+        121962500
+      ],
+      "end": [
+        151600000,
+        123862500
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "73eb93cf-b351-5d2c-baf6-93cff4cf4154": {
+      "kind": "PCB_TRACK",
+      "net": "VPP",
+      "start": [
+        151600000,
+        123862500
+      ],
+      "end": [
+        151150000,
+        123962500
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "88d11d24-171b-5294-b909-aaa3bce8b221": {
+      "kind": "PCB_TRACK",
+      "net": "VPP",
+      "start": [
+        151150000,
+        123962500
+      ],
+      "end": [
+        150850000,
+        123862500
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "416393cb-19fa-5994-9cce-e5482212c11d": {
+      "kind": "PCB_TRACK",
+      "net": "VPP",
+      "start": [
+        150850000,
+        123862500
+      ],
+      "end": [
+        150550000,
+        123562500
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "95031633-df97-5930-9c26-a9fb0eded27b": {
+      "kind": "PCB_TRACK",
+      "net": "VPP",
+      "start": [
+        150550000,
+        123562500
+      ],
+      "end": [
+        150500000,
+        123212500
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "cbbd4d08-7049-5bd4-88d8-7e2ac9e1b2f9": {
+      "kind": "PCB_TRACK",
+      "net": "VPP",
+      "start": [
+        150500000,
+        123212500
+      ],
+      "end": [
+        150600000,
+        122662500
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "b29cc6c9-2230-53f1-b44d-38497388191b": {
+      "kind": "PCB_TRACK",
+      "net": "VPP",
+      "start": [
+        150600000,
+        122662500
+      ],
+      "end": [
+        150900000,
+        122000000
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "06cbf3ec-3021-5113-89e2-cb9dc4d4e256": {
+      "kind": "PCB_TRACK",
+      "net": "N_R11_1",
+      "start": [
+        162237500,
+        139600000
+      ],
+      "end": [
+        162175000,
+        139200000
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "78f485ca-65c9-5fbf-ad36-5006b18b5c50": {
+      "kind": "PCB_TRACK",
+      "net": "VBB",
+      "start": [
+        159312500,
+        139600000
+      ],
+      "end": [
+        161912500,
+        140550000
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "29192686-d1b8-5904-980d-1ecd48d26248": {
+      "kind": "PCB_TRACK",
+      "net": "VBB",
+      "start": [
+        161912500,
+        140550000
+      ],
+      "end": [
+        162612500,
+        140500000
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "6afd8859-b286-5336-823b-c21bb75c1e00": {
+      "kind": "PCB_TRACK",
+      "net": "VBB",
+      "start": [
+        162612500,
+        140500000
+      ],
+      "end": [
+        162812500,
+        140350000
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "ace23e75-d38d-5426-abc0-842f4b475add": {
+      "kind": "PCB_TRACK",
+      "net": "VBB",
+      "start": [
+        162812500,
+        140350000
+      ],
+      "end": [
+        163775000,
+        139200000
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    }
+  },
+  "moduleFiles": {
+    "footprints.pretty/C_1210_3225_TDK_22u50V.kicad_mod": "3feadd9235baa07dec7d58cc16ba2ec628844c3792f8dbf4bc2e260fb2113240",
+    "footprints.pretty/SOT-363_SC-70-6_RR.kicad_mod": "29e30645aa6560854973f0a84c18ccbc55e023c0a0add6c5d2d7375b2c26e2a1",
+    "footprints.pretty/L_Bourns_SRN2012.kicad_mod": "7fca9a0c72f1a0c8ca4350c7d5949db4639cda8427e53423a19771d776a7d899",
+    "footprints.pretty/L_Eaton_DR74_220_R.kicad_mod": "7eb851d3a73364601636d01dc95dc57728c1e98261cb96c49e4d810120d77d1b"
+  },
+  "baselinePcbSha256": "6875b7628b2ace4bbad731ba96508a1c3dd032dab3aefff2669a66251b7410a1",
+  "candidatePcbSha256": "83ac625f2283aa789455802fa4367dbc786c7a2f0ae6c87ffc91c8959a40ac15",
+  "annotationDeltas": [
+    {
+      "file": "22_sd-logger.kicad_sch",
+      "before": "Future status indication reuses existing ACT_LED / GPIO13.",
+      "after": "ACT_LED / GPIO13 is reserved for the supervised health heartbeat.\nNo SD/activity writers, autonomous blink, PWM or DMA may drive this pin."
+    }
+  ]
+}

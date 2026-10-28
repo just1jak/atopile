@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "pcbSha256": "a2cb3d5e82d57b75eb0caab103d6f82529d8543b182aa9fc80e320bfe61c2fd5",
+  "previousPcbSha256": "974231631b323828ea5a2ac47578b0f7cad72a31981915fd154d734c6b78710e",
+  "checks": {
+    "onlyC61FootprintTransform": true,
+    "exactTwoUnlockedC61BranchRemovals": true,
+    "everyRetainedCopperObjectExact": true,
+    "exactFourTracksAndTwoVias": true,
+    "bothNewViasFilledCapped": true,
+    "nineZoneDefinitionsExact": true,
+    "r96LabelAtDeclaredPosition": true
+  },
+  "addedCopper": [
+    {
+      "uuid": "c08e9057-606e-4c5f-ac7c-7bd8792cef0a",
+      "signature": {
+        "kind": "PCB_TRACK",
+        "net": "GND",
+        "start": [
+          193000000,
+          124800000
+        ],
+        "end": [
+          191500000,
+          124800000
+        ],
+        "width": 500000,
+        "layer": 0,
+        "locked": false
+      }
+    },
+    {
+      "uuid": "0d84c9e3-089a-481a-9a6c-08a004530ba8",
+      "signature": {
+        "kind": "PCB_VIA",
+        "net": "GND",
+        "start": [
+          191500000,
+          124800000
+        ],
+        "end": [
+          191500000,
+          124800000
+        ],
+        "width": 600000,
+        "layer": 0,
+        "locked": false,
+        "drill": 300000,
+        "via_type": 4,
+        "top": 0,
+        "bottom": 2,
+        "front_tenting": 0,
+        "back_tenting": 0
+      }
+    },
+    {
+      "uuid": "ae669287-ce1d-4fc4-9ba1-59f23c935a98",
+      "signature": {
+        "kind": "PCB_TRACK",
+        "net": "SD_3V3",
+        "start": [
+          193000000,
+          129199999
+        ],
+        "end": [
+          194000000,
+          129199999
+        ],
+        "width": 500000,
+        "layer": 0,
+        "locked": false
+      }
+    },
+    {
+      "uuid": "ce800b43-9a3a-4772-8237-839ca61e2e30",
+      "signature": {
+        "kind": "PCB_VIA",
+        "net": "SD_3V3",
+        "start": [
+          194000000,
+          129199999
+        ],
+        "end": [
+          194000000,
+          129199999
+        ],
+        "width": 600000,
+        "layer": 0,
+        "locked": false,
+        "drill": 300000,
+        "via_type": 4,
+        "top": 0,
+        "bottom": 2,
+        "front_tenting": 0,
+        "back_tenting": 0
+      }
+    },
+    {
+      "uuid": "28772c12-03c9-41b5-8c91-31ff3e549cab",
+      "signature": {
+        "kind": "PCB_TRACK",
+        "net": "SD_3V3",
+        "start": [
+          194000000,
+          129199999
+        ],
+        "end": [
+          194100000,
+          129300000
+        ],
+        "width": 500000,
+        "layer": 2,
+        "locked": false
+      }
+    },
+    {
+      "uuid": "f827d28a-767b-4610-bfcd-e70de027d66e",
+      "signature": {
+        "kind": "PCB_TRACK",
+        "net": "SD_3V3",
+        "start": [
+          194100000,
+          129300000
+        ],
+        "end": [
+          194100000,
+          131250000
+        ],
+        "width": 500000,
+        "layer": 2,
+        "locked": false
+      }
+    }
+  ],
+  "removedCopper": [
+    "b2e77e8c-5db9-4c4b-b5df-6fa86e1b60ba",
+    "ba39bf73-e299-4de0-a91a-89bb4415e8a3"
+  ],
+  "placement": {
+    "reference": "C61",
+    "side": "F.Cu",
+    "xMm": 193,
+    "yMm": 127,
+    "orientationDegrees": 90
+  },
+  "qualification": "CAD checks only; actual enclosure/thermal/assembly fit remains to be verified."
+}

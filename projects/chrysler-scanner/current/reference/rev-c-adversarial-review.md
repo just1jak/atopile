@@ -1,5 +1,5 @@
-# Revision C final bounded-prototype review
+# Final requested-refinement review - 2026-10-28
 
-No remaining P1 schematic or PCB findings. Fresh all-severity ERC and full DRC/parity are clean. The combined historical-safety and actual procurement-delta audit passes for the exact CAD hashes in rev-c-adversarial-review.json.
+No remaining P1 schematic or PCB findings. All-severity native ERC and full DRC/parity are clean; full native connectivity passes. All 130 combined checks pass, including the frozen prior release and exact actual refinement delta. All 380 locked copper objects and all retained copper/via flags are exact.
 
-The independent delta review is rev-c-procurement-independent-review.md/.json; its scope is layered over earlier reviews. See rev-c-procurement-review.md for exact parts, physical exceptions and closure evidence. This is conditional bounded-prototype acceptance. Hardware/firmware integration, C14 effective-capacitance/stability, thermal/fault/ESD behavior, assembly fillets, actual connector/screw/enclosure fit, stackup and filled/capped processing gates remain as documented. No tested/automotive-qualified or production-qualified operation is claimed.
+Q8-Q11 3.3 V compatibility, Eaton recommended lands and H1 screw clearance changes are accepted for the bounded prototype. Independent scope, exact CAD hashes and physical/firmware qualification limits are recorded in rev-c-refinement-independent-review.json/.md and rev-c-refinement-review.md. Primary sealing closes the independent report's earlier pending combined-gate observation. Package export/checksum/placement reconciliation remains a separate gate in the exporter; no order or upload is performed.

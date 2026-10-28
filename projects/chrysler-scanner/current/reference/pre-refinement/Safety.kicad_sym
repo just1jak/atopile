@@ -1,0 +1,115 @@
+(kicad_symbol_lib (version 20250114) (generator kicad_symbol_editor) (symbol "U21" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "U21" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "TMUX1511PWR" (at 0 0 0) (effects (font (size 1 1)))) (symbol "U21_0_1" (rectangle (start -15.24 17.78) (end 15.24 -17.78) (stroke (width .254) (type default)) (fill (type background)))) (symbol "U21_1_1" (pin passive line (at -20.32 15.240000000000002 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at -20.32 10.160000000000002 0) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))(pin passive line (at -20.32 5.080000000000002 0) (length 5.08) (name "3" (effects (font (size 1 1)))) (number "3" (effects (font (size 1 1)))))(pin passive line (at -20.32 1.7763568394002505e-15 0) (length 5.08) (name "4" (effects (font (size 1 1)))) (number "4" (effects (font (size 1 1)))))(pin passive line (at -20.32 -5.079999999999998 0) (length 5.08) (name "5" (effects (font (size 1 1)))) (number "5" (effects (font (size 1 1)))))(pin passive line (at -20.32 -10.159999999999997 0) (length 5.08) (name "6" (effects (font (size 1 1)))) (number "6" (effects (font (size 1 1)))))(pin power_in line (at -20.32 -15.239999999999998 0) (length 5.08) (name "7" (effects (font (size 1 1)))) (number "7" (effects (font (size 1 1)))))(pin passive line (at 20.32 15.240000000000002 180) (length 5.08) (name "8" (effects (font (size 1 1)))) (number "8" (effects (font (size 1 1)))))(pin passive line (at 20.32 10.160000000000002 180) (length 5.08) (name "9" (effects (font (size 1 1)))) (number "9" (effects (font (size 1 1)))))(pin passive line (at 20.32 5.080000000000002 180) (length 5.08) (name "10" (effects (font (size 1 1)))) (number "10" (effects (font (size 1 1)))))(pin passive line (at 20.32 1.7763568394002505e-15 180) (length 5.08) (name "11" (effects (font (size 1 1)))) (number "11" (effects (font (size 1 1)))))(pin passive line (at 20.32 -5.079999999999998 180) (length 5.08) (name "12" (effects (font (size 1 1)))) (number "12" (effects (font (size 1 1)))))(pin passive line (at 20.32 -10.159999999999997 180) (length 5.08) (name "13" (effects (font (size 1 1)))) (number "13" (effects (font (size 1 1)))))(pin power_in line (at 20.32 -15.239999999999998 180) (length 5.08) (name "14" (effects (font (size 1 1)))) (number "14" (effects (font (size 1 1)))))))(symbol "U22" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "U22" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "LTC6993HS6-2#TRMPBF" (at 0 0 0) (effects (font (size 1 1)))) (symbol "U22_0_1" (rectangle (start -15.24 7.62) (end 15.24 -7.62) (stroke (width .254) (type default)) (fill (type background)))) (symbol "U22_1_1" (pin passive line (at -20.32 5.08 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin power_in line (at -20.32 0.0 0) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))(pin passive line (at -20.32 -5.08 0) (length 5.08) (name "3" (effects (font (size 1 1)))) (number "3" (effects (font (size 1 1)))))(pin passive line (at 20.32 5.08 180) (length 5.08) (name "4" (effects (font (size 1 1)))) (number "4" (effects (font (size 1 1)))))(pin power_in line (at 20.32 0.0 180) (length 5.08) (name "5" (effects (font (size 1 1)))) (number "5" (effects (font (size 1 1)))))(pin output line (at 20.32 -5.08 180) (length 5.08) (name "6" (effects (font (size 1 1)))) (number "6" (effects (font (size 1 1)))))))(symbol "U23" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "U23" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "SN74LVC1G11DBVR" (at 0 0 0) (effects (font (size 1 1)))) (symbol "U23_0_1" (rectangle (start -15.24 7.62) (end 15.24 -7.62) (stroke (width .254) (type default)) (fill (type background)))) (symbol "U23_1_1" (pin passive line (at -20.32 5.08 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin power_in line (at -20.32 0.0 0) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))(pin passive line (at -20.32 -5.08 0) (length 5.08) (name "3" (effects (font (size 1 1)))) (number "3" (effects (font (size 1 1)))))(pin output line (at 20.32 5.08 180) (length 5.08) (name "4" (effects (font (size 1 1)))) (number "4" (effects (font (size 1 1)))))(pin power_in line (at 20.32 0.0 180) (length 5.08) (name "5" (effects (font (size 1 1)))) (number "5" (effects (font (size 1 1)))))(pin passive line (at 20.32 -5.08 180) (length 5.08) (name "6" (effects (font (size 1 1)))) (number "6" (effects (font (size 1 1)))))))(symbol "U24" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "U24" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "TLV803EA30DBZR" (at 0 0 0) (effects (font (size 1 1)))) (symbol "U24_0_1" (rectangle (start -15.24 5.08) (end 15.24 -5.08) (stroke (width .254) (type default)) (fill (type background)))) (symbol "U24_1_1" (pin power_in line (at -20.32 2.54 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin open_collector line (at -20.32 -2.54 0) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))(pin power_in line (at 20.32 2.54 180) (length 5.08) (name "3" (effects (font (size 1 1)))) (number "3" (effects (font (size 1 1)))))))(symbol "R115" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "R115" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "100k 0.1% 25ppm" (at 0 0 0) (effects (font (size 1 1)))) (symbol "R115_0_1" (rectangle (start -2.54 1.016) (end 2.54 -1.016) (stroke (width .254) (type default)) (fill (type none)))) (symbol "R115_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "R116" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "R116" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "191k 1%" (at 0 0 0) (effects (font (size 1 1)))) (symbol "R116_0_1" (rectangle (start -2.54 1.016) (end 2.54 -1.016) (stroke (width .254) (type default)) (fill (type none)))) (symbol "R116_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "R117" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "R117" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "100k 1%" (at 0 0 0) (effects (font (size 1 1)))) (symbol "R117_0_1" (rectangle (start -2.54 1.016) (end 2.54 -1.016) (stroke (width .254) (type default)) (fill (type none)))) (symbol "R117_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "R118" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "R118" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "10k 1%" (at 0 0 0) (effects (font (size 1 1)))) (symbol "R118_0_1" (rectangle (start -2.54 1.016) (end 2.54 -1.016) (stroke (width .254) (type default)) (fill (type none)))) (symbol "R118_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "R119" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "R119" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "10k 1%" (at 0 0 0) (effects (font (size 1 1)))) (symbol "R119_0_1" (rectangle (start -2.54 1.016) (end 2.54 -1.016) (stroke (width .254) (type default)) (fill (type none)))) (symbol "R119_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "R120" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "R120" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "100k 1%" (at 0 0 0) (effects (font (size 1 1)))) (symbol "R120_0_1" (rectangle (start -2.54 1.016) (end 2.54 -1.016) (stroke (width .254) (type default)) (fill (type none)))) (symbol "R120_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "R121" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "R121" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "100k 1%" (at 0 0 0) (effects (font (size 1 1)))) (symbol "R121_0_1" (rectangle (start -2.54 1.016) (end 2.54 -1.016) (stroke (width .254) (type default)) (fill (type none)))) (symbol "R121_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "R122" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "R122" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "100k 1%" (at 0 0 0) (effects (font (size 1 1)))) (symbol "R122_0_1" (rectangle (start -2.54 1.016) (end 2.54 -1.016) (stroke (width .254) (type default)) (fill (type none)))) (symbol "R122_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "R123" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "R123" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "1k 1W 1%" (at 0 0 0) (effects (font (size 1 1)))) (symbol "R123_0_1" (rectangle (start -2.54 1.016) (end 2.54 -1.016) (stroke (width .254) (type default)) (fill (type none)))) (symbol "R123_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "C62" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "C62" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "100nF 16V X7R" (at 0 0 0) (effects (font (size 1 1)))) (symbol "C62_0_1" (polyline (pts (xy -1.27 -2.54) (xy -1.27 2.54)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 -2.54) (xy 1.27 2.54)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy -2.54 0) (xy -1.27 0)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 0) (xy 2.54 0)) (stroke (width .254) (type default)) (fill (type none)))) (symbol "C62_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "C63" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "C63" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "100nF 16V X7R" (at 0 0 0) (effects (font (size 1 1)))) (symbol "C63_0_1" (polyline (pts (xy -1.27 -2.54) (xy -1.27 2.54)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 -2.54) (xy 1.27 2.54)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy -2.54 0) (xy -1.27 0)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 0) (xy 2.54 0)) (stroke (width .254) (type default)) (fill (type none)))) (symbol "C63_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "C64" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "C64" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "100nF 16V X7R" (at 0 0 0) (effects (font (size 1 1)))) (symbol "C64_0_1" (polyline (pts (xy -1.27 -2.54) (xy -1.27 2.54)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 -2.54) (xy 1.27 2.54)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy -2.54 0) (xy -1.27 0)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 0) (xy 2.54 0)) (stroke (width .254) (type default)) (fill (type none)))) (symbol "C64_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "C65" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "C65" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "100nF 16V X7R" (at 0 0 0) (effects (font (size 1 1)))) (symbol "C65_0_1" (polyline (pts (xy -1.27 -2.54) (xy -1.27 2.54)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 -2.54) (xy 1.27 2.54)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy -2.54 0) (xy -1.27 0)) (stroke (width .254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 0) (xy 2.54 0)) (stroke (width .254) (type default)) (fill (type none)))) (symbol "C65_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "D30" (pin_names (offset 1)) (in_bom yes) (on_board yes) (property "Reference" "D30" (at 0 0 0) (effects (font (size 1 1)))) (property "Value" "BZT52H-B15" (at 0 0 0) (effects (font (size 1 1)))) (symbol "D30_0_1" (rectangle (start -2.54 2.54) (end 2.54 -2.54) (stroke (width .254) (type default)) (fill (type background)))) (symbol "D30_1_1" (pin passive line (at -7.62 0.0 0) (length 5.08) (name "1" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))(pin passive line (at 7.62 0.0 180) (length 5.08) (name "2" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))))(symbol "power:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	))
