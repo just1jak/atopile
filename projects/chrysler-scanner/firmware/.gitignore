@@ -1,0 +1,6 @@
+.pio/
+sdkconfig
+sdkconfig.old
+sdkconfig.rev_c_passive*
+build/
+__pycache__/
