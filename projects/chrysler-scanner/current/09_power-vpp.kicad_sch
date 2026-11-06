@@ -6132,7 +6132,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:C_1210_3225_TDK_22u50V"
+		(property "Footprint" "footprints:C_2220_5750_TDK_22u50V"
 			(at 106.68 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6143,7 +6143,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1H226M250AC"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/TDK-CGA9P3X7R1H226MT0Y0N/C49297044"
 			(at 106.68 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6191,8 +6191,8 @@
 		)
 	(property "Voltage Rating" "50V" (at 114.789 84.33 0) (effects (font (size 1 1))))
 (property "Manufacturer" "TDK" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-(property "MPN" "C3225X7R1H226M250AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-(property "Procurement Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1H226M250AC" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "MPN" "CGA9P3X7R1H226MT0Y0N" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Procurement Source" "https://jlcpcb.com/partdetail/TDK-CGA9P3X7R1H226MT0Y0N/C49297044" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
 (property "Assembly" "PLACE" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
 (property "Selected Voltage Rating" "50V" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
 (property "Tolerance" "20%" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))

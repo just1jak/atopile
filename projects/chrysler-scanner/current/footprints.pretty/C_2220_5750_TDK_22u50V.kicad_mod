@@ -1,0 +1,253 @@
+(footprint "C_2220_5750_TDK_22u50V"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "TDK CGA9 2220 22uF 50V X7R; pads 1.4x5.4 at +/-2.8; max body 6.1x5.4x2.8 mm; conservative prototype land pattern")
+	(tags "capacitor")
+	(property "Reference" "REF**"
+		(at -4.3 -0.25 90)
+		(layer "F.SilkS")
+		(uuid "3bcc53a6-a453-45b2-a5ba-a4409409dc18")
+		(effects
+			(font
+				(size 1 0.65)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "22μF"
+		(at 0 0 0)
+		(layer "User.9")
+		(hide yes)
+		(uuid "c40a0cd8-fe58-4945-9171-e6c67da94d41")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://jlcpcb.com/partdetail/TDK-CGA9P3X7R1H226MT0Y0N/C49297044"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "02b32798-5e65-4f58-9c78-1fe01a8b51f0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4b307f4b-8284-419b-9a4e-65464ac60132")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "atopile_address" "c14"
+		(at 0 0 0)
+		(layer "User.9")
+		(hide yes)
+		(uuid "1f802357-0d02-49a8-b1a0-6d70e937ef59")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Voltage Rating" "50V"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "38ce20be-ee03-4caf-8d8a-b54320b0fe80")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "TDK"
+		(at 157.75 116.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b8950b8-11a0-4983-a336-ced1e6e92c80")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "CGA9P3X7R1H226MT0Y0N"
+		(at 157.75 116.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7b80a4f7-c69d-45bc-96a6-b42ed9f07b06")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Procurement Source" "https://jlcpcb.com/partdetail/TDK-CGA9P3X7R1H226MT0Y0N/C49297044"
+		(at 157.75 116.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f1886610-3b74-4938-9ab6-d2c9243e97e9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "PLACE"
+		(at 157.75 116.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1c608818-6b6d-476a-bb94-12847b778345")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Selected Voltage Rating" "50V"
+		(at 157.75 116.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a11b8ea5-b83f-41ba-ba94-e73bd68584cf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Tolerance" "20%"
+		(at 157.75 116.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e893d404-5690-4be9-8d1a-3f648fd00fa1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Selected Height" "2.8mm max"
+		(at 157.75 116.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8742885d-752d-44e0-bb22-cde4630f85fd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Model Representation" "Representative maximum overall envelope; Fab/courtyard and selected dimensions govern fit."
+		(at 157.75 116.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e3e387f7-9cd8-4f1f-850d-0e848c647ca0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.8 -2.95)
+		(end 1.8 -2.95)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b5b68a2d-e9fa-480d-a847-53e8b67a8d82")
+	)
+	(fp_line
+		(start -1.8 2.95)
+		(end 1.8 2.95)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "10677d2b-e311-4483-bd95-0431a623e785")
+	)
+	(fp_rect
+		(start -3.75 -2.95)
+		(end 3.75 2.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "2816325b-1811-4e2d-ae0f-1ba5bebd0411")
+	)
+	(fp_rect
+		(start -3.05 -2.7)
+		(end 3.05 2.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "54f7317e-e533-4fd2-8d7e-fb8907c15095")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "e5215156-4a0d-475c-8e8c-e3c8155bdc84")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.8 0)
+		(size 1.4 5.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "d78d9475-b958-4924-8f67-7a8aead58eea")
+	)
+	(pad "2" smd roundrect
+		(at 2.8 0)
+		(size 1.4 5.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "0ac88507-1ebd-4e9c-aee2-25909c41eb15")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/C_1210_3225Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1.90625 2.16 1.12)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

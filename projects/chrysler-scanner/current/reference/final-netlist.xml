@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\Users\just3\Documents\Scanner\projects\chrysler-scanner\work\adversarial-review\refinement-20261028\candidate\ChryslerScanner_V240_SD.kicad_sch</source>
-    <date>2026-10-28T08:01:08</date>
+    <source>C:\Users\just3\Documents\Scanner\projects\chrysler-scanner\work\jlc-stock-20261105\candidate\ChryslerScanner_V240_SD.kicad_sch</source>
+    <date>2026-11-06T07:14:29</date>
     <tool>Eeschema 10.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -6746,29 +6746,29 @@
     </comp>
     <comp ref="C14">
       <value>22μF</value>
-      <footprint>footprints:C_1210_3225_TDK_22u50V</footprint>
-      <datasheet>https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1H226M250AC</datasheet>
+      <footprint>footprints:C_2220_5750_TDK_22u50V</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/TDK-CGA9P3X7R1H226MT0Y0N/C49297044</datasheet>
       <fields>
         <field name="atopile_address">c14</field>
         <field name="Voltage Rating">50V</field>
         <field name="Manufacturer">TDK</field>
-        <field name="MPN">C3225X7R1H226M250AC</field>
-        <field name="Procurement Source">https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1H226M250AC</field>
+        <field name="MPN">CGA9P3X7R1H226MT0Y0N</field>
+        <field name="Procurement Source">https://jlcpcb.com/partdetail/TDK-CGA9P3X7R1H226MT0Y0N/C49297044</field>
         <field name="Assembly">PLACE</field>
         <field name="Selected Voltage Rating">50V</field>
         <field name="Tolerance">20%</field>
         <field name="Selected Height">2.8mm max</field>
         <field name="Model Representation">Representative maximum overall envelope; Fab/courtyard and selected dimensions govern fit.</field>
-        <field name="Footprint">footprints:C_1210_3225_TDK_22u50V</field>
-        <field name="Datasheet">https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1H226M250AC</field>
+        <field name="Footprint">footprints:C_2220_5750_TDK_22u50V</field>
+        <field name="Datasheet">https://jlcpcb.com/partdetail/TDK-CGA9P3X7R1H226MT0Y0N/C49297044</field>
         <field name="Description"/>
       </fields>
       <libsource lib="ChryslerScanner" part="C14" description="Recovered graphic; pin numbers/net connectivity from current atopile source; passive pin types"/>
       <property name="atopile_address" value="c14"/>
       <property name="Voltage Rating" value="50V"/>
       <property name="Manufacturer" value="TDK"/>
-      <property name="MPN" value="C3225X7R1H226M250AC"/>
-      <property name="Procurement Source" value="https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1H226M250AC"/>
+      <property name="MPN" value="CGA9P3X7R1H226MT0Y0N"/>
+      <property name="Procurement Source" value="https://jlcpcb.com/partdetail/TDK-CGA9P3X7R1H226MT0Y0N/C49297044"/>
       <property name="Assembly" value="PLACE"/>
       <property name="Selected Voltage Rating" value="50V"/>
       <property name="Tolerance" value="20%"/>

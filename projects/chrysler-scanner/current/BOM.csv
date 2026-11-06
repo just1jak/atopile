@@ -167,7 +167,7 @@ R94,10kΩ,footprints:R_0603_1608Metric,Vishay,CRCW060310K0FKEA,,,1%,PLACE,REVIEW
 R95,470Ω,footprints:R_0603_1608Metric,Vishay,CRCW0603470RFKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 R96,10kΩ,footprints:R_0603_1608Metric,Vishay,CRCW060310K0FKEA,,,1%,PLACE,REVIEWED bounded-prototype selection,https://www.vishay.com/docs/20035/dcrcwe3.pdf
 C13,10μF,footprints:C_1206_3216Metric,TDK,CGA5L1X7R1H106K160AC,50V,50V,10%,PLACE,REVIEWED bounded-prototype selection,https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf
-C14,22μF,footprints:C_1210_3225_TDK_22u50V,TDK,C3225X7R1H226M250AC,50V,50V,20%,PLACE,REVIEWED bounded-prototype selection,https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1H226M250AC
+C14,22μF,footprints:C_2220_5750_TDK_22u50V,TDK,CGA9P3X7R1H226MT0Y0N,50V,50V,20%,PLACE,REVIEWED bounded-prototype selection,https://jlcpcb.com/partdetail/TDK-CGA9P3X7R1H226MT0Y0N/C49297044
 C15,10μF,footprints:C_1206_3216Metric,TDK,CGA5L1X7R1H106K160AC,50V,50V,10%,PLACE,REVIEWED bounded-prototype selection,https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf
 C16,10μF,footprints:C_1206_3216Metric,TDK,CGA5L1X7R1H106K160AC,50V,50V,10%,PLACE,REVIEWED bounded-prototype selection,https://product.tdk.com/info/en/documents/chara_sheet/CGA5L1X7R1H106K160AC.pdf
 D7,DSK34,footprints:D_SOD-123,MDD (Microdiode Electronics),DSK34,,,,PLACE,REVIEWED bounded-prototype selection,https://datasheet.lcsc.com/lcsc/DSK34_C41029.pdf

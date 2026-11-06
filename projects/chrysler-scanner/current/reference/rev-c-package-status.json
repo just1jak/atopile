@@ -1,7 +1,7 @@
 {
   "revision": "C",
   "cad_validation": "PASS",
-  "pcbSha256": "800c05930a0ca24fe280d5f3aace70974889129942a1b5602ce2eabfea026301",
+  "pcbSha256": "e794b86979228ba2275eb4262df848acd16e56ef97a4ccf45402d65b119308d4",
   "prototype_only": true,
   "automotive_qualified": false,
   "firmware_integration_complete": false,

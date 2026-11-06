@@ -8,4 +8,6 @@ Assemble 48 Keystone 5015 SMT hook loops (both board sides). TP45-TP48 are bare 
 
 Mounting: M3 socket head, NO washer; checked envelope 5.5 mm diameter by 3 mm high. H1 is at (105.00048,104.0) mm. Connector clearance is 1.75 mm centered, at least 1.25 mm after nominal screw float; the head-to-board-edge margin is at least 0.75 mm after float. Update enclosure mounting pattern for H1. Actual tolerance/sample fit remains to be qualified before production assembly. See rev-c-obd-mechanical-clearance.md.
 
-Checked PCB SHA-256: `800c05930a0ca24fe280d5f3aace70974889129942a1b5602ce2eabfea026301`. Processing-site count: 246. See rev-c-filled-capped-via-sites.json for exact coordinates, UUIDs, drill sizes and saved flags.
+2026-11-06 C14 release: C14 is TDK CGA9P3X7R1H226MT0Y0N (JLC C49297044), 22uF/50V/X7R/20%, top-side 2220 at (158.75,114.3) mm, -90 degrees. Maximum body 6.1x5.4x2.8 mm. C13 is (162.9,113.75) mm; TP25 is (164.2,118.25) mm at 90 degrees. Use this release Gerbers, BOM and placement list together. Only C14 stock substitution is incorporated; other quote alternates require separate synchronization/review. See rev-c-c14-review.md.
+
+Checked PCB SHA-256: `e794b86979228ba2275eb4262df848acd16e56ef97a4ccf45402d65b119308d4`. Processing-site count: 246. See rev-c-filled-capped-via-sites.json for exact coordinates, UUIDs, drill sizes and saved flags.

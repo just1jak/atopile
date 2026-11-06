@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-11-06",
   "status": "CONDITIONAL_BOUNDED_PROTOTYPE_DESIGN_ACCEPTANCE",
-  "scope": "Prior frozen 91-check release gate plus independent requested-refinement review and current native/delta checks",
-  "pcbSha256": "800c05930a0ca24fe280d5f3aace70974889129942a1b5602ce2eabfea026301",
+  "scope": "Primary adversarial review of the C14 procurement/layout delta, plus unchanged frozen prior independent review and all 161 layered checks",
+  "pcbSha256": "e794b86979228ba2275eb4262df848acd16e56ef97a4ccf45402d65b119308d4",
   "schematicSha256": {
     "01_ccd.kicad_sch": "d787977327104e66aa4b48a5c838865b4ac6dd117d11f695b72f39c95e41f663",
     "02_pci.kicad_sch": "9aad268904d4776394416e5b806a6e9cfcdba22089b89a352e3ea391933d08be",
@@ -12,7 +12,7 @@
     "06_obd-protection.kicad_sch": "9fcbaf2fc63f41af49eea0aca353a445ffbe79f25fec2f88864f5256134dd9c8",
     "07_vehicle-input.kicad_sch": "ef5a18f0484276ca27fa6d012aae8e72126508830782552d221c0d6a64739bfa",
     "08_power-5v.kicad_sch": "ba2fb3f911972cecf5f81c0e76ad38a2716b1224edd5d0a9211136a6f65fadbe",
-    "09_power-vpp.kicad_sch": "ae05fbec33b02cb9f94e3cda5113b5cf677ada314431a6eeb5492517a30980d4",
+    "09_power-vpp.kicad_sch": "34ba17d3d61a025b532a8df50eca33fc271f83de49c62d01f95f43ccdf2a674d",
     "10_power-vbb.kicad_sch": "a49de7a51eca79de8dfd1cfadc9b40cd69cc0c355bba381476230ac8aafc7018",
     "11_power-7v5.kicad_sch": "1fbbbb19dbe40acef668d3e4b6d34dee7bde1859f11fe83a768f5ab6b642207a",
     "12_program-6.kicad_sch": "b41f78679450835252ead39f2e36846543a6b7e03bf027375b25ddd8e40a0b72",
@@ -32,13 +32,13 @@
   "layoutReviewComplete": true,
   "remainingP1Findings": [],
   "remainingP1SchematicFindings": [],
-  "finalNetlistSha256": "a6deb59586c70aff03812f92763fa451ecd10cd82ea1c537f16d0ef87c285914",
-  "finalErcSha256": "45b497aebe3ae9df84159577b2c94b41a8290b6a5bd10d54964fd4096c3394df",
-  "finalDrcSha256": "19f907d6f79c426679e7c73372556de7bbe62c17011f8da632bc153b18a19a0f",
+  "finalNetlistSha256": "013bf4c1feb0b9e89827f4bacdb1e27fd88907669ad1634beb8ddbbed41efe67",
+  "finalErcSha256": "e7cea54ffa0755d5a8cec9cfda04b13209910f9a09e19c2ee9b49f2dd5808a57",
+  "finalDrcSha256": "246360f27e4e999fb85191f641d348379822c0359d2b47e66881cb6410ec8b36",
   "safetyContractSha256": "014d4902c79a05a235116fbb1d18821da2b2dd5047e184bc492fc04298501290",
   "manifestSha256": "c86c6a26b850b34546c67625a4bcc7a0bb72d7147997cb3caf6b2154c013b37e",
   "independentRefinementReviewSha256": "596e687e20769cb42586f65f7892cf8b5e824d163e0f4d9750ac40f413e1fb4d",
-  "combinedAuditSha256": "7d2df62d1375375988d3c4602b8c630291f57d97c1288a820be9adde2de3b6c3",
+  "combinedAuditSha256": "bd1570891c7e04d49706fa7362f475f96e9da912738b6dd45a3106cdf5853553",
   "qualificationGates": [
     "AW9523B VOH/VOL are typical-only: DMG6601 2.5V RDS specification removes old4.5V MOSFET mismatch, but does not establish a whole-chain guaranteed minimum gate drive. Validate min rail/temperature/output load and shutdown waveform.",
     "AW9523 P0 must be configured push-pull before programming; startup/default controls remain low. Do not add reset-enabling pullups. GPIO13 remains dedicated health heartbeat.",
@@ -51,9 +51,17 @@
   "limitations": [
     "Review covers requested changes and their interactions; it is not a fresh certification of every passive suffix or original-PDF block comparison.",
     "Native ERC uses recovered passive symbol pin types and cannot alone establish electrical correctness.",
-    "No bench, mechanical sample, automotive, regulatory or production qualification was performed.",
-    "Read-only verifier re-executed after drawing-signature repair, with current-file hashes substituted in memory while source constants remain UNBOUND. All technical checks pass; only the intentionally pending independentReviewAccepted contract flag fails. This is not a claim of final sealed-wrapper/package PASS."
+    "No bench, mechanical sample, automotive, regulatory or production qualification was performed."
   ],
-  "primaryEngineeringCloseout": "All 130 combined checks and safety bounds pass. The independent report predates primary sealing; its pending combined-wrapper observation is now closed. Exported package reconciliation follows as a separate primary gate.",
-  "fabricationScope": "Local bounded prototype preparation; no manufacturing order, automotive/vehicle qualification or firmware implementation."
+  "primaryEngineeringCloseout": "All 161 layered checks pass. C14 has new 2220 copper/courtyard and corrected maximum-envelope model, with only declared local placement/routing changes; frozen earlier safety reviews remain historical evidence.",
+  "fabricationScope": "Local bounded prototype preparation; no manufacturing order, automotive/vehicle qualification or firmware implementation.",
+  "reviewType": "Primary change review; no new independent reviewer",
+  "c14GeometryContractSha256": "68213a53ad2f60e44a74127500646403c431473d7c7e671df274bb8c04408d58",
+  "priorReviewEvidence": "rev-c-c14-baseline.zip:reference/rev-c-adversarial-review.json",
+  "c14Review": [
+    "C14 same nominal 22uF/50V/X7R/20%; new maximum body 6.1x5.4x2.8 mm and enlarged pads/courtyard. Top side unchanged. Three moved existing vias retain UUIDs/drills/processing flags.",
+    "C13 shifts +0.4mm x; TP25 moves and rotates 90deg. C13/C46 silk refs hidden, Fab refs retained. TP25 board label moved. No safety netlist changes.",
+    "Native courtyard/copper checks, uncapped connectivity, locked copper and plane/rule preservation are gated separately. 3D body corrected to enlarged maximum envelope.",
+    "No guaranteed DC-bias capacitance, regulator stability, assembly or automotive qualification inferred. All previous physical/firmware qualifications remain."
+  ]
 }

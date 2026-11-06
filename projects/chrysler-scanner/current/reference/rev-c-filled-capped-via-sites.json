@@ -1,5 +1,5 @@
 {
-  "pcbSha256": "800c05930a0ca24fe280d5f3aace70974889129942a1b5602ce2eabfea026301",
+  "pcbSha256": "e794b86979228ba2275eb4262df848acd16e56ef97a4ccf45402d65b119308d4",
   "requirements": "Filled, copper capped and planarized; agree fabrication process before order. Ordinary open/tented drills are not equivalent.",
   "sites": [
     {
@@ -148,8 +148,8 @@
     {
       "uuid": "811b9d0d-113e-433d-9324-bf9226c5e82c",
       "net": "V_BA_PRE",
-      "x_mm": 157.460819,
-      "y_mm": 117.675975,
+      "x_mm": 158.960819,
+      "y_mm": 119.275975,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,
@@ -709,7 +709,7 @@
     {
       "uuid": "3aaee067-e69b-4185-b071-c6bd74c4f25b",
       "net": "EN",
-      "x_mm": 155.840389,
+      "x_mm": 155.540389,
       "y_mm": 110.84119,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
@@ -941,7 +941,7 @@
       "uuid": "b44e908d-af0c-42b1-a249-f6044c8a99a8",
       "net": "+3.3V",
       "x_mm": 159.0625,
-      "y_mm": 111.0,
+      "y_mm": 112.7,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,
@@ -1719,6 +1719,17 @@
       "planarization_required": true
     },
     {
+      "uuid": "97fb950a-4aba-44aa-98fa-f1c6def65fcc",
+      "net": "N_R126_1",
+      "x_mm": 150.3,
+      "y_mm": 149.6125,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
       "uuid": "b8efd0b7-52ae-4df6-9678-0065b4bbdc53",
       "net": "PCI_VCC",
       "x_mm": 116.8,
@@ -2390,6 +2401,17 @@
       "planarization_required": true
     },
     {
+      "uuid": "94bf4d72-00d1-4ce9-92f7-03ea4555e0e1",
+      "net": "RX1",
+      "x_mm": 160.5247,
+      "y_mm": 101.674,
+      "drill_mm": 0.3,
+      "diameter_mm": 0.6,
+      "filled": true,
+      "capped": true,
+      "planarization_required": true
+    },
+    {
       "uuid": "9efcfa21-2d0c-4845-a5c2-a9b68fd1e39d",
       "net": "SCL",
       "x_mm": 175.7975,
@@ -2680,28 +2702,6 @@
       "net": "SD_MOSI",
       "x_mm": 188.425,
       "y_mm": 130.999025,
-      "drill_mm": 0.3,
-      "diameter_mm": 0.6,
-      "filled": true,
-      "capped": true,
-      "planarization_required": true
-    },
-    {
-      "uuid": "94bf4d72-00d1-4ce9-92f7-03ea4555e0e1",
-      "net": "RX1",
-      "x_mm": 160.5247,
-      "y_mm": 101.674,
-      "drill_mm": 0.3,
-      "diameter_mm": 0.6,
-      "filled": true,
-      "capped": true,
-      "planarization_required": true
-    },
-    {
-      "uuid": "97fb950a-4aba-44aa-98fa-f1c6def65fcc",
-      "net": "N_R126_1",
-      "x_mm": 150.3,
-      "y_mm": 149.6125,
       "drill_mm": 0.3,
       "diameter_mm": 0.6,
       "filled": true,

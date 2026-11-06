@@ -23,7 +23,7 @@ TP21,RX0,Hook loop,top,187.46505,121.13085,0.7498867414483269,Keystone 5015
 TP22,EN,Hook loop,bottom,157.2404,104.8412,0,Keystone 5015
 TP23,IO0,Hook loop,top,186.572,149.672,3.999395954391117,Keystone 5015
 TP24,SCL,Hook loop,bottom,175.35,143.83,3.0,Keystone 5015
-TP25,SDA,Hook loop,top,162.8339,118.639,2.25,Keystone 5015
+TP25,SDA,Hook loop,top,164.2,118.25,3.670404945781308,Keystone 5015
 TP26,PCI_RX,Hook loop,bottom,131.3187,121.0216,0,Keystone 5015
 TP27,PCI_TX,Hook loop,bottom,161.9033,125.8401,0.75,Keystone 5015
 TP28,RX1,Hook loop,bottom,171.4736,106.574,0,Keystone 5015

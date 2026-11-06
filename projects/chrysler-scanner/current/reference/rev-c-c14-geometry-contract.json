@@ -1,0 +1,966 @@
+{
+  "status": "REVIEWED_BOUNDED_PROTOTYPE_C14_DELTA",
+  "date": "2026-11-06",
+  "reviewType": "Primary adversarial change review; carries forward frozen prior independent reviews without claiming a new independent reviewer",
+  "pcbSha256": "e794b86979228ba2275eb4262df848acd16e56ef97a4ccf45402d65b119308d4",
+  "schematicSha256": {
+    "01_ccd.kicad_sch": "d787977327104e66aa4b48a5c838865b4ac6dd117d11f695b72f39c95e41f663",
+    "02_pci.kicad_sch": "9aad268904d4776394416e5b806a6e9cfcdba22089b89a352e3ea391933d08be",
+    "03_sci-14-9.kicad_sch": "31e4467933deb45bc1d08caa1ae8c8eb146c56854ac50be89443c4b9d4a04356",
+    "04_sci-6-12.kicad_sch": "3278bf66833b1123754c90a9fea45325d98025816615a87ef263d28f7dcb43dc",
+    "05_sci-rx.kicad_sch": "d4f8e54bf51bde7ae976ecb6c75d5689f5f15fada221578e30980df758073ae6",
+    "06_obd-protection.kicad_sch": "9fcbaf2fc63f41af49eea0aca353a445ffbe79f25fec2f88864f5256134dd9c8",
+    "07_vehicle-input.kicad_sch": "ef5a18f0484276ca27fa6d012aae8e72126508830782552d221c0d6a64739bfa",
+    "08_power-5v.kicad_sch": "ba2fb3f911972cecf5f81c0e76ad38a2716b1224edd5d0a9211136a6f65fadbe",
+    "09_power-vpp.kicad_sch": "34ba17d3d61a025b532a8df50eca33fc271f83de49c62d01f95f43ccdf2a674d",
+    "10_power-vbb.kicad_sch": "a49de7a51eca79de8dfd1cfadc9b40cd69cc0c355bba381476230ac8aafc7018",
+    "11_power-7v5.kicad_sch": "1fbbbb19dbe40acef668d3e4b6d34dee7bde1859f11fe83a768f5ab6b642207a",
+    "12_program-6.kicad_sch": "b41f78679450835252ead39f2e36846543a6b7e03bf027375b25ddd8e40a0b72",
+    "13_program-9.kicad_sch": "4ce78c10dfd5a40ad582a5c4c87fff640302f5cf2d653c240532c57ad56c0b18",
+    "14_program-12.kicad_sch": "d29ab5b55e4df5d61354894472aa1b9e17ccf9fe770df988754856f9db8c8df9",
+    "15_program-14.kicad_sch": "8122699d80a337b43554906c43254e2f682b912c0d573235adef2b47c886536d",
+    "16_mcu.kicad_sch": "8c686ec92dbcfdbbf292ab14fff0244d44f3589119d837b44d3ac8e4b4da7b2a",
+    "17_adc.kicad_sch": "1a7f18e6e60265873b87faeffc49bb708e7a8accad0a4421e90fd7dd94486c43",
+    "18_control.kicad_sch": "074e9cd187a142041eaa8161cc0c4342fa21b4e8003c68d7ff0f4c20aed85b6e",
+    "19_usb.kicad_sch": "de78a2fe97727f93a6ab9f572a594ccd13970d9ddca7705ea20165a9838e494f",
+    "20_leds.kicad_sch": "b04a51e07fbfdd347ec10160f9502be8f743f02977cf44073eaf5e8c237efba7",
+    "22_sd-logger.kicad_sch": "d80434fc3ba1cf1f319376d470a44078db013f89ae00d2f6a3d7cb65414e2e4e",
+    "23_hardware-safety.kicad_sch": "b8876b6a470b4e06833cac665e08abaecb462500b52d99feb2c20d4a8ea793c2",
+    "24_debug-testpoints.kicad_sch": "f47764d129360c28258037c4ab0c48c9f461094cde1cdeb30df481ed31ab0b7e",
+    "ChryslerScanner_V240_SD.kicad_sch": "7c15e34193b1047eeb3d43096ad972032ad9ea49570fb20c21b64f45cf1272ac"
+  },
+  "catalogSha256": "abfd1f4b594945b52062ac4ef21b4f25594c82ee7399a07e910b49c73d81395c",
+  "baselineZipSha256": "ce33b72befa5c5858b4f93caa0a46077b8ec3fc31ad68e78208b744982403282",
+  "changedFootprints": {
+    "3a7f9bd9-a4d9-4c30-a35f-e99e2dda64a4": {
+      "reference": "TP25",
+      "value": "SDA",
+      "position": [
+        164200000,
+        118250000
+      ],
+      "orientation": 90.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "874ca4f6-443d-4255-864a-c0be5c939884": {
+          "number": "1",
+          "net": "SDA",
+          "position": [
+            164200000,
+            118250000
+          ],
+          "size": [
+            3400000,
+            1800000
+          ],
+          "orientation": 90.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.1388888889,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:TestPoint_Keystone_5015_Micro_Mini",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/b5591c24-e488-5b26-83a3-3cd3f007f63a/e8b4e35d-bbf0-5cc7-a412-cfb4b11b81be",
+      "models": []
+    },
+    "8d5c1689-07ae-4c5b-938e-d0704642524b": {
+      "reference": "C13",
+      "value": "10\u03bcF",
+      "position": [
+        162900000,
+        113750000
+      ],
+      "orientation": -90.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "a653061b-0a1a-4315-94fd-4b2ff8e63827": {
+          "number": "1",
+          "net": "+12V",
+          "position": [
+            162900000,
+            112275000
+          ],
+          "size": [
+            1150000,
+            1800000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.217391,
+          "maskMargin": "None"
+        },
+        "368954a6-6f67-4d48-9a23-df99a35b4f02": {
+          "number": "2",
+          "net": "GND",
+          "position": [
+            162900000,
+            115225000
+          ],
+          "size": [
+            1150000,
+            1800000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.217391,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:C_1206_3216Metric",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/239c8bd3-88c6-5107-86b4-9c4a13716dec",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/C_1206_3216Metric.step",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "e2104e4e-bfad-4792-8ff9-e51c4642524b": {
+      "reference": "C14",
+      "value": "22\u03bcF",
+      "position": [
+        158750000,
+        114300000
+      ],
+      "orientation": -90.0,
+      "layer": 0,
+      "locked": false,
+      "pads": {
+        "523ed1a0-2fa8-4cf1-9632-3e334dfda75e": {
+          "number": "1",
+          "net": "N_R8_1",
+          "position": [
+            158750000,
+            111500000
+          ],
+          "size": [
+            1400000,
+            5400000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.1,
+          "maskMargin": "None"
+        },
+        "d18ced44-cf86-4078-8ec0-249127b8256e": {
+          "number": "2",
+          "net": "GND",
+          "position": [
+            158750000,
+            117100000
+          ],
+          "size": [
+            1400000,
+            5400000
+          ],
+          "orientation": 270.0,
+          "shape": 4,
+          "drill": [
+            0,
+            0
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "attribute": 1,
+          "layers": [
+            0,
+            1,
+            13
+          ],
+          "roundRectRatio": 0.1,
+          "maskMargin": "None"
+        }
+      },
+      "fpid": "footprints:C_2220_5750_TDK_22u50V",
+      "attributes": 2,
+      "path": "/b35850f9-3522-5e00-90df-092fcfbfe6bd/fae9fc47-44e4-56d1-add1-102db9cad16d/a397eed8-ac42-58b2-b1c0-47d356686cf5",
+      "models": [
+        {
+          "filename": "${KIPRJMOD}/3dmodels/C_1210_3225Metric.step",
+          "offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.90625,
+            2.16,
+            1.12
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  "removedOrModifiedCopper": {
+    "2abd1402-eb36-4ab5-977b-1ae302361550": {
+      "kind": "PCB_TRACK",
+      "net": "V_BA_PRE",
+      "start": [
+        158660819,
+        119075975
+      ],
+      "end": [
+        157460819,
+        117875975
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "2f8fefeb-e352-4e46-94b2-39c4739b2106": {
+      "kind": "PCB_TRACK",
+      "net": "V_BA_PRE",
+      "start": [
+        157460819,
+        117875975
+      ],
+      "end": [
+        157460819,
+        117675975
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "811b9d0d-113e-433d-9324-bf9226c5e82c": {
+      "kind": "PCB_VIA",
+      "net": "V_BA_PRE",
+      "start": [
+        157460819,
+        117675975
+      ],
+      "end": [
+        157460819,
+        117675975
+      ],
+      "width": 600000,
+      "layer": 0,
+      "locked": false,
+      "drill": 300000,
+      "via_type": 4,
+      "top": 0,
+      "bottom": 2,
+      "front_tenting": 1,
+      "back_tenting": 1,
+      "filled": true,
+      "capped": true
+    },
+    "08c28a11-bca0-4459-aafd-96fc1f0d7afe": {
+      "kind": "PCB_TRACK",
+      "net": "V_BA_PRE",
+      "start": [
+        156660819,
+        117375975
+      ],
+      "end": [
+        155160819,
+        115875975
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "621972e3-c0aa-4164-9536-210f07f89883": {
+      "kind": "PCB_TRACK",
+      "net": "V_BA_PRE",
+      "start": [
+        157460819,
+        117675975
+      ],
+      "end": [
+        157160819,
+        117375975
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "d62ee332-5a2e-4dc1-a149-7b2819328803": {
+      "kind": "PCB_TRACK",
+      "net": "V_BA_PRE",
+      "start": [
+        157160819,
+        117375975
+      ],
+      "end": [
+        156660819,
+        117375975
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "3aaee067-e69b-4185-b071-c6bd74c4f25b": {
+      "kind": "PCB_VIA",
+      "net": "EN",
+      "start": [
+        155840389,
+        110841190
+      ],
+      "end": [
+        155840389,
+        110841190
+      ],
+      "width": 600000,
+      "layer": 0,
+      "locked": false,
+      "drill": 300000,
+      "via_type": 4,
+      "top": 0,
+      "bottom": 2,
+      "front_tenting": 1,
+      "back_tenting": 1,
+      "filled": true,
+      "capped": true
+    },
+    "a4d59563-efb0-4a35-bbe4-f29ebc3f3dcd": {
+      "kind": "PCB_TRACK",
+      "net": "EN",
+      "start": [
+        155840389,
+        110841190
+      ],
+      "end": [
+        157940389,
+        108741190
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "3cdbbd08-15ae-4ab4-8fad-dd14e3b94da2": {
+      "kind": "PCB_TRACK",
+      "net": "EN",
+      "start": [
+        155740389,
+        110941190
+      ],
+      "end": [
+        155840389,
+        110841190
+      ],
+      "width": 150000,
+      "layer": 6,
+      "locked": false
+    },
+    "b44e908d-af0c-42b1-a249-f6044c8a99a8": {
+      "kind": "PCB_VIA",
+      "net": "+3.3V",
+      "start": [
+        159062500,
+        111000000
+      ],
+      "end": [
+        159062500,
+        111000000
+      ],
+      "width": 600000,
+      "layer": 0,
+      "locked": false,
+      "drill": 300000,
+      "via_type": 4,
+      "top": 0,
+      "bottom": 2,
+      "front_tenting": 1,
+      "back_tenting": 1,
+      "filled": true,
+      "capped": true
+    },
+    "8e6ac71c-12d0-4e99-9f27-7bd258f6cc99": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        159462500,
+        111400000
+      ],
+      "end": [
+        160562500,
+        111400000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "96073dae-7f8a-4546-a879-ca7cd510daaf": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        159062500,
+        111000000
+      ],
+      "end": [
+        159462500,
+        111400000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "f8ae9c30-4c6d-454a-ad07-0c62648519f9": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        159862500,
+        111000000
+      ],
+      "end": [
+        159062500,
+        111000000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "36aaf189-0397-4152-aabc-ebc32cb78811": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        164250600,
+        112673000
+      ],
+      "end": [
+        159062500,
+        111000000
+      ],
+      "width": 150000,
+      "layer": 6,
+      "locked": false
+    },
+    "b6609939-2175-53b0-bb1c-9753e4ad6ece": {
+      "kind": "PCB_TRACK",
+      "net": "N_R8_1",
+      "start": [
+        153525000,
+        116750000
+      ],
+      "end": [
+        156050000,
+        116500000
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    }
+  },
+  "addedOrModifiedCopper": {
+    "9c3410b8-6ba5-45a7-8636-a37210f516bd": {
+      "kind": "PCB_TRACK",
+      "net": "+12V",
+      "start": [
+        162500000,
+        112275000
+      ],
+      "end": [
+        162900000,
+        112275000
+      ],
+      "width": 500000,
+      "layer": 0,
+      "locked": false
+    },
+    "dbac8244-9d87-4e3b-8bff-0fd71b1d0125": {
+      "kind": "PCB_TRACK",
+      "net": "V_BA_PRE",
+      "start": [
+        158660819,
+        119075975
+      ],
+      "end": [
+        158960819,
+        119275975
+      ],
+      "width": 150000,
+      "layer": 0,
+      "locked": false
+    },
+    "811b9d0d-113e-433d-9324-bf9226c5e82c": {
+      "kind": "PCB_VIA",
+      "net": "V_BA_PRE",
+      "start": [
+        158960819,
+        119275975
+      ],
+      "end": [
+        158960819,
+        119275975
+      ],
+      "width": 600000,
+      "layer": 0,
+      "locked": false,
+      "drill": 300000,
+      "via_type": 4,
+      "top": 0,
+      "bottom": 2,
+      "front_tenting": 1,
+      "back_tenting": 1,
+      "filled": true,
+      "capped": true
+    },
+    "a39f49d3-58e3-4aa1-b6cc-6a6feb311b1a": {
+      "kind": "PCB_TRACK",
+      "net": "V_BA_PRE",
+      "start": [
+        154960819,
+        115875975
+      ],
+      "end": [
+        158960819,
+        119275975
+      ],
+      "width": 150000,
+      "layer": 6,
+      "locked": false
+    },
+    "d8eea768-7687-4f18-8d64-b74518279625": {
+      "kind": "PCB_TRACK",
+      "net": "GND",
+      "start": [
+        162500000,
+        115225000
+      ],
+      "end": [
+        162900000,
+        115225000
+      ],
+      "width": 200000,
+      "layer": 0,
+      "locked": false
+    },
+    "3aaee067-e69b-4185-b071-c6bd74c4f25b": {
+      "kind": "PCB_VIA",
+      "net": "EN",
+      "start": [
+        155540389,
+        110841190
+      ],
+      "end": [
+        155540389,
+        110841190
+      ],
+      "width": 600000,
+      "layer": 0,
+      "locked": false,
+      "drill": 300000,
+      "via_type": 4,
+      "top": 0,
+      "bottom": 2,
+      "front_tenting": 1,
+      "back_tenting": 1,
+      "filled": true,
+      "capped": true
+    },
+    "20b390b9-5317-456e-8208-fe947cbcfe25": {
+      "kind": "PCB_TRACK",
+      "net": "EN",
+      "start": [
+        157940389,
+        108741190
+      ],
+      "end": [
+        155540389,
+        110841190
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "17bd9afc-6cf8-49f3-b70c-58b110c72b37": {
+      "kind": "PCB_TRACK",
+      "net": "EN",
+      "start": [
+        155740389,
+        110941190
+      ],
+      "end": [
+        155540389,
+        110841190
+      ],
+      "width": 150000,
+      "layer": 6,
+      "locked": false
+    },
+    "b44e908d-af0c-42b1-a249-f6044c8a99a8": {
+      "kind": "PCB_VIA",
+      "net": "+3.3V",
+      "start": [
+        159062500,
+        112700000
+      ],
+      "end": [
+        159062500,
+        112700000
+      ],
+      "width": 600000,
+      "layer": 0,
+      "locked": false,
+      "drill": 300000,
+      "via_type": 4,
+      "top": 0,
+      "bottom": 2,
+      "front_tenting": 1,
+      "back_tenting": 1,
+      "filled": true,
+      "capped": true
+    },
+    "04e6b537-d1f0-4d07-be00-68185f4caea2": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        159862500,
+        111000000
+      ],
+      "end": [
+        160262500,
+        111400000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "15ff4933-dac5-422d-8d34-cac0ab99461c": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        160562500,
+        112500000
+      ],
+      "end": [
+        159462500,
+        112500000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "1c2dd439-6ea0-43b4-b9d4-d28658411c85": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        160762500,
+        112300000
+      ],
+      "end": [
+        160562500,
+        112500000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "210c9d81-4e97-48d4-a9c6-b6b80171f17e": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        159462500,
+        112500000
+      ],
+      "end": [
+        159362500,
+        112600000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "41a4cb99-9b6a-41e1-a5fb-cf5499c22a0c": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        159362500,
+        112600000
+      ],
+      "end": [
+        159162500,
+        112600000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "4ce17484-7e57-4839-a50e-4f79df04d74a": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        159462500,
+        112500000
+      ],
+      "end": [
+        159362500,
+        112600000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "5c674998-1030-41a2-b27b-1f94cf1f2eaf": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        160562500,
+        112500000
+      ],
+      "end": [
+        159462500,
+        112500000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "61c846b7-fdea-402e-8d11-9a4f3e1f3d6d": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        160762500,
+        111600000
+      ],
+      "end": [
+        160762500,
+        112300000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "62d3c458-7e3d-4275-ab5f-126a9f24c491": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        160562500,
+        111400000
+      ],
+      "end": [
+        160762500,
+        111600000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "73307fc9-85d7-40b6-bb7c-6d99f9e644a3": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        159362500,
+        112600000
+      ],
+      "end": [
+        159162500,
+        112600000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "ab7ff9d0-517e-4743-b9c6-4746bc12fd6b": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        159162500,
+        112600000
+      ],
+      "end": [
+        159062500,
+        112700000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "b993a78f-7661-4556-a55d-73dc3de77cc5": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        160262500,
+        111400000
+      ],
+      "end": [
+        160562500,
+        111400000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "c78561b3-dfce-4c00-b036-cdc2228c4cbf": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        160562500,
+        111400000
+      ],
+      "end": [
+        160762500,
+        111600000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "ce807d2a-1179-43b7-a4c8-5b6fae4bfcd1": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        159162500,
+        112600000
+      ],
+      "end": [
+        159062500,
+        112700000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "d46d76cb-7dc7-40d7-91be-b5549188e498": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        160762500,
+        111600000
+      ],
+      "end": [
+        160762500,
+        112300000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "e17e0f35-0df2-4dbc-af04-ac9842d11bb4": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        160762500,
+        112300000
+      ],
+      "end": [
+        160562500,
+        112500000
+      ],
+      "width": 150000,
+      "layer": 2,
+      "locked": false
+    },
+    "f1f27342-fa7e-44b9-a79d-10005dbb6d96": {
+      "kind": "PCB_TRACK",
+      "net": "+3.3V",
+      "start": [
+        164250600,
+        112673000
+      ],
+      "end": [
+        159062500,
+        112700000
+      ],
+      "width": 150000,
+      "layer": 6,
+      "locked": false
+    },
+    "e7baa781-8b08-42f2-98d0-8a187363184a": {
+      "kind": "PCB_TRACK",
+      "net": "SDA",
+      "start": [
+        162833900,
+        118639000
+      ],
+      "end": [
+        164200000,
+        118250000
+      ],
+      "width": 200000,
+      "layer": 0,
+      "locked": false
+    }
+  },
+  "moduleFiles": {
+    "footprints.pretty/C_2220_5750_TDK_22u50V.kicad_mod": "ad66c1846364e57c15f759a852a5db41aff4f17ec00b2b3d1d3acdd642c0ba85"
+  },
+  "reviewNotes": [
+    "C14 same nominal 22uF/50V/X7R/20%; new maximum body 6.1x5.4x2.8 mm and enlarged pads/courtyard. Top side unchanged. Three moved existing vias retain UUIDs/drills/processing flags.",
+    "C13 shifts +0.4mm x; TP25 moves and rotates 90deg. C13/C46 silk refs hidden, Fab refs retained. TP25 board label moved. No safety netlist changes.",
+    "Native courtyard/copper checks, uncapped connectivity, locked copper and plane/rule preservation are gated separately. 3D body corrected to enlarged maximum envelope.",
+    "No guaranteed DC-bias capacitance, regulator stability, assembly or automotive qualification inferred. All previous physical/firmware qualifications remain."
+  ]
+}

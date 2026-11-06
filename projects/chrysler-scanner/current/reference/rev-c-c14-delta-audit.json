@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "releaseGatePassed": true,
+  "pcbSha256": "e794b86979228ba2275eb4262df848acd16e56ef97a4ccf45402d65b119308d4",
+  "checks": {
+    "frozenC14Contract": true,
+    "reviewedCadHashesExact": true,
+    "reviewedCatalogHash": true,
+    "priorAcceptedPcb": true,
+    "onlyThreeDeclaredPlacementLandModelChanges": true,
+    "exactReviewedCopperChanges": true,
+    "allLockedCopperExact": true,
+    "onlyLocalSevenNetsRerouted": true,
+    "noNewRemovedViasAndProcessingFlagsExact": true,
+    "486Vias246Processed": true,
+    "allNineZonesAndRuleAreasExact": true,
+    "innerGroundNoSignalTracks": true,
+    "minimum150umTracks": true,
+    "new12VPowerBranches500um": true,
+    "projectRulesAndExclusionsByteExact": true,
+    "onlyTP25BoardLabelMoved": true,
+    "onlyNewC14LibraryFile": true,
+    "23OtherSchematicPagesByteExact": true,
+    "all333EndpointsAndEverySchematicNetExact": true,
+    "onlyC14ProcurementSelectionChanged": true,
+    "all333BOMIdentitiesAndNativeFieldsExact": true,
+    "allNativePadsMatchFreshSchematic": true,
+    "325PlaceAndSameDNP": true,
+    "C14Exact2220LandsTopSide": true,
+    "C14MaxBody3DScale": true,
+    "C14ElectricalRatingsPreserved": true,
+    "uncappedNativeConnectivity": true,
+    "all197GroundPadsConnected": true,
+    "freshAllSeverityDrcParityClean": true,
+    "freshAllSeverityErcNetlistClean": true,
+    "primaryC14ChangeReviewAccepted": true
+  },
+  "errors": [],
+  "connectivity": {
+    "fullNativeAirwires": 0,
+    "disconnectedNetGroups": {},
+    "ground": {
+      "padCount": 197,
+      "connectedGroupCount": 1,
+      "largestConnectedGroupCount": 197,
+      "isolatedFromMainGroup": []
+    },
+    "planeFilledAreasMm2": {
+      "6edcc193-bba6-46de-897c-0f1fda6922ed": 3102.794344,
+      "c85111e0-830e-413f-8f53-8f84679f816d": 4312.039628,
+      "809ac7f6-290e-5503-8766-4621c2d3fabe": 5308.596424,
+      "a6f9d8e2-9b4a-51e3-8d16-dc80cb6fbb95": 37.506408
+    }
+  },
+  "limitations": "Preserves prior bounded-prototype acceptance; no bench, production, automotive or new independent-review qualification claimed."
+}

@@ -133,6 +133,9 @@ def main():
         shutil.copy2(ref/'rev-c-refinement-mechanical.json',fab/'rev-c-refinement-mechanical.json')
         with (fab/'MANUFACTURING-NOTES.md').open('a') as notes:
             notes.write('\nMounting: M3 socket head, NO washer; checked envelope 5.5 mm diameter by 3 mm high. H1 is at (105.00048,104.0) mm. Connector clearance is 1.75 mm centered, at least 1.25 mm after nominal screw float; the head-to-board-edge margin is at least 0.75 mm after float. Update enclosure mounting pattern for H1. Actual tolerance/sample fit remains to be qualified before production assembly. See rev-c-obd-mechanical-clearance.md.\n')
+    with (fab/'MANUFACTURING-NOTES.md').open('a',encoding='utf-8') as notes:
+        notes.write('\n2026-11-06 C14 release: C14 is TDK CGA9P3X7R1H226MT0Y0N (JLC C49297044), 22uF/50V/X7R/20%, top-side 2220 at (158.75,114.3) mm, -90 degrees. Maximum body 6.1x5.4x2.8 mm. C13 is (162.9,113.75) mm; TP25 is (164.2,118.25) mm at 90 degrees. Use this release Gerbers, BOM and placement list together. Only C14 stock substitution is incorporated; other quote alternates require separate synchronization/review. See rev-c-c14-review.md.\n')
+    shutil.copy2(ref/'rev-c-c14-review.md',fab/'rev-c-c14-review.md')
     (ref/'MANUFACTURING-NOTES.md').write_text((fab/'MANUFACTURING-NOTES.md').read_text()+'\nChecked PCB SHA-256: `'+sha(copied)+'`. Processing-site count: '+str(len(sites))+'. See rev-c-filled-capped-via-sites.json for exact coordinates, UUIDs, drill sizes and saved flags.\n')
     (out/'README.md').write_text((HERE/'REV-C-DELIVERY.md').read_text())
     (ref/'rev-c-package-status.json').write_text(json.dumps(dict(revision='C',cad_validation='PASS',pcbSha256=sha(copied),prototype_only=True,automotive_qualified=False,firmware_integration_complete=False,assembly_bom_complete=not unselected,unselected_exact_parts=unselected,purchasable_assembly_parts=len(expected_placed),unique_purchasing_lines=len(groups),dnp_references=['R23','R24'],pcb_features=['JP1','JP2','TP45','TP46','TP47','TP48'],external_upload_performed=False),indent=2)+'\n')
@@ -145,6 +148,9 @@ def main():
     # The portable audit creates interpreter caches; omit those from deliverables.
     for cache in out.rglob('__pycache__'):
         shutil.rmtree(cache)
+    # KiCad CLI may create local viewer preferences while exporting.
+    for local_preferences in out.rglob('*.kicad_prl'):
+        local_preferences.unlink()
     patterns=[rb'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',
               rb'sk-(?:proj-|svcacct-)?[A-Za-z0-9_-]{30,}',
               rb'gh[pousr]_[A-Za-z0-9]{30,}',rb'github_pat_[A-Za-z0-9_]{40,}',rb'AKIA[A-Z0-9]{16}']

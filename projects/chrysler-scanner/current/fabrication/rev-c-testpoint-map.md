@@ -1,3 +1,5 @@
+> Current 2026-11-06 C14 revision: TP25 (SDA) moved to (164.2,118.25) mm and rotated 90 degrees; see current CSV for its new location/tap. All other testpoints retain their geometry. 246 filled/capped/planarized sites remain required. Historical addition/refinement statements below describe their checkpoints.
+
 > Current 2026-10-28 refinement: testpoint identities and geometry are unchanged, and the overall board now requires 246 filled/capped/planarized sites. The 230-site count below records the historical debug-addition checkpoint. Use the current fabrication processing-site JSON and layered verifier.
 
 # Debug access / test points
@@ -38,7 +40,7 @@ No previous traces or component placements are removed or moved by this addition
 | TP22 | EN | 5015 loop | bottom | 157.240 | 104.841 |
 | TP23 | IO0 | 5015 loop | top | 186.572 | 149.672 |
 | TP24 | SCL | 5015 loop | bottom | 175.350 | 143.830 |
-| TP25 | SDA | 5015 loop | top | 162.834 | 118.639 |
+| TP25 | SDA | Hook loop | top | 164.2 | 118.25 |
 | TP26 | PCI_RX | 5015 loop | bottom | 131.319 | 121.022 |
 | TP27 | PCI_TX | 5015 loop | bottom | 161.903 | 125.840 |
 | TP28 | RX1 | 5015 loop | bottom | 171.474 | 106.574 |
