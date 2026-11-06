@@ -1,4 +1,4 @@
-# Rev C passive firmware, 0.1.1
+# Rev C passive firmware, 0.2.0
 
 First board-specific source port for the accepted ESP32-PICO-V3-02 scanner.
 This is a bench-development image: software checks do not establish physical
@@ -27,10 +27,10 @@ are unchanged. See [SOURCES.md](SOURCES.md) for upstream reuse and licensing.
   recovery/export. No automatic formatting, timezone or invented UTC clock.
 
 Active commands, GPIO13 LED settings, raw expander/debug writes, reset commands,
-voltage reporting, BLE, CAN, OTA, diagnostic decoders and the full original GUI
+voltage reporting, CAN, OTA, diagnostic decoders and the full original GUI
 API are not implemented in this image. ADC reporting waits for calibration.
-The original Windows app is not yet a qualified front end for these extensions;
-use the included client for this milestone.
+The modern desktop and React Native clients are in [../apps](../apps/README.md).
+The old WinForms application is not compatible with these extensions.
 
 ## Safety behavior and limits
 
@@ -64,7 +64,8 @@ SCI routing is serialized with verification, disconnects before changing baud,
 flushes old UART state and verifies the selected receive-only mask. Selection
 acknowledges queue acceptance; poll status for the applied route. A fault requires
 reboot. Package identity is checked read-only before configuring the special
-PICO pins. There are no application eFuse or NVS writes.
+PICO pins. There are no application eFuse writes. BLE bond storage writes are restricted
+to physical commissioning with acquisition inhibited; subscriptions are volatile.
 
 ## Build and software checks
 
@@ -80,7 +81,7 @@ python tools/build.py
 The custom board manifest specifies 8 MB flash, DIO/40 MHz, ESP32 revision 3
 minimum and explicit GPIO routing. ESP-IDF 5.5.0 and espressif32 6.12.0 are pinned.
 PSRAM is intentionally unused in this first image; its internal pins are reserved.
-One factory partition is used; no OTA partitions or flash-stored settings.
+One factory partition is used; no OTA partitions. BLE bonds are stored in NVS.
 Build images are under `.pio/build/rev_c_passive/`. The wrapper performs a clean
 build, rejects input edits during the build and binds declared source, SDK config
 and image hashes. Export requires this verified build stamp; file timestamps are
@@ -116,7 +117,7 @@ python tools/scanner.py status --port COM7
 python tools/scanner.py stop --port COM7
 ```
 
-Logging starts OFF at boot. A debounced press of SW3 toggles requested logging;
+Logging starts OFF at boot. A debounced short press/release of SW3 toggles requested logging;
 the USB start/stop command provides the same request. Use a preformatted FAT card.
 Wait for status `logging=1` after starting. The stop client waits for its own
 acknowledgement, then polls until `requested=0`, `sd_busy=0`, `logging=0` and
@@ -159,7 +160,8 @@ hardware timestamps. PCI timestamps derive from captured SOF edges.
 ## Protocol extensions
 
 Original `0x3d` sync, big-endian length and additive checksum are retained.
-Protocol revision 2 adds SCI provenance and synchronized SD busy status. Only
+Protocol revision 3 retains revision-2 SCI provenance and SD busy status, and adds
+authenticated BLE, control ownership and USB-only passkey retrieval. Only
 these host routes are accepted:
 
 | Route | Mode | Payload | Result |
@@ -169,6 +171,8 @@ these host routes are accepted:
 | 0x04 | 0x80 | empty | JSON status, route 0x85 |
 | 0x04 | 0x81 | one byte 0/1 | Request SD stop/start; echo acceptance |
 | 0x04 | 0x82 | route 0–2, speed index 0–3 | Queue passive SCI receive selection |
+| 0x04 | 0x83 | one byte 0/1 | Release/acquire control lease |
+| 0x04 | 0x84 | empty, USB only | Commissioning passkey and remaining seconds |
 
 Status `rx` order is CCD/PCI/SCI. `lost` order is USB capture/response queue,
 SD queue/discards, PCI edge queue/discontinuities, UART gaps/discarded bursts.
@@ -186,3 +190,26 @@ SD type-2 records contain the
 exact USB frame; type-4 records contain lifecycle metadata. Capture queues are
 bounded: 64 USB frames, 128 SD frames, 512 PCI edges. Long SD stalls can lose
 frames even before the 2 s safety deadline; counters expose this limitation.
+
+## BLE commissioning and simultaneous hosts
+
+BLE uses Nordic UART Service UUIDs with authenticated, encrypted Secure Connections
+and a six-digit passkey. No unauthenticated vehicle data or control is exposed.
+Stop SD recording first, then hold SW3 for three seconds. This opens a 90-second
+pairing window and deliberately latches acquisition/heartbeat OFF until reboot.
+Read the passkey in the USB desktop Device page, pair from the mobile development
+build, then reboot/reconnect. Never commission during a recording. Bond changes
+and flash persistence are prohibited outside this inhibited window. A reconnecting
+client must subscribe again; CCCD changes are not written to flash during capture.
+
+USB and BLE can monitor concurrently. Mutations use a ten-second owner lease;
+status polling renews the current owner's lease. Release control before handing
+it to another client. USB stop preempts the lease so a connected USB operator can
+stop and close SD storage. Disconnecting a host does not stop standalone SD.
+BLE notification and RX queues are bounded; `ble_lost` reports transport drops,
+not successful phone delivery. BLE capture has no end-to-end acknowledgements.
+Notifications and security/connection transitions run on the NimBLE host context.
+
+Software compilation is complete; secure pairing/reconnect, radio coexistence,
+flash timing during commissioning and sustained USB/BLE/SD capture need bench
+validation. Phone background execution is not a guaranteed recorder; use board SD.

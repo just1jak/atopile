@@ -2,6 +2,7 @@
 #include "board.hpp"
 #include "core.hpp"
 #include "expander.hpp"
+#include "ble_transport.hpp"
 #include <atomic>
 #include <cerrno>
 #include <cstdio>
@@ -43,9 +44,12 @@ std::atomic<std::uint8_t> sci_speed_index{1};
 std::atomic<std::uint32_t> usb_lost{0}, sd_lost{0}, edge_lost{0}, uart_lost{0};
 std::atomic<std::uint32_t> ccd_count{0}, pci_count{0}, sci_count{0}, rejected{0};
 std::atomic<std::uint32_t> parse_errors{0};
+std::atomic<std::uint32_t> ble_capture_lost{0};
 scanner::Health health;
 portMUX_TYPE health_mux=portMUX_INITIALIZER_UNLOCKED;
-QueueHandle_t usb_capture_q, sd_capture_q, response_q, sci_request_q;
+QueueHandle_t usb_capture_q, ble_capture_q, sd_capture_q, response_q, sci_request_q;
+scanner::ControlLease lease;
+unsigned command_source=1;std::uint32_t command_epoch=0;
 QueueHandle_t ccd_event_q, sci_event_q, pci_edge_q;
 SemaphoreHandle_t aw_bus_mutex;
 struct Response { std::uint16_t size=0; std::uint8_t data[scanner::max_wire]{}; };
@@ -153,6 +157,7 @@ void control_task(void*) {
     ready=true;
     bool last_button=false, stable_button=false;
     auto button_changed=now_us();
+    std::uint64_t pressed_at=0;bool long_press=false;
     for(;;) {
         if(fault.load()) {
             // Best effort immediate disconnect; watchdog is the independent
@@ -172,7 +177,21 @@ void control_task(void*) {
         if(now-button_changed>=50000 && stable_button!=pressed) {
             stable_button=pressed;
             if(pressed) {
-                portENTER_CRITICAL(&storage_mux); storage_gate.toggle(); portEXIT_CRITICAL(&storage_mux);
+                pressed_at=now;long_press=false;
+            } else if(!long_press) {
+                portENTER_CRITICAL(&storage_mux);storage_gate.toggle();portEXIT_CRITICAL(&storage_mux);
+            }
+        }
+        if(stable_button&&!long_press&&now-pressed_at>=3000000){
+            long_press=true;
+            portENTER_CRITICAL(&storage_mux);
+            const bool idle=!storage_gate.busy()&&!storage_gate.requested();
+            if(idle)ready=false; // Fence a concurrent start claim before releasing the SD lock.
+            portEXIT_CRITICAL(&storage_mux);
+            if(idle){
+                // Bond-key flash writes can stall executable flash. Commission
+                // only with capture inhibited; reboot after pairing to resume.
+                fail();scanner_ble::open_pairing();
             }
         }
         vote(Worker::Control);
@@ -187,7 +206,7 @@ bool setup_uart(uart_port_t uart,unsigned baud,int rx,int tx,QueueHandle_t* even
     cfg.source_clk=UART_SCLK_APB;
     if(!check(uart_param_config(uart,&cfg)) ||
        !check(uart_set_pin(uart,tx,rx,UART_PIN_NO_CHANGE,UART_PIN_NO_CHANGE))) return false;
-    return check(uart_driver_install(uart,4096,uart==UART_NUM_0?4096:0,64,events,0));
+    return check(uart_driver_install(uart,4096,0,64,events,0));
 }
 
 void publish(Capture c) {
@@ -198,6 +217,7 @@ void publish(Capture c) {
     if(c.bus==Bus::Pci) ++pci_count;
     if(c.bus==Bus::Sci) ++sci_count;
     if(xQueueSend(usb_capture_q,&c,0)!=pdTRUE) ++usb_lost;
+    if(scanner_ble::streaming()&&xQueueSend(ble_capture_q,&c,0)!=pdTRUE) ++ble_capture_lost;
     if(storage_gate.requested() && logging.load() && !storage_draining.load() &&
        xQueueSend(sd_capture_q,&c,0)!=pdTRUE) ++sd_lost;
 }
@@ -336,27 +356,28 @@ void acquisition_task(void*) {
 void respond(std::uint8_t command,std::uint8_t mode,const void* p=nullptr,std::size_t n=0) {
     Response r;
     r.size=scanner::wire(r.data,0x80|command,mode,static_cast<const std::uint8_t*>(p),n);
-    if(!r.size || xQueueSend(response_q,&r,0)!=pdTRUE) ++usb_lost;
+    if(command_source==2){if(!scanner_ble::send(r.data,r.size,command_epoch))++usb_lost;}
+    else if(!r.size || xQueueSend(response_q,&r,0)!=pdTRUE) ++usb_lost;
 }
 void deny(std::uint8_t reason=2) { ++rejected; respond(15,reason); }
 void status(bool capabilities) {
-    char text[scanner::max_data];
+    char text[scanner::max_payload];
     int n;
     if(capabilities) {
-        n=snprintf(text,sizeof(text),"{\"fw\":\"rev-c-passive-0.1.1\",\"protocol\":2,\"tx\":false,\"programming\":false,\"can\":false,\"ble\":false,\"adc_calibrated\":false,\"ccd\":true,\"pci\":true,\"sci_raw\":true,\"sd\":true}");
+        n=snprintf(text,sizeof(text),"{\"fw\":\"rev-c-passive-0.2.0\",\"protocol\":3,\"tx\":false,\"programming\":false,\"can\":false,\"ble\":true,\"adc_calibrated\":false,\"ccd\":true,\"pci\":true,\"sci_raw\":true,\"sd\":true,\"lease\":true,\"pairing\":\"USB-passkey\"}");
     } else {
         constexpr unsigned rates[]{976,7812,62500,125000};
         portENTER_CRITICAL(&storage_mux);
         const bool requested=storage_gate.requested(),busy=storage_gate.busy(),recording=logging.load(),error=sd_error.load();
         portEXIT_CRITICAL(&storage_mux);
-        n=snprintf(text,sizeof(text),"{\"ready\":%d,\"fault\":%d,\"logging\":%d,\"sd_error\":%d,\"requested\":%d,\"sd_busy\":%d,\"sci\":%u,\"baud\":%u,\"rx\":[%lu,%lu,%lu],\"lost\":[%lu,%lu,%lu,%lu],\"reject\":%lu,\"parse\":%lu}",
+        n=snprintf(text,sizeof(text),"{\"ready\":%d,\"fault\":%d,\"logging\":%d,\"sd_error\":%d,\"requested\":%d,\"sd_busy\":%d,\"sci\":%u,\"baud\":%u,\"rx\":[%lu,%lu,%lu],\"lost\":[%lu,%lu,%lu,%lu],\"reject\":%lu,\"parse\":%lu,\"owner\":%u,\"pair_seconds\":%u,\"ble_lost\":%lu}",
             ready.load(),fault.load(),recording,error,requested,busy,sci_selected.load(),
             rates[sci_speed_index.load()],
             static_cast<unsigned long>(ccd_count.load()),static_cast<unsigned long>(pci_count.load()),
             static_cast<unsigned long>(sci_count.load()),static_cast<unsigned long>(usb_lost.load()),
             static_cast<unsigned long>(sd_lost.load()),static_cast<unsigned long>(edge_lost.load()),
             static_cast<unsigned long>(uart_lost.load()),static_cast<unsigned long>(rejected.load()),
-            static_cast<unsigned long>(parse_errors.load()));
+            static_cast<unsigned long>(parse_errors.load()),lease.owner(now_us()),scanner_ble::pairing_seconds(),static_cast<unsigned long>(scanner_ble::lost()+ble_capture_lost.load()));
     }
     if(n<0 || std::size_t(n)>=sizeof(text)) { deny(0xfe); return; }
     respond(5,capabilities?0x7f:0x80,text,n);
@@ -366,14 +387,28 @@ void command(const std::uint8_t* p,std::size_t size) {
     // reset, settings, TX, bootstrap, raw expander writes and legacy LED commands.
     const auto mode=p[4];
     const auto action=scanner::classify(p,size,ready.load(),fault.load());
+    lease.touch(command_source,now_us());
     if(action==scanner::Action::Handshake) {
         constexpr char name[]="CHRYSLERSCANNER"; respond(1,0,name,15); return;
     }
     if(action==scanner::Action::Capabilities || action==scanner::Action::Status) { status(mode==0x7f); return; }
+    if(action==scanner::Action::PairingCode){
+        if(command_source!=1||!scanner_ble::pairing_seconds()){deny(0x0d);return;}
+        char code[64];const auto n=snprintf(code,sizeof(code),"{\"passkey\":\"%06u\",\"seconds\":%u}",scanner_ble::passkey(),scanner_ble::pairing_seconds());
+        respond(5,mode,code,n);return;
+    }
+    if(action==scanner::Action::Lease){
+        if(p[5]==0)lease.release(command_source);
+        else if(!lease.acquire(command_source,now_us())){deny(0x0d);return;}
+        respond(5,mode,p+5,1);return;
+    }
     if(action==scanner::Action::Log) {
+        if(p[5]==0&&command_source==1)lease.usb_stop(now_us());
+        if((p[5]==1||command_source==2)&&!lease.acquire(command_source,now_us())){deny(0x0d);return;}
         request_logging(p[5]==1); respond(5,mode,p+5,1); return;
     }
     if(action==scanner::Action::Sci) {
+        if(!lease.acquire(command_source,now_us())){deny(0x0d);return;}
         constexpr std::uint32_t rates[]{976,7812,62500,125000};
         const SciRequest r{p[5]==1?board::rx7:p[5]==2?board::rx15:std::uint8_t{0},p[6],rates[p[6]]};
         if(xQueueSend(sci_request_q,&r,0)!=pdTRUE) { deny(7); return; }
@@ -384,22 +419,45 @@ void command(const std::uint8_t* p,std::size_t size) {
 }
 
 void usb_task(void*) {
-    scanner::Parser parser;
+    scanner::Parser parser,ble_parser;
+    auto ble_epoch=scanner_ble::generation();
+    Response pending{};unsigned tx_offset=0;
     for(;;) {
         vote(Worker::Usb);
+        command_source=1;
         std::uint8_t bytes[128];
         const int n=uart_read_bytes(UART_NUM_0,bytes,sizeof(bytes),0);
         parser.expire(now_us(),command);
         for(int i=0;i<n;++i) parser.feed(bytes[i],now_us(),command);
-        parse_errors=parser.errors;
+        if(ble_epoch!=scanner_ble::generation()){
+            ble_epoch=scanner_ble::generation();ble_parser.clear();lease.release(2);xQueueReset(ble_capture_q);
+        }
+        command_source=2;command_epoch=ble_epoch;
+        scanner_ble::Chunk chunk{};
+        for(unsigned count=0;count<8&&scanner_ble::receive(chunk);++count){
+            if(chunk.generation!=ble_epoch)continue;
+            for(unsigned i=0;i<chunk.size;++i)ble_parser.feed(chunk.data[i],now_us(),command);
+        }
+        ble_parser.expire(now_us(),command);
+        command_source=1;
+        parse_errors=parser.errors+ble_parser.errors;
         Response r;
-        if(xQueueReceive(response_q,&r,0)==pdTRUE) uart_write_bytes(UART_NUM_0,r.data,r.size);
-        else {
+        if(!pending.size&&xQueueReceive(response_q,&pending,0)!=pdTRUE) {
             Capture c;
             if(xQueueReceive(usb_capture_q,&c,0)==pdTRUE) {
-                r.size=scanner::capture_wire(c,r.data); uart_write_bytes(UART_NUM_0,r.data,r.size);
+                pending.size=scanner::capture_wire(c,pending.data);
             }
         }
+        if(pending.size){
+            // Fill only available FIFO space. USB backpressure must not stall
+            // BLE dispatch, health votes or the independent SD capture path.
+            const int sent=uart_tx_chars(UART_NUM_0,reinterpret_cast<const char*>(pending.data+tx_offset),pending.size-tx_offset);
+            if(sent<0)fail();else tx_offset+=sent;
+            if(tx_offset==pending.size){pending.size=0;tx_offset=0;}
+        }
+        Capture c;
+        if(xQueueReceive(ble_capture_q,&c,0)==pdTRUE){r.size=scanner::capture_wire(c,r.data);scanner_ble::send(r.data,r.size,ble_epoch);}
+        scanner_ble::pump();
         vTaskDelay(tick_ms(1));
     }
 }
@@ -446,7 +504,7 @@ struct SdSession {
         file=fdopen(fd,"wb");
         if(!file) { ::close(fd); fd=-1; return false; }
         if(fwrite("CBSDRAW1",1,8,file)!=8) return false;
-        const char metadata[]="rev-c-passive-0.1.1 pcb=e794b86979228ba2275eb4262df848acd16e56ef97a4ccf45402d65b119308d4 utc=unknown tx=disabled sci=per-frame";
+        const char metadata[]="rev-c-passive-0.2.0 pcb=e794b86979228ba2275eb4262df848acd16e56ef97a4ccf45402d65b119308d4 utc=unknown tx=disabled sci=per-frame";
         return append(4,reinterpret_cast<const std::uint8_t*>(metadata),strlen(metadata),now_us()) && sync();
     }
     bool close(bool clean) {
@@ -544,12 +602,13 @@ extern "C" void app_main() {
     if(esp_efuse_get_pkg_ver()!=EFUSE_RD_CHIP_VER_PKG_ESP32PICOV302) return;
     if(!safe_pins()) return;
     usb_capture_q=xQueueCreate(64,sizeof(Capture));
+    ble_capture_q=xQueueCreate(16,sizeof(Capture));
     sd_capture_q=xQueueCreate(128,sizeof(Capture));
     response_q=xQueueCreate(8,sizeof(Response));
     sci_request_q=xQueueCreate(4,sizeof(SciRequest));
     pci_edge_q=xQueueCreate(512,sizeof(Edge));
     aw_bus_mutex=xSemaphoreCreateMutex();
-    if(!usb_capture_q || !sd_capture_q || !response_q || !sci_request_q || !pci_edge_q || !aw_bus_mutex) { fail(); return; }
+    if(!usb_capture_q || !ble_capture_q || !sd_capture_q || !response_q || !sci_request_q || !pci_edge_q || !aw_bus_mutex) { fail(); return; }
     if(!setup_uart(UART_NUM_0,board::usb_baud,board::usb_rx,board::usb_tx,nullptr)) return;
     i2c_config_t i2c{};
     i2c.mode=I2C_MODE_MASTER; i2c.sda_io_num=pin(board::sda); i2c.scl_io_num=pin(board::scl);
@@ -565,6 +624,7 @@ extern "C" void app_main() {
     if(!check(gpio_config(&pci)) || !check(gpio_install_isr_service(ESP_INTR_FLAG_IRAM)) ||
        !check(gpio_isr_handler_add(pin(board::pci_rx),pci_isr,nullptr))) return;
     // All required workers must have actually run before the first permit edge.
+    if(!scanner_ble::initialize()){fail();return;}
     if(xTaskCreatePinnedToCore(usb_task,"usb",6144,nullptr,7,nullptr,0)!=pdPASS ||
        xTaskCreatePinnedToCore(storage_task,"sd",6144,nullptr,5,nullptr,0)!=pdPASS ||
        xTaskCreatePinnedToCore(acquisition_task,"capture",6144,nullptr,12,nullptr,1)!=pdPASS ||

@@ -94,7 +94,7 @@ void test_policy() {
     for(unsigned route=0;route<256;++route) for(unsigned mode=0;mode<256;++mode) {
         p[3]=route; p[4]=mode;
         const auto a=classify(p,6,true,false);
-        const bool allowed=(route==1 && mode==0)||(route==4 && (mode==0x7f||mode==0x80));
+        const bool allowed=(route==1 && mode==0)||(route==4 && (mode==0x7f||mode==0x80||mode==0x84));
         assert((a!=Action::Deny)==allowed);
     }
     p[3]=4; p[4]=0x81;
@@ -254,10 +254,15 @@ void test_journal() {
     const auto crc=crc32(record,r-4);
     for(unsigned i=0;i<4;++i) assert(record[r-4+i]==std::uint8_t(crc>>(8*i)));
     c.flags=Raw|Truncated; capture_wire(c,frame); assert(frame[4]==0x86);
-    c.size=max_data; assert(capture_wire(c,frame)==max_wire);
+    c.size=max_data; assert(capture_wire(c,frame)==max_capture_wire);
     c.size=max_data+1; assert(capture_wire(c,frame)==0);
 }
 int main() {
+    ControlLease lease;
+    assert(lease.acquire(2,1));assert(!lease.acquire(1,2));
+    lease.usb_stop(3);assert(lease.owner(4)==1);assert(!lease.acquire(2,5));
+    lease.release(2);assert(lease.owner(6)==1);lease.release(1);assert(lease.acquire(2,7));
+    assert(lease.owner(10000008)==0);assert(lease.acquire(1,10000009));
     test_expander(); test_health(); test_policy(); test_burst_and_edges(); test_parser(); test_stop_completion(); test_vpw(); test_journal();
     puts("PASS: expander faults, health latch, passive policy, UART error batches, SCI provenance, PCI gaps, stop/mount fencing, framing/fuzz, VPW, journal CRC");
 }

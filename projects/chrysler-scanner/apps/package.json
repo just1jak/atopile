@@ -1,0 +1,31 @@
+{
+  "name": "chrysler-scanner-apps",
+  "version": "0.1.0",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "workspaces": [
+    "packages/*",
+    "desktop",
+    "mobile"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "build:desktop": "npm run build --workspace @chrysler/desktop",
+    "start:desktop": "npm run start --workspace @chrysler/desktop",
+    "dev:desktop": "npm run dev --workspace @chrysler/desktop",
+    "dev:mobile": "npm run start --workspace @chrysler/mobile",
+    "export:mobile": "npm run export --workspace @chrysler/mobile",
+    "test:ui": "npm run build:desktop && node desktop/smoke-build.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.30",
+    "playwright": "^1.65.0",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  },
+  "type": "module"
+}

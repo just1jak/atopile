@@ -28,7 +28,7 @@ def main():
                      and (not p.name.startswith("sdkconfig") or p.name == "sdkconfig.defaults"))
     images = {name: BUILD/name for name in ("bootloader.bin", "partitions.bin", "firmware.bin", "firmware.elf")}
     manifest = {
-        "name": "rev-c-passive-0.1.1", "state": "built; see software-check logs; bench qualification pending",
+        "name": "rev-c-passive-0.2.0", "state": "built; see software-check logs; bench qualification pending",
         "verified_build": recorded,
         "python": platform.python_version(),
         "platformio": "6.1.19", "espressif32": "6.12.0", "esp_idf": "5.5.0",
@@ -41,7 +41,7 @@ def main():
     OUTPUT.mkdir(parents=True, exist_ok=True)
     manifest_path = OUTPUT/"manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2)+"\n", encoding="utf-8")
-    target = OUTPUT/"rev-c-passive-0.1.1-development.zip"
+    target = OUTPUT/"rev-c-passive-0.2.0-development.zip"
     with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED) as bundle:
         for p in sources:
             bundle.write(p, "source/"+p.relative_to(FW).as_posix())

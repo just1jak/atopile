@@ -20,7 +20,7 @@ measured. The fabrication release remains unchanged.
 All seven findings are closed in the revised source. The independent final pass
 identified **no remaining P1/P2 software findings within the passive bench-prototype
 scope**, conditional on the final clean build and checks passing. The accompanying
-`evidence/validation.json` records the checked source and image hashes and results.
+`evidence/passive-0.1.1-validation.json` records the checked source and image hashes and results.
 
 Dedicated GPIO13 ownership, worker fault latching, expander safe masks/order,
 package-pin guard and rejection of active vehicle commands remain intact. Stop
@@ -34,3 +34,6 @@ actual TX passive voltages, UART/PCI timing under load, GPIO edge-capture latenc
 watchdog release, SD card latency/power loss and supply/thermal behavior still
 require the measurements in `VALIDATION.md`. CRC and source review cannot prove
 physical waveform integrity or filesystem survival during power loss.
+
+This independent review covers 0.1.1 only. See VALIDATION.md for the later BLE
+extension, its primary review and pending hardware evidence.

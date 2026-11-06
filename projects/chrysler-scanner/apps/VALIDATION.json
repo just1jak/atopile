@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-06",
+  "app_version": "0.1.0",
+  "firmware_target": "0.2.0 / protocol 3",
+  "checks": {
+    "all_workspace_typechecks": "pass",
+    "shared_vitest_tests": 9,
+    "development_electron_integration": "pass",
+    "packaged_windows_electron_integration": "pass",
+    "synthetic_import_frames": 6000,
+    "csv_export_frames": 6000,
+    "mobile_web_import": "pass",
+    "android_hermes_bundle": "pass",
+    "ios_hermes_bundle": "pass"
+  },
+  "windows_zip_sha256": "e564bf89a68f121ebd8365f0a6c893a6c56af4a0cc19a5e9fbebbb50728a587c",
+  "physical_usb_tested": false,
+  "physical_ble_tested": false,
+  "native_mobile_built": false,
+  "mac_linux_packages_built": false,
+  "signed": false,
+  "cad_changed": false,
+  "review": "primary source review; not independent adversarial review"
+}

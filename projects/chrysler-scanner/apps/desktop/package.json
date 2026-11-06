@@ -1,0 +1,69 @@
+{
+  "name": "@chrysler/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrysler Scanner passive capture and recording companion",
+  "author": "Chrysler Scanner contributors",
+  "license": "GPL-3.0-only",
+  "main": "dist/main.cjs",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node build.mjs",
+    "start": "npm run build && electron .",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "package": "node ../tools/generate-icons.mjs && npm run build && electron-builder"
+  },
+  "dependencies": {
+    "serialport": "13.0.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.6",
+    "electron": "45.2.3",
+    "electron-builder": "26.18.0",
+    "esbuild": "0.27.0",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "@chrysler/core": "0.1.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "lucide-react": "1.70.0"
+  },
+  "build": {
+    "appId": "io.just1jak.chryscanner",
+    "productName": "Chrysler Scanner",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ],
+    "asarUnpack": [
+      "**/*.node"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ],
+      "icon": "../assets/icon.ico"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.developer-tools"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Development"
+    },
+    "npmRebuild": false,
+    "icon": "../assets/icon.png"
+  },
+  "type": "module"
+}

@@ -26,3 +26,8 @@ Hardware authorities:
 
 The SDK and build tools retain their own licenses; they are installed separately,
 not vendored into this firmware source directory.
+
+BLE 0.2.0 uses the pinned ESP-IDF 5.5 NimBLE GAP/GATT/SM/store APIs and NUS
+UUIDs. Host task callbacks serialize notification security checks with disconnect
+state. Bond-store callbacks gate flash changes to physically enabled,
+acquisition-inhibited commissioning. The application BLE transport is new code.

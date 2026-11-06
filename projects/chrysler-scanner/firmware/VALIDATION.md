@@ -1,6 +1,6 @@
 # Rev C passive port validation
 
-Date: 2026-11-06. Scope: first safety/passive USB/SD implementation, separate
+Date: 2026-11-06. Scope: 0.2.0 safety/passive USB/SD/BLE implementation, separate
 from the frozen fabrication release. No physical board, vehicle or SD card has
 been exercised. No firmware was flashed. No fabrication package was regenerated.
 
@@ -30,10 +30,12 @@ the final compile outcome and memory figures. Static RAM figures exclude the
 runtime queues, task stacks and driver allocations; measure heap and stack
 high-water marks on the board.
 
-An independent adversarial source review and a revised-source pass accompany
+The independent adversarial source review applies to the earlier 0.1.1 image.
+The BLE/app extension has received a primary source review, not a new independent
+review. The earlier review and revised-source pass accompany
 these software checks; see `ADVERSARIAL-REVIEW.md`. This is not a hardware safety
 certification. The full original GUI,
-wireless, voltage calibration, active diagnostics and programming remain future
+voltage calibration, active diagnostics and programming remain future
 milestones. Existing frozen hardware reports still describe the fabrication
 checkpoint, when firmware was deferred.
 
@@ -86,3 +88,20 @@ checkpoint, when firmware was deferred.
 Record scope traces, bus-generator input, raw output, counter snapshots, exact
 card model and image/source hashes. Promote only the measured capabilities;
 successful compile and synthetic tests do not close these gates.
+
+## 0.2.0 extension checks and unresolved hardware evidence
+
+The target compiles with Secure Connections only, security level 4, encrypted /
+authenticated GATT, and a single BLE connection. Primary review corrected a
+connection-handle/security race by sending notifications on the NimBLE host,
+restricted bond flash writes to acquisition-inhibited commissioning, fenced SD
+start against pairing, separated USB/BLE loss counters, and made USB transmission
+nonblocking. C++ lease tests cover expiry and USB stop preemption. These source
+checks do not prove pairing or real-time behavior on the board.
+
+Additionally bench-test: pairing denied outside SW3 window; wrong passkey and
+unbonded reads/writes; commissioning requires idle SD and reboot; bond persistence
+and reconnect without flash writes; notification subscription and disconnect
+handle reuse; USB/BLE ownership conflicts, expiry and emergency USB stop; sustained
+three-bus traffic plus USB/BLE/SD; phone background/disconnect and dropped queues.
+Confirm every fault leaves passive outputs and external permit in the safe state.

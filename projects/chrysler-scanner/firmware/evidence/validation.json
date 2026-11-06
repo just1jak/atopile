@@ -1,62 +1,46 @@
 {
   "date": "2026-11-06",
-  "firmware": "0.1.1",
-  "protocol": 2,
-  "scope": "passive bench prototype; no physical validation",
+  "firmware": "0.2.0",
+  "protocol": 3,
+  "scope": "passive USB/SD with authenticated BLE; bench development only",
   "pcb_sha256": "e794b86979228ba2275eb4262df848acd16e56ef97a4ccf45402d65b119308d4",
   "review": {
-    "independent_reviewer": true,
-    "closed_findings": {
-      "P1": 1,
-      "P2": 6
-    },
-    "remaining_P1": 0,
-    "remaining_P2": 0
+    "independent_reviewer": false,
+    "type": "primary source review of BLE/app extension",
+    "previous_independent_review": "ADVERSARIAL-REVIEW.md (0.1.1 only)"
   },
   "checks": {
     "embedded_build": "pass",
-    "cpp_regression_groups": 8,
-    "cpp_result": "pass",
+    "cpp_host_core": "pass",
     "python_tests": 9,
-    "python_result": "pass under python -O",
-    "board_mcu_mappings": 17,
-    "board_expander_nets": 18,
-    "board_result": "pass"
+    "board_hash_and_mappings": "pass",
+    "ble_secure_connections_only": true,
+    "ble_security_level": 4,
+    "static_ram_bytes": 40372,
+    "flash_bytes": 598705
   },
-  "build": {
+  "verified_build": {
     "inputs": {
       "boards/chrysler_rev_c.json": "1048320f20795b872e507e7b2c7b9abe179af44d2529e086d9117e665c7ab57f",
-      "CMakeLists.txt": "dfbe076bb645f75d7f0c3a2b5bdb3a93c3f0f125607284907ef568de04034f2f",
+      "CMakeLists.txt": "4bfd78fe232ee9f23ff434d3781f1d328914789b0343a2bd843ec98c181f899a",
+      "include/ble_transport.hpp": "459187fbb5a8ac245d79d3b3e00cb8243ed225cb823ed90443cbaca0218b5c38",
       "include/board.hpp": "33b5c8d6fc71cd907b4ff1321ae8346092db9f98c2c11e513f33ebe591d4ec0b",
-      "include/core.hpp": "b1a44ec09e3b216ab6d001238b7d27a52421d639e5edaec3a9cf597d6f0be8fc",
+      "include/core.hpp": "74e9af381374876c516c7c812ea5b68d313a5ab6f662f3f70c2ce4ba7027907e",
       "include/expander.hpp": "f57d5f3489381ea0afe689b3190919e1dc3a65a5967073f49b563ca52ace85d0",
       "partitions.csv": "68d8772b93916a9d347551ea0100c9b54a6d97889409b537d1ef9f4e09c1b119",
       "platformio.ini": "397901396512b752e869229a8d1acf54adfba61dec4e666bb31eea0956f0a73b",
-      "sdkconfig.defaults": "f1cb6ea0a749da1d8190f024809e8441ff39540df2c5f53d535c4ab22f872585",
-      "src/CMakeLists.txt": "1f2b43ca0e1461ea084802a1f55b9640c75fdfaad194930f450f1e26fb78bcd0",
-      "src/main.cpp": "d8f6fc93d6ea54b2772aba3d5ba01e80a0362bcac7b483002de997df6cb62ebb"
+      "sdkconfig.defaults": "ab214792baa702ad474abac27beb6c7b3c85c05dff9b3265be7db8e423349117",
+      "src/ble_transport.cpp": "af1e263bfd4af7da742ed9abeee1c114f81d6f9c29e940ca88848fc3b9e68463",
+      "src/CMakeLists.txt": "36a5f02322a7762e18003e3413dae896f467de94da435da423cf66ae2e765f43",
+      "src/main.cpp": "3f868401a22d0c803b100783ffc4f6685acf5983710a57c4cfe83a90bdb92a56"
     },
     "images": {
-      "bootloader.bin": "add7075ffd48a654d5ff96306d6cd726cb51c509dd11d79e5cdd3e676f588340",
+      "bootloader.bin": "e7b05c7d953c3b76a5904db63cac738dd1fa90c53893ddff9b6c676c5de8a58f",
       "partitions.bin": "73c0b5c3e5fcba3a151cc70c453c93dd5f4798899e7f2f8cca76da1f32ffc501",
-      "firmware.bin": "bed61fe2c0443f0f5dae0c12b12380df7db8705390ee4940430bcd89acb3527a",
-      "firmware.elf": "fa8e6bd5824ff90e5bc8714de7ca4130fe1110b29c795b1e58a9d7857363aa32"
+      "firmware.bin": "5dd5d11a2f31caf38e54ef501829db599b54f14d9e5d057e31e6cfc9d6d3c801",
+      "firmware.elf": "80953532b5f1e726ac09d9699b786d5dafd1ac74b49cb919f12541ed209a9f81"
     },
-    "sdkconfig_sha256": "0f3329627e942bc21aa234ada453399eb2fa5b5033b07b606f8835f43041ca2f"
-  },
-  "reviewed_tool_test_sha256": {
-    "tests/test_core.cpp": "e2cda2f32944a6d51171b38735a00cec618e8c0be804b9a23fa76033bc2c0c81",
-    "tests/test_tools.py": "2d8840bcc178258471df19b9784f3cab482e951acf7baddfc36c311207645567",
-    "tools/build.py": "a5db400c7f6991f4d06ce13b8b3376d6b9f354e85d947a9a2dc7bd3267d4d85f",
-    "tools/check_board.py": "a32a19cb619eefdc53363b2102e7fe58e31dafdb2409262e992f8f248facbbc7",
-    "tools/export_bundle.py": "20be0beacb7015907875fa9765b61e927fd1eb6b523c695fb23e77d5ef72a875",
-    "tools/scanner.py": "3ea4977120f83b23c441ad36be93eb4efc24ccacf70b08c712760d2796ec7a7b"
-  },
-  "log_sha256": {
-    "embedded": "d3c1538320eab8d4a4c4536ea7a8a4d9807b3b29207b784da30356ac1fd17a6d",
-    "cpp": "d2b1e5f3d5e367847633e2ca9b83ab629741e54ecb58a9ca1a37d16ac76896b3",
-    "python": "eb15f1b7a00759879a87e5bf36593d121d3c322720af2aae591b91aab94dbed4",
-    "board": "8572cb0728160b297dc8f1f92cc58567c582959bc56ac7d9c9e2685c59274332"
+    "sdkconfig_sha256": "1e4a854f9491836b671ea4fdc1e2f5ce858d925a1cf081f7b7151799eeda27d7"
   },
   "flashed": false,
   "bench_validated": false,

@@ -1,0 +1,8 @@
+node_modules/
+**/dist/
+**/release/
+**/.expo/
+**/web-build/
+**/android/
+**/ios/
+artifacts/

@@ -9,7 +9,7 @@
 #include <atomic>
 
 namespace scanner {
-constexpr std::size_t max_data=256, max_wire=max_data+10;
+constexpr std::size_t max_data=256, max_capture_wire=max_data+10, max_payload=512, max_wire=max_payload+6;
 enum class Bus : std::uint8_t { Internal=0, Ccd=1, Sci=2, Pci=4 };
 enum Flag : std::uint8_t { ChecksumOk=1, Raw=2, Truncated=4, UartError=8 };
 struct Capture {
@@ -24,7 +24,20 @@ struct Capture {
 inline std::uint8_t sum(const std::uint8_t* p,std::size_t n) {
     std::uint8_t s=0; for(std::size_t i=0;i<n;++i) s+=p[i]; return s;
 }
-enum class Action { Deny, Handshake, Capabilities, Status, Log, Sci };
+enum class Action { Deny, Handshake, Capabilities, Status, Log, Sci, Lease, PairingCode };
+// Called only by the serialized command worker, never by BLE callbacks.
+class ControlLease {
+    unsigned owner_=0;std::uint64_t until_=0;
+public:
+    unsigned owner(std::uint64_t now) {if(now>=until_)owner_=0;return owner_;}
+    bool acquire(unsigned source,std::uint64_t now) {
+        if(owner(now) && owner_!=source)return false;
+        owner_=source;until_=now+10000000;return true;
+    }
+    void touch(unsigned source,std::uint64_t now) {if(owner(now)==source)until_=now+10000000;}
+    void release(unsigned source) {if(owner_==source){owner_=0;until_=0;}}
+    void usb_stop(std::uint64_t now) {owner_=1;until_=now+10000000;}
+};
 // Caller serializes request/claim/complete and status snapshots with one lock.
 // Atomic reads allow the capture publisher to check admission without that lock.
 class StorageGate {
@@ -46,10 +59,13 @@ inline Action classify(const std::uint8_t* p,std::size_t size,bool ready,bool fa
     if(route==1 && mode==0 && n==0) return Action::Handshake;
     if(route==4 && n==0 && mode==0x7f) return Action::Capabilities;
     if(route==4 && n==0 && mode==0x80) return Action::Status;
+    if(route==4 && n==0 && mode==0x84) return Action::PairingCode;
+    if(route==4 && mode==0x83 && n==1 && p[5]==0) return Action::Lease;
     if(route==4 && mode==0x81 && n==1 && p[5]==0) return Action::Log; // Always permit safe stop.
     if(route!=4 || !ready || fault) return Action::Deny;
     if(mode==0x81 && n==1 && p[5]<=1) return Action::Log;
     if(mode==0x82 && n==2 && p[5]<=2 && p[6]<=3) return Action::Sci;
+    if(mode==0x83 && n==1 && p[5]==1) return Action::Lease;
     return Action::Deny;
 }
 inline std::uint8_t pci_crc(const std::uint8_t* p,std::size_t n) {
@@ -65,7 +81,7 @@ inline void be32(std::uint8_t* p,std::uint32_t v) {
 }
 inline std::size_t wire(std::uint8_t* out,std::uint8_t route,std::uint8_t mode,
                         const std::uint8_t* data,std::size_t n) {
-    if(n>max_data+4) return 0;
+    if(n>max_payload) return 0;
     out[0]=0x3d; out[1]=(n+2)>>8; out[2]=n+2; out[3]=route; out[4]=mode;
     if(n) std::memcpy(out+5,data,n);
     out[n+5]=sum(out,n+5); return n+6;

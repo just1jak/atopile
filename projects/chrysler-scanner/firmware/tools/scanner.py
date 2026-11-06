@@ -9,7 +9,7 @@ import time
 import zlib
 from pathlib import Path
 
-MAX_WIRE = 266
+MAX_WIRE = 518
 
 
 def packet(mode, payload=b"", route=4):

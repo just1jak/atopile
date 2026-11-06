@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Chrysler Scanner",
+    "slug": "chrysler-scanner",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "io.just1jak.chryscanner",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "Connect to your scanner for live capture and recording controls."
+      }
+    },
+    "android": {
+      "package": "io.just1jak.chryscanner",
+      "permissions": [
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_CONNECT",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-document-picker",
+      "react-native-ble-manager"
+    ],
+    "icon": "../assets/icon.png"
+  }
+}

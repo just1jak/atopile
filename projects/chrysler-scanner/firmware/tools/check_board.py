@@ -45,7 +45,7 @@ def main():
     source = (FW/"src/main.cpp").read_text()
     # Structural guards supplement, not replace, compiled tests and bench work.
     assert "esp_efuse_write" not in source and "nvs_set_" not in source
-    writes = re.findall(r"uart_write_bytes\(([^,]+),", source)
+    writes = re.findall(r"uart_(?:write_bytes|tx_chars)\(([^,]+),", source)
     assert writes and all(port.strip() == "UART_NUM_0" for port in writes)
     assert "init_ble" not in source and "ledc_" not in source
     assert "format_if_mount_failed=false" in source
