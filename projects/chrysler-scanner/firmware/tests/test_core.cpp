@@ -3,6 +3,7 @@
 #include "ble_transport.hpp"
 #include "board.hpp"
 #include "expander.hpp"
+#include "rev_d_can.hpp"
 #include <cassert>
 #include <cstdio>
 #include <vector>
@@ -295,6 +296,25 @@ void test_ble_command_generation() {
     stream.feed(chunk, [] { return 105000; }, current, sink);
     assert(commands == 2);
 }
+void test_can_diagnostic_boundary() {
+    using can_diag::supported;
+    for (unsigned service=0; service<256; ++service) {
+        for (unsigned pid=0; pid<256; ++pid) {
+            constexpr std::array<unsigned,11> pids{0,1,4,5,0xb,0xc,0xd,0xf,0x11,0x20,0x40};
+            bool allowed=(service==3 && pid==0) || (service==9 && pid==2);
+            if (service==1) for (auto value:pids) allowed=allowed || pid==value;
+            assert(supported(service,pid)==allowed);
+        }
+    }
+    Capture capture{};
+    capture.bus=Bus::Can;
+    capture.size=6;
+    capture.data[3]=0x7e;
+    std::uint8_t bytes[max_wire]{};
+    assert(capture_wire(capture,bytes)==16);
+    assert(bytes[3]==0xd7 && bytes[4]==0xa0);
+}
+
 int main() {
     ControlLease lease;
     assert(lease.acquire(2,1));assert(!lease.acquire(1,2));
@@ -302,6 +322,7 @@ int main() {
     lease.release(2);assert(lease.owner(6)==1);lease.release(1);assert(lease.acquire(2,7));
     assert(lease.owner(10000008)==0);assert(lease.acquire(1,10000009));
     test_ble_command_generation();
+    test_can_diagnostic_boundary();
     test_expander(); test_health(); test_policy(); test_burst_and_edges(); test_parser(); test_stop_completion(); test_vpw(); test_journal();
     puts("PASS: expander faults, health latch, passive policy, UART error batches, SCI provenance, PCI gaps, stop/mount fencing, BLE epoch invalidation, framing/fuzz, VPW, journal CRC");
 }

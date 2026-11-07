@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-3.0-only
-"""Rev C passive USB client and CRC-checked CBSDRAW1 recovery/export."""
+"""Scanner USB client and CRC-checked CBSDRAW1 recovery/export."""
 import argparse
 import json
 import struct
@@ -89,6 +89,17 @@ def describe(frame):
                 raise ValueError("Invalid SCI source metadata")
             result.update(obd_pin=frame[9], baud=(976, 7812, 62500, 125000)[frame[10]],
                           data=frame[11:-1].hex())
+        if bus == 5 and mode == 0xA0:
+            if len(frame) < 16:
+                raise ValueError("Truncated CAN capture")
+            identifier = int.from_bytes(frame[9:13], "big")
+            flags, dlc = frame[13:15]
+            data = frame[15:-1]
+            if flags & ~7 or dlc > 8 or len(data) != (0 if flags & 2 else dlc):
+                raise ValueError("Invalid CAN capture metadata")
+            result.update(can_id=identifier, extended=bool(flags & 1),
+                          remote=bool(flags & 2), diagnostic_window=bool(flags & 4),
+                          dlc=dlc, data=data.hex())
     elif route == 0x85 and mode in (0x7F, 0x80):
         result["status"] = json.loads(frame[5:-1])
     else:
@@ -156,6 +167,9 @@ def serial_action(args):
     port.rts = False
     port.port = args.port
     with port:
+        if args.action in ("can-mode", "can-read"):
+            can_action(port, parser, args)
+            return
         # Levels are set before opening; OS/adapter glitches still need testing.
         mode, payload = {
             "caps": (0x7F, b""), "status": (0x80, b""),
@@ -195,6 +209,64 @@ def serial_action(args):
             raise TimeoutError("No matching response; check power, UART and startup/fault status")
 
 
+def can_action(port, parser, args):
+    def exchange(mode, data=b""):
+        port.write(packet(mode, data))
+        deadline = time.monotonic() + 1.5
+        while time.monotonic() < deadline:
+            for frame in parser.feed(port.read(512)):
+                if frame[3] == 0x8F:
+                    raise RuntimeError(f"Scanner rejected CAN command: 0x{frame[4]:02x}")
+                if frame[3:5] == bytes((0x85, mode)):
+                    return frame[5:-1]
+        raise TimeoutError(f"No response to CAN command 0x{mode:02x}")
+
+    capabilities = json.loads(exchange(0x7F))
+    if capabilities.get("protocol") != 4 or not capabilities.get("can_diag_usb"):
+        raise RuntimeError("Rev D CAN bench firmware required")
+    mode = {"open": 0, "legacy": 1, "passive": 2}.get(getattr(args, "mode", "passive"), 2)
+    rate = int(args.bitrate == 250000)
+    exchange(0x85, bytes((mode, rate)))
+
+    def status():
+        result = exchange(0x87)
+        if len(result) < 6 or len(result) != 6 + result[5]:
+            raise RuntimeError("Invalid CAN result length")
+        return result
+
+    try:
+        deadline = time.monotonic() + 2
+        while time.monotonic() < deadline:
+            state = status()
+            if state[0] == mode and state[1] == 0:
+                break
+            time.sleep(0.05)
+        else:
+            raise TimeoutError("CAN selector did not settle")
+        if args.action == "can-mode":
+            print(json.dumps({"mode": args.mode, "bitrate": args.bitrate}))
+            return
+        service, pid = {"pid": (1, args.pid), "dtc": (3, 0), "vin": (9, 2)}[args.query]
+        exchange(0x86, bytes((service, pid)))
+        deadline = time.monotonic() + 2
+        while time.monotonic() < deadline:
+            state = status()
+            if state[2] == 2 and not state[1] & 2:
+                payload = state[6:]
+                result = {"can_id": int.from_bytes(state[3:5], "big"), "response": payload.hex()}
+                if args.query == "vin" and len(payload) == 20 and payload[:3] == b"\x49\x02\x01":
+                    result["vin"] = payload[3:].decode("ascii", errors="replace")
+                print(json.dumps(result))
+                return
+            if state[2] in (3, 4):
+                raise RuntimeError("CAN diagnostic window timed out or faulted")
+            time.sleep(0.04)
+        raise TimeoutError("No complete diagnostic response")
+    finally:
+        # Releasing USB ownership ends any outstanding active window.
+        port.write(packet(0x83, b"\x00"))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="action", required=True)
@@ -208,6 +280,15 @@ def main():
                          help="0 disconnected, 1 OBD7, 2 OBD15")
         cmd.add_argument("--speed", type=int, choices=(0, 1, 2, 3), default=1,
                          help="0=976, 1=7812, 2=62500, 3=125000 baud")
+    for action in ("can-mode", "can-read"):
+        cmd = sub.add_parser(action)
+        cmd.add_argument("--port", required=True)
+        cmd.add_argument("--bitrate", type=int, choices=(250000, 500000), default=500000)
+        if action == "can-mode":
+            cmd.add_argument("mode", choices=("open", "legacy", "passive"))
+        else:
+            cmd.add_argument("query", choices=("pid", "dtc", "vin"))
+            cmd.add_argument("--pid", type=lambda value: int(value, 0), choices=range(256), default=0x0C)
     args = parser.parse_args()
     if args.action == "recover":
         for record in recover(args.file):

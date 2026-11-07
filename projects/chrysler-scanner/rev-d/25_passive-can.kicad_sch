@@ -1,0 +1,322 @@
+(kicad_sch (version 20250114) (generator "eeschema") (uuid "faedc935-25e1-555c-a786-ff2487c48512") (paper "A4")
+(title_block (title "Rev D passive CAN receiver") (rev "D prototype"))
+(lib_symbols (symbol "RevD:TCAN1042HGVDRQ1" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 8.89 0) (effects (font (size 1.27 1.27))))
+(property "Value" "TCAN1042HGVDRQ1" (at 0 6.35 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(symbol "TCAN1042HGVDRQ1_0_1" (rectangle (start -10.16 5.08) (end 10.16 -7.62) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "TCAN1042HGVDRQ1_1_1" (pin input line (at -12.7 2.54 0) (length 2.54) (name "TXD" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1))))) (pin power_in line (at -12.7 -5.08 0) (length 2.54) (name "GND" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1))))) (pin power_in line (at 12.7 2.54 180) (length 2.54) (name "VCC" (effects (font (size 1 1)))) (number "3" (effects (font (size 1 1))))) (pin output line (at -12.7 0 0) (length 2.54) (name "RXD" (effects (font (size 1 1)))) (number "4" (effects (font (size 1 1))))) (pin power_in line (at 12.7 0 180) (length 2.54) (name "VIO" (effects (font (size 1 1)))) (number "5" (effects (font (size 1 1))))) (pin bidirectional line (at 12.7 -5.08 180) (length 2.54) (name "CANL" (effects (font (size 1 1)))) (number "6" (effects (font (size 1 1))))) (pin bidirectional line (at 12.7 -2.54 180) (length 2.54) (name "CANH" (effects (font (size 1 1)))) (number "7" (effects (font (size 1 1))))) (pin input line (at -12.7 -2.54 0) (length 2.54) (name "STB" (effects (font (size 1 1)))) (number "8" (effects (font (size 1 1))))))) (symbol "RevD:PESD2CANFD36VT-Q" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
+(property "Reference" "D" (at 0 8.89 0) (effects (font (size 1.27 1.27))))
+(property "Value" "PESD2CANFD36VT-Q" (at 0 6.35 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(symbol "PESD2CANFD36VT-Q_0_1" (rectangle (start -10.16 5.08) (end 10.16 -7.62) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "PESD2CANFD36VT-Q_1_1" (pin passive line (at -12.7 2.54 0) (length 2.54) (name "CANH" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1))))) (pin passive line (at -12.7 0 0) (length 2.54) (name "CANL" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1))))) (pin passive line (at -12.7 -2.54 0) (length 2.54) (name "GND" (effects (font (size 1 1)))) (number "3" (effects (font (size 1 1))))))) (symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "power:GND"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	))
+(symbol (lib_id "RevD:TCAN1042HGVDRQ1") (at 100.33 63.5 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "d7cf30fa-ec8c-595d-aa97-87985ab2fb55") (property "Reference" "U25" (at 100.33 53.5 0) (effects (font (size 1.1 1.1)) )) (property "Value" "TCAN1042HGVDRQ1" (at 100.33 56.5 0) (effects (font (size 1.1 1.1)) )) (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 100.33 63.5 0) (effects (font (size 1.1 1.1)) (hide yes))) (pin "1" (uuid "65cabe4d-dc6c-52fa-b2f5-ff5f0952fae6")) (pin "2" (uuid "39672714-b3bf-54bf-8e24-114229e612f3")) (pin "3" (uuid "5d066c42-d988-561a-9b40-7e23b0f277c0")) (pin "4" (uuid "0e33df79-dd90-58c7-9652-ba82c163bb4a")) (pin "5" (uuid "54a0b773-3d45-5176-910c-7f0724457e4d")) (pin "6" (uuid "ab386938-29ae-5d59-aae2-7732269b5acf")) (pin "7" (uuid "b98ad4ef-c1fd-5239-ab2d-42f3449c6b85")) (pin "8" (uuid "7522932d-c406-57db-afe7-775b764242aa")) (instances (project "ChryslerScanner_RevD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/7d755620-4e2e-5039-8a85-5f839db00f0a" (reference "U25") (unit 1)))))
+(symbol (lib_id "RevD:PESD2CANFD36VT-Q") (at 100.33 101.6 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "a48418f9-d5d1-5ae1-ba46-05d65cd84608") (property "Reference" "D40" (at 100.33 91.6 0) (effects (font (size 1.1 1.1)) )) (property "Value" "PESD2CANFD36VT-Q" (at 100.33 94.6 0) (effects (font (size 1.1 1.1)) )) (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 100.33 101.6 0) (effects (font (size 1.1 1.1)) (hide yes))) (pin "1" (uuid "28f12514-6354-57d2-9ca7-0f7a383c548b")) (pin "2" (uuid "60a2e026-1179-51ed-84e4-86e1a0a99e23")) (pin "3" (uuid "264e7727-1799-5441-843b-64672a693f25")) (instances (project "ChryslerScanner_RevD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/7d755620-4e2e-5039-8a85-5f839db00f0a" (reference "D40") (unit 1)))))
+(symbol (lib_id "Device:C") (at 165.1 63.5 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "103a5093-aed7-5324-bae8-9b96650e34db") (property "Reference" "C140" (at 165.1 53.5 0) (effects (font (size 1.1 1.1)) )) (property "Value" "100n" (at 165.1 56.5 0) (effects (font (size 1.1 1.1)) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 165.1 63.5 0) (effects (font (size 1.1 1.1)) (hide yes))) (pin "1" (uuid "cf3e177c-8af0-51a3-ad35-e714b8665b9e")) (pin "2" (uuid "85a538a6-d9fd-5437-a114-05ebd5214a75")) (instances (project "ChryslerScanner_RevD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/7d755620-4e2e-5039-8a85-5f839db00f0a" (reference "C140") (unit 1)))))
+(symbol (lib_id "Device:C") (at 190.5 63.5 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "8c6f90c4-105b-5e19-af4b-4fa211d6110e") (property "Reference" "C141" (at 190.5 53.5 0) (effects (font (size 1.1 1.1)) )) (property "Value" "100n" (at 190.5 56.5 0) (effects (font (size 1.1 1.1)) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 190.5 63.5 0) (effects (font (size 1.1 1.1)) (hide yes))) (pin "1" (uuid "e911eca9-ae6f-5b8d-9878-3cd5c8b195c9")) (pin "2" (uuid "f0df0bad-1902-5cde-be15-9e5fb914c06b")) (instances (project "ChryslerScanner_RevD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/7d755620-4e2e-5039-8a85-5f839db00f0a" (reference "C141") (unit 1)))))
+(wire (pts (xy 87.63 60.96) (xy 78.74 60.96)) (stroke (width 0) (type default)) (uuid "baf59cbb-cf5a-53db-8965-a260636bc597"))
+(global_label "CAN_PHY_TXD" (shape bidirectional) (at 78.74 60.96 180) (effects (font (size 1.1 1.1)) (justify right)) (uuid "5e3ed2a3-c219-5989-870c-8c7efbdc5717"))
+(wire (pts (xy 87.63 63.5) (xy 78.74 63.5)) (stroke (width 0) (type default)) (uuid "2dfdfa95-66b9-55ff-be5d-f5bf1fba34b8"))
+(global_label "CAN_RX" (shape bidirectional) (at 78.74 63.5 180) (effects (font (size 1.1 1.1)) (justify right)) (uuid "6fe010e0-6ada-5e55-9ce4-58566580fb81"))
+(wire (pts (xy 113.03 60.96) (xy 121.92 60.96)) (stroke (width 0) (type default)) (uuid "841c8d6c-87a0-5d86-abb8-d0e1bf014ce6"))
+(global_label "+5V" (shape bidirectional) (at 121.92 60.96 0) (effects (font (size 1.1 1.1)) (justify left)) (uuid "cbcb67b4-e47a-5d23-a687-99c9db1d75dc"))
+(wire (pts (xy 113.03 63.5) (xy 121.92 63.5)) (stroke (width 0) (type default)) (uuid "d10b1be6-64af-5786-a388-1c23f84132bd"))
+(global_label "+3.3V" (shape bidirectional) (at 121.92 63.5 0) (effects (font (size 1.1 1.1)) (justify left)) (uuid "ddb552aa-bf50-511d-8bec-c19df08b6c0f"))
+(wire (pts (xy 113.03 66.04) (xy 121.92 66.04)) (stroke (width 0) (type default)) (uuid "b23cad07-679c-5589-b1f4-e286d64d9dcc"))
+(global_label "CAN_BRANCH_H" (shape bidirectional) (at 121.92 66.04 0) (effects (font (size 1.1 1.1)) (justify left)) (uuid "946669ce-941b-5645-889f-397b8accbd2e"))
+(wire (pts (xy 113.03 68.58) (xy 121.92 68.58)) (stroke (width 0) (type default)) (uuid "890532a1-f512-581f-b614-7d4b4a8e70c2"))
+(global_label "CAN_BRANCH_L" (shape bidirectional) (at 121.92 68.58 0) (effects (font (size 1.1 1.1)) (justify left)) (uuid "064a0e24-c81d-504d-ab5b-451c6dadbaad"))
+(wire (pts (xy 87.63 99.06) (xy 78.74 99.06)) (stroke (width 0) (type default)) (uuid "ab192cc8-85d9-5364-a3e3-b2b2c8c304c1"))
+(global_label "CAN_BRANCH_H" (shape bidirectional) (at 78.74 99.06 180) (effects (font (size 1.1 1.1)) (justify right)) (uuid "c72ecb8a-ac7d-525e-8043-f4a0a077ea35"))
+(wire (pts (xy 87.63 101.6) (xy 78.74 101.6)) (stroke (width 0) (type default)) (uuid "5206fec6-9c8e-5982-b74d-91adbf3b5b5c"))
+(global_label "CAN_BRANCH_L" (shape bidirectional) (at 78.74 101.6 180) (effects (font (size 1.1 1.1)) (justify right)) (uuid "95a90f23-9117-5980-888b-eb8a20fab816"))
+(wire (pts (xy 165.1 59.69) (xy 165.1 54.61)) (stroke (width 0) (type default)) (uuid "dd008a98-fd4e-5510-8022-9f04764b5a6c"))
+(global_label "+5V" (shape bidirectional) (at 165.1 54.61 0) (effects (font (size 1.1 1.1)) (justify left)) (uuid "a6945eaf-bdb0-5fab-aeac-674c0098373a"))
+(wire (pts (xy 190.5 59.69) (xy 190.5 54.61)) (stroke (width 0) (type default)) (uuid "6aa0c1bb-8434-5e55-a644-8ca8e9199094"))
+(global_label "+3.3V" (shape bidirectional) (at 190.5 54.61 0) (effects (font (size 1.1 1.1)) (justify left)) (uuid "4e8aeefe-4fd6-58c3-be24-f9588c4e69bf"))
+(wire (pts (xy 87.63 68.58) (xy 85.09 68.58)) (stroke (width 0) (type default)) (uuid "99e5a707-03a1-5d3a-852a-f59609f5e8e4"))
+(wire (pts (xy 85.09 68.58) (xy 85.09 73.66)) (stroke (width 0) (type default)) (uuid "f953ce2a-d2bd-5b21-9637-06f014333c0e"))
+(symbol (lib_id "power:GND") (at 85.09 73.66 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "fa38d6ea-67ae-50aa-87bc-e34ecac1d57b") (property "Reference" "#PWR0402" (at 85.09 63.66 0) (effects (font (size 1.1 1.1)) (hide yes))) (property "Value" "GND" (at 85.09 77.66 0) (effects (font (size 1.1 1.1)) )) (property "Footprint" "" (at 85.09 73.66 0) (effects (font (size 1.1 1.1)) (hide yes))) (pin "1" (uuid "ebb738e1-c299-56e8-9f64-ce977ee437da")) (instances (project "ChryslerScanner_RevD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/7d755620-4e2e-5039-8a85-5f839db00f0a" (reference "#PWR0402") (unit 1)))))
+(wire (pts (xy 87.63 104.14) (xy 85.09 104.14)) (stroke (width 0) (type default)) (uuid "5c650518-225f-5d03-ba4d-ab42b62678aa"))
+(wire (pts (xy 85.09 104.14) (xy 85.09 110.49)) (stroke (width 0) (type default)) (uuid "a1dc8dbb-64b9-5cc8-92d6-0e4742a39f14"))
+(symbol (lib_id "power:GND") (at 85.09 110.49 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "83a161d8-dd41-52c9-a0d0-17e71ed1c4b2") (property "Reference" "#PWR0403" (at 85.09 100.49 0) (effects (font (size 1.1 1.1)) (hide yes))) (property "Value" "GND" (at 85.09 114.49 0) (effects (font (size 1.1 1.1)) )) (property "Footprint" "" (at 85.09 110.49 0) (effects (font (size 1.1 1.1)) (hide yes))) (pin "1" (uuid "e29ea9fb-5cfb-58c5-892e-c294003df0e6")) (instances (project "ChryslerScanner_RevD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/7d755620-4e2e-5039-8a85-5f839db00f0a" (reference "#PWR0403") (unit 1)))))
+(wire (pts (xy 165.1 67.31) (xy 165.1 73.66)) (stroke (width 0) (type default)) (uuid "449bc364-f754-5b51-93b9-dba29b28f83f"))
+(symbol (lib_id "power:GND") (at 165.1 73.66 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "b4e8ca48-05d2-5b6b-8529-294bcb77a30d") (property "Reference" "#PWR0404" (at 165.1 63.66 0) (effects (font (size 1.1 1.1)) (hide yes))) (property "Value" "GND" (at 165.1 77.66 0) (effects (font (size 1.1 1.1)) )) (property "Footprint" "" (at 165.1 73.66 0) (effects (font (size 1.1 1.1)) (hide yes))) (pin "1" (uuid "99c5bc19-e452-5f26-92f0-265a1a228fd1")) (instances (project "ChryslerScanner_RevD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/7d755620-4e2e-5039-8a85-5f839db00f0a" (reference "#PWR0404") (unit 1)))))
+(wire (pts (xy 190.5 67.31) (xy 190.5 73.66)) (stroke (width 0) (type default)) (uuid "827f1cef-e89b-550e-8e25-9a67a6f248b3"))
+(symbol (lib_id "power:GND") (at 190.5 73.66 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "c28ecf42-6afe-5be3-9341-6516d2fe50a0") (property "Reference" "#PWR0405" (at 190.5 63.66 0) (effects (font (size 1.1 1.1)) (hide yes))) (property "Value" "GND" (at 190.5 77.66 0) (effects (font (size 1.1 1.1)) )) (property "Footprint" "" (at 190.5 73.66 0) (effects (font (size 1.1 1.1)) (hide yes))) (pin "1" (uuid "9230e058-369e-54c9-bf13-664698a1f97f")) (instances (project "ChryslerScanner_RevD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd/7d755620-4e2e-5039-8a85-5f839db00f0a" (reference "#PWR0405") (unit 1)))))
+(text "REV D  /  PASSIVE CAN RECEIVER" (at 30.48 25.4 0) (effects (font (size 1.6 1.6)) (justify left)) (uuid "640c50e3-ea2e-5e52-ac53-3daa72dea241"))
+(text "CAN branch connects to OBD pins 6/14 only through the selector on sheet 26." (at 30.48 33.02 0) (effects (font (size 1.6 1.6)) (justify left)) (uuid "c485e327-f8bb-578e-bd7d-b94226653550"))
+(text "TXD is recessive until the hardware permit on sheet 27 enables it. No fitted bus termination." (at 30.48 38.1 0) (effects (font (size 1.6 1.6)) (justify left)) (uuid "5a634a3d-b8ee-5ac1-a749-3a278f970a02"))
+(text "Prototype only. Verify protection energy, reset behavior, routing and listen-only firmware on the bench." (at 30.48 124.46 0) (effects (font (size 1.6 1.6)) (justify left)) (uuid "331087ba-5384-52ca-b31d-787386629c72"))
+(wire (pts (xy 87.63 66.04) (xy 78.74 66.04)) (stroke (width 0) (type default)) (uuid "4e96eca0-baba-5588-99d1-fe476a7da465"))
+(global_label "CAN_STB" (shape bidirectional) (at 78.74 66.04 180) (effects (font (size 1 1)) (justify right)) (uuid "a302dd66-425e-593d-851c-8b6bfe606c66"))
+)

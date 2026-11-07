@@ -213,3 +213,9 @@ Notifications and security/connection transitions run on the NimBLE host context
 Software compilation is complete; secure pairing/reconnect, radio coexistence,
 flash timing during commissioning and sustained USB/BLE/SD capture need bench
 validation. Phone background execution is not a guaranteed recorder; use board SD.
+
+## Rev D CAN diagnostics
+
+The separate `rev_d_can` target adds passive CAN capture and USB-only read-only
+OBD diagnostics. Build and bench procedures are in the [Rev D project](../rev-d/README.md).
+Rev C remains the default PlatformIO target.

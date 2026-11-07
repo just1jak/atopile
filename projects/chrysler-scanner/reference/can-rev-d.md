@@ -1,5 +1,44 @@
 # Rev D passive CAN design scope
 
+The [Rev D schematic checkpoint](../rev-d/README.md) uses two normally open
+relay branches with a supervised common coil return and a hardware one-hot
+decoder. It replaces the earlier dedicated CAN pair. The alternative
+common disconnect and DPDT selector discussed below was evaluated as a
+design direction. The KiCad files and the Rev D README describe the current
+prototype and the unresolved qualification gates.
+
+Rev D includes a hardware transmit permit and a dedicated diagnostic firmware
+target. CAN selection starts in listen-only mode. The
+[Rev D README](../rev-d/README.md#active-diagnostics-and-passive-default)
+describes the firmware, routed board and bench gates. The analysis below
+records the earlier design options and Rev C findings.
+
+## Shared pair mode contract
+
+The app requests a mode. Firmware supervises a hardware selector that switches
+both wires as a pair. CCD, PCI and SCI receive on pins 7/15 stay independent.
+
+| State | OBD pins 6/14 | CAN receiver | Legacy drive and VBB/VPP |
+| --- | --- | --- | --- |
+| Reset, fault or transition | Open to both branches | Standby | Inhibited |
+| CAN capture | CAN branch only | Listen-only, TXD held recessive in hardware | Inhibited |
+| Legacy | Legacy branch only | Standby and disconnected | Inhibited by default. A future qualified programming operation requires a separate permit. |
+
+An alternative is a normally open two-pole disconnect in series with a mechanically
+linked non-shorting DPDT selector. For a normal transition, remove the legacy
+drive permit, check discharge, open the disconnect, wait for contact release
+and bounce, change the selector, verify the new state, then close the disconnect.
+The hardware must preserve this order during loss of power or permit as well.
+Analyze relay skew, welded contacts, coil driver faults, and stale feedback
+before selecting a part or releasing the circuit. In particular, a coil command
+or timer alone cannot confirm contact position or programming isolation.
+
+Commercial examples include the [Quantex J1962 pin selection API](https://quantexlab.com/en/develop/j2534/pt_ioctl_config.html)
+and the [Opus CarDAQ-Pro](https://opusivs-au.com/mechanical/cardaq-pro/), which
+supports CAN and lists programming voltage on pins 6 and 14. These establish
+the supported operations. The published material does not disclose the switch
+topology or validate the proposed Rev D circuit.
+
 Start with Classic CAN receive-only capture on J1962 pins 6/14. Keep CCD, PCI
 and SCI capture. Treat active diagnostics, ISO-TP requests and CAN FD as
 separate milestones. The accepted Rev C assembly has no CAN physical layer.

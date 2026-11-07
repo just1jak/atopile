@@ -10,7 +10,7 @@
 
 namespace scanner {
 constexpr std::size_t max_data=256, max_capture_wire=max_data+10, max_payload=512, max_wire=max_payload+6;
-enum class Bus : std::uint8_t { Internal=0, Ccd=1, Sci=2, Pci=4 };
+enum class Bus : std::uint8_t { Internal=0, Ccd=1, Sci=2, Pci=4, Can=5 };
 enum Flag : std::uint8_t { ChecksumOk=1, Raw=2, Truncated=4, UartError=8 };
 struct Capture {
     std::uint64_t us=0;
@@ -95,7 +95,7 @@ inline std::size_t capture_wire(const Capture& c,std::uint8_t* out) {
     // Only validated complete CCD/PCI frames use legacy RX mode 1. Mode 0x80+
     // is an explicit Rev C raw/error extension, never a claimed valid bus frame.
     return wire(out,0x87|(static_cast<std::uint8_t>(c.bus)<<4),
-        sci?0x92:c.flags==ChecksumOk?1:static_cast<std::uint8_t>(0x80|c.flags),payload,c.size+(sci?6:4));
+        c.bus==Bus::Can?0xa0:sci?0x92:c.flags==ChecksumOk?1:static_cast<std::uint8_t>(0x80|c.flags),payload,c.size+(sci?6:4));
 }
 
 // Unknown prefixes (startup, route changes and overflow) stay quarantined until

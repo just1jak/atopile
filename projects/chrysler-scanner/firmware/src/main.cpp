@@ -3,6 +3,9 @@
 #include "core.hpp"
 #include "expander.hpp"
 #include "ble_transport.hpp"
+#ifdef SCANNER_REV_D
+#include "rev_d_can.hpp"
+#endif
 #include <atomic>
 #include <cerrno>
 #include <cstdio>
@@ -52,6 +55,9 @@ scanner::ControlLease lease;
 unsigned command_source=1;std::uint32_t command_epoch=0;
 QueueHandle_t ccd_event_q, sci_event_q, pci_edge_q;
 SemaphoreHandle_t aw_bus_mutex;
+#ifdef SCANNER_REV_D
+scanner::can_diag::Controller can;
+#endif
 struct Response { std::uint16_t size=0; std::uint8_t data[scanner::max_wire]{}; };
 struct BleCapture { Capture frame; std::uint32_t generation; };
 struct SciRequest { std::uint8_t route, speed; std::uint32_t baud; };
@@ -146,6 +152,27 @@ bool aw_verify(std::uint8_t p1) { AwIo io; return scanner::verify_expander(io,p1
 bool aw_init() {
     AwIo io; return scanner::initialize_expander(io);
 }
+
+#ifdef SCANNER_REV_D
+bool can_select(std::uint8_t value, bool write) {
+    constexpr std::uint8_t direction=0xf8, latch=0x0a, gpio=0x09;
+    if (value && (!ready.load() || fault.load())) return false;
+    if (xSemaphoreTake(aw_bus_mutex,tick_ms(3))!=pdTRUE) return false;
+    const auto set=[](std::uint8_t reg,std::uint8_t data) {
+        const std::uint8_t bytes[]{reg,data};
+        return i2c_master_write_to_device(I2C_NUM_0,scanner::can_diag::selector_address,bytes,2,tick_ms(3))==ESP_OK;
+    };
+    const auto get=[](std::uint8_t reg,std::uint8_t& data) {
+        return i2c_master_write_read_device(I2C_NUM_0,scanner::can_diag::selector_address,&reg,1,&data,1,tick_ms(3))==ESP_OK;
+    };
+    std::uint8_t actual=0,dir=0;
+    // Always preload the zero latch before first enabling the three outputs.
+    bool ok=(!write || (set(latch,value) && (value || set(0,direction)))) &&
+            get(0,dir) && dir==direction && get(gpio,actual) && (actual&7)==value;
+    xSemaphoreGive(aw_bus_mutex);
+    return ok;
+}
+#endif
 
 void control_task(void*) {
     vote(Worker::Control);
@@ -371,7 +398,11 @@ void status(bool capabilities) {
     char text[scanner::max_payload];
     int n;
     if(capabilities) {
+#ifdef SCANNER_REV_D
+        n=snprintf(text,sizeof(text),"{\"fw\":\"rev-d-can-bench-0.1.0\",\"protocol\":4,\"tx\":true,\"programming\":false,\"can\":true,\"can_diag_usb\":true,\"ble\":true,\"ccd\":true,\"pci\":true,\"sci_raw\":true,\"sd\":true}");
+#else
         n=snprintf(text,sizeof(text),"{\"fw\":\"rev-c-passive-0.2.0\",\"protocol\":3,\"tx\":false,\"programming\":false,\"can\":false,\"ble\":true,\"adc_calibrated\":false,\"ccd\":true,\"pci\":true,\"sci_raw\":true,\"sd\":true,\"lease\":true,\"pairing\":\"USB-passkey\"}");
+#endif
     } else {
         constexpr unsigned rates[]{976,7812,62500,125000};
         portENTER_CRITICAL(&storage_mux);
@@ -393,6 +424,32 @@ void command(const std::uint8_t* p,std::size_t size) {
     // Exact routing allowlist: rejects direction spoofing, all vehicle buses,
     // reset, settings, TX, bootstrap, raw expander writes and legacy LED commands.
     const auto mode=p[4];
+#ifdef SCANNER_REV_D
+    if (p[3]==4 && mode>=0x85 && mode<=0x87) {
+        if (command_source!=1) { deny(3); return; }
+        const auto now=now_us();
+        if (mode==0x87 && size==6) {
+            const auto& result=can.snapshot();
+            std::uint8_t bytes[70]{static_cast<std::uint8_t>(can.mode()),
+                static_cast<std::uint8_t>((can.transitioning(now)?1:0)|(can.armed()?2:0)),
+                static_cast<std::uint8_t>(result.result),
+                static_cast<std::uint8_t>(result.response_id>>8),
+                static_cast<std::uint8_t>(result.response_id),result.size};
+            std::memcpy(bytes+6,result.data,result.size);
+            respond(5,mode,bytes,6+result.size);
+            return;
+        }
+        if (size!=8 || !ready.load() || fault.load() || !lease.acquire(1,now)) { deny(0x0d); return; }
+        if (mode==0x85 && p[5]<=2 && p[6]<=1 && !can.armed() && !can.transitioning(now)) {
+            if (!can.route(static_cast<scanner::can_diag::Mode>(p[5]),p[6],now,can_select)) { fail(); deny(7); return; }
+            respond(5,mode,p+5,2);
+        } else if (mode==0x86 && scanner::can_diag::supported(p[5],p[6]) && can.can_request(now)) {
+            if (!can.request(p[5],p[6],now,can_select)) { fail(); deny(7); return; }
+            respond(5,mode,p+5,2);
+        } else deny(3);
+        return;
+    }
+#endif
     const auto action=scanner::classify(p,size,ready.load(),fault.load());
     lease.touch(command_source,now_us());
     if(action==scanner::Action::Handshake) {
@@ -431,6 +488,9 @@ void usb_task(void*) {
     Response pending{};unsigned tx_offset=0;
     for(;;) {
         vote(Worker::Usb);
+#ifdef SCANNER_REV_D
+        if (!can.service(now_us(),ready.load() && !fault.load(),lease.owner(now_us())==1,can_select,publish)) fail();
+#endif
         command_source=1;
         std::uint8_t bytes[128];
         const int n=uart_read_bytes(UART_NUM_0,bytes,sizeof(bytes),0);

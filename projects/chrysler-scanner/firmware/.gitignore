@@ -2,5 +2,6 @@
 sdkconfig
 sdkconfig.old
 sdkconfig.rev_c_passive*
+sdkconfig.rev_d_can*
 build/
 __pycache__/

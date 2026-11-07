@@ -1,0 +1,1 @@
+(footprint "MountingHole_4mm" (version 20240108) (generator "pcbnew") (layer "F.Cu") (attr exclude_from_bom exclude_from_pos_files) (fp_text reference "REF**" (at 0 -3.1) (layer "F.SilkS") (effects (font (size 0.7 0.7) (thickness 0.1)))) (pad "" np_thru_hole circle (at 0 0) (size 4 4) (drill 4) (layers "*.Cu" "*.Mask")))
