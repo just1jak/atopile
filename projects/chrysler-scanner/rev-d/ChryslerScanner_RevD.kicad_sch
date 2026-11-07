@@ -487,4 +487,10 @@
 (property "Sheetfile" "27_can-tx-permit.kicad_sch" (at 383.73 225.43 0) (effects (font (size 1.1 1.1)) (justify left)))
 (instances (project "ChryslerScanner_RevD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd" (page "27")))))
 
+
+(sheet (at 379.73 237.49) (size 127 22.86) (stroke (width 0.3) (type default)) (fill (color 0 0 0 0)) (uuid "649038f6-6221-551e-b0eb-94f6d1a63ebd")
+(property "Sheetname" "Series isolation and CAN timer" (at 383.73 241.94 0) (effects (font (size 1.6 1.6)) (justify left)))
+(property "Sheetfile" "28_fault-containment.kicad_sch" (at 383.73 255.91 0) (effects (font (size 1.1 1.1)) (justify left)))
+(instances (project "ChryslerScanner_RevD" (path "/b35850f9-3522-5e00-90df-092fcfbfe6bd" (page "28")))))
+
 )

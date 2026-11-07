@@ -2,4 +2,6 @@
 (lib (name "RevDSelector") (type "KiCad") (uri "${KIPRJMOD}/RevDSelector.kicad_sym") (options "") (descr "Rev D selector components"))
 
 (lib (name "RevDTxPermit") (type "KiCad") (uri "${KIPRJMOD}/RevDTxPermit.kicad_sym") (options "") (descr "Rev D CAN transmit permit"))
+
+(lib (name "RevDFaultContainment") (type "KiCad") (uri "${KIPRJMOD}/RevDFaultContainment.kicad_sym") (options "") (descr "Rev D fault containment"))
 )

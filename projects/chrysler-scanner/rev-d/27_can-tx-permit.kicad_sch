@@ -47,7 +47,7 @@
 (wire (pts (xy 170.18 50.8) (xy 165.1 50.8)) (stroke (width 0) (type default)) (uuid "4c232a3d-638a-5f1f-8030-60dada175339"))
 (global_label "LEG_IDLE" (shape bidirectional) (at 165.1 50.8 180) (effects (font (size 1 1)) (justify right)) (uuid "2f77bf9a-5766-5746-9157-6ab5d7ec2d63"))
 (wire (pts (xy 170.18 53.34) (xy 165.1 53.34)) (stroke (width 0) (type default)) (uuid "44a27f8c-00a0-57c4-b51d-4522c1f5d0f0"))
-(global_label "CAN_TX_ARM" (shape bidirectional) (at 165.1 53.34 180) (effects (font (size 1 1)) (justify right)) (uuid "4036ea83-95ff-5633-9ec2-bc5db46539c4"))
+(global_label "CAN_ARM_TIMED" (shape bidirectional) (at 165.1 53.34 180) (effects (font (size 1 1)) (justify right)) (uuid "4036ea83-95ff-5633-9ec2-bc5db46539c4"))
 (wire (pts (xy 200.66 48.26) (xy 205.74 48.26)) (stroke (width 0) (type default)) (uuid "1fef02cb-615e-5997-a216-64210324f305"))
 (global_label "CAN_TX_PERMIT" (shape bidirectional) (at 205.74 48.26 0) (effects (font (size 1 1)) (justify left)) (uuid "83fb150d-cc45-57a9-b9b0-2379d411f72a"))
 (wire (pts (xy 200.66 50.8) (xy 205.74 50.8)) (stroke (width 0) (type default)) (uuid "834476f3-0a1c-57b2-9575-ff13b9a704cd"))
