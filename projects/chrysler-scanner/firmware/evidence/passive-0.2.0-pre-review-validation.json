@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-06",
+  "firmware": "0.2.0",
+  "protocol": 3,
+  "scope": "passive USB/SD with authenticated BLE; bench development only",
+  "pcb_sha256": "e794b86979228ba2275eb4262df848acd16e56ef97a4ccf45402d65b119308d4",
+  "review": {
+    "independent_reviewer": false,
+    "type": "primary source review of BLE/app extension",
+    "previous_independent_review": "ADVERSARIAL-REVIEW.md (0.1.1 only)"
+  },
+  "checks": {
+    "embedded_build": "pass",
+    "cpp_host_core": "pass",
+    "python_tests": 9,
+    "board_hash_and_mappings": "pass",
+    "ble_secure_connections_only": true,
+    "ble_security_level": 4,
+    "static_ram_bytes": 40372,
+    "flash_bytes": 598705
+  },
+  "verified_build": {
+    "inputs": {
+      "boards/chrysler_rev_c.json": "1048320f20795b872e507e7b2c7b9abe179af44d2529e086d9117e665c7ab57f",
+      "CMakeLists.txt": "4bfd78fe232ee9f23ff434d3781f1d328914789b0343a2bd843ec98c181f899a",
+      "include/ble_transport.hpp": "459187fbb5a8ac245d79d3b3e00cb8243ed225cb823ed90443cbaca0218b5c38",
+      "include/board.hpp": "33b5c8d6fc71cd907b4ff1321ae8346092db9f98c2c11e513f33ebe591d4ec0b",
+      "include/core.hpp": "74e9af381374876c516c7c812ea5b68d313a5ab6f662f3f70c2ce4ba7027907e",
+      "include/expander.hpp": "f57d5f3489381ea0afe689b3190919e1dc3a65a5967073f49b563ca52ace85d0",
+      "partitions.csv": "68d8772b93916a9d347551ea0100c9b54a6d97889409b537d1ef9f4e09c1b119",
+      "platformio.ini": "397901396512b752e869229a8d1acf54adfba61dec4e666bb31eea0956f0a73b",
+      "sdkconfig.defaults": "ab214792baa702ad474abac27beb6c7b3c85c05dff9b3265be7db8e423349117",
+      "src/ble_transport.cpp": "af1e263bfd4af7da742ed9abeee1c114f81d6f9c29e940ca88848fc3b9e68463",
+      "src/CMakeLists.txt": "36a5f02322a7762e18003e3413dae896f467de94da435da423cf66ae2e765f43",
+      "src/main.cpp": "3f868401a22d0c803b100783ffc4f6685acf5983710a57c4cfe83a90bdb92a56"
+    },
+    "images": {
+      "bootloader.bin": "e7b05c7d953c3b76a5904db63cac738dd1fa90c53893ddff9b6c676c5de8a58f",
+      "partitions.bin": "73c0b5c3e5fcba3a151cc70c453c93dd5f4798899e7f2f8cca76da1f32ffc501",
+      "firmware.bin": "5dd5d11a2f31caf38e54ef501829db599b54f14d9e5d057e31e6cfc9d6d3c801",
+      "firmware.elf": "80953532b5f1e726ac09d9699b786d5dafd1ac74b49cb919f12541ed209a9f81"
+    },
+    "sdkconfig_sha256": "1e4a854f9491836b671ea4fdc1e2f5ce858d925a1cf081f7b7151799eeda27d7"
+  },
+  "flashed": false,
+  "bench_validated": false,
+  "fabrication_changed": false
+}

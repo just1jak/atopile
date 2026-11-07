@@ -6,6 +6,24 @@ protocol 2/3, recording recovery, CSV export and selected historical decoders.
 These clients replace the passive capture workflow of the original WinForms app;
 full original diagnostic/programming functionality has not been ported.
 
+## Find your app
+
+- **Windows:** extract the ZIP in `desktop/release/` and run Chrysler Scanner.exe.
+- **Linux:** the native x86-64 package target is a `.deb`; build on Linux or
+  download a successful Linux workflow artifact. Serial access depends on your
+  distribution's device permissions.
+- **macOS:** the desktop source is shared with Windows/Linux. Build on a Mac or
+  download a successful Mac workflow artifact. Test packages are not notarized.
+- **Android:** app source is in [mobile/](mobile/README.md). The build workflow
+  has a standalone ARM64 test APK job. An APK is available only after that job
+  succeeds.
+- **iPhone:** same React Native source. Live BLE requires a native build with
+  Apple signing/provisioning for physical devices. There is no TestFlight
+  release. JavaScript bundles alone are not installable apps.
+
+Repository builds are listed under [GitHub Actions](https://github.com/just1jak/atopile/actions).
+Use the artifacts from the run for your commit, rather than older packages.
+
 ## Run and build
 
 Install Node 22.13+ and run these commands in this directory:
@@ -33,9 +51,9 @@ Windows ZIP is unsigned. Linux serial access may require dialout group/udev
 permissions. Packages use the serialport Node-API prebuilds (native rebuild off).
 Verify the native binding when adding platforms or architectures.
 
-Live mobile BLE requires a native development build; Expo Go supports offline
+Live mobile BLE requires a native build; Expo Go supports offline
 recording review only. Use `npx expo run:android` or `npx expo run:ios` from mobile
-with the platform SDK installed, or your configured Expo development-build service.
+with the platform SDK installed, or use a successful Android test APK workflow artifact.
 iOS native compilation requires macOS/Xcode. No paid cloud build is submitted.
 The web preview supports offline import, not live BLE. JavaScript bundles compile
 for both iOS and Android; native APK/IPA and physical phone tests remain pending.
@@ -74,11 +92,12 @@ real IPC and file dialogs, tests bounded previews, exports every row and loads
 the native serialport binding. Mobile web integration imports the same fixture.
 Fixtures/screenshots are synthetic, not captured vehicle data.
 
-Windows packaging and local Electron tests are available. Mac/Linux sources and
-build targets are implemented but native packages have not been built here.
+Desktop packages are tested where platform runners are available. Check the
+current review report for which packages actually built and ran.
 No USB device, radio, SD card, phone or vehicle has been exercised. See firmware
 VALIDATION.md for commissioning, electrical and timing gates. CAD is unchanged.
 
-The manual `Chrysler companion apps` GitHub workflow builds unsigned desktop
-packages on all three OS runners and exports mobile JS bundles. It has not been
-dispatched as part of this local implementation.
+The `Chrysler companion apps` GitHub workflow builds desktop packages on all
+three OS runners, builds an Android ARM64 test APK, and exports mobile JS bundles.
+It triggers on app changes on the scanner branch and requires Actions enabled in
+the fork. It does not publish to stores or sign a physical iPhone build.

@@ -17,24 +17,54 @@ async function manager(){
 }
 export async function scan(onFound:(p:Peripheral)=>void):Promise<void>{
   const ble=await manager();
-  const listener=ble.onDiscoverPeripheral(p=>{if(p.name?.startsWith('Chrysler-RC-'))onFound({id:p.id,name:p.name});});
+  const listener=ble.onDiscoverPeripheral(p=>{
+    const name=[p.name,p.advertising.localName].find(n=>n?.startsWith('Chrysler-RC-'));
+    if(name)onFound({id:p.id,name});
+  });
   try{await ble.scan({serviceUUIDs:[SERVICE],seconds:6,allowDuplicates:false});await new Promise(resolve=>setTimeout(resolve,6500));}
   finally{listener.remove();await ble.stopScan().catch(()=>{});}
 }
+async function bounded<T>(work:Promise<T>,ms:number,message:string,linkLoss?:Promise<never>):Promise<T>{
+  let timer:ReturnType<typeof setTimeout>|undefined;
+  const deadline=new Promise<never>((_,reject)=>{timer=setTimeout(()=>reject(new Error(message)),ms);});
+  try{return await Promise.race(linkLoss?[work,deadline,linkLoss]:[work,deadline]);}
+  finally{clearTimeout(timer);}
+}
 export async function connect(id:string,receive:(bytes:Uint8Array)=>void,lost:(message:string)=>void):Promise<Transport>{
-  const ble=await manager();let closing=false;
-  await ble.connect(id);
+  const ble=await manager();
+  let closing=false,ready=false;
+  const matches=(peripheral:string)=>peripheral.toLowerCase()===id.toLowerCase();
   let notifications:ReturnType<typeof ble.onDidUpdateValueForCharacteristic>|undefined;
-  let disconnected:ReturnType<typeof ble.onDisconnectPeripheral>|undefined;
+  let rejectSetup!:(error:Error)=>void;
+  const linkLoss=new Promise<never>((_,reject)=>{rejectSetup=reject;});
+  const disconnected=ble.onDisconnectPeripheral(e=>{
+    if(!matches(e.peripheral)||closing)return;
+    const message='Bluetooth disconnected. Board SD logging may still be running.';
+    if(ready){lost(message);void close();}
+    else rejectSetup(new Error(message));
+  });
+  const close=async()=>{
+    if(closing)return;
+    closing=true;
+    notifications?.remove();
+    disconnected.remove();
+    await bounded(ble.disconnect(id),3000,'Bluetooth disconnect timed out').catch(()=>{});
+  };
   try{
-    await ble.retrieveServices(id);
-    if(Platform.OS==='android')await ble.createBond(id);
+    await bounded(ble.connect(id),15000,'Scanner did not respond to Bluetooth connection. Move closer and try again.',linkLoss);
+    await bounded(ble.retrieveServices(id),10000,'Could not discover scanner services',linkLoss);
+    if(Platform.OS==='android')await bounded(ble.createBond(id),90000,'Bluetooth pairing timed out',linkLoss);
     // Encrypted/authenticated read triggers iOS pairing and verifies link security
     // before the protocol response timer starts. Passkey is shown over USB only.
-    await ble.read(id,SERVICE,TX);
-    notifications=ble.onDidUpdateValueForCharacteristic(e=>{if(e.peripheral===id&&e.characteristic.toLowerCase()===TX)receive(Uint8Array.from(e.value));});
-    disconnected=ble.onDisconnectPeripheral(e=>{if(e.peripheral===id&&!closing)lost('Bluetooth disconnected. Board SD logging may still be running.');});
-    await ble.startNotification(id,SERVICE,TX);
-    return {kind:'ble',write:bytes=>ble.write(id,SERVICE,RX,Array.from(bytes),20),close:async()=>{closing=true;notifications?.remove();disconnected?.remove();await ble.disconnect(id).catch(()=>{});}};
-  }catch(error){notifications?.remove();disconnected?.remove();await ble.disconnect(id).catch(()=>{});throw error;}
+    await bounded(ble.read(id,SERVICE,TX),90000,'Scanner authentication timed out',linkLoss);
+    notifications=ble.onDidUpdateValueForCharacteristic(e=>{
+      if(matches(e.peripheral)&&e.characteristic.toLowerCase()===TX)receive(Uint8Array.from(e.value));
+    });
+    await bounded(ble.startNotification(id,SERVICE,TX),10000,'Could not subscribe to scanner data',linkLoss);
+    ready=true;
+    return {kind:'ble',write:async bytes=>{
+      if(closing)throw new Error('Bluetooth connection closed');
+      await ble.write(id,SERVICE,RX,Array.from(bytes),20);
+    },close};
+  }catch(error){await close();throw error;}
 }

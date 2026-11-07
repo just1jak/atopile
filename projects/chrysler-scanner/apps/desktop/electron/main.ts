@@ -10,13 +10,13 @@ import {ScannerSession,JournalReader,journalRecord,csvRow,CSV_HEADER,type Captur
 let window:BrowserWindow;
 const session=new ScannerSession();
 let currentImport:string|undefined,writer:WriteStream|undefined,writeSequence=0,recordingError='';
+let activePort:SerialPort|undefined,computerStop:Promise<void>|undefined;
 let batch:Capture[]=[],displayDropped=0,operation=false,computerPath='';
 const send=(channel:string,data:unknown)=>{if(window&&!window.isDestroyed())window.webContents.send(channel,data);};
 session.onState=state=>{
   if(state.phase==='error'&&writer){
-    const file=writer;writer=undefined;file.end(); // Preserve received bytes; no clean-stop marker after link loss.
     recordingError='USB disconnected. Computer journal is incomplete; board SD may still be recording.';
-    send('scanner:computer',{recording:false,path:computerPath,error:recordingError});
+    void stopComputer(false).catch(()=>{});
   }
   send('scanner:state',state);
 };
@@ -27,10 +27,22 @@ session.onCapture=(capture,frame)=>{
     else writer.write(journalRecord(2,writeSequence++,performance.now()*1000,frame.raw));
   }
 };
-async function stopComputer():Promise<void> {
+async function stopComputer(clean=true):Promise<void> {
+  if(computerStop)return computerStop;
   const file=writer;writer=undefined;if(!file)return;
-  file.write(journalRecord(4,writeSequence++,performance.now()*1000,new TextEncoder().encode('session_clean_stop')));
-  const finished=once(file,'finish');file.end();await finished;send('scanner:computer',{recording:false,path:computerPath,error:recordingError});
+  const marker=clean?journalRecord(4,writeSequence++,performance.now()*1000,new TextEncoder().encode('session_clean_stop')):undefined;
+  const path=computerPath;
+  computerStop=(async()=>{
+    const finished=once(file,'finish');
+    file.end(marker);
+    await finished;
+  })();
+  try {
+    await computerStop;
+  }finally{
+    computerStop=undefined;
+    send('scanner:computer',{recording:false,path,error:recordingError});
+  }
 }
 function trusted(event:IpcMainInvokeEvent):void {
   const expected=pathToFileURL(join(__dirname,'renderer/index.html')).href;
@@ -56,28 +68,49 @@ app.whenReady().then(()=>{
     if(typeof path!=='string'||!(await SerialPort.list()).some(p=>p.path===path))throw new Error('Choose an available serial port');
     await stopComputer();await session.disconnect();
     const port=new SerialPort({path,baudRate:250000,autoOpen:false,rtscts:false,hupcl:false});let closing=false;
-    port.on('data',(data:Buffer)=>session.receive(data));
-    port.on('error',error=>{if(!closing)void session.disconnect(error.message);});
-    port.on('close',()=>{if(!closing)void session.disconnect('USB disconnected. Board SD logging may still be running.');});
-    await new Promise<void>((resolve,reject)=>port.open(error=>error?reject(error):resolve()));
+    activePort=port;
+    batch=[];displayDropped=0;
+    const linkLost=(message:string)=>{
+      if(!closing&&activePort===port){
+        activePort=undefined;
+        void session.disconnect(message);
+      }
+    };
+    port.on('data',(data:Buffer)=>{if(activePort===port)session.receive(data);});
+    port.on('error',error=>linkLost(error.message));
+    port.on('close',()=>linkLost('USB disconnected. Board SD logging may still be running.'));
     try {
+      await new Promise<void>((resolve,reject)=>port.open(error=>error?reject(error):resolve()));
       await new Promise<void>((resolve,reject)=>port.set({dtr:false,rts:false},error=>error?reject(error):resolve()));
-      await session.connect({write:bytes=>new Promise((resolve,reject)=>port.write(bytes,error=>error?reject(error):resolve())),close:async()=>{closing=true;if(port.isOpen)await new Promise<void>(resolve=>port.close(()=>resolve()));}},path);
-    }catch(error){closing=true;if(port.isOpen)port.close();throw error;}
+      if(activePort!==port||!port.isOpen)throw new Error('USB disconnected during setup');
+      await session.connect({kind:'usb',write:bytes=>new Promise((resolve,reject)=>port.write(bytes,error=>error?reject(error):resolve())),close:async()=>{
+        closing=true;
+        if(activePort===port)activePort=undefined;
+        if(port.isOpen)await new Promise<void>(resolve=>port.close(()=>resolve()));
+      }},path);
+    }catch(error){closing=true;if(activePort===port)activePort=undefined;if(port.isOpen)port.close();throw error;}
   }));
-  handle('scanner:disconnect',()=>control(async()=>{await stopComputer();await session.disconnect();}));
+  handle('scanner:disconnect',()=>control(async()=>{try{await stopComputer();}finally{await session.disconnect();}}));
   handle('scanner:logging',(start:unknown)=>control(()=>{if(typeof start!=='boolean')throw new Error('Invalid logging request');return session.setLogging(start);}));
   handle('scanner:sci',(route:unknown,speed:unknown)=>control(()=>session.setSci(Number(route),Number(speed))));
   handle('scanner:release',()=>control(()=>session.releaseControl()));
   handle('scanner:pairing',()=>control(()=>session.pairingCode()));
   handle('scanner:computer-start',()=>control(async()=>{
-    if(session.state.phase!=='connected')throw new Error('Connect the scanner first');
-    if(writer)throw new Error('Computer recording is already running');
+    const port=activePort;
+    const sameConnection=()=>!!port&&activePort===port&&session.state.phase==='connected';
+    if(!sameConnection())throw new Error('Connect the scanner first');
+    if(writer||computerStop)throw new Error('Computer recording is already running or finishing');
     const result=await dialog.showSaveDialog(window,{title:'Record USB capture',defaultPath:`scanner-${new Date().toISOString().replaceAll(':','-')}.cbr`,filters:[{name:'Scanner journal',extensions:['cbr']}]});
     if(result.canceled||!result.filePath)return;
+    if(!sameConnection())throw new Error('USB disconnected before recording began');
     const file=createWriteStream(result.filePath,{flags:'wx'});computerPath=result.filePath;recordingError='';writeSequence=0;
     file.on('error',error=>{if(writer&&writer!==file)return;if(writer===file)writer=undefined;recordingError=error.message;send('scanner:computer',{recording:false,path:result.filePath,error:error.message});});
-    await once(file,'open');file.write('CBSDRAW1');
+    await once(file,'open');
+    if(!sameConnection()){
+      file.end('CBSDRAW1'); // Retain an explicitly incomplete journal if the file was already created.
+      throw new Error('USB disconnected before recording began');
+    }
+    file.write('CBSDRAW1');
     file.write(journalRecord(4,writeSequence++,performance.now()*1000,new TextEncoder().encode(`Desktop USB capture; ${session.state.capabilities?.fw}; host UTC ${new Date().toISOString()}`)));
     writer=file;send('scanner:computer',{recording:true,path:computerPath,error:''});
   }));
@@ -108,7 +141,14 @@ app.whenReady().then(()=>{
   },100);
   let poll=false;const statusPoll=setInterval(()=>{if(session.state.phase==='connected'&&!operation&&!poll){poll=true;session.refresh().catch(()=>{}).finally(()=>{poll=false;});}},1000);
   let closing=false;
-  window.on('close',event=>{if(writer&&!closing){event.preventDefault();closing=true;stopComputer().catch(()=>{}).finally(()=>window.close());}});
+  window.on('close',event=>{
+    if(!writer&&!computerStop)return;
+    event.preventDefault();
+    if(!closing){
+      closing=true;
+      stopComputer().catch(()=>{}).finally(()=>window.close());
+    }
+  });
   window.on('closed',()=>{clearInterval(tick);clearInterval(statusPoll);void session.disconnect();if(writer)writer.destroy();});
   void window.loadFile(join(__dirname,'renderer/index.html'));
 });

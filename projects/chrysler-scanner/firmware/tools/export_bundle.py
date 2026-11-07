@@ -41,7 +41,7 @@ def main():
     OUTPUT.mkdir(parents=True, exist_ok=True)
     manifest_path = OUTPUT/"manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2)+"\n", encoding="utf-8")
-    target = OUTPUT/"rev-c-passive-0.2.0-development.zip"
+    target = OUTPUT/"rev-c-passive-0.2.0-reviewed-development.zip"
     with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED) as bundle:
         for p in sources:
             bundle.write(p, "source/"+p.relative_to(FW).as_posix())

@@ -38,11 +38,19 @@ async function main(){
       });
       await writeFile(join(folder,name),Buffer.from(png,'base64'));
     };
+    const lanes=await page.locator('.trace-row strong').allTextContents();
+    if(lanes.length!==3||lanes.some(n=>Number(n)<1))throw new Error('Bus activity trace lost a populated channel');
     await capture('desktop-recording-review.png');
+    await page.evaluate(()=>window.scrollTo(0,0));
+    await capture('desktop-instrument-panel.png');
     await app.evaluate(({dialog},path)=>{dialog.showSaveDialog=async()=>({canceled:false,filePath:path});},csv);
     await page.getByRole('button',{name:'Export all frames CSV',exact:true}).click();
     let content='';for(let i=0;i<100;i++){try{content=await readFile(csv,'utf8');if(content.split('\n').length>=6002)break;}catch{}await new Promise(r=>setTimeout(r,50));}
     if(content.split('\n').length!==6002)throw new Error('CSV export lost frames outside the retained preview');
+    await page.getByRole('button',{name:'Live capture',exact:true}).click();
+    await page.getByText('No input signal',{exact:true}).waitFor();
+    await page.getByRole('button',{name:'Recordings',exact:true}).click();
+    await page.getByRole('heading',{name:'SYNTHETIC-SAMPLE.cbr',exact:true}).waitFor();
     await page.getByRole('button',{name:'Device & pairing'}).click();await page.getByRole('heading',{name:'Device & pairing',exact:true}).waitFor();
     await capture('desktop-device.png');
     if(errors.length)throw new Error(errors.join('\n'));

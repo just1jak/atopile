@@ -26,8 +26,21 @@ export class JournalReader {
       const seq=v.getUint32(12,true);if(seq!==this.expected)this.summary.sequenceGaps++;this.expected=(seq+1)>>>0;
       this.summary.records++;this.summary.reportedLoss=Math.max(this.summary.reportedLoss,v.getUint32(32,true));this.lastClean=false;
       const payload=record.subarray(36,-4);
-      if(record[4]===2){const f=parse(payload),c=f?decodeCapture(f,this.summary.frames+1):null;if(c){this.summary.frames++;this.sink(c);}}
-      else if(record[4]===4){const event=utf8(payload);this.lastClean=event==='session_clean_stop';this.summary.events.push(event);if(this.summary.events.length>24)this.summary.events.shift();}
+      if(record[4]===2){
+        const frame=parse(payload);
+        if(!frame)this.summary.skippedBytes+=total;
+        const capture=frame?decodeCapture(frame,this.summary.frames+1):null;
+        if(capture){this.summary.frames++;this.sink(capture);}
+      }else if(record[4]===4){
+        try{
+          const event=utf8(payload);
+          this.lastClean=event==='session_clean_stop';
+          this.summary.events.push(event);
+          if(this.summary.events.length>24)this.summary.events.shift();
+        }catch{
+          this.summary.skippedBytes+=total;
+        }
+      }
       p+=total;
     }
     this.buffer=merged.slice(p);

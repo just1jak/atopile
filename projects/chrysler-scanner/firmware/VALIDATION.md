@@ -31,8 +31,8 @@ runtime queues, task stacks and driver allocations; measure heap and stack
 high-water marks on the board.
 
 The independent adversarial source review applies to the earlier 0.1.1 image.
-The BLE/app extension has received a primary source review, not a new independent
-review. The earlier review and revised-source pass accompany
+The BLE/app extension has since received an [independent adversarial review](../apps/ADVERSARIAL-REVIEW.md), followed by fixes and fresh software checks.
+The earlier 0.1.1 review and revised-source pass accompany
 these software checks; see `ADVERSARIAL-REVIEW.md`. This is not a hardware safety
 certification. The full original GUI,
 voltage calibration, active diagnostics and programming remain future

@@ -1,6 +1,6 @@
 {
   "name": "@chrysler/desktop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Chrysler Scanner passive capture and recording companion",
   "author": "Chrysler Scanner contributors",
@@ -60,7 +60,9 @@
         "AppImage",
         "deb"
       ],
-      "category": "Development"
+      "category": "Development",
+      "executableName": "chrysler-scanner",
+      "maintainer": "Chrysler Scanner contributors <just1jak@users.noreply.github.com>"
     },
     "npmRebuild": false,
     "icon": "../assets/icon.png"

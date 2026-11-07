@@ -32,20 +32,29 @@ std::atomic<bool> secured{false},subscribed{false};
 portMUX_TYPE pairing_mux=portMUX_INITIALIZER_UNLOCKED;
 std::int64_t pair_until=0;unsigned pair_key=0;
 std::uint8_t own_addr_type=0;std::uint16_t tx_handle=0;
-QueueHandle_t rxq=nullptr,txq=nullptr;
+QueueHandle_t rxq = nullptr, capture_txq = nullptr, reply_txq = nullptr;
 ble_npl_event tx_event{};std::atomic<bool> tx_scheduled{false};
 void pump_on_host(ble_npl_event*);
+ble_store_read_fn* persist_read = nullptr;
 ble_store_write_fn* persist_write=nullptr;
 ble_store_delete_fn* persist_delete=nullptr;
 // Bond changes are restricted to commissioning, when capture is inhibited.
 // CCCDs remain volatile; clients subscribe on every connection.
-int store_write(int type,const union ble_store_value* value) {
-    if(pairing_seconds())return persist_write(type,value);
-    if(type==BLE_STORE_OBJ_TYPE_CCCD||type==BLE_STORE_OBJ_TYPE_PEER_DEV_REC||type==BLE_STORE_OBJ_TYPE_CSFC)return 0;
+int store_read(int type, const union ble_store_key* key, union ble_store_value* value) {
+    if (type == BLE_STORE_OBJ_TYPE_CCCD) return BLE_HS_ENOENT;
+    return persist_read(type, key, value);
+}
+int store_write(int type, const union ble_store_value* value) {
+    if (type == BLE_STORE_OBJ_TYPE_CCCD) return 0;
+    if (pairing_seconds()) return persist_write(type, value);
+    if (type == BLE_STORE_OBJ_TYPE_PEER_DEV_REC || type == BLE_STORE_OBJ_TYPE_CSFC) return 0;
     return BLE_HS_EBUSY;
 }
-int store_delete(int type,const union ble_store_key* key) {
-    if(pairing_seconds())return persist_delete(type,key);
+int store_delete(int type, const union ble_store_key* key) {
+    if (pairing_seconds()) return persist_delete(type, key);
+    // The ATT CCCD handler has already applied unsubscribe in memory. Outside
+    // commissioning, delete-peer stops at the first denied security deletion.
+    if (type == BLE_STORE_OBJ_TYPE_CCCD) return 0;
     return BLE_HS_EBUSY;
 }
 struct Packet {std::uint32_t generation;std::uint16_t size;std::uint8_t bytes[scanner::max_wire];};
@@ -80,7 +89,12 @@ int gap(ble_gap_event* event,void*) {
         else advertise();
         return 0;
     case BLE_GAP_EVENT_DISCONNECT:
-        connection=BLE_HS_CONN_HANDLE_NONE;secured=false;subscribed=false;++epoch;advertise();return 0;
+        ++epoch;
+        connection = BLE_HS_CONN_HANDLE_NONE;
+        secured = false;
+        subscribed = false;
+        advertise();
+        return 0;
     case BLE_GAP_EVENT_ENC_CHANGE:
         secured=event->enc_change.status==0&&authorized(event->enc_change.conn_handle);
         if(!secured.load())ble_gap_terminate(event->enc_change.conn_handle,BLE_ERR_AUTH_FAIL);
@@ -96,7 +110,12 @@ int gap(ble_gap_event* event,void*) {
     case BLE_GAP_EVENT_REPEAT_PAIRING: {
         if(!pairing_seconds())return BLE_GAP_REPEAT_PAIRING_IGNORE;
         ble_gap_conn_desc d{};
-        if(ble_gap_conn_find(event->repeat_pairing.conn_handle,&d)==0)ble_store_util_delete_peer(&d.peer_id_addr);
+        if (ble_gap_conn_find(event->repeat_pairing.conn_handle, &d) != 0 ||
+            ble_store_util_delete_peer(&d.peer_id_addr) != 0) {
+            // NimBLE repeats this callback until the old key disappears. Only
+            // ask it to retry if the deletion succeeded.
+            return BLE_GAP_REPEAT_PAIRING_IGNORE;
+        }
         return BLE_GAP_REPEAT_PAIRING_RETRY;
     }
     default:return 0;
@@ -119,8 +138,10 @@ void host(void*) {nimble_port_run();nimble_port_freertos_deinit();}
 bool initialize() {
     // Bond keys persist in NVS. Never erase flash automatically on an NVS error.
     if(nvs_flash_init()!=ESP_OK)return false;
-    rxq=xQueueCreate(8,sizeof(Chunk));txq=xQueueCreate(8,sizeof(Packet));
-    if(!rxq||!txq||nimble_port_init()!=ESP_OK)return false;
+    rxq = xQueueCreate(8, sizeof(Chunk));
+    capture_txq = xQueueCreate(8, sizeof(Packet));
+    reply_txq = xQueueCreate(4, sizeof(Packet));
+    if (!rxq || !capture_txq || !reply_txq || nimble_port_init() != ESP_OK) return false;
     ble_hs_cfg.reset_cb=reset;ble_hs_cfg.sync_cb=synced;ble_hs_cfg.store_status_cb=ble_store_util_status_rr;
     ble_hs_cfg.sm_io_cap=BLE_HS_IO_DISPLAY_ONLY;ble_hs_cfg.sm_mitm=1;ble_hs_cfg.sm_sc=1;ble_hs_cfg.sm_bonding=1;
     ble_hs_cfg.sm_our_key_dist=BLE_SM_PAIR_KEY_DIST_ENC|BLE_SM_PAIR_KEY_DIST_ID;
@@ -139,8 +160,12 @@ bool initialize() {
     if(ble_gatts_count_cfg(services)!=0||ble_gatts_add_svcs(services)!=0)return false;
     ble_npl_event_init(&tx_event,pump_on_host,nullptr);
     ble_store_config_init();
-    persist_write=ble_hs_cfg.store_write_cb;persist_delete=ble_hs_cfg.store_delete_cb;
-    ble_hs_cfg.store_write_cb=store_write;ble_hs_cfg.store_delete_cb=store_delete;
+    persist_read = ble_hs_cfg.store_read_cb;
+    persist_write = ble_hs_cfg.store_write_cb;
+    persist_delete = ble_hs_cfg.store_delete_cb;
+    ble_hs_cfg.store_read_cb = store_read;
+    ble_hs_cfg.store_write_cb = store_write;
+    ble_hs_cfg.store_delete_cb = store_delete;
     nimble_port_freertos_init(host);return true;
 }
 void open_pairing() {
@@ -155,10 +180,17 @@ unsigned passkey() {portENTER_CRITICAL(&pairing_mux);const auto key=pair_key;por
 std::uint32_t generation(){return epoch.load();}
 bool streaming(){return secured.load()&&subscribed.load()&&connection.load()!=BLE_HS_CONN_HANDLE_NONE;}
 bool receive(Chunk& c){return xQueueReceive(rxq,&c,0)==pdTRUE;}
-bool send(const std::uint8_t* bytes,std::size_t size,std::uint32_t gen) {
-    if(!streaming()||gen!=epoch.load()||size>scanner::max_wire)return false;
-    Packet p{};p.generation=gen;p.size=size;std::memcpy(p.bytes,bytes,size);
-    if(xQueueSend(txq,&p,0)!=pdTRUE){++dropped;return false;}return true;
+void send(const std::uint8_t* bytes, std::size_t size, std::uint32_t generation, Traffic traffic) {
+    if (!streaming() || generation != epoch.load() || !size || size > scanner::max_wire) {
+        ++dropped;
+        return;
+    }
+    Packet packet{};
+    packet.generation = generation;
+    packet.size = size;
+    std::memcpy(packet.bytes, bytes, size);
+    const auto queue = traffic == Traffic::Reply ? reply_txq : capture_txq;
+    if (xQueueSend(queue, &packet, 0) != pdTRUE) ++dropped;
 }
 namespace {
 void pump_on_host(ble_npl_event*) {
@@ -166,7 +198,13 @@ void pump_on_host(ble_npl_event*) {
     // the NimBLE host. Never re-use a connection handle after a cross-core check.
     []() {
     static Packet p{};static unsigned offset=0;static std::int64_t began=0;
-    if(!p.size&&xQueueReceive(txq,&p,0)==pdTRUE){offset=0;began=esp_timer_get_time();}
+    // A capture already on the wire must finish before changing queues, but
+    // sustained capture traffic cannot fill the dedicated reply queue.
+    if (!p.size && (xQueueReceive(reply_txq, &p, 0) == pdTRUE ||
+                    xQueueReceive(capture_txq, &p, 0) == pdTRUE)) {
+        offset = 0;
+        began = esp_timer_get_time();
+    }
     if(!p.size)return;
     if(!streaming()||p.generation!=epoch.load()||esp_timer_get_time()-began>1000000){p.size=0;++dropped;return;}
     const auto conn=connection.load();

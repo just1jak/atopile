@@ -1,24 +1,25 @@
 {
   "date": "2026-11-06",
-  "app_version": "0.1.0",
+  "app_version": "desktop 0.1.1 / mobile 0.1.0",
   "firmware_target": "0.2.0 / protocol 3",
   "checks": {
     "all_workspace_typechecks": "pass",
-    "shared_vitest_tests": 9,
+    "shared_vitest_tests": 14,
     "development_electron_integration": "pass",
     "packaged_windows_electron_integration": "pass",
     "synthetic_import_frames": 6000,
     "csv_export_frames": 6000,
     "mobile_web_import": "pass",
     "android_hermes_bundle": "pass",
-    "ios_hermes_bundle": "pass"
+    "ios_hermes_bundle": "pass",
+    "desktop_instrument_panel_and_source_switch": "pass"
   },
-  "windows_zip_sha256": "e564bf89a68f121ebd8365f0a6c893a6c56af4a0cc19a5e9fbebbb50728a587c",
+  "windows_zip_sha256": "d3378d6777c2f264b0b337396efa88f33ad8c86ae163194dc5dc2c4b7dbf8fb5",
   "physical_usb_tested": false,
   "physical_ble_tested": false,
   "native_mobile_built": false,
   "mac_linux_packages_built": false,
   "signed": false,
   "cad_changed": false,
-  "review": "primary source review; not independent adversarial review"
+  "review": "independent app and BLE reviews; see ADVERSARIAL-REVIEW.md"
 }

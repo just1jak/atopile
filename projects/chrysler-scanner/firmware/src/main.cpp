@@ -53,6 +53,7 @@ unsigned command_source=1;std::uint32_t command_epoch=0;
 QueueHandle_t ccd_event_q, sci_event_q, pci_edge_q;
 SemaphoreHandle_t aw_bus_mutex;
 struct Response { std::uint16_t size=0; std::uint8_t data[scanner::max_wire]{}; };
+struct BleCapture { Capture frame; std::uint32_t generation; };
 struct SciRequest { std::uint8_t route, speed; std::uint32_t baud; };
 struct Edge { std::uint64_t us; std::uint8_t level; };
 constexpr unsigned ccd_baud=7812;
@@ -217,7 +218,11 @@ void publish(Capture c) {
     if(c.bus==Bus::Pci) ++pci_count;
     if(c.bus==Bus::Sci) ++sci_count;
     if(xQueueSend(usb_capture_q,&c,0)!=pdTRUE) ++usb_lost;
-    if(scanner_ble::streaming()&&xQueueSend(ble_capture_q,&c,0)!=pdTRUE) ++ble_capture_lost;
+    const auto generation = scanner_ble::generation();
+    if (scanner_ble::streaming()) {
+        const BleCapture ble_capture{c, generation};
+        if (xQueueSend(ble_capture_q, &ble_capture, 0) != pdTRUE) ++ble_capture_lost;
+    }
     if(storage_gate.requested() && logging.load() && !storage_draining.load() &&
        xQueueSend(sd_capture_q,&c,0)!=pdTRUE) ++sd_lost;
 }
@@ -356,7 +361,9 @@ void acquisition_task(void*) {
 void respond(std::uint8_t command,std::uint8_t mode,const void* p=nullptr,std::size_t n=0) {
     Response r;
     r.size=scanner::wire(r.data,0x80|command,mode,static_cast<const std::uint8_t*>(p),n);
-    if(command_source==2){if(!scanner_ble::send(r.data,r.size,command_epoch))++usb_lost;}
+    if (command_source == 2) {
+        scanner_ble::send(r.data, r.size, command_epoch, scanner_ble::Traffic::Reply);
+    }
     else if(!r.size || xQueueSend(response_q,&r,0)!=pdTRUE) ++usb_lost;
 }
 void deny(std::uint8_t reason=2) { ++rejected; respond(15,reason); }
@@ -419,8 +426,8 @@ void command(const std::uint8_t* p,std::size_t size) {
 }
 
 void usb_task(void*) {
-    scanner::Parser parser,ble_parser;
-    auto ble_epoch=scanner_ble::generation();
+    scanner::Parser parser;
+    scanner_ble::CommandStream ble_parser(scanner_ble::generation());
     Response pending{};unsigned tx_offset=0;
     for(;;) {
         vote(Worker::Usb);
@@ -429,18 +436,16 @@ void usb_task(void*) {
         const int n=uart_read_bytes(UART_NUM_0,bytes,sizeof(bytes),0);
         parser.expire(now_us(),command);
         for(int i=0;i<n;++i) parser.feed(bytes[i],now_us(),command);
-        if(ble_epoch!=scanner_ble::generation()){
-            ble_epoch=scanner_ble::generation();ble_parser.clear();lease.release(2);xQueueReset(ble_capture_q);
-        }
-        command_source=2;command_epoch=ble_epoch;
+        if (ble_parser.reset_if_changed(scanner_ble::generation())) lease.release(2);
+        command_source = 2;
+        command_epoch = ble_parser.generation();
         scanner_ble::Chunk chunk{};
-        for(unsigned count=0;count<8&&scanner_ble::receive(chunk);++count){
-            if(chunk.generation!=ble_epoch)continue;
-            for(unsigned i=0;i<chunk.size;++i)ble_parser.feed(chunk.data[i],now_us(),command);
+        for (unsigned count = 0; count < 8 && scanner_ble::receive(chunk); ++count) {
+            ble_parser.feed(chunk, now_us, scanner_ble::generation, command);
         }
-        ble_parser.expire(now_us(),command);
-        command_source=1;
-        parse_errors=parser.errors+ble_parser.errors;
+        ble_parser.expire(now_us(), scanner_ble::generation, command);
+        command_source = 1;
+        parse_errors = parser.errors + ble_parser.errors();
         Response r;
         if(!pending.size&&xQueueReceive(response_q,&pending,0)!=pdTRUE) {
             Capture c;
@@ -455,8 +460,11 @@ void usb_task(void*) {
             if(sent<0)fail();else tx_offset+=sent;
             if(tx_offset==pending.size){pending.size=0;tx_offset=0;}
         }
-        Capture c;
-        if(xQueueReceive(ble_capture_q,&c,0)==pdTRUE){r.size=scanner::capture_wire(c,r.data);scanner_ble::send(r.data,r.size,ble_epoch);}
+        BleCapture capture;
+        if (xQueueReceive(ble_capture_q, &capture, 0) == pdTRUE) {
+            r.size = scanner::capture_wire(capture.frame, r.data);
+            scanner_ble::send(r.data, r.size, capture.generation, scanner_ble::Traffic::Capture);
+        }
         scanner_ble::pump();
         vTaskDelay(tick_ms(1));
     }
@@ -602,7 +610,7 @@ extern "C" void app_main() {
     if(esp_efuse_get_pkg_ver()!=EFUSE_RD_CHIP_VER_PKG_ESP32PICOV302) return;
     if(!safe_pins()) return;
     usb_capture_q=xQueueCreate(64,sizeof(Capture));
-    ble_capture_q=xQueueCreate(16,sizeof(Capture));
+    ble_capture_q = xQueueCreate(16, sizeof(BleCapture));
     sd_capture_q=xQueueCreate(128,sizeof(Capture));
     response_q=xQueueCreate(8,sizeof(Response));
     sci_request_q=xQueueCreate(4,sizeof(SciRequest));

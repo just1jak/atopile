@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 #include "core.hpp"
+#include "ble_transport.hpp"
 #include "board.hpp"
 #include "expander.hpp"
 #include <cassert>
@@ -257,12 +258,50 @@ void test_journal() {
     c.size=max_data; assert(capture_wire(c,frame)==max_capture_wire);
     c.size=max_data+1; assert(capture_wire(c,frame)==0);
 }
+void test_ble_command_generation() {
+    std::uint32_t generation = 1;
+    unsigned commands = 0;
+    const auto current = [&] { return generation; };
+    const auto sink = [&](const std::uint8_t*, std::size_t) { ++commands; ++generation; };
+    scanner_ble::CommandStream stream(generation);
+    scanner_ble::Chunk chunk{};
+    chunk.generation = generation;
+    const std::uint8_t start = 1;
+    const auto size = wire(chunk.data, 4, 0x81, &start, 1);
+    std::memcpy(chunk.data + size, chunk.data, size);
+    chunk.size = 2 * size;
+    stream.feed(chunk, [] { return 1000; }, current, sink);
+    // A disconnect after the first command invalidates the rest of the chunk.
+    assert(commands == 1);
+    assert(stream.reset_if_changed(generation));
+    stream.feed(chunk, [] { return 2000; }, current, sink);
+    assert(commands == 1);
+
+    // A valid frame hidden behind a false header can be recovered on parser
+    // expiry, but never dispatched after its connection generation changed.
+    chunk.generation = generation;
+    std::memmove(chunk.data + 3, chunk.data, size);
+    chunk.data[0] = 0x3d;
+    chunk.data[1] = 0;
+    chunk.data[2] = 30;
+    chunk.size = 3 + size;
+    stream.feed(chunk, [] { return 3000; }, current, sink);
+    ++generation;
+    stream.expire(104000, current, sink);
+    assert(commands == 1);
+    assert(stream.reset_if_changed(generation));
+    chunk.generation = generation;
+    chunk.size = wire(chunk.data, 4, 0x81, &start, 1);
+    stream.feed(chunk, [] { return 105000; }, current, sink);
+    assert(commands == 2);
+}
 int main() {
     ControlLease lease;
     assert(lease.acquire(2,1));assert(!lease.acquire(1,2));
     lease.usb_stop(3);assert(lease.owner(4)==1);assert(!lease.acquire(2,5));
     lease.release(2);assert(lease.owner(6)==1);lease.release(1);assert(lease.acquire(2,7));
     assert(lease.owner(10000008)==0);assert(lease.acquire(1,10000009));
+    test_ble_command_generation();
     test_expander(); test_health(); test_policy(); test_burst_and_edges(); test_parser(); test_stop_completion(); test_vpw(); test_journal();
-    puts("PASS: expander faults, health latch, passive policy, UART error batches, SCI provenance, PCI gaps, stop/mount fencing, framing/fuzz, VPW, journal CRC");
+    puts("PASS: expander faults, health latch, passive policy, UART error batches, SCI provenance, PCI gaps, stop/mount fencing, BLE epoch invalidation, framing/fuzz, VPW, journal CRC");
 }

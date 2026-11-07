@@ -48,6 +48,13 @@ describe('streaming SD recovery',()=>{
     const corrupt=rec.slice();new DataView(corrupt.buffer).setUint32(8,500,true);
     const r=new JournalReader(()=>{});r.feed(concat(utf('CBSDRAW1'),corrupt,stop));const result=r.finish();expect(result.records).toBe(1);expect(result.cleanStop).toBe(false);expect(result.sequenceGaps).toBe(1);
   });
+  it('recovers after malformed record payloads with valid outer CRCs',()=>{
+    const invalidFrame=journalRecord(2,0,1000,Uint8Array.of(0));
+    const invalidEvent=journalRecord(4,1,2000,Uint8Array.of(255));
+    const reader=new JournalReader(()=>{});
+    reader.feed(concat(utf('CBSDRAW1'),invalidFrame,invalidEvent,journalRecord(2,2,3000,ccd()),journalRecord(4,3,4000,utf('session_clean_stop'))));
+    expect(reader.finish()).toMatchObject({frames:1,skippedBytes:invalidFrame.length+invalidEvent.length,cleanStop:false});
+  });
 });
 describe('session confirmation and stale connection boundaries',()=>{
   it('waits through mounting/closing and invalidates eject confirmation on ownership loss',async()=>{
@@ -75,6 +82,34 @@ describe('session confirmation and stale connection boundaries',()=>{
     await expect(session.setLogging(true)).rejects.toThrow('not ready');
     owner=2;await expect(session.setLogging(false)).rejects.toThrow('ownership');
     expect(session.state.safeToRemove).toBe(false);await session.disconnect();
+  });
+  it('cannot publish SD stop confirmation after a disconnect during the status reply',async()=>{
+    const session=new ScannerSession();let stopped=false;
+    const transport:Transport={kind:'usb',close:async()=>{},write:async bytes=>{
+      const request=parse(bytes)!;
+      if(request.mode===0x81)stopped=true;
+      const payload=request.mode===0x7f?cap:request.mode===0x81?Uint8Array.of(0):base;
+      queueMicrotask(()=>session.receive(response(request.mode,payload)));
+    }};
+    await session.connect(transport,'Test');
+    session.onState=state=>{
+      if(stopped&&state.status)void session.disconnect();
+    };
+    await expect(session.setLogging(false)).rejects.toThrow('connection changed');
+    expect(session.state).toMatchObject({phase:'disconnected',safeToRemove:false});
+  });
+  it('withdraws the previous stop confirmation on a malformed status',async()=>{
+    const session=new ScannerSession();let invalid=false;
+    const transport:Transport={kind:'usb',close:async()=>{},write:async bytes=>{
+      const request=parse(bytes)!;
+      const payload=request.mode===0x7f?cap:request.mode===0x81?Uint8Array.of(0):invalid?{}:base;
+      queueMicrotask(()=>session.receive(response(request.mode,payload)));
+    }};
+    await session.connect(transport,'Test');await session.setLogging(false);
+    expect(session.state.safeToRemove).toBe(true);
+    invalid=true;
+    await expect(session.refresh()).rejects.toThrow('invalid status');
+    expect(session.state).toMatchObject({status:undefined,statusAt:0,safeToRemove:false});
   });
   it('rejects incompatible firmware and does not enable controls from arbitrary JSON',async()=>{
     const session=new ScannerSession();
