@@ -1,1 +1,9 @@
-{"build":{"preview":{"distribution":"internal","android":{"buildType":"apk"}},"simulator":{"ios":{"simulator":true}},"production":{}}}
+{
+  "cli": { "appVersionSource": "remote" },
+  "build": {
+    "preview": { "distribution": "internal", "android": { "buildType": "apk" } },
+    "simulator": { "ios": { "simulator": true } },
+    "production": { "distribution": "store", "autoIncrement": true }
+  },
+  "submit": { "production": {} }
+}
