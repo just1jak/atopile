@@ -28,7 +28,7 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
-      - run: npm run package --workspace @chrysler/desktop -- --publish never
+      - run: npm run package --workspace @chrysler/desktop -- --publish=never
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
         env:

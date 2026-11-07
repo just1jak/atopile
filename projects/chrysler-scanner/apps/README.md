@@ -41,9 +41,9 @@ npm run export:mobile
 Package desktop on the corresponding OS:
 
 ```sh
-npm run package --workspace @chrysler/desktop -- --win zip --publish never
-npm run package --workspace @chrysler/desktop -- --mac --publish never
-npm run package --workspace @chrysler/desktop -- --linux --publish never
+npm run package --workspace @chrysler/desktop -- --win zip --publish=never
+npm run package --workspace @chrysler/desktop -- --mac --publish=never
+npm run package --workspace @chrysler/desktop -- --linux --publish=never
 ```
 
 macOS signing/notarization and distribution certificates are not configured.

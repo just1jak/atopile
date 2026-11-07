@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "private": true,
   "description": "Chrysler Scanner passive capture and recording companion",
+  "desktopName": "chrysler-scanner.desktop",
   "homepage": "https://github.com/just1jak/atopile/tree/feature/chrysler-sd-checkpoint/projects/chrysler-scanner/apps",
   "author": "Chrysler Scanner contributors",
   "license": "GPL-3.0-only",
@@ -57,7 +58,12 @@
       ],
       "category": "public.app-category.developer-tools"
     },
+    "deb": {
+      "packageName": "chrysler-scanner",
+      "artifactName": "chrysler-scanner_${version}_${arch}.deb"
+    },
     "linux": {
+      "syncDesktopName": true,
       "target": [
         "AppImage",
         "deb"
