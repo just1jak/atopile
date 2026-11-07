@@ -18,7 +18,7 @@ await writeFile(main,`const {app,BrowserWindow}=require('electron');app.whenRead
 const env={...process.env};delete env.ELECTRON_RUN_AS_NODE;
 const app=await _electron.launch({executablePath:electron,args:[main,'--disable-gpu'],env,timeout:30000});
 try{
-  const page=await app.firstWindow();await page.getByText('Your networks, in view',{exact:true}).waitFor();
+  const page=await app.firstWindow();await page.getByText('Bus monitor',{exact:true}).waitFor();
   const chooser=page.waitForEvent('filechooser');await page.getByRole('button',{name:'Open recording',exact:true}).click();
   await (await chooser).setFiles(join(artifacts,'SYNTHETIC-SAMPLE.cbr'));
   await page.getByText('6,000 frames',{exact:true}).waitFor();

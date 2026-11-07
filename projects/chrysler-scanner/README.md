@@ -17,3 +17,7 @@ The first board-specific passive firmware port is under [firmware/](firmware/REA
 Allow at least the prior 7 mm underside enclosure space and card access; C61 is nominally 5.9 mm tall above the top, main coils maximum 4.35 mm. Check actual component/screw/connector/hook and enclosure tolerances with samples.
 
 Current archives: `outputs/chrysler-integrated-sd-rev-c-c14-2220-20261106.zip` and `outputs/chrysler-integrated-sd-rev-c-c14-2220-20261106-fabrication.zip`, with SHA-256 sidecars. Earlier archives are historical. The historical 2026-10-28 original/current circuit comparison is `output/pdf/ChryslerScanner_Original-to-Current_Circuit_Comparison.pdf`. Exact delivery hashes and limits are in `reference/final-status.json`.
+
+[Market research and pricing](reference/market-and-pricing.md) records competitor
+prices and the dated assembly cost estimates. [Rev D CAN scope](reference/can-rev-d.md)
+records the first passive CAN design and bring-up gates.
