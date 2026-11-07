@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "private": true,
   "description": "Chrysler Scanner passive capture and recording companion",
+  "homepage": "https://github.com/just1jak/atopile/tree/feature/chrysler-sd-checkpoint/projects/chrysler-scanner/apps",
   "author": "Chrysler Scanner contributors",
   "license": "GPL-3.0-only",
   "main": "dist/main.cjs",
@@ -11,7 +12,8 @@
     "build": "vite build && node build.mjs",
     "start": "npm run build && electron .",
     "typecheck": "tsc --noEmit -p tsconfig.json",
-    "package": "node ../tools/generate-icons.mjs && npm run build && electron-builder"
+    "icons": "node ../tools/generate-icons.mjs",
+    "package": "npm run build && electron-builder"
   },
   "dependencies": {
     "serialport": "13.0.0"
