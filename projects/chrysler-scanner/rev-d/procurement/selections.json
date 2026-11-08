@@ -1,0 +1,410 @@
+{
+  "date": "2026-11-07",
+  "baselineCommit": "dce9f71e756243a949e5230877c3a20f2f9c9811",
+  "status": "EXACT_BOM_FOR_BENCH_QUOTATION_NOT_PRODUCTION_QUALIFICATION",
+  "pcbSha256": "2e78fc59cdb673444d1d433c10f06dfd234662e7a467a3b113f6c6cee1294ea0",
+  "inheritedSelection": "../../current/reference/rev-c-procurement-selections.json",
+  "inheritedSelectionSha256": "abfd1f4b594945b52062ac4ef21b4f25594c82ee7399a07e910b49c73d81395c",
+  "newPartGroups": [
+    {
+      "references": [
+        "C140",
+        "C141",
+        "C142",
+        "C143",
+        "C144",
+        "C147",
+        "C148",
+        "C149",
+        "C150",
+        "C151",
+        "C152",
+        "C153",
+        "C154"
+      ],
+      "inheritReference": "C62"
+    },
+    {
+      "references": [
+        "C145",
+        "C146"
+      ],
+      "inheritReference": "C45"
+    },
+    {
+      "references": [
+        "R140",
+        "R141",
+        "R146",
+        "R147",
+        "R148",
+        "R150",
+        "R151"
+      ],
+      "inheritReference": "R27"
+    },
+    {
+      "references": [
+        "R142",
+        "R143",
+        "R145",
+        "R154"
+      ],
+      "inheritReference": "R1"
+    },
+    {
+      "references": [
+        "R144"
+      ],
+      "inheritReference": "R83"
+    },
+    {
+      "references": [
+        "R149"
+      ],
+      "inheritReference": "R88"
+    },
+    {
+      "references": [
+        "Q25",
+        "Q26",
+        "Q27",
+        "Q28",
+        "Q29",
+        "Q30"
+      ],
+      "inheritReference": "Q17"
+    },
+    {
+      "references": [
+        "R152",
+        "R153"
+      ],
+      "manufacturer": "YAGEO",
+      "mpn": "RT0603DRE07392KL",
+      "source": "https://www.ti.com/lit/df/tidrr61/tidrr61.pdf",
+      "tolerance": "0.5%",
+      "rating": "392k ohm, 0.1W, 0603, 50ppm/K"
+    },
+    {
+      "references": [
+        "R155"
+      ],
+      "manufacturer": "Vishay",
+      "mpn": "CRCW060368K1FKEA",
+      "source": "https://www.ti.com/lit/an/snvaa28/snvaa28.pdf",
+      "tolerance": "1%",
+      "rating": "68.1k ohm, 0.1W, 0603"
+    },
+    {
+      "references": [
+        "D40"
+      ],
+      "manufacturer": "Nexperia",
+      "mpn": "PESD2CANFD36VT-QR",
+      "source": "https://www.nexperia.com/chemical-content/PESD2CANFD36VT-Q.html",
+      "engineeringMpn": "PESD2CANFD36VT-Q"
+    },
+    {
+      "references": [
+        "D41",
+        "D42"
+      ],
+      "manufacturer": "Nexperia",
+      "mpn": "PMEG2010EA,115",
+      "source": "https://www.nexperia.com/chemical-content/PMEG2010EA.html",
+      "engineeringMpn": "PMEG2010EA"
+    },
+    {
+      "references": [
+        "D43",
+        "D44",
+        "D45",
+        "D46"
+      ],
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "1N5819HW-7-F",
+      "source": "https://www.diodes.com/assets/Datasheets/ds30217.pdf"
+    },
+    {
+      "references": [
+        "K1",
+        "K2",
+        "K3",
+        "K4"
+      ],
+      "manufacturer": "OMRON",
+      "mpn": "G6K-2F-Y-TR DC5 BY OMR/C",
+      "source": "https://www.anglia.com/registration/pcn_ptn/docs/pcn/omr_PCN%20G6K.pdf",
+      "engineeringMpn": "G6K-2F-Y DC5",
+      "canonicalOrderingMpn": "G6K-2F-Y-TR DC5",
+      "lcsc": "C231390",
+      "supplierSource": "https://jlcpcb.com/partdetail/231277-G6K_2F_Y_TR_DC5_BY_OMRC/C231390"
+    },
+    {
+      "references": [
+        "U25"
+      ],
+      "manufacturer": "Texas Instruments",
+      "mpn": "TCAN1042HGVDRQ1",
+      "source": "https://www.ti.com/lit/ds/symlink/tcan1042h-q1.pdf"
+    },
+    {
+      "references": [
+        "U26"
+      ],
+      "manufacturer": "Microchip",
+      "mpn": "MCP23008T-E/SO",
+      "source": "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"
+    },
+    {
+      "references": [
+        "U27"
+      ],
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC238DR",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74hc238.pdf"
+    },
+    {
+      "references": [
+        "U28"
+      ],
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74LVC2G17DBVR",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf"
+    },
+    {
+      "references": [
+        "U29",
+        "U31"
+      ],
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74LVC1G11DBVR",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf"
+    },
+    {
+      "references": [
+        "U30"
+      ],
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74LVC1G04DBVR",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf"
+    },
+    {
+      "references": [
+        "U32"
+      ],
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74LVC1G126DBVR",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g126.pdf"
+    },
+    {
+      "references": [
+        "U34",
+        "U35",
+        "U36"
+      ],
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74LVC1G08DBVR",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"
+    },
+    {
+      "references": [
+        "U33"
+      ],
+      "manufacturer": "Analog Devices",
+      "mpn": "LTC6993HS6-1#TRMPBF",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/69931234fc.pdf"
+    }
+  ],
+  "supplierIds": {
+    "226A-1202": "C56415190",
+    "5015": "C2906768",
+    "74AHCT1G17GVH": "C554578",
+    "ANT3216LL00R2400A": "C293767",
+    "AO3400A": "C20917",
+    "AW9523BTQR": "C148077",
+    "BZT52H-B15,115": "C74788",
+    "C0603C104K5RACTU": "C127833",
+    "C0603C105K4RACTU": "C2167386",
+    "C1206C104K1RACTU": "C2167118",
+    "CGA9P3X7R1H226MT0Y0N": "C49297044",
+    "CJ3439KDW": "C99824",
+    "CP2102-GMR": "C6568",
+    "CRCW06030000Z0EA": "C844915",
+    "CRCW060310R0FKEA": "C844919",
+    "CRCW0603120RFKEA": "C844736",
+    "CRCW060313K0FKEA": "C844739",
+    "CRCW0603191KFKEA": "C2085878",
+    "CRCW06031K00FKEA": "C844920",
+    "CRCW06031K62FKEA": "C4247354",
+    "CRCW060322K0FKEA": "C844758",
+    "CRCW06032K00FKEA": "C844924",
+    "CRCW0603300RFKEA": "C844773",
+    "CRCW0603330RFKEA": "C844926",
+    "CRCW060333R0FKEA": "C844927",
+    "CRCW0603470RFKEA": "C844786",
+    "CRCW0603499RFKEA": "C844788",
+    "CRCW06034K70FKEA": "C844931",
+    "CRCW06035K10FKEA": "C844933",
+    "CRCW06038K20FKEA": "C844809",
+    "CRCW12061K00FKEA": "C844942",
+    "CRCW1206360RFKEA": "C844035",
+    "CRCW12064K70FKEA": "C242482",
+    "DM3AT-SF-PEJM5": "C114218",
+    "DMG6601LVT-7": "C278728",
+    "DR74-220-R": "C2452958",
+    "DSK34": "C7502709",
+    "ESP32-PICO-V3-02": "C908392",
+    "G6K-2F-Y-TR DC5 BY OMR/C": "C231390",
+    "HSSK8811": "C845587",
+    "LGS6302B5": "C5123975",
+    "LMBR130T1G": "C48974",
+    "LMR14010ADDCR": "C388174",
+    "LTC6993HS6-2#TRMPBF": "C581044",
+    "LTST-C150KGKT": "C125085",
+    "LTST-C150KRKT": "C125086",
+    "LTST-C150KSKT": "C125087",
+    "LTST-C150TBKT": "C125088",
+    "MCP1825S-3302E/DB": "C148031",
+    "PESD3V3U1UA,115": "C403915",
+    "SMBJ16CA": "C151255",
+    "SMF12A": "C19077506",
+    "SN74AHCT1G14DBVR": "C55250",
+    "SN74LVC1G11DBVR": "C22046",
+    "SN74LVC2G66DCTR": "C2651913",
+    "SRN2012-R24M": "C6496132",
+    "SRN2012-R47M": "C2043207",
+    "TL3305AF160QG": "C2886899",
+    "TLV76701DRVR": "C2863998",
+    "TLV76733DRVR": "C2848334",
+    "TLV76750DRVR": "C2872569",
+    "TLV803EA30DBZR": "C5218924",
+    "TMUX1511PWR": "C2866750",
+    "TNPW060310K0BEEA": "C844890",
+    "TNPW0603110KBEEA": "C2075212",
+    "TNPW060368K0BEEA": "C2079067",
+    "TNPW06036K80BEEA": "C844268",
+    "TS391ILT": "C71896",
+    "TSW-103-07-G-D": "C6339671",
+    "UPW1H101MPD": "C125987",
+    "USB4105-GF-A": "C3020560",
+    "USBLC6-2SC6": "C7519"
+  },
+  "supplierIdPolicy": "Exact MPN matches only; no Rev C quote-only alternates adopted. IDs are catalog mappings, not stock guarantees.",
+  "unchangedFiles": {
+    "outputs/ChryslerScanner-RevD-hardened-bench-fabrication.zip": "c1663b4b48c9ed3a417d6e2abbae966029568083a504ff6e5e4dc472fdc33b68",
+    "rev-d/01_ccd.kicad_sch": "9dd085d7b8bf3c4b09264333b05f3f81600140d24ddb67800c2eac531cf4bf66",
+    "rev-d/02_pci.kicad_sch": "35a11d6d36e9c20be27d5a1b08e3dd9672e236724dd91a364801f58b1ddd2d37",
+    "rev-d/03_sci-14-9.kicad_sch": "e99b402b8d3800e3e89417df2819fd4aa274c99d731cd425ea8379c297532fd8",
+    "rev-d/04_sci-6-12.kicad_sch": "4ae71fd13cee018fae16be4ff25aaf77c1e4da1e3e3dcfe802a55da6cd1b00fc",
+    "rev-d/05_sci-rx.kicad_sch": "95201825afffe8d4b4718cee0552f60770e70a1a178f21c7c06735e3a0d30355",
+    "rev-d/06_obd-protection.kicad_sch": "bbf7fb7d2afe21a50a9a0a5e1838685f85340e2dea8ebd9e033d9329608e223a",
+    "rev-d/07_vehicle-input.kicad_sch": "e8583ce7e6bb2afa24c03e2cff0067bd6ec630f8f2a83503b15605bd206b8dfa",
+    "rev-d/08_power-5v.kicad_sch": "ebc61a57cb9b856a8f4fecd2a44b080b7ac262d777c93aaf6e143c93c4fb5047",
+    "rev-d/09_power-vpp.kicad_sch": "6a3f81a5535a0e1c3b70d5ac206aa453e0a0227fc2ff13eed84ce3af88907d93",
+    "rev-d/10_power-vbb.kicad_sch": "3283ccfcc888a7a3b5071b410d83386fd38b42535ce228eea90cf53b90e1e58f",
+    "rev-d/11_power-7v5.kicad_sch": "2d584cfc91a4ed68b4f17735203cce2d57c281ba3f08e6de4326fcc4c846f9d1",
+    "rev-d/12_program-6.kicad_sch": "f3f7d25ab5587465da804978a4dd8106580286a54d80a6caaef5010b28bbae12",
+    "rev-d/13_program-9.kicad_sch": "68703e2bb3a489eddd7a737be84ad278115ad90d5c5252509ece2c9d0e56d3e6",
+    "rev-d/14_program-12.kicad_sch": "db8a4553c0ddc9e515cf069badaa5f7f3aeb6a244c867356076ea3e5abb92b1a",
+    "rev-d/15_program-14.kicad_sch": "35e97b5259b42194859609f8c78ba7cc137b897a8d0d7924e153da2f017a2184",
+    "rev-d/16_mcu.kicad_sch": "7291ea16b905969ca278c7e387980d656dc8458d14db6692871a97dcb84af0f9",
+    "rev-d/17_adc.kicad_sch": "0e6cd34f0dbcd630f2882bed0528adaa6f9b299a4b712b8a7134136d5534e5c7",
+    "rev-d/18_control.kicad_sch": "098977109f0fc9fb69122b5037a535f23803fe2c69205d4682f9e232cb24aee0",
+    "rev-d/19_usb.kicad_sch": "89ea30e195ac683beed119acc030f9c768358f7e691ad2202691491d65aa26a2",
+    "rev-d/20_leds.kicad_sch": "815bf9548f9337bc74e474d486366ee26e936616dc53c6daa35e0febd6c3997c",
+    "rev-d/22_sd-logger.kicad_sch": "ee4bddf1cc9e6090b8cfd44846a1f2156045b19ee4d864c3bed1027436cc6d65",
+    "rev-d/23_hardware-safety.kicad_sch": "b8876b6a470b4e06833cac665e08abaecb462500b52d99feb2c20d4a8ea793c2",
+    "rev-d/24_debug-testpoints.kicad_sch": "9732dfdf7b499ac4e45bf1dc448f960bef8a490e51f7a757f50deb0f2c8f65de",
+    "rev-d/25_passive-can.kicad_sch": "8cae7454e5e97011eca3fe81521c6a74c29306045b53aa4d12456d8e05b34e6b",
+    "rev-d/26_obd-selector.kicad_sch": "22e43cf67bc24b4b0afe7a95649e70e841b9a923f4277b531fa83c3939e4aaf6",
+    "rev-d/27_can-tx-permit.kicad_sch": "8d278851dab92da9a5468e30d771a923d6aa5ff7bd7ac4d7bf1d05a4a8e3dc62",
+    "rev-d/28_fault-containment.kicad_sch": "d94c8811c2054e1ac52cf89dc6f760700908344cf6d2e7c2264685b3099c7893",
+    "rev-d/ChryslerScanner.kicad_sym": "54cf4da3e85f7b936327ab06c85e1158569c64b43e0490d441af72ded3049c7a",
+    "rev-d/ChryslerScanner_RevD.kicad_pcb": "2e78fc59cdb673444d1d433c10f06dfd234662e7a467a3b113f6c6cee1294ea0",
+    "rev-d/ChryslerScanner_RevD.kicad_pro": "2d3debc41abc6e0f4fecd3a84b6c660277aec338e9bbe66b3025c88605171dd2",
+    "rev-d/ChryslerScanner_RevD.kicad_sch": "ce8f9f8a7e1fe1d9812d46449c6b1898266abbf7d0ff579cb25e810ef7f61296",
+    "rev-d/LICENSE": "c3bc1fd94148c28485e8bab1d5a28edbc8e3870f2bd9be7127c68c8b7a0ea5df",
+    "rev-d/README.md": "20eeab4d318c30d9ba2a8e4521074dc804dba04b844179bb73dc151c0b5c4fba",
+    "rev-d/RevD.kicad_sym": "dcd83cd29e34ba8b65a6fe86e718e3c4b9ff52739b8243dfcce90d724d65309c",
+    "rev-d/RevDFaultContainment.kicad_sym": "df5189d3d018de01879b8baef1a09949603f8ba7b3386c3e0012c1bde34b2ca2",
+    "rev-d/RevDSelector.kicad_sym": "709e9ee0bf1335ef7ff276510a51462192ab10ea73980c27a01f5adb0a2da2b9",
+    "rev-d/RevDTxPermit.kicad_sym": "a7dd741a913af31a3489e759feca4db4448773440eb25e87aba27890b2175459",
+    "rev-d/SDLogger.kicad_sym": "09501079e6bf01ba3a4a181b75396cf65dac83c34e40900c94023f3518626eb2",
+    "rev-d/Safety.kicad_sym": "039354856d35551fe1a7bc8c092f48c1ec23b057e95949adce273bcf032ebd1b",
+    "rev-d/check_netlist.py": "9fda414080642e9124cdb70aff90f91bfd1831c6a34272aab654468718d0ac0e",
+    "rev-d/footprints.pretty/ANT3216LL00R2400A.kicad_mod": "cc535cf35cbb7db228f1c525105be69f4b677d9c9ec6e11f648c37bf64ac3002",
+    "rev-d/footprints.pretty/AW9523B_QFN24.kicad_mod": "a39cab9e90e8dd284b5bc5883e05223f82b4c60972f52e7e0dce4994d3fec7b3",
+    "rev-d/footprints.pretty/CP2102_V140_Reference.kicad_mod": "c867f900fdfee0ee86673133b0baa14d37ef952f284292b49f3d248519f8d99a",
+    "rev-d/footprints.pretty/CP_Radial_D8.0mm_P3.50mm.kicad_mod": "d0d265e54281cfd5ef0694d5a53e0dd927058de65eb99aa3d88d2052be49b1ef",
+    "rev-d/footprints.pretty/C_0603_1608Metric.kicad_mod": "cb405038c3b66273ad6b4c0dd5520f026e9f84413e894e6f053982dfaf90347a",
+    "rev-d/footprints.pretty/C_0805_2012Metric.kicad_mod": "a7ce32079f4d1fae0b6d55e204ea132753534b81f53dbeb91da8a0f5ffa52c72",
+    "rev-d/footprints.pretty/C_1206_3216Metric.kicad_mod": "b49757cc06979e84c9dde4b4d8bed44517ed2de08e5da3504909dac3a4a8b94d",
+    "rev-d/footprints.pretty/C_1210_3225Metric.kicad_mod": "536196d5daaa690e24f38cadf6673dfbafc48259e8e1c4618478fc0c44a87c59",
+    "rev-d/footprints.pretty/C_1210_3225_TDK_22u50V.kicad_mod": "73859a976d679fc790eb62c9232b32de2cdb12e07cb02e4190cd13e5f8c96bcb",
+    "rev-d/footprints.pretty/C_2220_5750_TDK_22u50V.kicad_mod": "6a4d265b04f8cc9d14fdb6ae4f96fb4b48420cac2f4a633007831634e291b2b4",
+    "rev-d/footprints.pretty/D_SMB.kicad_mod": "26243e6195f02b4426f260fc94df6f97f89ea545661a04dbcd8137e0079b9f24",
+    "rev-d/footprints.pretty/D_SOD-123.kicad_mod": "44a6d05ced33a4d8ac477759b2bc6a537aeccb62a70c438a191567097d65d0c4",
+    "rev-d/footprints.pretty/D_SOD-323.kicad_mod": "120f947b60a67fb159989f4880adddb490a0b3bc0879acc59012e4cda4421abc",
+    "rev-d/footprints.pretty/ESP32_PICO_V3_02.kicad_mod": "83639ab76e2ff4fd569160f20282feab2d8e8225f9a207bb22905cb147fc2e5e",
+    "rev-d/footprints.pretty/LED_1206_3216Metric.kicad_mod": "30444e7f2c7b6e99fd148f07db92070a93e9f9ffab817f596a957fd7bea920eb",
+    "rev-d/footprints.pretty/LED_V140_Reference.kicad_mod": "4167a5412ef593749fc8ba5dcd20d661a66c9270f7200aef0bc62f52be39bce9",
+    "rev-d/footprints.pretty/L_1206_Coilcraft1206CS.kicad_mod": "e13b4f24b5a721b5ce2fe83e96e5b3b025702d90f83dc494e6c72058bfce4fdd",
+    "rev-d/footprints.pretty/L_7.3x7.3_H3.5.kicad_mod": "edc295fcbc05ee25598f2e84e0e1c017e15c7949ff312e251f4a70905ccce5c3",
+    "rev-d/footprints.pretty/L_Bourns_SRN2012.kicad_mod": "4c3cf2468b25f080fe758889b6d9344c07592f552023b82315f9f531d8056604",
+    "rev-d/footprints.pretty/L_Bourns_SRN3015C.kicad_mod": "43864fa6592565dd006ac983f4081d0e2abd547e56b4ad8b48c49aafd1a6ac2c",
+    "rev-d/footprints.pretty/L_Bourns_SRR7045_220M.kicad_mod": "e2266edf7671fe9674c4d6e8e9525ac388928377dd314135168c5e9d6d659dfe",
+    "rev-d/footprints.pretty/L_Eaton_DR74_220_R.kicad_mod": "7eb851d3a73364601636d01dc95dc57728c1e98261cb96c49e4d810120d77d1b",
+    "rev-d/footprints.pretty/L_Eaton_DR74_Recommended.kicad_mod": "0d927425f16c0cfce5df2c6d667237df1b8149389f792c520c54c9caddf490c6",
+    "rev-d/footprints.pretty/MountingHole_4mm.kicad_mod": "be1a7ce9b3249c8f166100724427b6d1b42d70b6dbf46551e07a3f1b8eb0f8ec",
+    "rev-d/footprints.pretty/OBD16_V140_Reference.kicad_mod": "4fd58c253f1e2c9baecd6724d6e83769707a70d27f9323ac3574c47ec703f7d0",
+    "rev-d/footprints.pretty/OBDII_ATTEND_226A-1202.kicad_mod": "ca817c414ecf5a73ce656da14ce2f0ce5e72c872317746da928df2120ef1a345",
+    "rev-d/footprints.pretty/PinHeader_2x03_P2.54mm_Vertical.kicad_mod": "08ce510ace12398f3e319ae632d1092527a9bbc452271ada68b5c5c3858d1207",
+    "rev-d/footprints.pretty/QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.6mm.kicad_mod": "5917f141f52f2b54dab093dfabe3ae03c24f333de932ad20141b7a4eb9ec98c2",
+    "rev-d/footprints.pretty/QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm.kicad_mod": "8e6832d5d79579c2339dd05ac3a2d136422d553490ca00395ecf037758b8e5c6",
+    "rev-d/footprints.pretty/R_0603_1608Metric.kicad_mod": "f0dde2179e57b0dfafce2c120e1d91865ab2e56698f244d20c551d40ccffcebf",
+    "rev-d/footprints.pretty/R_1206_3216Metric.kicad_mod": "d9f6bdeb5b0305e392d32391e807a54dcd859268365d871b8dce737e9a76e521",
+    "rev-d/footprints.pretty/SOT-23-5.kicad_mod": "4ce5c51b033e3e25a49cf4916fbcd9329f3f0a233688a311d2dc0b5c1f659eee",
+    "rev-d/footprints.pretty/SOT-23-6.kicad_mod": "8c5295173ccff193e09c81e815e93d323c16b79dce25605ab27abc33483faff0",
+    "rev-d/footprints.pretty/SOT-23.kicad_mod": "8205a875e4985a25652bb8213ecaad816a8233c9368aa73c654a46bc515986c9",
+    "rev-d/footprints.pretty/SOT-363_SC-70-6.kicad_mod": "8176fdac022ca951b20bf886133ab9890daee5a3dad7eaace0a0f3a120797395",
+    "rev-d/footprints.pretty/SOT-363_SC-70-6_RR.kicad_mod": "29e30645aa6560854973f0a84c18ccbc55e023c0a0add6c5d2d7375b2c26e2a1",
+    "rev-d/footprints.pretty/SW_SPST_TL3305A.kicad_mod": "80a55bc5642b6a13c70a6a586b0f0ffd0fb8a12cf00c415b99b9566135b4162d",
+    "rev-d/footprints.pretty/SY6283_DFN4.kicad_mod": "dceb4709fd2026531749d893a8fb1d0de1b24c8de30adcc3b00b5068c3249730",
+    "rev-d/footprints.pretty/SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm.kicad_mod": "28007c6849c35b964e86ed4d3096ef4e4399c44609ceabe9e3c9446a0450a3c8",
+    "rev-d/footprints.pretty/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm.kicad_mod": "29a03c55509021890927362508f068e38d9765c1fd00684f1fbcc46e9cd91486",
+    "rev-d/footprints.pretty/TSOT-23-8.kicad_mod": "befcd0ea0a24ec427f2463715f2c3e78f42b5ea07a943a193f3ebae3ab2f5d46",
+    "rev-d/footprints.pretty/TestPoint_Keystone_5015_Micro_Mini.kicad_mod": "6c35a63dadb4cf4de0eabaa73dc7e60386fe083786e51b8a6bbfa734d7bc8f87",
+    "rev-d/footprints.pretty/TestPoint_Pad_D1.0mm.kicad_mod": "bf5cfe437cb7d463ee7761a050a1f484a0de7926fae03d5af3c48a4365641ca7",
+    "rev-d/footprints.pretty/USBLC6_V140_Reference.kicad_mod": "bf25a4ad6f83c1f82c31c503c5b9628efe7ccbaee679f80e66758eb43a7ca5d7",
+    "rev-d/footprints.pretty/USB_B_Lumberg_2411_02_Horizontal.kicad_mod": "deafdbbb2e8479c10b735dde11d129ee6241a7876179dba8c4293e143fe66306",
+    "rev-d/footprints.pretty/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod": "c9c106c19d69f4c8de018871c32c051cf8bee0fbcd6ebc2b055703ee02ee0885",
+    "rev-d/footprints.pretty/VSSOP-8_2.3x2mm_P0.5mm.kicad_mod": "ca1c2af5b0f57d4bb308a8e87f2b15bd05f6a849479226d0d7935ea6b69d2fe5",
+    "rev-d/footprints.pretty/WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.kicad_mod": "203b3de3da0e84c94db0a43bbb1829e31acf4e02841b5d300a4cba2ad2647a32",
+    "rev-d/fp-lib-table": "b3eb99fcb25822411c0cee717f3a4a783b0c918d04a69e9b0989f385a756de8e",
+    "rev-d/libraries/Capacitor_SMD.pretty/CP_Elec_5x5.9.kicad_mod": "27af41e95d4e4448e0157ab19f3fd32553c7271511dfb493f0b440242edfdb1a",
+    "rev-d/libraries/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod": "d62ab7ad8fdbc726bd24670cd332d75b256205bb467d2e31f56d3f1536fc6290",
+    "rev-d/libraries/Capacitor_SMD.pretty/C_0805_2012Metric.kicad_mod": "ec4017da74535b8df7445e021ed022b42a93202124e7ad98e1215ddafe1efef6",
+    "rev-d/libraries/Connector_Card.pretty/microSD_HC_Hirose_DM3AT-SF-PEJM5.kicad_mod": "5e64b7ace6ca7764f7841606b2fd76692d0fe6a7f5ce73c2baf8178141efe41f",
+    "rev-d/libraries/Diode_SMD.pretty/D_SOD-123.kicad_mod": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+    "rev-d/libraries/Diode_SMD.pretty/D_SOD-123F.kicad_mod": "93a0582f2381a0b4a760aed93c4ae222c0a927cf3b7180d6285813e5cb021097",
+    "rev-d/libraries/Diode_SMD.pretty/D_SOD-323.kicad_mod": "03669ee95335b8ad49c3458e5262e7c2fd7ace6fe481bfd00f46b6f2f32abc8a",
+    "rev-d/libraries/Package_SO.pretty/SOIC-16_3.9x9.9mm_P1.27mm.kicad_mod": "f9b5075740f7816c540ae1137f025d659beaec522ed7b86b1a5274cc9a2d8a25",
+    "rev-d/libraries/Package_SO.pretty/SOIC-18W_7.5x11.6mm_P1.27mm.kicad_mod": "7eec490ec4feabbe30fa197f0f395da5eeabbd36efadacce0a3f05290c8be447",
+    "rev-d/libraries/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod": "074ecb2092b24fa4b4b9cdd7c926fc587b0d7d6d21e7341e57935fd42d36894f",
+    "rev-d/libraries/Package_SO.pretty/TSSOP-14_4.4x5mm_P0.65mm.kicad_mod": "7f83113e622b37fd214cb7294a17bb6f0d3aa6ed92db4a5b330d601689b6608c",
+    "rev-d/libraries/Package_TO_SOT_SMD.pretty/SOT-223-3_TabPin2.kicad_mod": "ddc12d36d9d2c005cbf3d8146725bc75b997fc4b70dfa12490ebeddde281476c",
+    "rev-d/libraries/Package_TO_SOT_SMD.pretty/SOT-23-3.kicad_mod": "89af8a399123719611c518be48187ef1159cdb32ebed52df303e134232d3dea5",
+    "rev-d/libraries/Package_TO_SOT_SMD.pretty/SOT-23-5.kicad_mod": "455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761",
+    "rev-d/libraries/Package_TO_SOT_SMD.pretty/SOT-23-6.kicad_mod": "bd18984c8500fac9df6676484a16e9fe0c090830ccb8bdaa0945385f8747e117",
+    "rev-d/libraries/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+    "rev-d/libraries/Package_TO_SOT_SMD.pretty/TSOT-23-6.kicad_mod": "fa6465be0460ecc91e11d96fe6df6fd2c4bf480fb47b1320645b1b8c933cd6e7",
+    "rev-d/libraries/Relay_SMD.pretty/Relay_DPDT_Omron_G6K-2F-Y.kicad_mod": "bc113f9f6d13578d72708cbf19059d65e243b373fc3f4f1d9f9c830093102d22",
+    "rev-d/libraries/Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod": "177ba0c7e1ffbd1329c59a169c0275d3eb54ff5fe798184b0414162becdd3714",
+    "rev-d/libraries/Resistor_SMD.pretty/R_2512_6332Metric.kicad_mod": "8c363944e69319c80f35ad1049ed1fbd40bb04874c22045002077695cca1770b",
+    "rev-d/licenses/KiCad-footprints-LICENSE.md": "285b027a721577d0bc0198f36e948c6c282ddaa4b58fef8ed826749576eb0aef",
+    "rev-d/seed_board.py": "c4d05713cb3e3f5bbc098ca451a46614dec35237b444b019e6c8dd6f088caa16",
+    "rev-d/sym-lib-table": "14dc34504bd1b9737259a2c0c70d7655bbb60bea6ef3c727cb43c39297901aa7"
+  }
+}

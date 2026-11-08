@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "qualification": "Bounded bench prototype; procurement compatibility only",
+  "pcbSha256": "2e78fc59cdb673444d1d433c10f06dfd234662e7a467a3b113f6c6cee1294ea0",
+  "unchangedReleaseFiles": 113,
+  "schematicComponents": 393,
+  "placedParts": 385,
+  "purchasingLines": 113,
+  "filledCappedSites": 254,
+  "exactOmronRelays": [
+    "K1",
+    "K2",
+    "K3",
+    "K4"
+  ],
+  "relayLandPattern": "1.8 x 0.8 mm pads, 7.0 mm row spacing, 3.2/2.2/2.2 mm column intervals",
+  "retainedFunctions": [
+    "CCD",
+    "PCI",
+    "SCI",
+    "Legacy pin selection",
+    "passive CAN default",
+    "active CAN diagnostics",
+    "hardware TX permit and timer",
+    "two series NO relays per branch",
+    "48 hook testpoints"
+  ],
+  "ercViolations": 0,
+  "drcViolations": 0,
+  "unconnectedItems": 0,
+  "schematicParityIssues": 0,
+  "isolationAndTxCheck": "PASS: unchanged check_netlist.py; 80 conductor/contact cases and 128 TX permit cases",
+  "ruleSettings": "Unchanged baseline severities and exclusions; not a new qualification of ignored rules",
+  "evidenceSha256": {
+    "rev-d-relay-procurement.xml": "c89fc58b415e1f18f89f1e9e36eda77f7b14da16cde6333ea51d3f87d7021f75",
+    "rev-d-relay-erc.json": "b35cc99a4ca1fe49b68bda6f500330b6407828051d9e2c52d8074908c7658a41",
+    "rev-d-relay-drc.json": "8b0c3b96fd02f30a7455e4aa3f308fc8d86aa4bd8db53d27eef34faf2dffd7db",
+    "rev-d-relay-positions.csv": "b8f9600f54317bab9b35a4dba1b65d312c1d3b1d5a28d72320621226c9d34385"
+  },
+  "bomSha256": {
+    "selections.json": "4e4841b0677efbbd28558e88ffe6f07c4961dff00b70c9905cff61606f6bcd8e",
+    "BOM.csv": "0628230fd68390a19005df3ffef9dc5d534089efac56e70dabeb5c4673d9020c",
+    "JLC-BOM.csv": "46f1e06fc329a990a58dc7ae4f8a8d22dc77932a82debdf404b6f01b754b1558",
+    "JLC-CPL.csv": "20da9fd9b88f19a50847ec3a9553bb2aa04fb30a376bfc29f89a271850137968"
+  }
+}
